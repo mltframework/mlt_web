@@ -5,7 +5,7 @@ title: MLT
 description: "MLT is an open source multimedia framework, designed and
               developed for television broadcasting."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/mltframework"
+baseurl: "/mlt"
 url: "http://mltframework.org"
 
 # Build settings
