@@ -5,6 +5,9 @@ wrap_title: Frequently Asked Questions
 permalink: /faq/
 ---
 
+* TOC
+{:toc}
+
 ### Miscellaneous
 
 #### Does MLT take advantage of multiple cores? Or, how do I enable parallel processing?
@@ -351,3 +354,5 @@ service or the application could be changing the frame data, which is
 actually rather rare. In other words, you would be going out-of-your way
 to do or facilitate that and subsequently ought to know when you are
 using a mlt_frame (or Mlt::Frame) from more than one thread.
+
+{:toc}
