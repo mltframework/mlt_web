@@ -1,0 +1,8 @@
+---
+layout: post
+title: Kdenlive on Mac OS X
+category: blog
+---
+
+It lives! For a while now, MLT has worked on Mac OS X, but it was not possible to embed the MLT video window into a native Carbon or Cocoa application. However, with a new SDL audio-only consumer, an application can retrieve the image in a MLT frame-show event handler and paint it as desired. In the case of Kdenlive, I used a custom QGLWidget:
+http://www.kdenlive.org/forum/kdenlive-macosx-available-testing#comment-4663

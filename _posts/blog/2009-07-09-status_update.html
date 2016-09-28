@@ -1,0 +1,13 @@
+---
+layout: post
+title: status update
+category: blog
+---
+
+Here are some things that are happening since the v0.4.4 release. First, already committed to the Git tree, image conversion throughout the framework and modules has been refactored to reduce the number of conversions and only convert when necessary. This benefit in performance and quality is most noticeable when applying multiple frei0r-based filters. However, it also helps with the development and maintenance of the code.<br />
+<br />
+Currently, I am working on the same for the audio where the benefit is most noticeable when applying multiple LADSPA or SoX-based filters. This is not yet in the Git tree.<br />
+<br />
+Also, I have been working on the ability to embed the SDL window inside of Qt applications on Mac OS X (based on avidemux's approach). Embedding is currently working in my test app, and I am working on handling resize events. I am rather worried about making this work stably.<br />
+<br />
+Finally, Broadcast Centre Europe has contributed an open source consumer for the Linsys SD SDI card. They have sent me a card and the code, but I have not yet had a chance to review and commit this.

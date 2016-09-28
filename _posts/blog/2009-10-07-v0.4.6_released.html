@@ -1,0 +1,47 @@
+---
+layout: post
+title: v0.4.6 released
+category: blog
+---
+
+<br />
+This release is an enhancement release along with numerous build, A/V synch, concurrency, and other bug fixes.<br />
+<br />
+configure: &nbsp;new option --avformat-svn-version<br />
+<br />
+Modules<br />
+<ul>
+<li>avformat: much improved seeking on H.264/MPEG2-TS (AVCHD) (Ivan Schreter)</li>
+<li>core: new imageconvert and audioconvert filters (framework refactorization)</li>
+<li>linsys: new SDI consumer (Broadcast Centre Europe)</li>
+<li>qimage: new kdenlivetitle producer (J.B. Mardelle and Marco Gittler)</li>
+<li>sdl: new audio_only consumer for OS X</li>
+</ul>
+mlt++ and swig: update bindings<br />
+<br />
+Framework<br />
+<ul>
+<li>refactored image format conversion</li>
+<li>mlt_frame.h:</li>
+<ul>
+<li>added convert_image() virtual function</li>
+<li>added mlt_image_format_name()</li>
+<li>removed many mlt_convert_ and scaling/padding functions</li>
+</ul>
+<li>refactored audio format conversion</li>
+<li>mlt_frame.h:</li>
+<ul>
+<li>mlt_get_audio() virtual function parameters changed</li>
+<li>added convert_audio() virtual function</li>
+<li>mlt_frame_get_audio() parameters changed</li>
+<li>added mlt_frame_set_audio()</li>
+<li>added mlt_audio_format_name()</li>
+</ul>
+<li>mlt_types.h:</li>
+<ul>
+<li>deprecated mlt_audio_pcm</li>
+<li>added mlt_audio_s16</li>
+<li>added mlt_audio_s32</li>
+<li>added mlt_audio_float</li>
+</ul>
+</ul>
