@@ -467,8 +467,8 @@ csmall {
 
 .popular-posts li {
 	list-style: none;
-	margin-bottom: 20px;
-	min-height: 70px;
+	margin-bottom: 10px;
+	min-height: 50px;
 }
 .popular-posts li a,
 .popular-posts li a:hover {

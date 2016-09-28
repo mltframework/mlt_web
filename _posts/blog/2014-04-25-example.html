@@ -3,6 +3,7 @@ layout: post
 title: Version 6.2.0 Released
 category: blog
 ---
+
 You can download it from&nbsp;<a href="https://sourceforge.net/p/mlt/">SourceForge</a>&nbsp;or&nbsp;<a href="https://github.com/mltframework/mlt/releases/tag/v6.2.0">GitHub</a>.&nbsp;The major announcement is the&nbsp;introduction of support for <b>libavfilter</b>! This is still a work-in-progress.&nbsp;It is limited to FFmpeg 2.3 and up, and there are a number of filters that&nbsp;are black-listed because they are known to not integrate with MLT, which is&nbsp;not a full libav* environment or simple wrapper for it. There are likey&nbsp;avfilters that are not yet black-listed but might not work because they&nbsp;have not been completely tested. Also, they do not support MLT's keyframable&nbsp;property animation nor its frame-threaded parallelism due to architectural&nbsp;or integration limitations. However, some avfilters are slice-threaded&nbsp;(internal parallelism), and that works. Finally, libavfilter filtergraph&nbsp;syntax is not supported either.<br />
 <div>
 <br /></div>
