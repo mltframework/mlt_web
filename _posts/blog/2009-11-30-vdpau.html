@@ -1,0 +1,12 @@
+---
+layout: post
+title: VDPAU
+category: blog
+---
+
+<br />
+Last week I added support for VDPAU decoding of H.264. This is working and stable, but it is not yet pushed to the public Git repository. Currently, one can only load about 10-20 AVCHD clips - depending upon video memory. I have to refactor the FFmpeg (avformat) module to take advantage of the new LRU mlt_cache. Previously, this was difficult due to all the numerous properties it was using. Well, just after the 0.4.6 release, I had refactored it to use a mlt_producer child structure. This was done partly to be more efficient and gave me an opportunity to have a thorough re-review of this code before embarking on a major change I promised in exchange for getting the Linsys SDI consumer as open source and a card with which to test it. I know; I am rambling. The point is that it should be fairly easy to now make it use the cache, which means it will also be possible to support hundreds of clips in a project with random access. (Previously, hundreds could only be supported for sequential access by usage of the autoclose=1 property on the playlist object.)<br />
+<br />
+Whew! OK, now for the not-so-great part. I was hoping this could give a good performance boost especially for seeking as that took a major hit in performance in 0.4.6 in exchange for accuracy and quality. Unfortunately, on my MacBook Pro with a Geforce 8600M GT, I am only seeing about a one second improvement in seek performance and this is without disabling the in-loop deblocking filter on the CPU test. I see about 33% improvement in time to simply decode frames as-fast-as-possible and about a 10% reduction in CPU utilization during real-time playback. Why is this? Well for one, MLT uses packed 4:2:2 for its Y'CbCr colorspace and even though the API seems to indicate it can provide this, neither of my 2 systems that can support VDPAU can provide this. Therefore, it must still do a colorspace conversion on the CPU. The overhead of sending the bitstream to the GPU and especially receiving the uncompressed decoded image back into system memory seems to counter-compensate the gains provided by the GPU. I do plan to keep this code and try to integrate the deinterlacer and perhaps some other filters to make it more compelling. However, it means I am going to wait until after today's release to further it and make it available.<br />
+<div>
+<br /></div>

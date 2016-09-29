@@ -1,0 +1,9 @@
+---
+layout: post
+title: YADIF
+category: blog
+---
+
+Since its inception, MLT has been limping along on linear-blending for deinterlacing, but I just added the world-class YADIF deinterlace filter! It is not a new MLT filter that you need to manually apply; rather, it is integrated with the existing one. It is the new default when you are not playing through SDL (i.e. Kdenlive and OpenShot). SDL defaults to linear interpolation (i.e. onefield), which is faster and will not making seeking on AVCHD suck any more than it already does. Encoding through avformat and SDI outputs default to YADIF (which, of course, gets applied only when required).<br />
+<br />
+This took quite a bit of work because this filter requires the preceding and following frames' images to the current frame being processed, and the framework was not equipped to provide that. Also, there were quite a few pitfalls along the way.

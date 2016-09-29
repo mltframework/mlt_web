@@ -1,0 +1,54 @@
+---
+layout: post
+title: v0.5.0 released
+category: blog
+---
+
+<br />
+This is an enhancement release, confined mainly to the modules rather than the framework. In particular, this adds support for VDPAU, YADIF, and HD-SDI technologies!<br />
+<br />
+configure: added --disable-sse2<br />
+<br />
+Framework<br />
+<ul>
+<li>mlt_cache: added mlt_cache_set_size()</li>
+<li>mlt_filter: added data property "service" - set when attached</li>
+<li>mlt_frame:</li>
+<ul>
+<li>added Doxygen docs</li>
+<li>added "previous frame" and "next frame" data properties - available&nbsp;when its producer has _need_previous_next=1</li>
+</ul>
+<li>mlt_playlist: added support for negative out point same as length-1</li>
+<li>mlt_service:</li>
+<ul>
+<li>added mlt_service_cache_purge()</li>
+<li>added "_need_previous_next" handling in mlt_service_get_frame()</li>
+<li>added firing event "service-changed" in mlt_service_attach()</li>
+</ul>
+</ul>
+Modules<br />
+<ul>
+<li>avformat producer:</li>
+<ul>
+<li>added decoding H.264 with NVIDIA VDPAU<br />Requires FFmpeg built with vdpau.&nbsp;This is automatically detected and enabled. You can disable this by setting environment variable MLT_NO_VDPAU=1 or property novdpau=1.</li>
+<li>added caching of FFmpeg contexts and decoded images<br />This allows large numbers of clips in a project avoiding limitations with number of threads and file descriptors permitted per process.&nbsp;You can disable image caching with property noimagecache=1.</li>
+<li>added variant of producer named avformat-novalidate</li>
+<li>restored support for video4linux(2)</li>
+</ul>
+<li>avformat consumer: added apre, fpre, and vpre preset properties</li>
+<li>crop filter: added center_bias integer property</li>
+<li>deinterlace filter: added the excellent YADIF as a method</li>
+<li>kdenlivetitle producer: added text outlining</li>
+<li>linsys/sdi consumer:</li>
+<ul>
+<li>added support for HD-SDI</li>
+<li>changed name from "linsys_sdi" to just "sdi"</li>
+</ul>
+<li>oldfilm filter: added "uneven development" effect</li>
+<li>xml producer: add support for unspecified out points</li>
+</ul>
+Profiles:<br />
+<ul>
+<li>added several missing ATSC (HD) profiles</li>
+<li>change descriptions from using Hz to fps</li>
+</ul>
