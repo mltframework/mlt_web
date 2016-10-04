@@ -1,0 +1,12 @@
+---
+layout: post
+title: cross platform GUI starter project
+category: blog
+---
+
+<br />
+Since MLT is now working on Mac OS X, Windows, Linux, and BSD, I added a cross-platform C++ Qt starter project to the git repository:&nbsp;<a href="http://mltframework.org/gitweb/BuildOnMe.git">http://mltframework.org/BuildOnMe.git</a><br />
+<br />
+It is just a very simple media player with menu, toolbar, status bar, and video frame. The build system is qmake, which is very convenient to use with the cross-platform Qt Creator tool. The code includes the special OpenGL playout widget needed for Mac OS X. It is licensed under the liberal MIT open source license. On OS X, BSD, and Linux, it uses pkg-config to locate the MLT dependencies. Therefore, on OS X, the easiest way to get up and running is to use the macports.org mlt port. On Windows, a couple of extra steps are needed to copy files from the mlt build area to the Qt project build area.<br />
+<div>
+<br /></div>

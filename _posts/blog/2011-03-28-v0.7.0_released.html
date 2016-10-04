@@ -1,0 +1,43 @@
+---
+layout: post
+title: v0.7.0 released
+category: blog
+---
+
+<br />
+This is a major new release due to signficant additions to API, framework, and build.<br />
+<br />
+Build<br />
+<br />
+<ul>
+<li>Added support for Windows via MinGW.</li>
+<li>Enabled linsys module by default.</li>
+<li>Disabled VDPAU by default and added --avformat-vdpau to enable it.</li>
+<li>Added support for swfdec 0.7.</li>
+</ul>
+<br />
+Framework:<br />
+<br />
+<ul>
+<li>Added parallelism to mlt_consumer when 'real_time' &gt; 1 or &lt; -1.</li>
+<li>Added mlt_deque_insert() and mlt_deque_peek().</li>
+<li>Added mlt_profile parameter to mlt_producer_new().</li>
+<li>Let transitions with no out point run forever.</li>
+<li>Added mlt_frame_unique_properties().</li>
+<li>Added mlt_frame_set_image() and mlt_frame_set_alpha().</li>
+<li>Added mlt_image_format_size() and mlt_audio_format_size().</li>
+<li>Added mlt_filter_get_length() and mlt_transition_get_length().</li>
+<li>Added mlt_filter_get_progress(), mlt_transition_get_progress(),&nbsp;and mlt_transition_get_progress_delta().</li>
+<li>Added mlt_filter_get_position() and mlt_transition_get_position().</li>
+<li>Added mlt_properties_lock() and mlt_properties_unlock().</li>
+</ul>
+<br />
+Modules<br />
+<br />
+<ul>
+<li>Added rotoscoping filter.</li>
+<li>Improve libavdevice support (V4L2, ALSA, libdc1394).</li>
+<li>Added support for new FFmpeg metadata API.</li>
+<li>Various fixes, refactoring, and improvements.</li>
+</ul>
+<br />
