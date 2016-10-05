@@ -1,0 +1,22 @@
+---
+layout: post
+title: server reorganization
+category: blog
+---
+
+<br />
+<div style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+<a href="https://hub.turnkeylinux.org/"><img alt="Turnkey Linux Hub" border="0" src="http://4.bp.blogspot.com/-xgqcbzIxjIA/T5jBQ-BGpcI/AAAAAAAABLw/e6JMrzJ7I3s/s1600/hublogo3b.png" title="" /></a></div>
+<br />
+<div style="text-align: right;">
+</div>
+The MLT web/wiki and git server has moved out of the garage and into the cloud to offer better uptime, responsiveness, and collaboration. Turnkey Linux has a TWiki appliance, so we moved the web site to its hub service, which provides cloud-computing for its appliance images. This greatly simplifies management partly because it has many things related to security and backup already setup.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://github.com/" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img alt="github - social coding" border="0" height="88" src="http://1.bp.blogspot.com/-ImsJ3tLAZ1M/T5jJvFfAaMI/AAAAAAAABL8/Hn9TtuuFMUY/s200/GitHub_Logo_SmartObject.png" title="" width="200" /></a></div>
+Then, we had to decide what to do about the git daemon and gitweb service - whether to migrate that to the hub instance as well or whether to use a popular git hosting service. GitHub has really become a great collaboration service with code reviewing, pull requests, and issue tracking, giving it an edge over others. Not to mention, so many developers are already registered and ready to fork. So, effective immediately the authoritative git repositories are now at <a href="https://github.com/mltframework/">https://github.com/mltframework/</a>.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://www.jetbrains.com/teamcity/" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img alt="TeamCity" border="0" height="45" src="http://3.bp.blogspot.com/-cYDvMDHauZc/T5jK2q4JYvI/AAAAAAAABME/0Z4g-E6B0Hk/s200/teamcity-logo.png" title="" width="200" /></a></div>
+Not done yet. A new contributor has setup an automated build server that uses the <a href="https://github.com/mltframework/mlt-scripts/tree/master/build">build scripts</a>, which are now being maintained in git instead of the wiki. The build server is primarily for quality assurance purposes at this point, but there are plans to offer nightly builds of popular MLT applications from this service. We have a little more work to expose that properly.<br />
+<br />

@@ -1,0 +1,29 @@
+---
+layout: post
+title: End of 2011 Update
+category: blog
+---
+
+It might seem this project is rather quiet lately, but nothing could be farther from the truth. So, here is a quick update on what has been happening lately, what will be in the next release, and what to look forward to in 2012.<br />
+<br />
+<b>New Logo</b><br />
+Did you notice the new logo in the top, left of the page? It certainly can be improved, but the concept is represented. It is kind of like a wax seal, but not exactly - more like a flattened, melted blob.<br />
+<br />
+<b><a href="http://en.wikipedia.org/wiki/Asynchronous_serial_interface">ASI</a> Consumer</b><br />
+This is mainly interesting only to the broadcast users of MLT. This component actually started development in 2010, but was finally wrapped up and verified DVB compliant recently. For playout, this basically provides a channel-in-a-box solution. When coupled with SDI input, it makes a live encoder for broadcast. This is not yet an open source component, but its existence is not exactly a secret since it has been listed on our <a href="http://www.mltframework.org/twiki/bin/view/MLT/Documentation">Documentation</a> page. With just a little work, I am certain this could be used for ATSC and CBR UDP output as well. If you are interested in this, <a href="http://www.mltframework.org/twiki/bin/view/MLT/OnlineSupport">contact us</a> or <a href="http://www.bce.lu/BCE-Products_DPlayout.htm">B.C.E</a>.<br />
+<br />
+<b>Multi-Consumer</b><br />
+This is an exciting new consumer plugin for the next release that basically lets you have multiple outputs! That could mean encoding from any sort of MLT playlist or composition to multiple files at the same time, each with their own unique attributes including different resolution and frame rate. Here are some other example use cases: simultaneous SDI/HDMI and IP streaming for playout, preview while capturing from SDI/HDMI, simultaneous&nbsp;GUI and SDI/HDMI&nbsp;preview in video editor.<br />
+<br />
+<b>Frame rate adaption</b><br />
+In addition to the multi consumer letting you have outputs with different frame rates, in the next release the special <a href="http://www.mltframework.org/twiki/bin/view/MLT/ProducerConsumer">consumer producer</a> lets an input with a different frame rate conform to the composition's profile. Most people do not notice this because the avformat producer is used most often, and it has performed this from the beginning. However, the <a href="http://www.mltframework.org/twiki/bin/view/MLT/ProducerDecklink">decklink</a> SDI producer is not quite as flexible. Basically, this means you can do simple (non-interpolated) frame rate conversion with SDI input, but it also means in the future we can fully enable the telecide filter for smart inverse telecine. Also, as a result of this work, now the decklink producer is compatible with the YADIF deinterlacer for superior results when encoding to progressive file or stream.<br />
+<br />
+<b>Meltymedia.net</b><br />
+I have a working prototype of running melt on Amazon Web Services under a job queue that dynamically adds and removes render nodes. The idea here is that there are a number of web and mobile app developers that want to use the power of MLT for advanced processing of XML-based audio/video compositions, but they do not want to deal with the hassle of dependencies, a good-working and current build of melt, compiling melt themselves, or command line usage of melt. Via HTTP, one can simply POST MLT-XML to the web service where the XML contains HTTP or S3 links to the file resources. Then, another service API call lets the client application check on the status and get links to the outputs. This is not quite ready to make available as I have a few more things to do, but it will be a paid service.<br />
+<br />
+<b>Shotcut</b><br />
+Shotcut is an old MLT project that provides a <a href="http://www.fltk.org/">FLTK</a>-based video editor suited to the very particular requirements of the original project sponsor UEL. That project has not been active for a very long time, and I am not really fond of FLTK or the app's design, but I liked the name well enough to reuse it for a new Qt-based cross-platform, open-source video editor. It will also work with the Melted server for broadcast customers that want a client that runs on non-Linux desktops. I am not ready to provide much more information or to provide a sneak peak, but I will soon because this is much more than just an idea at this point - the progress has been very steady and promising!<br />
+<br />
+<b>2012</b><br />
+Now, put this altogether plus the addition of <a href="http://www.mltframework.org/twiki/bin/view/MLT/RfcMltProperties1">proper support for time formats and property animation</a>, and you get an idea of what is in store for 2012.<br />
+<br />

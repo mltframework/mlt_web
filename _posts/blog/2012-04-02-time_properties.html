@@ -1,0 +1,35 @@
+---
+layout: post
+title: time properties
+category: blog
+---
+
+Support for time values in properties just landed in git. This means properties like in, out, and length that used to take and provide frame counts now also support timecode and clock values. This makes manual authoring and reading XML easier. For example,<br />
+<br />
+<br />
+<span style="font-family: 'Courier New', Courier, monospace;">$ melt color: out=:5.0 -consumer xml no_meta=1 time_format=smpte</span><br />
+<span style="font-family: inherit;">returns the following XML that can also be parsed:</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&lt;mlt LC_NUMERIC="en_US.UTF-8" version="0.7.9" title="color:"&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &lt;profile description="DV/DVD PAL" width="720" height="576" progressive="0" sample_aspect_num="16" sample_aspect_den="15" display_aspect_num="4" display_aspect_den="3" frame_rate_num="25" frame_rate_den="1" colorspace="601"/&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &lt;producer id="producer0" in="00:00:00:00" out="00:00:05:00"&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;property name="mlt_type"&gt;producer&lt;/property&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;property name="length"&gt;00:10:00:00&lt;/property&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;property name="eof"&gt;pause&lt;/property&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;property name="resource"&gt;&lt;/property&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;property name="aspect_ratio"&gt;1.066667&lt;/property&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;property name="mlt_service"&gt;color&lt;/property&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &lt;/producer&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &lt;playlist id="playlist0"&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;entry producer="producer0" in="00:00:00:00" out="00:00:05:00"/&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &lt;/playlist&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &lt;tractor id="tractor0" title="color:" global_feed="1" in="00:00:00:00" out="00:00:05:00"&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &nbsp; &lt;track producer="playlist0"/&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&nbsp; &lt;/tractor&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;">&lt;/mlt&gt;</span><br />
+<span style="font-family: 'Courier New', Courier, monospace;"><br /></span><br />
+<span style="font-family: inherit;">Hour, minute, and second components are optional, but there must be at least one colon for a string value to be interpreted as time. If the last component contains a radix, then it is interpreted as a clock value instead of a SMPTE timecode. That means, in the above, ":5.0" means 5 seconds, which for 25 frames per seconds, yields a timecode of 00:00:05:00, which could be abbreviated as 5:00 or even 5:. Of course, the numeric locale is supported for period or comma as radix, as needed.</span><br />
+<br />
+This is exposed through the Mlt::Properties API as well for applications. Variants of other functions that deal with time are slowly being added, but Mlt::Producer::get_length_time() was already added. User interfaces often need to show and accept time values, and this makes it easier to support that in your MLT application.<br />
+<br />
+Lastly, another benefit, is that one can use the clock values in XML, and they will automatically adapt to changes in the profile framerate. Of course, you may lose frame accuracy if you do change the framerate, but that may not matter for some use cases.<br />
+<br />
