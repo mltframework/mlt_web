@@ -1,0 +1,56 @@
+---
+layout: post
+title: v0.7.4 released
+category: blog
+---
+
+<br />
+This is a bugfix and minor enhancement release.<br />
+<br />
+Framework<br />
+<br />
+<ul>
+<li>Important: change consumer property profile to mlt_profile.</li>
+<li>Improve frame-dropping and drop_max property to mlt_consumer.</li>
+<li>Added support for presets for any service through special property named "properties"</li>
+<li>Added mlt_profile_from_producer() for auto-profile.</li>
+<li>Added mlt_properties_set_lcnumeric() and mlt_properties_get_lcnumeric().</li>
+<li>Added LC_NUMERIC to YAML Tiny metadata schema and parser.</li>
+</ul>
+<br />
+Modules<br />
+<br />
+<ul>
+<li>Added support for more than 2 channels of greater than 16-bit audio.</li>
+<li>Added discrete filters for each SoX effect.</li>
+<li>Added discrete filters for each LADSPA audio plugin.</li>
+<li>Added automatic service metadata for SoX and LADSPA plugins.</li>
+<li>Added at least basic metadata for nearly every service.</li>
+<li>Added support for decklink on Windows (tested) and Mac OS X (untested).</li>
+<li>Added support for JACK transport synchronization.</li>
+<li>Added blacklist.txt to jackrack plugin (contains dssi-vst).</li>
+<li>Rewrite of decklink consumer.</li>
+<li>Added support for live network, multi-stream device, and pipe/fifo sources in avformat producer.</li>
+<li>Added LC_NUMERIC attribute to root XML element.</li>
+</ul>
+<br />
+Melt<br />
+<br />
+<ul>
+<li>Added '-query presets' option.</li>
+<li>Added -jack option for transport synchronization.</li>
+<li>Send -help and -query output to stdout to make it convenient for pagers.</li>
+</ul>
+<br />
+Other<br />
+<br />
+<ul>
+<li>Added mlt.Frame.get_image() for Python.</li>
+<li>Removed configure option --avformat-svn.</li>
+<li>Fixes for locales that use comma for decimal point.</li>
+<li>Added presets for DVD, DV, x264, and WebM encoding.</li>
+</ul>
+<br />
+Since FFmpeg forked and there were a few releases, there is no recommended version at this time. With that said, there were changes to accomodate the API changes with some moderate testing of the 0.6, 0.7, and 0.8 series releases of both FFmpeg and Libav.<br />
+<div>
+<br /></div>

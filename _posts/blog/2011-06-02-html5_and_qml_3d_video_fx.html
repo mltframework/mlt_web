@@ -1,0 +1,20 @@
+---
+layout: post
+title: html5 and QML 3D video fx!
+category: blog
+---
+
+Andrew Wason has been working on a video effects engine, called WebVfx, that allows effects to be implemented using HTML or QML. It includes producer, filter and transition plugins for MLT.<br />
+<br />
+Video effects can be authored using web technologies like CSS3, Canvas, WebGL etc. Video frames decoded by MLT are available to the effect as JavaScript Image or ImageData objects. QML is supported as an alternative to WebGL for 3D based transitions, by extending it with QtQuick3D.<br />
+<br />
+3D scenes can be modeled in a tool like Blender, the scene can be rendered and baked to a texture and the 3D camera path can be animated and exported using a Blender plugin included with WebVfx. Then video frames can be applied as textures to portions of the scene. Here is the <a href="http://rectalogic.github.com/webvfx/examples_2transition-demo3d_8qml-example.html">source to a simple 3D example</a>&nbsp;with <a href="http://www.youtube.com/watch?v=yvuxJwVvDk8">demo video</a>.<br />
+<br />
+<a href="http://www.youtube.com/watch?v=iOKzqTV71Ss">Here is an example</a> of a more sophisticated 3D birthday card theme developed internally, rendered with WebVfx and MLT using the avformat consumer.<br />
+<br />
+Advanced 2D image effects can be implemented using WebGL and a GLSL fragment shader. WebVfx includes a support framework so only the shader code needs to be written. Here is the source to <a href="http://rectalogic.github.com/webvfx/examples_2transition-shader-pagecurl_8html-example.html">PageCurl</a> and <a href="http://rectalogic.github.com/webvfx/examples_2transition-shader-crosszoom_8html-example.html">CrossZoom</a> GLSL transitions (with links to demo videos).<br />
+<br />
+Source code and docs are available on github:<br />
+<a href="https://github.com/rectalogic/webvfx#readme">https://github.com/rectalogic/webvfx</a><br />
+<div>
+<br /></div>

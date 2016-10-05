@@ -1,0 +1,7 @@
+---
+layout: post
+title: network stream and pipe inputs supported
+category: blog
+---
+
+MLT now supports libavformat's protocols to read network streams such as multicast MPEG2-TS/UDP, RTP, RTMP (librtmp recommended), RTSP (your mileage may vary), MMS, and HTTP Live Streaming. It also lets you read various formats such as DV, HDV, and TS over pipes. Of course, you can use them with all the other services MLT offers such as SDI output and filters. However, you can not seek on it, so things such as in point and speed changes are ignored.
