@@ -1,0 +1,44 @@
+---
+layout: post
+title: v6.0.0 released
+category: blog
+---
+
+This is a bugfix and minor enhancement release. Note that our release versioning scheme has changed. We were approaching 1.0 but decided to synchronize release version with the C library ABI version, which is currently at v6. You can download it from <a href="https://sourceforge.net/p/mlt/">SourceForge</a> or <a href="https://github.com/mltframework/mlt/releases/tag/v6.0.0">GitHub</a>. Here are some of the notable changes and enhancements:<br />
+<br />
+<b>Framework</b><br />
+<br />
+<ul>
+<li>Added unit tests for tractor, multitrack, and field.</li>
+<li>Deprecate mlt_frame_get_alpha_mask().</li>
+<li>Added drop_count readable property to mlt_consumer.</li>
+<li>Added mlt_factory_repository().</li>
+<li>Added mlt_properties_to_utf8().</li>
+<li>Define MIN, MAX, CLAMP in mlt_types.h in not already defined.</li>
+<li>Switched to __APPLE__ and _WIN32 defines throughout codebase.</li>
+</ul>
+<br />
+<b>Modules</b><br />
+<br />
+<ul>
+<li>Added UDP and SMPTE 2022-2 support to cbrts consumer.</li>
+<li>Fixed build against latest FFmpeg versions - now requires v1.1 and up.</li>
+<li>Added audiospectrum filter to qt module.</li>
+<li>Added meta.media.0.codec.rotate property to avformat producer to let apps and other services get the media orientation.</li>
+<li>Make the avformat producer handle animated images.</li>
+<li>Added style property to dynamictext filter.</li>
+<li>Added timewarp producer to core module.</li>
+<li>Fixed slowly accumulating A/V sync drift in mix audio transition.</li>
+<li>Added width_crop and width_fit properties to pango producer.</li>
+</ul>
+<br />
+<div>
+<div>
+<b>Melt</b></div>
+<div>
+<ul>
+<li>Added -abort option to simply exit without full cleanup.</li>
+<li>Fix key-press handling on Windows.</li>
+</ul>
+</div>
+</div>
