@@ -1,0 +1,52 @@
+---
+layout: post
+title: MLT adds GPU image processing
+category: blog
+---
+
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://www.opengl.org/img/opengl_logo.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img alt="OpenGL logo" border="0" src="http://www.opengl.org/img/opengl_logo.jpg" title="" /></a></div>
+For a few months, we have been working on a set of image processing filters and transitions that utilize the OpenGL Shader Language (GLSL) of your video card/chip. This means that not only are they very fast but also cross-platform and widely supported. GLSL is generally faster and better supported than OpenCL and NVIDIA CUDA because those technologies are rather new or vendor-specific and designed for more general purpose computing. The new filters are also high quality by using 16-bit linear floating point per color component. All of this means that you can apply more effects without a huge reduction in frame rate.<br />
+<br />
+This work has now been merged into the master code branch and will be available in the next release. They have already been integrated into the <a href="http://www.shotcut.org/">Shotcut</a> daily builds for all 3 major OS platforms! However, a caveat - there is not much to see there yet because Shotcut does not yet have filters. :-) Nevertheless, it &nbsp;has served as a feasibility exercise of the cross-platform integration. Meanwhile, one can open a clip, save as XML, edit the XML to put something like &lt;filter mlt_service="movit.mirror"/&gt; inside of the &lt;producer&gt;&lt;/producer&gt;, open the XML in Shotcut, and see the result. But first you will need to enable GPU Processing in the Settings menu.<br />
+<h3>
+What is currently available?</h3>
+<ul>
+<li>movit.blur</li>
+<li>movit.convert (colorspace conversion)</li>
+<li>movit.crop</li>
+<li>movit.diffusion</li>
+<li>movit.glow</li>
+<li>movit.lift_gamma_gain (color correction)</li>
+<li>movit.mirror</li>
+<li>movit.opacity</li>
+<li>movit.rect (position and scale)</li>
+<li>movit.resample</li>
+<li>movit.resize (pad)</li>
+<li>movit.saturation</li>
+<li>movit.sharpen</li>
+<li>movit.vignette</li>
+<li>movit.white_balance</li>
+<li>movit.mix (transition)</li>
+<li>movit.overlay (transition)</li>
+<li>qglsl (a wrapper to multi consumer that uses Qt to abstract platform-specific OpenGL context)</li>
+</ul>
+<a href="http://www.mltframework.org/bin/view/MLT/OpenGL">More information</a> can be found in the <a href="http://www.mltframework.org/bin/view/MLT/Documentation">documentation</a> section of the website.<br /><ul>
+</ul>
+<h3>
+What still needs to be done?</h3>
+<div>
+<ul>
+<li>A new threading model to improve concurrency between CPU and GPU</li>
+<li>More work on qglsl to support more multi-consumer use cases</li>
+<li>Keyframable parameters throughout</li>
+</ul>
+<h3>
+Thanks</h3>
+</div>
+<div>
+We thank Christophe Thommeret for providing the proof-of-concept which provided many ideas about how to integrate something like this with MLT.</div>
+<div>
+We thank Steinar H. Gunderson for providing the new <a href="http://git.sesse.net/?p=movit">Movit</a> library, which is an external dependency that provides all of the heavy lifting here.</div>
+<div>
+<br /></div>
