@@ -1,0 +1,54 @@
+---
+layout: post
+title: v0.9.2 released
+category: blog
+---
+
+Thanks to the combined effort of several contributors over the past year, there is a new bugfix and enhancement release 0.9.2 of MLT.<br />
+<h3>
+Framework&nbsp;</h3>
+<br />
+<ul>
+<li>Added "boolean" parameter type and "argument" parameter attribute to
+    service metadata schema.</li>
+<li>Added mlt_properties_frames_to_time().</li>
+<li>Added mlt_properties_time_to_frames().</li>
+<li>Changed mlt_events_fire() to return the number of listeners.</li>
+<li>Added consumer-thread-create and consumer-thread-join events.</li>
+<li>Added LC_NUMERIC handling for Windows.</li>
+<li>Added mlt_playlist_mix_out() and mlt_playlist_mix_in().</li>
+<li>Added mlt_properties_from_utf8().</li>
+</ul>
+<h3>
+Modules</h3>
+<ul>
+<li>Renamed "qimage" module to "qt".</li>
+<li>Added support for Qt 5.</li>
+<li>Added qtext producer, which is now prefered by dynamictext filter over pango.</li>
+<li>Added xml-nogl consumer.</li>
+<li>Consolidated dgraft, burningtv, and rotoscoping into new plusgpl module.</li>
+<li>Added vid.stab module with vidstab and deshake filters.
+    This depends on external vid.stab library unlike its predecessors.</li>
+<li>Rewrote opengl module.</li>
+<li>Added loudness filter based on EBU R128.</li>
+<li>Added rgblut filter to plus module.</li>
+<li>Added luma-only liftgammagain filter to plusgpl module.</li>
+<li>Added lift_gamma_gain filter to plus module.</li>
+<li>Added support new keyframable animated properties to brightness, volume,
+    panner, boxblur, wave, sepia, charcoal, burn, gamma, grain, dust, lines,
+    tcolor, oldfilm.</li>
+<li>Added movit.luma transition to opengl module.</li>
+<li>Added cbrts consumer to plusgpl module.</li>
+<li>Removed the "ppm" PPM-pipe producer.</li>
+<li>Added more VITC functionality to decklink module.</li>
+<li>Added matte transition to core module.</li>
+</ul>
+<h3>
+DEPRECATION WARNINGS</h3>
+<ul>
+<li>Deprecate videostab module with videostab and videostab filters.
+    This will not be removed soon in order to keep old scripts and projects
+    functional.</li>
+<li>Deprecate the dv (libdv), kino, and vorbis modules. These are scheduled
+    to be removed in next release.</li>
+</ul>

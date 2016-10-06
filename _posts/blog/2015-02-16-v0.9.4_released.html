@@ -1,0 +1,45 @@
+---
+layout: post
+title: v0.9.2 released
+category: blog
+---
+
+This is a bugfix and minor enhancement release. Here are some of the notable&nbsp;changes and enhancements.<br /><h3>
+Framework</h3>
+<ul>
+<li>Added color_trc (transfer characteristic) property to mlt_consumer and mlt_frame.</li>
+<li>Added Mlt::Profile::set_display_aspect(int, int).</li>
+<li>Added mlt_pool_stat().</li>
+<li>Added mlt_smpte_df and mlt_smpte_ndf to mlt_time_format for non-drop-frame&nbsp;timecode support.</li>
+<li>Added Mlt::Tractor::Tractor(Mlt::Profile&amp;).</li>
+<li>Added mlt_frame_get_alpha().</li>
+<li>Added default, copy, and assignment methods to Mlt::Frame.</li>
+<li>Added Mlt::Filter::process(Mlt::Frame&amp;).</li>
+</ul>
+<h3>
+Modules</h3>
+<ul>
+<li>Added support for color_trc property to avformat and opengl modules.</li>
+<li>Performance improvements for composite and matte transitions.</li>
+<li>Added fill, halign, and valign properties to affine transition and filter.</li>
+<li>Added producer.* and consumer.* properties to consumer producer.</li>
+<li>Fixes for libavformat and libavcodec v56.</li>
+<li>Dropped support for FFmpeg &lt; v1.0 and Libav &lt; v9.</li>
+<li>Added a lumakey filter.</li>
+<li>Added a localtime property to dynamictext filter.</li>
+<li>Added date/time format string support to dynamictext filter.</li>
+<li>Added no_root property to xml consumer.</li>
+<li>Added audio-only tone producer.</li>
+<li>Added drop property to count producer.</li>
+<li>Added caching to pango producer to improve performance.</li>
+</ul>
+<h3>
+Other</h3>
+<ul>
+<li>Added WMV and WMA avformat consumer presets.</li>
+<li>Added a ProRes-Kostya avformat consumer preset.</li>
+<li>Changed VP9 WebM preset to use Opus audio codec.</li>
+<li>Added 4K UHD and 2.5K QHD profiles.</li>
+<li>Added x265-medium and x265-medium-pass1 avformat consumer presets.</li>
+<li>Added a unit test for Mlt::Frame.</li>
+</ul>
