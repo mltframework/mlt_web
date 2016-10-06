@@ -1,0 +1,13 @@
+---
+layout: post
+title: Announcing Flowblade Movie Editor
+category: blog
+---
+
+The minor version is increased due to the addition of time properties!&nbsp;The soname version increased in the process because some mlt_property&nbsp;functions changed; however, very few if any apps actually directly use&nbsp;mlt_property preferring to use mlt_properties instead. In addition:<br />
+<ul>
+<li>improve seek speed on AVCHD when using FFmpeg v0.9.1+ (sorry, not Libav!)</li>
+<li>composite and dissolve speed improvements on x86-64</li>
+<li>improve performance of caching in image producers</li>
+<li>add device enumeration to decklink producer and consumer</li>
+</ul>

@@ -1,0 +1,18 @@
+---
+layout: post
+title: v0.8.2_released
+category: blog
+---
+
+This is a bugfix and minor enhancement release.<br />
+<ul>
+<li>Overhaul of A/V sync with libavformat-based inputs.</li>
+<li>Fix a major memory leak introduced in previous release.</li>
+<li>Fixes to problems revealed by <a href="http://scan.coverity.com/">Coverity Scan</a> static analysis.</li>
+<li>Improved encoding presets.</li>
+<li>melt can now be built without SDL with define MELT_NOSDL, which is handy
+  for running it as a child process on Windows and OS X.</li>
+<li>melt can now be signaled to quit, which also makes it more useful as a
+  child process.</li>
+</ul>
+Special thanks to&nbsp;Mikko Rapeli who provided many of the Coverity fixes.
