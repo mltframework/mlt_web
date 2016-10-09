@@ -1,8 +1,8 @@
 ---
 layout: standard
-title: Contributing
+title: Documentation
 wrap_title: Contributing
-permalink: /docs/
+permalink: /docs/contributing/
 ---
 
 #### Getting the Latest Source Code
@@ -49,5 +49,5 @@ All patches must be in the unified diff format. Short patches can be in
 the body of the message. Long patches should be attached. Use your best
 judgment.
 
-Make sure code submissions conform to the [Style Guide](codingstyleguide)
-and [Copyright Policy](copyrightpolicy).
+Make sure code submissions conform to the [Style Guide]({{ "/docs/codingstyleguide" | prepend: site.baseurl }})
+and [Copyright Policy]({{ "/docs/copyrightpolicy" | prepend: site.baseurl }}).

@@ -1,8 +1,8 @@
 ---
 layout: standard
-title: Copyright Policy
+title: Documentation
 wrap_title: Copyright Policy
-permalink: /docs/
+permalink: /docs/copyrightpolicy/
 ---
 
 #### Copyright Attribution

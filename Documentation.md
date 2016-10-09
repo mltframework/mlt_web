@@ -30,7 +30,8 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 * [Framework Design](framework)
 * [XML](mltxml) - XML document format
 * [XML Authoring Examples](authoringexamples)
-* [ScriptBindings](scriptbindings)
+* [Scripting Language Bindings](scriptbindings)
+* [Contributing](contributing)
 
 *external:*
 
