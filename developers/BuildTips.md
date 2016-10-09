@@ -2,7 +2,7 @@
 layout: standard
 title: Build tips
 wrap_title: Build Tips
-permalink: /documentation/buildtips/
+permalink: /docs/buildtips/
 ---
 
 In addition to these tips, there is a build scripts page.

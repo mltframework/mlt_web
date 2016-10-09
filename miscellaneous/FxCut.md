@@ -2,7 +2,7 @@
 layout: standard
 title: FX Cut
 wrap_title: FxCut
-permalink: /documentation/fxcut/
+permalink: /docs/fxcut/
 ---
 
 On Tue, 2005-07-05 at 11:38 -0400, Dan Dennedy wrote: &gt; *what is a "fx

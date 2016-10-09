@@ -2,7 +2,7 @@
 layout: standard
 title: Documentation
 wrap_title: MLT Documentation
-permalink: /documentation/
+permalink: /docs/
 ---
 
 #### For Users

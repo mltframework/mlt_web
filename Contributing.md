@@ -2,7 +2,7 @@
 layout: standard
 title: Contributing
 wrap_title: Contributing
-permalink: /documentation/
+permalink: /docs/
 ---
 
 #### Getting the Latest Source Code

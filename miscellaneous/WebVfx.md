@@ -2,7 +2,7 @@
 layout: standard
 title: Web Vfx
 wrap_title: Web Vfx
-permalink: /documentation/webvfx/
+permalink: /docs/webvfx/
 ---
 
 WebVfx is an

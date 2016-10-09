@@ -2,7 +2,7 @@
 layout: standard
 title: Property Animation
 wrap_title: Property Animation
-permalink: /documentation/propertyanimation/
+permalink: /docs/propertyanimation/
 ---
 
 Property animation is the notion of property values changing over time.

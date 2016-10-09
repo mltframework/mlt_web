@@ -2,7 +2,7 @@
 layout: standard
 title: Plugin Metadata Design
 wrap_title: Metadata Requirements
-permalink: /documentation/metadatarequirements/
+permalink: /docs/metadatarequirements/
 ---
 
 The plugins (services) are basically raw. All we really know about them
@@ -14,7 +14,7 @@ or just some form of config files. This is intended to address that.
 
 ### Requirements
 
--   [A schema]({{"/documentation/metadatarequirements/metadataschema/" | prepend: site.baseurl }}) - a  standard
+-   [A schema]({{"/docs/metadatarequirements/metadataschema/" | prepend: site.baseurl }}) - a  standard
     structure and set of field names so applications can automatically process it. In other
     words, docs/services.txt is not sufficient.
 -   Easy for module authors. This means it might be a text file provided
@@ -107,6 +107,6 @@ or just some form of config files. This is intended to address that.
 * The current MLT Tiny YAML implementation *only*
   supports 2 space characters for indentation!
 
-##### [MetadataSchema]({{"/documentation/metadatarequirements/metadataschema/" | prepend: site.baseurl }})
+##### [MetadataSchema]({{"/docs/metadatarequirements/metadataschema/" | prepend: site.baseurl }})
 
-##### [MetadataYamlSample]({{"/documentation/metadatarequirements/metadatayamlsample/" | prepend: site.baseurl }})
+##### [MetadataYamlSample]({{"/docs/metadatarequirements/metadatayamlsample/" | prepend: site.baseurl }})

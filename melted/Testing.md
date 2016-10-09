@@ -2,7 +2,7 @@
 layout: standard
 title: Melted Test Procedure
 wrap_title: Testing
-permalink: /documentation/testing/
+permalink: /docs/testing/
 ---
 
 ```

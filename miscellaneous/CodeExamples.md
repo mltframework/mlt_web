@@ -2,7 +2,7 @@
 layout: standard
 title: Code Examples
 wrap_title: Code Examples
-permalink: /documentation/codeexamples/
+permalink: /docs/codeexamples/
 ---
 
 See

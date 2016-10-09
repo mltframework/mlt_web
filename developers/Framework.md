@@ -2,7 +2,7 @@
 layout: standard
 title: Framework Design
 wrap_title: Framework
-permalink: /documentation/framework/
+permalink: /docs/framework/
 ---
 
 A [Russian translation](RuFramework) is available.

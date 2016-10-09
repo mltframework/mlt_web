@@ -2,7 +2,7 @@
 layout: standard
 title: Property Presets
 wrap_title: Presets
-permalink: /documentation/presets/
+permalink: /docs/presets/
 ---
 
 Put property setters in a file and apply them to a service using

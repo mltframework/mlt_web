@@ -2,7 +2,7 @@
 layout: standard
 title: MLT XML Schema Documentation
 wrap_title: MLT XML
-permalink: /documentation/mltxml/
+permalink: /docs/mltxml/
 ---
 
 ### Preamble

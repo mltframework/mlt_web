@@ -2,7 +2,7 @@
 layout: standard
 title: Melt Documentation
 wrap_title: Melt
-permalink: /documentation/mltmelt/
+permalink: /docs/mltmelt/
 ---
 
 Copyright (C) 2004-2016 Meltytech, LLC

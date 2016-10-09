@@ -13,7 +13,7 @@ permalink: /features/
 -   Supports the authoring and manipulation (ala DOM) of time-based
     media including playlists, multiple tracks, filters, and transitions
 -   Serialization and deserialization of authored projects
--   Doxygen-based API [Documentation]({{"/documentation/" | prepend: site.baseurl }})
+-   Doxygen-based API [Documentation]({{"/docs/" | prepend: site.baseurl }})
 -   High-level language bindings for C++, C\#, Java, Lua, Perl, PHP,
     Python, Ruby, and TCL
 -   Multi-core and GPU processing

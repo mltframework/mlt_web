@@ -2,7 +2,7 @@
 layout: standard
 title: MLT Video Control Protocol (MVCP) Reference Documentation
 wrap_title: MVCP
-permalink: /documentation/mvcp/
+permalink: /docs/mvcp/
 ---
 
 ```

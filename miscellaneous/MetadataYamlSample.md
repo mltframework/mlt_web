@@ -2,7 +2,7 @@
 layout: standard
 title: YAML Sample for Plugin Metadata API
 wrap_title: Metadata YAML Sample
-permalink: /documentation/metadatarequirements/metadatayamlsample/
+permalink: /docs/metadatarequirements/metadatayamlsample/
 ---
 
 ```

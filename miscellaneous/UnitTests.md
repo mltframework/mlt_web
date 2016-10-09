@@ -2,7 +2,7 @@
 layout: standard
 title: Unit Tests
 wrap_title: Unit Tests
-permalink: /documentation/unittests/
+permalink: /docs/unittests/
 ---
 
 The unit test suite for MLT is located at src/tests in the source tree.

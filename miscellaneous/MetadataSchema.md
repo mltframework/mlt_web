@@ -2,7 +2,7 @@
 layout: standard
 title: YAML Schema for Plugin Metadata API
 wrap_title: Metadata Schema
-permalink: /documentation/metadatarequirements/metadataschema/
+permalink: /docs/metadatarequirements/metadataschema/
 ---
 
 ```

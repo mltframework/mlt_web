@@ -2,7 +2,7 @@
 layout: standard
 title: XML Authoring Examples
 wrap_title: Authoring Examples
-permalink: /documentation/authoringexamples/
+permalink: /docs/authoringexamples/
 ---
 
 You can find examples of how to author in melt or xml syntax by looking

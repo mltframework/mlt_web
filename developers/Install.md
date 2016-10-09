@@ -2,7 +2,7 @@
 layout: standard
 title: Installation Documentation
 wrap_title: Install
-permalink: /documentation/install/
+permalink: /docs/install/
 ---
 
 This document provides a description of the MLT project installation and

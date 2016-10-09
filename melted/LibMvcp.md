@@ -2,7 +2,7 @@
 layout: standard
 title: MLT LibMvcp API Documentation
 wrap_title: LibMvcp
-permalink: /documentation/libmvcp/
+permalink: /docs/libmvcp/
 ---
 
 ```

@@ -2,7 +2,7 @@
 layout: standard
 title: OpenGL and GLSL in MLT
 wrap_title: OpenGL
-permalink: /documentation/opengl/
+permalink: /docs/opengl/
 ---
 
 ### Building

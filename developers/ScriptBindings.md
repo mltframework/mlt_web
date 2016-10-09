@@ -2,7 +2,7 @@
 layout: standard
 title: Scripting Language API
 wrap_title: ScriptBindings
-permalink: /documentation/scriptbindings/
+permalink: /docs/scriptbindings/
 ---
 
 There is no documentation for the scripting and managed language

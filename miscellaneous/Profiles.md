@@ -2,7 +2,7 @@
 layout: standard
 title: Profiles
 wrap_title: Profiles
-permalink: /documentation/profiles/
+permalink: /docs/profiles/
 ---
 
 ### Configuring the Consumer or Output
