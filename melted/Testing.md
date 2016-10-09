@@ -1,11 +1,10 @@
 ---
-layout: standard
-title: Melted Test Procedure
-wrap_title: Testing
-permalink: /docs/testing/
+title: Documentation
+wrap_title: Melted Test Procedure
+permalink: /docs/meltedtesting/
 ---
 
-```
+<pre>
 Copyright (C) 2003-2014 Meltytech, LLC
 Last Revision: 2009-05-15
 
@@ -602,4 +601,4 @@ document assumes that they are named test001.dv and up.
 --> 14
 --> 0 "test001.dv" 0 6999 7000 7000
 --> Check that USTA U0 reports a generation of 14 and current clip of 0
-```
+</pre>

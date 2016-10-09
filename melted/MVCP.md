@@ -1,11 +1,10 @@
 ---
-layout: standard
-title: MLT Video Control Protocol (MVCP) Reference Documentation
-wrap_title: MVCP
+title: Documentation
+wrap_title: MLT Video Control Protocol (MVCP) Reference
 permalink: /docs/mvcp/
 ---
 
-```
+<pre>
 Copyright (C) 2004-2014 Meltytech, LLC
 Last Revision: 2011-04-17
 
@@ -348,4 +347,4 @@ PUSH {unit}
    Do note that the size and XML arguments are on new lines.
    Size is the size of the XML payload in bytes.
    Returns 404 if the XML is malformed or if the XML producer fails parsing.
-```
+</pre>

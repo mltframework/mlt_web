@@ -1,11 +1,10 @@
 ---
-layout: standard
-title: MLT LibMvcp API Documentation
-wrap_title: LibMvcp
+title: Documentation
+wrap_title: Libmvcp API Documentation
 permalink: /docs/libmvcp/
 ---
 
-```
+<pre>
 Copyright (C) 2004-2014 Meltytech, LLC
 Last Revision: 2009-05-15
 
@@ -865,4 +864,4 @@ APPENDIX D - REFERENCES
 
    (1) doc/mvcp.txt - MVCP protocol
    (2) doc/testing.txt - Test procedures
-```
+</pre>
