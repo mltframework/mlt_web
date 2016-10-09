@@ -514,3 +514,9 @@ a.anchor{
   	padding-top: 25px;
 	}
 }
+
+table.withborders td {
+    border-collapse: collapsed;
+    border: 1px solid;
+    padding: 0.5em;
+}
