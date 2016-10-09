@@ -63,7 +63,6 @@ tel: +34 8493-4893
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Author, manage, and run multitrack audio/video compositions.
-        The engine of a non-linear video editor that can be used in all
-        sorts of apps, not just desktop video editors.<br>
-        Copyright © 2008-2016 by Meltytech, LLC."
+about: "MLT enables you to author, manage, and run multitrack audio/video compositions.
+        <br>See our <a href=\"/mlt_web/halloffame/\">Hall of Fame</a><br>
+        Copyright &copy; 2008-2016 by <a href=\"https://www.meltytech.com/\">Meltytech, LLC.</a>"

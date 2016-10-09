@@ -14,8 +14,6 @@ find in the system. He lives in Antwerp, Belgium, with his wife, Lucy,
 and his wee man, Dylan. They recently acquired a crazy cat who they
 named Buffy.
 
-*Charlie is occassionally available for contract work.*
-
 #### [Dan Dennedy](http://www.dennedy.org/)
 
 Dan was responsible for providing the bulk of the plug-ins, the core of
@@ -23,7 +21,7 @@ the client/server architecture, technical experience, insight, and
 generally putting up with Charlie. He lives in California with his wife,
 two daughters and son, and works at [MobiTV](http://www.mobitv.com/).
 
-#### [Zachary Drew](http://www.tc.umn.edu/~drew0054/)
+#### Zachary Drew
 
 Zach is responsible for providing the new motion tracking functionality
 and stretching the framework even further.
