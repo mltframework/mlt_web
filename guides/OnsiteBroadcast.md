@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: OnSite Broadcast Requirements
-title_wrap: Onsite Broadcast
+wrap_title: Onsite Broadcast
 permalink: /onsitebroadcast/
 ---
 

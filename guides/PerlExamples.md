@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Perl Examples
-title_wrap: Perl Examples
+wrap_title: Perl Examples
 permalink: /perlexamples/
 ---
 

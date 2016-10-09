@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: RPMSpec
-title_wrap: RPMSpec
+wrap_title: RPMSpec
 permalink: /rpmspec/
 ---
 

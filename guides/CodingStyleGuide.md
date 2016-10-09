@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Coding Style Guide
-title_wrap: Coding Style Guide
+wrap_title: Coding Style Guide
 permalink: /codingstyleguide/
 ---
 
