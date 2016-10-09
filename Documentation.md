@@ -28,7 +28,7 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 #### For Developers
 * [Doxygen API Documentation](/doxygen/annotated.html)
 * [Install](install) - see also [BuildTips](buildtips)
-* [Framework Design](framework) [[ru](ruframework)]
+* [Framework Design](framework)
 * [XML](mltxml) - XML document format
 * [XML Authoring Examples](authoringexamples)
 * [ScriptBindings](scriptbindings)
@@ -50,6 +50,6 @@ configuration
 * [UnitTests](unittests)
 
 #### For Melted Users and Developers
-* [Testing Melted](testing) - also a MVCP tutorial
-* [MVCP](mvcp) - client/server text protocol [[ru](RuDvcp)]
-* [libmvcp](libmvcp) - client API [[ru](RuValerie)]
+* [Testing Melted](meltedtesting) - also a MVCP tutorial
+* [MVCP](mvcp) - client/server text protocol
+* [libmvcp](libmvcp) - client API

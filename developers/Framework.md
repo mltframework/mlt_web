@@ -5,8 +5,6 @@ wrap_title: Framework
 permalink: /docs/framework/
 ---
 
-A [Russian translation](RuFramework) is available.
-
 ### Preamble
 
 MLT is a multimedia framework designed for television broadcasting. As
