@@ -1,4 +1,6 @@
----+ %TOPIC%
+---
+title: Extreme Makeover
+---
 
 In the middle of May, 2009 I reorganized the mlt and mlt++ source code
 trees and renamed a bunch of things. This document describes those
