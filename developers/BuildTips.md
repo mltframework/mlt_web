@@ -29,7 +29,7 @@ Normally, I use MLT configuration:
 
 #### Windows
 
-See the [WindowsBuild](/windowsbuild/) page.
+See the [Building on Windows]({{ "/docs/windowsbuild/" | prepend: site.baseurl }}) page.
 
 #### avformat (FFmpeg) module
 
