@@ -1,39 +1,8 @@
 ---
 layout: post
-title: v0.9.0 released with new property animation API
+title: New video stabilization and EBU R128 loudness filters
 category: blog
 ---
 
-Earlier in the year we announced the introduction of <a href="http://mltframework.blogspot.com/2013/02/mlt-adds-gpu-image-processing.html">OpenGL-based image processing</a> on the GPU. However, now it is finally available in a release version of the software. Not only that, but we have also added a new, properly integrated property animation API to replace the limited, awkward mlt_geometry API. Here are the features of the new API:<br />
-<ul>
-<li>The time of a keyframe can be set using frame number, time clock string, or a timecode string.</li>
-<li>A negative time value makes it relative to the end of an object's duration.</li>
-<li>Keyframes support 3 forms of interpolation: discrete (no interpolation), linear, and a smooth Catmull-Rom &nbsp;spline.</li>
-<li>Supports a new <a href="http://www.mltframework.org/doxygen/structmlt__rect.html">mlt_rect</a> propery type in addition to string (discrete only), integer, and floating point.</li>
-<li>API for most apps is just a few new, simple methods on the <a href="http://www.mltframework.org/doxygen/structmlt__properties__s.html">Properties</a> object.</li>
-<li>Integrated with the OpenGL-based effects only at this time to ease the migration - will be extended to other plugins in the next version or two.</li>
-</ul>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-0X69ZVPOJc0/UavpRs-vnGI/AAAAAAAACSE/IWEeOlzydeQ/s1600/curve.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-0X69ZVPOJc0/UavpRs-vnGI/AAAAAAAACSE/IWEeOlzydeQ/s1600/curve.png" height="180" width="320" /></a></div>
-Above is a plot of the curve described by the following property value.<br />
-<span style="font-family: Courier New, Courier, monospace;">0|=50; 50|=100; 100=200; 200~=60; -7:00~=180; -2:00~=100; -1=220</span><br />
-This shows that it is possible to combine a number of things in the same curve. It starts out with discrete keyframes (|), switches to a linear interpolated keyframe (=), and ends with a few smooth spline keyframes (~) set using timecode relative to the end/width (-).<br />
-<br />
-Here are other highlights of the release:<br />
-<ul>
-<li>Improved pause behavior when using buffered rendering in mlt_consumer.</li>
-<li>Added mlt_color type.</li>
-<li>Deprecated mlt_geometry API.</li>
-<li>Support for the latest versions of FFmpeg and Libav (but dropping support
-   for 0.5 and 0.6 versions).</li>
-<li>Added alpha channel output to avformat consumer.</li>
-<li>Added reconnect and exit_on_disconnect properties to avformat producer.</li>
-<li>Added qglsl consumer to use opengl with avformat, sdi, and decklink.</li>
-<li>Added avsync module with blipflash <a href="http://www.mltframework.org/bin/view/MLT/ProducerBlipflash">producer</a> and <a href="http://www.mltframework.org/bin/view/MLT/ConsumerBlipflash">consumer</a> for testing.</li>
-<li>Added new "<a href="http://www.mltframework.org/bin/view/MLT/ProducerCount">count</a>" producer to gtk2 module.</li>
-<li>Changed frei0r to use index-based property names making it impervious to
-   param name changes (param name still accepted for compatibility).&nbsp;</li>
-<li>Added default parameter values to frei0r metadata.</li>
-<li>Added more python example web services.</li>
-<li>Started a unit test suite.</li>
-</ul>
+There are a few new filters in MLT git. The "videostab" filter is a new version based&nbsp;<a href="http://public.hronopik.de/vid.stab/">vid.stab</a>&nbsp;replacing the&nbsp;old videostab2 filter. Because it uses an externally compiled version of vid.stab, you can use the latest and greatest version of vid.stab, which is not only faster but gives better quality results. In addition, while vidstab is a dual pass filter - first pass generates a .stab file, second pass reads it - there is a new single-pass "deshake" video filter that uses vid.stab's single-pass mode. It will not give as good results as dual pass, but it is handy for realtime/live applications. Thanks go to&nbsp;Jakub Ksiezniak, a new MLT contributor, and Brian Matherly for helping to get it into shape for merging.<br />
+Also, Brian contributed a new audio filter named "loudness" that uses <a href="https://github.com/jiixyj/libebur128">libebur128</a> to provide better audio normalization because <a href="https://tech.ebu.ch/loudness">EBU R128</a>&nbsp;is based on perceived loudness and newer research than traditional RMS- and peak-based approaches.
