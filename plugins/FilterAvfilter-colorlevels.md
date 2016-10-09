@@ -1,0 +1,228 @@
+---
+layout: standard
+title: Documentation
+wrap_title: "Filter: avfilter.colorlevels"
+category: plugin
+---
+{::options auto_ids="true" /}
+{:toc}
+
+## Plugin Information
+
+title: colorlevels  
+media types:
+Video  
+description: Adjust the color levels.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
+
+## Parameters
+
+### av.rimin
+
+  
+description:
+set input red black point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.gimin
+
+  
+description:
+set input green black point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.bimin
+
+  
+description:
+set input blue black point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.aimin
+
+  
+description:
+set input alpha black point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.rimax
+
+  
+description:
+set input red white point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.gimax
+
+  
+description:
+set input green white point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.bimax
+
+  
+description:
+set input blue white point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.aimax
+
+  
+description:
+set input alpha white point  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.romin
+
+  
+description:
+set output red black point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.gomin
+
+  
+description:
+set output green black point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.bomin
+
+  
+description:
+set output blue black point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.aomin
+
+  
+description:
+set output alpha black point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.romax
+
+  
+description:
+set output red white point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.gomax
+
+  
+description:
+set output green white point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.bomax
+
+  
+description:
+set output blue white point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.aomax
+
+  
+description:
+set output alpha white point  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
+

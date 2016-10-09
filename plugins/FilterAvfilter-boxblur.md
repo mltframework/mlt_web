@@ -1,0 +1,142 @@
+---
+layout: standard
+title: Documentation
+wrap_title: "Filter: avfilter.boxblur"
+category: plugin
+---
+{::options auto_ids="true" /}
+{:toc}
+
+## Plugin Information
+
+title: boxblur  
+media types:
+Video  
+description: Blur the input.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
+
+## Parameters
+
+### av.luma_radius
+
+  
+description:
+Radius of the luma blurring box  
+type: string  
+readonly: no  
+required: no  
+default: '2'  
+
+### av.lr
+
+  
+description:
+Radius of the luma blurring box  
+type: string  
+readonly: no  
+required: no  
+default: '2'  
+
+### av.luma_power
+
+  
+description:
+How many times should the boxblur be applied to luma  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### av.lp
+
+  
+description:
+How many times should the boxblur be applied to luma  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### av.chroma_radius
+
+  
+description:
+Radius of the chroma blurring box  
+type: string  
+readonly: no  
+required: no  
+
+### av.cr
+
+  
+description:
+Radius of the chroma blurring box  
+type: string  
+readonly: no  
+required: no  
+
+### av.chroma_power
+
+  
+description:
+How many times should the boxblur be applied to chroma  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -2147483648  
+
+### av.cp
+
+  
+description:
+How many times should the boxblur be applied to chroma  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -2147483648  
+
+### av.alpha_radius
+
+  
+description:
+Radius of the alpha blurring box  
+type: string  
+readonly: no  
+required: no  
+
+### av.ar
+
+  
+description:
+Radius of the alpha blurring box  
+type: string  
+readonly: no  
+required: no  
+
+### av.alpha_power
+
+  
+description:
+How many times should the boxblur be applied to alpha  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -2147483648  
+
+### av.ap
+
+  
+description:
+How many times should the boxblur be applied to alpha  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -2147483648  
+

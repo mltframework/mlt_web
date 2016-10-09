@@ -13,10 +13,10 @@ permalink: /documentation/
 videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-GJ6KfHK7dIK_yRKKn0e)
 
 #### Plugins (Services)
-* [Consumers](PluginsConsumers) (outputs/sinks)
-* [Filters](PluginsFilters)
-* [Producers](PluginsProducers) (inputs/sources)
-* [Transitions](PluginsTransitions) (mixers)
+* [Consumers]({{ "/plugins/PluginsConsumers/" | prepend: site.baseurl }}) (outputs/sinks)
+* [Filters]({{ "/plugins/PluginsFilters/" | prepend: site.baseurl }})
+* [Producers]({{ "/plugins/PluginsProducers/" | prepend: site.baseurl }}) (inputs/sources)
+* [Transitions]({{ "/plugins/PluginsTransitions/" | prepend: site.baseurl }}) (mixers)
 
 *other:*
 
