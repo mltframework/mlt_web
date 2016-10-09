@@ -9,7 +9,7 @@ permalink: /
 
         <!-- BLOG POSTS LIST -->
         <div class="col-lg-8">
-
+            <h3>Recent News</h3>
             {% for post in site.categories['blog'] limit:5 %}
                 <!-- Blog Post -->
                 <a href="{{ post.url | prepend: site.baseurl }}"></a>
@@ -21,7 +21,36 @@ permalink: /
             {% endfor %}
 
         </div><!--/col-lg-8 -->
+
+        <div class="col-lg-4">
+
+          <h4>Search</h4>
+           <div class="hline"></div>
+           <div>
+               <script>
+               (function() {
+                   var cx = '003207220831093949205:kynivc83vxk';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                       '//cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+               })();
+               </script>
+               <gcse:search></gcse:search>
+           </div>
+
+           {% include portfolio.html title="Featured Apps" %}
+           <div class="spacing"></div>
+
+           <h4>Subscribe</h4>
+           <div class="hline"></div>
+             <p class="rss-subscribe">Subscribe to News<a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
+           <div class="spacing"></div>
+
+        </div><!--/col-lg-4 -->
+
     </div><!--/row -->
 </div><!--/container -->
-
-{% include portfolio.html title="FEATURED MLT APPS" limit=10 %}
