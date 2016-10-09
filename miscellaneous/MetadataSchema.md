@@ -5,7 +5,7 @@ wrap_title: Metadata Schema
 permalink: /docs/metadatarequirements/metadataschema/
 ---
 
-```
+~~~
 --- # A metadata schema in Kwalify: http://www.kuwata-lab.com/kwalify/
 # Version: 0.2
 type: map
@@ -142,4 +142,4 @@ mapping:
                       # widget: combo or if "other" is in this sequence
             sequence:
               - type: scalar
-```
+~~~

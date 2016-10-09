@@ -1,7 +1,7 @@
 ---
 layout: standard
-title: FX Cut
-wrap_title: FxCut
+title: Documentation
+wrap_title: FX Cut
 permalink: /docs/fxcut/
 ---
 
@@ -18,10 +18,10 @@ The idea is that they can be placed on a track in the same way as you
 can place a normal clip or cut, but they affect the video or audio from
 the tracks above, like:
 
-```
+<pre>
    T0: | video1 | video2 |
    T1:    | greyscale |
-```
+</pre>
 
 Here, the greyscale effect is applied over the overlapping region of
 both video1 and video2.
@@ -34,7 +34,7 @@ runtime) and attached effects.
 
 A simple example would be something like:
 
-```
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <mlt title="Greyscale">
   <producer in="0" out="499">
@@ -44,12 +44,11 @@ A simple example would be something like:
         <filter mlt_service="greyscale" />
   </producer>
 </mlt>
-```
+~~~
 
 Save that as greyscale.mlt and run:
 
-```melt colour:blue -track greyscale.mlt
-```
+`melt colour:blue -track greyscale.mlt`
 
 Standalone, the idea is that they could provide a little indication of
 what the effect does (could be text which is then changed by the effect)

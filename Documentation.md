@@ -7,7 +7,7 @@ permalink: /docs/
 
 #### For Users
 * [BuildScripts](buildscripts)
-* [Melt](mltmelt) - command-line player
+* [Melt](melt) - command-line player
 
 *external:* [Tutorial
 videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-GJ6KfHK7dIK_yRKKn0e)
@@ -20,13 +20,12 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 
 *other:*
 
-  * [ConsumerAsi](ConsumerAsi) (protected)
   * [More Info about the CBR MPEG2-TS Consumer](ConsumerCbrtsMore)
   * [FilterAutotrackRectangleDiscussion](FilterAutotrackRectangleDiscussion)
-  * [WebVfx](http://www.mltframework.org/doxygen/webvfx/) (HTML5 and QML)
+  * [WebVfx](https://www.mltframework.org/doxygen/webvfx/) (HTML5 and QML)
 
 #### For Developers
-* [Doxygen API Documentation](/doxygen/annotated.html)
+* [Doxygen API Documentation](https://www.mltframework.org/doxygen/annotated.html)
 * [Install](install) - see also [BuildTips](buildtips)
 * [Framework Design](framework)
 * [XML](mltxml) - XML document format
@@ -40,7 +39,7 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 #### Miscellaneous
 * [Profiles](profiles) - consumer (output)
 configuration
-* [Time Values](http://mltframework.blogspot.com/2012/04/time-properties.html)
+* [Time Values]({{ "/blog/time_properties" | prepend: site.baseurl }})
 * [Presets](presets) - parameter collections
 * [Property Animation](propertyanimation)
 * [Code Examples](codeexamples)

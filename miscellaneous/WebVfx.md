@@ -1,7 +1,6 @@
 ---
 layout: standard
-title: Web Vfx
-wrap_title: Web Vfx
+title: WebVfx
 permalink: /docs/webvfx/
 ---
 

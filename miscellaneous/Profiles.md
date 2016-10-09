@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Profiles
+title: Documentation
 wrap_title: Profiles
 permalink: /docs/profiles/
 ---
@@ -20,7 +20,7 @@ string containing a profile definition.
 
 ### Profile Document Example:
 
-```
+~~~
 description=DV PAL
 frame_rate_num=25
 frame_rate_den=1
@@ -32,7 +32,7 @@ sample_aspect_den=54
 display_aspect_num=4
 display_aspect_den=3
 colorspace=601
-```
+~~~
 
 * num = numerator
 * den = denominator
@@ -125,7 +125,7 @@ still image producer).
 *IMPORTANT:* The frame does not, however, inherit any individual profile
 parameter that you override on the consumer properties.
 
-### MltMelt Usage Examples:
+### [melt]({{ "/docs/melt/" | prepend: site.baseurl }}) Usage Examples:
 
 1. melt -profile dv_ntsc some.dv ...
 2. MLT_PROFILE=dv_ntsc melt some.dv

@@ -70,12 +70,11 @@ VA-API.
 #### How does the transition filter work?
 
 Simple usage is something like:
-```melt file.ogg -track file2.ogg -attach transition:mix start=0.5
-```
+`melt file.ogg -track file2.ogg -attach transition:mix start=0.5`
 
 More advanced stuff can be done if you hand author XML like:
 
-```
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <mlt title="Audio Mix">
   <producer in="0" out="499">
@@ -87,12 +86,11 @@ More advanced stuff can be done if you hand author XML like:
     </filter>
   </producer>
 </mlt>
-```
+~~~
 
 Then the mix can go on it's own track (but needs in/out/length
 specification of course) like:
-```melt file.ogg -track file2.ogg -track mix.mlt out=4999
-```
+`melt file.ogg -track file2.ogg -track mix.mlt out=4999`
 
 #### How do the melt -mix and -mixer options work?
 
@@ -103,12 +101,10 @@ The -mixer option specifies the transition to use. You can add more than
 one. For the example below, with 2 PAL clips, the transition is one
 second long. The luma transition provides a video dissolve, and the mix
 transition cross-fades the audio.
-```melt foo.dv bar.dv -mix 25 -mixer luma -mixer mix:-1
-```
+`melt foo.dv bar.dv -mix 25 -mixer luma -mixer mix:-1`
 
 To see the equivalent in XML, use the xml consumer:
-```melt foo.dv bar.dv -mix 25 -mixer luma -mixer mix:-1 -consumer xml
-```
+`melt foo.dv bar.dv -mix 25 -mixer luma -mixer mix:-1 -consumer xml`
 
 #### How can I capture audio and/or video?
 
@@ -119,46 +115,35 @@ capture using FFmpeg with melt.
 The following captures X11 screen ':0.0' at an offset of 100 horizontal,
 200 vertical:
 
-```
-melt -verbose -profile hdv_720_25p x11grab::0.0+100,200?width=1280\&height=720
-```
+`melt -verbose -profile hdv_720_25p x11grab::0.0+100,200?width=1280\&height=720`
 
 The following captures from video4linux2 and ALSA:
 
-```
-melt -verbose -profile quarter_15 alsa:default -track video4linux2:/dev/video0?width=320\&height=240\&frame_rate=15
-```
+`melt -verbose -profile quarter_15 alsa:default -track video4linux2:/dev/video0?width=320\&height=240\&frame_rate=15`
 
 The following captures from a Firewire digital camera on Linux (not DV
 or HDV, more like an industrial or webcam):
 
-```
-melt -verbose -profile square_ntsc libdc1394:?framerate=15\&video_size=640x480
-```
+`melt -verbose -profile square_ntsc libdc1394:?framerate=15\&video_size=640x480`
 
 As of FFmpeg v1.0 (libav version?) DV and HDV over Firewire works on Linux:
-```melt -verbose iec61883:auto
-```
+`melt -verbose iec61883:auto`
 
-#### How do I output audio to !PulseAudio, ALSA, or JACK?
+#### How do I output audio to PulseAudio, ALSA, or JACK?
 
 Use the SDL consumer - used by default with melt. Then, for !PulseAudio
 or ALSA, first make sure you have installed the appropriate backend,
 then set an environment variable:
-```SDL\_AUDIODRIVER=pulse melt ...
-```
+`SDL\_AUDIODRIVER=pulse melt ...`
 or
-```SDL\_AUDIODRIVER=alsa melt ...
-```
+`SDL\_AUDIODRIVER=alsa melt ...`
 
 JACK is a little trickier. MLT has a filter named jackrack by which it
 can send to and/or receive from jackd. You just need to attach the
 filter to the SDL consumer and tell SDL to not output audio. Here is
 something roughly equivalent in melt:
 
-```
-melt ... -consumer sdl audio_off=1 frequency=44100 -attach jackrack out_1=system:playback_1 out_2=system:playback_2
-```
+`melt ... -consumer sdl audio_off=1 frequency=44100 -attach jackrack out_1=system:playback_1 out_2=system:playback_2`
 
 The frequency must match whatever jackd is running! The above assumes
 you want to send to the "system" jack client ports playback_1 and
@@ -180,17 +165,13 @@ resolution/framerate/bitrate with Ogg Theora.
 Install icecast2 and
 oggfwd, add a mount point in icecast.xml and run icecast followed by:
 
-```
-melt -profile square_ntsc somevideo.foo ... -consumer avformat real_time=1 terminate_on_pause=0 f=ogg vcodec=libtheora b=1000k acodec=libvorbis aq=25 | oggfwd host 8000 password /live.ogg
-```
+`melt -profile square_ntsc somevideo.foo ... -consumer avformat real_time=1 terminate_on_pause=0 f=ogg vcodec=libtheora b=1000k acodec=libvorbis aq=25 | oggfwd host 8000 password /live.ogg`
 
 You can play this with !FireFox 3.5+ or VLC using http://host:8000/live.ogg
 
 #### How can I stream as multicast transport stream?
 
-```
-melt -profile square_pal somevideo.foo ... -consumer avformat:udp://224.224.224.224:1234?pkt_size=1316\&reuse=1 real_time=1 terminate_on_pause=0 f=mpegts vcodec=mpeg4 b=1000k s=320x240 acodec=mp2 ab=128k
-```
+`melt -profile square_pal somevideo.foo ... -consumer avformat:udp://224.224.224.224:1234?pkt_size=1316\&reuse=1 real_time=1 terminate_on_pause=0 f=mpegts vcodec=mpeg4 b=1000k s=320x240 acodec=mp2 ab=128k`
 
 You might change the video codec to libx264 for
 H.264 or audio codec to libmp3lame, libfaac, or aac, depending upon the
@@ -203,9 +184,7 @@ You can play this in VLC using udp://@224.224.224.224:1234
 You can convert the multicast above to serve it over HTTP upon request using
 VLC:
 
-```
-=vlc -I dummy 'udp://@224.224.224.224:1234' --sout '\#std{access=http,mux=ts,dst=0.0.0.0:8080}'=
-```
+`vlc -I dummy 'udp://@224.224.224.224:1234' --sout '\#std{access=http,mux=ts,dst=0.0.0.0:8080}'`
 
 Finally, you can play it with another VLC using http://host:8080. You do
 not have to use multicast; you can use localhost or a unicast IP address.
@@ -215,53 +194,44 @@ not have to use multicast; you can use localhost or a unicast IP address.
 You can transcode the multicast above to serve it over HTTP upon request
 using VLC:
 
-```
-vlc -I dummy 'udp://@224.224.224.224:1234' --sout \
-'#transcode{vcodec=WMV2,vb=800,acodec=wma2,ab=128,channels=2,samplerate=44100}:std{access=http,mux=asf,dst=0.0.0.0:8080}'
-```
+`vlc -I dummy 'udp://@224.224.224.224:1234' --sout \
+'#transcode{vcodec=WMV2,vb=800,acodec=wma2,ab=128,channels=2,samplerate=44100}:std{access=http,mux=asf,dst=0.0.0.0:8080}'`
 
 ### Filters
 
 #### How can I burn timecode into the video?
 
 Here is an example command line:
-```=melt foo.mp4 meta.attr.titles=1 meta.attr.titles.markup=#timecode# -attach data_show dynamic=1=
-```
+`melt foo.mp4 meta.attr.titles=1 meta.attr.titles.markup=#timecode# -attach data_show dynamic=1=`
 
 If you want to burn the frame number then use #frame# instead of #timecode#.
 
 #### How to center a text in a video?
 
-```
-melt colour:red -filter watermark:"+LinuxTag~Flop Bobber.txt"
+`melt colour:red -filter watermark:"+LinuxTag~Flop Bobber.txt"
 composite.progressive=1 producer.align=centre composite.valign=c
-composite.halign=c
-```
+composite.halign=c`
 
 #### When changing the font for pango it is rather small.
 
 Use the producer.size property
 
-```
-melt colour:red -filter watermark:"+Flop.txt"
-composite.progressive=1 producer.font="DIN-Light" producer.size=48
-```
+`melt colour:red -filter watermark:"+Flop.txt"
+composite.progressive=1 producer.font="DIN-Light" producer.size=48`
 
 #### How to repeat the very first frame of a video for 200 frames?
 
 The split can be used here together with swap, that reverses frame
 order
 
-* ```melt file -split 0 -swap -repeat 200 -swap
-```
+* `melt file -split 0 -swap -repeat 200 -swap`
 * -split 0 is the first frame, -swap reverses frame order so it becomes
 last frame, repeat operates on the last frame, swap restores original
 frame order
 
 Another approach:
 
-* ```melt file.avi out=0 -repeat 200 file.avi in=1
-```
+* `melt file.avi out=0 -repeat 200 file.avi in=1`
 * The newer approach is to use the 'freeze' filter. Set the frame
 property to the number of the frame. Then, set either freeze_before or
 freeze_after =1.
@@ -272,15 +242,12 @@ Somewhat awkward:
 
 * Create jpgs for each frame and make movie in reverse
 order
-* ```melt INPUT.VIDEO -consumer avformat:images%05d.jpg real\_time=0
-```
-* ```melt -group in=0 out=0 `ls -r` -consumer avformat:reverse.mpeg qscale=0.01 real_time=0
-```
+* `melt INPUT.VIDEO -consumer avformat:images%05d.jpg real\_time=0`
+* `melt -group in=0 out=0 `ls -r` -consumer avformat:reverse.mpeg qscale=0.01 real_time=0`
 * Warning: If the argument list gets too long
 this might not work. Another approach is to use the framebuffer
 producer:
-```melt framebuffer:/path/to/video reverse=1 -consumer xml:reverse.mlt
-```
+`melt framebuffer:/path/to/video reverse=1 -consumer xml:reverse.mlt`
 
 Now you can use reverse.mlt as a video clip in another composition. Of
 course, if you do not need to use it as a virtual clip, you can
@@ -293,19 +260,16 @@ So, "your mileage may vary."
 
 On 2005-06-26 the following example was working:
 
-```
-melt colour:blue -attach watermark:"+hello.txt" producer.size=266
+`melt colour:blue -attach watermark:"+hello.txt" producer.size=266
 composite.alpha\_a=0 -attach watermark:colour:red composite.alpha\_b=0
-composite.or=1
-```
+composite.or=1`
 
 #### How do you normalize audio?
 You need version 0.7.6+ and the sox filter to normalize audio
 over a file or multiple files. Then, you need to run an analysis step:
 
-```melt test.wav -filter sox:analysis -consumer xml:test.mlt video\_off=1
-all=1
-```
+`melt test.wav -filter sox:analysis -consumer xml:test.mlt video\_off=1
+all=1`
 
 This outputs the replay gain level into MLT XML file test.mlt. Then,
 when you play test.mlt, it applies the gain.
@@ -314,7 +278,7 @@ when you play test.mlt, it applies the gain.
 
 #### How can I find out the audio sampling rate, number of channels, etc. of the input file?
 
-Run ```melt foo.avi -consumer xml``` or look at a .kdenlive MLT XML file.
+Run `melt foo.avi -consumer xml` or look at a .kdenlive MLT XML file.
 See the producer properties beginning with "meta.media." You have to
 factor in the meta.media.nb_streams, meta.media.N.stream.type, and the
 current audio_index (-1 means no audio) to determine which set of meta
@@ -354,5 +318,3 @@ service or the application could be changing the frame data, which is
 actually rather rare. In other words, you would be going out-of-your way
 to do or facilitate that and subsequently ought to know when you are
 using a mlt_frame (or Mlt::Frame) from more than one thread.
-
-{:toc}

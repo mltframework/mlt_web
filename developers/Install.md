@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Installation Documentation
+title: Documentation
 wrap_title: Install
 permalink: /docs/install/
 ---
@@ -102,8 +102,7 @@ configure script and arguments are accepted and passed through to all
 subdirectories.
 
 More information on usage is found by running:
-```./configure --help
-```
+`./configure --help`
 
 Note: This script must be run to register new services after a git clone
 or subsequent update.
@@ -117,8 +116,7 @@ per directory template which must be provided by the developer.
 
 To execute the MLT tools without installation, or to test a new version
 on a system with an already installed MLT version in a Bash shell run:
-```source setenv
-```
+`source setenv`
 
 Note: This applies to your current shell only and it assumes sh or bash.
 
@@ -142,14 +140,17 @@ files are generated and installed in $prefix/lib/pkgconfig.
 
 All compilation in the project has {top-level-dir}/src on the include
 path. All headers are included as:
-```#include <framework/file.h>
-```
+
+~~~
+#include <framework/file.h>
+~~~
 
 All external modules have {prefix}/include/mlt on the include path. All
 headers should also be included as:
 
-```#include <framework/file.h>
-```
+~~~
+#include <framework/file.h>
+~~~
 
 This allows migration of source between external and internal modules.
 The configuration and Makefile template requirements will require

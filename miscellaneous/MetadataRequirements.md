@@ -1,7 +1,7 @@
 ---
 layout: standard
-title: Plugin Metadata Design
-wrap_title: Metadata Requirements
+title: Documentation
+wrap_title: Plugin Metadata Design
 permalink: /docs/metadatarequirements/
 ---
 

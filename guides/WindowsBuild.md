@@ -35,7 +35,7 @@ libdir=*e**x**e**c*<sub>*p*</sub>*r**e**f**i**x*/*l**i**b**i**n**c**l**u**d**e**
 
 Name: libXML Version: 2.6.22 Description: libXML library version 2.
 Requires: Libs:
--L*l**i**b**d**i**r* − *l**x**m**l*2 − *l**z**C**f**l**a**g**s* : −*I*{includedir}</verbatim>
+-L*l**i**b**d**i**r* − *l**x**m**l*2 − *l**z**C**f**l**a**g**s* : −*I*{includedir}</pre>
 1 cd ~/lib 1 cp libxml2.lib xml2.lib 1 cp ~/bin/libxml2.dll ~/build 1 cp
 ~/bin/iconv.dll ~/build 1 cp ~/bin/zlib1.dll ~/build \* *GTK+* 1
 Download an All-in-one bundle of
@@ -58,12 +58,12 @@ make all install 1 cp ../include/frei0r.h ~/include 1 mv ~/lib/frei0r-1
 libraries 1 export QTDIR=/c/Qt/2010.04/qt 1 cp $QTDIR/bin/QtCore4.dll
 ~/bin 1 cp $QTDIR/bin/QtGui4.dll ~/bin 1 cp $QTDIR/bin/QtSvg4.dll ~/bin
 1 cp
-$QTDIR/bin/QtXml4.dll ~/bin  \* \*JACK and LADSPA\*  1 Do this only after installing GTK+ and !LibXML dependencies.  1 \[\[http://jackaudio.org/downloads\]\[Download\]\]  1 Extract the archive to get to a bin/windows directory and run the installer.  1 Install to C:\\Jack to make things easier.  1 cd ~  1 cp -a /c/jack/lib/\* lib  1 cp -a /c/jack/includes/\* include  1 To make this redistributable copy libjack.dll and libjackserver.dll from C:\\Windows\\System32 (or C:\\Windows\\SysWOW64 if on 64-bit) to your build directory.  1 Make your own pkg-config file: ~/lib/pkgconfig/jack.pc: &lt;verbatim&gt; prefix=/ignore exec\_prefix=${prefix}
+$QTDIR/bin/QtXml4.dll ~/bin  \* \*JACK and LADSPA\*  1 Do this only after installing GTK+ and !LibXML dependencies.  1 \[\[http://jackaudio.org/downloads\]\[Download\]\]  1 Extract the archive to get to a bin/windows directory and run the installer.  1 Install to C:\\Jack to make things easier.  1 cd ~  1 cp -a /c/jack/lib/\* lib  1 cp -a /c/jack/includes/\* include  1 To make this redistributable copy libjack.dll and libjackserver.dll from C:\\Windows\\System32 (or C:\\Windows\\SysWOW64 if on 64-bit) to your build directory.  1 Make your own pkg-config file: ~/lib/pkgconfig/jack.pc: &lt;pre&gt; prefix=/ignore exec\_prefix=${prefix}
 libdir=*p**r**e**f**i**x*/*l**i**b**i**n**c**l**u**d**e**d**i**r*={prefix}/include
 
 Name: jack Description: the Jack Audio Connection Kit: a low-latency
 synchronous callback-based media server Version: 1.9.6 Libs:
--L*l**i**b**d**i**r* − *l**j**a**c**k* − *l**j**a**c**k**s**e**r**v**e**r**C**f**l**a**g**s* : −*I*{includedir}</verbatim>
+-L*l**i**b**d**i**r* − *l**j**a**c**k* − *l**j**a**c**k**s**e**r**v**e**r**C**f**l**a**g**s* : −*I*{includedir}</pre>
 1 curl http://www.ladspa.org/ladspa\_sdk/ladspa.h.txt &gt;
 ~/include/ladspa.h 1 Edit ~/include/jack/systemdeps.h and comment out or
 remove "typedef HANDLE pthread\_t;" (may not exist in latest version) 1
@@ -78,10 +78,10 @@ download \[\[http://liboil.freedesktop.org/download/\]\[liboil\]\] 1 cd
 install 1 cp ~/bin/\*.dll ~/build ---+++ Build 1 Open a Git Bash shell 1
 mkdir src; cd src 1 git clone git://github.com/mltframework/mlt.git 1
 You can close the Git Bash shell now and return to the !MinGW Shell 1 cd
-~/src/mlt 1 enter (or add to ~/.profile and start new shell): <verbatim>
+~/src/mlt 1 enter (or add to ~/.profile and start new shell): <pre>
 export CC=gcc export CXX=g++ export
 PKG\_CONFIG\_PATH=*H**O**M**E*/*l**i**b*/*p**k**g**c**o**n**f**i**g**e**x**p**o**r**t**C**F**L**A**G**S* = −*I*HOME/include
-</verbatim> 1 ./configure --prefix=$HOME/build --enable-gpl
+</pre> 1 ./configure --prefix=$HOME/build --enable-gpl
 --disable-decklink 1 make all install
 
 ---++++ SWIG and Python bindings 1 Install Python 2.x from python.org. 1

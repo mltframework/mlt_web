@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Property Animation
+title: Documentation
 wrap_title: Property Animation
 permalink: /docs/propertyanimation/
 ---

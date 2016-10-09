@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Code Examples
+title: Documentation
 wrap_title: Code Examples
 permalink: /docs/codeexamples/
 ---
@@ -21,4 +21,4 @@ Finally, the
 directory contains various language bindings each with their own basic
 test and example programs.
 
-[Perl Examples](perlxamples)
+[Thumbnailing in Perl]({{ "/docs/perlthumbnail" | prepend: site.baseurl }})

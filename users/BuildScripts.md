@@ -1,9 +1,12 @@
 ---
 layout: standard
-title: Build Scripts
+title: Documentation
 wrap_title: Build Scripts
 permalink: /docs/buildscripts/
 ---
+
+* TOC
+{:toc}
 
 These are scripts that download either Kdenlive, Melted, or Flowblade
 plus many of their multimedia dependencies from their source code
@@ -30,18 +33,16 @@ All scripts are available for download from the
 To run the build script on Ubuntu 10.10, install the following packages
 in a terminal window:
 
-```
+<pre>
 sudo apt-get install git automake autoconf libtool intltool g++ yasm swig libmp3lame-dev libgavl-dev libsamplerate-dev libxml2-dev ladspa-sdk libjack-dev libsox-dev libsdl-dev libgtk2.0-dev liboil-dev libsoup2.4-dev libqt4-dev libexif-dev libtheora-dev libvdpau-dev libvorbis-dev python-dev
-```
+</pre>
 
 Here is a list of Fedora 14 packages.
 
-```sudo yum groupinstall "Development Tools"
-```
-
-```
+<pre>
+sudo yum groupinstall "Development Tools"
 sudo yum install yasm gavl-devel libsamplerate-devel libxml2-devel ladspa-devel jack-audio-connection-kit-devel sox-devel SDL-devel gtk2-devel qt-devel libexif-devel libtheora-devel libvorbis-devel libvdpau-devel libsoup-devel liboil-devel python-devel alsa-lib
-```
+</pre>
 
 #### Configure the build
 
@@ -60,17 +61,15 @@ First make sure the directory "melted" does not already exist in your
 home directory. If it does, remove it or move it out of the way (unless
 you are re-running the build-melted.sh script to update an existing
 build). Then, in a terminal window:
-```mkdir melted
-```
-```cd melted
-```
-
+<pre>
+mkdir melted
+cd melted
+</pre>
 ([download](http://github.com/mltframework/mlt-scripts/raw/master/build/build-melted.sh) script to ~/melted)
-
-```chmod +x build-melted.sh
-```
-`./build-melted.sh
-`
+<pre>
+chmod +x build-melted.sh
+./build-melted.sh
+</pre>
 
 The script gets the source for and builds:
 
@@ -89,9 +88,10 @@ The script gets the source for and builds:
 To run the build on a fresh install of Ubuntu 10.10 install the
 following packages:
 
-```sudo apt-get install libmp3lame0 libgavl1 libsox1b libswfdec-0.7-1
+<pre>
+sudo apt-get install libmp3lame0 libgavl1 libsox1b libswfdec-0.7-1
 libqt4-gui libexif12 libvdpau1
-```
+</pre>
 
 Copy the files from the build directory or extract an archive into
 $HOME.
@@ -117,12 +117,11 @@ within ~/melted. If you feel you do not need the older versions you can
 simply delete the old dated directory.
 
 #### Use this environment to run melt and ffmpeg
-```cd ~/melted/<date>
-```
-```source source-me
-```
-```melt ...
-```
+<pre>
+cd ~/melted/&lt;date&gt;
+source source-me
+melt ...
+</pre>
 
 See the contents of bin/ for other commands such as ffmpeg, ffplay,
 ffprobe, and mvcp-client.
@@ -134,7 +133,7 @@ ffprobe, and mvcp-client.
 To run the build script on Ubuntu or other Debian-based distro, install
 the following packages in a terminal window:
 
-```
+<pre>
 sudo apt-get install git automake autoconf libtool intltool g++ yasm
 libmp3lame-dev libgavl-dev libsamplerate-dev libxml2-dev ladspa-sdk
 libjack-dev libsox-dev libsdl-dev libgtk2.0-dev liboil-dev
@@ -143,21 +142,19 @@ libtheora-dev libvorbis-dev subversion cmake kdelibs5-dev libqjson-dev
 libqimageblitz-dev recordmydesktop dvgrab dvdauthor genisoimage xine-ui
 libeigen3-dev xutils-dev libegl1-mesa-dev libfftw3-dev libqt4-opengl-dev
 libv4l-dev
-```
+</pre>
 
 Here is a list of Fedora packages.
 
-```sudo yum groupinstall "Development Tools"
-```
-
-```
+<pre>
+sudo yum groupinstall "Development Tools"
 sudo yum install yasm gavl-devel libsamplerate-devel libxml2-devel
 ladspa-devel jack-audio-connection-kit-devel sox-devel SDL-devel
 gtk2-devel qt-devel libexif-devel libtheora-devel libvorbis-devel
 libvdpau-devel libsoup-devel liboil-devel python-devel cmake
 kdelibs-devel qimageblitz-devel qjson-devel recordmydesktop dvgrab
 dvdauthor xine-ui eigen3 xorg-x11-util-macros fftw
-```
+</pre>
 
 #### Configure the build
 
@@ -174,17 +171,15 @@ information about specific options is pending.
 
 Then, in a terminal window:
 
-```mkdir kdenlive
-```
-```cd kdenlive
-```
-
+<pre>
+mkdir kdenlive
+cd kdenlive
+</pre>
 ([download](http://github.com/mltframework/mlt-scripts/raw/master/build/build-kdenlive.sh) script to ~/kdenlive)
-
-```chmod +x build-kdenlive.sh
-```
-`./build-kdenlive.sh
-`
+<pre>
+chmod +x build-kdenlive.sh
+./build-kdenlive.sh
+</pre>
 
 The script gets the source for and builds:
 
@@ -203,21 +198,21 @@ Use Dolphin or Nautilus to just browse to the kdenlive/&lt;date&gt;
 folder in your Home and click start-kdenlive. Alternatively, from a
 terminal window:
 
-```cd kdenlive/<date>
-```
-`./start-kdenlive
-`
+<pre>
+cd kdenlive/&lt;date&gt;
+./start-kdenlive
+</pre>
 
 #### Deploy the build
 
 To run the build on a fresh install of Ubuntu 10.10 install the
 following packages:
 
-```
+<pre>
 sudo apt-get install libmp3lame0 libgavl1 libsox1b libswfdec-0.7-1
 libqt4-gui libexif12 libvdpau1 kdelibs5 kdelibs5-plugins libqjson0
 libqimageblitz4 recordmydesktop dvgrab dvdauthor genisoimage xine-ui
-```
+</pre>
 
 Archive a dated folder from the build directory (~/kdenlive), copy it
 somewhere else, and then extract it into $HOME or wherever you want.
@@ -233,12 +228,11 @@ can simply delete the old dated directory.
 
 #### Use this environment to run melt and ffmpeg
 
-```cd ~/kdenlive/<date>/bin
-```
-```source kdenlive\_env
-```
-```melt ...
-```
+<pre>
+cd ~/kdenlive/&lt;date&gt;/bin
+source kdenlive\_env
+melt ...
+</pre>
 
 See the contents of bin/ for other commands such as ffmpeg, ffplay,
 ffprobe, and melt.
@@ -250,27 +244,25 @@ ffprobe, and melt.
 To run the build script on Ubuntu 12.04, install the following packages
 in a terminal window:
 
-```
+<pre>
 sudo apt-get install git automake autoconf libtool intltool g++ yasm
 swig libmp3lame-dev libgavl-dev libsamplerate-dev libxml2-dev ladspa-sdk
 libjack-dev libsox-dev libsdl-dev libgtk2.0-dev liboil-dev
 libsoup2.4-dev libqt4-dev libexif-dev libtheora-dev libvdpau-dev
 libvorbis-dev python-dev mercurial python-cairo python-numpy
 python-gnome2 kdelibs5-dev
-```
+</pre>
 
 Here is a list of Fedora 14 packages.
 
-```sudo yum groupinstall "Development Tools"
-```
-
-```
+<pre>
+sudo yum groupinstall "Development Tools"
 sudo yum install yasm gavl-devel libsamplerate-devel libxml2-devel
 ladspa-devel jack-audio-connection-kit-devel sox-devel SDL-devel
 gtk2-devel qt-devel libexif-devel libtheora-devel libvorbis-devel
 libvdpau-devel libsoup-devel liboil-devel python-devel mercurial pycairo
 numpy gnome-python2
-```
+</pre>
 
 #### Configure the build
 
@@ -289,19 +281,16 @@ First make sure the directory "flowblade" does not already exist in your
 home directory. If it does, remove it or move it out of the way (unless
 you are re-running the build-flowbblade.sh script to update an existing
 build). Then, in a terminal window:
-
-```mkdir flowblade
-```
-```cd flowblade
-```
-
+<pre>
+mkdir flowblade
+cd flowblade
+</pre>
 ([download](http://github.com/mltframework/mlt-scripts/raw/master/build/build-flowblade.sh)
 script to ~/flowblade)
-
-```chmod +x build-flowblade.sh
-```
-`./build-flowblade.sh
-`
+<pre>
+chmod +x build-flowblade.sh
+./build-flowblade.sh
+</pre>
 
 The script gets the source for and builds:
 * libvpx
@@ -317,8 +306,9 @@ The script gets the source for and builds:
 To run the build on a fresh install of Ubuntu 10.10 install the
 following packages:
 
-```sudo apt-get install libmp3lame0 libgavl1 libsox1b libqt4-gui libexif12
-```
+<pre>
+sudo apt-get install libmp3lame0 libgavl1 libsox1b libqt4-gui libexif12
+</pre>
 
 Copy the files from the build directory or extract an archive into
 $HOME.
@@ -336,12 +326,11 @@ versions you can simply delete the old dated directory.
 
 #### Use this environment to run melt and ffmpeg
 
-```cd ~/flowblade/<date>
-```
-```source source-me
-```
-```melt ...
-```
+<pre>
+cd ~/flowblade/&lt;date&gt;
+source source-me
+melt ...
+</pre>
 
 See the contents of bin/ for other commands such as ffmpeg, ffplay, and
 ffprobe.
@@ -351,8 +340,10 @@ ffprobe.
 Regardless of whether running Kdenlive, Melted, or Flowblade, these
 provide additional audio processing routines. On Ubuntu 10.10, in a
 terminal window, run
-```apt-cache search ladspa | grep plugins
-```
+<pre>
+apt-cache search ladspa | grep plugins
+</pre>
+
 to get a list of possible packages. At the very least you should install
 swh-plugins. On Fedora 14, install ladspa-swh-plugins and
 ladspa-cmt-plugins for a couple of basic plugin packages.

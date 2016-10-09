@@ -1,7 +1,7 @@
 ---
 layout: standard
-title: Framework Design
-wrap_title: Framework
+title: Documentation
+wrap_title: Framework Design
 permalink: /docs/framework/
 ---
 
@@ -69,11 +69,11 @@ of this document.
 The general structure of an MLT 'network' is simply the connection of a
 'producer' to a 'consumer':
 
-```
+<pre>
   +--------+   +--------+
   |Producer|-->|Consumer|
   +--------+   +--------+
-```
+</pre>
 
 A typical consumer requests MLT Frame objects from the producer, does
 something with them and when finished with a frame, closes it.
@@ -91,11 +91,11 @@ audio samples.
 
 Filters may also be placed between the producer and the consumer:
 
-```
+<pre>
 +--------+   +------+   +--------+
 |Producer|-->|Filter|-->|Consumer|
 +--------+   +------+   +--------+
-```
+</pre>
 
 A service is the collective name for producers, filters, transitions and
 consumers.
@@ -125,7 +125,7 @@ example of usage is provided.
 
 The following simply provides a media player:
 
-```
+~~~
 #include <stdio.h>
 #include <unistd.h>
 #include <framework/mlt.h>
@@ -169,7 +169,7 @@ int main( int argc, char *argv[] )
     // End of program
     return 0;
 }
-```
+~~~
 
 This is a simple example - it doesn't provide any seeking capabilities or
 runtime configuration options.
@@ -204,19 +204,16 @@ always required after starting and before stopping or closing the consumer.
 
 Also note, you can override the defaults as follows:
 
-```$ MLT_CONSUMER=xml ./hello file.avi
-```
+`MLT_CONSUMER=xml ./hello file.avi`
 
 This will create a XML document on stdout.
 
-```$ MLT_CONSUMER=xml MLT_PRODUCER=avformat ./hello file.avi
-```
+`MLT_CONSUMER=xml MLT_PRODUCER=avformat ./hello file.avi`
 
 This will play the video using the avformat producer directly, thus it will
 bypass the normalising functions.
 
-```$ MLT_CONSUMER=libdv ./hello file.avi > /dev/dv1394
-```
+`MLT_CONSUMER=libdv ./hello file.avi > /dev/dv1394`
 
 This might, if you're lucky, do on the fly, realtime conversions of file.avi
 to DV and broadcast it to your DV device.
@@ -265,16 +262,18 @@ properties than can be manipulated to affect their behaviour.
 In order to set properties on a service, we need to retrieve the properties
 object associated to it. For producers, this is done by invoking:
 
-```mlt_properties properties = mlt_producer_properties( producer );
-```
+~~~
+mlt_properties properties = mlt_producer_properties( producer );
+~~~
 
 All services have a similar method associated to them.
 
 Once retrieved, setting and getting properties can be done directly on this
 object, for example:
 
-```mlt_properties_set( properties, "name", "value" );
-```
+~~~
+mlt_properties_set( properties, "name", "value" );
+~~~
 
 A more complete description of the properties object is found below.
 
@@ -292,7 +291,7 @@ Instead of invoking mlt_factory_producer directly, we'll create a new
 function called create_playlist. This function is responsible for creating
 the playlist, creating each producer and appending to the playlist.
 
-```
+~~~
 mlt_producer create_playlist( int argc, char **argv )
 {
     // We're creating a playlist here
@@ -318,7 +317,7 @@ mlt_producer create_playlist( int argc, char **argv )
     // Return the playlist as a producer
     return mlt_playlist_producer( playlist );
 }
-```
+~~~
 
 Notice that we close the producer after the append. Actually, what we're
 doing is closing our reference to it - the playlist creates its own reference
@@ -330,17 +329,17 @@ will create multiple references to it.
 
 Now all we need do is to replace these lines in the main function:
 
-```
+~~~
 // Create a normalised producer
        mlt_producer world = mlt_factory_producer( NULL, argv[ 1 ] );
-```
+~~~
 
 with:
 
-```
+~~~
 // Create a playlist
        mlt_producer world = create_playlist( argc, argv );
-```
+~~~
 
 and we have a means to play multiple clips.
 
@@ -356,7 +355,7 @@ to the previous filter and the last filter to the consumer.
 
 For example:
 
-```
+~~~
 // Create a producer from something
 mlt_producer producer = mlt_factory_producer( ... );
 
@@ -371,7 +370,7 @@ mlt_filter_connect( filter, mlt_producer_service( producer ), 0 );
 
 // Connect the consumer to filter
 mlt_consumer_connect( consumer, mlt_filter_service( filter ) );
-```
+~~~
 
 As with producers and consumers, filters can be manipulated via their
 properties object - the mlt_filter_properties method can be invoked and
@@ -388,7 +387,7 @@ All services can have attached filters.
 
 Consider the following example:
 
-```
+~~~
 // Create a producer
     mlt_producer producer = mlt_factory_producer( NULL, clip );
 
@@ -412,7 +411,7 @@ Consider the following example:
     // We can close the producer and filter now
     mlt_producer_close( producer );
     mlt_filter_close( filter );
-```
+~~~
 
 When this is played out, the greyscale filter will be executed for each frame
 in the playlist which comes from that producer.
@@ -420,7 +419,7 @@ in the playlist which comes from that producer.
 Further, each cut can have their own filters attached which are executed after
 the producer's filters. As an example:
 
-```
+~~~
 // Create a new filter
 filter = mlt_factory_filter( "invert", NULL );
 
@@ -435,11 +434,11 @@ mlt_service_attach( producer, filter );
 
 // Close the filter
 mlt_filter_close( filter );
-```
+~~~
 
 Even the playlist itself can have an attached filter:
 
-```
+~~~
 // Create a new filter
 filter = mlt_factory_filter( "watermark", "+Hello.txt" );
 
@@ -451,7 +450,7 @@ mlt_service_attach( service, filter );
 
 // Close the filter
 mlt_filter_close( filter );
-```
+~~~
 
 And, of course, the playlist, being a producer, can be cut up and placed on
 another playlist, and filters can be attached to those cuts or on the new
@@ -470,11 +469,11 @@ on a playlist.
 
 Consider the following playlist:
 
-```
+<pre>
 +-+----------------------+----------------------------+-+
 |X|A                     |B                           |X|
 +-+----------------------+----------------------------+-+
-```
+</pre>
 
 Let's assume that the 'X' is a 'black clip' of 50 frames long.
 
@@ -483,12 +482,12 @@ A, followed by an abrupt cut into B, and finally into black again.
 
 The intention is to convert this playlist into something like:
 
-```
+<pre>
 +-+---------------------+-+------------------------+-+
 |X|A                    |A|B                       |B|
 |A|                     |B|                        |X|
 +-+---------------------+-+------------------------+-+
-```
+</pre>
 
 Where the clips which refer to 2 clips represent a transition. Notice that
 the representation of the second playlist is shorter than the first - this is
@@ -499,7 +498,7 @@ This is done via the use of the mlt_playlist_mix method. So, assuming you get
 a playlist as shown in the original diagram, to do the first mix, you could do
 something like:
 
-```
+~~~
 // Create a transition
 mlt_transition transition = mlt_factor_transition( "luma", NULL );
 
@@ -508,7 +507,7 @@ mlt_playlist_mix( playlist, 0, 50, transition );
 
 // Close the transition
 mlt_transition_close( transition );
-```
+~~~
 
 This would give you the first transition, subsequently, you would apply a similar
 technique to mix clips 1 and 2. Note that this would create a new clip on the
@@ -517,7 +516,7 @@ playlist, so the next mix would be between 3 and 4.
 As a general hint, to simplify the requirement to know the next clip index,
 you might find the following simpler:
 
-```
+~~~
 // Get the number of clips on the playlist
 int i = mlt_playlist_count( );
 
@@ -533,7 +532,7 @@ while ( i -- )
     // Close the transition
     mlt_transition_close( transition );
 }
-```
+~~~
 
 There are other techniques, like using the mlt_playlist_join between the
 current clip and the newly created one (you can determine if a new clip was
@@ -574,10 +573,10 @@ required.
 
 In the mix example above, you can simply call:
 
-```
+~~~
 // Optimise the playlist
 mlt_producer_optimise( mlt_playlist_producer( playlist ) );
-```
+~~~
 
 after the mix calls have be done. Note that this is automatically applied
 to deserialised MLT XML.
@@ -593,14 +592,13 @@ MLT's approach to multiple tracks is governed by two requirements:
 
 We can visualise a multitrack in the way that an NLE presents it:
 
-```
+<pre>
    +-----------------+                          +-----------------------+
 0: |a1               |                          |a2                     |
    +---------------+-+--------------------------+-+---------------------+
 1:                 |b1                            |
                    +------------------------------+
-
-```
+</pre>
 
 The overlapping areas of track 0 and 1 would (presumably) have some kind of
 transition - without a transition, the frames from b1 and b2 would be shown
@@ -626,7 +624,7 @@ behaviour.
 
 Thus, a multitrack is conceptually 'pulled' by a tractor as shown here:
 
-```
+<pre>
 +----------+
 |multitrack|
 | +------+ |    +-------+
@@ -641,7 +639,7 @@ Thus, a multitrack is conceptually 'pulled' by a tractor as shown here:
 | |track2|-|--->|       |
 | +------+ |    +-------+
 +----------+
-```
+</pre>
 
 With a combination of the two, we can now connect multitracks to consumers.
 The last non-test card will be retrieved and passed on.
@@ -661,7 +659,7 @@ produces a 'bail' (sorry - kidding - frame :-)).
 
 Conceptually, we can see it like this:
 
-```
+<pre>
 +----------+
 |multitrack|
 | +------+ |    +-------------+    +-------+
@@ -676,7 +674,7 @@ Conceptually, we can see it like this:
 | |track2|-|--->|             |--->|       |
 | +------+ |    +-------------+    +-------+
 +----------+
-```
+</pre>
 
 So, we need to create the tractor first, and from that we obtain the
 multitrack and field objects. We can populate these and finally
@@ -684,7 +682,7 @@ connect the tractor to a consumer.
 
 In essence, this is how it looks to the consumer:
 
-```
+<pre>
 +-----------------------------------------------+
 |tractor          +--------------------------+  |
 | +----------+    | +-+    +-+    +-+    +-+ |  |
@@ -703,7 +701,7 @@ In essence, this is how it looks to the consumer:
 | +----------+    | +-+    +-+    +-+    +-+ |  |
 |                 +--------------------------+  |
 +-----------------------------------------------+
-```
+</pre>
 
 An example will hopefully clarify this.
 
@@ -712,7 +710,7 @@ example. We have already extended the example to play multiple clips,
 and now we will place a text based watermark, reading 'Hello World' in
 the top left hand corner:
 
-```
+~~~
 mlt_producer create_tracks( int argc, char **argv )
 {
     // Create the tractor
@@ -765,21 +763,21 @@ mlt_producer create_tracks( int argc, char **argv )
     // Return the tractor
     return mlt_tractor_producer( tractor );
 }
-```
+~~~
 
 Now all we need do is to replace these lines in the main function:
 
-```
+~~~
 // Create a playlist
 mlt_producer world = create_playlist( argc, argv );
-```
+~~~
 
 with:
 
-```
+~~~
 // Create a watermarked playlist
 mlt_producer world = create_tracks( argc, argv );
-```
+~~~
 
 and we have a means to play multiple clips with a horribly obtrusive
 watermark - just what the world needed, right? ;-)
@@ -794,7 +792,7 @@ watermark filter inserted between the producer and the consumer.
 The mlt framework consists of an object-oriented class hierarchy which consists of the
 following public classes and abstractions:
 
-```
+<pre>
 mlt_properties
   mlt_frame
   mlt_service
@@ -807,7 +805,7 @@ mlt_properties
 mlt_deque
 mlt_pool
 mlt_factory
-```
+</pre>
 
 Each class defined above can be read as extending the classes above and to
 the left.
@@ -829,7 +827,7 @@ All properties are indexed by a unique string.
 
 The most basic use of properties is as follows:
 
-```
+~~~
 // 1. Create a new, empty properties set;
 mlt_properties properties = mlt_properties_new( );
 
@@ -856,7 +854,7 @@ mlt_properties_set_int( properties, "int2", 50 );
 
 // 9. Retrieve and print the double value of "int2";
 printf( "%s\n", mlt_properties_get( properties, "int2" ) );
-```
+~~~
 
 Steps 2 through 5 demonstrate that the "name" is unique - set operations on
 an existing "name" change the value. They also free up memory associated to
@@ -873,32 +871,34 @@ to strings.
 To show all the name/value pairs in a properties, it is possible to iterate
 through them:
 
-```
+~~~
 for ( i = 0; i < mlt_properties_count( properties ); i ++ )
     printf( "%s = %s\n", mlt_properties_get_name( properties, i ),
                          mlt_properties_get_value( properties, i ) );
-```
+~~~
 
 Note that properties are retrieved in the order in which they are set.
 
 Properties are also used to hold pointers to memory. This is done via the
 set_data call:
 
-```
+~~~
 uint8_t *image = malloc( size );
 mlt_properties_set_data( properties, "image", image, size, NULL, NULL );
-```
+~~~
 
 In this example, we specify that the pointer can be retrieved from
 properties by a subsequent request to get_data:
 
-```image = mlt_properties_get_data( properties, "image", &size );
-```
+~~~
+image = mlt_properties_get_data( properties, "image", &size );
+~~~
 
 or:
 
-```image = mlt_properties_get_data( properties, "image", NULL );
-```
+~~~
+image = mlt_properties_get_data( properties, "image", NULL );
+~~~
 
 if we don't wish to retrieve the size.
 
@@ -908,8 +908,9 @@ Two points here:
 unless you specify a destructor. In the case above, this can be done
 with:
 
-```mlt_properties_set_data( properties, "image", image, size, free, NULL );
-```
+~~~
+mlt_properties_set_data( properties, "image", image, size, free, NULL );
+~~~
 
 When the properties are closed, or the value of "image" is changed, the
 destructor is invoked.
@@ -924,13 +925,15 @@ Properties also provides some more advanced usage capabilities.
 
 It has the ability to inherit all serialisable values from another properties
 object:
-```mlt_properties_inherit( this, that );
-```
+~~~
+mlt_properties_inherit( this, that );
+~~~
 
 It has the ability to mirror properties set on this on another set of
 properties:
-```mlt_properties_mirror( this, that );
-```
+~~~
+mlt_properties_mirror( this, that );
+~~~
 
 After this call, all serialisable values set on this are passed on to that.
 
@@ -979,11 +982,11 @@ it back.
 Thus, from the programmers point of view, the API is the same as the
 traditional malloc/realloc/free calls:
 
-```
+~~~
 void *mlt_pool_alloc( int size );
 void *mlt_pool_realloc( void *ptr, int size );
 void mlt_pool_release( void *release );
-```
+~~~
 
 #### mlt_frame
 
@@ -1022,11 +1025,13 @@ push data and methods on to the stacks which will deal with the processing.
 This can be done with the mlt_frame_push_image and audio methods. In order for
 the filter to register interest in the frame, the stacks should hold:
 
+<pre>
   image stack:
   [ producer_get_image ] [ data1 ] [ data2 ] [ filter_get_image ]
 
   audio stack:
   [ producer_get_audio ] [ data ] [ filter_get_audio ]
+</pre>
 
 The filter_get methods are invoked automatically when the consumer invokes a
 get_image on the frame.
@@ -1111,7 +1116,7 @@ communicate specific requests. These are documented in modules.txt.
 The service base class extends properties and allows 0 to m inputs and 0 to
 n outputs and is represented as follows:
 
-```
+<pre>
     +-----------+
 - ->|           |- ->
 - ->|  Service  |- ->
@@ -1119,7 +1124,7 @@ n outputs and is represented as follows:
     +-----------+
     | properties|
     +-----------+
-```
+</pre>
 
 Descendents of service impose restrictions on how inputs and outputs can be
 connected and will provide a basic set of properties. Typically, the service
@@ -1139,7 +1144,7 @@ developers are encouraged to use those extensions when defining new services.
 
 A producer has 0 inputs and 1 output:
 
-```
+<pre>
 +-----------+
 |           |
 | Producer  |--->
@@ -1147,7 +1152,7 @@ A producer has 0 inputs and 1 output:
 +-----------+
 | service   |
 +-----------+
-```
+</pre>
 
 A producer provides an abstraction for file readers, pipes, streams or any
 other image or audio input.

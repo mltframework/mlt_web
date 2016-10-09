@@ -5,7 +5,7 @@ wrap_title: Metadata YAML Sample
 permalink: /docs/metadatarequirements/metadatayamlsample/
 ---
 
-```
+~~~
 schema_version: 0.1
 type: producer # consumer, filter, producer, or transition
 identifier: avformat
@@ -175,4 +175,4 @@ parameters:
     type: integer
     description: if the resource can seek
     readonly: yes
-```
+~~~

@@ -1,7 +1,7 @@
 ---
 layout: standard
-title: Scripting Language API
-wrap_title: ScriptBindings
+title: Documentation
+wrap_title: Scripting Language API
 permalink: /docs/scriptbindings/
 ---
 

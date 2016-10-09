@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Unit Tests
+title: Documentation
 wrap_title: Unit Tests
 permalink: /docs/unittests/
 ---
@@ -39,7 +39,7 @@ return a code &gt; 0 for the number of failed tests.
 
 Example output as of 2013-05-01:
 
-```
+~~~
 ddennedy-macbook:tests-build ddennedy$ make check
 cd test_properties/ && make -f Makefile check
 ./test_properties
@@ -62,4 +62,4 @@ PASS   : TestRepository::ThereAreConsumers()
 PASS   : TestRepository::cleanupTestCase()
 Totals: 4 passed, 0 failed, 0 skipped
 ********* Finished testing of TestRepository *********
-```
+~~~

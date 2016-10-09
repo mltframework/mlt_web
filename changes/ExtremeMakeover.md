@@ -48,8 +48,8 @@ important for you to understand.
     -   libmiracle was renamed libmelted
     -   humperdink was renamed mvcp-client
     -   albino was renamed mvcp-console
-    -   this project will host the !MltMelted (formerly !MltMiracle) and
-        !MltResponse C++ classes
+    -   this project will host the MltMelted (formerly MltMiracle) and
+        MltResponse C++ classes
     -   this project will host the mvcp MLT module (formerly known
         as valerie)
 -   miscellaneous

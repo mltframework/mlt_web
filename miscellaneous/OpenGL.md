@@ -1,7 +1,7 @@
 ---
 layout: standard
-title: OpenGL and GLSL in MLT
-wrap_title: OpenGL
+title: Documentation
+wrap_title: OpenGL and GLSL in MLT
 permalink: /docs/opengl/
 ---
 
@@ -197,8 +197,8 @@ frame's movit.convert.fence data property and call
 [glClientWaitSync()](http://www.opengl.org/sdk/docs/man3/xhtml/glClientWaitSync.xml)
 on it:
 
-```
+~~~
 GLsync sync = (GLsync) frame.get_data("movit.convert.fence");
 if (sync)
     glClientWaitSync(sync, 0, GL_TIMEOUT_IGNORED);
-```
+~~~

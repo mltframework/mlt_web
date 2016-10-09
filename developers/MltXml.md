@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: MLT XML Schema Documentation
+title: Documentation
 wrap_title: MLT XML
 permalink: /docs/mltxml/
 ---
@@ -55,13 +55,13 @@ efficiency for complex projects.
 
 The simplest MLT XML document is:
 
-```
+~~~
 <mlt>
   <producer id="producer0">
     <property name="resource">clip1.dv</property>
   </producer>
 </mlt>
-```
+~~~
 
 The XML wrapping is of course superfluous here - loading this document
 with MLT is identical to loading the clip directly.
@@ -70,14 +70,14 @@ Of course, you can specify additional properties. For example, consider an
 MPEG file with multiple soundtracks - you could define a MLT XML document to
 ensure that the second audio track is loaded:
 
-```
+~~~
 <mlt>
   <producer id="producer0">
     <property name="resource">clip1.mpeg</property>
     <property name="audio_track">1</property>
   </producer>
 </mlt>
-```
+~~~
 
 This relies on the mpeg being handled by the avformat producer, rather
 than the mcmpeg one. See [[Documentation#Plugins_Services](plugins)] for more details.
@@ -103,7 +103,7 @@ sequential, single track playout.
 As an example, the following defines two basic producers and a playlist with 3
 items:
 
-```
+~~~
 <mlt>
   <producer id="producer0">
     <property name="resource">clip1.dv</property>
@@ -117,7 +117,7 @@ items:
     <entry producer="producer0" in="3000" out="6999"/>
   </playlist>
 </mlt>
-```
+~~~
 
 Here we see how the playlist defines the in/out points of the basic producers.
 
@@ -144,7 +144,7 @@ point - MLT does not follow a traditional graph oriented model.
 Visualizing an MLT tractor and it's interaction with the consumer will
 assist here:
 
-```
+~~~
 +----------------------------------------------+
 |tractor                                       |
 | +----------+    +-+    +-+    +-+    +-+     |
@@ -167,7 +167,7 @@ assist here:
 +-----------+                                            |
 |APPLICATION|--------------------------------------------+
 +-----------+
-```
+~~~
 
 Internally, all frames from all tracks pass through all the filters and
 transitions - these are told which tracks to deal and which regions of the
@@ -187,7 +187,7 @@ application to allow the application to interpret key presses).
 To create a multitrack XML, we can use two playlists and introduce a
 tractor. For the purposes of demonstration, I'll add a filter here too:
 
-```
+~~~
 <mlt>
   <producer id="producer0">
     <property name="resource">clip1.dv</property>
@@ -215,23 +215,23 @@ tractor. For the purposes of demonstration, I'll add a filter here too:
     </filter>
   </tractor>
 </mlt>
-```
+~~~
 
 Here we see that blank frames are inserted into the first playlist and a
 blank is provided at the beginning of the second - this can be visualized in
 the traditional timeline widget as follows:
 
-```
+~~~
 +-------+   +-------------+
 |a      |   |a            |
 +-------+---+-------------+
         |b  |
         +---+
-```
+~~~
 
 Adding the filter on the top track, gives us:
 
-```
+~~~
 +-------+   +-------------+
 |a      |   |a            |
 +-------+---+-------------+
@@ -239,7 +239,7 @@ Adding the filter on the top track, gives us:
 --------+---+-------------+
         |b  |
         +---+
-```
+~~~
 
 Note that it's only applied to the visible parts of the top track.
 
@@ -248,7 +248,7 @@ track leads us to the final item in the Rules section above. As an example,
 let's assume we wish to watermark all output, then we could use the
 following:
 
-```
+~~~
 <mlt>
   <producer id="producer0">
     <property name="resource">clip1.dv</property>
@@ -285,7 +285,7 @@ following:
     </filter>
   </tractor>
 </mlt>
-```
+~~~
 
 Here we employ another tractor and we define a single track (being the
 tractor we previously defined) and apply a watermarking filter there.
@@ -306,7 +306,7 @@ lower than your video tracks will play rather than the audio from the video
 clip. Remember, nothing is affected like mixing or compositing until one
 applies a transition or appropriate filter.
 
-```
+~~~
 <mlt>
   <producer id="producer0">
     <property name="resource">clip1.dv</property>
@@ -340,7 +340,7 @@ applies a transition or appropriate filter.
     </transition>
   </tractor>
 </mlt>
-```
+~~~
 
 A "luma" transition is a video wipe processor that takes a greyscale bitmap
 for the wipe definition. When one does not specify a bitmap, luma performs
@@ -366,7 +366,7 @@ and playlists defined prior to their usage in a multitrack. The producer
 also accepts a hierarchical format with producers as children of tracks
 or playlist entries and with playlists as children of tracks:
 
-```
+~~~
 <mlt>
   <tractor>
     <multitrack>
@@ -382,7 +382,7 @@ or playlist entries and with playlists as children of tracks:
     </multitrack>
   </tractor>
 </mlt>
-```
+~~~
 
 Obviously, this example is meant to demonstrate hierarchy and not effective
 use of playlist or multitrack!
@@ -393,7 +393,7 @@ This affords an abbreviated syntax that is less verbose and perhaps less
 intimidating for a human to read and understand. One can simplify the
 above example as:
 
-```
+~~~
 <mlt>
   <multitrack>
     <playlist>
@@ -403,7 +403,7 @@ above example as:
     </playlist>
   </multitrack>
 </mlt>
-```
+~~~
 
 Yes, filters and transitions can be added to the above example after the
 closing multitrack tag (&lt;/multitrack&gt;) because it is still enclosed within
@@ -413,14 +413,14 @@ If you specify in and out on a producer and it has been enclosed within
 an &lt;entry&gt; or &lt;playlist&gt;, then the edit points apply to the playlist
 entry and not to the producer itself. This facilitates re-use of media:
 
-```
+~~~
 <playlist>
   <producer id="clip1" in="25" out="78">
     <property name="resource">clip1.dv</property>
   </producer>
   <entry producer="clip1" in="119" out="347"/>
 </playlist>
-```
+~~~
 
 In the above example, the producer attribute of the entry element is
 a reference to the preceding producer. All references must follow the
@@ -433,7 +433,7 @@ and specify them outside the context of the multitrack timeline.
 This form of authoring will be easier for many to visualize as a non-linear
 editor's timeline. Here is a more complex example:
 
-```
+~~~
 <mlt>
   <multitrack>
     <playlist>
@@ -457,7 +457,7 @@ editor's timeline. Here is a more complex example:
     <property name="reverse" value="1"/>
   </transition>
 </mlt>
-```
+~~~
 
 Did you notice something different in the last example? Properties can be
 expressed using XML attributes on the element as well. However, only
@@ -473,8 +473,9 @@ GDK pixbuf producer with librsvg can handle embedded SVG, and the Pango
 producer can handle embedded Pango markup. You can enclose the embedded XML
 using a CDATA section:
 
-```<property name="resource"><![CDATA[ <svg>...</svg> ]]></property>
-```
+~~~
+<property name="resource"><![CDATA[ <svg>...</svg> ]]></property>
+~~~
 
 Please ensure the opening CDATA tag immediately follows the opening
 property tag and that the section closing tag immediately precedes the
@@ -482,12 +483,12 @@ closing property tag.
 
 However, the producer can also accept inline embedded XML:
 
-```
+~~~
    <property name="resource">
      <svg>
      </svg>
    </property>
-```
+~~~
 
 Currently, there is no namespace handling so a conflict will occur only on
 any embedded XML that contains an element named "property" because
@@ -498,7 +499,7 @@ the producer collects embedded XML until it reaches a closing property tag.
 If one finds the above hierarchical, abbreviated format intuitive,
 start with a simple template and fill and extend as needed:
 
-```
+~~~
 <mlt>
   <multitrack>
     <playlist>
@@ -507,7 +508,7 @@ start with a simple template and fill and extend as needed:
   </multitrack>
   ...add filters and transitions...
 </mlt>
-```
+~~~
 
 By using a playlist for each track, it is easier to iteratively add new
 clips and blank regions as you develop the project. You will not have to
@@ -515,7 +516,7 @@ use &lt;track&gt; or later add &lt;playlist&gt; when necessary.
 
 A more advanced template that allows sequencing multitracks is:
 
-```
+~~~
 <playlist>
   <entry>
     <multitrack>
@@ -535,7 +536,7 @@ A more advanced template that allows sequencing multitracks is:
     ...add filters and transitions...
   </entry>
 </playlist>
-```
+~~~
 
 If you end up making a collection of templates for various situations, then
 consider using XML Entities to make the template more effective by moving

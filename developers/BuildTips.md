@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Build tips
+title: Documentation
 wrap_title: Build Tips
 permalink: /docs/buildtips/
 ---
@@ -25,9 +25,7 @@ below.
 I am using 10.6 (Snow Leopard). I installed all dependencies like
 ffmpeg, SDL, etc. using [MacPorts](http://www.macports.org/).
 Normally, I use MLT configuration:
-
-```--enable-gpl --prefix=/opt/local
-```
+`--enable-gpl --prefix=/opt/local`
 
 #### Windows
 

@@ -1,7 +1,7 @@
 ---
 layout: standard
-title: Property Presets
-wrap_title: Presets
+title: Documentation
+wrap_title: Property Presets
 permalink: /docs/presets/
 ---
 
