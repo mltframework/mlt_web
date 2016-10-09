@@ -515,6 +515,14 @@ a.anchor{
 	}
 }
 
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+    box-sizing: initial;
+}
+
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    line-height: initial;
+}
+
 table.withborders td {
     border-collapse: collapsed;
     border: 1px solid;
