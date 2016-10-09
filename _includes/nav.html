@@ -9,11 +9,11 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{{ "/"  | prepend: site.baseurl }}">
-      <img src="{{ "/assets/img/mlt-logo-128 copy.png?raw=true" | prepend: site.baseurl }}" width="64"></a>
+      <img src="{{ "/assets/img/mlt-logo-128.png" | prepend: site.baseurl }}" width="64"></a>
     </div>
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
-        <li {% if page.title == "Project News" %}class="active"{% endif %}><a href="{{"/blog/" | prepend: site.baseurl }}">NEWS</a></li>
+        <li {% if page.title == "News" %}class="active"{% endif %}><a href="{{"/blog/" | prepend: site.baseurl }}">NEWS</a></li>
         <li {% if page.title == "Download" %}class="active"{% endif %}><a href="https://github.com/mltframework/mlt/releases">DOWNLOAD</a></li>
         <li {% if page.title == "Features" %}class="active"{% endif %}><a href="{{"/features/" | prepend: site.baseurl }}">FEATURES</a></li>
         <li {% if page.title == "Documentation" %}class="active"{% endif %}><a href="{{"/documentation/" | prepend: site.baseurl }}">DOCUMENTATION</a></li>
