@@ -1,0 +1,38 @@
+---
+layout: blog
+title: News
+---
+
+<div class="container mtb">
+    <div class="row">
+
+        <!-- BLOG POSTS LIST -->
+        <div class="col-lg-8">
+
+            {% for post in paginator.posts %}
+                <!-- Blog Post -->
+                <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ post.title }}</h3></a>
+                <p><csmall>{{ post.date | date: "%b %-d, %Y" }}</csmall></p>
+                {{ post.excerpt }}
+                <div class="spacing"></div>
+            {% endfor %}
+
+            <!-- Pagination links -->
+            <div class="pagination">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
+                &nbsp;
+              {% endif %}
+              <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+              {% if paginator.next_page %}
+                &nbsp;
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
+              {% endif %}
+            </div>
+
+        </div><!--/col-lg-8 -->
+
+        {% include sidebar.html %}
+
+    </div><!--/row -->
+</div><!--/container -->

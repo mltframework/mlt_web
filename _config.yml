@@ -6,7 +6,12 @@ description: "MLT is an open source multimedia framework, designed and
               developed for television broadcasting."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/mlt_web"
-url: "http://mltframework.org"
+url: "https://mltframework.org"
+timezone: "America/Los_Angeles"
+
+gems: ["jekyll-paginate"]
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 # Build settings
 markdown: kramdown
@@ -28,16 +33,12 @@ colors:  #in hex code if not noted else
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
+  - title: google-plus
+    url: https://plus.google.com/+MltframeworkOrg
   - title: facebook
-    url:
+    url: https://www.facebook.com/MLTframework/
   - title: twitter
-    url:
-  - title: instagram
-    url:
-  - title: tumblr
-    url:
+    url: https://twitter.com/MLTframework
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:

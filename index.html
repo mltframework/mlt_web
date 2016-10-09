@@ -7,53 +7,21 @@ permalink: /
 <div class="container mtb">
     <div class="row">
 
-        <! -- BLOG POSTS LIST -->
+        <!-- BLOG POSTS LIST -->
         <div class="col-lg-8">
 
-            {% for post in site.categories['blog'] %}
-                <! -- Blog Post -->
+            {% for post in site.categories['blog'] limit:5 %}
+                <!-- Blog Post -->
                 <a href="{{ post.url | prepend: site.baseurl }}"></a>
                 <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ post.title }}</h3></a>
                 <p><csmall>{{ post.date | date: "%b %-d, %Y" }}</csmall></p>
                 {{ post.excerpt }}
                 <!--p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p-->
-                <div class="hline"></div>
-
                 <div class="spacing"></div>
             {% endfor %}
 
-        </div><! --/col-lg-8 -->
-    </div><! --/row -->
-</div><! --/container -->
-
+        </div><!--/col-lg-8 -->
+    </div><!--/row -->
+</div><!--/container -->
 
 {% include portfolio.html title="FEATURED MLT APPS" limit=10 %}
-
-<!--
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About Our Agency.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %}
-        </div>
-
-    </div>
-</div>
--->
