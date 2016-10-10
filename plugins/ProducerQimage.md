@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: qimage"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: GPLv2
 ## Notes
 
 QImage has builtin scaling. It will rescale the originally rendered title to whatever the consumer requests. Therefore, it will lose its aspect ratio if so requested, and it is up to the consumer to request a proper width and height that maintains the image aspect.
+
 ## Parameters
 
 ### argument

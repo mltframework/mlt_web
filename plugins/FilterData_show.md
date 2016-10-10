@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: data_show"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -41,6 +41,7 @@ Two special keywords exist
 e.g.
 melt file.dv meta.attr.timecode=1 meta.attr.timecode.markup=#timecode# -attach data_feed:attr_check -attach data_show:custom_file.properties dynamic=1
 (where the file &quot;custom_file&quot; contains a filter definition by the name of &quot;timecode&quot;)
+
 
 ## Parameters
 

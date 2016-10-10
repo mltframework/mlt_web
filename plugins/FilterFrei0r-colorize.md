@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: frei0r.colorize"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

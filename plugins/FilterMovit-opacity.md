@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: movit.opacity"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: GPLv2
 ## Notes
 
 When used in some transitions this will cause this video to be mixed with the other video. If the video this is applied to already has an alpha channel, then this preserves that by multiplying the opacity level with the alpha channel. This filter is especially handy when used in conjunction with movit.overlay. You can also use this to fade a clip from and to black.
+
 ## Parameters
 
 ### opacity

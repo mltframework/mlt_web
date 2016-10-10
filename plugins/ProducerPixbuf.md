@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: pixbuf"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Notes
 
 Pixbuf has builtin scaling. It will rescale the originally rendered title to whatever the consumer requests. Therefore, it will lose its aspect ratio if so requested, and it is up to the consumer to request a proper width and height that maintains the image aspect. Environment variable MLT_PIXBUF_PRODUCER_CACHE could be used to to override /increase the number of cached converted images for simultaneous use.
+
 ## Parameters
 
 ### argument

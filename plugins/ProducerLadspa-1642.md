@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: ladspa.1642"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: GPLv2
 ## Notes
 
 Automatically adapts to the number of channels and sampling rate of the consumer.
+
 ## Parameters
 
 ### 0

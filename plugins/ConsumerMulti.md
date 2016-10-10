@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Consumer: multi"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -34,6 +34,7 @@ and, again, to specify the profile, use &quot;mlt_profile.&quot;
 You can put these into a YAML Tiny file and supply that to this consumer.
 This is also the recommended way for applications to interact with this
 consumer, which is how melt and the XML producer support multiple consumers.
+
 
 ## Parameters
 

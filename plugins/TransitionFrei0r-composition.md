@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Transition: frei0r.composition"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

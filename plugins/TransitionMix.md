@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Transition: mix"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Bugs
 
 * Samples from the longer of the two frames are discarded.
+
 
 ## Parameters
 

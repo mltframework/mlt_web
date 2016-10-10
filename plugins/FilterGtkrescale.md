@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: gtkrescale"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Notes
 
 If a property &quot;consumer_aspect_ratio&quot; exists on the frame, then rescaler normalises the producer&#39;s aspect ratio and maximises the size of the frame, but may not produce the consumer&#39;s requested dimension. Therefore, this option works best in conjunction with the resize filter. This behavior can be disabled by another service by either removing the property, setting it to zero, or setting frame property &quot;distort&quot; to 1.
+
 ## Parameters
 
 ### argument

@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: audiolevel"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ license: GPLv2
 ## Notes
 
 This filter provides the amplitude level as a percentage value in floating point. This does not do any &quot;slowing&quot; of the data by averaging out peaks and troughs of short duration like a VU meter. Applications can also get this data on the frame as meta.media.audio_level.&lt;N&gt; where &lt;N&gt; is the channel number starting with 0.
+
 ## Parameters
 
 ### iec_scale

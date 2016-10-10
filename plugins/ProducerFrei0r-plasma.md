@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: frei0r.plasma"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

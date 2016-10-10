@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: rotoscoping"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -22,6 +22,7 @@ URL: [none](none)
 ## Bugs
 
 * in some cases top most row in polygon is assigned to outside
+
 
 ## Parameters
 

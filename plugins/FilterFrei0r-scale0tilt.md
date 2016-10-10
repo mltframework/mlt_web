@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: frei0r.scale0tilt"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

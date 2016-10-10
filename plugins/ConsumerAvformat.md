@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Consumer: avformat"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)
 ## Notes
 
 The avformat consumer uses the FFmpeg/libav libraries to encode to a file or network stream. You can get a lot of information about how to encode with FFmpeg all over the web including FFmpeg/libav&#39;s web site. With melt, you simply need to add &quot;-consumer avformat:output.file&quot; to the command line followed by the encoding parameters by translating ffmpeg&#39;s &#39;-option value&#39; syntax to melt&#39;s &#39;option=value&#39; syntax. Not all ffmpeg options are supported. Some are very specific to avconv/ffmpeg, the command line utility, and not an &quot;AVOption&quot; used in the libraries. In some cases, there are ffmpeg options that are not AVOptions but which closely resemble an existing MLT property. In that case, MLT supports the ffmpeg option name. For example, ffmpeg&#39;s &quot;-ac&quot; is equivalent to the MLT &quot;channels&quot; property. Therefore, the avformat consumer also supports the &quot;ac&quot; property. Complete details are below. Please note that the exact options depend on the version of libavformat and libavcodec on your system. The following is based on FFmpeg n2.6.3.
+
 ## Parameters
 
 ### target

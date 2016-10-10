@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: vid.stab.deshake"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -22,6 +22,7 @@ URL: [http://public.hronopik.de/vid.stab/](http://public.hronopik.de/vid.stab/)
 ## Notes
 
 Deshakes a video clip by extracting relative transformations of subsequent frames and transforms the high-frequency away. This is a single pass version of the vidstab filter.
+
 ## Parameters
 
 ### shakiness

@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: crop"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Notes
 
 This filter is meant to be included as a normalizing filter attached automatically by the loader so that cropping occurs early in the processing stack and can request the full resolution of the source image. Then, a second instance of the filter may be applied to set the parameters of the crop operation.
+
 ## Parameters
 
 ### argument

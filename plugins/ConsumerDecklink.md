@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Consumer: decklink"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,10 +21,12 @@ license: LGPL
 ## Notes
 
 Please ensure that you use a MLT profile that is compatible with a broadcast standard which the card you are using supports.
+
 ## Bugs
 
 * Only internal keying is supported at this time.
 * Only 8-bit Y'CbCr or RGBA (key) is supported at this time.
+
 
 ## Parameters
 

@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Transition: luma"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ license: LGPLv2.1
 ## Bugs
 
 * Assumes lower field first output.
+
 
 ## Parameters
 

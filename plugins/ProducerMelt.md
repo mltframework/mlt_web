@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: melt"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

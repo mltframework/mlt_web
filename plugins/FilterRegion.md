@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: region"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Bugs
 
 * Circle is unpredictable in the absence of the librsvg pixbuf loader.
+
 
 ## Parameters
 

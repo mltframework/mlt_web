@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: panner"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Notes
 
 Only handles up to 6 channels. Needs more work balance for surround and other channel layouts.
+
 ## Parameters
 
 ### start

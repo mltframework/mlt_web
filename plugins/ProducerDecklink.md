@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: decklink"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,12 +21,14 @@ license: LGPL
 ## Notes
 
 Please ensure that you use a MLT profile that is compatible with a broadcast standard which the card you are using supports. If you must use an interlaced profile but wish to deinterlace or scale the input, then you must use the consumer producer, e.g.: melt -profile square_pal consumer:decklink: profile=dv_pal
+
 ## Bugs
 
 * It is incompatible with the yadif deinterlacer.
 * Transport controls such as seeking has no affect.
 * External deck control is not implemented.
 * Only 8-bit Y'CbCr is supported at this time.
+
 
 ## Parameters
 

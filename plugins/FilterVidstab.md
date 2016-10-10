@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: vidstab"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ URL: [http://public.hronopik.de/vid.stab/](http://public.hronopik.de/vid.stab/)
 
 This filter requires two passes. The first pass performs analysis and stores the result in a file. Upon successful completion of the analysis, the &quot;results&quot; property is updated with the name of the file storing the results. The second pass applies the results to the image.
 To use with melt, use &#39;melt ... -consumer xml:output.mlt all=1 real_time=-1&#39; for the first pass. Parallel processing (real_time &lt; -1 or &gt; 1) is not supported for the first pass. For the second pass, use output.mlt as the input.
+
 
 ## Parameters
 

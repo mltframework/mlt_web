@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: pango"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ license: LGPLv2.1
 Supplying a filename with extension &quot;.txt&quot; causes the loader producer to load with pango. If the filename begins with &quot;+&quot; the pango producer interprets the filename as pango text. This is a shortcut to embed titles in melt commands. For MLT XML, it is recommended that you embed the title text in the property value.
 Pango has builtin scaling. It will rescale the originally rendered title to whatever the consumer requests. Therefore, it will lose its aspect ratio if so requested, and it is up to the consumer to request a proper width and height that maintains the image aspect.
 Environment variable MLT_PANGO_PRODUCER_CACHE could be used to override and increase the size of cached converted images of simultaneous use.
+
 
 ## Parameters
 

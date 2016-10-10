@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: resample"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ license: LGPLv2.1
 ## Bugs
 
 * Assumes 2 channels during libsamplerate initialisation. Untested with >2 channels.
+
 
 ## Parameters
 

@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: ladspa.1657"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -22,9 +22,11 @@ URL: [http://www.ladspa.org/](http://www.ladspa.org/)
 ## Notes
 
 Automatically adapts to the number of channels and sampling rate of the consumer.
+
 ## Bugs
 
 * Some effects have a temporal side-effect that may not work well.
+
 
 ## Parameters
 

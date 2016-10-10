@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: dynamic_loudness"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Notes
 
 This filter adjusts the level of the audio based on the loudness of the input. It performs loudness measurement over a specified sliding window of time. Then, it adjusts the gain on the output based on the difference between the measured loudness and the target loudness in order to achieve the desired loudness.
+
 
 ## Parameters
 

@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Transition: frei0r.uvmap"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

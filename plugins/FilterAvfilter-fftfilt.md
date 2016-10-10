@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: avfilter.fftfilt"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

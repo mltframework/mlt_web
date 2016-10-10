@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Consumer: cbrts"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -42,6 +42,7 @@ libavformat&#39;s corresponding sections to be filtered out and replaced with
 yours. You should always use PID 16 for NIT, 17 for SDT, and of course,
 0 for PAT; PMT may be anything, but libavformat uses 4095 (0xfff).
 The time property indicates the frequency to insert the section - every N milliseconds.
+
 
 ## Parameters
 

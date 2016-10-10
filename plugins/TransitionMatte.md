@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Transition: matte"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -46,3 +46,4 @@ Putting it all together:
 melt sg_gm_2013_clip_title.matte_full.mp4 -track noise: -track \
   sg_gm_2013_clip_title.fill.mp4 -transition matte a_track=2 \
   b_track=0 -transition composite a_track=1 b_track=2
+

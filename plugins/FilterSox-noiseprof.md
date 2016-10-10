@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: noiseprof"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 * Some effects are stereo only, but MLT processes each channel separately.
 * Some effects have a temporal side-effect that do not work well.
+
 
 ## Parameters
 

@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: loudness"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Notes
 
 This filter requires two passes. The first pass performs analysis and stores the result in the &quot;results&quot; property. The second pass applies the results to the audio in order to achieve the desired loudness over the range of the filter.
+
 
 ## Parameters
 

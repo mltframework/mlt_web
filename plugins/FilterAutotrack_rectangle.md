@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: autotrack_rectangle"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information

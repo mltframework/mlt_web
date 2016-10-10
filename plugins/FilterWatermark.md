@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: watermark"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -24,6 +24,7 @@ The watermark filter combines a frame producer and a composite transition to ove
 Note: If the filename begins with &quot;+&quot; the pango producer interprets the filename as pango text.
 Text Example: melt colour:red -filter watermark:&quot;+First Line~Second Line.txt&quot; composite.progressive=1 producer.align=centre composite.valign=c composite.halign=c
 Image Example: melt clip.dv -filter watermark:logo.png
+
 
 ## Parameters
 

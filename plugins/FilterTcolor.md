@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: tcolor"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -22,9 +22,11 @@ URL: [none](none)
 ## Notes
 
 Implementation or additional usage notes go here.
+
 ## Bugs
 
 * need to do some speed improvement.
+
 
 ## Parameters
 

@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: avformat"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,12 +23,14 @@ URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)
 ## Notes
 
 This service uses mlt_cache to prevent many simultaneous, open instances of libavformat and libavcodec contexts, file handles, and threads in memory at the same time. Not only does it save on RAM usage, but kernels enforce maximum open file handles and threads per process. Without caching, large projects could easily run into these limits. The default producer cache size is in mlt_cache at size 4. When using mlt_multitrack, the size is adjusted automatically to be the number of tracks plus one if at least 4. This makes it rather dynamic and automatic; however, there are some service graph configurations or authoring scenarios that do not exclusively use the multitrack for multi-layer operations and may need a larger avformat producer cache size. One can set the environment variable MLT_AVFORMAT_PRODUCER_CACHE to a number to override and increase the size of this cache (or to lower it for limited use cases and seeking to minimize RAM).
+
 ## Bugs
 
 * Audio sync discrepancy with some content.
 * Not all libavformat supported formats are seekable.
 * Seeking is not always accurate. Sometimes it doesn't seek to I-frames so you may get junk for a few frames.
 * More than 2 channels of audio more than 16 bits is not supported.
+
 
 ## Parameters
 

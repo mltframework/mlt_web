@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Producer: qtext"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -22,6 +22,7 @@ license: LGPLv2.1
 
 qtext accepts a file name with at &quot;.txt&quot; extension. If the filename begins with &quot;+&quot; the qtext producer interprets the filename as text. This is a shortcut to embed titles in melt commands. For MLT XML, it is recommended that you embed the title text in the &quot;text&quot; property value.
 qtext has builtin scaling. It will rescale the originally rendered title to whatever the consumer requests. Therefore, it will lose its aspect ratio if so requested, and it is up to the consumer to request a proper width and height that maintains the image aspect.
+
 
 ## Parameters
 

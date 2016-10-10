@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: videostab"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -23,6 +23,7 @@ URL: [http://vstab.sourceforge.net/](http://vstab.sourceforge.net/)
 ## Notes
 
 This filter is deprecated and will eventually be removed; use the vidstab filter instead. This filter requires two passes. The first pass performs analysis and stores the result in the vectors property. The second pass applies the vectors to the image. To use with melt, use &#39;melt ... -consumer xml:output.mlt all=1&#39; for the first pass. For the second pass, use output.mlt as the input.
+
 ## Parameters
 
 ### shutterangle

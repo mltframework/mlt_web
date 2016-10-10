@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Filter: dynamictext"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,6 +21,7 @@ license: LGPLv2.1
 ## Notes
 
 The dynamic text filter will search for keywords in the text to be overlayed and will replace those keywords on a frame-by-frame basis.
+
 
 ## Parameters
 

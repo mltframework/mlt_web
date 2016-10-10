@@ -4,7 +4,7 @@ title: Documentation
 wrap_title: "Consumer: xml"
 category: plugin
 ---
-{::options auto_ids="true" /}
+* TOC
 {:toc}
 
 ## Plugin Information
@@ -21,10 +21,12 @@ license: LGPLv2.1
 ## Notes
 
 If you set a data property beginning with (and longer than) &quot;xml_retain&quot; on the service connected to this consumer where the data is a mlt_service pointer, then the pointed at service will also be serialized before the connected service. This can be useful, for example, to save a playlist as a media bin along with a multitrack. You can serialize more than one of these additional services by setting more than property, each with a unique key beginning with &quot;xml_retain&quot;.
+
 ## Bugs
 
 * Untested arbitrary nesting of multitracks and playlists.
 * {1=>"Property \"id\" is generated as service type followed by number if no property named \"id\" exists, but it fails to guarantee uniqueness."}
+
 
 ## Parameters
 
