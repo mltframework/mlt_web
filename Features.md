@@ -56,7 +56,7 @@ permalink: /features/
     of the system
 -   YAML-based metadata and schema for documentation of modules, their
     services, and parameters
--   Live IP [streaming]({{"/FAQ/" | prepend: site.baseurl }}) output via FFmpeg
+-   Live IP [streaming]({{"/faq/" | prepend: site.baseurl }}) output via FFmpeg
 -   HD SDI with embedded audio and HDMI input and output is available
     for Linux using
     [Blackmagick Design](http://www.blackmagic-design.com/products/) cards and the MLT open source "decklink" module. Also,
@@ -81,7 +81,3 @@ permalink: /features/
 -   A playout server with a well defined protocol
 -   Sample applications that demonstrate the client/server API
 -   A command line video editor and media player
--   See the [Shotcut](http://www.shotcutapp.com/),
-    [Kdenlive](http://www.kdenlive.org/), and
-    [Flowblade](http://code.google.com/p/flowblade/) non-linear
-    video editors for a good demonstration of the capabilities of MLT!
