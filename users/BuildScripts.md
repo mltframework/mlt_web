@@ -103,8 +103,8 @@ server start. Next, run start-melted-client.
 
 #### Configure the runtime environment
 * Edit etc/start-melted.conf
-to set the MLT [Profiles]({{"/docs/profiles" | prepend: site.baseurl }}) to use.
-* Edit etc/melted.conf to include any [MVCP]({{"/docs/mvcp" | prepend: site.baseurl }}) commands to
+to set the MLT [Profiles]({{"/docs/profiles/" | prepend: site.baseurl }}) to use.
+* Edit etc/melted.conf to include any [MVCP]({{"/docs/mvcp/" | prepend: site.baseurl }}) commands to
 initialize the units within melted or set the root directory of assets.
 * Edit etc/rugen.conf to set the server's address if you are running
 the melted client on a separate machine.

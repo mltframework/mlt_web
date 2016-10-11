@@ -349,7 +349,7 @@ between the gain scaling factors between the start and end properties -
 in this example, from 0.0 (none of track B) to 1.0 (all of track B).
 Because the bottom track starts out with a gap specified using the &lt;blank&gt;
 element, the upper track appears during the blank segment. See the demos and
-[[Documentation#Plugins_Services][plugins]] to get an idea of the capabilities of
+[plugins]({{ "/plugins/" | prepend: site.baseurl }}) to get an idea of the capabilities of
 the included transitions.
 
 ### Flexibility

@@ -385,7 +385,7 @@ A more expressive serialization can be obtained with the xml consumer - this
 will provide an xml document which can be used freely in melt and
 other MLT applications.
 
-See [Documentation > XML]({{ "/docs/mltxml/" | prepend: site.baseurl }}) for more information.
+See [MLT XML]({{ "/docs/mltxml/" | prepend: site.baseurl }}) for more information.
 
 ### Missing Features
 

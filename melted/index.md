@@ -33,4 +33,4 @@ itself, and has thus been abandoned.
 * [MVCP]({{ "/docs/mvcp/" | prepend: site.baseurl }})
 * [libmvcp]({{ "/docs/libmvcp/" | prepend: site.baseurl }})
 * A [test procedure]({{ "/docs/meltedtesting/" | prepend: site.baseurl }}) that can also serve as a tutorial
-* Other [resources and projects](resources) on the Internet that take advantage of Melted
+* Other [resources and projects]({{ "/melted/resources/" | prepend: site.baseurl }}) on the Internet that take advantage of Melted
