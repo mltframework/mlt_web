@@ -47,6 +47,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * w16
 * w32
 * w64
@@ -72,6 +73,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * rect
 * bartlett
 * hann

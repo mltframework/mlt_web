@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * fcc
 * bt601
@@ -46,6 +47,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * fcc
 * bt601

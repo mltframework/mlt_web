@@ -38,6 +38,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * all
 * interlaced
 
@@ -51,6 +52,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * af
 * a
 * t
@@ -80,6 +82,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * s8x6
 * s16x6
 * s32x6
@@ -98,6 +101,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * n16
 * n32
 * n64
@@ -114,6 +118,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * fast
 * slow
 
@@ -127,6 +132,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * a
 * s
 
@@ -140,6 +146,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * original
 * new

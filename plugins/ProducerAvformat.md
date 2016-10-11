@@ -193,6 +193,7 @@ type: integer
 readonly: no  
 required: no  
 values:  
+
 * 240
 * 601
 * 709
@@ -277,6 +278,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * direct
 
 ### probesize
@@ -311,6 +313,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * ignidx
 * genpts
 * nofillin
@@ -375,6 +378,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * ts
 
 ### max_delay
@@ -410,6 +414,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * crccheck
 * bitstream
 * buffer
@@ -429,6 +434,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * crccheck
 * bitstream
 * buffer
@@ -478,6 +484,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * strict
 * normal
 * unofficial
@@ -493,6 +500,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * strict
 * normal
 * unofficial
@@ -962,6 +970,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -1027,6 +1036,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -1059,6 +1069,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -1124,6 +1135,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -1156,6 +1168,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -1221,6 +1234,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -1253,6 +1267,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -1318,6 +1333,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -1405,6 +1421,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * dts
 * pts
@@ -2014,6 +2031,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * filter_src
 
 ### reorder_queue_size
@@ -2057,6 +2075,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * udp
 * tcp
 * udp_multicast
@@ -2072,6 +2091,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * filter_src
 * listen
 * prefer_tcp
@@ -2086,6 +2106,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * video
 * audio
 * data
@@ -2210,6 +2231,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * filter_src
 * custom_io
 * rtcp_to_source
@@ -2224,6 +2246,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * video
 * audio
 * data
@@ -2442,6 +2465,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -2507,6 +2531,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -2539,6 +2564,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -2604,6 +2630,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -2636,6 +2663,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -2701,6 +2729,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -2733,6 +2762,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -2798,6 +2828,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -2830,6 +2861,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -2895,6 +2927,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -2927,6 +2960,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -2992,6 +3026,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3024,6 +3059,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3089,6 +3125,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3121,6 +3158,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3186,6 +3224,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3218,6 +3257,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3283,6 +3323,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3315,6 +3356,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3380,6 +3422,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3412,6 +3455,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3477,6 +3521,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3509,6 +3554,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3574,6 +3620,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3606,6 +3653,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3671,6 +3719,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3703,6 +3752,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3768,6 +3818,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3800,6 +3851,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * glob_sequence
 * glob
 * sequence
@@ -3865,6 +3917,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sec
 * ns
@@ -3901,6 +3954,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * PAL
 * NTSC
 
@@ -3934,6 +3988,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * dv
 * hdv
@@ -4169,6 +4224,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * all
 * raw
 * compressed
@@ -4183,6 +4239,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * all
 
 ### timestamps
@@ -4195,6 +4252,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * default
 * abs
 * mono2abs
@@ -4209,6 +4267,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * default
 * abs
 * mono2abs
@@ -4308,6 +4367,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * centered
 
 ### show_region
@@ -4372,6 +4432,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * unaligned
 * gray
 * truncated
@@ -4411,6 +4472,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * autodetect
 * old_msmpeg4
 * xvid_ilace
@@ -4438,6 +4500,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * very
 * strict
 * normal
@@ -4454,6 +4517,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * crccheck
 * bitstream
 * buffer
@@ -4473,6 +4537,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * int
 * simple
@@ -4501,6 +4566,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * guess_mvs
 * deblock
 * favor_inter
@@ -4515,6 +4581,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * pict
 * bitstream
 * mb_type
@@ -4544,6 +4611,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * pf
 * bf
 * bb
@@ -4556,6 +4624,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * ignorecrop
 * chunks
 * showall
@@ -4573,6 +4642,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### skip_top
@@ -4616,6 +4686,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * default
 * noref
@@ -4634,6 +4705,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * default
 * noref
@@ -4652,6 +4724,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * default
 * noref
@@ -4699,6 +4772,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * unspecified
 * bt470m
@@ -4719,6 +4793,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * unspecified
 * gamma22
@@ -4746,6 +4821,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * rgb
 * bt709
 * unspecified
@@ -4767,6 +4843,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * unspecified
 * mpeg
 * jpeg
@@ -4781,6 +4858,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * unspecified
 * left
 * center
@@ -4799,6 +4877,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * slice
 * frame
 
@@ -4830,6 +4909,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * do_nothing
 * auto
 * pre_decoder
@@ -4844,6 +4924,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ass
 * ass_with_timings
 
@@ -4873,6 +4954,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * progressive
 * tt
 * bb
@@ -4928,6 +5010,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * gamma
 * gamma22
@@ -5051,6 +5134,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * copy
 * drop
 * decode_copy
@@ -5076,6 +5160,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * main
 * sub
@@ -5154,6 +5239,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * all
 
 ### core_only

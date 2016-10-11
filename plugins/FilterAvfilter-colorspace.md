@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt470m
 * bt470bg
 * bt601-6-525
@@ -47,6 +48,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * fcc
 * bt470bg
@@ -64,6 +66,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * mpeg
 * jpeg
 
@@ -77,6 +80,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * bt470m
 * bt470bg
@@ -94,6 +98,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * gamma22
 * gamma28
@@ -112,6 +117,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * yuv420p
 * yuv420p10
 * yuv420p12

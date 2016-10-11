@@ -134,6 +134,7 @@ type: integer
 readonly: no  
 required: no  
 values:  
+
 * 240
 * 601
 * 709
@@ -172,6 +173,7 @@ readonly: no
 required: no  
 default: yadif  
 values:  
+
 * greedy
 * linearblend
 * onefield
@@ -187,6 +189,7 @@ type: string
 readonly: no  
 required: no  
 values:  
+
 * nearest
 * bilinear
 * bicubic
@@ -649,6 +652,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * direct
 
 ### packetsize
@@ -670,6 +674,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * flush_packets
 * latm
 * bitexact
@@ -684,6 +689,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * ts
 
 ### max_delay
@@ -795,6 +801,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * strict
 * normal
 * unofficial
@@ -810,6 +817,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * strict
 * normal
 * unofficial
@@ -825,6 +833,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * disabled
 * make_non_negative
@@ -1079,6 +1088,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -1117,6 +1127,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -1291,6 +1302,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * aac_seq_header_detect
 
 ### hash
@@ -1546,6 +1558,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * single_file
 * delete_segments
 * round_durations
@@ -1580,6 +1593,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * event
 * vod
 
@@ -1649,6 +1663,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -1687,6 +1702,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -1852,6 +1868,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -1890,6 +1907,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -2235,6 +2253,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -2273,6 +2292,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -2468,6 +2488,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -2506,6 +2527,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -2812,6 +2834,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * digital_tv
 * digital_radio
 * teletext
@@ -2883,6 +2906,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * resend_headers
 * latm
 * pat_pmt_at_frames
@@ -2986,6 +3010,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt601
 * bt1358
 * smpte347m
@@ -3025,6 +3050,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt601
 * bt1358
 * smpte347m
@@ -3062,6 +3088,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt601
 * bt1358
 * smpte347m
@@ -3080,6 +3107,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * default
 * none
 * timestamped
@@ -3244,6 +3272,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -3282,6 +3311,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -3447,6 +3477,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -3506,6 +3537,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -3522,6 +3554,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * udp
 * tcp
 
@@ -3616,6 +3649,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * cache
 * live
 
@@ -3640,6 +3674,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * flat
 * csv
 * ext
@@ -3880,6 +3915,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * cache
 * live
 
@@ -3904,6 +3940,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * flat
 * csv
 * ext
@@ -4200,6 +4237,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * be
 
 ### dtshd_rate
@@ -4235,6 +4273,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -4273,6 +4312,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -4438,6 +4478,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rtphint
 * empty_moov
 * frag_keyframe
@@ -4476,6 +4517,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * latm
 * rfc2190
 * skip_rtcp
@@ -4650,6 +4692,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * false
 * true
 * only
@@ -4664,6 +4707,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * always
 * never
@@ -5083,6 +5127,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * mv4
 * qpel
 * loop
@@ -5109,6 +5154,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * full
 * epzs
@@ -5288,6 +5334,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * very
 * strict
 * normal
@@ -5441,6 +5488,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * fastint
 * int
@@ -5508,6 +5556,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * int
 * simple
@@ -5536,6 +5585,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * left
 * plane
 * median
@@ -5560,6 +5610,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * rc
 
 ### cmp
@@ -5572,6 +5623,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -5598,6 +5650,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -5624,6 +5677,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -5650,6 +5704,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -5706,6 +5761,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -5788,6 +5844,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * vlc
 * ac
 * raw
@@ -5814,6 +5871,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * simple
 * bits
 * rd
@@ -5878,6 +5936,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * fast
 * noout
 * local_header
@@ -5900,6 +5959,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### me_threshold
@@ -5952,6 +6012,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * unknown
 * aac_main
 * aac_low
@@ -5981,6 +6042,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * unknown
 
 ### skip_threshold
@@ -6023,6 +6085,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -6261,6 +6324,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * unspecified
 * bt470m
@@ -6281,6 +6345,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bt709
 * unspecified
 * gamma22
@@ -6308,6 +6373,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * rgb
 * bt709
 * unspecified
@@ -6329,6 +6395,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * unspecified
 * mpeg
 * jpeg
@@ -6343,6 +6410,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * unspecified
 * left
 * center
@@ -6372,6 +6440,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * slice
 * frame
 
@@ -6385,6 +6454,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ma
 * ef
 * vi
@@ -6412,6 +6482,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * progressive
 * tt
 * bb
@@ -6437,6 +6508,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -6607,6 +6679,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -6620,6 +6693,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -6708,6 +6782,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -6795,6 +6870,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * left
 * plane
 * median
@@ -6833,6 +6909,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sub
 * up
@@ -6946,6 +7023,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * rice
 * range_def
 * range_tab
@@ -6982,6 +7060,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * left
 * plane
 * median
@@ -7008,6 +7087,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -7178,6 +7258,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -7191,6 +7272,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -7279,6 +7361,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -7366,6 +7449,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * offsetting
 * transdiff
 
@@ -7379,6 +7463,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -7549,6 +7634,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -7562,6 +7648,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -7650,6 +7737,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -7757,6 +7845,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -7927,6 +8016,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -7940,6 +8030,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -8028,6 +8119,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -8151,6 +8243,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -8321,6 +8414,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -8334,6 +8428,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -8422,6 +8517,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -8518,6 +8614,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * left
 * plane
 * median
@@ -8532,6 +8629,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * j2k
 * jp2
 
@@ -8569,6 +8667,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * dwt97int
 * dwt53
 
@@ -8582,6 +8681,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * left
 * plane
 * median
@@ -8596,6 +8696,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * left
 * plane
 * median
@@ -8610,6 +8711,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -8780,6 +8882,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -8793,6 +8896,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -8881,6 +8985,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -8968,6 +9073,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * left
 * plane
 * median
@@ -9030,6 +9136,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -9200,6 +9307,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -9213,6 +9321,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -9301,6 +9410,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -9454,6 +9564,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * never
 * always
@@ -9468,6 +9579,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -9638,6 +9750,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -9651,6 +9764,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -9739,6 +9853,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -9844,6 +9959,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -10014,6 +10130,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -10027,6 +10144,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -10115,6 +10233,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -10202,6 +10321,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -10372,6 +10492,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -10385,6 +10506,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -10473,6 +10595,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -10560,6 +10683,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -10730,6 +10854,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -10743,6 +10868,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -10831,6 +10957,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -10942,6 +11069,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * sub
 * up
@@ -10969,6 +11097,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * proxy
 * lt
@@ -11008,6 +11137,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * proxy
 * lt
@@ -11046,6 +11176,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -11216,6 +11347,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -11229,6 +11361,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -11317,6 +11450,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -11404,6 +11538,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -11574,6 +11709,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -11587,6 +11723,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -11675,6 +11812,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -11774,6 +11912,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -11944,6 +12083,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -11957,6 +12097,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -12046,6 +12187,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -12183,6 +12325,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * dwt97
 * dwt53
 
@@ -12208,6 +12351,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -12244,6 +12388,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * packbits
 * raw
 * lzw
@@ -12259,6 +12404,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * left
 * gradient
@@ -12317,6 +12463,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * 97
 * 53
 * haar
@@ -12332,6 +12479,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * default
 * color
 * flat
@@ -12346,6 +12494,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -12516,6 +12665,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -12529,6 +12679,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -12617,6 +12768,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -12704,6 +12856,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * skip_rd
 * strict_gop
 * qp_rd
@@ -12874,6 +13027,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ffmpeg
 * xvid
 
@@ -12887,6 +13041,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * zero
 * epzs
 * xone
@@ -12975,6 +13130,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sad
 * sse
 * satd
@@ -13062,6 +13218,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * anmr
 * twoloop
 * fast
@@ -13175,6 +13332,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * large
 * small
@@ -13213,6 +13371,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13239,6 +13398,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * ltrt
 * loro
@@ -13302,6 +13462,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13317,6 +13478,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13331,6 +13493,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * standard
 * hdcd
 
@@ -13353,6 +13516,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### cpl_start_band
@@ -13365,6 +13529,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### per_frame_metadata
@@ -13422,6 +13587,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * large
 * small
@@ -13460,6 +13626,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13486,6 +13653,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * ltrt
 * loro
@@ -13549,6 +13717,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13564,6 +13733,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13578,6 +13748,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * standard
 * hdcd
 
@@ -13600,6 +13771,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### cpl_start_band
@@ -13612,6 +13784,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### min_prediction_order
@@ -13665,6 +13838,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * large
 * small
@@ -13703,6 +13877,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13729,6 +13904,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * ltrt
 * loro
@@ -13792,6 +13968,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13807,6 +13984,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * notindicated
 * true
 * false
@@ -13821,6 +13999,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * standard
 * hdcd
 
@@ -13843,6 +14022,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### cpl_start_band
@@ -13855,6 +14035,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 
 ### lpc_coeff_precision
@@ -13879,6 +14060,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * fixed
 * levinson
@@ -13925,6 +14107,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * estimation
 * 2level
 * 4level
@@ -13942,6 +14125,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * indep
 * left_side
@@ -14062,6 +14246,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * voip
 * audio
 * lowdelay
@@ -14100,6 +14285,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * false
 * true
 * constrained
@@ -14169,6 +14355,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * backward
 * forward
 * centered
@@ -14183,6 +14370,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * psnr
 * ssim
 
@@ -14196,6 +14384,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * best
 * good
 * realtime
@@ -14210,6 +14399,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * default
 * partitions
 
@@ -14327,6 +14517,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * best
 * good
 * realtime
@@ -14341,6 +14532,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * error_resilient
 * altref
 
@@ -14444,6 +14636,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * backward
 * forward
 * centered
@@ -14458,6 +14651,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * psnr
 * ssim
 
@@ -14471,6 +14665,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * best
 * good
 * realtime
@@ -14485,6 +14680,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * default
 * partitions
 
@@ -14635,6 +14831,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * variance
 * complexity
@@ -14662,6 +14859,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * best
 * good
 * realtime
@@ -14676,6 +14874,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * error_resilient
 * altref
 
@@ -14852,6 +15051,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * variance
 * autovariance
@@ -14915,6 +15115,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * simple
 * smart
@@ -14966,6 +15167,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * strict
 * normal
@@ -15052,6 +15254,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * spatial
 * temporal
@@ -15087,6 +15290,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * vbr
 * cbr
@@ -15113,6 +15317,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * dia
 * hex
 * umh
@@ -15138,6 +15343,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * default
 * cavlc
 * cabac
@@ -15320,6 +15526,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * variance
 * autovariance
@@ -15383,6 +15590,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * simple
 * smart
@@ -15434,6 +15642,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * strict
 * normal
@@ -15520,6 +15729,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * spatial
 * temporal
@@ -15555,6 +15765,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * vbr
 * cbr
@@ -15581,6 +15792,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * dia
 * hex
 * umh
@@ -15606,6 +15818,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * default
 * cavlc
 * cabac

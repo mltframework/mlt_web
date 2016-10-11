@@ -96,6 +96,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * blank
 * original
 * clamp
@@ -135,6 +136,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * exhaustive
 * less
 

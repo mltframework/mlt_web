@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ab2l
 * ab2r
 * abl
@@ -53,6 +54,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ab2l
 * ab2r
 * abl

@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * ntsc
 * 470m
 * ebu
@@ -52,6 +53,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * xyy
 * ucs
 * luv
@@ -66,6 +68,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * ntsc
 * 470m
 * ebu

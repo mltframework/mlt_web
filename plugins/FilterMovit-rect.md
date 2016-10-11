@@ -64,6 +64,7 @@ required: no
 default: left  
 widget: combo  
 values:  
+
 * left
 * center
 * right
@@ -79,6 +80,7 @@ required: no
 default: top  
 widget: combo  
 values:  
+
 * top
 * middle
 * bottom

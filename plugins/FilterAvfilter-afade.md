@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * in
 * out
 
@@ -41,6 +42,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * in
 * out
 
@@ -136,6 +138,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * tri
 * qsin
 * esin
@@ -163,6 +166,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * tri
 * qsin
 * esin

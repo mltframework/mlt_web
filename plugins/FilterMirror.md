@@ -29,6 +29,7 @@ type: string
 readonly: no  
 required: no  
 values:  
+
 * horizontal
 * vertical
 * diagonal

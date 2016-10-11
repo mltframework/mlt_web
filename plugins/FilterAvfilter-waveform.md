@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * row
 * column
 
@@ -41,6 +42,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * row
 * column
 
@@ -96,6 +98,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * overlay
 * stack
 * parade
@@ -110,6 +113,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * overlay
 * stack
 * parade
@@ -148,6 +152,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * instant
 * peak
@@ -163,6 +168,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * instant
 * peak
@@ -178,6 +184,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * lowpass
 * flat
 * aflat
@@ -195,6 +202,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * lowpass
 * flat
 * aflat
@@ -212,6 +220,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * green
 
@@ -225,6 +234,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * green
 
@@ -262,6 +272,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * numbers
 * dots
 
@@ -275,6 +286,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * numbers
 * dots
 
@@ -288,6 +300,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * digital
 * ire
 * millivolts
@@ -302,6 +315,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * digital
 * ire
 * millivolts

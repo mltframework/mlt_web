@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * tout
 * vrep
 * brng
@@ -42,6 +43,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * tout
 * vrep
 * brng

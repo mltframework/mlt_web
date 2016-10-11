@@ -40,6 +40,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * hard
 * soft
 * medium

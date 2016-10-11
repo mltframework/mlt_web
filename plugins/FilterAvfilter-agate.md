@@ -132,6 +132,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * peak
 * rms
 
@@ -145,6 +146,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * average
 * maximum
 

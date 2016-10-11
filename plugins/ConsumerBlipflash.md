@@ -41,6 +41,7 @@ required: no
 default: blip  
 widget: combo  
 values:  
+
 * blip
 * frame
 

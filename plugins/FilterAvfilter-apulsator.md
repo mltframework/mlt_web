@@ -54,6 +54,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * sine
 * triangle
 * square
@@ -122,6 +123,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bpm
 * ms
 * hz

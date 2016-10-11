@@ -38,6 +38,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * portrait
 * landscape

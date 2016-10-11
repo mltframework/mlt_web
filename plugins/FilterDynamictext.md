@@ -96,6 +96,7 @@ required: no
 default: normal  
 widget: combo  
 values:  
+
 * normal
 * italic
 
@@ -179,6 +180,7 @@ required: no
 default: left  
 widget: combo  
 values:  
+
 * left
 * centre
 * right
@@ -194,6 +196,7 @@ required: no
 default: top  
 widget: combo  
 values:  
+
 * top
 * middle
 * bottom

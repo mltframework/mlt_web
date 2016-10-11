@@ -108,6 +108,7 @@ required: no
 default: frames  
 widget: dropdown  
 values:  
+
 * frames
 * smpte_df
 * smpte_ndf

@@ -93,6 +93,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * triangular
 * t
 * sinusoidal
@@ -121,6 +122,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * linear
 * quadratic
 

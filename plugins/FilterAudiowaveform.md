@@ -146,6 +146,7 @@ required: no
 default: vertical  
 widget: combo  
 values:  
+
 * vertical
 * horizontal
 

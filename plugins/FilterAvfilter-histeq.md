@@ -52,6 +52,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * weak
 * strong

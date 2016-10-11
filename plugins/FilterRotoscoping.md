@@ -37,6 +37,7 @@ required: no
 default: alpha  
 widget: dropdown  
 values:  
+
 * alpha
 * luma
 * rgb
@@ -59,6 +60,7 @@ required: no
 default: clear  
 widget: dropdown  
 values:  
+
 * clear
 * max
 * min

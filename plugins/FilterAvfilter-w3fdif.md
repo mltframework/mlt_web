@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * simple
 * complex
 
@@ -41,6 +42,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * all
 * interlaced
 

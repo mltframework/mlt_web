@@ -38,6 +38,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * fixed
 * float
 * double
@@ -52,6 +53,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * once
 * frame
 
@@ -65,6 +67,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * drop
 * ignore
 * track

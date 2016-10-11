@@ -31,6 +31,7 @@ required: no
 default: down  
 widget: combo  
 values:  
+
 * up
 * down
 
@@ -52,6 +53,7 @@ required: no
 default: seconds+1  
 widget: combo  
 values:  
+
 * seconds
 * seconds+1
 * frames
@@ -74,6 +76,7 @@ required: no
 default: silent  
 widget: combo  
 values:  
+
 * none
 * 2pop
 * frame0
@@ -93,6 +96,7 @@ required: no
 default: clock  
 widget: combo  
 values:  
+
 * none
 * clock
 

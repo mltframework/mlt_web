@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * addition
 * addition128
 * and
@@ -71,6 +72,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * addition
 * addition128
 * and
@@ -114,6 +116,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * addition
 * addition128
 * and
@@ -157,6 +160,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * addition
 * addition128
 * and
@@ -200,6 +204,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * addition
 * addition128
 * and

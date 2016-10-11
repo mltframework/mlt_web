@@ -74,6 +74,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * scene_change_detect
 * scd
 

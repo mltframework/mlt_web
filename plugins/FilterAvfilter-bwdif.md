@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * send_frame
 * send_field
 
@@ -41,6 +42,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * tff
 * bff
 * auto
@@ -55,6 +57,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * all
 * interlaced
 

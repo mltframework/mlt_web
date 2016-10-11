@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * select
 * add
 * modify
@@ -62,6 +63,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * same_str
 * starts_with
 * less

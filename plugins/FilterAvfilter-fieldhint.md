@@ -37,6 +37,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * absolute
 * relative
 

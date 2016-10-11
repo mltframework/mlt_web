@@ -108,6 +108,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * linear
 * cubic
 
@@ -121,6 +122,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * source
 * destination
 

@@ -54,6 +54,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * reproduction
 * production
 
@@ -67,6 +68,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * col
 * emi
 * bsi

@@ -125,6 +125,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * lr>lr
 * lr>ms
 * ms>lr

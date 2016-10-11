@@ -68,6 +68,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * forward
 * backward
 
@@ -81,6 +82,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * init
 * frame
 

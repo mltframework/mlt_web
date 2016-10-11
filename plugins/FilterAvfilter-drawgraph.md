@@ -141,6 +141,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * bar
 * dot
 * line
@@ -155,6 +156,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * frame
 * replace
 * scroll

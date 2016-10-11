@@ -178,6 +178,7 @@ required: no
 default: normal  
 widget: combo  
 values:  
+
 * normal
 * italic
 

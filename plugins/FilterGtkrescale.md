@@ -35,6 +35,7 @@ required: no
 default: bilinear  
 widget: combo  
 values:  
+
 * nearest (lowest quality, fastest)
 * tiles
 * bilinear (good quality, moderate speed)

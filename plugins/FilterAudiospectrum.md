@@ -31,6 +31,7 @@ required: no
 default: line  
 widget: combo  
 values:  
+
 * line
 * bar
 
@@ -176,6 +177,7 @@ required: no
 default: vertical  
 widget: combo  
 values:  
+
 * vertical
 * horizontal
 

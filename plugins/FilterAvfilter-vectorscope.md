@@ -28,6 +28,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * gray
 * color
 * color2
@@ -45,6 +46,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * gray
 * color
 * color2
@@ -110,6 +112,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * instant
 * peak
@@ -125,6 +128,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * instant
 * peak
@@ -140,6 +144,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * green
 * color
@@ -154,6 +159,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * none
 * green
 * color
@@ -192,6 +198,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * white
 * black
 * name
@@ -206,6 +213,7 @@ readonly: no
 required: no  
 format: flags  
 values:  
+
 * white
 * black
 * name
@@ -292,6 +300,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * 601
 * 709
@@ -306,6 +315,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * auto
 * 601
 * 709

@@ -52,6 +52,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * parade
 * overlay
 
@@ -65,6 +66,7 @@ readonly: no
 required: no  
 format: integer or keyword  
 values:  
+
 * linear
 * logarithmic
 
