@@ -266,7 +266,7 @@ command line is being parsed from left to right:
 Obviously, the clip1.dv instances refer to different parts of the clip, but
 hopefully that will demonstrate what happens as we construct the track.
 
-You will find more details on the mix in [Documentation > Framework]({{ "/docs/framework" | prepend: site.baseurl }}).
+You will find more details on the mix in [Documentation > Framework]({{ "/docs/framework/" | prepend: site.baseurl }}).
 
 #### Mix and Attach
 
