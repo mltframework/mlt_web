@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Gamma
+title: Gamma  
 media types:
 Video  
-description: Adjust image luma using a non-linear power-law curve.
-version: 1
-creator: Charles Yates
+description: Adjust image luma using a non-linear power-law curve.  
+version: 1  
+creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,19 +22,21 @@ license: LGPLv2.1
 
 ### argument
 
-title: Gamma  description:
+title: Gamma    
+description:
 The exponential factor of the power-law curve  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 default: 1.0  
 
 ### gamma
 
-title: Gamma  description:
+title: Gamma    
+description:
 See &quot;argument&quot;  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 default: 1.0  
 

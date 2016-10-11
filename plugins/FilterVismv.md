@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Visualize Motion Vectors
+title: Visualize Motion Vectors  
 media types:
 Video  
-description: 
-version: 1
-creator: Zachary Drew
+description:   
+version: 1  
+creator: Zachary Drew  
 copyright: Zachary Drew  
 license: GPLv2  

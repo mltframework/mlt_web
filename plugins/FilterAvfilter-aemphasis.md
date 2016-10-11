@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: aemphasis
+title: aemphasis  
 media types:
 Audio  
-description: Audio emphasis.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Audio emphasis.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.level_in
 
+  
 description:
 set input gain  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -32,11 +33,12 @@ format: double
 
 ### av.level_out
 
+  
 description:
 set output gain  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -44,25 +46,27 @@ format: double
 
 ### av.mode
 
+  
 description:
 set filter mode  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * reproduction
 * production
 
 ### av.type
 
+  
 description:
 set filter type  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * col
 * emi
 * bsi

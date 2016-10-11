@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: compand
+title: compand  
 media types:
 Audio  
-description: Process audio using a SoX effect.
-version: 1
-creator: Dan Dennedy
+description: Process audio using a SoX effect.  
+version: 1  
+creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPL  
 URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)  
@@ -29,9 +29,10 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ### argument
 
-title: Options  type: string
-readonly: no
-required: no
+title: Options    
+type: string  
+readonly: no  
+required: no  
 format: attack1,decay1{,attack2,decay2} [soft-knee-dB:]in-dB1[,out-dB1]{,in-dB2,out-dB2} [gain [initial-volume-dB [delay]]]
 	where {} means optional and repeatable and [] means optional.
 	dB values are floating point or -inf'; times are in seconds.

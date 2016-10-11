@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: hqdn3d
+title: hqdn3d  
 media types:
 Video  
-description: High quality 3D denoiser from Mplayer
-version: 0.1
-creator: Marko Cebokli, Daniel Moreno
+description: High quality 3D denoiser from Mplayer  
+version: 0.1  
+creator: Marko Cebokli, Daniel Moreno  
 
 ## Parameters
 
 ### 0
 
-title: Spatial  description:
+title: Spatial    
+description:
 Amount of spatial filtering  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.04  
@@ -32,11 +33,12 @@ widget: spinner
 
 ### 1
 
-title: Temporal  description:
+title: Temporal    
+description:
 Amount of temporal filtering  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.06  

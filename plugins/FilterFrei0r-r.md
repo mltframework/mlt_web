@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: R
+title: R  
 media types:
 Video  
-description: Extracts Red from Image
-version: 0.9
-creator: Richard Spindler
+description: Extracts Red from Image  
+version: 0.9  
+creator: Richard Spindler  

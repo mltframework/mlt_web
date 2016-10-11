@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: lenscorrection
+title: lenscorrection  
 media types:
 Video  
-description: Rectify the image by correcting for lens distortion.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Rectify the image by correcting for lens distortion.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.cx
 
+  
 description:
 set relative center x  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -32,11 +33,12 @@ format: double
 
 ### av.cy
 
+  
 description:
 set relative center y  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -44,11 +46,12 @@ format: double
 
 ### av.k1
 
+  
 description:
 set quadratic distortion factor  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: -1  
 maximum: 1  
 default: 0  
@@ -56,11 +59,12 @@ format: double
 
 ### av.k2
 
+  
 description:
 set double quadratic distortion factor  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: -1  
 maximum: 1  
 default: 0  
@@ -68,11 +72,12 @@ format: double
 
 ### av.threads
 
+  
 description:
 Maximum number of threads  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 default: 0  
 

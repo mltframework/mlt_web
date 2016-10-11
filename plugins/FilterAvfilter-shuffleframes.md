@@ -9,21 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: shuffleframes
+title: shuffleframes  
 media types:
 Video  
-description: Shuffle video frames.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Shuffle video frames.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.mapping
 
+  
 description:
 set destination indexes of input frames  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '0'  
 

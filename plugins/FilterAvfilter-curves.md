@@ -9,24 +9,25 @@ category: plugin
 
 ## Plugin Information
 
-title: curves
+title: curves  
 media types:
 Video  
-description: Adjust components curves.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Adjust components curves.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.preset
 
+  
 description:
 select a color curves preset  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * none
 * color_negative
 * cross_process
@@ -41,91 +42,102 @@ values:
 
 ### av.master
 
+  
 description:
 set master points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.m
 
+  
 description:
 set master points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.red
 
+  
 description:
 set red points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.r
 
+  
 description:
 set red points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.green
 
+  
 description:
 set green points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.g
 
+  
 description:
 set green points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.blue
 
+  
 description:
 set blue points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.b
 
+  
 description:
 set blue points coordinates  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.all
 
+  
 description:
 set points coordinates for all components  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.psfile
 
+  
 description:
 set Photoshop curves file name  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.threads
 
+  
 description:
 Maximum number of threads  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 default: 0  
 

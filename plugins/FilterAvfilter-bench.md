@@ -9,24 +9,25 @@ category: plugin
 
 ## Plugin Information
 
-title: bench
+title: bench  
 media types:
 Video  
-description: Benchmark part of a filtergraph.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Benchmark part of a filtergraph.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.action
 
+  
 description:
 set action  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * start
 * stop
 

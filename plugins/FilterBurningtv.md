@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: BurningTV
+title: BurningTV  
 media types:
 Video  
-description: 
-version: 1
-creator: FUKUCHI Kentaro, Stephane Fillod
-contributor: Jan Sorensen
+description:   
+version: 1  
+creator: FUKUCHI Kentaro, Stephane Fillod  
+contributor: Jan Sorensen  
 copyright: FUKUCHI Kentaro, Stephane Fillod  
 license: GPLv2  

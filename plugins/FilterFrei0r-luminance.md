@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Luminance
+title: Luminance  
 media types:
 Video  
-description: Creates a luminance map of the image
-version: 0.2
-creator: Richard Spindler
+description: Creates a luminance map of the image  
+version: 0.2  
+creator: Richard Spindler  

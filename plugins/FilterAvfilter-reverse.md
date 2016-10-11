@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: reverse
+title: reverse  
 media types:
 Video  
-description: Reverse a clip.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Reverse a clip.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  

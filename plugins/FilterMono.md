@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Mixdown
+title: Mixdown  
 media types:
 Audio  
-description: Mix all channels of audio into a mono signal and output it as N channels.
-version: 1
-creator: Dan Dennedy
+description: Mix all channels of audio into a mono signal and output it as N channels.  
+version: 1  
+creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,10 +22,11 @@ license: LGPLv2.1
 
 ### argument
 
-title: channels  description:
+title: channels    
+description:
 Set the number of output channels. The default is automatic based on consumer request.  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 1  
 

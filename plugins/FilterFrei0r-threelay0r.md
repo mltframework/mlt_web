@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: threelay0r
+title: threelay0r  
 media types:
 Video  
-description: dynamic 3 level thresholding
-version: 0.2
-creator: Hedde Bosman
+description: dynamic 3 level thresholding  
+version: 0.2  
+creator: Hedde Bosman  

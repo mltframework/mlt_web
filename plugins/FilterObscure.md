@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Obscure
+title: Obscure  
 media types:
 Video  
-description: Obscuring filter.
-version: 1
-creator: Charles Yates
+description: Obscuring filter.  
+version: 1  
+creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,17 +22,19 @@ license: LGPLv2.1
 
 ### argument
 
-title: Start  description:
+title: Start    
+description:
 The starting rectangle is given in the format X/Y:WxH[:PWxPY] where PWxPY is the size of the averaging region in pixels.  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### end
 
-title: End  description:
+title: End    
+description:
 The ending rectangle is given in the format X/Y:WxH[:PWxPY] where PWxPY is the size of the averaging region in pixels.  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 

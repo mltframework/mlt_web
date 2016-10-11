@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: White Balance (GLSL)
+title: White Balance (GLSL)  
 media types:
 Video  
-description: Color correction in LMS color space.
-version: 1
-creator: Steinar H. Gunderson
+description: Color correction in LMS color space.  
+version: 1  
+creator: Steinar H. Gunderson  
 copyright: Dan Dennedy  
 license: GPLv2  
 
@@ -22,17 +22,19 @@ license: GPLv2
 
 ### neutral_color
 
-title: Neutral Color  type: string
-readonly: no
-required: no
+title: Neutral Color    
+type: string  
+readonly: no  
+required: no  
 default: 2139062016  
 widget: color  
 
 ### color_temperature
 
-title: Color Temperature  type: float
-readonly: no
-required: no
+title: Color Temperature    
+type: float  
+readonly: no  
+required: no  
 minimum: 1000.0  
 maximum: 15000.0  
 default: 6500.0  

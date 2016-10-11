@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Invert0r
+title: Invert0r  
 media types:
 Video  
-description: Inverts all colors of a source image
-version: 0.9
-creator: Gephex crew
+description: Inverts all colors of a source image  
+version: 0.9  
+creator: Gephex crew  

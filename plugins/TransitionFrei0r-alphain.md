@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: alphain
+title: alphain  
 media types:
 Video  
-description: the alpha IN operation
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: the alpha IN operation  
+version: 0.2  
+creator: Jean-Sebastien Senecal  

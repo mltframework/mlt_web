@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: alphaxor
+title: alphaxor  
 media types:
 Video  
-description: the alpha XOR operation
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: the alpha XOR operation  
+version: 0.2  
+creator: Jean-Sebastien Senecal  

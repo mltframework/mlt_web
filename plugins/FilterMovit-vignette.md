@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Vignette (GLSL)
+title: Vignette (GLSL)  
 media types:
 Video  
-description: A circular vignette, falling off as cos² of the distance from the center (the classic formula for approximating a real lens).
-version: 1
-creator: Steinar H. Gunderson
+description: A circular vignette, falling off as cos² of the distance from the center (the classic formula for approximating a real lens).  
+version: 1  
+creator: Steinar H. Gunderson  
 copyright: Dan Dennedy  
 license: GPLv2  
 
@@ -22,18 +22,20 @@ license: GPLv2
 
 ### radius
 
-title: Outer Radius  type: float
-readonly: no
-required: no
+title: Outer Radius    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.3  
 
 ### inner_radius
 
-title: Inner Radius  type: float
-readonly: no
-required: no
+title: Inner Radius    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.3  

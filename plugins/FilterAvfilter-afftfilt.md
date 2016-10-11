@@ -9,41 +9,44 @@ category: plugin
 
 ## Plugin Information
 
-title: afftfilt
+title: afftfilt  
 media types:
 Audio  
-description: Apply arbitrary expressions to samples in frequency domain.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Apply arbitrary expressions to samples in frequency domain.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.real
 
+  
 description:
 set channels real expressions  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '1'  
 
 ### av.imag
 
+  
 description:
 set channels imaginary expressions  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.win_size
 
+  
 description:
 set window size  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * w16
 * w32
 * w64
@@ -61,13 +64,14 @@ values:
 
 ### av.win_func
 
+  
 description:
 set window function  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * rect
 * bartlett
 * hann
@@ -77,11 +81,12 @@ values:
 
 ### av.overlap
 
+  
 description:
 set window overlap  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.75  

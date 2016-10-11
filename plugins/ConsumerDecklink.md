@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Blackmagic Design DeckLink Output
+title: Blackmagic Design DeckLink Output  
 media types:
 Audio  Video  
-description: Output audio and video using Blackmagic Design DeckLink SDI or Intensity HDMI cards.
-version: 2
-creator: Dan Dennedy
+description: Output audio and video using Blackmagic Design DeckLink SDI or Intensity HDMI cards.  
+version: 2  
+creator: Dan Dennedy  
 copyright: Copyright (C) 2011 Daniel R. Dennedy  
 license: LGPL  
 
@@ -32,20 +32,22 @@ Please ensure that you use a MLT profile that is compatible with a broadcast sta
 
 ### argument
 
-title: Card  type: integer
-readonly: no
-required: no
+title: Card    
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 default: 0  
 widget: spinner  
 
 ### preroll
 
-title: Pre-roll Count  description:
+title: Pre-roll Count    
+description:
 This controls the amount of buffering in the DeckLink driver/library. Increase this if you get video tearing or choppy audio. However, as you increase the amount, you increase the risk of audio and video becoming out of synchronization.  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 2  
 default: 3  
 unit: frames  
@@ -53,22 +55,24 @@ widget: spinner
 
 ### keyer
 
-title: Enable Keyer  description:
+title: Enable Keyer    
+description:
 Keying is the process of compositing MLT output over a live SDI input. The alpha channel of the MLT video controls the transparent areas, and the keyer supports alpha-blending. You can not control the compositing rectangle. Rather, the entire MLT output overlays the entire video input. Therefore, you must use MLT&#39;s compositing services to control the size and position. The value 1 enables the internal keyer, the value 2 enables the external keyer, and the value 0 disables it.  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 2  
 default: 0  
 
 ### keyer_level
 
-title: Key Opacity  description:
+title: Key Opacity    
+description:
 This controls the level of blending between the key and the input video. 1 is fully opaque and something near 0 is transparent. However, absolute 0 is considered as &quot;not supplied&quot; and also fully opaque. 0.5 is an evenly balanced blending of the key and input video.  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -76,16 +80,18 @@ widget: slider
 
 ### devices
 
-title: Number of devices  type: integer
-readonly: true
-required: no
+title: Number of devices    
+type: integer  
+readonly: true  
+required: no  
 minimum: 0  
 
 ### device.*
 
-title: Device model  description:
+title: Device model    
+description:
 The model name of each device that provides output.  
-type: string
-readonly: true
-required: no
+type: string  
+readonly: true  
+required: no  
 

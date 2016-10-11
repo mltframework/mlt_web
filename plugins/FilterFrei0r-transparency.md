@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: Transparency
+title: Transparency  
 media types:
 Video  
-description: Tunes the alpha channel.
-version: 0.9
-creator: Richard Spindler
+description: Tunes the alpha channel.  
+version: 0.9  
+creator: Richard Spindler  
 
 ## Parameters
 
 ### 0
 
-title: Transparency  description:
+title: Transparency    
+description:
 The transparency value  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  

@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: difference
+title: difference  
 media types:
 Video  
-description: Perform an RGB[A] difference operation between the pixel sources.
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: Perform an RGB[A] difference operation between the pixel sources.  
+version: 0.2  
+creator: Jean-Sebastien Senecal  

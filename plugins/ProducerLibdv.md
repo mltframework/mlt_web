@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: libdv (*deprecated*)
+title: libdv (*deprecated*)  
 media types:
 Audio  Video  
-description: A libdv based decoder for video and audio.
-version: 1
-creator: Charles Yates
+description: A libdv based decoder for video and audio.  
+version: 1  
+creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,18 +22,20 @@ license: LGPLv2.1
 
 ### argument
 
-title: File  type: string
-readonly: no
-required: true
+title: File    
+type: string  
+readonly: no  
+required: true  
 widget: fileopen  
 
 ### quality
 
-title: Quality  description:
+title: Quality    
+description:
 One of &quot;best,&quot; &quot;fast&quot; or anything else chooses medium.  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: best  
 widget: combo  
 

@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: showinfo
+title: showinfo  
 media types:
 Video  
-description: Show textual information for each video frame.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Show textual information for each video frame.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  

@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: scanline0r
+title: scanline0r  
 media types:
 Video  
-description: interlaced blak lines
-version: 0.2
-creator: Martin Bayer
+description: interlaced blak lines  
+version: 0.2  
+creator: Martin Bayer  

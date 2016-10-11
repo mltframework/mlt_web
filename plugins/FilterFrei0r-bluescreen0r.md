@@ -9,31 +9,33 @@ category: plugin
 
 ## Plugin Information
 
-title: bluescreen0r
+title: bluescreen0r  
 media types:
 Video  
-description: Color to alpha (blit SRCALPHA)
-version: 0.3
-creator: Hedde Bosman
+description: Color to alpha (blit SRCALPHA)  
+version: 0.3  
+creator: Hedde Bosman  
 
 ## Parameters
 
 ### 0
 
-title: Color  description:
+title: Color    
+description:
 The color to make transparent (B G R)  
-type: color
-readonly: no
-required: no
+type: color  
+readonly: no  
+required: no  
 widget: color  
 
 ### 1
 
-title: Distance  description:
+title: Distance    
+description:
 Distance to Color (127 is good)  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.288  

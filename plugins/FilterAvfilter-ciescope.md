@@ -9,24 +9,25 @@ category: plugin
 
 ## Plugin Information
 
-title: ciescope
+title: ciescope  
 media types:
 Video  
-description: Video CIE scope.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Video CIE scope.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.system
 
+  
 description:
 set color system  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * ntsc
 * 470m
 * ebu
@@ -43,26 +44,28 @@ values:
 
 ### av.cie
 
+  
 description:
 set cie system  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * xyy
 * ucs
 * luv
 
 ### av.gamuts
 
+  
 description:
 set what gamuts to draw  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * ntsc
 * 470m
 * ebu
@@ -79,74 +82,82 @@ values:
 
 ### av.size
 
+  
 description:
 set ciescope size  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 256  
 maximum: 8192  
 default: 0  
 
 ### av.s
 
+  
 description:
 set ciescope size  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 256  
 maximum: 8192  
 default: 0  
 
 ### av.intensity
 
+  
 description:
 set ciescope intensity  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.001  
 
 ### av.i
 
+  
 description:
 set ciescope intensity  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.001  
 
 ### av.contrast
 
-type: float
-readonly: no
-required: no
+  
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.75  
 
 ### av.corrgamma
 
-type: string
-readonly: no
-required: no
+  
+type: string  
+readonly: no  
+required: no  
 
 ### av.showwhite
 
-type: string
-readonly: no
-required: no
+  
+type: string  
+readonly: no  
+required: no  
 
 ### av.gamma
 
-type: float
-readonly: no
-required: no
+  
+type: float  
+readonly: no  
+required: no  
 minimum: 0.1  
 maximum: 6  
 default: 2.6  

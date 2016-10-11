@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Lift, Gamma, and Gain
+title: Lift, Gamma, and Gain  
 media types:
 Video  
-description: A simple lift/gamma/gain effect, used for color grading.
-version: 1
-creator: Brian Matherly
+description: A simple lift/gamma/gain effect, used for color grading.  
+version: 1  
+creator: Brian Matherly  
 copyright: Brian Matherly  
 license: LGPLv2.1  
 
@@ -26,73 +26,82 @@ Very roughly speaking, lift=shadows, gamma=midtones and gain=highlights, althoug
 
 ### lift_r
 
-title: Lift Red  type: float
-readonly: no
-required: no
+title: Lift Red    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 0.0  
 
 ### lift_g
 
-title: Lift Green  type: float
-readonly: no
-required: no
+title: Lift Green    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 0.0  
 
 ### lift_b
 
-title: Lift Blue  type: float
-readonly: no
-required: no
+title: Lift Blue    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 0.0  
 
 ### gamma_r
 
-title: Gamma Red  type: float
-readonly: no
-required: no
+title: Gamma Red    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 1.0  
 
 ### gamma_g
 
-title: Gamma Green  type: float
-readonly: no
-required: no
+title: Gamma Green    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 1.0  
 
 ### gamma_b
 
-title: Gamma Blue  type: float
-readonly: no
-required: no
+title: Gamma Blue    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 1.0  
 
 ### gain_r
 
-title: Gain Red  type: float
-readonly: no
-required: no
+title: Gain Red    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 1.0  
 
 ### gain_g
 
-title: Gain Green  type: float
-readonly: no
-required: no
+title: Gain Green    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 1.0  
 
 ### gain_b
 
-title: Gain Blue  type: float
-readonly: no
-required: no
+title: Gain Blue    
+type: float  
+readonly: no  
+required: no  
 minimum: 0.0  
 default: 1.0  
 

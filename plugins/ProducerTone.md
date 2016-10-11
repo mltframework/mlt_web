@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Tone
+title: Tone  
 media types:
 Audio  
-description: Generate audio tones.
-version: 1
-creator: Brian Matherly
+description: Generate audio tones.  
+version: 1  
+creator: Brian Matherly  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,33 +22,36 @@ license: LGPLv2.1
 
 ### frequency
 
-title: Frequency  description:
+title: Frequency    
+description:
 The frequency of the tone.  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 default: 1000.0  
 unit: Hz  
 widget: spinner  
 
 ### phase
 
-title: Phase  description:
+title: Phase    
+description:
 The phase of the tone.  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 default: 0.0  
 unit: degrees  
 widget: spinner  
 
 ### level
 
-title: Level  description:
+title: Level    
+description:
 The peak level of the tone.  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 default: 0.0  
 unit: dB  
 widget: spinner  

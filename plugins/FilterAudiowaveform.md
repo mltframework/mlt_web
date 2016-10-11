@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Audio Waveform Filter
+title: Audio Waveform Filter  
 media types:
 Video  
-description: An audio visualization filter that draws an audio waveform on the image.
-version: 1
-creator: Brian Matherly
+description: An audio visualization filter that draws an audio waveform on the image.  
+version: 1  
+creator: Brian Matherly  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,7 +22,8 @@ license: LGPLv2.1
 
 ### bgcolor
 
-title: Background Color  description:
+title: Background Color    
+description:
 <pre>
 The background color to be applied to the entire frame. The default color
 is transparent.
@@ -31,14 +32,15 @@ A color value is a hexadecimal representation of RGB plus alpha channel
 as 0xrrggbbaa. Colors can also be the words: white, black, red, green,
 or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 </pre>
-type: color
-readonly: no
-required: no
+type: color  
+readonly: no  
+required: no  
 widget: color  
 
 ### color.*
 
-title: Foreground color  description:
+title: Foreground color    
+description:
 <pre>
 The color of the waveform.
 
@@ -60,18 +62,19 @@ A color value is a hexadecimal representation of RGB plus alpha channel
 as 0xrrggbbaa. Colors can also be the words: white, black, red, green,
 or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 </pre>
-type: color
-readonly: no
-required: no
+type: color  
+readonly: no  
+required: no  
 widget: color  
 
 ### thickness
 
-title: Line Thickness  description:
+title: Line Thickness    
+description:
 The thickness of the line used to draw the waveform.  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 20  
 default: 0  
@@ -80,14 +83,15 @@ widget: spinner
 
 ### show_channel
 
-title: Audio Channel  description:
+title: Audio Channel    
+description:
 <pre>
 The audio channel to draw.
 "0" indicates that all channels should be drawn.
 </pre>
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 20  
 default: 0  
@@ -95,11 +99,12 @@ widget: spinner
 
 ### angle
 
-title: Angle  description:
+title: Angle    
+description:
 The rotation angle to be applied to the waveform.  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 360  
 default: 0  
@@ -107,37 +112,40 @@ widget: spinner
 
 ### rect
 
-title: Rectangle  description:
+title: Rectangle    
+description:
 <pre>
 Defines the rectangle that the waveform(s) should be drawn in.
 Format is: "X Y W H".
 X, Y, W, H are assumed to be pixel units unless they have the suffix '%'.
 </pre>
-type: rect
-readonly: no
-required: no
+type: rect  
+readonly: no  
+required: no  
 default: 0 0 100% 100%  
 
 ### fill
 
-title: Fill  description:
+title: Fill    
+description:
 Whether the area under the waveform should be filled in.  
-type: boolean
-readonly: no
-required: no
+type: boolean  
+readonly: no  
+required: no  
 default: 0  
 widget: checkbox  
 
 ### gorient
 
-title: Gradient Orientation  description:
+title: Gradient Orientation    
+description:
 Direction of the color gradient.  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: vertical  
 widget: combo  
-values:
+values:  
 * vertical
 * horizontal
 

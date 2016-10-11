@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: VCF 303
+title: VCF 303  
 media types:
 Audio  
-description: LADSPA plugin
-version: 1
-creator: CMT (http://www.ladspa.org/cmt, plugin by David A. Bartold)
+description: LADSPA plugin  
+version: 1  
+creator: CMT (http://www.ladspa.org/cmt, plugin by David A. Bartold)  
 copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -32,65 +32,72 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 
 ### 2
 
-title: Trigger  type: boolean
-readonly: no
-required: no
+title: Trigger    
+type: boolean  
+readonly: no  
+required: no  
 default: 0  
 
 ### 3
 
-title: Cutoff  type: float
-readonly: no
-required: no
+title: Cutoff    
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
 
 ### 4
 
-title: Resonance  type: float
-readonly: no
-required: no
+title: Resonance    
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
 
 ### 5
 
-title: Envelope Modulation  type: float
-readonly: no
-required: no
+title: Envelope Modulation    
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
 
 ### 6
 
-title: Decay  type: float
-readonly: no
-required: no
+title: Decay    
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
 
 ### instances
 
-title: Instances  description:
+title: Instances    
+description:
 <pre>
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
-type: integer
-readonly: true
-required: no
+type: integer  
+readonly: true  
+required: no  
 
 ### wetness
 
-title: Wet/Dry  type: float
-readonly: no
-required: no
+title: Wet/Dry    
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 1  

@@ -9,102 +9,112 @@ category: plugin
 
 ## Plugin Information
 
-title: drawbox
+title: drawbox  
 media types:
 Video  
-description: Draw a colored box on the input video.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Draw a colored box on the input video.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.x
 
+  
 description:
 set horizontal position of the left box edge  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '0'  
 
 ### av.y
 
+  
 description:
 set vertical position of the top box edge  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '0'  
 
 ### av.width
 
+  
 description:
 set width of the box  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '0'  
 
 ### av.w
 
+  
 description:
 set width of the box  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '0'  
 
 ### av.height
 
+  
 description:
 set height of the box  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '0'  
 
 ### av.h
 
+  
 description:
 set height of the box  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '0'  
 
 ### av.color
 
+  
 description:
 set color of the box  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: 'black'  
 
 ### av.c
 
+  
 description:
 set color of the box  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: 'black'  
 
 ### av.thickness
 
+  
 description:
 set the box thickness  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '3'  
 
 ### av.t
 
+  
 description:
 set the box thickness  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: '3'  
 

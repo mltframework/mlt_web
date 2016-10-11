@@ -9,20 +9,21 @@ category: plugin
 
 ## Plugin Information
 
-title: qp
+title: qp  
 media types:
 Video  
-description: Change video quantization parameters.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Change video quantization parameters.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.qp
 
+  
 description:
 set qp expression  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 

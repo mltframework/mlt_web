@@ -9,24 +9,25 @@ category: plugin
 
 ## Plugin Information
 
-title: fieldorder
+title: fieldorder  
 media types:
 Video  
-description: Set the field order.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Set the field order.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.order
 
+  
 description:
 output field order  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * bff
 * tff
 

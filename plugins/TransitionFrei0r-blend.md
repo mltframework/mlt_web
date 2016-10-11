@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: blend
+title: blend  
 media types:
 Video  
-description: Perform a blend operation between two sources
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: Perform a blend operation between two sources  
+version: 0.2  
+creator: Jean-Sebastien Senecal  
 
 ## Parameters
 
 ### 0
 
-title: blend  description:
+title: blend    
+description:
 blend factor  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.0  

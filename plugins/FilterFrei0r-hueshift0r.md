@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: Hueshift0r
+title: Hueshift0r  
 media types:
 Video  
-description: Shifts the hue of a source image
-version: 0.3
-creator: Jean-Sebastien Senecal
+description: Shifts the hue of a source image  
+version: 0.3  
+creator: Jean-Sebastien Senecal  
 
 ## Parameters
 
 ### 0
 
-title: Hue  description:
+title: Hue    
+description:
 The shift value  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  

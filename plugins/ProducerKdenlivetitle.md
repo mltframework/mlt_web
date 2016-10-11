@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Kdenlive Titler
+title: Kdenlive Titler  
 media types:
 Video  
-description: 
-version: 2
-creator: Marco Gittler, Jean-Baptiste Mardelle
+description:   
+version: 2  
+creator: Marco Gittler, Jean-Baptiste Mardelle  
 copyright: Marco Gittler, Jean-Baptiste Mardelle  
 license: LGPLv2.1  

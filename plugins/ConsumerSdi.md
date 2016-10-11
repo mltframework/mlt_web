@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Linear Systems SDI
+title: Linear Systems SDI  
 media types:
 Audio  Video  
-description: 
-version: 1
-creator: Thomas Kurpick
+description:   
+version: 1  
+creator: Thomas Kurpick  
 copyright: Broadcasting Center Europe S.A.  
 license: GPLv2  

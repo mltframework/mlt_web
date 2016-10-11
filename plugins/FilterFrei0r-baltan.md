@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Baltan
+title: Baltan  
 media types:
 Video  
-description: delayed alpha smoothed blit of time
-version: 3.1
-creator: Kentaro, Jaromil
+description: delayed alpha smoothed blit of time  
+version: 3.1  
+creator: Kentaro, Jaromil  

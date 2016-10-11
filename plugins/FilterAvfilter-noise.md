@@ -9,56 +9,60 @@ category: plugin
 
 ## Plugin Information
 
-title: noise
+title: noise  
 media types:
 Video  
-description: Add noise.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Add noise.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.all_seed
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: -1  
 default: -2147483648  
 
 ### av.all_strength
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.alls
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.all_flags
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -66,13 +70,14 @@ values:
 
 ### av.allf
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -80,45 +85,49 @@ values:
 
 ### av.c0_seed
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: -1  
 default: -2147483648  
 
 ### av.c0_strength
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c0s
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c0_flags
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -126,13 +135,14 @@ values:
 
 ### av.c0f
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -140,45 +150,49 @@ values:
 
 ### av.c1_seed
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: -1  
 default: -2147483648  
 
 ### av.c1_strength
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c1s
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c1_flags
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -186,13 +200,14 @@ values:
 
 ### av.c1f
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -200,45 +215,49 @@ values:
 
 ### av.c2_seed
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: -1  
 default: -2147483648  
 
 ### av.c2_strength
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c2s
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c2_flags
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -246,13 +265,14 @@ values:
 
 ### av.c2f
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -260,45 +280,49 @@ values:
 
 ### av.c3_seed
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: -1  
 default: -2147483648  
 
 ### av.c3_strength
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c3s
 
+  
 description:
 set component  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 100  
 default: 0  
 
 ### av.c3_flags
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -306,13 +330,14 @@ values:
 
 ### av.c3f
 
+  
 description:
 set component  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: flags  
-values:
+values:  
 * a
 * p
 * t
@@ -320,11 +345,12 @@ values:
 
 ### av.threads
 
+  
 description:
 Maximum number of threads  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 default: 0  
 

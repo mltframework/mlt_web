@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Template
+title: Template  
 media types:
 Video  
-description: Show data based on properties of the producer.
-version: 1
-creator: Charles Yates
+description: Show data based on properties of the producer.  
+version: 1  
+creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -47,17 +47,19 @@ melt file.dv meta.attr.timecode=1 meta.attr.timecode.markup=#timecode# -attach d
 
 ### argument
 
-title: Feed Properties File  type: string
-readonly: no
-required: no
+title: Feed Properties File    
+type: string  
+readonly: no  
+required: no  
 default: data_fx.properties  
 widget: fileopen  
 
 ### dynamic
 
-title: Dynamic  type: integer
-readonly: no
-required: no
+title: Dynamic    
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  

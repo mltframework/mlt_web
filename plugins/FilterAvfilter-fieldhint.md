@@ -9,32 +9,34 @@ category: plugin
 
 ## Plugin Information
 
-title: fieldhint
+title: fieldhint  
 media types:
 Video  
-description: Field matching using hints.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Field matching using hints.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.hint
 
+  
 description:
 set hint file  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.mode
 
+  
 description:
 set hint mode  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * absolute
 * relative
 

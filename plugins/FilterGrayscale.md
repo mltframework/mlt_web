@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Greyscale
+title: Greyscale  
 media types:
 Video  
-description: Convert colour image to greyscale
-version: 1
-creator: Charles Yates
+description: Convert colour image to greyscale  
+version: 1  
+creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

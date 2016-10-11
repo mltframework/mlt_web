@@ -9,14 +9,14 @@ category: plugin
 
 ## Plugin Information
 
-title: Resample
+title: Resample  
 media types:
 Audio  Hidden  
 description: Adjust an audio stream&#39;s sampling rate, and duplicate channels if producer provides less than consumer requested.
 This filter is automatically invoked by the loader producer for the sake of normalisation over inputs and with the consumer.
-
-version: 1
-creator: Dan Dennedy <dan@dennedy.org>
+  
+version: 1  
+creator: Dan Dennedy <dan@dennedy.org>  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -29,9 +29,10 @@ license: LGPLv2.1
 
 ### argument
 
-title: Frequency  description:
+title: Frequency    
+description:
 The target sample rate.  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 

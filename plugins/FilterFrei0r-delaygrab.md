@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Delaygrab
+title: Delaygrab  
 media types:
 Video  
-description: delayed frame blitting mapped on a time bitmap
-version: 3.1
-creator: Bill Spinhover, Andreas Schiffler, Jaromil
+description: delayed frame blitting mapped on a time bitmap  
+version: 3.1  
+creator: Bill Spinhover, Andreas Schiffler, Jaromil  

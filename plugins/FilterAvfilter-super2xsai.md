@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: super2xsai
+title: super2xsai  
 media types:
 Video  
-description: Scale the input by 2x using the Super2xSaI pixel art algorithm.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Scale the input by 2x using the Super2xSaI pixel art algorithm.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  

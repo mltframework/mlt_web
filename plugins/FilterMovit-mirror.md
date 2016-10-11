@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Mirror (GLSL)
+title: Mirror (GLSL)  
 media types:
 Video  
-description: A simple horizontal mirroring.
-version: 1
-creator: Steinar H. Gunderson
+description: A simple horizontal mirroring.  
+version: 1  
+creator: Steinar H. Gunderson  
 copyright: Dan Dennedy  
 license: GPLv2  

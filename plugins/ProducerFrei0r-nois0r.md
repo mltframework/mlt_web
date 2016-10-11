@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Nois0r
+title: Nois0r  
 media types:
 Video  
-description: Generates white noise images
-version: 0.3
-creator: Martin Bayer
+description: Generates white noise images  
+version: 0.3  
+creator: Martin Bayer  

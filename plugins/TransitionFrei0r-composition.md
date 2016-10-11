@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Composition
+title: Composition  
 media types:
 Video  
-description: Composites Image 2 onto Image 1 according to its Alpha Channel
-version: 0.9
-creator: Richard Spindler
+description: Composites Image 2 onto Image 1 according to its Alpha Channel  
+version: 0.9  
+creator: Richard Spindler  

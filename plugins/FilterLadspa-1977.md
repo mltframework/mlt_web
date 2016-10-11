@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: AMB order 1,1 hexagon decoder
+title: AMB order 1,1 hexagon decoder  
 media types:
 Audio  
-description: LADSPA plugin
-version: 1
-creator: Fons Adriaensen <fons@kokkinizita.net>
+description: LADSPA plugin  
+version: 1  
+creator: Fons Adriaensen <fons@kokkinizita.net>  
 copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -32,23 +32,26 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 
 ### 10
 
-title: Front spkr  type: boolean
-readonly: no
-required: no
+title: Front spkr    
+type: boolean  
+readonly: no  
+required: no  
 default: 0  
 
 ### 11
 
-title: Shelf filt  type: boolean
-readonly: no
-required: no
+title: Shelf filt    
+type: boolean  
+readonly: no  
+required: no  
 default: 0  
 
 ### 12
 
-title: HF XY gain  type: float
-readonly: no
-required: no
+title: HF XY gain    
+type: float  
+readonly: no  
+required: no  
 minimum: 1  
 maximum: 2  
 default: 1  
@@ -56,9 +59,10 @@ scale: log
 
 ### 13
 
-title: LF XY gain  type: float
-readonly: no
-required: no
+title: LF XY gain    
+type: float  
+readonly: no  
+required: no  
 minimum: 1  
 maximum: 2  
 default: 1  
@@ -66,18 +70,20 @@ scale: log
 
 ### 14
 
-title: Shelf freq  type: float
-readonly: no
-required: no
+title: Shelf freq    
+type: float  
+readonly: no  
+required: no  
 minimum: 200  
 maximum: 800  
 default: 500  
 
 ### 15
 
-title: Distance  type: float
-readonly: no
-required: no
+title: Distance    
+type: float  
+readonly: no  
+required: no  
 minimum: 1  
 maximum: 30  
 default: 30  
@@ -85,22 +91,24 @@ scale: log
 
 ### instances
 
-title: Instances  description:
+title: Instances    
+description:
 <pre>
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
-type: integer
-readonly: true
-required: no
+type: integer  
+readonly: true  
+required: no  
 
 ### wetness
 
-title: Wet/Dry  type: float
-readonly: no
-required: no
+title: Wet/Dry    
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 1  

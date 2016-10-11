@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: pixeliz0r
+title: pixeliz0r  
 media types:
 Video  
-description: Pixelize input image.
-version: 1
-creator: Gephex crew
+description: Pixelize input image.  
+version: 1  
+creator: Gephex crew  
 
 ## Parameters
 
 ### 0
 
-title: Block width  description:
+title: Block width    
+description:
 Horizontal size of one &quot;pixel&quot;  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.0194444  
@@ -32,11 +33,12 @@ widget: spinner
 
 ### 1
 
-title: Block height  description:
+title: Block height    
+description:
 Vertical size of one &quot;pixel&quot;  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.0243056  

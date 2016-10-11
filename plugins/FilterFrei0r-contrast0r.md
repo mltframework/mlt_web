@@ -9,22 +9,23 @@ category: plugin
 
 ## Plugin Information
 
-title: Contrast0r
+title: Contrast0r  
 media types:
 Video  
-description: Adjusts the contrast of a source image
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: Adjusts the contrast of a source image  
+version: 0.2  
+creator: Jean-Sebastien Senecal  
 
 ## Parameters
 
 ### 0
 
-title: Contrast  description:
+title: Contrast    
+description:
 The contrast value  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0.5  

@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Audio Waveform
+title: Audio Waveform  
 media types:
 Video  
-description: Generate audio waveforms.
-version: 1
-creator: Dan Dennedy
+description: Generate audio waveforms.  
+version: 1  
+creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

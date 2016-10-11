@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Dissolve (GLSL)
+title: Dissolve (GLSL)  
 media types:
 Video  
-description: A simple video cross-fade or mixing effect.
-version: 1
-creator: Steinar H. Gunderson
+description: A simple video cross-fade or mixing effect.  
+version: 1  
+creator: Steinar H. Gunderson  
 copyright: Dan Dennedy  
 license: GPLv2  
 
@@ -22,31 +22,34 @@ license: GPLv2
 
 ### argument
 
-title: Mix Level  description:
+title: Mix Level    
+description:
 Performs a dissolve if a mix level is not supplied.  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 
 ### mix
 
-title: Mix Level  description:
+title: Mix Level    
+description:
 Performs a dissolve if a mix level is not supplied.  
-type: float
-readonly: no
-required: no
+type: float  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 
 ### reverse
 
-title: Reverse  description:
+title: Reverse    
+description:
 Reverse the direction of the transition.  
-type: integer
-readonly: no
-required: no
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 0  

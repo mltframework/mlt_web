@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: multiply
+title: multiply  
 media types:
 Video  
-description: Perform an RGB[A] multiply operation between the pixel sources.
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: Perform an RGB[A] multiply operation between the pixel sources.  
+version: 0.2  
+creator: Jean-Sebastien Senecal  

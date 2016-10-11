@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: hflip
+title: hflip  
 media types:
 Video  
-description: Horizontally flip the input video.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Horizontally flip the input video.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  

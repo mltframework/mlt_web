@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: GTK+
+title: GTK+  
 media types:
 Audio  Video  
-description: A wrapper for sdl_preview that makes it easy to embed in GTK+ applications.
-version: 1
-creator: Charles Yates
+description: A wrapper for sdl_preview that makes it easy to embed in GTK+ applications.  
+version: 1  
+creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

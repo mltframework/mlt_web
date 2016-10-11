@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: SDL RGB
+title: SDL RGB  
 media types:
 Video  
-description: 
-version: 1
-creator: Charles Yates
+description:   
+version: 1  
+creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

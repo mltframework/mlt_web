@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Matte
+title: Matte  
 media types:
 Video  
-description: Replace the alpha channel of track A with the luma channel from track B.
-version: 1
-creator: Maksym Veremeyenko
+description: Replace the alpha channel of track A with the luma channel from track B.  
+version: 1  
+creator: Maksym Veremeyenko  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

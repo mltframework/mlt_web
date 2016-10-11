@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: XML File
+title: XML File  
 media types:
 Audio  Video  
-description: Construct a service network from an XML description. See docs/mlt-xml.txt.
-version: 1
-creator: Dan Dennedy
+description: Construct a service network from an XML description. See docs/mlt-xml.txt.  
+version: 1  
+creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -26,10 +26,11 @@ If there is a service with a property &quot;xml_retain=1&quot; that is not the p
 
 ### argument
 
-title: File  description:
+title: File    
+description:
 An XML text file containing MLT XML.  
-type: string
-readonly: no
-required: true
+type: string  
+readonly: no  
+required: true  
 widget: fileopen  
 

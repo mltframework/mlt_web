@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: PGM Image
+title: PGM Image  
 media types:
 Video  
-description: 
-version: 1
-creator: Charles Yates
+description:   
+version: 1  
+creator: Charles Yates  
 copyright: Visual Media FX ?  
 license: LGPLv2.1  

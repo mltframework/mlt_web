@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: fade
+title: fade  
 media types:
 Audio  
-description: Process audio using a SoX effect.
-version: 1
-creator: Dan Dennedy
+description: Process audio using a SoX effect.  
+version: 1  
+creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPL  
 URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)  
@@ -29,9 +29,10 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ### argument
 
-title: Options  type: string
-readonly: no
-required: no
+title: Options    
+type: string  
+readonly: no  
+required: no  
 format: [ type ] fade-in-length [ stop-time [ fade-out-length ] ]
        Time is in hh:mm:ss.frac format.
        Fade type one of q, h, t, l or p.

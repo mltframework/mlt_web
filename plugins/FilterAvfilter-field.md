@@ -9,24 +9,25 @@ category: plugin
 
 ## Plugin Information
 
-title: field
+title: field  
 media types:
 Video  
-description: Extract a field from the input video.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Extract a field from the input video.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.type
 
+  
 description:
 set field type (top or bottom)  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 format: integer or keyword  
-values:
+values:  
 * top
 * bottom
 

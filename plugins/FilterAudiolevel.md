@@ -9,14 +9,14 @@ category: plugin
 
 ## Plugin Information
 
-title: Audio Levels
+title: Audio Levels  
 media types:
 Audio  
-description: Compute the audio amplitude.
-version: 1
-creator: Dan Dennedy
-contributor: Marco Gittler
-contributor: Steve Harris
+description: Compute the audio amplitude.  
+version: 1  
+creator: Dan Dennedy  
+contributor: Marco Gittler  
+contributor: Steve Harris  
 copyright: Dan Dennedy, Marco Gittler, and Steve Harris  
 license: GPLv2  
 
@@ -28,9 +28,10 @@ This filter provides the amplitude level as a percentage value in floating point
 
 ### iec_scale
 
-title: Use IEC 60268-18 Scale  type: integer
-readonly: no
-required: no
+title: Use IEC 60268-18 Scale    
+type: integer  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -38,11 +39,12 @@ widget: checkbox
 
 ### _audio_level.<N>
 
+  
 description:
 &lt;N&gt; is the channel number starting with 0. This is updated on every frame with audio.  
-type: float
-readonly: true
-required: no
+type: float  
+readonly: true  
+required: no  
 minimum: 0  
 maximum: 1  
 

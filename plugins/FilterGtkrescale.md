@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Gtk Rescale
+title: Gtk Rescale  
 media types:
 Video  Hidden  
-description: Scale the producer video frame size to match the consumer. This filter is designed for use as a normaliser for the loader producer.
-version: 1
-creator: Dan Dennedy <dan@dennedy.org>
+description: Scale the producer video frame size to match the consumer. This filter is designed for use as a normaliser for the loader producer.  
+version: 1  
+creator: Dan Dennedy <dan@dennedy.org>  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -26,14 +26,15 @@ If a property &quot;consumer_aspect_ratio&quot; exists on the frame, then rescal
 
 ### argument
 
-title: Interpolation  description:
+title: Interpolation    
+description:
 The rescaling method.  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 default: bilinear  
 widget: combo  
-values:
+values:  
 * nearest (lowest quality, fastest)
 * tiles
 * bilinear (good quality, moderate speed)

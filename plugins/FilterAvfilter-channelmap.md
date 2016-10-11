@@ -9,28 +9,30 @@ category: plugin
 
 ## Plugin Information
 
-title: channelmap
+title: channelmap  
 media types:
 Audio  
-description: Remap audio channels.
-version: Lavfi6.41.100
-creator: libavfilter maintainers
+description: Remap audio channels.  
+version: Lavfi6.41.100  
+creator: libavfilter maintainers  
 
 ## Parameters
 
 ### av.map
 
+  
 description:
 A comma-separated list of input channel numbers in output order.  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 
 ### av.channel_layout
 
+  
 description:
 Output channel layout.  
-type: string
-readonly: no
-required: no
+type: string  
+readonly: no  
+required: no  
 

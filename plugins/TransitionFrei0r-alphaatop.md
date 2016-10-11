@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: alphaatop
+title: alphaatop  
 media types:
 Video  
-description: the alpha ATOP operation
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: the alpha ATOP operation  
+version: 0.2  
+creator: Jean-Sebastien Senecal  

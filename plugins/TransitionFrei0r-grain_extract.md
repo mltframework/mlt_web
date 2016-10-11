@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: grain_extract
+title: grain_extract  
 media types:
 Video  
-description: Perform an RGB[A] grain-extract operation between the pixel sources.
-version: 0.2
-creator: Jean-Sebastien Senecal
+description: Perform an RGB[A] grain-extract operation between the pixel sources.  
+version: 0.2  
+creator: Jean-Sebastien Senecal  

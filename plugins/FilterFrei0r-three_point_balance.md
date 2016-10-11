@@ -9,49 +9,53 @@ category: plugin
 
 ## Plugin Information
 
-title: 3 point color balance
+title: 3 point color balance  
 media types:
 Video  
-description: Adjust color balance with 3 color points
-version: 0.1
-creator: Maksim Golovkin
+description: Adjust color balance with 3 color points  
+version: 0.1  
+creator: Maksim Golovkin  
 
 ## Parameters
 
 ### 0
 
-title: Black color  description:
+title: Black color    
+description:
 Black color  
-type: color
-readonly: no
-required: no
+type: color  
+readonly: no  
+required: no  
 widget: color  
 
 ### 1
 
-title: Gray color  description:
+title: Gray color    
+description:
 Gray color  
-type: color
-readonly: no
-required: no
+type: color  
+readonly: no  
+required: no  
 widget: color  
 
 ### 2
 
-title: White color  description:
+title: White color    
+description:
 White color  
-type: color
-readonly: no
-required: no
+type: color  
+readonly: no  
+required: no  
 widget: color  
 
 ### 3
 
-title: Split preview  description:
+title: Split preview    
+description:
 Split privew  
-type: boolean
-readonly: no
-required: no
+type: boolean  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -59,11 +63,12 @@ widget: checkbox
 
 ### 4
 
-title: Source image on left side  description:
+title: Source image on left side    
+description:
 Source image on left side  
-type: boolean
-readonly: no
-required: no
+type: boolean  
+readonly: no  
+required: no  
 minimum: 0  
 maximum: 1  
 default: 1  
