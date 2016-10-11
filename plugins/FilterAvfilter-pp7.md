@@ -9,37 +9,35 @@ category: plugin
 
 ## Plugin Information
 
-title: pp7  
+title: pp7
 media types:
 Video  
-description: Apply Postprocessing 7 filter.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Apply Postprocessing 7 filter.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.qp
 
-  
 description:
 force a constant quantizer parameter  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 64  
 default: 0  
 
 ### av.mode
 
-  
 description:
 set thresholding mode  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * hard
 * soft
 * medium

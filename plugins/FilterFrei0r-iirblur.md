@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: IIR blur  
+title: IIR blur
 media types:
 Video  
-description: Three types of fast IIR blurring  
-version: 0.1  
-creator: Marko Cebokli  
+description: Three types of fast IIR blurring
+version: 0.1
+creator: Marko Cebokli
 
 ## Parameters
 
 ### 0
 
-title: Amount    
-description:
+title: Amount  description:
 Amount of blur  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -33,12 +32,11 @@ widget: spinner
 
 ### 1
 
-title: Type    
-description:
+title: Type  description:
 Blur type  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.333344  
@@ -46,12 +44,11 @@ widget: spinner
 
 ### 2
 
-title: Edge    
-description:
+title: Edge  description:
 Edge compensation  
-type: boolean  
-readonly: no  
-required: no  
+type: boolean
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 1  

@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: Flippo  
+title: Flippo
 media types:
 Video  
-description: Flipping in x and y axis  
-version: 0.1  
-creator: Carlo Emilio, Jean-Sebastien Senecal  
+description: Flipping in x and y axis
+version: 0.1
+creator: Carlo Emilio, Jean-Sebastien Senecal
 
 ## Parameters
 
 ### 0
 
-title: X axis    
-description:
+title: X axis  description:
 Flipping on the horizontal axis  
-type: boolean  
-readonly: no  
-required: no  
+type: boolean
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -33,12 +32,11 @@ widget: checkbox
 
 ### 1
 
-title: Y axis    
-description:
+title: Y axis  description:
 Flipping on the vertical axis  
-type: boolean  
-readonly: no  
-required: no  
+type: boolean
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

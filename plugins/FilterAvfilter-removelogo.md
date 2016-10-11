@@ -9,30 +9,28 @@ category: plugin
 
 ## Plugin Information
 
-title: removelogo  
+title: removelogo
 media types:
 Video  
-description: Remove a TV logo based on a mask image.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Remove a TV logo based on a mask image.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.filename
 
-  
 description:
 set bitmap filename  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 
 ### av.f
 
-  
 description:
 set bitmap filename  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 

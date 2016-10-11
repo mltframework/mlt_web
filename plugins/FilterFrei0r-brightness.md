@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: Brightness  
+title: Brightness
 media types:
 Video  
-description: Adjusts the brightness of a source image  
-version: 0.2  
-creator: Jean-Sebastien Senecal  
+description: Adjusts the brightness of a source image
+version: 0.2
+creator: Jean-Sebastien Senecal
 
 ## Parameters
 
 ### 0
 
-title: Brightness    
-description:
+title: Brightness  description:
 The brightness value  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  

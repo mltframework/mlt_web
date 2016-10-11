@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Rescale  
+title: Rescale
 media types:
 Video  Hidden  
-description: Scale the producer video frame size to match the consumer. This filter is designed for use as a normaliser for the loader producer.  
-version: 1  
-creator: Dan Dennedy <dan@dennedy.org>  
+description: Scale the producer video frame size to match the consumer. This filter is designed for use as a normaliser for the loader producer.
+version: 1
+creator: Dan Dennedy <dan@dennedy.org>
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

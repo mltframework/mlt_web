@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Loudness  
+title: Loudness
 media types:
 Audio  
-description: Correct audio loudness as recommended by EBU R128.  
-version: 1  
-creator: Brian Matherly <pez4brian@yahoo.com>  
+description: Correct audio loudness as recommended by EBU R128.
+version: 1
+creator: Brian Matherly <pez4brian@yahoo.com>
 copyright: Brian Matherly <pez4brian@yahoo.com>  
 license: LGPLv2.1  
 
@@ -27,21 +27,19 @@ This filter requires two passes. The first pass performs analysis and stores the
 
 ### results
 
-title: Analysis Results    
-description:
+title: Analysis Results  description:
 Set after analysis. Used during application. Loudness information about the original audio. When results are not supplied, the filter computes the results and stores them in this property when the last frame has been processed.  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 
 ### program
 
-title: Target Program Loudness    
-description:
+title: Target Program Loudness  description:
 Used during application. The target program loudness in LUFS (Loudness Units Full Scale).  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: -50.0  
 maximum: -10.0  
 default: -23.0  

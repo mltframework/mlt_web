@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Overlay  
+title: Overlay
 media types:
 Video  
-description: Overlay text or images onto the video  
-version: 1  
-creator: Charles Yates  
+description: Overlay text or images onto the video
+version: 1
+creator: Charles Yates
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -30,20 +30,18 @@ Image Example: melt clip.dv -filter watermark:logo.png
 
 ### argument
 
-title: File/URL    
-description:
+title: File/URL  description:
 The file to overlay.  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 widget: fileopen  
 
 ### distort
 
-title: Allow distorted scaling    
-type: integer  
-readonly: no  
-required: no  
+title: Allow distorted scaling  type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -51,48 +49,44 @@ widget: checkbox
 
 ### producer.*
 
-title: Producer    
-description:
+title: Producer  description:
 <pre>
 Properties may be set on the encapsulated producer.
 e.g.: producer.align=centre
 See "pango" and "pixbuf" producers for details.
 </pre>
-type:   
-readonly: no  
-required: no  
+type: 
+readonly: no
+required: no
 
 ### composite.*
 
-title: Composite    
-description:
+title: Composite  description:
 <pre>
 Properties may be set on the encapsulated composite.
 e.g.: composite.valign=c
 See "composite" transition for details.
 </pre>
-type:   
-readonly: no  
-required: no  
+type: 
+readonly: no
+required: no
 
 ### reverse
 
-title: Reverse    
-description:
+title: Reverse  description:
 Overlay the video to which the filter is applied atop the supplied file.  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 widget: checkbox  
 
 ### deinterlace
 
-  
 description:
 {&quot;minimum&quot;=&gt;0, &quot;maximum&quot;=&gt;1, &quot;mutable&quot;=&gt;true, &quot;widget&quot;=&gt;&quot;checkbox&quot;}  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 

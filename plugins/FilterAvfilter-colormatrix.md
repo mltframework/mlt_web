@@ -9,25 +9,24 @@ category: plugin
 
 ## Plugin Information
 
-title: colormatrix  
+title: colormatrix
 media types:
 Video  
-description: Convert color matrix.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Convert color matrix.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.src
 
-  
 description:
 set source color matrix  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * bt709
 * fcc
 * bt601
@@ -38,14 +37,13 @@ values:
 
 ### av.dst
 
-  
 description:
 set destination color matrix  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * bt709
 * fcc
 * bt601
@@ -56,12 +54,11 @@ values:
 
 ### av.threads
 
-  
 description:
 Maximum number of threads  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 

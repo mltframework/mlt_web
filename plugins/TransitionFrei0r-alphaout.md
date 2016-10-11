@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: alphaout  
+title: alphaout
 media types:
 Video  
-description: the alpha OUT operation  
-version: 0.2  
-creator: Jean-Sebastien Senecal  
+description: the alpha OUT operation
+version: 0.2
+creator: Jean-Sebastien Senecal

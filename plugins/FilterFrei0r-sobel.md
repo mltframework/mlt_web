@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Sobel  
+title: Sobel
 media types:
 Video  
-description: Sobel filter  
-version: 0.2  
-creator: Jean-Sebastien Senecal (Drone)  
+description: Sobel filter
+version: 0.2
+creator: Jean-Sebastien Senecal (Drone)

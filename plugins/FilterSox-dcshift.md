@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: dcshift  
+title: dcshift
 media types:
 Audio  
-description: Process audio using a SoX effect.  
-version: 1  
-creator: Dan Dennedy  
+description: Process audio using a SoX effect.
+version: 1
+creator: Dan Dennedy
 copyright: Meltytech, LLC  
 license: LGPL  
 URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)  
@@ -29,10 +29,9 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ### argument
 
-title: Options    
-type: string  
-readonly: no  
-required: no  
+title: Options  type: string
+readonly: no
+required: no
 format: shift [ limitergain ]
 	The peak limiter has a gain much less than 1.0 (ie 0.05 or 0.02) which
 	is only used on peaks to prevent clipping. (default is no limiter)

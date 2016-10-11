@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: nosync0r  
+title: nosync0r
 media types:
 Video  
-description: broken tv  
-version: 0.2  
-creator: Martin Bayer  
+description: broken tv
+version: 0.2
+creator: Martin Bayer
 
 ## Parameters
 
 ### 0
 
-title: HSync    
-description:
+title: HSync  description:
 the hsync offset  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

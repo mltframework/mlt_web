@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: color_only  
+title: color_only
 media types:
 Video  
-description: Perform a conversion to color only of the source input1 using the hue and saturation values of input2.  
-version: 0.2  
-creator: Jean-Sebastien Senecal  
+description: Perform a conversion to color only of the source input1 using the hue and saturation values of input2.
+version: 0.2
+creator: Jean-Sebastien Senecal

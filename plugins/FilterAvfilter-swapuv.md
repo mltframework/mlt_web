@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: swapuv  
+title: swapuv
 media types:
 Video  
-description: Swap U and V components.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Swap U and V components.
+version: Lavfi6.41.100
+creator: libavfilter maintainers

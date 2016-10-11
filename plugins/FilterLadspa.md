@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: LADSPA  
+title: LADSPA
 media types:
 Audio  
-description: Process audio using LADSPA plugins.  
-version: 1  
-creator: Dan Dennedy  
+description: Process audio using LADSPA plugins.
+version: 1
+creator: Dan Dennedy
 copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -32,10 +32,9 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 
 ### argument
 
-title: JACK Rack XML file    
-description:
+title: JACK Rack XML file  description:
 Runs a JACK Rack project to process audio through a stack of LADSPA filters without using JACK.  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 

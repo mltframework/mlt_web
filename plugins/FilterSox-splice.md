@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: splice  
+title: splice
 media types:
 Audio  
-description: Process audio using a SoX effect.  
-version: 1  
-creator: Dan Dennedy  
+description: Process audio using a SoX effect.
+version: 1
+creator: Dan Dennedy
 copyright: Meltytech, LLC  
 license: LGPL  
 URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)  
@@ -29,10 +29,9 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ### argument
 
-title: Options    
-type: string  
-readonly: no  
-required: no  
+title: Options  type: string
+readonly: no
+required: no
 format: [-h|-t|-q] {position[,excess[,leeway]]}
   -h        Half sine fade (default); constant gain (for correlated audio)
   -t        Triangular (linear) fade; constant gain (for correlated audio)

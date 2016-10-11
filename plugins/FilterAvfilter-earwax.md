@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: earwax  
+title: earwax
 media types:
 Audio  
-description: Widen the stereo image.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Widen the stereo image.
+version: Lavfi6.41.100
+creator: libavfilter maintainers

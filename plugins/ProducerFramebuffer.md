@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Speed  
+title: Speed
 media types:
 Video  
-description:   
-version: 1  
-creator: Jean-Baptiste Mardelle  
+description: 
+version: 1
+creator: Jean-Baptiste Mardelle
 copyright: Jean-Baptiste Mardelle  
 license: LGPLv2.1  

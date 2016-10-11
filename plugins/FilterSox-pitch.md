@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: pitch  
+title: pitch
 media types:
 Audio  
-description: Process audio using a SoX effect.  
-version: 1  
-creator: Dan Dennedy  
+description: Process audio using a SoX effect.
+version: 1
+creator: Dan Dennedy
 copyright: Meltytech, LLC  
 license: LGPL  
 URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)  
@@ -29,9 +29,8 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ### argument
 
-title: Options    
-type: string  
-readonly: no  
-required: no  
+title: Options  type: string
+readonly: no
+required: no
 format: [-q] shift-in-cents [segment-ms [search-ms [overlap-ms]]]  
 

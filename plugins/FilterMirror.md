@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Mirror  
+title: Mirror
 media types:
 Video  
-description: Provides various mirror and image reversing effects.  
-version: 1  
-creator: Charles Yates  
+description: Provides various mirror and image reversing effects.
+version: 1
+creator: Charles Yates
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,13 +22,12 @@ license: LGPLv2.1
 
 ### argument
 
-title: File    
-description:
+title: File  description:
 Choose the type of mirror operation.  
-type: string  
-readonly: no  
-required: no  
-values:  
+type: string
+readonly: no
+required: no
+values:
 * horizontal
 * vertical
 * diagonal
@@ -38,10 +37,9 @@ values:
 
 ### reverse
 
-title: Reverse    
-type: integer  
-readonly: no  
-required: no  
+title: Reverse  type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

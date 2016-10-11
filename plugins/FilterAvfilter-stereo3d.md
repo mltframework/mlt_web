@@ -9,25 +9,24 @@ category: plugin
 
 ## Plugin Information
 
-title: stereo3d  
+title: stereo3d
 media types:
 Video  
-description: Convert video stereoscopic 3D view.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Convert video stereoscopic 3D view.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.in
 
-  
 description:
 set input format  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * ab2l
 * ab2r
 * abl
@@ -45,14 +44,13 @@ values:
 
 ### av.out
 
-  
 description:
 set output format  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * ab2l
 * ab2r
 * abl
@@ -89,12 +87,11 @@ values:
 
 ### av.threads
 
-  
 description:
 Maximum number of threads  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 

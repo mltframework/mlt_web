@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Melt  
+title: Melt
 media types:
 Audio  Video  
-description: Process file containing melt command line syntax.  
-version: 1  
-creator: Charles Yates  
+description: Process file containing melt command line syntax.
+version: 1
+creator: Charles Yates
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -26,10 +26,9 @@ Limited to files with 100000 or less lines and maximum line size of 2048 bytes.
 
 ### resource
 
-title: File    
-description:
+title: File  description:
 The name of the melt text file.  
-type:   
-readonly: no  
-required: true  
+type: 
+readonly: no
+required: true
 

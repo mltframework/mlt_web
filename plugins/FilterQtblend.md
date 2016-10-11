@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Composite and transform  
+title: Composite and transform
 media types:
 Video  
-description: A filter allowing compositing and transform.  
-version: 1  
-creator: Jean-Baptiste Mardelle  
+description: A filter allowing compositing and transform.
+version: 1
+creator: Jean-Baptiste Mardelle
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,21 +22,19 @@ license: LGPLv2.1
 
 ### rect
 
-title: Rectangle    
-description:
+title: Rectangle  description:
 Keyframable rectangle specification.  
-type: geometry  
-readonly: no  
-required: no  
+type: geometry
+readonly: no
+required: no
 
 ### compositing
 
-title: Composition mode    
-description:
+title: Composition mode  description:
 Defines which composition operation will be performed (see QPainter CompositionMode for doc).  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 40  
 default: 0  
@@ -44,12 +42,11 @@ widget: spinner
 
 ### rotation
 
-title: Rotation angle    
-description:
+title: Rotation angle  description:
 Angle for rotation.  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 360  
 default: 1  

@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Invert  
+title: Invert
 media types:
 Video  
-description:   
-version: 1  
-creator: Charles Yates  
+description: 
+version: 1
+creator: Charles Yates
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

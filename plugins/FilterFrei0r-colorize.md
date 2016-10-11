@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: colorize  
+title: colorize
 media types:
 Video  
-description: Colorizes image to selected hue, saturation and lightness  
-version: 0.1  
-creator: Janne Liljeblad  
+description: Colorizes image to selected hue, saturation and lightness
+version: 0.1
+creator: Janne Liljeblad
 
 ## Parameters
 
 ### 0
 
-title: hue    
-description:
+title: hue  description:
 Color shade of the colorized image  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -33,12 +32,11 @@ widget: spinner
 
 ### 1
 
-title: saturation    
-description:
+title: saturation  description:
 Amount of color in the colorized image  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -46,12 +44,11 @@ widget: spinner
 
 ### 2
 
-title: lightness    
-description:
+title: lightness  description:
 Lightness of the colorized image  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  

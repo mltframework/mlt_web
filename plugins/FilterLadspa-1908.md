@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: LS Filter  
+title: LS Filter
 media types:
 Audio  
-description: LADSPA plugin  
-version: 1  
-creator: Steve Harris <steve@plugin.org.uk>  
+description: LADSPA plugin
+version: 1
+creator: Steve Harris <steve@plugin.org.uk>
 copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -32,20 +32,18 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 
 ### 0
 
-title: Filter type (0=LP, 1=BP, 2=HP)    
-type: integer  
-readonly: no  
-required: no  
+title: Filter type (0=LP, 1=BP, 2=HP)  type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 2  
 default: 0  
 
 ### 1
 
-title: Cutoff frequency (Hz)    
-type: float  
-readonly: no  
-required: no  
+title: Cutoff frequency (Hz)  type: float
+readonly: no
+required: no
 minimum: 96  
 maximum: 24000  
 default: 1517.89  
@@ -53,34 +51,31 @@ scale: log
 
 ### 2
 
-title: Resonance    
-type: float  
-readonly: no  
-required: no  
+title: Resonance  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  
 
 ### instances
 
-title: Instances    
-description:
+title: Instances  description:
 <pre>
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
-type: integer  
-readonly: true  
-required: no  
+type: integer
+readonly: true
+required: no
 
 ### wetness
 
-title: Wet/Dry    
-type: float  
-readonly: no  
-required: no  
+title: Wet/Dry  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 1  

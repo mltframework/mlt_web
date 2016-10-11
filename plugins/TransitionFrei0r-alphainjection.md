@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Alpha Injection  
+title: Alpha Injection
 media types:
 Video  
-description: Averages Input 1 and uses this as Alpha Channel on Input 2  
-version: 0.9  
-creator: Richard Spindler  
+description: Averages Input 1 and uses this as Alpha Channel on Input 2
+version: 0.9
+creator: Richard Spindler

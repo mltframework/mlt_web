@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Nervous  
+title: Nervous
 media types:
 Video  
-description: flushes frames in time in a nervous way  
-version: 3.1  
-creator: Tannenbaum, Kentaro, Jaromil  
+description: flushes frames in time in a nervous way
+version: 3.1
+creator: Tannenbaum, Kentaro, Jaromil

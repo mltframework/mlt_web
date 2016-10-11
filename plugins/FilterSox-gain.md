@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: gain  
+title: gain
 media types:
 Audio  
-description: Process audio using a SoX effect.  
-version: 1  
-creator: Dan Dennedy  
+description: Process audio using a SoX effect.
+version: 1
+creator: Dan Dennedy
 copyright: Meltytech, LLC  
 license: LGPL  
 URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)  
@@ -29,10 +29,9 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ### argument
 
-title: Options    
-type: string  
-readonly: no  
-required: no  
+title: Options  type: string
+readonly: no
+required: no
 format: [-e|-b|-B|-r] [-n] [-l|-h] [gain-dB]
 -e	 Equalise channels: peak to that with max peak;
 -B	 Balance channels: rms to that with max rms; no clip protection

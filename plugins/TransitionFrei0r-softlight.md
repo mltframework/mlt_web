@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: softlight  
+title: softlight
 media types:
 Video  
-description: Perform an RGB[A] softlight operation between the pixel sources.  
-version: 0.2  
-creator: Jean-Sebastien Senecal  
+description: Perform an RGB[A] softlight operation between the pixel sources.
+version: 0.2
+creator: Jean-Sebastien Senecal

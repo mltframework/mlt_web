@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: xfade0r  
+title: xfade0r
 media types:
 Video  
-description: a simple xfader  
-version: 0.2  
-creator: Martin Bayer  
+description: a simple xfader
+version: 0.2
+creator: Martin Bayer
 
 ## Parameters
 
 ### 0
 
-title: fader    
-description:
+title: fader  description:
 the fader position  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

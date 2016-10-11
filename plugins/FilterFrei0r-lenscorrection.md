@@ -9,21 +9,20 @@ category: plugin
 
 ## Plugin Information
 
-title: Lens Correction  
+title: Lens Correction
 media types:
 Video  
-description: Allows compensation of lens distortion  
-version: 0.2  
-creator: Richard Spindler  
+description: Allows compensation of lens distortion
+version: 0.2
+creator: Richard Spindler
 
 ## Parameters
 
 ### 0
 
-title: X center    
-type: float  
-readonly: no  
-required: no  
+title: X center  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -31,10 +30,9 @@ widget: spinner
 
 ### 1
 
-title: Y center    
-type: float  
-readonly: no  
-required: no  
+title: Y center  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -42,10 +40,9 @@ widget: spinner
 
 ### 2
 
-title: Correction near center    
-type: float  
-readonly: no  
-required: no  
+title: Correction near center  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -53,10 +50,9 @@ widget: spinner
 
 ### 3
 
-title: Correction near edges    
-type: float  
-readonly: no  
-required: no  
+title: Correction near edges  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -64,10 +60,9 @@ widget: spinner
 
 ### 4
 
-title: Brightness    
-type: float  
-readonly: no  
-required: no  
+title: Brightness  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  

@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: astats  
+title: astats
 media types:
 Audio  
-description: Show time domain statistics about audio frames.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Show time domain statistics about audio frames.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.length
 
-  
 description:
 set the window length  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0.01  
 maximum: 10  
 default: 0.05  
@@ -33,21 +32,19 @@ format: double
 
 ### av.metadata
 
-  
 description:
 inject metadata in the filtergraph  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 
 ### av.reset
 
-  
 description:
 recalculate stats after this many frames  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 

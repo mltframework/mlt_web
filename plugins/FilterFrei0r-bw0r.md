@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: bw0r  
+title: bw0r
 media types:
 Video  
-description: Turns image black/white.  
-version: 0.9  
-creator: coma@gephex.org  
+description: Turns image black/white.
+version: 0.9
+creator: coma@gephex.org

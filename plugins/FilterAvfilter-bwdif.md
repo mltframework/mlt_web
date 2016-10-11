@@ -9,63 +9,59 @@ category: plugin
 
 ## Plugin Information
 
-title: bwdif  
+title: bwdif
 media types:
 Video  
-description: Deinterlace the input image.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Deinterlace the input image.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.mode
 
-  
 description:
 specify the interlacing mode  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * send_frame
 * send_field
 
 ### av.parity
 
-  
 description:
 specify the assumed picture field parity  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * tff
 * bff
 * auto
 
 ### av.deint
 
-  
 description:
 specify which frames to deinterlace  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * all
 * interlaced
 
 ### av.threads
 
-  
 description:
 Maximum number of threads  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 

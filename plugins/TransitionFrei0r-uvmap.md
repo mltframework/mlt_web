@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: UV Map  
+title: UV Map
 media types:
 Video  
-description: Uses Input 1 as UV Map to distort Input 2  
-version: 0.9  
-creator: Richard Spindler  
+description: Uses Input 1 as UV Map to distort Input 2
+version: 0.9
+creator: Richard Spindler

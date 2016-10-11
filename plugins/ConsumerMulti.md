@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Multiple outputs  
+title: Multiple outputs
 media types:
 Audio  Video  
-description: Use multiple consumers with the same producer.  
-version: 1  
-creator: Dan Dennedy  
+description: Use multiple consumers with the same producer.
+version: 1
+creator: Dan Dennedy
 copyright: Copyright (C) 2011-2014 Meltytech, LLC  
 license: LGPL  
 
@@ -40,10 +40,9 @@ consumer, which is how melt and the XML producer support multiple consumers.
 
 ### argument
 
-title: File    
-description:
+title: File  description:
 A properties or YAML file specifying multiple consumers and their properties.  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 

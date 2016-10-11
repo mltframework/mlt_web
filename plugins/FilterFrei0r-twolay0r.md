@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Twolay0r  
+title: Twolay0r
 media types:
 Video  
-description: dynamic thresholding  
-version: 0.2  
-creator: Martin Bayer  
+description: dynamic thresholding
+version: 0.2
+creator: Martin Bayer

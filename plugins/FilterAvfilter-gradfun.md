@@ -9,35 +9,33 @@ category: plugin
 
 ## Plugin Information
 
-title: gradfun  
+title: gradfun
 media types:
 Video  
-description: Debands video quickly using gradients.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Debands video quickly using gradients.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.strength
 
-  
 description:
 The maximum amount by which the filter will change any one pixel.  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0.51  
 maximum: 64  
 default: 1.2  
 
 ### av.radius
 
-  
 description:
 The neighborhood to fit the gradient to.  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 4  
 maximum: 32  
 default: 0  

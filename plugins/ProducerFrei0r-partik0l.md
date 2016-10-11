@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: Partik0l  
+title: Partik0l
 media types:
 Video  
-description: Particles generated on prime number sinusoidal blossoming  
-version: 0.3  
-creator: Jaromil  
+description: Particles generated on prime number sinusoidal blossoming
+version: 0.3
+creator: Jaromil
 
 ## Parameters
 
 ### 0
 
-title: up    
-description:
+title: up  description:
 blossom on a higher prime number  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -33,12 +32,11 @@ widget: spinner
 
 ### 1
 
-title: down    
-description:
+title: down  description:
 blossom on a lower prime number  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

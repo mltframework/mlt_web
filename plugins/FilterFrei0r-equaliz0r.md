@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: Equaliz0r  
+title: Equaliz0r
 media types:
 Video  
-description: Equalizes the intensity histograms  
-version: 0.2  
-creator: Jean-Sebastien Senecal (Drone)  
+description: Equalizes the intensity histograms
+version: 0.2
+creator: Jean-Sebastien Senecal (Drone)

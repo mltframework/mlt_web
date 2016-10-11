@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: Glow  
+title: Glow
 media types:
 Video  
-description: Creates a Glamorous Glow  
-version: 0.1  
-creator: Richard Spindler  
+description: Creates a Glamorous Glow
+version: 0.1
+creator: Richard Spindler
 
 ## Parameters
 
 ### 0
 
-title: Blur    
-description:
+title: Blur  description:
 Blur of the glow  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: lighten  
+title: lighten
 media types:
 Video  
-description: Perform a lighten operation between two sources (maximum value of both sources).  
-version: 0.2  
-creator: Jean-Sebastien Senecal  
+description: Perform a lighten operation between two sources (maximum value of both sources).
+version: 0.2
+creator: Jean-Sebastien Senecal

@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Noise  
+title: Noise
 media types:
 Audio  Video  
-description: White noise producer  
-version: 1  
-creator: Charles Yates  
+description: White noise producer
+version: 1
+creator: Charles Yates
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

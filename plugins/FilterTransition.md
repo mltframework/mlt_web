@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Transition as Filter  
+title: Transition as Filter
 media types:
 Audio  Video  
-description: Use a transition as a filter. The filters supplies the same frame as both the A and B clip to the transition.  
-version: 1  
-creator: Charles Yates  
+description: Use a transition as a filter. The filters supplies the same frame as both the A and B clip to the transition.
+version: 1
+creator: Charles Yates
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -22,19 +22,17 @@ license: LGPLv2.1
 
 ### transition
 
-title: Transition    
-description:
+title: Transition  description:
 The MLT name of a transition.  
-type: string  
-readonly: no  
-required: true  
+type: string
+readonly: no
+required: true
 
 ### transition.*
 
-  
 description:
 Properties may be set on the encapsulated composite transition. e.g.: transition.valign=c  
-type: properties  
-readonly: no  
-required: no  
+type: properties
+readonly: no
+required: no
 

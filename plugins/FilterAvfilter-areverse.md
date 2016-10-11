@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: areverse  
+title: areverse
 media types:
 Audio  
-description: Reverse an audio clip.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Reverse an audio clip.
+version: Lavfi6.41.100
+creator: libavfilter maintainers

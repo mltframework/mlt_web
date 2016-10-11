@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: Melt  
+title: Melt
 media types:
 Audio  Video  
-description: Process melt command line.  
-version: 1  
-creator: Charles Yates  
+description: Process melt command line.
+version: 1
+creator: Charles Yates
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

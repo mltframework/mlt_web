@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Field order  
+title: Field order
 media types:
 Video  Hidden  
-description: Correct the field order of interlaced video.  
-version: 1  
-creator: Dan Dennedy <dan@dennedy.org>  
+description: Correct the field order of interlaced video.
+version: 1
+creator: Dan Dennedy <dan@dennedy.org>
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

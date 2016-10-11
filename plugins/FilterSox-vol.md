@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: vol  
+title: vol
 media types:
 Audio  
-description: Process audio using a SoX effect.  
-version: 1  
-creator: Dan Dennedy  
+description: Process audio using a SoX effect.
+version: 1
+creator: Dan Dennedy
 copyright: Meltytech, LLC  
 license: LGPL  
 URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)  
@@ -29,10 +29,9 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ### argument
 
-title: Options    
-type: string  
-readonly: no  
-required: no  
+title: Options  type: string
+readonly: no
+required: no
 format: GAIN [TYPE [LIMITERGAIN]]
 	(default TYPE=amplitude: 1 is constant, < 0 change phase;
 	TYPE=power 1 is constant; TYPE=dB: 0 is constant, +6 doubles ampl.)

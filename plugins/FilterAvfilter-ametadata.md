@@ -9,25 +9,24 @@ category: plugin
 
 ## Plugin Information
 
-title: ametadata  
+title: ametadata
 media types:
 Audio  
-description: Manipulate audio frame metadata.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Manipulate audio frame metadata.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.mode
 
-  
 description:
 set a mode of operation  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * select
 * add
 * modify
@@ -36,32 +35,29 @@ values:
 
 ### av.key
 
-  
 description:
 set metadata key  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 
 ### av.value
 
-  
 description:
 set metadata value  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 
 ### av.function
 
-  
 description:
 function for comparing values  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * same_str
 * starts_with
 * less
@@ -71,19 +67,17 @@ values:
 
 ### av.expr
 
-  
 description:
 set expression for expr function  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 
 ### av.file
 
-  
 description:
 set file where to print metadata information  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 

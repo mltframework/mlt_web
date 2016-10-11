@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Opacity (GLSL)  
+title: Opacity (GLSL)
 media types:
 Video  
-description: Adjust the opacity of an image through the alpha channel.  
-version: 1  
-creator: Steinar H. Gunderson  
+description: Adjust the opacity of an image through the alpha channel.
+version: 1
+creator: Steinar H. Gunderson
 copyright: Dan Dennedy  
 license: GPLv2  
 
@@ -26,22 +26,20 @@ When used in some transitions this will cause this video to be mixed with the ot
 
 ### opacity
 
-title: Opacity    
-type: float  
-readonly: no  
-required: no  
+title: Opacity  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 1  
 
 ### alpha
 
-title: Alpha    
-description:
+title: Alpha  description:
 When this is less than zero, the alpha component of the Movit mutliply effect follows opacity. Otherwise, you can set this to another value to control the alpha component independently. If you set this to 1, then the opacity parameter can be used to fade to and from black.  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: -1  
 maximum: 1  
 default: -1  

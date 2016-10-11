@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: CBR MPEG2-TS  
+title: CBR MPEG2-TS
 media types:
 Audio  Video  
-description: Constant bit-rate MPEG-2 Transport Stream  
-version: 2  
-creator: Dan Dennedy  
+description: Constant bit-rate MPEG-2 Transport Stream
+version: 2
+creator: Dan Dennedy
 copyright: Copyright (C) 2010-2015 Broadcasting Center Europe S.A. http://www.bce.lu  
 license: GPLv2  
 
@@ -48,113 +48,101 @@ The time property indicates the frequency to insert the section - every N millis
 
 ### muxrate
 
-  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 unit: bytes/second  
 
 ### udp.rtprio
 
-title: Real-time priority    
-description:
+title: Real-time priority  description:
 When set to a valid value, this makes the network output thread run with a real-time policy and priority where 1 is lowest and 99 is highest.  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 1  
 maximum: 99  
 
 ### udp.address
 
-title: UDP address    
-description:
+title: UDP address  description:
 If an IP address is provided, the stream is sent over UDP instead of STDOUT.  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 
 ### udp.port
 
-title: UDP port    
-type: integer  
-readonly: no  
-required: no  
+title: UDP port  type: integer
+readonly: no
+required: no
 minimum: 0  
 default: 1234  
 
 ### udp.ttl
 
-title: Multicast TTL    
-description:
+title: Multicast TTL  description:
 The multicast time-to-live value controls how many routing hops the multicast will survive.  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 255  
 
 ### udp.reuse
 
-title: Reuse socket address    
-description:
+title: Reuse socket address  description:
 When not supplied, the socket is opened with the reuse address option. Set this to 0 to disable that.  
-type: boolean  
-readonly: no  
-required: no  
+type: boolean
+readonly: no
+required: no
 default: 1  
 
 ### udp.sockbufsize
 
-title: Socket buffer size    
-type: integer  
-readonly: no  
-required: no  
+title: Socket buffer size  type: integer
+readonly: no
+required: no
 minimum: 1  
 unit: bytes  
 
 ### udp.nb_tsp
 
-title: TS packets per UDP packet    
-type: integer  
-readonly: no  
-required: no  
+title: TS packets per UDP packet  type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 7  
 default: 7  
 
 ### udp.buffer
 
-title: Max buffer IP packets    
-type: integer  
-readonly: no  
-required: no  
+title: Max buffer IP packets  type: integer
+readonly: no
+required: no
 minimum: 100  
 default: 1000  
 
 ### udp.rtp
 
-title: Use RTP    
-type: boolean  
-readonly: no  
-required: no  
+title: Use RTP  type: boolean
+readonly: no
+required: no
 default: 1  
 
 ### udp.rtp_ssrc
 
-title: RTP synchronization source    
-description:
+title: RTP synchronization source  description:
 The default is a random number, but you can override it.  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 
 ### udp.interface
 
-title: Multicast interface name    
-description:
+title: Multicast interface name  description:
 Normally the multicast interface is selected by the IP routing table configured on the system, but this might be more convenient. It takes a name like &quot;eth0&quot;.  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 

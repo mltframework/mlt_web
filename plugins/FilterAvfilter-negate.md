@@ -9,19 +9,18 @@ category: plugin
 
 ## Plugin Information
 
-title: negate  
+title: negate
 media types:
 Video  
-description: Negate input video.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Negate input video.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.negate_alpha
 
-  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 

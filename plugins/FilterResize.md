@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Pad  
+title: Pad
 media types:
 Video  Hidden  
-description: Pad an image with black to fulfill the requested image size.  
-version: 2  
-creator: Charles Yates <charles.yates@pandora.be>  
+description: Pad an image with black to fulfill the requested image size.
+version: 2
+creator: Charles Yates <charles.yates@pandora.be>
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

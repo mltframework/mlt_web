@@ -9,48 +9,45 @@ category: plugin
 
 ## Plugin Information
 
-title: nnedi  
+title: nnedi
 media types:
 Video  
-description: Apply neural network edge directed interpolation intra-only deinterlacer.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Apply neural network edge directed interpolation intra-only deinterlacer.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.weights
 
-  
 description:
 set weights file  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 default: 'nnedi3_weights.bin'  
 
 ### av.deint
 
-  
 description:
 set which frames to deinterlace  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * all
 * interlaced
 
 ### av.field
 
-  
 description:
 set mode of operation  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * af
 * a
 * t
@@ -60,26 +57,24 @@ values:
 
 ### av.planes
 
-  
 description:
 set which planes to process  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 7  
 default: 0  
 
 ### av.nsize
 
-  
 description:
 set size of local neighborhood around each pixel, used by the predictor neural network  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * s8x6
 * s16x6
 * s32x6
@@ -90,14 +85,13 @@ values:
 
 ### av.nns
 
-  
 description:
 set number of neurons in predictor neural network  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * n16
 * n32
 * n64
@@ -106,50 +100,46 @@ values:
 
 ### av.qual
 
-  
 description:
 set quality  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * fast
 * slow
 
 ### av.etype
 
-  
 description:
 set which set of weights to use in the predictor  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * a
 * s
 
 ### av.pscrn
 
-  
 description:
 set prescreening  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * none
 * original
 * new
 
 ### av.fapprox
 
-  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 maximum: 3  
 default: 0  

@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: darken  
+title: darken
 media types:
 Video  
-description: Perform a darken operation between two sources (minimum value of both sources).  
-version: 0.2  
-creator: Jean-Sebastien Senecal  
+description: Perform a darken operation between two sources (minimum value of both sources).
+version: 0.2
+creator: Jean-Sebastien Senecal

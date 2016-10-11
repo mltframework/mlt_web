@@ -9,21 +9,20 @@ category: plugin
 
 ## Plugin Information
 
-title: Mask0Mate  
+title: Mask0Mate
 media types:
 Video  
-description: Creates an square alpha-channel mask  
-version: 0.1  
-creator: Richard Spindler  
+description: Creates an square alpha-channel mask
+version: 0.1
+creator: Richard Spindler
 
 ## Parameters
 
 ### 0
 
-title: Left    
-type: float  
-readonly: no  
-required: no  
+title: Left  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -31,10 +30,9 @@ widget: spinner
 
 ### 1
 
-title: Right    
-type: float  
-readonly: no  
-required: no  
+title: Right  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -42,10 +40,9 @@ widget: spinner
 
 ### 2
 
-title: Top    
-type: float  
-readonly: no  
-required: no  
+title: Top  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -53,10 +50,9 @@ widget: spinner
 
 ### 3
 
-title: Bottom    
-type: float  
-readonly: no  
-required: no  
+title: Bottom  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -64,12 +60,11 @@ widget: spinner
 
 ### 4
 
-title: Invert    
-description:
+title: Invert  description:
 Invert the mask, creates a hole in the frame.  
-type: boolean  
-readonly: no  
-required: no  
+type: boolean
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -77,12 +72,11 @@ widget: checkbox
 
 ### 5
 
-title: Blur    
-description:
+title: Blur  description:
 Blur the outline of the mask  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

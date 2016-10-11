@@ -9,59 +9,55 @@ category: plugin
 
 ## Plugin Information
 
-title: hqdn3d  
+title: hqdn3d
 media types:
 Video  
-description: Apply a High Quality 3D Denoiser.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Apply a High Quality 3D Denoiser.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.luma_spatial
 
-  
 description:
 spatial luma strength  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 format: double  
 
 ### av.chroma_spatial
 
-  
 description:
 spatial chroma strength  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 format: double  
 
 ### av.luma_tmp
 
-  
 description:
 temporal luma strength  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 format: double  
 
 ### av.chroma_tmp
 
-  
 description:
 temporal chroma strength  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 format: double  

@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: spillsupress  
+title: spillsupress
 media types:
 Video  
-description: Remove green or blue spill light from subjects shot in front of green or blue screen  
-version: 0.1  
-creator: Janne Liljeblad  
+description: Remove green or blue spill light from subjects shot in front of green or blue screen
+version: 0.1
+creator: Janne Liljeblad
 
 ## Parameters
 
 ### 0
 
-title: supresstype    
-description:
+title: supresstype  description:
 Defines if green or blue screen spill supress is applied  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

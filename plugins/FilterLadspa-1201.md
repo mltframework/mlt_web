@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Multivoice Chorus  
+title: Multivoice Chorus
 media types:
 Audio  
-description: LADSPA plugin  
-version: 1  
-creator: Steve Harris <steve@plugin.org.uk>  
+description: LADSPA plugin
+version: 1
+creator: Steve Harris <steve@plugin.org.uk>
 copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -32,84 +32,76 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 
 ### 0
 
-title: Number of voices    
-type: integer  
-readonly: no  
-required: no  
+title: Number of voices  type: integer
+readonly: no
+required: no
 minimum: 1  
 maximum: 8  
 default: 1  
 
 ### 1
 
-title: Delay base (ms)    
-type: float  
-readonly: no  
-required: no  
+title: Delay base (ms)  type: float
+readonly: no
+required: no
 minimum: 10  
 maximum: 40  
 default: 10  
 
 ### 2
 
-title: Voice separation (ms)    
-type: float  
-readonly: no  
-required: no  
+title: Voice separation (ms)  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 2  
 default: 0.5  
 
 ### 3
 
-title: Detune (%)    
-type: float  
-readonly: no  
-required: no  
+title: Detune (%)  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 5  
 default: 1  
 
 ### 4
 
-title: LFO frequency (Hz)    
-type: float  
-readonly: no  
-required: no  
+title: LFO frequency (Hz)  type: float
+readonly: no
+required: no
 minimum: 2  
 maximum: 30  
 default: 9  
 
 ### 5
 
-title: Output attenuation (dB)    
-type: float  
-readonly: no  
-required: no  
+title: Output attenuation (dB)  type: float
+readonly: no
+required: no
 minimum: -20  
 maximum: 0  
 default: 0  
 
 ### instances
 
-title: Instances    
-description:
+title: Instances  description:
 <pre>
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
-type: integer  
-readonly: true  
-required: no  
+type: integer
+readonly: true
+required: no
 
 ### wetness
 
-title: Wet/Dry    
-type: float  
-readonly: no  
-required: no  
+title: Wet/Dry  type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 1  

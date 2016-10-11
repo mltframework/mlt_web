@@ -9,9 +9,9 @@ category: plugin
 
 ## Plugin Information
 
-title: B  
+title: B
 media types:
 Video  
-description: Extracts Blue from Image  
-version: 0.9  
-creator: Richard Spindler  
+description: Extracts Blue from Image
+version: 0.9
+creator: Richard Spindler

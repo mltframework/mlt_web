@@ -9,47 +9,44 @@ category: plugin
 
 ## Plugin Information
 
-title: transpose  
+title: transpose
 media types:
 Video  
-description: Transpose input video.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Transpose input video.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.dir
 
-  
 description:
 set transpose direction  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
 
 ### av.passthrough
 
-  
 description:
 do not apply transposition if the input matches the specified geometry  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * none
 * portrait
 * landscape
 
 ### av.threads
 
-  
 description:
 Maximum number of threads  
-type: integer  
-readonly: no  
-required: no  
+type: integer
+readonly: no
+required: no
 minimum: 0  
 default: 0  
 

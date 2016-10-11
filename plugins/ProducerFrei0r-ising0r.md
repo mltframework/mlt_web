@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: Ising0r  
+title: Ising0r
 media types:
 Video  
-description: Generates ising noise  
-version: 0.9  
-creator: Gephex crew  
+description: Generates ising noise
+version: 0.9
+creator: Gephex crew
 
 ## Parameters
 
 ### 0
 
-title: Temperature    
-description:
+title: Temperature  description:
 Noise Temperature  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -33,12 +32,11 @@ widget: spinner
 
 ### 1
 
-title: Border Growth    
-description:
+title: Border Growth  description:
 Border Growth  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -46,12 +44,11 @@ widget: spinner
 
 ### 2
 
-title: Spontaneous Growth    
-description:
+title: Spontaneous Growth  description:
 Spontaneous Growth  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 1  

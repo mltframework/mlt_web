@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: Threshold0r  
+title: Threshold0r
 media types:
 Video  
-description: Thresholds a source image  
-version: 0.2  
-creator: Jean-Sebastien Senecal  
+description: Thresholds a source image
+version: 0.2
+creator: Jean-Sebastien Senecal
 
 ## Parameters
 
 ### 0
 
-title: Threshold    
-description:
+title: Threshold  description:
 The threshold  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

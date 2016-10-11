@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: delay0r  
+title: delay0r
 media types:
 Video  
-description: video delay  
-version: 0.2  
-creator: Martin Bayer  
+description: video delay
+version: 0.2
+creator: Martin Bayer
 
 ## Parameters
 
 ### 0
 
-title: DelayTime    
-description:
+title: DelayTime  description:
 the delay time  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 1  
 default: 0  

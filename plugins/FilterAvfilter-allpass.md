@@ -9,23 +9,22 @@ category: plugin
 
 ## Plugin Information
 
-title: allpass  
+title: allpass
 media types:
 Audio  
-description: Apply a two-pole all-pass filter.  
-version: Lavfi6.41.100  
-creator: libavfilter maintainers  
+description: Apply a two-pole all-pass filter.
+version: Lavfi6.41.100
+creator: libavfilter maintainers
 
 ## Parameters
 
 ### av.frequency
 
-  
 description:
 set central frequency  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 999999  
 default: 3000  
@@ -33,12 +32,11 @@ format: double
 
 ### av.f
 
-  
 description:
 set central frequency  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 999999  
 default: 3000  
@@ -46,14 +44,13 @@ format: double
 
 ### av.width_type
 
-  
 description:
 set filter-width type  
-type: string  
-readonly: no  
-required: no  
+type: string
+readonly: no
+required: no
 format: integer or keyword  
-values:  
+values:
 * h
 * q
 * o
@@ -61,12 +58,11 @@ values:
 
 ### av.width
 
-  
 description:
 set filter-width  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 99999  
 default: 707.1  
@@ -74,12 +70,11 @@ format: double
 
 ### av.w
 
-  
 description:
 set filter-width  
-type: float  
-readonly: no  
-required: no  
+type: float
+readonly: no
+required: no
 minimum: 0  
 maximum: 99999  
 default: 707.1  
