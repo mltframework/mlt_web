@@ -44,7 +44,7 @@ permalink: /features/
     -   [SDL](http://www.libsdl.org/) for desktop audio/video
         output
 -   Supports nearly all audio and video formats and codecs that
-    [FFmpeg does](http://www.ffmpeg.org/general.html for both input and encoding - many with frame-accurate seeking
+    [FFmpeg does](http://www.ffmpeg.org/general.html) for both input and encoding - many with frame-accurate seeking
 -   Supports image sequences in any format that GDK and QImage supports
     including SVG and others with alpha channels
 -   Comprehensive and optimized suite of video and audio effects
