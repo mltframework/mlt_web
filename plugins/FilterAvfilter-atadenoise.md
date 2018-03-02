@@ -13,7 +13,7 @@ title: atadenoise
 media types:
 Video  
 description: Apply an Adaptive Temporal Averaging Denoiser.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -101,6 +101,16 @@ required: no
 minimum: 5  
 maximum: 129  
 default: 0  
+
+### av.p
+
+  
+description:
+set what planes to filter  
+type: string  
+readonly: no  
+required: no  
+format: flags  
 
 ### av.threads
 

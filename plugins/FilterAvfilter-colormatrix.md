@@ -13,7 +13,7 @@ title: colormatrix
 media types:
 Video  
 description: Convert color matrix.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -36,6 +36,7 @@ values:
 * bt470bg
 * smpte170m
 * smpte240m
+* bt2020
 
 ### av.dst
 
@@ -55,6 +56,7 @@ values:
 * bt470bg
 * smpte170m
 * smpte240m
+* bt2020
 
 ### av.threads
 

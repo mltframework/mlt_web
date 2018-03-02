@@ -13,7 +13,7 @@ title: histogram
 media types:
 Video  
 description: Compute and draw a histogram.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -53,10 +53,40 @@ required: no
 format: integer or keyword  
 values:  
 
-* parade
 * overlay
+* parade
+* stack
+
+### av.d
+
+  
+description:
+set display mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* overlay
+* parade
+* stack
 
 ### av.levels_mode
+
+  
+description:
+set levels mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* linear
+* logarithmic
+
+### av.m
 
   
 description:
@@ -81,4 +111,64 @@ required: no
 minimum: 1  
 maximum: 15  
 default: 0  
+
+### av.c
+
+  
+description:
+set color components to display  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 0  
+
+### av.fgopacity
+
+  
+description:
+set foreground opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.7  
+
+### av.f
+
+  
+description:
+set foreground opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.7  
+
+### av.bgopacity
+
+  
+description:
+set background opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.5  
+
+### av.b
+
+  
+description:
+set background opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.5  
 

@@ -13,7 +13,7 @@ title: deband
 media types:
 Video  
 description: Debands video.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -115,6 +115,33 @@ default: 6.28319
   
 description:
 set blur  
+type: string  
+readonly: no  
+required: no  
+
+### av.b
+
+  
+description:
+set blur  
+type: string  
+readonly: no  
+required: no  
+
+### av.coupling
+
+  
+description:
+set plane coupling  
+type: string  
+readonly: no  
+required: no  
+
+### av.c
+
+  
+description:
+set plane coupling  
 type: string  
 readonly: no  
 required: no  

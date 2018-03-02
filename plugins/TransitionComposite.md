@@ -176,6 +176,17 @@ type: geometry
 readonly: no  
 required: no  
 
+### sliced_composite
+
+title: Use sliced compositing    
+description:
+Enabling this option will start sliced processing of picture compositing, i.e. some parts of picture processed in different thread  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
+
 ### key[F]
 
 title: Key frame geometry    

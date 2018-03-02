@@ -13,7 +13,7 @@ title: Composite and transform
 media types:
 Video  
 description: A filter allowing compositing and transform.  
-version: 1  
+version: 2  
 creator: Jean-Baptiste Mardelle  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -54,4 +54,16 @@ minimum: 0
 maximum: 360  
 default: 1  
 widget: spinner  
+
+### rotate_center
+
+title: Rotate from center    
+description:
+Process the rotation from center if set, otherwise from top left corner  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+widget: checkbox  
 

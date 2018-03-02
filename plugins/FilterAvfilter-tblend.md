@@ -13,7 +13,7 @@ title: tblend
 media types:
 Video  
 description: Blend successive frames.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -31,15 +31,18 @@ values:
 
 * addition
 * addition128
+* grainmerge
 * and
 * average
 * burn
 * darken
 * difference
 * difference128
+* grainextract
 * divide
 * dodge
 * exclusion
+* extremity
 * freeze
 * glow
 * hardlight
@@ -75,15 +78,18 @@ values:
 
 * addition
 * addition128
+* grainmerge
 * and
 * average
 * burn
 * darken
 * difference
 * difference128
+* grainextract
 * divide
 * dodge
 * exclusion
+* extremity
 * freeze
 * glow
 * hardlight
@@ -119,15 +125,18 @@ values:
 
 * addition
 * addition128
+* grainmerge
 * and
 * average
 * burn
 * darken
 * difference
 * difference128
+* grainextract
 * divide
 * dodge
 * exclusion
+* extremity
 * freeze
 * glow
 * hardlight
@@ -163,15 +172,18 @@ values:
 
 * addition
 * addition128
+* grainmerge
 * and
 * average
 * burn
 * darken
 * difference
 * difference128
+* grainextract
 * divide
 * dodge
 * exclusion
+* extremity
 * freeze
 * glow
 * hardlight
@@ -207,15 +219,18 @@ values:
 
 * addition
 * addition128
+* grainmerge
 * and
 * average
 * burn
 * darken
 * difference
 * difference128
+* grainextract
 * divide
 * dodge
 * exclusion
+* extremity
 * freeze
 * glow
 * hardlight

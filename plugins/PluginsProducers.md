@@ -3,7 +3,7 @@ title: Documentation
 wrap_title: Producer Plugins
 ---
 * [avformat](../ProducerAvformat/): FFmpeg Reader
-* [blipflash](../ProducerBlipflash/): Blip Flash
+* [blipflash](../ProducerBlipflash/): 
 * [color](../ProducerColor/): Color
 * [colour](../ProducerColour/): Color
 * [consumer](../ProducerConsumer/): Consumer as Producer
@@ -40,6 +40,11 @@ wrap_title: Producer Plugins
 * [ladspa.1652](../ProducerLadspa-1652/): Bandlimited Variable Slope Triangle Oscillator (FCSC)
 * [ladspa.1660](../ProducerLadspa-1660/): Control to Audio Interpolator
 * [ladspa.1664](../ProducerLadspa-1664/): Random Wave Generator (FCSC)
+* [ladspa.1769](../ProducerLadspa-1769/): C* Click - Metronome
+* [ladspa.1770](../ProducerLadspa-1770/): C* CEO - Chief Executive Oscillator
+* [ladspa.1774](../ProducerLadspa-1774/): C* Fractal - Audio stream from deterministic chaos
+* [ladspa.1781](../ProducerLadspa-1781/): C* Sin - Sine wave generator
+* [ladspa.1785](../ProducerLadspa-1785/): C* White - Noise generator
 * [ladspa.1841](../ProducerLadspa-1841/): Pink Noise (Interpolated)
 * [ladspa.1843](../ProducerLadspa-1843/): Pink Noise (sample and hold)
 * [ladspa.1844](../ProducerLadspa-1844/): Pink Noise (full frequency range)
@@ -57,7 +62,6 @@ wrap_title: Producer Plugins
 * [pixbuf](../ProducerPixbuf/): GDK-PixBuf
 * [qimage](../ProducerQimage/): Qt QImage
 * [qtext](../ProducerQtext/): QT Titler
-* [sdl_image](../ProducerSdl_image/): 
 * [slowmotion](../ProducerSlowmotion/): Slow Motion
 * [timewarp](../ProducerTimewarp/): Time Warp
 * [tone](../ProducerTone/): Tone

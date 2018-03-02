@@ -13,7 +13,7 @@ title: hqx
 media types:
 Video  
 description: Scale the input by 2, 3 or 4 using the hq*x magnification algorithm.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: ametadata
 media types:
 Audio  
 description: Manipulate audio frame metadata.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

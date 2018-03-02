@@ -13,7 +13,7 @@ title: compand
 media types:
 Audio  
 description: Compress or expand audio dynamic range.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,7 +26,7 @@ set time over which increase of volume is determined
 type: string  
 readonly: no  
 required: no  
-default: '0.3'  
+default: '0'  
 
 ### av.decays
 
@@ -46,7 +46,7 @@ set points of transfer function
 type: string  
 readonly: no  
 required: no  
-default: '-70/-70|-60/-20'  
+default: '-70/-70|-60/-20|1/0'  
 
 ### av.soft-knee
 

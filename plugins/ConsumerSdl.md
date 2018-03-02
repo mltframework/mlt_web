@@ -75,3 +75,16 @@ required: no
 minimum: 128  
 default: 2048  
 
+### scrub_audio
+
+title: Audio scrubbing    
+description:
+If enabled, sound is played even when the speed is not normal.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+widget: checkbox  
+

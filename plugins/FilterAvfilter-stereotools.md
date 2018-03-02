@@ -13,7 +13,7 @@ title: stereotools
 media types:
 Audio  
 description: Apply various stereo tools.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -133,6 +133,8 @@ values:
 * lr>rr
 * lr>l+r
 * lr>rl
+* ms>ll
+* ms>rr
 
 ### av.slev
 
@@ -237,4 +239,34 @@ minimum: 0
 maximum: 360  
 default: 0  
 format: double  
+
+### av.bmode_in
+
+  
+description:
+set balance in mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* balance
+* amplitude
+* power
+
+### av.bmode_out
+
+  
+description:
+set balance out mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* balance
+* amplitude
+* power
 

@@ -1,0 +1,74 @@
+---
+layout: standard
+title: Documentation
+wrap_title: "Filter: avfilter.tonemap"
+category: plugin
+---
+* TOC
+{:toc}
+
+## Plugin Information
+
+title: tonemap  
+media types:
+Video  
+description: Conversion to/from different dynamic ranges.  
+version: Lavfi6.107.100  
+creator: libavfilter maintainers  
+
+## Parameters
+
+### av.tonemap
+
+  
+description:
+tonemap algorithm selection  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* linear
+* gamma
+* clip
+* reinhard
+* hable
+* mobius
+
+### av.param
+
+  
+description:
+tonemap parameter  
+type: float  
+readonly: no  
+required: no  
+default: nan  
+format: double  
+
+### av.desat
+
+  
+description:
+desaturation strength  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+default: 2  
+format: double  
+
+### av.peak
+
+  
+description:
+signal peak override  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+format: double  
+

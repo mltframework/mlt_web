@@ -13,7 +13,7 @@ title: convolution
 media types:
 Video  
 description: Apply convolution filter.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -152,5 +152,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147480000.0  
+default: 0  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
 default: 0  
 

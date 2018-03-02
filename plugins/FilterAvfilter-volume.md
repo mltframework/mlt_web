@@ -13,7 +13,7 @@ title: volume
 media types:
 Audio  
 description: Change input volume.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

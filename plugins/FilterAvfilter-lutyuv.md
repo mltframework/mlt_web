@@ -13,7 +13,7 @@ title: lutyuv
 media types:
 Video  
 description: Compute and apply a lookup table to the YUV input video.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,7 +26,7 @@ set component
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.c1
 
@@ -36,7 +36,7 @@ set component
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.c2
 
@@ -46,7 +46,7 @@ set component
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.c3
 
@@ -56,7 +56,7 @@ set component
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.y
 
@@ -66,7 +66,7 @@ set Y expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.u
 
@@ -76,7 +76,7 @@ set U expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.v
 
@@ -86,7 +86,7 @@ set V expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.r
 
@@ -96,7 +96,7 @@ set R expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.g
 
@@ -106,7 +106,7 @@ set G expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.b
 
@@ -116,7 +116,7 @@ set B expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 
 ### av.a
 
@@ -126,5 +126,5 @@ set A expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: 'clipval'  
 

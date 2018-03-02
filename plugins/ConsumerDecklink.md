@@ -95,3 +95,16 @@ type: string
 readonly: true  
 required: no  
 
+### sliced_swab
+
+title: Use sliced swab operation    
+description:
+This option enables multithreaded parallel swab frame data operation  
+type: boolean  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: checkbox  
+

@@ -22,7 +22,7 @@ license: LGPLv2.1
 
 Supplying a filename with extension &quot;.txt&quot; causes the loader producer to load with pango. If the filename begins with &quot;+&quot; the pango producer interprets the filename as pango text. This is a shortcut to embed titles in melt commands. For MLT XML, it is recommended that you embed the title text in the property value.
 Pango has builtin scaling. It will rescale the originally rendered title to whatever the consumer requests. Therefore, it will lose its aspect ratio if so requested, and it is up to the consumer to request a proper width and height that maintains the image aspect.
-Environment variable MLT_PANGO_PRODUCER_CACHE could be used to override and increase the size of cached converted images of simultaneous use.
+Environment variable MLT_PANGO_PRODUCER_CACHE could be used to override and increase the size of cached converted images of simultaneous use. Fontset used by pango producer loaded once. That behavior prevents using new fonts till process used pango producer been restarted. To force fontmap reload you need to send signal &quot;fontmap-reload&quot; to pango producer: { mlt_profile profile = mlt_profile_init(&quot;dv_pal&quot;); mlt_producer producer = mlt_factory_producer(profile, &quot;pango&quot;, NULL); mlt_events_fire(mlt_producer_properties(producer), &quot;fontmap-reload&quot;, NULL, NULL ); mlt_producer_close(producer); mlt_profile_close(profile); };
 
 
 ## Parameters
@@ -181,6 +181,7 @@ values:
 
 * normal
 * italic
+* oblique
 
 ### weight
 
@@ -278,6 +279,52 @@ widget: spinner
 title: Fit width    
 description:
 Scale pango layout to fit specified width.  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+widget: spinner  
+
+### line_spacing
+
+title: Sets lines spacing    
+description:
+Sets the amount of spacing between the lines of the layout.  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+widget: spinner  
+
+### stretch
+
+title: Font stretch    
+description:
+The stretch feature of pango&#39;s font description. Possible values: 1 - ULTRA_CONDENSED 2 - EXTRA_CONDENSED 3 - CONDENSED 4 - SEMI_CONDENSED 5 - NORMAL 6 - SEMI_EXPANDED 7 - EXPANDED 8 - EXTRA_EXPANDED 9 - ULTRA_EXPANDED  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 9  
+default: 4  
+widget: spinner  
+
+### wrap_width
+
+title: Sets the width to wrap to    
+description:
+Sets the width to which the lines of the PangoLayout should wrap.  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+widget: spinner  
+
+### wrap_type
+
+title: Sets the wrap mode    
+description:
+Sets the wrap mode; the wrap mode only has effect if a &#39;wrap_width&#39; is set. Possible values: 0 - wrap lines at word boundaries 1 - wrap lines at character boundaries 2 - wrap lines at word boundaries, but fall back to character boundaries if there is not enough space for a full word  
 type: integer  
 readonly: no  
 required: no  

@@ -485,6 +485,7 @@ required: no
 format: integer or keyword  
 values:  
 
+* very
 * strict
 * normal
 * unofficial
@@ -501,6 +502,7 @@ required: no
 format: integer or keyword  
 values:  
 
+* very
 * strict
 * normal
 * unofficial
@@ -562,6 +564,17 @@ List of protocols that are not allowed to be used
 type: string  
 readonly: no  
 required: no  
+
+### max_streams
+
+  
+description:
+maximum number of streams  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### linespeed
 
@@ -781,6 +794,15 @@ type: string
 readonly: no  
 required: no  
 
+### framerate
+
+  
+description:
+set the framerate (fits)  
+type: string  
+readonly: no  
+required: no  
+
 ### flv_metadata
 
   
@@ -790,6 +812,18 @@ type: string
 readonly: no  
 required: no  
 
+### missing_streams
+
+  
+description:
+(flv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
+default: 0  
+
 ### flv_metadata
 
   
@@ -798,6 +832,64 @@ Allocate streams according to the onMetaData array (live_flv)
 type: string  
 readonly: no  
 required: no  
+
+### missing_streams
+
+  
+description:
+(live_flv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
+default: 0  
+
+### code_size
+
+  
+description:
+Bits per G.726 code (g726)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 2  
+maximum: 5  
+default: 0  
+
+### sample_rate
+
+  
+description:
+(g726)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### code_size
+
+  
+description:
+Bits per G.726 code (g726le)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 2  
+maximum: 5  
+default: 0  
+
+### sample_rate
+
+  
+description:
+(g726le)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### bit_rate
 
@@ -912,6 +1004,27 @@ type: integer
 readonly: no  
 required: no  
 default: -2147483648  
+
+### allowed_extensions
+
+  
+description:
+List of file extensions that hls is allowed to access (hls,applehttp)  
+type: string  
+readonly: no  
+required: no  
+default: '3gp,aac,avi,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,wav'  
+
+### max_reload
+
+  
+description:
+Maximum number of times a insufficient list is attempted to be reloaded (hls,applehttp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### linespeed
 
@@ -1375,6 +1488,15 @@ type: string
 readonly: no  
 required: no  
 
+### framerate
+
+  
+description:
+(mjpeg_2000)  
+type: string  
+readonly: no  
+required: no  
+
 ### use_absolute_path
 
   
@@ -1397,7 +1519,16 @@ required: no
 
   
 description:
-(mov,mp4,m4a,3gp,3g2,mj2)  
+Ignore the edit list atom. (mov,mp4,m4a,3gp,3g2,mj2)  
+type: string  
+readonly: no  
+required: no  
+
+### advanced_editlist
+
+  
+description:
+Modify the AVIndex according to the editlists. Use this option to decode in the order specified by the edits. (mov,mp4,m4a,3gp,3g2,mj2)  
 type: string  
 readonly: no  
 required: no  
@@ -2186,7 +2317,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf57.34.100'  
+default: 'Lavf57.83.100'  
 
 ### sample_rate
 
@@ -2407,6 +2538,17 @@ flag indicating that the input is a live file that only has the headers. (webm_d
 type: string  
 readonly: no  
 required: no  
+
+### bandwidth
+
+  
+description:
+bandwidth of this stream to be specified in the DASH manifest. (webm_dash_manifest)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### linespeed
 
@@ -3134,6 +3276,204 @@ values:
 
   
 description:
+set the video framerate (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (pam_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (pam_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (pam_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
+### framerate
+
+  
+description:
+set the video framerate (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (pbm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (pbm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (pbm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
+### framerate
+
+  
+description:
 set the video framerate (pcx_pipe)  
 type: string  
 readonly: no  
@@ -3219,6 +3559,204 @@ default: 0
   
 description:
 set frame timestamp from file&#39;s one (pcx_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
+### framerate
+
+  
+description:
+set the video framerate (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (pgmyuv_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (pgmyuv_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (pgmyuv_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
+### framerate
+
+  
+description:
+set the video framerate (pgm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (pgm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (pgm_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (pgm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (pgm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (pgm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (pgm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (pgm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (pgm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3431,6 +3969,204 @@ values:
 
   
 description:
+set the video framerate (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (ppm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (ppm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (ppm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
+### framerate
+
+  
+description:
+set the video framerate (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (psd_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (psd_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (psd_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
+### framerate
+
+  
+description:
 set the video framerate (qdraw_pipe)  
 type: string  
 readonly: no  
@@ -3615,6 +4351,105 @@ default: 0
   
 description:
 set frame timestamp from file&#39;s one (sgi_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
+### framerate
+
+  
+description:
+set the video framerate (svg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (svg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (svg_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (svg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (svg_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (svg_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (svg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (svg_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (svg_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3922,6 +4757,105 @@ values:
 * sec
 * ns
 
+### framerate
+
+  
+description:
+set the video framerate (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (xpm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (xpm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (xpm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
 ### sample_rate
 
   
@@ -3942,31 +4876,6 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
-
-### standard
-
-  
-description:
-(dv1394)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* PAL
-* NTSC
-
-### channel
-
-  
-description:
-(dv1394)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
 default: 0  
 
 ### framerate
@@ -4090,7 +4999,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf57.34.100'  
+default: 'Lavf57.83.100'  
 
 ### stream_name
 
@@ -4156,6 +5065,28 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
+default: 0  
+
+### sample_rate
+
+  
+description:
+(sndio)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### channels
+
+  
+description:
+(sndio)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
 default: 0  
 
 ### standard
@@ -4489,6 +5420,7 @@ values:
 * dc_clip
 * ms
 * trunc
+* iedge
 
 ### strict
 
@@ -4736,22 +5668,16 @@ values:
 ### channel_layout
 
   
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-default: 0  
-format: 64-bit  
 
 ### request_channel_layout
 
   
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-default: 0  
-format: 64-bit  
 
 ### ticks_per_frame
 
@@ -4774,14 +5700,19 @@ format: integer or keyword
 values:  
 
 * bt709
-* unspecified
+* unknown
 * bt470m
 * bt470bg
 * smpte170m
 * smpte240m
 * film
 * bt2020
+* smpte428
 * smpte428_1
+* smpte431
+* smpte432
+* jedec-p22
+* unspecified
 
 ### color_trc
 
@@ -4795,12 +5726,23 @@ format: integer or keyword
 values:  
 
 * bt709
-* unspecified
+* unknown
 * gamma22
 * gamma28
 * smpte170m
 * smpte240m
 * linear
+* log100
+* log316
+* iec61966-2-4
+* bt1361e
+* iec61966-2-1
+* bt2020-10
+* bt2020-12
+* smpte2084
+* smpte428
+* arib-std-b67
+* unspecified
 * log
 * log_sqrt
 * iec61966_2_4
@@ -4808,7 +5750,6 @@ values:
 * iec61966_2_1
 * bt2020_10bit
 * bt2020_12bit
-* smpte2084
 * smpte428_1
 
 ### colorspace
@@ -4824,11 +5765,16 @@ values:
 
 * rgb
 * bt709
-* unspecified
+* unknown
 * fcc
 * bt470bg
 * smpte170m
 * smpte240m
+* ycgco
+* bt2020nc
+* bt2020c
+* smpte2085
+* unspecified
 * ycocg
 * bt2020_ncl
 * bt2020_cl
@@ -4844,6 +5790,9 @@ required: no
 format: integer or keyword  
 values:  
 
+* unknown
+* tv
+* pc
 * unspecified
 * mpeg
 * jpeg
@@ -4859,13 +5808,14 @@ required: no
 format: integer or keyword  
 values:  
 
-* unspecified
+* unknown
 * left
 * center
 * topleft
 * top
 * bottomleft
 * bottom
+* unspecified
 
 ### thread_type
 
@@ -4935,6 +5885,13 @@ type: string
 readonly: no  
 required: no  
 
+### apply_cropping
+
+  
+type: string  
+readonly: no  
+required: no  
+
 ### skip_alpha
 
   
@@ -4978,6 +5935,32 @@ List of decoders that are allowed to be used
 type: string  
 readonly: no  
 required: no  
+
+### max_pixels
+
+  
+description:
+Maximum number of pixels  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2147483647  
+default: 0  
+format: 64-bit  
+
+### hwaccel_flags
+
+  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* ignore_level
+* allow_high_depth
+* allow_profile_mismatch
 
 ### layer
 
@@ -5037,6 +6020,18 @@ type: string
 readonly: no  
 required: no  
 
+### blank_value
+
+  
+description:
+value that is used to replace BLANK pixels in data array (fits)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 65535  
+default: 0  
+
 ### change_field_order
 
   
@@ -5058,6 +6053,28 @@ minimum: 0
 maximum: -2147483648  
 default: 0  
 
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (h263_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (h263_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
+
 ### enable_er
 
   
@@ -5066,6 +6083,28 @@ Enable error resilience on damaged frames (unsafe) (h264)
 type: string  
 readonly: no  
 required: no  
+
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (h264_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (h264_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
 
 ### enable_er
 
@@ -5115,6 +6154,72 @@ type: string
 readonly: no  
 required: no  
 
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (mpeg4_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (mpeg4_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
+
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (mpeg1_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (mpeg1_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
+
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (mpeg2_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (mpeg2_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
+
 ### top
 
   
@@ -5150,6 +6255,72 @@ readonly: no
 required: no  
 default: 0  
 
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (vc1_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (vc1_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
+
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (vp8_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (vp8_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
+
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (vp9_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 0  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (vp9_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 20  
+default: 0  
+
 ### dual_mono_mode
 
   
@@ -5165,6 +6336,15 @@ values:
 * main
 * sub
 * both
+
+### cons_noisegen
+
+  
+description:
+enable consistent noise generation (ac3)  
+type: string  
+readonly: no  
+required: no  
 
 ### drc_scale
 
@@ -5198,6 +6378,15 @@ required: no
 minimum: -31  
 maximum: 0  
 default: 0  
+
+### cons_noisegen
+
+  
+description:
+enable consistent noise generation (ac3_fixed)  
+type: string  
+readonly: no  
+required: no  
 
 ### drc_scale
 
@@ -5247,6 +6436,15 @@ values:
   
 description:
 Decode core only without extensions (dca)  
+type: string  
+readonly: no  
+required: no  
+
+### cons_noisegen
+
+  
+description:
+enable consistent noise generation (eac3)  
 type: string  
 readonly: no  
 required: no  
@@ -5448,6 +6646,564 @@ required: no
   
 description:
 Set if ASS tags must be escaped (vplayer)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (h264_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (h264_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (h264_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (h264_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (h264_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (h264_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (hevc_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (hevc_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (hevc_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (hevc_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (hevc_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (hevc_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (mjpeg_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (mjpeg_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (mjpeg_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (mjpeg_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (mjpeg_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (mjpeg_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (mpeg1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (mpeg1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (mpeg1_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (mpeg1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (mpeg1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (mpeg1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (mpeg2_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (mpeg2_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (mpeg2_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (mpeg2_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (mpeg2_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (mpeg2_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (mpeg4_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (mpeg4_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (mpeg4_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (mpeg4_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (mpeg4_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (mpeg4_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (vc1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (vc1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (vc1_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (vc1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (vc1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (vc1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (vp8_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (vp8_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (vp8_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (vp8_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (vp8_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (vp8_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (vp9_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (vp9_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (vp9_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (vp9_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (vp9_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (vp9_cuvid)  
 type: string  
 readonly: no  
 required: no  

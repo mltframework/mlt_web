@@ -56,9 +56,19 @@ widget: checkbox
 
 ### combine
 
-title: Use better mixing algorithm    
+title: Use an alternative mixing algorithm    
 description:
-Mix using a low pass filter to prevent affecting audio levels. This is incompatible with start &lt; 0.  
+Mix using a low pass filter to prevent affecting audio levels. However, this may introduce slight artifacts. This is incompatible with start &lt; 0.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+
+### sum
+
+title: Mix by simply adding samples    
+description:
+The default mixing algorithm halves the sample values before adding them to absolutely prevent clipping. However, that affects levels. This algorithm simply adds samples and may clip. In many real world scenarios, the signals being mixed typically have headroom in their level and are rarely correlated and thus often will not clip. Also, one can reduce the gain and add a limiter on the mixed output prior to integer quantization to prevent clipping. This mode is incompatible with start &lt; 0.  
 type: boolean  
 readonly: no  
 required: no  

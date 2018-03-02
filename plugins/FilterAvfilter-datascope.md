@@ -13,7 +13,7 @@ title: datascope
 media types:
 Video  
 description: Video data analysis.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -81,6 +81,18 @@ draw column/row numbers
 type: string  
 readonly: no  
 required: no  
+
+### av.opacity
+
+  
+description:
+set background opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.75  
 
 ### av.threads
 

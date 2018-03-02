@@ -13,7 +13,7 @@ title: perspective
 media types:
 Video  
 description: Correct the perspective of video.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -125,6 +125,20 @@ values:
 
 * source
 * destination
+
+### av.eval
+
+  
+description:
+specify when to evaluate expressions  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* init
+* frame
 
 ### av.threads
 

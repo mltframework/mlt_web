@@ -13,7 +13,7 @@ title: fftfilt
 media types:
 Video  
 description: Apply arbitrary expressions to pixels in frequency domain.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -81,4 +81,18 @@ set chrominance expression in V plane
 type: string  
 readonly: no  
 required: no  
+
+### av.eval
+
+  
+description:
+specify when to evaluate expressions  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* init
+* frame
 

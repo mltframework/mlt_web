@@ -13,7 +13,7 @@ title: boxblur
 media types:
 Video  
 description: Blur the input.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

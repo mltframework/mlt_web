@@ -46,11 +46,9 @@ widget: fileopen
 title: Process all frames    
 description:
 Without this option, the XML consumer does not process any frames and simply serializes the service network. However, some filters (.e.g, videostab) require two passes where the first pass performs some analysis and stores the result in a property. Therefore, set this property to 1 (true) to cause the consumer to process all frames before serializing to XML.  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 0  
 
 ### title
@@ -76,11 +74,9 @@ required: no
 title: Exclude meta properties    
 description:
 Set this to disable the output of properties with the prefix &quot;meta.&quot;  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 0  
 widget: checkbox  
 
@@ -89,11 +85,9 @@ widget: checkbox
 title: No root attribute    
 description:
 Set this to disable the output of the root attribute on the root element.  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 0  
 widget: checkbox  
 
@@ -124,4 +118,15 @@ To save additional properties that MLT does not know about, supply an applicatio
 type: string  
 readonly: no  
 required: no  
+
+### no_profile
+
+title: No profile element    
+description:
+Set this to disable the output of the profile element.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
 

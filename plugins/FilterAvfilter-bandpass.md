@@ -13,7 +13,7 @@ title: bandpass
 media types:
 Audio  
 description: Apply a two-pole Butterworth band-pass filter.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -60,6 +60,22 @@ values:
 * o
 * s
 
+### av.t
+
+  
+description:
+set filter-width type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* h
+* q
+* o
+* s
+
 ### av.width
 
   
@@ -91,6 +107,24 @@ format: double
   
 description:
 use constant skirt gain  
+type: string  
+readonly: no  
+required: no  
+
+### av.channels
+
+  
+description:
+set channels to filter  
+type: string  
+readonly: no  
+required: no  
+
+### av.c
+
+  
+description:
+set channels to filter  
 type: string  
 readonly: no  
 required: no  

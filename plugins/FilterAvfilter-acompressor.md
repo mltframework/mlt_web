@@ -13,7 +13,7 @@ title: acompressor
 media types:
 Audio  
 description: Audio compressor.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -93,7 +93,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 64  
-default: 2  
+default: 1  
 format: double  
 
 ### av.knee

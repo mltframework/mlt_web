@@ -13,5 +13,5 @@ title: areverse
 media types:
 Audio  
 description: Reverse an audio clip.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  

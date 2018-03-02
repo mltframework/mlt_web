@@ -13,7 +13,7 @@ title: aecho
 media types:
 Audio  
 description: Add echoing to the audio.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

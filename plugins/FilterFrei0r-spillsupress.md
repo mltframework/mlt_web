@@ -22,7 +22,7 @@ creator: Janne Liljeblad
 
 title: supresstype    
 description:
-Defines if green or blue screen spill supress is applied  
+Defines if green or blue screen spill suppress is applied  
 type: float  
 readonly: no  
 required: no  

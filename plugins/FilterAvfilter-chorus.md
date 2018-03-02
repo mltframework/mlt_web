@@ -13,7 +13,7 @@ title: chorus
 media types:
 Audio  
 description: Add a chorus effect to the audio.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: afade
 media types:
 Audio  
 description: Fade in/out input audio.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -80,6 +80,7 @@ readonly: no
 required: no  
 minimum: 1  
 default: 0  
+format: 64-bit  
 
 ### av.ns
 
@@ -91,6 +92,7 @@ readonly: no
 required: no  
 minimum: 1  
 default: 0  
+format: 64-bit  
 
 ### av.start_time
 

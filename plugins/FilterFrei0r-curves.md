@@ -13,7 +13,7 @@ title: Curves
 media types:
 Video  
 description: Adjust luminance or color channel intensity with curve level mapping  
-version: 0.3  
+version: 0.4  
 creator: Maksim Golovkin, Till Theato  
 
 ## Parameters

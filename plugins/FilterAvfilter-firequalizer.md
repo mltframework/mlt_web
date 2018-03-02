@@ -12,8 +12,8 @@ category: plugin
 title: firequalizer  
 media types:
 Audio  
-description: Finite Impulse Response Equalizer  
-version: Lavfi6.41.100  
+description: Finite Impulse Response Equalizer.  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -83,6 +83,7 @@ values:
 * nuttall
 * bnuttall
 * bharris
+* tukey
 
 ### av.fixed
 
@@ -98,6 +99,74 @@ required: no
   
 description:
 set multi channels mode  
+type: string  
+readonly: no  
+required: no  
+
+### av.zero_phase
+
+  
+description:
+set zero phase mode  
+type: string  
+readonly: no  
+required: no  
+
+### av.scale
+
+  
+description:
+set gain scale  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* linlin
+* linlog
+* loglin
+* loglog
+
+### av.dumpfile
+
+  
+description:
+set dump file  
+type: string  
+readonly: no  
+required: no  
+
+### av.dumpscale
+
+  
+description:
+set dump scale  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* linlin
+* linlog
+* loglin
+* loglog
+
+### av.fft2
+
+  
+description:
+set 2-channels fft  
+type: string  
+readonly: no  
+required: no  
+
+### av.min_phase
+
+  
+description:
+set minimum phase mode  
 type: string  
 readonly: no  
 required: no  

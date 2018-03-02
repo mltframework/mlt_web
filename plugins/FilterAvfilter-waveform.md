@@ -13,7 +13,7 @@ title: waveform
 media types:
 Video  
 description: Video waveform monitor.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -302,8 +302,8 @@ format: integer or keyword
 values:  
 
 * digital
-* ire
 * millivolts
+* ire
 
 ### av.s
 
@@ -317,6 +317,30 @@ format: integer or keyword
 values:  
 
 * digital
-* ire
 * millivolts
+* ire
+
+### av.bgopacity
+
+  
+description:
+set background opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.75  
+
+### av.b
+
+  
+description:
+set background opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.75  
 

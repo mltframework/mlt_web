@@ -13,7 +13,7 @@ title: pad
 media types:
 Video  
 description: Pad the input video.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -86,4 +86,28 @@ set the color of the padded area border
 type: string  
 readonly: no  
 required: no  
+
+### av.eval
+
+  
+description:
+specify when to evaluate expressions  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* init
+* frame
+
+### av.aspect
+
+  
+description:
+pad to fit an aspect instead of a resolution  
+type: string  
+readonly: no  
+required: no  
+format: numerator/denominator  
 

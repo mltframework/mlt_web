@@ -13,7 +13,7 @@ title: curves
 media types:
 Video  
 description: Adjust components curves.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -127,6 +127,15 @@ required: no
   
 description:
 set Photoshop curves file name  
+type: string  
+readonly: no  
+required: no  
+
+### av.plot
+
+  
+description:
+save Gnuplot script of the curves in specified file  
 type: string  
 readonly: no  
 required: no  

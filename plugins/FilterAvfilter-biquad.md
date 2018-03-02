@@ -13,7 +13,7 @@ title: biquad
 media types:
 Audio  
 description: Apply a biquad IIR filter with the given coefficients.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -83,4 +83,22 @@ minimum: -32768
 maximum: 32767  
 default: 1  
 format: double  
+
+### av.channels
+
+  
+description:
+set channels to filter  
+type: string  
+readonly: no  
+required: no  
+
+### av.c
+
+  
+description:
+set channels to filter  
+type: string  
+readonly: no  
+required: no  
 

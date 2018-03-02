@@ -13,7 +13,7 @@ title: transpose
 media types:
 Video  
 description: Transpose input video.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -27,6 +27,12 @@ type: string
 readonly: no  
 required: no  
 format: integer or keyword  
+values:  
+
+* cclock_flip
+* clock
+* cclock
+* clock_flip
 
 ### av.passthrough
 

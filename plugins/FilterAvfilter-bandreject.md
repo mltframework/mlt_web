@@ -13,7 +13,7 @@ title: bandreject
 media types:
 Audio  
 description: Apply a two-pole Butterworth band-reject filter.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -60,6 +60,22 @@ values:
 * o
 * s
 
+### av.t
+
+  
+description:
+set filter-width type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* h
+* q
+* o
+* s
+
 ### av.width
 
   
@@ -85,4 +101,22 @@ minimum: 0
 maximum: 999  
 default: 0.5  
 format: double  
+
+### av.channels
+
+  
+description:
+set channels to filter  
+type: string  
+readonly: no  
+required: no  
+
+### av.c
+
+  
+description:
+set channels to filter  
+type: string  
+readonly: no  
+required: no  
 

@@ -13,5 +13,5 @@ title: reverse
 media types:
 Video  
 description: Reverse a clip.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  

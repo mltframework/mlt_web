@@ -143,3 +143,16 @@ type: integer
 readonly: no  
 required: no  
 
+### bitdepth
+
+title: Bitdepth for capturing    
+description:
+Enable capturing in 10-bit native SDI signal  
+type: integer  
+readonly: no  
+required: no  
+values:  
+
+* 8
+* 10
+

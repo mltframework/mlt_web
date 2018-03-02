@@ -24,7 +24,7 @@ QImage has builtin scaling. It will rescale the originally rendered title to wha
 
 ## Parameters
 
-### argument
+### resource
 
 title: File    
 description:
@@ -107,11 +107,10 @@ maximum: 1
 ### disable_exif
 
 title: Disable auto-rotation    
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
+default: 0  
 widget: checkbox  
 
 ### force_aspect_ratio
@@ -122,4 +121,15 @@ Optionally override a (mis)detected aspect ratio
 type: float  
 readonly: no  
 required: no  
+
+### autolength
+
+title: Automatically compute length    
+description:
+Whether to automatically compute the length and out point for an image sequence.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
 

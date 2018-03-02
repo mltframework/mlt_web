@@ -13,7 +13,7 @@ title: chromakey
 media types:
 Video  
 description: Turns a certain color into transparency. Operates on YUV colors.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

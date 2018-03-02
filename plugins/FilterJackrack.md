@@ -15,7 +15,7 @@ Audio
 description: Process audio using JACK.  
 version: 1  
 creator: Dan Dennedy  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
+copyright: Copyright (C) 2004-2018 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -32,7 +32,7 @@ This can be used to receive audio from JACK by connecting only input ports. It c
 
 ## Parameters
 
-### argument
+### src
 
 title: JACK Rack file    
 description:
@@ -41,11 +41,13 @@ type: string
 readonly: no  
 required: no  
 
-### src
+### client_name
 
-title: JACK Rack file    
+title: JACK client name    
+description:
+The generated name of the JACK client.  
 type: string  
-readonly: no  
+readonly: true  
 required: no  
 
 ### channels

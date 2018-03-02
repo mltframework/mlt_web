@@ -13,7 +13,7 @@ title: stereo3d
 media types:
 Video  
 description: Convert video stereoscopic 3D view.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters

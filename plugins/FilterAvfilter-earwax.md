@@ -13,5 +13,5 @@ title: earwax
 media types:
 Audio  
 description: Widen the stereo image.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  

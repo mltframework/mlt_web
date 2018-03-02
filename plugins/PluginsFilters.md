@@ -12,6 +12,8 @@ wrap_title: Filter Plugins
 * [autotrack_rectangle](../FilterAutotrack_rectangle/): Autotrack Rectangle
 * [avfilter.abench](../FilterAvfilter-abench/): abench
 * [avfilter.acompressor](../FilterAvfilter-acompressor/): acompressor
+* [avfilter.acopy](../FilterAvfilter-acopy/): acopy
+* [avfilter.acrusher](../FilterAvfilter-acrusher/): acrusher
 * [avfilter.adelay](../FilterAvfilter-adelay/): adelay
 * [avfilter.aecho](../FilterAvfilter-aecho/): aecho
 * [avfilter.aemphasis](../FilterAvfilter-aemphasis/): aemphasis
@@ -28,14 +30,17 @@ wrap_title: Filter Plugins
 * [avfilter.arealtime](../FilterAvfilter-arealtime/): arealtime
 * [avfilter.areverse](../FilterAvfilter-areverse/): areverse
 * [avfilter.ashowinfo](../FilterAvfilter-ashowinfo/): ashowinfo
+* [avfilter.asidedata](../FilterAvfilter-asidedata/): asidedata
 * [avfilter.astats](../FilterAvfilter-astats/): astats
 * [avfilter.atadenoise](../FilterAvfilter-atadenoise/): atadenoise
+* [avfilter.avgblur](../FilterAvfilter-avgblur/): avgblur
 * [avfilter.bandpass](../FilterAvfilter-bandpass/): bandpass
 * [avfilter.bandreject](../FilterAvfilter-bandreject/): bandreject
 * [avfilter.bass](../FilterAvfilter-bass/): bass
 * [avfilter.bbox](../FilterAvfilter-bbox/): bbox
 * [avfilter.bench](../FilterAvfilter-bench/): bench
 * [avfilter.biquad](../FilterAvfilter-biquad/): biquad
+* [avfilter.bitplanenoise](../FilterAvfilter-bitplanenoise/): bitplanenoise
 * [avfilter.boxblur](../FilterAvfilter-boxblur/): boxblur
 * [avfilter.bwdif](../FilterAvfilter-bwdif/): bwdif
 * [avfilter.channelmap](../FilterAvfilter-channelmap/): channelmap
@@ -51,15 +56,20 @@ wrap_title: Filter Plugins
 * [avfilter.compensationdelay](../FilterAvfilter-compensationdelay/): compensationdelay
 * [avfilter.convolution](../FilterAvfilter-convolution/): convolution
 * [avfilter.cropdetect](../FilterAvfilter-cropdetect/): cropdetect
+* [avfilter.crossfeed](../FilterAvfilter-crossfeed/): crossfeed
+* [avfilter.crystalizer](../FilterAvfilter-crystalizer/): crystalizer
 * [avfilter.curves](../FilterAvfilter-curves/): curves
 * [avfilter.datascope](../FilterAvfilter-datascope/): datascope
 * [avfilter.dcshift](../FilterAvfilter-dcshift/): dcshift
 * [avfilter.dctdnoiz](../FilterAvfilter-dctdnoiz/): dctdnoiz
 * [avfilter.deband](../FilterAvfilter-deband/): deband
 * [avfilter.deflate](../FilterAvfilter-deflate/): deflate
+* [avfilter.deflicker](../FilterAvfilter-deflicker/): deflicker
 * [avfilter.delogo](../FilterAvfilter-delogo/): delogo
 * [avfilter.deshake](../FilterAvfilter-deshake/): deshake
+* [avfilter.despill](../FilterAvfilter-despill/): despill
 * [avfilter.dilation](../FilterAvfilter-dilation/): dilation
+* [avfilter.doubleweave](../FilterAvfilter-doubleweave/): doubleweave
 * [avfilter.drawbox](../FilterAvfilter-drawbox/): drawbox
 * [avfilter.drawgraph](../FilterAvfilter-drawgraph/): drawgraph
 * [avfilter.drawgrid](../FilterAvfilter-drawgrid/): drawgrid
@@ -79,10 +89,14 @@ wrap_title: Filter Plugins
 * [avfilter.find_rect](../FilterAvfilter-find_rect/): find_rect
 * [avfilter.firequalizer](../FilterAvfilter-firequalizer/): firequalizer
 * [avfilter.flanger](../FilterAvfilter-flanger/): flanger
+* [avfilter.floodfill](../FilterAvfilter-floodfill/): floodfill
 * [avfilter.framerate](../FilterAvfilter-framerate/): framerate
 * [avfilter.fspp](../FilterAvfilter-fspp/): fspp
+* [avfilter.gblur](../FilterAvfilter-gblur/): gblur
 * [avfilter.geq](../FilterAvfilter-geq/): geq
 * [avfilter.gradfun](../FilterAvfilter-gradfun/): gradfun
+* [avfilter.haas](../FilterAvfilter-haas/): haas
+* [avfilter.hdcd](../FilterAvfilter-hdcd/): hdcd
 * [avfilter.hflip](../FilterAvfilter-hflip/): hflip
 * [avfilter.highpass](../FilterAvfilter-highpass/): highpass
 * [avfilter.histeq](../FilterAvfilter-histeq/): histeq
@@ -90,60 +104,86 @@ wrap_title: Filter Plugins
 * [avfilter.hqdn3d](../FilterAvfilter-hqdn3d/): hqdn3d
 * [avfilter.hqx](../FilterAvfilter-hqx/): hqx
 * [avfilter.hue](../FilterAvfilter-hue/): hue
+* [avfilter.hwdownload](../FilterAvfilter-hwdownload/): hwdownload
+* [avfilter.hwmap](../FilterAvfilter-hwmap/): hwmap
+* [avfilter.hwupload](../FilterAvfilter-hwupload/): hwupload
+* [avfilter.hwupload_cuda](../FilterAvfilter-hwupload_cuda/): hwupload_cuda
 * [avfilter.idet](../FilterAvfilter-idet/): idet
 * [avfilter.inflate](../FilterAvfilter-inflate/): inflate
 * [avfilter.lenscorrection](../FilterAvfilter-lenscorrection/): lenscorrection
+* [avfilter.limiter](../FilterAvfilter-limiter/): limiter
 * [avfilter.loop](../FilterAvfilter-loop/): loop
+* [avfilter.loudnorm](../FilterAvfilter-loudnorm/): loudnorm
 * [avfilter.lowpass](../FilterAvfilter-lowpass/): lowpass
+* [avfilter.lumakey](../FilterAvfilter-lumakey/): lumakey
 * [avfilter.lut](../FilterAvfilter-lut/): lut
 * [avfilter.lut3d](../FilterAvfilter-lut3d/): lut3d
 * [avfilter.lutrgb](../FilterAvfilter-lutrgb/): lutrgb
 * [avfilter.lutyuv](../FilterAvfilter-lutyuv/): lutyuv
+* [avfilter.mestimate](../FilterAvfilter-mestimate/): mestimate
 * [avfilter.metadata](../FilterAvfilter-metadata/): metadata
+* [avfilter.minterpolate](../FilterAvfilter-minterpolate/): minterpolate
 * [avfilter.negate](../FilterAvfilter-negate/): negate
+* [avfilter.nlmeans](../FilterAvfilter-nlmeans/): nlmeans
 * [avfilter.nnedi](../FilterAvfilter-nnedi/): nnedi
 * [avfilter.noise](../FilterAvfilter-noise/): noise
+* [avfilter.oscilloscope](../FilterAvfilter-oscilloscope/): oscilloscope
 * [avfilter.owdenoise](../FilterAvfilter-owdenoise/): owdenoise
 * [avfilter.pad](../FilterAvfilter-pad/): pad
 * [avfilter.perspective](../FilterAvfilter-perspective/): perspective
+* [avfilter.pixscope](../FilterAvfilter-pixscope/): pixscope
 * [avfilter.pp](../FilterAvfilter-pp/): pp
 * [avfilter.pp7](../FilterAvfilter-pp7/): pp7
+* [avfilter.prewitt](../FilterAvfilter-prewitt/): prewitt
+* [avfilter.pseudocolor](../FilterAvfilter-pseudocolor/): pseudocolor
 * [avfilter.qp](../FilterAvfilter-qp/): qp
 * [avfilter.random](../FilterAvfilter-random/): random
+* [avfilter.readeia608](../FilterAvfilter-readeia608/): readeia608
+* [avfilter.readvitc](../FilterAvfilter-readvitc/): readvitc
 * [avfilter.realtime](../FilterAvfilter-realtime/): realtime
 * [avfilter.removegrain](../FilterAvfilter-removegrain/): removegrain
 * [avfilter.removelogo](../FilterAvfilter-removelogo/): removelogo
 * [avfilter.reverse](../FilterAvfilter-reverse/): reverse
+* [avfilter.roberts](../FilterAvfilter-roberts/): roberts
 * [avfilter.rotate](../FilterAvfilter-rotate/): rotate
 * [avfilter.sab](../FilterAvfilter-sab/): sab
 * [avfilter.selectivecolor](../FilterAvfilter-selectivecolor/): selectivecolor
 * [avfilter.showinfo](../FilterAvfilter-showinfo/): showinfo
 * [avfilter.shuffleframes](../FilterAvfilter-shuffleframes/): shuffleframes
 * [avfilter.shuffleplanes](../FilterAvfilter-shuffleplanes/): shuffleplanes
+* [avfilter.sidedata](../FilterAvfilter-sidedata/): sidedata
 * [avfilter.signalstats](../FilterAvfilter-signalstats/): signalstats
 * [avfilter.silencedetect](../FilterAvfilter-silencedetect/): silencedetect
 * [avfilter.smartblur](../FilterAvfilter-smartblur/): smartblur
+* [avfilter.sobel](../FilterAvfilter-sobel/): sobel
 * [avfilter.spp](../FilterAvfilter-spp/): spp
 * [avfilter.stereo3d](../FilterAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../FilterAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../FilterAvfilter-stereowiden/): stereowiden
 * [avfilter.super2xsai](../FilterAvfilter-super2xsai/): super2xsai
+* [avfilter.superequalizer](../FilterAvfilter-superequalizer/): superequalizer
+* [avfilter.surround](../FilterAvfilter-surround/): surround
 * [avfilter.swaprect](../FilterAvfilter-swaprect/): swaprect
 * [avfilter.swapuv](../FilterAvfilter-swapuv/): swapuv
 * [avfilter.tblend](../FilterAvfilter-tblend/): tblend
+* [avfilter.tlut2](../FilterAvfilter-tlut2/): tlut2
+* [avfilter.tonemap](../FilterAvfilter-tonemap/): tonemap
 * [avfilter.transpose](../FilterAvfilter-transpose/): transpose
 * [avfilter.treble](../FilterAvfilter-treble/): treble
 * [avfilter.tremolo](../FilterAvfilter-tremolo/): tremolo
 * [avfilter.unsharp](../FilterAvfilter-unsharp/): unsharp
 * [avfilter.uspp](../FilterAvfilter-uspp/): uspp
+* [avfilter.vaguedenoiser](../FilterAvfilter-vaguedenoiser/): vaguedenoiser
 * [avfilter.vectorscope](../FilterAvfilter-vectorscope/): vectorscope
 * [avfilter.vflip](../FilterAvfilter-vflip/): vflip
 * [avfilter.vibrato](../FilterAvfilter-vibrato/): vibrato
 * [avfilter.vignette](../FilterAvfilter-vignette/): vignette
+* [avfilter.vmafmotion](../FilterAvfilter-vmafmotion/): vmafmotion
 * [avfilter.volume](../FilterAvfilter-volume/): volume
 * [avfilter.volumedetect](../FilterAvfilter-volumedetect/): volumedetect
 * [avfilter.w3fdif](../FilterAvfilter-w3fdif/): w3fdif
 * [avfilter.waveform](../FilterAvfilter-waveform/): waveform
+* [avfilter.weave](../FilterAvfilter-weave/): weave
 * [avfilter.xbr](../FilterAvfilter-xbr/): xbr
 * [avfilter.zoompan](../FilterAvfilter-zoompan/): zoompan
 * [boxblur](../FilterBoxblur/): Box Blur
@@ -175,6 +215,7 @@ wrap_title: Filter Plugins
 * [frei0r.alphaspot](../FilterFrei0r-alphaspot/): alphaspot
 * [frei0r.balanc0r](../FilterFrei0r-balanc0r/): White Balance
 * [frei0r.baltan](../FilterFrei0r-baltan/): Baltan
+* [frei0r.bgsubtract0r](../FilterFrei0r-bgsubtract0r/): BgSubtract0r
 * [frei0r.bluescreen0r](../FilterFrei0r-bluescreen0r/): bluescreen0r
 * [frei0r.brightness](../FilterFrei0r-brightness/): Brightness
 * [frei0r.bw0r](../FilterFrei0r-bw0r/): bw0r
@@ -202,6 +243,7 @@ wrap_title: Filter Plugins
 * [frei0r.equaliz0r](../FilterFrei0r-equaliz0r/): Equaliz0r
 * [frei0r.flippo](../FilterFrei0r-flippo/): Flippo
 * [frei0r.gamma](../FilterFrei0r-gamma/): Gamma
+* [frei0r.glitch0r](../FilterFrei0r-glitch0r/): Glitch0r
 * [frei0r.glow](../FilterFrei0r-glow/): Glow
 * [frei0r.hqdn3d](../FilterFrei0r-hqdn3d/): hqdn3d
 * [frei0r.hueshift0r](../FilterFrei0r-hueshift0r/): Hueshift0r
@@ -216,6 +258,7 @@ wrap_title: Filter Plugins
 * [frei0r.medians](../FilterFrei0r-medians/): Medians
 * [frei0r.ndvi](../FilterFrei0r-ndvi/): NDVI filter
 * [frei0r.nervous](../FilterFrei0r-nervous/): Nervous
+* [frei0r.normaliz0r](../FilterFrei0r-normaliz0r/): Normaliz0r
 * [frei0r.nosync0r](../FilterFrei0r-nosync0r/): nosync0r
 * [frei0r.pixeliz0r](../FilterFrei0r-pixeliz0r/): pixeliz0r
 * [frei0r.posterize](../FilterFrei0r-posterize/): posterize
@@ -224,6 +267,7 @@ wrap_title: Filter Plugins
 * [frei0r.primaries](../FilterFrei0r-primaries/): primaries
 * [frei0r.rgbnoise](../FilterFrei0r-rgbnoise/): rgbnoise
 * [frei0r.rgbparade](../FilterFrei0r-rgbparade/): RGB-Parade
+* [frei0r.rgbsplit0r](../FilterFrei0r-rgbsplit0r/): rgbsplit0r
 * [frei0r.saturat0r](../FilterFrei0r-saturat0r/): Saturat0r
 * [frei0r.scale0tilt](../FilterFrei0r-scale0tilt/): Scale0Tilt
 * [frei0r.scanline0r](../FilterFrei0r-scanline0r/): scanline0r
@@ -326,6 +370,7 @@ wrap_title: Filter Plugins
 * [ladspa.1207](../FilterLadspa-1207/): DC Offset Remover
 * [ladspa.1208](../FilterLadspa-1208/): Retro Flanger
 * [ladspa.1209](../FilterLadspa-1209/): Valve saturation
+* [ladspa.1210](../FilterLadspa-1210/): Signal sifter
 * [ladspa.1211](../FilterLadspa-1211/): Tape Delay Simulation
 * [ladspa.1212](../FilterLadspa-1212/): Step Demuxer
 * [ladspa.1213](../FilterLadspa-1213/): Foldover distortion
@@ -339,6 +384,7 @@ wrap_title: Filter Plugins
 * [ladspa.1224](../FilterLadspa-1224/): VCF 303
 * [ladspa.1225](../FilterLadspa-1225/): Canyon Delay
 * [ladspa.1227](../FilterLadspa-1227/): Lo Fi
+* [ladspa.1337](../FilterLadspa-1337/): Vocoder
 * [ladspa.1401](../FilterLadspa-1401/): Surround matrix encoder
 * [ladspa.1402](../FilterLadspa-1402/): Delayorama
 * [ladspa.1403](../FilterLadspa-1403/): Dyson compressor
@@ -376,18 +422,6 @@ wrap_title: Filter Plugins
 * [ladspa.1438](../FilterLadspa-1438/): DJ flanger
 * [ladspa.1439](../FilterLadspa-1439/): Gong beater
 * [ladspa.1440](../FilterLadspa-1440/): Hilbert transformer
-* [ladspa.1514360144](../FilterLadspa-1514360144/): ZamComp
-* [ladspa.1514360882](../FilterLadspa-1514360882/): ZamCompX2
-* [ladspa.1514492210](../FilterLadspa-1514492210/): ZamEQ2
-* [ladspa.1514615601](../FilterLadspa-1514615601/): ZamGEQ31
-* [ladspa.1514619220](../FilterLadspa-1514619220/): ZamGate
-* [ladspa.1514624050](../FilterLadspa-1514624050/): ZamGateX2
-* [ladspa.1514685490](../FilterLadspa-1514685490/): ZamHeadX2
-* [ladspa.1515015474](../FilterLadspa-1515015474/): ZaMultiCompX2
-* [ladspa.1515015491](../FilterLadspa-1515015491/): ZaMultiComp
-* [ladspa.1515018290](../FilterLadspa-1515018290/): ZaMaximX2
-* [ladspa.1515405652](../FilterLadspa-1515405652/): ZamAutoSat
-* [ladspa.1515476290](../FilterLadspa-1515476290/): ZamTube
 * [ladspa.1605](../FilterLadspa-1605/): Reverse Delay (5s max)
 * [ladspa.1641](../FilterLadspa-1641/): Bandlimited Sawtooth Oscillator (FA)
 * [ladspa.1643](../FilterLadspa-1643/): Bandlimited Square Oscillator (FA)
@@ -419,6 +453,13 @@ wrap_title: Filter Plugins
 * [ladspa.1678](../FilterLadspa-1678/): Clock Oscillator with Gate (FAGA)
 * [ladspa.1679](../FilterLadspa-1679/): Clock Oscillator with Gate (FCGA)
 * [ladspa.1680](../FilterLadspa-1680/): ADSR Envelope with Gate and Trigger
+* [ladspa.1767](../FilterLadspa-1767/): C* ChorusI - Mono chorus/flanger
+* [ladspa.1771](../FilterLadspa-1771/): C* Saturate - Various static nonlinearities, 8x oversampled
+* [ladspa.1772](../FilterLadspa-1772/): C* Compress - Compressor and saturating limiter
+* [ladspa.1773](../FilterLadspa-1773/): C* Eq10 - 10-band equaliser
+* [ladspa.1779](../FilterLadspa-1779/): C* Plate - Versatile plate reverb
+* [ladspa.1788](../FilterLadspa-1788/): C* Wider - Stereo image synthesis
+* [ladspa.1795](../FilterLadspa-1795/): C* PlateX2 - Versatile plate reverb, stereo inputs
 * [ladspa.1845](../FilterLadspa-1845/): Hard Gate
 * [ladspa.1846](../FilterLadspa-1846/): Disintegrator
 * [ladspa.1848](../FilterLadspa-1848/): Dynamic Sledgehammer
@@ -463,6 +504,11 @@ wrap_title: Filter Plugins
 * [ladspa.1948](../FilterLadspa-1948/): Mvclpf-4   Digital implementation of the VC filter invented by R.A.Moog
 * [ladspa.1949](../FilterLadspa-1949/): Auto Wah
 * [ladspa.1951](../FilterLadspa-1951/): Triple chorus
+* [ladspa.1952](../FilterLadspa-1952/): Pulse-VCO  --  Anti-aliased oscillator
+* [ladspa.1953](../FilterLadspa-1953/): Saw-VCO  --  Anti-aliased oscillator
+* [ladspa.1954](../FilterLadspa-1954/): Rec-VCO  --  Anti-aliased oscillator
+* [ladspa.1955](../FilterLadspa-1955/): Stereo width
+* [ladspa.1956](../FilterLadspa-1956/): Stereo balance and panner
 * [ladspa.1957](../FilterLadspa-1957/): UHJ Encoder
 * [ladspa.1958](../FilterLadspa-1958/): UHJ Decoder
 * [ladspa.1960](../FilterLadspa-1960/): Mvchpf-1   Digital implementation of the VC HP filter invented by R.A. Moog
@@ -517,6 +563,36 @@ wrap_title: Filter Plugins
 * [ladspa.2157](../FilterLadspa-2157/): TAP Sigmoid Booster
 * [ladspa.2158](../FilterLadspa-2158/): TAP TubeWarmth
 * [ladspa.2159](../FilterLadspa-2159/): TAP Chorus/Flanger
+* [ladspa.2184](../FilterLadspa-2184/): Sync-Saw-VCO  --  Hard-sync-capable anti-aliased oscillator
+* [ladspa.2185](../FilterLadspa-2185/): Sync-Rect-VCO  --  Hard-sync-capable anti-aliased oscillator
+* [ladspa.2186](../FilterLadspa-2186/): Sync-Tri-VCO  --  Hard-sync-capable anti-aliased oscillator
+* [ladspa.2586](../FilterLadspa-2586/): C* PhaserII - Mono phaser
+* [ladspa.2588](../FilterLadspa-2588/): C* Scape - Stereo delay with chromatic resonances
+* [ladspa.2589](../FilterLadspa-2589/): C* ToneStack - Classic amplifier tone stack emulation
+* [ladspa.2592](../FilterLadspa-2592/): C* AmpVTS - Idealised guitar amplification
+* [ladspa.2593](../FilterLadspa-2593/): C* AutoFilter - Self-modulating resonant filter
+* [ladspa.2594](../FilterLadspa-2594/): C* Eq10X2 - Stereo 10-band equaliser
+* [ladspa.2595](../FilterLadspa-2595/): C* Narrower - Stereo image width reduction
+* [ladspa.2598](../FilterLadspa-2598/): C* CompressX2 - Stereo compressor and saturating limiter
+* [ladspa.2601](../FilterLadspa-2601/): C* CabinetIII - Simplistic loudspeaker cabinet emulation
+* [ladspa.2602](../FilterLadspa-2602/): C* Noisegate - Attenuating hum and noise
+* [ladspa.2603](../FilterLadspa-2603/): C* Spice - Not an exciter
+* [ladspa.2606](../FilterLadspa-2606/): C* CabinetIV - Idealised loudspeaker cabinet
+* [ladspa.2607](../FilterLadspa-2607/): C* SpiceX2 - Not an exciter either
+* [ladspa.2608](../FilterLadspa-2608/): C* Eq4p - 4-band parametric shelving equaliser
+* [ladspa.2609](../FilterLadspa-2609/): C* EqFA4p - 4-band parametric eq
+* [ladspa.2661](../FilterLadspa-2661/): Percussive AD Envelope
+* [ladspa.2662](../FilterLadspa-2662/): Percussive AD Envelope with levels
+* [ladspa.2663](../FilterLadspa-2663/): DAHDSR Envelope linear attack exp dr
+* [ladspa.2664](../FilterLadspa-2664/): DAHDSR Envelope full exp, adr
+* [ladspa.2667](../FilterLadspa-2667/): Probability Switch (CR Controls)
+* [ladspa.2668](../FilterLadspa-2668/): Probability Switch (AR Controls)
+* [ladspa.2669](../FilterLadspa-2669/): Signal Absolute value, negative or positive (CR Controls)
+* [ladspa.2670](../FilterLadspa-2670/): Signal Absolute value, negative or positive (AR Controls)
+* [ladspa.2741](../FilterLadspa-2741/): Slide (TA)
+* [ladspa.2742](../FilterLadspa-2742/): Slide (TC)
+* [ladspa.2743](../FilterLadspa-2743/): Slew limiter (RA)
+* [ladspa.2744](../FilterLadspa-2744/): Slew limiter (RC)
 * [ladspa.3301](../FilterLadspa-3301/): :: Invada :: Input Module
 * [ladspa.3302](../FilterLadspa-3302/): :: Invada :: Filter - Low Pass Mono
 * [ladspa.3303](../FilterLadspa-3303/): :: Invada :: Filter - High Pass Mono
@@ -528,10 +604,58 @@ wrap_title: Filter Plugins
 * [ladspa.3309](../FilterLadspa-3309/): :: Invada :: Compressor - Stereo
 * [ladspa.3311](../FilterLadspa-3311/): :: Invada :: ER Reverb - Mono In
 * [ladspa.3312](../FilterLadspa-3312/): :: Invada :: ER Reverb - Sum L+R In
+* [ladspa.33917](../FilterLadspa-33917/): Calf Flanger LADSPA
+* [ladspa.33918](../FilterLadspa-33918/): Calf Reverb LADSPA
+* [ladspa.33919](../FilterLadspa-33919/): Calf Filter LADSPA
+* [ladspa.33922](../FilterLadspa-33922/): Calf Vintage Delay LADSPA
+* [ladspa.33923](../FilterLadspa-33923/): Calf Rotary Speaker LADSPA
+* [ladspa.33924](../FilterLadspa-33924/): Calf Phaser LADSPA
+* [ladspa.33951](../FilterLadspa-33951/): Calf Filterclavier LADSPA
+* [ladspa.34049](../FilterLadspa-34049/): Calf MultiChorus LADSPA
+* [ladspa.34050](../FilterLadspa-34050/): Calf Compressor LADSPA
+* [ladspa.34051](../FilterLadspa-34051/): Calf Gate LADSPA
+* [ladspa.34052](../FilterLadspa-34052/): Calf Sidechain Gate LADSPA
+* [ladspa.34053](../FilterLadspa-34053/): Calf Multiband Gate LADSPA
+* [ladspa.34065](../FilterLadspa-34065/): Calf Equalizer 5 Band LADSPA
+* [ladspa.34066](../FilterLadspa-34066/): Calf Equalizer 8 Band LADSPA
+* [ladspa.34067](../FilterLadspa-34067/): Calf Equalizer 12 Band LADSPA
+* [ladspa.34068](../FilterLadspa-34068/): Calf Pulsator LADSPA
+* [ladspa.34069](../FilterLadspa-34069/): Calf Deesser LADSPA
+* [ladspa.34070](../FilterLadspa-34070/): Calf Multiband Compressor LADSPA
+* [ladspa.34071](../FilterLadspa-34071/): Calf Sidechain Compressor LADSPA
+* [ladspa.34080](../FilterLadspa-34080/): Calf Multiband Limiter LADSPA
+* [ladspa.34081](../FilterLadspa-34081/): Calf Limiter LADSPA
+* [ladspa.34096](../FilterLadspa-34096/): Calf Saturator LADSPA
+* [ladspa.34097](../FilterLadspa-34097/): Calf Exciter LADSPA
+* [ladspa.34098](../FilterLadspa-34098/): Calf Bass Enhancer LADSPA
+* [ladspa.34184](../FilterLadspa-34184/): Calf Stereo Tools LADSPA
+* [ladspa.34185](../FilterLadspa-34185/): Calf Mono Input LADSPA
 * [ladspa.3701](../FilterLadspa-3701/): zita-reverb
 * [ladspa.3702](../FilterLadspa-3702/): zita-reverb-amb
+* [ladspa.4061](../FilterLadspa-4061/): guitarix_distortion
+* [ladspa.4062](../FilterLadspa-4062/): guitarix_crybaby
+* [ladspa.4063](../FilterLadspa-4063/): guitarix_echo
+* [ladspa.4064](../FilterLadspa-4064/): guitarix_freeverb
+* [ladspa.4065](../FilterLadspa-4065/): guitarix_IR
+* [ladspa.4066](../FilterLadspa-4066/): guitarix_amp
+* [ladspa.4067](../FilterLadspa-4067/): guitarix_compressor
+* [ladspa.4068](../FilterLadspa-4068/): guitarix
+* [ladspa.4069](../FilterLadspa-4069/): Guitarix Amp
+* [ladspa.4070](../FilterLadspa-4070/): Guitarix Stereo Fx
+* [ladspa.4201](../FilterLadspa-4201/): Hz to V/Oct Converter (AR)
+* [ladspa.4210](../FilterLadspa-4210/): Range Translator (CR Controls)
+* [ladspa.4211](../FilterLadspa-4211/): Range Translator (AR Controls)
 * [ladspa.4221](../FilterLadspa-4221/): Bauer stereophonic-to-binaural 0.9.1 (3.1.0)
 * [ladspa.4262](../FilterLadspa-4262/): Autotalent
+* [ladspa.4300](../FilterLadspa-4300/): Formant Filter (CR vowel)
+* [ladspa.4310](../FilterLadspa-4310/): Masher
+* [ladspa.4401](../FilterLadspa-4401/): Power (AR)
+* [ladspa.4410](../FilterLadspa-4410/): Fast Crossfade
+* [ladspa.4421](../FilterLadspa-4421/): Multiplexer (AR)
+* [ladspa.4430](../FilterLadspa-4430/): Sample and Hold (CR Threshold)
+* [ladspa.4431](../FilterLadspa-4431/): Sample and Hold (AR Threshold)
+* [ladspa.4440](../FilterLadspa-4440/): Comparison (AC)
+* [ladspa.4441](../FilterLadspa-4441/): Comparison (AA)
 * [lift_gamma_gain](../FilterLift_gamma_gain/): Lift, Gamma, and Gain
 * [lightshow](../FilterLightshow/): Light Show
 * [lines](../FilterLines/): Scratchlines

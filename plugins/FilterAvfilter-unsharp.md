@@ -13,7 +13,7 @@ title: unsharp
 media types:
 Video  
 description: Sharpen or blur the input video.  
-version: Lavfi6.41.100  
+version: Lavfi6.107.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -27,7 +27,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.lx
@@ -39,7 +39,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.luma_msize_y
@@ -51,7 +51,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.ly
@@ -63,7 +63,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.luma_amount
@@ -99,7 +99,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.cx
@@ -111,7 +111,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.chroma_msize_y
@@ -123,7 +123,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.cy
@@ -135,7 +135,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 3  
-maximum: 63  
+maximum: 23  
 default: 0  
 
 ### av.chroma_amount
