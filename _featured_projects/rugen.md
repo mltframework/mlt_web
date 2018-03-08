@@ -1,5 +1,5 @@
 ---
 title: Rugen
 img: rugen_screenshot.png
-url: http://users.pandora.be/acp/rugen
+website: http://users.pandora.be/acp/rugen
 ---
