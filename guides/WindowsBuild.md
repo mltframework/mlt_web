@@ -16,7 +16,7 @@ WARNING: This is out-of-date. Your mileage may vary.
       * Set the [PATH](http://www.mingw.org/wiki/HOWTO_Install_the_MinGW_GCC_Compiler_Suite) environment variable
       * An alternative to using the MSYS and gcc from the MinGW packages is to use a combination of Git BASH and the MinGW from [Qt Creator](http://www.qt.io/download-open-source/) and one of its MinGW-based SDKs.
    3. Install *[CMake](http://cmake.org/)* (this will be used by frei0r)<br />Tell it to add itself to the PATH.
-   4. [Download](http://www.mltframework.org/pub/Shotcut/SetupWindowsDev/pkg-config.exe) a static build of [pkg-config](http://pix-galore.blogspot.com/2009/07/mingw-building-static-pkg-config.html) and put it in C:\MinGW\bin. If you need to rebuild this, another way is to cross-compile, possibly using the [MXE](http://mxe.cc/) toolkit.
+   4. [Download](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/pkg-config.exe) a static build of [pkg-config](http://pix-galore.blogspot.com/2009/07/mingw-building-static-pkg-config.html) and put it in C:\MinGW\bin. If you need to rebuild this, another way is to cross-compile, possibly using the [MXE](http://mxe.cc/) toolkit.
 
 ### Install dependencies
 
