@@ -13,7 +13,7 @@ title: astats
 media types:
 Audio  
 description: Show time domain statistics about audio frames.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

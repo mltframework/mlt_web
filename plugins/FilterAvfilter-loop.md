@@ -13,7 +13,7 @@ title: loop
 media types:
 Video  
 description: Loop video frames.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: BgSubtract0r
 media types:
 Video  
 description: Bluescreen the background of a static video.  
-version: 0.2  
+version: 0.3  
 creator: Samuel Mimram  
 
 ## Parameters

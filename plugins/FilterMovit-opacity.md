@@ -38,7 +38,7 @@ default: 1
 
 title: Alpha    
 description:
-When this is less than zero, the alpha component of the Movit mutliply effect follows opacity. Otherwise, you can set this to another value to control the alpha component independently. If you set this to 1, then the opacity parameter can be used to fade to and from black.  
+When this is less than zero, the alpha component of the Movit multiply effect follows opacity. Otherwise, you can set this to another value to control the alpha component independently. If you set this to 1, then the opacity parameter can be used to fade to and from black.  
 type: float  
 readonly: no  
 required: no  

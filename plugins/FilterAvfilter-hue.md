@@ -13,7 +13,7 @@ title: hue
 media types:
 Video  
 description: Adjust the hue and saturation of the input video.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

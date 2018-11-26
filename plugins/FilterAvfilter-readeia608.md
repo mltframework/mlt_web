@@ -13,7 +13,7 @@ title: readeia608
 media types:
 Video  
 description: Read EIA-608 Closed Caption codes from input video and write them to frame metadata.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

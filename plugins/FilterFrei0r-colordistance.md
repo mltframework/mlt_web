@@ -26,5 +26,6 @@ The Source Color
 type: color  
 readonly: no  
 required: no  
+default: #7f7f7f  
 widget: color  
 

@@ -26,6 +26,7 @@ Output color to which darkest input color is mapped (default black)
 type: color  
 readonly: no  
 required: no  
+default: #000000  
 widget: color  
 
 ### 1
@@ -36,6 +37,7 @@ Output color to which brightest input color is mapped (default white)
 type: color  
 readonly: no  
 required: no  
+default: #ffffff  
 widget: color  
 
 ### 2

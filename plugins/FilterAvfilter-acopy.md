@@ -13,5 +13,5 @@ title: acopy
 media types:
 Audio  
 description: Copy the input audio unchanged to the output.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  

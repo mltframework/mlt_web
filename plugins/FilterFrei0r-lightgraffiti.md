@@ -127,78 +127,78 @@ widget: spinner
 title: statsBrightness    
 description:
 Display the brightness and threshold, for adjusting the brightness threshold parameter  
-type: float  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
-widget: spinner  
+widget: checkbox  
 
 ### 9
 
 title: statsDifference    
 description:
 Display the background difference and threshold  
-type: float  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
-widget: spinner  
+default: 1  
+widget: checkbox  
 
 ### 10
 
 title: statsDiffSum    
 description:
 Display the sum of the background difference and the threshold  
-type: float  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
-widget: spinner  
+widget: checkbox  
 
 ### 11
 
 title: reset    
 description:
 Reset filter masks  
-type: float  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
-widget: spinner  
+default: 1  
+widget: checkbox  
 
 ### 12
 
 title: transparentBackground    
 description:
 Make the background transparent  
-type: float  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
-widget: spinner  
+widget: checkbox  
 
 ### 13
 
 title: blackReference    
 description:
 Uses black as background image instead of the first frame.  
-type: float  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
-widget: spinner  
+default: 1  
+widget: checkbox  
 
 ### 14
 
@@ -218,11 +218,11 @@ widget: spinner
 title: nonlinearDim    
 description:
 Nonlinear dimming (may look more natural)  
-type: float  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
 default: 0  
-widget: spinner  
+widget: checkbox  
 

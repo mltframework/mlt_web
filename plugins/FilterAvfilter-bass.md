@@ -13,7 +13,7 @@ title: bass
 media types:
 Audio  
 description: Boost or cut lower frequencies.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -59,6 +59,7 @@ values:
 * q
 * o
 * s
+* k
 
 ### av.t
 
@@ -75,6 +76,7 @@ values:
 * q
 * o
 * s
+* k
 
 ### av.width
 

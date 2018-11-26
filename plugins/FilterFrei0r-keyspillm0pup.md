@@ -26,6 +26,7 @@ Key color that was used for chroma keying
 type: color  
 readonly: no  
 required: no  
+default: #19cc19  
 widget: color  
 
 ### 1
@@ -36,6 +37,7 @@ Desired color to replace key residue with
 type: color  
 readonly: no  
 required: no  
+default: #c67f66  
 widget: color  
 
 ### 2

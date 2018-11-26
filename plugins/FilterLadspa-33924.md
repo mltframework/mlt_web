@@ -74,7 +74,7 @@ default: 0
 
 ### 8
 
-  
+title: # Stages    
 type: integer  
 readonly: no  
 required: no  

@@ -636,6 +636,28 @@ required: no
 minimum: 0  
 default: 0  
 
+### sample_rate
+
+  
+description:
+(aptx)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### sample_rate
+
+  
+description:
+(aptx_hd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
 ### subfps
 
   
@@ -730,6 +752,49 @@ description:
 type: string  
 readonly: no  
 required: no  
+
+### frames_per_packet
+
+  
+description:
+Number of frames to read at a time. Higher = faster decoding, lower granularity (codec2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### mode
+
+  
+description:
+codec2 mode [mandatory] (codec2raw)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* 3200
+* 2400
+* 1600
+* 1400
+* 1300
+* 1200
+* 700
+* 700B
+* 700C
+
+### frames_per_packet
+
+  
+description:
+Number of frames to read at a time. Higher = faster decoding, lower granularity (codec2raw)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
 
 ### safe
 
@@ -1025,6 +1090,24 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### http_persistent
+
+  
+description:
+Use persistent HTTP connections (hls,applehttp)  
+type: string  
+readonly: no  
+required: no  
+
+### http_multiple
+
+  
+description:
+Use multiple HTTP connections for fetching segments (hls,applehttp)  
+type: string  
+readonly: no  
+required: no  
 
 ### linespeed
 
@@ -2267,11 +2350,21 @@ minimum: 0
 maximum: 65535  
 default: 0  
 
-### timeout
+### listen_timeout
 
   
 description:
 set maximum timeout (in seconds) to wait for incoming connections (-1 is infinite, imply flag listen) (rtsp)  
+type: integer  
+readonly: no  
+required: no  
+default: -2147483648  
+
+### timeout
+
+  
+description:
+set maximum timeout (in seconds) to wait for incoming connections (-1 is infinite, imply flag listen) (deprecated, use listen_timeout) (rtsp)  
 type: integer  
 readonly: no  
 required: no  
@@ -2309,7 +2402,7 @@ required: no
 minimum: -1  
 default: -2147483648  
 
-### user-agent
+### user_agent
 
   
 description:
@@ -2317,7 +2410,17 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf57.83.100'  
+default: 'Lavf58.12.100'  
+
+### user-agent
+
+  
+description:
+override User-Agent header (deprecated, use user_agent) (rtsp)  
+type: string  
+readonly: no  
+required: no  
+default: 'Lavf58.12.100'  
 
 ### sample_rate
 
@@ -4922,17 +5025,6 @@ type: string
 readonly: no  
 required: no  
 
-### channels
-
-  
-description:
-Number of audio channels. (jack)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
 ### graph
 
   
@@ -4999,7 +5091,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf57.83.100'  
+default: 'Lavf58.12.100'  
 
 ### stream_name
 
@@ -5405,12 +5497,10 @@ format: flags
 values:  
 
 * autodetect
-* old_msmpeg4
 * xvid_ilace
 * ump4
 * no_padding
 * amv
-* ac_vlc
 * qpel_chroma
 * std_qpel
 * qpel_chroma2
@@ -5476,13 +5566,10 @@ values:
 * simplemmx
 * arm
 * altivec
-* sh4
 * simplearm
 * simplearmv5te
 * simplearmv6
 * simpleneon
-* simplealpha
-* ipp
 * xvid
 * xvidmmx
 * faani
@@ -5518,35 +5605,16 @@ values:
 * bitstream
 * mb_type
 * qp
-* mv
 * dct_coeff
 * green_metadata
 * skip
 * startcode
-* pts
 * er
 * mmco
 * bugs
-* vis_qp
-* vis_mb_type
 * buffers
 * thread_ops
 * nomc
-
-### vismv
-
-  
-description:
-visualize motion vectors (MVs) (deprecated)  
-type: string  
-readonly: no  
-required: no  
-format: flags  
-values:  
-
-* pf
-* bf
-* bb
 
 ### flags2
 
@@ -5863,6 +5931,7 @@ values:
 * do_nothing
 * auto
 * pre_decoder
+* ignore
 
 ### sub_text_format
 
@@ -5961,6 +6030,17 @@ values:
 * ignore_level
 * allow_high_depth
 * allow_profile_mismatch
+
+### extra_hw_frames
+
+  
+description:
+Number of extra hardware frames to allocate for the user  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -2147483648  
 
 ### layer
 
@@ -6084,6 +6164,17 @@ type: string
 readonly: no  
 required: no  
 
+### x264_build
+
+  
+description:
+Assume this x264 version if no x264 version found in any SEI (h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -2147483648  
+
 ### num_output_buffers
 
   
@@ -6105,15 +6196,6 @@ readonly: no
 required: no  
 minimum: 20  
 default: 0  
-
-### enable_er
-
-  
-description:
-Enable error resilience on damaged frames (unsafe) (h264_vdpau)  
-type: string  
-readonly: no  
-required: no  
 
 ### apply_defdispwin
 
@@ -6509,6 +6591,15 @@ type: string
 readonly: no  
 required: no  
 
+### apply_phase_inv
+
+  
+description:
+Apply intensity stereo phase inversion (opus)  
+type: string  
+readonly: no  
+required: no  
+
 ### password
 
   
@@ -6646,564 +6737,6 @@ required: no
   
 description:
 Set if ASS tags must be escaped (vplayer)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (h264_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (h264_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (h264_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (h264_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (h264_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (h264_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (hevc_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (hevc_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (hevc_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (hevc_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (hevc_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (hevc_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (mjpeg_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (mjpeg_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (mjpeg_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (mjpeg_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (mjpeg_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (mjpeg_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (mpeg1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (mpeg1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (mpeg1_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (mpeg1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (mpeg1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (mpeg1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (mpeg2_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (mpeg2_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (mpeg2_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (mpeg2_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (mpeg2_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (mpeg2_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (mpeg4_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (mpeg4_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (mpeg4_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (mpeg4_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (mpeg4_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (mpeg4_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (vc1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (vc1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (vc1_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (vc1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (vc1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (vc1_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (vp8_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (vp8_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (vp8_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (vp8_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (vp8_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (vp8_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### deint
-
-  
-description:
-Set deinterlacing mode (vp9_cuvid)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* weave
-* bob
-* adaptive
-
-### gpu
-
-  
-description:
-GPU to be used for decoding (vp9_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### surfaces
-
-  
-description:
-Maximum surfaces to be used for decoding (vp9_cuvid)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### drop_second_field
-
-  
-description:
-Drop second field when deinterlacing (vp9_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### crop
-
-  
-description:
-Crop (top)x(bottom)x(left)x(right) (vp9_cuvid)  
-type: string  
-readonly: no  
-required: no  
-
-### resize
-
-  
-description:
-Resize (width)x(height) (vp9_cuvid)  
 type: string  
 readonly: no  
 required: no  

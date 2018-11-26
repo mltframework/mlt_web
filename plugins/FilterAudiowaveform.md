@@ -87,7 +87,7 @@ title: Audio Channel
 description:
 <pre>
 The audio channel to draw.
-"0" indicates that all channels should be drawn.
+"0" indicates that all channels should be drawn. "-1" indicates that all channels will be added together in a single waveform.
 </pre>
 type: integer  
 readonly: no  
@@ -149,4 +149,14 @@ values:
 
 * vertical
 * horizontal
+
+### window
+
+title: Window    
+description:
+The duration of the audio (in ms) to be drawn in the waveform. If the window is less than the duration of a frame, the duration of a frame will be used. If the window is more than the duration of a frame, samples will be buffered from previous frames to fill the window. The buffering is performed as a sliding window so that the most recent samples are always transformed.  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
 

@@ -13,7 +13,7 @@ title: fspp
 media types:
 Video  
 description: Apply Fast Simple Post-processing filter.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

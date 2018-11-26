@@ -13,7 +13,7 @@ title: tblend
 media types:
 Video  
 description: Blend successive frames.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -22,7 +22,7 @@ creator: libavfilter maintainers
 
   
 description:
-set component  
+set component #0 blend mode  
 type: string  
 readonly: no  
 required: no  
@@ -69,7 +69,7 @@ values:
 
   
 description:
-set component  
+set component #1 blend mode  
 type: string  
 readonly: no  
 required: no  
@@ -116,7 +116,7 @@ values:
 
   
 description:
-set component  
+set component #2 blend mode  
 type: string  
 readonly: no  
 required: no  
@@ -163,7 +163,7 @@ values:
 
   
 description:
-set component  
+set component #3 blend mode  
 type: string  
 readonly: no  
 required: no  
@@ -257,7 +257,7 @@ values:
 
   
 description:
-set color component  
+set color component #0 expression  
 type: string  
 readonly: no  
 required: no  
@@ -266,7 +266,7 @@ required: no
 
   
 description:
-set color component  
+set color component #1 expression  
 type: string  
 readonly: no  
 required: no  
@@ -275,7 +275,7 @@ required: no
 
   
 description:
-set color component  
+set color component #2 expression  
 type: string  
 readonly: no  
 required: no  
@@ -284,7 +284,7 @@ required: no
 
   
 description:
-set color component  
+set color component #3 expression  
 type: string  
 readonly: no  
 required: no  
@@ -302,7 +302,7 @@ required: no
 
   
 description:
-set color component  
+set color component #0 opacity  
 type: float  
 readonly: no  
 required: no  
@@ -315,7 +315,7 @@ format: double
 
   
 description:
-set color component  
+set color component #1 opacity  
 type: float  
 readonly: no  
 required: no  
@@ -328,7 +328,7 @@ format: double
 
   
 description:
-set color component  
+set color component #2 opacity  
 type: float  
 readonly: no  
 required: no  
@@ -341,7 +341,7 @@ format: double
 
   
 description:
-set color component  
+set color component #3 opacity  
 type: float  
 readonly: no  
 required: no  

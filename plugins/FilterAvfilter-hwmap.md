@@ -13,7 +13,7 @@ title: hwmap
 media types:
 Video  
 description: Map hardware frames  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

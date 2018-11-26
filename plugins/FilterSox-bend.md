@@ -33,5 +33,5 @@ title: Options
 type: string  
 readonly: no  
 required: no  
-format: [-f frame-rate(25)] [-o over-sample(16)] {delay,cents,duration}  
+format: [-f frame-rate(25)] [-o over-sample(16)] {start,cents,end}  
 

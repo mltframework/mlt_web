@@ -13,7 +13,7 @@ title: convolution
 media types:
 Video  
 description: Apply convolution filter.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

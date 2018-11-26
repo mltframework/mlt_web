@@ -41,8 +41,8 @@ format: [options]
 	-z num	Z-axis range in dB; default 120
 	-Z num	Z-axis maximum in dBFS; default 0
 	-q num	Z-axis quantisation (0 - 249); default 249
-	-w name	Window: Hann (default), Hamming, Bartlett, Rectangular, Kaiser
-	-W num	Window adjust parameter (-10 - 10); applies only to Kaiser
+	-w name	Window: Hann(default)/Hamming/Bartlett/Rectangular/Kaiser/Dolph
+	-W num	Window adjust parameter (-10 - 10); applies only to Kaiser/Dolph
 	-s	Slack overlap of windows
 	-a	Suppress axis lines
 	-r	Raw spectrogram; no axes or legends
@@ -55,6 +55,6 @@ format: [options]
 	-c text	Comment text
 	-o text	Output file name; default `spectrogram.png'
 	-d time	Audio duration to fit to X-axis; e.g. 1:00, 48
-	-S time	Start the spectrogram at the given time through the input
+	-S position	Start the spectrogram at the given input position
   
 

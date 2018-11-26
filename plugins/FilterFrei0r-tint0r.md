@@ -26,6 +26,7 @@ The color to map source color with null luminance
 type: color  
 readonly: no  
 required: no  
+default: #000000  
 widget: color  
 
 ### 1
@@ -36,6 +37,7 @@ The color to map source color with full luminance
 type: color  
 readonly: no  
 required: no  
+default: #7fff7f  
 widget: color  
 
 ### 2

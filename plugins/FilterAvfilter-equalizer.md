@@ -13,7 +13,7 @@ title: equalizer
 media types:
 Audio  
 description: Apply two-pole peaking equalization (EQ) filter.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -59,6 +59,7 @@ values:
 * q
 * o
 * s
+* k
 
 ### av.t
 
@@ -75,6 +76,7 @@ values:
 * q
 * o
 * s
+* k
 
 ### av.width
 
@@ -85,7 +87,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 999  
+maximum: 99999  
 default: 1  
 format: double  
 
@@ -98,7 +100,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 999  
+maximum: 99999  
 default: 1  
 format: double  
 

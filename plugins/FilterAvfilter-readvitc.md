@@ -13,7 +13,7 @@ title: readvitc
 media types:
 Video  
 description: Read vertical interval timecode and write it to frame metadata.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

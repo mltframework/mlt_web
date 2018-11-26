@@ -13,7 +13,7 @@ title: Box Blur
 media types:
 Video  
 description:   
-version: 2  
+version: 3  
 creator: Leny Grisel, Jean-Baptiste Mardelle  
 copyright: Leny Grisel, Jean-Baptiste Mardelle  
 license: LGPLv2.1  

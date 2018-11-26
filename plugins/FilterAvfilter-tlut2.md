@@ -13,7 +13,7 @@ title: tlut2
 media types:
 Video  
 description: Compute and apply a lookup table from two successive frames.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -22,7 +22,7 @@ creator: libavfilter maintainers
 
   
 description:
-set component  
+set component #0 expression  
 type: string  
 readonly: no  
 required: no  
@@ -32,7 +32,7 @@ default: 'x'
 
   
 description:
-set component  
+set component #1 expression  
 type: string  
 readonly: no  
 required: no  
@@ -42,7 +42,7 @@ default: 'x'
 
   
 description:
-set component  
+set component #2 expression  
 type: string  
 readonly: no  
 required: no  
@@ -52,7 +52,7 @@ default: 'x'
 
   
 description:
-set component  
+set component #3 expression  
 type: string  
 readonly: no  
 required: no  

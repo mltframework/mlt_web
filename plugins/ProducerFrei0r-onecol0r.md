@@ -26,5 +26,6 @@ the color of the image
 type: color  
 readonly: no  
 required: no  
+default: #000000  
 widget: color  
 

@@ -13,7 +13,7 @@ title: gblur
 media types:
 Video  
 description: Apply Gaussian Blur filter.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

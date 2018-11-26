@@ -13,7 +13,7 @@ title: Transform
 media types:
 Video  
 description:   
-version: 1  
+version: 3  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Meltytech, LLC  
@@ -24,6 +24,8 @@ license: LGPLv2.1
 ### geometry
 
 title: Rectangle    
+description:
+This property is deprecated. Use rect instead.  
 type: geometry  
 readonly: no  
 required: no  
@@ -86,7 +88,7 @@ default: 0
 
 title: Key-framed    
 description:
-Whether rotate, shear, and offset are key-framed or not.  
+Whether rotate, shear, and offset are key-framed or not. This (&quot;key-framed&quot;) refers to the legacy, deprecated, mlt_geometry-based property evaluation. Most of the properties support mlt_animation now.  
 type: boolean  
 readonly: no  
 required: no  
@@ -287,7 +289,7 @@ default: 0
 
 title: Affect alpha channel    
 description:
-Whether to use the B frame&#39;s alpha channel in transformations for the output, The affine filter sets this to 1 by default.  
+Whether to use the B frame&#39;s alpha channel in transformations for the output, The affine filter sets this to 1 by default. Basically, this tells the blend function to use the Porter-Duff atop mode instead of the default over.  
 type: boolean  
 readonly: no  
 required: no  
@@ -298,11 +300,9 @@ default: 0
 title: Fill geometry    
 description:
 Determines whether the image will be scaled up to fill the geometry. Otherwise, if the B frame image fits within the geometry, it will not be scaled. If 0, and the B frame image exceeds the geometry, then it is scaled down to fit within the geometry.  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 1  
 widget: checkbox  
 
@@ -347,5 +347,23 @@ type:
 readonly: no  
 required: no  
 minimum: 0  
+default: 0  
+
+### rect
+
+title: Rectangle    
+description:
+This replaces the geometry property and specifies a specifies a rectangle for the size and position of the image. The format of this is &quot;X/Y:WxH[:opacity]&quot; and can be animated with key frames. Unlike the geometry property, if you use percentages you must use them for every field in the above format. For example, you cannot mix and match usage of absolute coordinates and percentages for size and opacity.  
+type: rect  
+readonly: no  
+required: no  
+default: 0%/0%:100%x100%:100%  
+
+### b_scaled
+
+title: Do not use full resolution of B frame    
+type: boolean  
+readonly: no  
+required: no  
 default: 0  
 

@@ -13,7 +13,7 @@ title: surround
 media types:
 Audio  
 description: Apply audio surround upmix filter.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

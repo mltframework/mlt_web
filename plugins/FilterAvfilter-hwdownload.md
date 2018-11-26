@@ -13,5 +13,5 @@ title: hwdownload
 media types:
 Video  
 description: Download a hardware frame to a normal frame  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  

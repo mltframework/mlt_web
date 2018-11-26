@@ -13,7 +13,7 @@ title: owdenoise
 media types:
 Video  
 description: Denoise using wavelets.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: colorchannelmixer
 media types:
 Video  
 description: Adjust colors by mixing color channels.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

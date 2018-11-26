@@ -13,7 +13,7 @@ title: bitplanenoise
 media types:
 Video  
 description: Measure bit plane noise.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

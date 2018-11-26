@@ -13,7 +13,7 @@ title: tremolo
 media types:
 Audio  
 description: Apply tremolo effect.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

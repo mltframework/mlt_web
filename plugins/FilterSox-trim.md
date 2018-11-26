@@ -33,5 +33,5 @@ title: Options
 type: string  
 readonly: no  
 required: no  
-format: {[=|-]position}  
+format: {"position"=>nil}  
 

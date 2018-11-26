@@ -13,7 +13,7 @@ title: transpose
 media types:
 Video  
 description: Transpose input video.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

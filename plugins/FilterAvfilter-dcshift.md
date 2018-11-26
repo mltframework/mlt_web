@@ -13,7 +13,7 @@ title: dcshift
 media types:
 Audio  
 description: Apply a DC shift to the audio.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

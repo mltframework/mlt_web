@@ -13,7 +13,7 @@ title: agate
 media types:
 Audio  
 description: Audio gate.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

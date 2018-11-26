@@ -13,7 +13,7 @@ title: vmafmotion
 media types:
 Video  
 description: Calculate the VMAF Motion score.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

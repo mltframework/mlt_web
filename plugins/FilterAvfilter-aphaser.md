@@ -13,7 +13,7 @@ title: aphaser
 media types:
 Audio  
 description: Add a phasing effect to the audio.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters

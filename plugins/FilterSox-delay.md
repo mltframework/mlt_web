@@ -33,5 +33,5 @@ title: Options
 type: string  
 readonly: no  
 required: no  
-format: {"length"=>nil}  
+format: {"position"=>nil}  
 

@@ -33,7 +33,7 @@ title: Options
 type: string  
 readonly: no  
 required: no  
-format: [ type ] fade-in-length [ stop-time [ fade-out-length ] ]
+format: [ type ] fade-in-length [ stop-position [ fade-out-length ] ]
        Time is in hh:mm:ss.frac format.
        Fade type one of q, h, t, l or p.
   

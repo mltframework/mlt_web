@@ -13,7 +13,7 @@ title: floodfill
 media types:
 Video  
 description: Fill area with same color with another color.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -46,7 +46,7 @@ default: 0
 
   
 description:
-set source  
+set source #0 component value  
 type: integer  
 readonly: no  
 required: no  
@@ -58,7 +58,7 @@ default: 0
 
   
 description:
-set source  
+set source #1 component value  
 type: integer  
 readonly: no  
 required: no  
@@ -70,7 +70,7 @@ default: 0
 
   
 description:
-set source  
+set source #2 component value  
 type: integer  
 readonly: no  
 required: no  
@@ -82,7 +82,7 @@ default: 0
 
   
 description:
-set source  
+set source #3 component value  
 type: integer  
 readonly: no  
 required: no  
@@ -94,7 +94,7 @@ default: 0
 
   
 description:
-set destination  
+set destination #0 component value  
 type: integer  
 readonly: no  
 required: no  
@@ -106,7 +106,7 @@ default: 0
 
   
 description:
-set destination  
+set destination #1 component value  
 type: integer  
 readonly: no  
 required: no  
@@ -118,7 +118,7 @@ default: 0
 
   
 description:
-set destination  
+set destination #2 component value  
 type: integer  
 readonly: no  
 required: no  
@@ -130,7 +130,7 @@ default: 0
 
   
 description:
-set destination  
+set destination #3 component value  
 type: integer  
 readonly: no  
 required: no  

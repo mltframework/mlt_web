@@ -13,7 +13,7 @@ title: geq
 media types:
 Video  
 description: Apply generic equation to each pixel.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -143,4 +143,15 @@ set blue expression
 type: string  
 readonly: no  
 required: no  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 

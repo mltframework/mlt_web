@@ -25,7 +25,7 @@ If you set a data property beginning with (and longer than) &quot;xml_retain&quo
 ## Bugs
 
 * Untested arbitrary nesting of multitracks and playlists.
-* {1=>"Property \"id\" is generated as service type followed by number if no property named \"id\" exists, but it fails to guarantee uniqueness."}
+* Property "id" is generated as service type followed by number if no property named "id" exists, but it fails to guarantee uniqueness.
 
 
 ## Parameters
@@ -34,7 +34,7 @@ If you set a data property beginning with (and longer than) &quot;xml_retain&quo
 
 title: File    
 description:
-The name of a file in which to store the XML. If the value does not contain a period (to start an extension), then the value is interpreted as the name of a propery in which to store the XML. This makes it easy for an application to use the consumer to serialize a service network and retrieve the XML in-memory.  
+The name of a file in which to store the XML. If the value does not contain a period (to start an extension), then the value is interpreted as the name of a property in which to store the XML. This makes it easy for an application to use the consumer to serialize a service network and retrieve the XML in-memory.  
 type: string  
 readonly: no  
 required: no  

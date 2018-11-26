@@ -13,7 +13,7 @@ title: deshake
 media types:
 Video  
 description: Stabilize shaky video.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -153,7 +153,7 @@ required: no
 
   
 description:
-use OpenCL filtering capabilities  
+ignored  
 type: string  
 readonly: no  
 required: no  

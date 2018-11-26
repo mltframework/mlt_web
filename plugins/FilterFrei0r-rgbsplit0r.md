@@ -13,7 +13,7 @@ title: rgbsplit0r
 media types:
 Video  
 description: RGB splitting and shifting  
-version: 0.1  
+version: 1  
 creator: IDENT Software  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 0.5  
 widget: spinner  
 
 ### 1
@@ -41,6 +41,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 0.5  
 widget: spinner  
 

@@ -13,7 +13,7 @@ title: noise
 media types:
 Video  
 description: Add noise.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -22,7 +22,7 @@ creator: libavfilter maintainers
 
   
 description:
-set component  
+set component #0 noise seed  
 type: integer  
 readonly: no  
 required: no  
@@ -33,7 +33,7 @@ default: -2147483648
 
   
 description:
-set component  
+set component #0 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -45,7 +45,7 @@ default: 0
 
   
 description:
-set component  
+set component #0 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -57,7 +57,7 @@ default: 0
 
   
 description:
-set component  
+set component #0 flags  
 type: string  
 readonly: no  
 required: no  
@@ -73,7 +73,7 @@ values:
 
   
 description:
-set component  
+set component #0 flags  
 type: string  
 readonly: no  
 required: no  
@@ -89,7 +89,7 @@ values:
 
   
 description:
-set component  
+set component #0 noise seed  
 type: integer  
 readonly: no  
 required: no  
@@ -100,7 +100,7 @@ default: -2147483648
 
   
 description:
-set component  
+set component #0 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -112,7 +112,7 @@ default: 0
 
   
 description:
-set component  
+set component #0 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -124,7 +124,7 @@ default: 0
 
   
 description:
-set component  
+set component #0 flags  
 type: string  
 readonly: no  
 required: no  
@@ -140,7 +140,7 @@ values:
 
   
 description:
-set component  
+set component #0 flags  
 type: string  
 readonly: no  
 required: no  
@@ -156,7 +156,7 @@ values:
 
   
 description:
-set component  
+set component #1 noise seed  
 type: integer  
 readonly: no  
 required: no  
@@ -167,7 +167,7 @@ default: -2147483648
 
   
 description:
-set component  
+set component #1 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -179,7 +179,7 @@ default: 0
 
   
 description:
-set component  
+set component #1 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -191,7 +191,7 @@ default: 0
 
   
 description:
-set component  
+set component #1 flags  
 type: string  
 readonly: no  
 required: no  
@@ -207,7 +207,7 @@ values:
 
   
 description:
-set component  
+set component #1 flags  
 type: string  
 readonly: no  
 required: no  
@@ -223,7 +223,7 @@ values:
 
   
 description:
-set component  
+set component #2 noise seed  
 type: integer  
 readonly: no  
 required: no  
@@ -234,7 +234,7 @@ default: -2147483648
 
   
 description:
-set component  
+set component #2 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -246,7 +246,7 @@ default: 0
 
   
 description:
-set component  
+set component #2 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -258,7 +258,7 @@ default: 0
 
   
 description:
-set component  
+set component #2 flags  
 type: string  
 readonly: no  
 required: no  
@@ -274,7 +274,7 @@ values:
 
   
 description:
-set component  
+set component #2 flags  
 type: string  
 readonly: no  
 required: no  
@@ -290,7 +290,7 @@ values:
 
   
 description:
-set component  
+set component #3 noise seed  
 type: integer  
 readonly: no  
 required: no  
@@ -301,7 +301,7 @@ default: -2147483648
 
   
 description:
-set component  
+set component #3 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -313,7 +313,7 @@ default: 0
 
   
 description:
-set component  
+set component #3 strength  
 type: integer  
 readonly: no  
 required: no  
@@ -325,7 +325,7 @@ default: 0
 
   
 description:
-set component  
+set component #3 flags  
 type: string  
 readonly: no  
 required: no  
@@ -341,7 +341,7 @@ values:
 
   
 description:
-set component  
+set component #3 flags  
 type: string  
 readonly: no  
 required: no  

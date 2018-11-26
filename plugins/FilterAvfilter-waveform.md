@@ -13,7 +13,7 @@ title: waveform
 media types:
 Video  
 description: Video waveform monitor.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -191,6 +191,7 @@ values:
 * chroma
 * color
 * acolor
+* xflat
 
 ### av.f
 
@@ -209,6 +210,7 @@ values:
 * chroma
 * color
 * acolor
+* xflat
 
 ### av.graticule
 
@@ -223,6 +225,7 @@ values:
 
 * none
 * green
+* orange
 
 ### av.g
 
@@ -237,6 +240,7 @@ values:
 
 * none
 * green
+* orange
 
 ### av.opacity
 

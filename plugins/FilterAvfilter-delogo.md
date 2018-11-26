@@ -13,7 +13,7 @@ title: delogo
 media types:
 Video  
 description: Remove logo from input video.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -61,28 +61,6 @@ readonly: no
 required: no  
 minimum: -1  
 default: -2147483648  
-
-### av.band
-
-  
-description:
-set delogo area band size  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### av.t
-
-  
-description:
-set delogo area band size  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
 
 ### av.show
 

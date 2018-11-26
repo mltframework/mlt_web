@@ -13,7 +13,7 @@ title: unsharp
 media types:
 Video  
 description: Sharpen or blur the input video.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -166,7 +166,7 @@ default: 0
 
   
 description:
-use OpenCL filtering capabilities  
+ignored  
 type: string  
 readonly: no  
 required: no  

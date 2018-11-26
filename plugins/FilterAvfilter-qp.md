@@ -13,7 +13,7 @@ title: qp
 media types:
 Video  
 description: Change video quantization parameters.  
-version: Lavfi6.107.100  
+version: Lavfi7.16.100  
 creator: libavfilter maintainers  
 
 ## Parameters
