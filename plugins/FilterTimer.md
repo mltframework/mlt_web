@@ -61,6 +61,17 @@ required: no
 default: 00:00:10.000  
 widget: text  
 
+### offset
+
+title: Offset    
+description:
+An offset to be added to the timer value. When the direction is &quot;down&quot;, the timer will count down to &quot;offset&quot; instead of 00:00:00.000. When the direction is up, the timer will count up starting from &quot;offset&quot;. Must be in the format HH:MM:SS.SSS  
+type: string  
+readonly: no  
+required: no  
+default: 00:00:00.000  
+widget: text  
+
 ### direction
 
 title: Direction    

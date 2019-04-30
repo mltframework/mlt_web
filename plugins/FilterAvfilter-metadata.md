@@ -13,7 +13,7 @@ title: metadata
 media types:
 Video  
 description: Manipulate video frame metadata.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

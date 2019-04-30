@@ -13,7 +13,7 @@ title: erosion
 media types:
 Video  
 description: Apply erosion effect.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -76,5 +76,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 255  
+default: 0  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
 default: 0  
 

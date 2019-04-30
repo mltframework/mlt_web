@@ -13,7 +13,7 @@ title: fade
 media types:
 Video  
 description: Fade in/out input video.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

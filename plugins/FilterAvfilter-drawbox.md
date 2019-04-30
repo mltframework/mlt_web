@@ -13,7 +13,7 @@ title: drawbox
 media types:
 Video  
 description: Draw a colored box on the input video.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

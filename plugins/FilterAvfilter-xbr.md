@@ -13,7 +13,7 @@ title: xbr
 media types:
 Video  
 description: Scale the input using xBR algorithm.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

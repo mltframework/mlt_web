@@ -13,7 +13,7 @@ title: hqdn3d
 media types:
 Video  
 description: Apply a High Quality 3D Denoiser.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: crossfeed
 media types:
 Audio  
 description: Apply headphone crossfeed filter.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

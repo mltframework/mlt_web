@@ -13,7 +13,7 @@ title: fillborders
 media types:
 Video  
 description: Fill borders of the input video.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

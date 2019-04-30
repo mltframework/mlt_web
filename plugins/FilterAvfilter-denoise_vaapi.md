@@ -13,7 +13,7 @@ title: denoise_vaapi
 media types:
 Video  
 description: VAAPI VPP for de-noise  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

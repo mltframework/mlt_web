@@ -13,7 +13,7 @@ title: colorlevels
 media types:
 Video  
 description: Adjust the color levels.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: find_rect
 media types:
 Video  
 description: Find a user specified object.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: drmeter
 media types:
 Audio  
 description: Measure audio dynamic range.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

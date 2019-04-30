@@ -13,7 +13,7 @@ title: acompressor
 media types:
 Audio  
 description: Audio compressor.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

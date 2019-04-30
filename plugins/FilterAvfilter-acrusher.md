@@ -13,7 +13,7 @@ title: acrusher
 media types:
 Audio  
 description: Reduce audio bit resolution.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

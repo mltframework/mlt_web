@@ -13,7 +13,7 @@ title: unsharp
 media types:
 Video  
 description: Sharpen or blur the input video.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

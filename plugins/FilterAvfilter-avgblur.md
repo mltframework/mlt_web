@@ -13,7 +13,7 @@ title: avgblur
 media types:
 Video  
 description: Apply Average Blur filter.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

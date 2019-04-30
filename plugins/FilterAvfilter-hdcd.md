@@ -13,7 +13,7 @@ title: hdcd
 media types:
 Audio  
 description: Apply High Definition Compatible Digital (HDCD) decoding.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

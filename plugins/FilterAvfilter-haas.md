@@ -13,7 +13,7 @@ title: haas
 media types:
 Audio  
 description: Apply Haas Stereo Enhancer.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

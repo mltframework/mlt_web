@@ -13,7 +13,7 @@ title: signalstats
 media types:
 Video  
 description: Generate statistics from video analysis.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

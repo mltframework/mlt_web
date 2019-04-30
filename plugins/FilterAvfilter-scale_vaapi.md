@@ -13,7 +13,7 @@ title: scale_vaapi
 media types:
 Video  
 description: Scale to/from VAAPI surfaces.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

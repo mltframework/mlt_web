@@ -16,7 +16,7 @@ description: Read an audio and/or video file using FFmpeg.
 version: 2  
 creator: Charles Yates  
 contributor: Dan Dennedy  
-copyright: Copyright (C) 2003-2014 Meltytech, LLC  
+copyright: Copyright (C) 2003-2019 Meltytech, LLC  
 license: LGPL  
 URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)  
 
@@ -576,6 +576,15 @@ required: no
 minimum: 0  
 default: 0  
 
+### skip_estimate_duration_from_pts
+
+  
+description:
+skip duration calculation in estimate_timings_from_pts  
+type: string  
+readonly: no  
+required: no  
+
 ### linespeed
 
   
@@ -691,6 +700,15 @@ required: no
   
 description:
 use odml index (avi)  
+type: string  
+readonly: no  
+required: no  
+
+### framerate
+
+  
+description:
+(avs2)  
 type: string  
 readonly: no  
 required: no  
@@ -877,6 +895,24 @@ type: string
 readonly: no  
 required: no  
 
+### flv_full_metadata
+
+  
+description:
+Dump full metadata of the onMetadata (flv)  
+type: string  
+readonly: no  
+required: no  
+
+### flv_ignore_prevtag
+
+  
+description:
+Ignore the Size of previous tag (flv)  
+type: string  
+readonly: no  
+required: no  
+
 ### missing_streams
 
   
@@ -894,6 +930,24 @@ default: 0
   
 description:
 Allocate streams according to the onMetaData array (live_flv)  
+type: string  
+readonly: no  
+required: no  
+
+### flv_full_metadata
+
+  
+description:
+Dump full metadata of the onMetadata (live_flv)  
+type: string  
+readonly: no  
+required: no  
+
+### flv_ignore_prevtag
+
+  
+description:
+Ignore the Size of previous tag (live_flv)  
 type: string  
 readonly: no  
 required: no  
@@ -1717,6 +1771,24 @@ type: string
 readonly: no  
 required: no  
 
+### skip_unknown_pmt
+
+  
+description:
+skip PMTs for programs not advertised in the PAT (mpegts)  
+type: string  
+readonly: no  
+required: no  
+
+### merge_pmt_versions
+
+  
+description:
+re-use streams when PMT&#39;s version/pids change (mpegts)  
+type: string  
+readonly: no  
+required: no  
+
 ### resync_size
 
   
@@ -1767,6 +1839,15 @@ type: string
 readonly: no  
 required: no  
 
+### eia608_extract
+
+  
+description:
+extract eia 608 captions from s436m track (mxf)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -1805,6 +1886,28 @@ default: 0
   
 description:
 (mulaw)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### sample_rate
+
+  
+description:
+(vidc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### channels
+
+  
+description:
+(vidc)  
 type: integer  
 readonly: no  
 required: no  
@@ -2410,7 +2513,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.12.100'  
+default: 'Lavf58.20.100'  
 
 ### user-agent
 
@@ -2420,7 +2523,7 @@ override User-Agent header (deprecated, use user_agent) (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.12.100'  
+default: 'Lavf58.20.100'  
 
 ### sample_rate
 
@@ -2507,6 +2610,15 @@ readonly: no
 required: no  
 minimum: -1  
 default: -2147483648  
+
+### framerate
+
+  
+description:
+set frame rate (ser)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -4959,6 +5071,105 @@ values:
 * sec
 * ns
 
+### framerate
+
+  
+description:
+set the video framerate (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pattern_type
+
+  
+description:
+set pattern type (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* glob_sequence
+* glob
+* sequence
+* none
+
+### pixel_format
+
+  
+description:
+set video pixel format (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### start_number
+
+  
+description:
+set first number in the sequence (xwd_pipe)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### start_number_range
+
+  
+description:
+set range for looking at the first sequence number (xwd_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 0  
+
+### video_size
+
+  
+description:
+set video size (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (xwd_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### ts_from_file
+
+  
+description:
+set frame timestamp from file&#39;s one (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* sec
+* ns
+
 ### sample_rate
 
   
@@ -4990,40 +5201,16 @@ type: string
 readonly: no  
 required: no  
 
-### dvtype
+### channels
 
   
 description:
-override autodetection of DV/HDV (iec61883)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* auto
-* dv
-* hdv
-
-### dvbuffer
-
-  
-description:
-set queue buffer size (in packets) (iec61883)  
+Number of audio channels. (jack)  
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
+minimum: 1  
 default: 0  
-
-### dvguid
-
-  
-description:
-select one of multiple DV devices by its GUID (iec61883)  
-type: string  
-readonly: no  
-required: no  
 
 ### graph
 
@@ -5091,7 +5278,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.12.100'  
+default: 'Lavf58.20.100'  
 
 ### stream_name
 
@@ -5416,36 +5603,6 @@ required: no
 minimum: 1  
 maximum: 128  
 default: 0  
-
-### video_size
-
-  
-description:
-A string describing frame size, such as 640x480 or hd720. (libdc1394)  
-type: string  
-readonly: no  
-required: no  
-default: 'qvga'  
-
-### pixel_format
-
-  
-description:
-(libdc1394)  
-type: string  
-readonly: no  
-required: no  
-default: 'uyvy422'  
-
-### framerate
-
-  
-description:
-(libdc1394)  
-type: string  
-readonly: no  
-required: no  
-default: 'ntsc'  
 
 ### flags
 
@@ -6301,6 +6458,15 @@ readonly: no
 required: no  
 minimum: 20  
 default: 0  
+
+### skip_cursor
+
+  
+description:
+skip the cursor (rasc)  
+type: string  
+readonly: no  
+required: no  
 
 ### top
 

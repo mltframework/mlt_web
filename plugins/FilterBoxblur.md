@@ -58,7 +58,7 @@ title: Horizontal size
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 0  
 default: 1  
 unit: pixels  
 
@@ -68,7 +68,7 @@ title: Vertical size
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 0  
 default: 1  
 unit: pixels  
 

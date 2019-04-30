@@ -13,7 +13,7 @@ title: pp
 media types:
 Video  
 description: Filter video using libpostproc.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

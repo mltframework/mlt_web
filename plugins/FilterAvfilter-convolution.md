@@ -13,7 +13,7 @@ title: convolution
 media types:
 Video  
 description: Apply convolution filter.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -68,7 +68,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147480000.0  
-default: 1  
+default: 0  
 
 ### av.1rdiv
 
@@ -80,7 +80,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147480000.0  
-default: 1  
+default: 0  
 
 ### av.2rdiv
 
@@ -92,7 +92,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147480000.0  
-default: 1  
+default: 0  
 
 ### av.3rdiv
 
@@ -104,7 +104,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147480000.0  
-default: 1  
+default: 0  
 
 ### av.0bias
 
@@ -153,6 +153,66 @@ required: no
 minimum: 0  
 maximum: 2147480000.0  
 default: 0  
+
+### av.0mode
+
+  
+description:
+set matrix mode for 1st plane  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* square
+* row
+* column
+
+### av.1mode
+
+  
+description:
+set matrix mode for 2nd plane  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* square
+* row
+* column
+
+### av.2mode
+
+  
+description:
+set matrix mode for 3rd plane  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* square
+* row
+* column
+
+### av.3mode
+
+  
+description:
+set matrix mode for 4th plane  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* square
+* row
+* column
 
 ### av.threads
 

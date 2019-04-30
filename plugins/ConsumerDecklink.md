@@ -15,7 +15,7 @@ Audio  Video
 description: Output audio and video using Blackmagic Design DeckLink SDI or Intensity HDMI cards.  
 version: 2  
 creator: Dan Dennedy  
-copyright: Copyright (C) 2011 Daniel R. Dennedy  
+copyright: Copyright (C) 2010-2018 Meltytech, LLC  
 license: LGPL  
 
 ## Notes

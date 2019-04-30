@@ -13,7 +13,7 @@ title: channelmap
 media types:
 Audio  
 description: Remap audio channels.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

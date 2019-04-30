@@ -13,7 +13,7 @@ title: histeq
 media types:
 Video  
 description: Apply global color histogram equalization.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

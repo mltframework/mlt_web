@@ -20,7 +20,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### resource
 
 title: Color    
 description:
@@ -30,4 +30,19 @@ readonly: no
 required: no  
 default: black  
 widget: color  
+
+### mlt_image_format
+
+title: MLT image format    
+description:
+Force to generate image in the specified format. The default behavior is to supply whatever was requested by the connected consumer.  
+type: string  
+readonly: no  
+required: no  
+values:  
+
+* yuv420p
+* yuv422
+* rgb24
+* rgb24a
 

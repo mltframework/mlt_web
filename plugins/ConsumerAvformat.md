@@ -16,13 +16,13 @@ description: Write or stream audio and/or video using FFmpeg.
 version: 3  
 creator: Charles Yates  
 contributor: Dan Dennedy  
-copyright: Copyright (C) 2003-2014 Meltytech, LLC  
+copyright: Copyright (C) 2003-2019 Meltytech, LLC  
 license: LGPL  
 URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)  
 
 ## Notes
 
-The avformat consumer uses the FFmpeg/libav libraries to encode to a file or network stream. You can get a lot of information about how to encode with FFmpeg all over the web including FFmpeg/libav&#39;s web site. With melt, you simply need to add &quot;-consumer avformat:output.file&quot; to the command line followed by the encoding parameters by translating ffmpeg&#39;s &#39;-option value&#39; syntax to melt&#39;s &#39;option=value&#39; syntax. Not all ffmpeg options are supported. Some are very specific to avconv/ffmpeg, the command line utility, and not an &quot;AVOption&quot; used in the libraries. In some cases, there are ffmpeg options that are not AVOptions but which closely resemble an existing MLT property. In that case, MLT supports the ffmpeg option name. For example, ffmpeg&#39;s &quot;-ac&quot; is equivalent to the MLT &quot;channels&quot; property. Therefore, the avformat consumer also supports the &quot;ac&quot; property. Complete details are below. Please note that the exact options depend on the version of libavformat and libavcodec on your system. The following is based on FFmpeg n2.6.3.
+The avformat consumer uses the FFmpeg/libav libraries to encode to a file or network stream. You can get a lot of information about how to encode with FFmpeg all over the web including FFmpeg/libav&#39;s web site. With melt, you simply need to add &quot;-consumer avformat:output.file&quot; to the command line followed by the encoding parameters by translating ffmpeg&#39;s &#39;-option value&#39; syntax to melt&#39;s &#39;option=value&#39; syntax. Not all ffmpeg options are supported. Some are very specific to avconv/ffmpeg, the command line utility, and not an &quot;AVOption&quot; used in the libraries. In some cases, there are ffmpeg options that are not AVOptions but which closely resemble an existing MLT property. In that case, MLT supports the ffmpeg option name. For example, ffmpeg&#39;s &quot;-ac&quot; is equivalent to the MLT &quot;channels&quot; property. Therefore, the avformat consumer also supports the &quot;ac&quot; property. Complete details are below. Please note that the exact options depend on the version of libavformat and libavcodec on your system. The following is based on FFmpeg v4.0.
 
 ## Parameters
 
@@ -1031,12 +1031,21 @@ default: 0
 
   
 description:
-minimum segment duration (in microseconds) (dash)  
+minimum segment duration (in microseconds) (will be deprecated) (dash)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 0  
 default: 0  
+
+### seg_duration
+
+  
+description:
+segment duration (in seconds, fractional value can be set) (dash)  
+type: string  
+readonly: no  
+required: no  
 
 ### remove_at_exit
 
@@ -1165,6 +1174,38 @@ set timeout for socket I/O operations (dash)
 type: string  
 readonly: no  
 required: no  
+
+### index_correction
+
+  
+description:
+Enable/Disable segment index correction logic (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### format_options
+
+  
+description:
+set list of options for the container format (mp4/webm) used for dash (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### dash_segment_type
+
+  
+description:
+set dash segment files type (dash)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* mp4
+* webm
 
 ### movflags
 
@@ -1389,6 +1430,29 @@ required: no
   
 description:
 force or disable writing tmcd (f4v)  
+type: string  
+readonly: no  
+required: no  
+
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (f4v)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (f4v)  
 type: string  
 readonly: no  
 required: no  
@@ -1908,12 +1972,30 @@ values:
 
   
 description:
+set filename expansion with strftime at segment creation(will be deprecated ) (hls)  
+type: string  
+readonly: no  
+required: no  
+
+### strftime
+
+  
+description:
 set filename expansion with strftime at segment creation (hls)  
 type: string  
 readonly: no  
 required: no  
 
 ### use_localtime_mkdir
+
+  
+description:
+create last directory component in strftime-generated filename(will be deprecated) (hls)  
+type: string  
+readonly: no  
+required: no  
+
+### strftime_mkdir
 
   
 description:
@@ -2300,6 +2382,29 @@ type: string
 readonly: no  
 required: no  
 
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (ipod)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (ipod)  
+type: string  
+readonly: no  
+required: no  
+
 ### movflags
 
   
@@ -2523,6 +2628,29 @@ required: no
   
 description:
 force or disable writing tmcd (ismv)  
+type: string  
+readonly: no  
+required: no  
+
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (ismv)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (ismv)  
 type: string  
 readonly: no  
 required: no  
@@ -2952,6 +3080,29 @@ type: string
 readonly: no  
 required: no  
 
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (mov)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (mov)  
+type: string  
+readonly: no  
+required: no  
+
 ### id3v2_version
 
   
@@ -3205,6 +3356,29 @@ required: no
   
 description:
 force or disable writing tmcd (mp4)  
+type: string  
+readonly: no  
+required: no  
+
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (mp4)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (mp4)  
 type: string  
 readonly: no  
 required: no  
@@ -4060,6 +4234,29 @@ required: no
   
 description:
 force or disable writing tmcd (psp)  
+type: string  
+readonly: no  
+required: no  
+
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (psp)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (psp)  
 type: string  
 readonly: no  
 required: no  
@@ -5105,6 +5302,29 @@ type: string
 readonly: no  
 required: no  
 
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (3g2)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (3g2)  
+type: string  
+readonly: no  
+required: no  
+
 ### movflags
 
   
@@ -5328,6 +5548,29 @@ required: no
   
 description:
 force or disable writing tmcd (3gp)  
+type: string  
+readonly: no  
+required: no  
+
+### write_prft
+
+  
+description:
+Write producer reference time box with specified time source (3gp)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wallclock
+* pts
+
+### empty_hdlr_name
+
+  
+description:
+write zero-length name string in hdlr atoms within mdia and minf atoms (3gp)  
 type: string  
 readonly: no  
 required: no  
@@ -5659,7 +5902,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.12.100'  
+default: 'Lavf58.20.100'  
 
 ### stream_name
 
@@ -5741,6 +5984,26 @@ type: string
 readonly: no  
 required: no  
 
+### window_x
+
+  
+description:
+set SDL window x position (sdl,sdl2)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### window_y
+
+  
+description:
+set SDL window y position (sdl,sdl2)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
 ### window_fullscreen
 
   
@@ -5758,6 +6021,18 @@ set SDL window border off (sdl,sdl2)
 type: string  
 readonly: no  
 required: no  
+
+### window_enable_quit
+
+  
+description:
+set if quit action is available (sdl,sdl2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
 
 ### display_name
 
@@ -14675,7 +14950,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 2.5  
-maximum: 60  
+maximum: 120  
 default: 20  
 
 ### packet_loss
@@ -16492,6 +16767,15 @@ required: no
 minimum: 4  
 default: 0  
 
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (h264_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
 ### qp
 
   
@@ -16512,21 +16796,8 @@ Set encode quality (trades off against speed, higher is faster) (h264_vaapi)
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 8  
-default: 0  
-
-### low_power
-
-  
-description:
-Use low-power encoding mode (experimental: only supported on some platforms, does not support all features) (h264_vaapi)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
+minimum: -1  
+default: -2147483648  
 
 ### coder
 
@@ -16549,12 +16820,9 @@ values:
   
 description:
 Include AUD (h264_vaapi)  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
 
 ### sei
 
@@ -16617,6 +16885,15 @@ values:
 * 6.1
 * 6.2
 
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (hevc_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
 ### qp
 
   
@@ -16634,12 +16911,9 @@ default: 0
   
 description:
 Include AUD (hevc_vaapi)  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
 
 ### profile
 
@@ -16654,6 +16928,21 @@ values:
 
 * main
 * main10
+* rext
+
+### tier
+
+  
+description:
+Set tier (general_tier_flag) (hevc_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* high
 
 ### level
 
@@ -16679,6 +16968,85 @@ values:
 * 6
 * 6.1
 * 6.2
+
+### sei
+
+  
+description:
+Set SEI to include (hevc_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* hdr
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (mjpeg_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
+### jfif
+
+  
+description:
+Include JFIF header (mjpeg_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
+### huffman
+
+  
+description:
+Include huffman tables (mjpeg_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (mpeg2_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
+### profile
+
+  
+description:
+Set profile (in profile_and_level_indication) (mpeg2_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* simple
+* main
+
+### level
+
+  
+description:
+Set level (in profile_and_level_indication) (mpeg2_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* low
+* main
+* high_1440
+* high
 
 ### num_output_buffers
 
@@ -16724,6 +17092,15 @@ required: no
 minimum: 4  
 default: 0  
 
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (vp8_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
 ### loop_filter_level
 
   
@@ -16747,6 +17124,15 @@ required: no
 minimum: 0  
 maximum: 15  
 default: 0  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (vp9_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### loop_filter_level
 

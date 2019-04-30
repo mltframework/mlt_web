@@ -13,7 +13,7 @@ title: deshake
 media types:
 Video  
 description: Stabilize shaky video.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: crystalizer
 media types:
 Audio  
 description: Simple expand audio dynamic range filter.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

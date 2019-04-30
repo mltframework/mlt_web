@@ -13,7 +13,7 @@ title: lumakey
 media types:
 Video  
 description: Turns a certain luma into transparency.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

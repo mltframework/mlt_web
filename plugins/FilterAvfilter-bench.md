@@ -13,7 +13,7 @@ title: bench
 media types:
 Video  
 description: Benchmark part of a filtergraph.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

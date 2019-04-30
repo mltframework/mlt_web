@@ -32,6 +32,7 @@ description:
 <pre>
 The text to overlay. May include keywords enclosed in "#".
 Keywords include:
+  * #createdate#    - Best guess of file creation date
   * #smpte_df#      - SMPTE drop-frame timecode of the frame
   * #smpte_ndf#     - SMPTE non-drop-frame timecode of the frame
   * #timecode#      - same as #smpte_df#

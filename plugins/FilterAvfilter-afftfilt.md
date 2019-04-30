@@ -13,7 +13,7 @@ title: afftfilt
 media types:
 Audio  
 description: Apply arbitrary expressions to samples in frequency domain.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

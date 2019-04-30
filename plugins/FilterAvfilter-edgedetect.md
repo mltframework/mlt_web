@@ -13,7 +13,7 @@ title: edgedetect
 media types:
 Video  
 description: Detect and draw edge.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -57,4 +57,23 @@ values:
 
 * wires
 * colormix
+* canny
+
+### av.planes
+
+  
+description:
+set planes to filter  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* y
+* u
+* v
+* r
+* g
+* b
 

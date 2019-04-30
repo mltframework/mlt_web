@@ -13,7 +13,7 @@ title: vectorscope
 media types:
 Video  
 description: Video vectorscope.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

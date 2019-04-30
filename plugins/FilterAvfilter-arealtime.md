@@ -13,7 +13,7 @@ title: arealtime
 media types:
 Audio  
 description: Slow down filtering to match realtime.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

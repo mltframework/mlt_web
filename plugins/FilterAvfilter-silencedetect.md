@@ -13,7 +13,7 @@ title: silencedetect
 media types:
 Audio  
 description: Detect silence.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -69,6 +69,15 @@ default: 2
 format: double  
 
 ### av.mono
+
+  
+description:
+check each channel separately  
+type: string  
+readonly: no  
+required: no  
+
+### av.m
 
   
 description:

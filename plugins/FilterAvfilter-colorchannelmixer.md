@@ -13,7 +13,7 @@ title: colorchannelmixer
 media types:
 Video  
 description: Adjust colors by mixing color channels.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -225,4 +225,15 @@ minimum: -2
 maximum: 2  
 default: 1  
 format: double  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 

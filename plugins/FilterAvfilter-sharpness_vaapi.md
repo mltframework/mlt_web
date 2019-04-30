@@ -13,7 +13,7 @@ title: sharpness_vaapi
 media types:
 Video  
 description: VAAPI VPP for sharpness  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters

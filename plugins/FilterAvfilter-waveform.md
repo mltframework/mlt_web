@@ -13,7 +13,7 @@ title: waveform
 media types:
 Video  
 description: Video waveform monitor.  
-version: Lavfi7.16.100  
+version: Lavfi7.40.101  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -347,4 +347,15 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0.75  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
