@@ -13,7 +13,7 @@ title: rgbsplit0r
 media types:
 Video  
 description: RGB splitting and shifting  
-version: 1  
+version: 1.1  
 creator: IDENT Software  
 
 ## Parameters

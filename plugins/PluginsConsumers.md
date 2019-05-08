@@ -3,12 +3,11 @@ title: Documentation
 wrap_title: Consumer Plugins
 ---
 * [avformat](../ConsumerAvformat/): FFmpeg Output
-* [blipflash](../ConsumerBlipflash/): 
+* [blipflash](../ConsumerBlipflash/): Blip Flash
 * [cbrts](../ConsumerCbrts/): CBR MPEG2-TS
 * [decklink](../ConsumerDecklink/): Blackmagic Design DeckLink Output
 * [gtk2_preview](../ConsumerGtk2_preview/): GTK+
 * [jack](../ConsumerJack/): JACK
-* [libdv](../ConsumerLibdv/): libdv (*deprecated*)
 * [multi](../ConsumerMulti/): Multiple outputs
 * [rtaudio](../ConsumerRtaudio/): RtAudio
 * [sdi](../ConsumerSdi/): Linear Systems SDI
