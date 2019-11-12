@@ -13,7 +13,7 @@ title: ciescope
 media types:
 Video  
 description: Video CIE scope.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -93,7 +93,7 @@ readonly: no
 required: no  
 minimum: 256  
 maximum: 8192  
-default: 0  
+default: 512  
 
 ### av.s
 
@@ -105,7 +105,7 @@ readonly: no
 required: no  
 minimum: 256  
 maximum: 8192  
-default: 0  
+default: 512  
 
 ### av.intensity
 
@@ -165,4 +165,20 @@ minimum: 0.1
 maximum: 6  
 default: 2.6  
 format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

@@ -13,7 +13,7 @@ title: Vid.Stab Detect and Transform
 media types:
 Video  
 description: Stabilize Video (for wiggly/rolling video)  
-version: 1  
+version: 2  
 creator: Marco Gittler <g.marco@freenet.de>  
 copyright: Jakub Ksiezniak  
 license: GPL  
@@ -171,39 +171,30 @@ widget: spinner
 title: Crop    
 description:
 Used during application. 0 = keep border, 1 = black background  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 0  
-widget: spinner  
 
 ### invert
 
 title: Invert    
 description:
 Used during application. Invert transforms  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 0  
-widget: spinner  
 
 ### relative
 
 title: Relative    
 description:
 Used during application. Consider transforms as absolute (0) or relative (1)  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 1  
-widget: spinner  
 
 ### zoom
 
@@ -251,9 +242,16 @@ widget: spinner
 title: Reload Results    
 description:
 The application should set this to 1 when it updates the results property to indicate that the results should be reloaded.  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
+
+### analyze
+
+title: Commence analysis    
+description:
+This is optional, but it can help applications avoid race conditions writing to the file. When not set, it does not affect the start of analysis. When set, analysis only starts and the file written if true.  
+type: boolean  
+readonly: no  
+required: no  
 

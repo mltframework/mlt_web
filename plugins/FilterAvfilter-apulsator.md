@@ -13,7 +13,7 @@ title: apulsator
 media types:
 Audio  
 description: Audio pulsator.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -151,7 +151,7 @@ readonly: no
 required: no  
 minimum: 10  
 maximum: 2000  
-default: 0  
+default: 500  
 
 ### av.hz
 
@@ -165,4 +165,20 @@ minimum: 0.01
 maximum: 100  
 default: 2  
 format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

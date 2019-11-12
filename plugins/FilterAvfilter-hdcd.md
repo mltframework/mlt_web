@@ -13,7 +13,7 @@ title: hdcd
 media types:
 Audio  
 description: Apply High Definition Compatible Digital (HDCD) decoding.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -46,7 +46,7 @@ readonly: no
 required: no  
 minimum: 100  
 maximum: 60000  
-default: 0  
+default: 2000  
 
 ### av.force_pe
 
@@ -88,4 +88,20 @@ values:
 * 16
 * 20
 * 24
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

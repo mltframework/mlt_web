@@ -13,7 +13,7 @@ title: blackframe
 media types:
 Video  
 description: Detect frames that are (almost) black.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 100  
-default: 0  
+default: 98  
 
 ### av.threshold
 
@@ -40,7 +40,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 255  
-default: 0  
+default: 32  
 
 ### av.thresh
 
@@ -52,5 +52,21 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 255  
-default: 0  
+default: 32  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

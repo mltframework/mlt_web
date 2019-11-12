@@ -60,7 +60,7 @@ wrap_title: Producer Plugins
 * [pgm](../ProducerPgm/): PGM Image
 * [pixbuf](../ProducerPixbuf/): GDK-PixBuf
 * [qimage](../ProducerQimage/): Qt QImage
-* [qtext](../ProducerQtext/): QT Titler
+* [qtext](../ProducerQtext/): Qt Titler
 * [slowmotion](../ProducerSlowmotion/): Slow Motion
 * [timewarp](../ProducerTimewarp/): Time Warp
 * [tone](../ProducerTone/): Tone

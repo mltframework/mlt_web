@@ -13,7 +13,7 @@ title: drmeter
 media types:
 Audio  
 description: Measure audio dynamic range.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -30,4 +30,20 @@ minimum: 0.01
 maximum: 10  
 default: 3  
 format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

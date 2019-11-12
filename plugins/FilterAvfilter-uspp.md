@@ -13,7 +13,7 @@ title: uspp
 media types:
 Video  
 description: Apply Ultra Simple / Slow Post-processing filter.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 8  
-default: 0  
+default: 3  
 
 ### av.qp
 
@@ -50,4 +50,20 @@ use B-frames&#39; QP
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

@@ -13,7 +13,7 @@ title: fftfilt
 media types:
 Video  
 description: Apply arbitrary expressions to pixels in frequency domain.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -95,4 +95,20 @@ values:
 
 * init
 * frame
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

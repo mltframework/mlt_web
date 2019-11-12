@@ -13,7 +13,7 @@ title: chromahold
 media types:
 Video  
 description: Turns a certain color range into gray.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -39,6 +39,18 @@ minimum: 0.01
 maximum: 1  
 default: 0.01  
 
+### av.blend
+
+  
+description:
+set the chromahold blend value  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
 ### av.yuv
 
   
@@ -58,4 +70,20 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

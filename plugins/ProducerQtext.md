@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: QT Titler  
+title: Qt Titler  
 media types:
 Video  
 description: A title generator that uses the Qt framework to render text.  
@@ -26,7 +26,7 @@ qtext has builtin scaling. It will rescale the originally rendered title to what
 
 ## Parameters
 
-### argument
+### resource
 
 title: File    
 description:
@@ -217,6 +217,6 @@ title: Height
 description:
 The last requested scaled image height.  
 type: integer  
-readonly: ye  
+readonly: true  
 required: no  
 

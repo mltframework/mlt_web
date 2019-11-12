@@ -290,7 +290,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 32  
-default: 0  
+default: 5000000  
 format: 64-bit  
 
 ### formatprobesize
@@ -303,7 +303,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147483646  
-default: 0  
+default: 1048576  
 
 ### fflags
 
@@ -355,7 +355,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1048576  
 
 ### rtbufsize
 
@@ -366,7 +366,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3041280  
 
 ### fdebug
 
@@ -390,7 +390,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### fpsprobesize
 
@@ -402,7 +402,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 2147483646  
-default: -2147483648  
+default: -1  
 
 ### f_err_detect
 
@@ -517,7 +517,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 50  
 
 ### dump_separator
 
@@ -574,7 +574,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000  
 
 ### skip_estimate_duration_from_pts
 
@@ -585,6 +585,28 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(ac3)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### raw_packet_size
+
+  
+description:
+(acm)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### linespeed
 
   
@@ -594,7 +616,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 6000  
 
 ### video_size
 
@@ -643,7 +665,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 15  
 
 ### sample_rate
 
@@ -654,7 +676,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 48000  
 
 ### sample_rate
 
@@ -665,7 +687,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 48000  
 
 ### subfps
 
@@ -713,6 +735,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(avs2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### linespeed
 
   
@@ -722,7 +755,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 6000  
 
 ### video_size
 
@@ -751,6 +784,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(cavsvideo)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### sample_rate
 
   
@@ -760,7 +804,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 11025  
 
 ### framerate
 
@@ -780,7 +824,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mode
 
@@ -812,7 +856,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### safe
 
@@ -841,6 +885,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(data)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### framerate
 
   
@@ -849,6 +904,17 @@ description:
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(dirac)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### framerate
 
@@ -859,6 +925,28 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(dnxhd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### raw_packet_size
+
+  
+description:
+(dts)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### framerate
 
   
@@ -867,6 +955,17 @@ description:
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(dvbsub)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### framerate
 
@@ -877,6 +976,28 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(dvbtxt)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### raw_packet_size
+
+  
+description:
+(eac3)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### framerate
 
   
@@ -885,6 +1006,17 @@ set the framerate (fits)
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(flac)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### flv_metadata
 
@@ -964,6 +1096,17 @@ minimum: 0
 maximum: 255  
 default: 0  
 
+### raw_packet_size
+
+  
+description:
+(g722)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### code_size
 
   
@@ -974,7 +1117,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 5  
-default: 0  
+default: 4  
 
 ### sample_rate
 
@@ -985,7 +1128,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 8000  
 
 ### code_size
 
@@ -997,7 +1140,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 5  
-default: 0  
+default: 4  
 
 ### sample_rate
 
@@ -1008,7 +1151,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 8000  
 
 ### bit_rate
 
@@ -1019,7 +1162,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 8000  
 
 ### min_delay
 
@@ -1031,7 +1174,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 6000  
-default: 0  
+default: 2  
 
 ### max_gif_delay
 
@@ -1043,7 +1186,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 65535  
 
 ### default_delay
 
@@ -1055,7 +1198,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 6000  
-default: 0  
+default: 10  
 
 ### ignore_loop
 
@@ -1076,7 +1219,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 65075262  
-default: 0  
+default: 8000  
 
 ### framerate
 
@@ -1087,6 +1230,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(h261)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### framerate
 
   
@@ -1095,6 +1249,17 @@ description:
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(h263)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### framerate
 
@@ -1105,6 +1270,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### framerate
 
   
@@ -1114,21 +1290,32 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### live_start_index
 
   
 description:
-segment index to start live streams at (negative values are from the end) (hls,applehttp)  
+segment index to start live streams at (negative values are from the end) (hls)  
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -3  
 
 ### allowed_extensions
 
   
 description:
-List of file extensions that hls is allowed to access (hls,applehttp)  
+List of file extensions that hls is allowed to access (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -1138,18 +1325,18 @@ default: '3gp,aac,avi,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,
 
   
 description:
-Maximum number of times a insufficient list is attempted to be reloaded (hls,applehttp)  
+Maximum number of times a insufficient list is attempted to be reloaded (hls)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000  
 
 ### http_persistent
 
   
 description:
-Use persistent HTTP connections (hls,applehttp)  
+Use persistent HTTP connections (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -1158,7 +1345,7 @@ required: no
 
   
 description:
-Use multiple HTTP connections for fetching segments (hls,applehttp)  
+Use multiple HTTP connections for fetching segments (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -1172,7 +1359,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 6000  
 
 ### video_size
 
@@ -1188,24 +1375,6 @@ required: no
   
 description:
 set framerate (frames per second) (idf)  
-type: string  
-readonly: no  
-required: no  
-
-### framerate
-
-  
-description:
-set the video framerate (image2)  
-type: string  
-readonly: no  
-required: no  
-
-### loop
-
-  
-description:
-force loop over input file sequence (image2)  
 type: string  
 readonly: no  
 required: no  
@@ -1226,15 +1395,6 @@ values:
 * sequence
 * none
 
-### pixel_format
-
-  
-description:
-set video pixel format (image2)  
-type: string  
-readonly: no  
-required: no  
-
 ### start_number
 
   
@@ -1254,27 +1414,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (image2)  
-type: string  
-readonly: no  
-required: no  
-
-### frame_size
-
-  
-description:
-force frame size in bytes (image2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
+default: 5  
 
 ### ts_from_file
 
@@ -1295,7 +1435,25 @@ values:
 
   
 description:
-set the video framerate (image2pipe)  
+set the video framerate (image2)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (image2)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (image2)  
 type: string  
 readonly: no  
 required: no  
@@ -1304,62 +1462,7 @@ required: no
 
   
 description:
-force loop over input file sequence (image2pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (image2pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (image2pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (image2pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (image2pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (image2pipe)  
+force loop over input file sequence (image2)  
 type: string  
 readonly: no  
 required: no  
@@ -1375,26 +1478,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (image2pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (alias_pix)  
+set the video framerate (image2pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (image2pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (image2pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -1403,7 +1509,7 @@ required: no
 
   
 description:
-force loop over input file sequence (alias_pix)  
+force loop over input file sequence (image2pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -1424,15 +1530,6 @@ values:
 * sequence
 * none
 
-### pixel_format
-
-  
-description:
-set video pixel format (alias_pix)  
-type: string  
-readonly: no  
-required: no  
-
 ### start_number
 
   
@@ -1452,27 +1549,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (alias_pix)  
-type: string  
-readonly: no  
-required: no  
-
-### frame_size
-
-  
-description:
-force frame size in bytes (alias_pix)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
+default: 5  
 
 ### ts_from_file
 
@@ -1493,7 +1570,25 @@ values:
 
   
 description:
-set the video framerate (brender_pix)  
+set the video framerate (alias_pix)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (alias_pix)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (alias_pix)  
 type: string  
 readonly: no  
 required: no  
@@ -1502,7 +1597,7 @@ required: no
 
   
 description:
-force loop over input file sequence (brender_pix)  
+force loop over input file sequence (alias_pix)  
 type: string  
 readonly: no  
 required: no  
@@ -1523,15 +1618,6 @@ values:
 * sequence
 * none
 
-### pixel_format
-
-  
-description:
-set video pixel format (brender_pix)  
-type: string  
-readonly: no  
-required: no  
-
 ### start_number
 
   
@@ -1551,27 +1637,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (brender_pix)  
-type: string  
-readonly: no  
-required: no  
-
-### frame_size
-
-  
-description:
-force frame size in bytes (brender_pix)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
+default: 5  
 
 ### ts_from_file
 
@@ -1592,10 +1658,107 @@ values:
 
   
 description:
+set the video framerate (brender_pix)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (brender_pix)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (brender_pix)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (brender_pix)  
+type: string  
+readonly: no  
+required: no  
+
+### framerate
+
+  
+description:
 (ingenient)  
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(ingenient)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### flv_metadata
+
+  
+description:
+Allocate streams according to the onMetaData array (kux)  
+type: string  
+readonly: no  
+required: no  
+
+### flv_full_metadata
+
+  
+description:
+Dump full metadata of the onMetadata (kux)  
+type: string  
+readonly: no  
+required: no  
+
+### flv_ignore_prevtag
+
+  
+description:
+Ignore the Size of previous tag (kux)  
+type: string  
+readonly: no  
+required: no  
+
+### missing_streams
+
+  
+description:
+(kux)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
+default: 0  
+
+### raw_packet_size
+
+  
+description:
+(loas)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### framerate
 
@@ -1605,6 +1768,17 @@ description:
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(m4v)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### subfps
 
@@ -1625,6 +1799,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(mjpeg)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### framerate
 
   
@@ -1633,6 +1818,28 @@ description:
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(mjpeg_2000)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### raw_packet_size
+
+  
+description:
+(mlp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### use_absolute_path
 
@@ -1739,7 +1946,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 65536  
 
 ### fix_teletext_pts
 
@@ -1798,7 +2005,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 65536  
 
 ### compute_pcr
 
@@ -1830,6 +2037,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(mpegvideo)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### strict_mime_boundary
 
   
@@ -1857,7 +2075,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -1868,7 +2086,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -1879,7 +2097,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -1890,7 +2108,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -1901,7 +2119,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -1912,7 +2130,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -1923,7 +2141,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -1934,7 +2152,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -1945,7 +2163,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -1956,7 +2174,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -1967,7 +2185,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -1978,7 +2196,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -1989,7 +2207,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2000,7 +2218,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2011,7 +2229,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2022,7 +2240,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2033,7 +2251,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2044,7 +2262,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2055,7 +2273,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2066,7 +2284,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2077,7 +2295,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2088,7 +2306,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2099,7 +2317,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2110,7 +2328,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2121,7 +2339,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2132,7 +2350,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2143,7 +2361,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2154,7 +2372,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2165,7 +2383,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2176,7 +2394,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2187,7 +2405,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2198,7 +2416,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2209,7 +2427,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2220,7 +2438,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2231,7 +2449,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2242,7 +2460,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2253,7 +2471,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2264,7 +2482,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2275,7 +2493,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2286,7 +2504,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -2297,7 +2515,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 44100  
 
 ### channels
 
@@ -2308,7 +2526,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### video_size
 
@@ -2360,7 +2578,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### buffer_size
 
@@ -2371,7 +2589,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### initial_pause
 
@@ -2397,6 +2615,7 @@ values:
 * tcp
 * udp_multicast
 * http
+* https
 
 ### rtsp_flags
 
@@ -2439,7 +2658,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 5000  
 
 ### max_port
 
@@ -2451,7 +2670,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 65000  
 
 ### listen_timeout
 
@@ -2461,7 +2680,7 @@ set maximum timeout (in seconds) to wait for incoming connections (-1 is infinit
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### timeout
 
@@ -2471,7 +2690,7 @@ set maximum timeout (in seconds) to wait for incoming connections (-1 is infinit
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### stimeout
 
@@ -2492,7 +2711,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### buffer_size
 
@@ -2503,7 +2722,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### user_agent
 
@@ -2513,7 +2732,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.20.100'  
+default: 'Lavf58.29.100'  
 
 ### user-agent
 
@@ -2523,7 +2742,18 @@ override User-Agent header (deprecated, use user_agent) (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.20.100'  
+default: 'Lavf58.29.100'  
+
+### raw_packet_size
+
+  
+description:
+(sbc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### sample_rate
 
@@ -2556,7 +2786,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 5000000  
 
 ### sdp_flags
 
@@ -2598,7 +2828,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### buffer_size
 
@@ -2609,7 +2839,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### framerate
 
@@ -2620,6 +2850,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(shn)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### sample_rate
 
   
@@ -2629,7 +2870,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 8000  
 
 ### channels
 
@@ -2640,7 +2881,18 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
+
+### raw_packet_size
+
+  
+description:
+(tak)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### start_time
 
@@ -2650,8 +2902,19 @@ set the start time (offset) of the subtitles, in ms (tedcaptions)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 15000  
 format: 64-bit  
+
+### raw_packet_size
+
+  
+description:
+(truehd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### chars_per_frame
 
@@ -2662,7 +2925,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 6000  
 
 ### video_size
 
@@ -2727,6 +2990,17 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(vc1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### sub_name
 
   
@@ -2765,6 +3039,33 @@ required: no
 minimum: 0  
 default: 0  
 
+### kind
+
+  
+description:
+Set kind of WebVTT track (webvtt)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* subtitles
+* captions
+* descriptions
+* metadata
+
+### raw_packet_size
+
+  
+description:
+(wsd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### linespeed
 
   
@@ -2774,7 +3075,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 6000  
 
 ### video_size
 
@@ -2794,79 +3095,6 @@ type: string
 readonly: no  
 required: no  
 
-### framerate
-
-  
-description:
-set the video framerate (bmp_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### loop
-
-  
-description:
-force loop over input file sequence (bmp_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (bmp_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (bmp_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (bmp_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (bmp_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (bmp_pipe)  
-type: string  
-readonly: no  
-required: no  
-
 ### frame_size
 
   
@@ -2878,26 +3106,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (bmp_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (dds_pipe)  
+set the video framerate (bmp_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (bmp_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (bmp_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -2906,62 +3137,7 @@ required: no
 
   
 description:
-force loop over input file sequence (dds_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (dds_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (dds_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (dds_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (dds_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (dds_pipe)  
+force loop over input file sequence (bmp_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -2977,26 +3153,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (dds_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (dpx_pipe)  
+set the video framerate (dds_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (dds_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (dds_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3005,62 +3184,7 @@ required: no
 
   
 description:
-force loop over input file sequence (dpx_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (dpx_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (dpx_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (dpx_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (dpx_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (dpx_pipe)  
+force loop over input file sequence (dds_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3076,26 +3200,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (dpx_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (exr_pipe)  
+set the video framerate (dpx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (dpx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (dpx_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3104,62 +3231,7 @@ required: no
 
   
 description:
-force loop over input file sequence (exr_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (exr_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (exr_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (exr_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (exr_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (exr_pipe)  
+force loop over input file sequence (dpx_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3175,26 +3247,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (exr_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (j2k_pipe)  
+set the video framerate (exr_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (exr_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (exr_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3203,62 +3278,54 @@ required: no
 
   
 description:
-force loop over input file sequence (j2k_pipe)  
+force loop over input file sequence (exr_pipe)  
 type: string  
 readonly: no  
 required: no  
 
-### pattern_type
+### frame_size
 
   
 description:
-set pattern type (j2k_pipe)  
+force frame size in bytes (gif_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (gif_pipe)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
 
 ### pixel_format
 
   
 description:
-set video pixel format (j2k_pipe)  
+set video pixel format (gif_pipe)  
 type: string  
 readonly: no  
 required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (j2k_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (j2k_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
 
 ### video_size
 
   
 description:
-set video size (j2k_pipe)  
+set video size (gif_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (gif_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3274,26 +3341,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (j2k_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (jpeg_pipe)  
+set the video framerate (j2k_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (j2k_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (j2k_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3302,62 +3372,7 @@ required: no
 
   
 description:
-force loop over input file sequence (jpeg_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (jpeg_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (jpeg_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (jpeg_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (jpeg_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (jpeg_pipe)  
+force loop over input file sequence (j2k_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3373,26 +3388,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (jpeg_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (jpegls_pipe)  
+set the video framerate (jpeg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (jpeg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (jpeg_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3401,62 +3419,7 @@ required: no
 
   
 description:
-force loop over input file sequence (jpegls_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (jpegls_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (jpegls_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (jpegls_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (jpegls_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (jpegls_pipe)  
+force loop over input file sequence (jpeg_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3472,26 +3435,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (jpegls_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (pam_pipe)  
+set the video framerate (jpegls_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (jpegls_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (jpegls_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3500,62 +3466,7 @@ required: no
 
   
 description:
-force loop over input file sequence (pam_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (pam_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (pam_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (pam_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (pam_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (pam_pipe)  
+force loop over input file sequence (jpegls_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3571,26 +3482,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (pam_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (pbm_pipe)  
+set the video framerate (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (pam_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (pam_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3599,62 +3513,7 @@ required: no
 
   
 description:
-force loop over input file sequence (pbm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (pbm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (pbm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (pbm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (pbm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (pbm_pipe)  
+force loop over input file sequence (pam_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3670,26 +3529,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (pbm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (pcx_pipe)  
+set the video framerate (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (pbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (pbm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3698,62 +3560,7 @@ required: no
 
   
 description:
-force loop over input file sequence (pcx_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (pcx_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (pcx_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (pcx_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (pcx_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (pcx_pipe)  
+force loop over input file sequence (pbm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3769,26 +3576,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (pcx_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (pgmyuv_pipe)  
+set the video framerate (pcx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (pcx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (pcx_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3797,62 +3607,7 @@ required: no
 
   
 description:
-force loop over input file sequence (pgmyuv_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (pgmyuv_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (pgmyuv_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (pgmyuv_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (pgmyuv_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (pgmyuv_pipe)  
+force loop over input file sequence (pcx_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3868,26 +3623,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (pgmyuv_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (pgm_pipe)  
+set the video framerate (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (pgmyuv_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (pgmyuv_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3896,62 +3654,7 @@ required: no
 
   
 description:
-force loop over input file sequence (pgm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (pgm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (pgm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (pgm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (pgm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (pgm_pipe)  
+force loop over input file sequence (pgmyuv_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3967,26 +3670,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (pgm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (pictor_pipe)  
+set the video framerate (pgm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (pgm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (pgm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3995,62 +3701,7 @@ required: no
 
   
 description:
-force loop over input file sequence (pictor_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (pictor_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (pictor_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (pictor_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (pictor_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (pictor_pipe)  
+force loop over input file sequence (pgm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4066,26 +3717,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (pictor_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (png_pipe)  
+set the video framerate (pictor_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (pictor_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (pictor_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4094,62 +3748,7 @@ required: no
 
   
 description:
-force loop over input file sequence (png_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (png_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (png_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (png_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (png_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (png_pipe)  
+force loop over input file sequence (pictor_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4165,26 +3764,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (png_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (ppm_pipe)  
+set the video framerate (png_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (png_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (png_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4193,62 +3795,7 @@ required: no
 
   
 description:
-force loop over input file sequence (ppm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (ppm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (ppm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (ppm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (ppm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (ppm_pipe)  
+force loop over input file sequence (png_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4264,26 +3811,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (ppm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (psd_pipe)  
+set the video framerate (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (ppm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (ppm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4292,62 +3842,7 @@ required: no
 
   
 description:
-force loop over input file sequence (psd_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (psd_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (psd_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (psd_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (psd_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (psd_pipe)  
+force loop over input file sequence (ppm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4363,26 +3858,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (psd_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (qdraw_pipe)  
+set the video framerate (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (psd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (psd_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4391,62 +3889,7 @@ required: no
 
   
 description:
-force loop over input file sequence (qdraw_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (qdraw_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (qdraw_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (qdraw_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (qdraw_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (qdraw_pipe)  
+force loop over input file sequence (psd_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4462,26 +3905,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (qdraw_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (sgi_pipe)  
+set the video framerate (qdraw_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (qdraw_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (qdraw_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4490,62 +3936,7 @@ required: no
 
   
 description:
-force loop over input file sequence (sgi_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (sgi_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (sgi_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (sgi_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (sgi_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (sgi_pipe)  
+force loop over input file sequence (qdraw_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4561,26 +3952,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (sgi_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (svg_pipe)  
+set the video framerate (sgi_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (sgi_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (sgi_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4589,62 +3983,7 @@ required: no
 
   
 description:
-force loop over input file sequence (svg_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (svg_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (svg_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (svg_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (svg_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (svg_pipe)  
+force loop over input file sequence (sgi_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4660,26 +3999,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (svg_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (sunrast_pipe)  
+set the video framerate (svg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (svg_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (svg_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4688,62 +4030,7 @@ required: no
 
   
 description:
-force loop over input file sequence (sunrast_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (sunrast_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (sunrast_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (sunrast_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (sunrast_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (sunrast_pipe)  
+force loop over input file sequence (svg_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4759,26 +4046,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (sunrast_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (tiff_pipe)  
+set the video framerate (sunrast_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (sunrast_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (sunrast_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4787,62 +4077,7 @@ required: no
 
   
 description:
-force loop over input file sequence (tiff_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (tiff_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (tiff_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (tiff_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (tiff_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (tiff_pipe)  
+force loop over input file sequence (sunrast_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4858,26 +4093,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (tiff_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (webp_pipe)  
+set the video framerate (tiff_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (tiff_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (tiff_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4886,62 +4124,7 @@ required: no
 
   
 description:
-force loop over input file sequence (webp_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (webp_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (webp_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (webp_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (webp_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (webp_pipe)  
+force loop over input file sequence (tiff_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4957,26 +4140,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (webp_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (xpm_pipe)  
+set the video framerate (webp_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (webp_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (webp_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4985,62 +4171,7 @@ required: no
 
   
 description:
-force loop over input file sequence (xpm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (xpm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (xpm_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (xpm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (xpm_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (xpm_pipe)  
+force loop over input file sequence (webp_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -5056,26 +4187,29 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
-
-  
-description:
-set frame timestamp from file&#39;s one (xpm_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* none
-* sec
-* ns
-
 ### framerate
 
   
 description:
-set the video framerate (xwd_pipe)  
+set the video framerate (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (xpm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (xpm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -5084,62 +4218,7 @@ required: no
 
   
 description:
-force loop over input file sequence (xwd_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### pattern_type
-
-  
-description:
-set pattern type (xwd_pipe)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* glob_sequence
-* glob
-* sequence
-* none
-
-### pixel_format
-
-  
-description:
-set video pixel format (xwd_pipe)  
-type: string  
-readonly: no  
-required: no  
-
-### start_number
-
-  
-description:
-set first number in the sequence (xwd_pipe)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### start_number_range
-
-  
-description:
-set range for looking at the first sequence number (xwd_pipe)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 0  
-
-### video_size
-
-  
-description:
-set video size (xwd_pipe)  
+force loop over input file sequence (xpm_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -5155,20 +4234,41 @@ required: no
 minimum: 0  
 default: 0  
 
-### ts_from_file
+### framerate
 
   
 description:
-set frame timestamp from file&#39;s one (xwd_pipe)  
+set the video framerate (xwd_pipe)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* none
-* sec
-* ns
+### pixel_format
+
+  
+description:
+set video pixel format (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (xwd_pipe)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -5179,7 +4279,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 48000  
 
 ### channels
 
@@ -5190,7 +4290,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 2  
 
 ### framerate
 
@@ -5210,7 +4310,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 2  
 
 ### graph
 
@@ -5248,7 +4348,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 48000  
 
 ### channels
 
@@ -5259,7 +4359,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 2  
 
 ### server
 
@@ -5278,7 +4378,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.20.100'  
+default: 'Lavf58.29.100'  
 
 ### stream_name
 
@@ -5299,7 +4399,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 48000  
 
 ### channels
 
@@ -5310,7 +4410,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 2  
 
 ### frame_size
 
@@ -5321,7 +4421,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1024  
 
 ### fragment_size
 
@@ -5332,7 +4432,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### wallclock
 
@@ -5344,7 +4444,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: 0  
+default: 1  
 
 ### sample_rate
 
@@ -5355,7 +4455,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 48000  
 
 ### channels
 
@@ -5366,7 +4466,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 2  
 
 ### standard
 
@@ -5386,7 +4486,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### video_size
 
@@ -5565,7 +4665,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 
 ### follow_mouse
 
@@ -5602,7 +4702,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 128  
-default: 0  
+default: 3  
 
 ### flags
 
@@ -5619,6 +4719,23 @@ values:
 * low_delay
 * bitexact
 * output_corrupt
+* drop_changed
+
+### flags2
+
+  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* ignorecrop
+* chunks
+* showall
+* export_mvs
+* skip_manual
+* ass_ro_flush_noop
 
 ### ar
 
@@ -5773,22 +4890,6 @@ values:
 * thread_ops
 * nomc
 
-### flags2
-
-  
-type: string  
-readonly: no  
-required: no  
-format: flags  
-values:  
-
-* ignorecrop
-* chunks
-* showall
-* export_mvs
-* skip_manual
-* ass_ro_flush_noop
-
 ### threads
 
   
@@ -5911,7 +5012,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### color_primaries
 
@@ -6172,7 +5273,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147483647  
-default: 0  
+default: 2147483647  
 format: 64-bit  
 
 ### hwaccel_flags
@@ -6197,7 +5298,19 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
+
+### discard_damaged_percentage
+
+  
+description:
+Percentage of damaged samples to discard a frame  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 100  
+default: 95  
 
 ### layer
 
@@ -6288,7 +5401,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: -2147483648  
-default: 0  
+default: 16777215  
 
 ### num_output_buffers
 
@@ -6299,7 +5412,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6310,7 +5423,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### enable_er
 
@@ -6330,7 +5443,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### num_output_buffers
 
@@ -6341,7 +5454,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6352,7 +5465,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### apply_defdispwin
 
@@ -6402,7 +5515,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6413,7 +5526,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### num_output_buffers
 
@@ -6424,7 +5537,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6435,7 +5548,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### num_output_buffers
 
@@ -6446,7 +5559,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6457,7 +5570,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### skip_cursor
 
@@ -6493,6 +5606,36 @@ values:
 * decode_copy
 * decode_drop
 
+### subimage
+
+  
+description:
+decode subimage instead if available (tiff)  
+type: string  
+readonly: no  
+required: no  
+
+### thumbnail
+
+  
+description:
+decode embedded thumbnail subimage instead if available (tiff)  
+type: string  
+readonly: no  
+required: no  
+
+### page
+
+  
+description:
+page number of multi-page image to decode (starting from 1) (tiff)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 65535  
+default: 0  
+
 ### custom_stride
 
   
@@ -6512,7 +5655,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6523,7 +5666,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### num_output_buffers
 
@@ -6534,7 +5677,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6545,7 +5688,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### num_output_buffers
 
@@ -6556,7 +5699,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -6567,7 +5710,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 20  
-default: 0  
+default: 20  
 
 ### dual_mono_mode
 
@@ -6785,7 +5928,7 @@ readonly: no
 required: no  
 minimum: 6  
 maximum: 8  
-default: 0  
+default: 8  
 
 ### real_time
 
@@ -6824,7 +5967,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 63  
-default: -2147483648  
+default: -1  
 
 ### palette
 

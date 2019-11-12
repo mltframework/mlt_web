@@ -13,7 +13,7 @@ title: boxblur
 media types:
 Video  
 description: Blur the input.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -47,7 +47,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 2  
 
 ### av.lp
 
@@ -58,7 +58,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 2  
 
 ### av.chroma_radius
 
@@ -87,7 +87,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.cp
 
@@ -98,7 +98,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.alpha_radius
 
@@ -127,7 +127,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.ap
 
@@ -138,5 +138,21 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

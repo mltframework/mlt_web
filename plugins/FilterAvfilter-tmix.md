@@ -13,7 +13,7 @@ title: tmix
 media types:
 Video  
 description: Mix successive video frames.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,9 +26,9 @@ set number of successive frames to mix
 type: integer  
 readonly: no  
 required: no  
-minimum: 2  
+minimum: 1  
 maximum: 128  
-default: 0  
+default: 3  
 
 ### av.weights
 
@@ -62,4 +62,20 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

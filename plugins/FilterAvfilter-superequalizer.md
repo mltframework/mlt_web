@@ -13,7 +13,7 @@ title: superequalizer
 media types:
 Audio  
 description: Apply 18 band equalization filter.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -233,4 +233,20 @@ required: no
 minimum: 0  
 maximum: 20  
 default: 1  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

@@ -13,7 +13,7 @@ title: erosion
 media types:
 Video  
 description: Apply erosion effect.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 65535  
 
 ### av.threshold1
 
@@ -40,7 +40,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 65535  
 
 ### av.threshold2
 
@@ -52,7 +52,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 65535  
 
 ### av.threshold3
 
@@ -64,7 +64,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 65535  
 
 ### av.coordinates
 
@@ -76,7 +76,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 255  
-default: 0  
+default: 255  
 
 ### av.threads
 
@@ -88,4 +88,20 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

@@ -13,7 +13,7 @@ title: eq
 media types:
 Video  
 description: Adjust brightness, contrast, gamma, and saturation.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -111,4 +111,20 @@ values:
 
 * init
 * frame
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

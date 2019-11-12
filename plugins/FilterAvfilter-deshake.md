@@ -13,7 +13,7 @@ title: deshake
 media types:
 Video  
 description: Stabilize shaky video.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -27,7 +27,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.y
 
@@ -38,7 +38,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.w
 
@@ -49,7 +49,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.h
 
@@ -60,7 +60,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.rx
 
@@ -72,7 +72,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 64  
-default: 0  
+default: 16  
 
 ### av.ry
 
@@ -84,7 +84,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 64  
-default: 0  
+default: 16  
 
 ### av.edge
 
@@ -112,7 +112,7 @@ readonly: no
 required: no  
 minimum: 4  
 maximum: 128  
-default: 0  
+default: 8  
 
 ### av.contrast
 
@@ -124,7 +124,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 255  
-default: 0  
+default: 125  
 
 ### av.search
 
@@ -157,4 +157,20 @@ ignored
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

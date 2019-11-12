@@ -13,7 +13,7 @@ title: deflicker
 media types:
 Video  
 description: Remove temporal frame luminance variations.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 129  
-default: 0  
+default: 5  
 
 ### av.s
 
@@ -40,7 +40,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 129  
-default: 0  
+default: 5  
 
 ### av.mode
 
@@ -88,4 +88,20 @@ leave frames unchanged
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

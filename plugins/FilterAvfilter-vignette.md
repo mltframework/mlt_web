@@ -13,7 +13,7 @@ title: vignette
 media types:
 Video  
 description: Make or reverse a vignette effect.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -104,4 +104,20 @@ type: string
 readonly: no  
 required: no  
 format: numerator/denominator  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

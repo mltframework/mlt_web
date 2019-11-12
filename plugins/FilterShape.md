@@ -80,4 +80,15 @@ Whether to apply a threshold filter to the luma or alpha or not. If not, luma or
 type: boolean  
 readonly: no  
 required: no  
+default: true  
+
+### audio_match
+
+title: Audio volume follows Threshold    
+description:
+This controls whether to also apply a volume level adjstment corresponding to the current mix property. The default is retained for legacy reason, but it is generally not recommended to enable this.  
+type: boolean  
+readonly: no  
+required: no  
+default: true  
 

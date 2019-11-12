@@ -13,7 +13,7 @@ title: realtime
 media types:
 Video  
 description: Slow down filtering to match realtime.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,4 +26,31 @@ sleep time limit
 type: string  
 readonly: no  
 required: no  
+
+### av.speed
+
+  
+description:
+speed factor  
+type: float  
+readonly: no  
+required: no  
+default: 1  
+format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

@@ -27,7 +27,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### resource
 
 title: Luma map file    
 description:
@@ -73,4 +73,12 @@ Properties may be set on the encapsulated producer. Any property starting with &
 type:   
 readonly: no  
 required: no  
+
+### alpha_over
+
+title: Use over-blending on the alpha channel    
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
 

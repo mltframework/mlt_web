@@ -13,7 +13,7 @@ title: random
 media types:
 Video  
 description: Return random frames.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 512  
-default: 0  
+default: 30  
 
 ### av.seed
 
@@ -40,6 +40,22 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 4294967295  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

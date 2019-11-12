@@ -13,7 +13,7 @@ title: delogo
 media types:
 Video  
 description: Remove logo from input video.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -27,7 +27,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.y
 
@@ -38,7 +38,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.w
 
@@ -49,7 +49,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.h
 
@@ -60,7 +60,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### av.show
 
@@ -70,4 +70,20 @@ show delogo area
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

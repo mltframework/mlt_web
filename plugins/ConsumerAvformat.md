@@ -703,7 +703,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### start_time_realtime
 
@@ -713,7 +713,7 @@ wall-clock time when stream begins (PTS==0)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: -9223372036854775808  
 format: 64-bit  
 
 ### audio_preload
@@ -762,7 +762,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### metadata_header_padding
 
@@ -773,7 +773,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### output_ts_offset
 
@@ -793,7 +793,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 10000000  
 format: 64-bit  
 
 ### f_strict
@@ -893,7 +893,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 4  
-default: 0  
+default: 4  
 
 ### plays
 
@@ -905,7 +905,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: -2147483648  
-default: 0  
+default: 1  
 
 ### final_delay
 
@@ -927,7 +927,7 @@ readonly: no
 required: no  
 minimum: 100  
 maximum: 65536  
-default: 0  
+default: 3200  
 
 ### ignore_readorder
 
@@ -948,7 +948,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 2147483647  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
 
 ### loopend
@@ -974,7 +974,7 @@ readonly: no
 required: no  
 minimum: 100  
 maximum: 65536  
-default: 0  
+default: 3200  
 
 ### reserve_index_space
 
@@ -1025,7 +1025,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 5  
 
 ### min_seg_duration
 
@@ -1036,7 +1036,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 5000000  
 
 ### seg_duration
 
@@ -1100,7 +1100,7 @@ DASH-templated name to used for the initialization segment (dash)
 type: string  
 readonly: no  
 required: no  
-default: 'init-stream$RepresentationID$.m4s'  
+default: 'init-stream$RepresentationID$.$ext$'  
 
 ### media_seg_name
 
@@ -1110,7 +1110,7 @@ DASH-templated name to used for the media segments (dash)
 type: string  
 readonly: no  
 required: no  
-default: 'chunk-stream$RepresentationID$-$Number%05d$.m4s'  
+default: 'chunk-stream$RepresentationID$-$Number%05d$.$ext$'  
 
 ### utc_timing_url
 
@@ -1193,6 +1193,15 @@ type: string
 readonly: no  
 required: no  
 
+### global_sidx
+
+  
+description:
+Write global SIDX atom. Applicable only for single file, mp4 output, non-streaming mode (dash)  
+type: string  
+readonly: no  
+required: no  
+
 ### dash_segment_type
 
   
@@ -1204,8 +1213,39 @@ required: no
 format: integer or keyword  
 values:  
 
+* auto
 * mp4
 * webm
+
+### ignore_io_errors
+
+  
+description:
+Ignore IO errors during open and write. Useful for long-duration runs with network output (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### lhls
+
+  
+description:
+Enable Low-latency HLS(Experimental). Adds #EXT-X-PREFETCH tag with current segment&#39;s URI (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### master_m3u8_publish_rate
+
+  
+description:
+Publish master playlist every after this many segment intervals (dash)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: -2147483648  
+default: 0  
 
 ### movflags
 
@@ -1233,6 +1273,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -1286,7 +1327,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -1298,7 +1339,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -1382,7 +1423,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -1475,7 +1516,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 60  
 
 ### format_opts
 
@@ -1626,7 +1667,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 2  
-default: 0  
+default: 2  
 
 ### hash
 
@@ -1648,7 +1689,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 2  
-default: 0  
+default: 2  
 
 ### loop
 
@@ -1672,7 +1713,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 65535  
-default: -2147483648  
+default: -1  
 
 ### hash
 
@@ -1694,7 +1735,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 2  
-default: 0  
+default: 2  
 
 ### window_size
 
@@ -1716,7 +1757,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 5  
 
 ### min_frag_duration
 
@@ -1728,7 +1769,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147483647  
-default: 0  
+default: 10000000  
 format: 64-bit  
 
 ### remove_at_exit
@@ -1783,7 +1824,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 5  
 
 ### hls_delete_threshold
 
@@ -1794,7 +1835,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### hls_ts_options
 
@@ -1833,7 +1874,7 @@ explicitly set whether the client MAY (1) or MUST NOT (0) cache media segments (
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### hls_base_url
 
@@ -1967,6 +2008,7 @@ values:
 * second_level_segment_size
 * periodic_rekey
 * independent_segments
+* iframes_only
 
 ### use_localtime
 
@@ -2108,6 +2150,24 @@ type: string
 readonly: no  
 required: no  
 
+### ignore_io_errors
+
+  
+description:
+Ignore IO errors for stable long-duration runs with network output (hls)  
+type: string  
+readonly: no  
+required: no  
+
+### headers
+
+  
+description:
+set custom HTTP headers, can override built in default headers (hls)  
+type: string  
+readonly: no  
+required: no  
+
 ### update
 
   
@@ -2126,7 +2186,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### strftime
 
@@ -2181,6 +2241,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -2234,7 +2295,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -2246,7 +2307,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -2330,7 +2391,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -2431,6 +2492,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -2484,7 +2546,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -2496,7 +2558,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -2580,7 +2642,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -2665,7 +2727,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 65535  
-default: 0  
+default: 20  
 
 ### hash
 
@@ -2687,7 +2749,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 2  
-default: 0  
+default: 2  
 
 ### reserve_index_space
 
@@ -2709,7 +2771,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### cluster_time_limit
 
@@ -2720,7 +2782,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
 
 ### dash
@@ -2742,7 +2804,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 127  
-default: 0  
+default: 1  
 
 ### live
 
@@ -2791,7 +2853,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### cluster_time_limit
 
@@ -2802,7 +2864,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
 
 ### dash
@@ -2824,7 +2886,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 127  
-default: 0  
+default: 1  
 
 ### live
 
@@ -2879,6 +2941,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -2932,7 +2995,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -2944,7 +3007,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -3028,7 +3091,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -3113,7 +3176,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 4  
-default: 0  
+default: 4  
 
 ### write_id3v1
 
@@ -3159,6 +3222,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -3212,7 +3276,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -3224,7 +3288,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -3308,7 +3372,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -3402,7 +3466,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 500000  
 
 ### muxrate
 
@@ -3423,7 +3487,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 500000  
 
 ### muxrate
 
@@ -3444,7 +3508,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 500000  
 
 ### muxrate
 
@@ -3465,7 +3529,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 500000  
 
 ### muxrate
 
@@ -3486,7 +3550,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 500000  
 
 ### mpegts_transport_stream_id
 
@@ -3498,7 +3562,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 65535  
-default: 0  
+default: 1  
 
 ### mpegts_original_network_id
 
@@ -3510,7 +3574,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 65535  
-default: 0  
+default: 65281  
 
 ### mpegts_service_id
 
@@ -3522,7 +3586,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 65535  
-default: 0  
+default: 1  
 
 ### mpegts_service_type
 
@@ -3554,7 +3618,7 @@ readonly: no
 required: no  
 minimum: 16  
 maximum: 7936  
-default: 0  
+default: 4096  
 
 ### mpegts_start_pid
 
@@ -3566,7 +3630,7 @@ readonly: no
 required: no  
 minimum: 16  
 maximum: 3840  
-default: 0  
+default: 256  
 
 ### mpegts_m2ts_mode
 
@@ -3584,7 +3648,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1  
 
 ### pes_payload_size
 
@@ -3595,7 +3659,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 2930  
 
 ### mpegts_flags
 
@@ -3664,7 +3728,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 20  
 
 ### pat_period
 
@@ -3706,7 +3770,7 @@ default: 'ffmpeg'
 
   
 description:
-Force/set Sigal Standard (mxf)  
+Force/set Signal Standard (mxf)  
 type: string  
 readonly: no  
 required: no  
@@ -3740,13 +3804,13 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 8  
-default: -2147483648  
+default: -1  
 
 ### signal_standard
 
   
 description:
-Force/set Sigal Standard (mxf_d10)  
+Force/set Signal Standard (mxf_d10)  
 type: string  
 readonly: no  
 required: no  
@@ -3784,7 +3848,7 @@ format: numerator/denominator
 
   
 description:
-Force/set Sigal Standard (mxf_opatom)  
+Force/set Signal Standard (mxf_opatom)  
 type: string  
 readonly: no  
 required: no  
@@ -3798,6 +3862,15 @@ values:
 * smpte296m
 * smpte349m
 * smpte428
+
+### store_user_comments
+
+  
+description:
+(mxf_opatom)  
+type: string  
+readonly: no  
+required: no  
 
 ### syncpoints
 
@@ -3867,7 +3940,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000000  
 format: 64-bit  
 
 ### serial_offset
@@ -3914,7 +3987,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000000  
 format: 64-bit  
 
 ### serial_offset
@@ -3961,7 +4034,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000000  
 format: 64-bit  
 
 ### serial_offset
@@ -4008,7 +4081,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000000  
 format: 64-bit  
 
 ### movflags
@@ -4037,6 +4110,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -4090,7 +4164,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -4102,7 +4176,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -4186,7 +4260,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -4288,7 +4362,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 127  
-default: -2147483648  
+default: -1  
 
 ### ssrc
 
@@ -4319,7 +4393,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 65535  
-default: -2147483648  
+default: -1  
 
 ### rtpflags
 
@@ -4362,7 +4436,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 5000  
 
 ### max_port
 
@@ -4374,7 +4448,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 65000  
 
 ### buffer_size
 
@@ -4385,7 +4459,18 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
+
+### pkt_size
+
+  
+description:
+Underlying protocol send packet size (rtsp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
 
 ### reference_stream
 
@@ -4939,7 +5024,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 5  
 
 ### lookahead_count
 
@@ -4950,7 +5035,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 2  
 
 ### min_frag_duration
 
@@ -4962,7 +5047,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147483647  
-default: 0  
+default: 5000000  
 format: 64-bit  
 
 ### remove_at_exit
@@ -5018,7 +5103,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000000  
 format: 64-bit  
 
 ### spdif_flags
@@ -5055,7 +5140,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: 0  
+default: 60  
 
 ### use_fifo
 
@@ -5101,6 +5186,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -5154,7 +5240,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -5166,7 +5252,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -5250,7 +5336,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -5351,6 +5437,7 @@ values:
 * frag_discont
 * delay_moov
 * global_sidx
+* skip_sidx
 * write_colr
 * write_gama
 * use_metadata_tags
@@ -5404,7 +5491,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### iods_video_profile
 
@@ -5416,7 +5503,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 255  
-default: -2147483648  
+default: -1  
 
 ### frag_duration
 
@@ -5500,7 +5587,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### mov_gamma
 
@@ -5624,7 +5711,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65536  
-default: 0  
+default: 256  
 
 ### peak_format
 
@@ -5636,7 +5723,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 2  
-default: 0  
+default: 2  
 
 ### peak_ppv
 
@@ -5648,7 +5735,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 2  
-default: 0  
+default: 2  
 
 ### reserve_index_space
 
@@ -5670,7 +5757,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### cluster_time_limit
 
@@ -5681,7 +5768,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
 
 ### dash
@@ -5703,7 +5790,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 127  
-default: 0  
+default: 1  
 
 ### live
 
@@ -5779,7 +5866,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 1000  
 
 ### utc_timing_url
 
@@ -5842,7 +5929,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 5000  
 
 ### method
 
@@ -5863,7 +5950,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 65535  
-default: 0  
+default: 1  
 
 ### xoffset
 
@@ -5902,7 +5989,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.20.100'  
+default: 'Lavf58.29.100'  
 
 ### stream_name
 
@@ -5992,7 +6079,7 @@ set SDL window x position (sdl,sdl2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 805240832  
 
 ### window_y
 
@@ -6002,7 +6089,7 @@ set SDL window y position (sdl,sdl2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 805240832  
 
 ### window_fullscreen
 
@@ -6032,7 +6119,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 
 ### display_name
 
@@ -6104,7 +6191,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 200000  
 format: 64-bit  
 
 ### ab
@@ -6117,7 +6204,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147483647  
-default: 0  
+default: 128000  
 format: 64-bit  
 
 ### bt
@@ -6129,7 +6216,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 4000000  
 
 ### flags
 
@@ -6153,6 +6240,19 @@ values:
 * ilme
 * cgop
 
+### flags2
+
+  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* fast
+* noout
+* local_header
+
 ### g
 
   
@@ -6161,7 +6261,7 @@ set the group of picture (GOP) size
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 12  
 
 ### ar
 
@@ -6235,7 +6335,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 69  
-default: 0  
+default: 2  
 
 ### qmax
 
@@ -6247,7 +6347,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1024  
-default: 0  
+default: 31  
 
 ### qdiff
 
@@ -6257,7 +6357,7 @@ maximum difference between the quantizer scales (VBR)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 3  
 
 ### bf
 
@@ -6535,6 +6635,279 @@ values:
 
 * rc
 
+### dia_size
+
+  
+description:
+diamond type &amp; size for motion estimation  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### last_pred
+
+  
+description:
+amount of motion predictors from the previous frame  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### preme
+
+  
+description:
+pre motion estimation  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### pre_dia_size
+
+  
+description:
+diamond type &amp; size for motion estimation pre-pass  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### subq
+
+  
+description:
+sub-pel motion estimation quality  
+type: integer  
+readonly: no  
+required: no  
+default: 8  
+
+### me_range
+
+  
+description:
+limit motion vectors range (1023 for DivX player)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### global_quality
+
+  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### coder
+
+  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* vlc
+* ac
+* raw
+* rle
+
+### context
+
+  
+description:
+context model  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### mbd
+
+  
+description:
+macroblock decision algorithm (high quality mode)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* simple
+* bits
+* rd
+
+### sc_threshold
+
+  
+description:
+scene change threshold  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### nr
+
+  
+description:
+noise reduction  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### rc_init_occupancy
+
+  
+description:
+number of bits which should be loaded into the rc buffer before decoding starts  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### threads
+
+  
+description:
+set the number of threads  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+
+### dc
+
+  
+description:
+intra_dc_precision  
+type: integer  
+readonly: no  
+required: no  
+minimum: -8  
+maximum: 16  
+default: 0  
+
+### nssew
+
+  
+description:
+nsse weight  
+type: integer  
+readonly: no  
+required: no  
+default: 8  
+
+### profile
+
+  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* unknown
+* aac_main
+* aac_low
+* aac_ssr
+* aac_ltp
+* aac_he
+* aac_he_v2
+* aac_ld
+* aac_eld
+* mpeg2_aac_low
+* mpeg2_aac_he
+* dts
+* dts_es
+* dts_96_24
+* dts_hd_hra
+* dts_hd_ma
+* mpeg4_sp
+* mpeg4_core
+* mpeg4_main
+* mpeg4_asp
+* main10
+* msbc
+
+### level
+
+  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* unknown
+
+### skip_threshold
+
+  
+description:
+frame skip threshold  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### skip_factor
+
+  
+description:
+frame skip factor  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### skip_exp
+
+  
+description:
+frame skip exponent  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### skipcmp
+
+  
+description:
+frame skip compare function  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* sad
+* sse
+* satd
+* dct
+* psnr
+* bit
+* rd
+* zero
+* vsad
+* vsse
+* nsse
+* w53
+* w97
+* dctmax
+* chroma
+* msad
+
 ### cmp
 
   
@@ -6647,297 +7020,11 @@ values:
 * chroma
 * msad
 
-### dia_size
-
-  
-description:
-diamond type &amp; size for motion estimation  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### last_pred
-
-  
-description:
-amount of motion predictors from the previous frame  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### preme
-
-  
-description:
-pre motion estimation  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### precmp
 
   
 description:
 pre motion estimation compare function  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* sad
-* sse
-* satd
-* dct
-* psnr
-* bit
-* rd
-* zero
-* vsad
-* vsse
-* nsse
-* w53
-* w97
-* dctmax
-* chroma
-* msad
-
-### pre_dia_size
-
-  
-description:
-diamond type &amp; size for motion estimation pre-pass  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### subq
-
-  
-description:
-sub-pel motion estimation quality  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### me_range
-
-  
-description:
-limit motion vectors range (1023 for DivX player)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### global_quality
-
-  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### coder
-
-  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* vlc
-* ac
-* raw
-* rle
-
-### context
-
-  
-description:
-context model  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### mbd
-
-  
-description:
-macroblock decision algorithm (high quality mode)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* simple
-* bits
-* rd
-
-### sc_threshold
-
-  
-description:
-scene change threshold  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### nr
-
-  
-description:
-noise reduction  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### rc_init_occupancy
-
-  
-description:
-number of bits which should be loaded into the rc buffer before decoding starts  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### flags2
-
-  
-type: string  
-readonly: no  
-required: no  
-format: flags  
-values:  
-
-* fast
-* noout
-* local_header
-
-### threads
-
-  
-description:
-set the number of threads  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* auto
-
-### dc
-
-  
-description:
-intra_dc_precision  
-type: integer  
-readonly: no  
-required: no  
-minimum: -8  
-maximum: 16  
-default: 0  
-
-### nssew
-
-  
-description:
-nsse weight  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### profile
-
-  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* unknown
-* aac_main
-* aac_low
-* aac_ssr
-* aac_ltp
-* aac_he
-* aac_he_v2
-* aac_ld
-* aac_eld
-* mpeg2_aac_low
-* mpeg2_aac_he
-* dts
-* dts_es
-* dts_96_24
-* dts_hd_hra
-* dts_hd_ma
-* mpeg4_sp
-* mpeg4_core
-* mpeg4_main
-* mpeg4_asp
-* main10
-* msbc
-
-### level
-
-  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* unknown
-
-### skip_threshold
-
-  
-description:
-frame skip threshold  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### skip_factor
-
-  
-description:
-frame skip factor  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### skip_exp
-
-  
-description:
-frame skip exponent  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### skipcmp
-
-  
-description:
-frame skip compare function  
 type: string  
 readonly: no  
 required: no  
@@ -6971,7 +7058,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 32767  
-default: 0  
+default: 236  
 
 ### mblmax
 
@@ -6983,7 +7070,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 32767  
-default: 0  
+default: 3658  
 
 ### mepc
 
@@ -6993,7 +7080,7 @@ motion estimation bitrate penalty compensation (1.0 = 256)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### bidir_refine
 
@@ -7005,7 +7092,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 4  
-default: 0  
+default: 1  
 
 ### brd_scale
 
@@ -7027,7 +7114,7 @@ minimum interval between IDR-frames
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 25  
 
 ### refs
 
@@ -7037,7 +7124,7 @@ reference frames to consider for motion compensation
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 1  
 
 ### chromaoffset
 
@@ -7066,7 +7153,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 256  
 
 ### b_sensitivity
 
@@ -7077,7 +7164,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### compression_level
 
@@ -7085,7 +7172,7 @@ default: 0
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### min_prediction_order
 
@@ -7093,7 +7180,7 @@ default: -2147483648
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### max_prediction_order
 
@@ -7101,7 +7188,7 @@ default: -2147483648
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### timecode_frame_start
 
@@ -7112,7 +7199,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
 
 ### channel_layout
@@ -7147,7 +7234,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### color_primaries
 
@@ -7367,7 +7454,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2147483647  
-default: 0  
+default: 2147483647  
 format: 64-bit  
 
 ### mpv_flags
@@ -7508,7 +7595,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -7519,7 +7606,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -7529,7 +7616,7 @@ intra quant bias (amv)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -7539,7 +7626,7 @@ inter quant bias (amv)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -7600,7 +7687,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -7721,7 +7808,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (amv)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -7732,6 +7819,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (amv)  
+type: string  
+readonly: no  
+required: no  
 
 ### pred
 
@@ -7813,7 +7909,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 2  
 
 ### skip_empty_cb
 
@@ -7834,7 +7930,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 32  
-default: 0  
+default: 3  
 
 ### min_strips
 
@@ -7846,7 +7942,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 32  
-default: 0  
+default: 1  
 
 ### strip_number_adaptivity
 
@@ -7870,7 +7966,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2  
-default: 0  
+default: 1  
 
 ### nitris_compat
 
@@ -7917,7 +8013,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1024  
-default: 0  
+default: 7  
 
 ### slicecrc
 
@@ -8130,7 +8226,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -8141,7 +8237,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -8151,7 +8247,7 @@ intra quant bias (flv)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -8161,7 +8257,7 @@ inter quant bias (flv)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -8222,7 +8318,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -8343,7 +8439,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (flv)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -8354,6 +8450,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (flv)  
+type: string  
+readonly: no  
+required: no  
 
 ### gifflags
 
@@ -8368,6 +8473,15 @@ values:
 
 * offsetting
 * transdiff
+
+### gifimage
+
+  
+description:
+enable encoding only images per frame (gif)  
+type: string  
+readonly: no  
+required: no  
 
 ### mpv_flags
 
@@ -8507,7 +8621,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -8518,7 +8632,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -8528,7 +8642,7 @@ intra quant bias (h261)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -8538,7 +8652,7 @@ inter quant bias (h261)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -8599,7 +8713,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -8720,7 +8834,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (h261)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -8731,6 +8845,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (h261)  
+type: string  
+readonly: no  
+required: no  
 
 ### obmc
 
@@ -8890,7 +9013,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -8901,7 +9024,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -8911,7 +9034,7 @@ intra quant bias (h263)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -8921,7 +9044,7 @@ inter quant bias (h263)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -8982,7 +9105,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -9103,7 +9226,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (h263)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -9114,6 +9237,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (h263)  
+type: string  
+readonly: no  
+required: no  
 
 ### umv
 
@@ -9289,7 +9421,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -9300,7 +9432,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -9310,7 +9442,7 @@ intra quant bias (h263p)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -9320,7 +9452,7 @@ inter quant bias (h263p)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -9381,7 +9513,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -9502,7 +9634,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (h263p)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -9513,6 +9645,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (h263p)  
+type: string  
+readonly: no  
+required: no  
 
 ### non_deterministic
 
@@ -9562,7 +9703,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 1073741824  
-default: 0  
+default: 256  
 
 ### tile_height
 
@@ -9574,7 +9715,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 1073741824  
-default: 0  
+default: 256  
 
 ### pred
 
@@ -9773,7 +9914,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -9784,7 +9925,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -9794,7 +9935,7 @@ intra quant bias (mjpeg)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -9804,7 +9945,7 @@ inter quant bias (mjpeg)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -9865,7 +10006,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -9986,7 +10127,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (mjpeg)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -9997,6 +10138,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (mjpeg)  
+type: string  
+readonly: no  
+required: no  
 
 ### pred
 
@@ -10072,7 +10222,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
 
 ### mpv_flags
@@ -10213,7 +10363,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -10224,7 +10374,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -10234,7 +10384,7 @@ intra quant bias (mpeg1video)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -10244,7 +10394,7 @@ inter quant bias (mpeg1video)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -10305,7 +10455,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -10426,7 +10576,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (mpeg1video)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -10437,6 +10587,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (mpeg1video)  
+type: string  
+readonly: no  
+required: no  
 
 ### gop_timecode
 
@@ -10483,7 +10642,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -9223372036854775808  
+default: -1  
 format: 64-bit  
 
 ### non_linear_quant
@@ -10675,7 +10834,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -10686,7 +10845,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -10696,7 +10855,7 @@ intra quant bias (mpeg2video)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -10706,7 +10865,7 @@ inter quant bias (mpeg2video)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -10767,7 +10926,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -10888,7 +11047,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (mpeg2video)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -10899,6 +11058,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (mpeg2video)  
+type: string  
+readonly: no  
+required: no  
 
 ### data_partitioning
 
@@ -11056,7 +11224,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -11067,7 +11235,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -11077,7 +11245,7 @@ intra quant bias (mpeg4)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -11087,7 +11255,7 @@ inter quant bias (mpeg4)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -11148,7 +11316,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -11269,7 +11437,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (mpeg4)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -11280,6 +11448,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (mpeg4)  
+type: string  
+readonly: no  
+required: no  
 
 ### mpv_flags
 
@@ -11419,7 +11596,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -11430,7 +11607,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -11440,7 +11617,7 @@ intra quant bias (msmpeg4v2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -11450,7 +11627,7 @@ inter quant bias (msmpeg4v2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -11511,7 +11688,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -11632,7 +11809,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (msmpeg4v2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -11643,6 +11820,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (msmpeg4v2)  
+type: string  
+readonly: no  
+required: no  
 
 ### mpv_flags
 
@@ -11782,7 +11968,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -11793,7 +11979,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -11803,7 +11989,7 @@ intra quant bias (msmpeg4)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -11813,7 +11999,7 @@ inter quant bias (msmpeg4)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -11874,7 +12060,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -11995,7 +12181,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (msmpeg4)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -12006,6 +12192,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (msmpeg4)  
+type: string  
+readonly: no  
+required: no  
 
 ### dpi
 
@@ -12049,6 +12244,26 @@ values:
 * paeth
 * mixed
 
+### vendor
+
+  
+description:
+vendor ID (prores)  
+type: string  
+readonly: no  
+required: no  
+default: 'fmpg'  
+
+### vendor
+
+  
+description:
+vendor ID (prores_aw)  
+type: string  
+readonly: no  
+required: no  
+default: 'fmpg'  
+
 ### mbs_per_slice
 
   
@@ -12059,7 +12274,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 8  
-default: 0  
+default: 8  
 
 ### profile
 
@@ -12128,7 +12343,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 16  
-default: 0  
+default: 16  
 
 ### quake3_compat
 
@@ -12277,7 +12492,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -12288,7 +12503,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -12298,7 +12513,7 @@ intra quant bias (rv10)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -12308,7 +12523,7 @@ inter quant bias (rv10)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -12369,7 +12584,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -12490,7 +12705,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (rv10)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -12501,6 +12716,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (rv10)  
+type: string  
+readonly: no  
+required: no  
 
 ### mpv_flags
 
@@ -12640,7 +12864,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -12651,7 +12875,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -12661,7 +12885,7 @@ intra quant bias (rv20)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -12671,7 +12895,7 @@ inter quant bias (rv20)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -12732,7 +12956,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -12853,7 +13077,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (rv20)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -12865,6 +13089,15 @@ readonly: no
 required: no  
 default: 0  
 
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (rv20)  
+type: string  
+readonly: no  
+required: no  
+
 ### rle
 
   
@@ -12875,7 +13108,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 
 ### motion_est
 
@@ -12967,7 +13200,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 
 ### motion-est
 
@@ -12994,7 +13227,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 
 ### dpi
 
@@ -13006,7 +13239,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 65536  
-default: 0  
+default: 72  
 
 ### compression_algo
 
@@ -13250,7 +13483,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -13261,7 +13494,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -13271,7 +13504,7 @@ intra quant bias (wmv1)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -13281,7 +13514,7 @@ inter quant bias (wmv1)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -13342,7 +13575,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -13463,7 +13696,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (wmv1)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -13474,6 +13707,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (wmv1)  
+type: string  
+readonly: no  
+required: no  
 
 ### mpv_flags
 
@@ -13613,7 +13855,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 236  
 
 ### lmax
 
@@ -13624,7 +13866,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 3658  
 
 ### ibias
 
@@ -13634,7 +13876,7 @@ intra quant bias (wmv2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### pbias
 
@@ -13644,7 +13886,7 @@ inter quant bias (wmv2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 999999  
 
 ### rc_strategy
 
@@ -13705,7 +13947,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 40  
 
 ### brd_scale
 
@@ -13826,7 +14068,7 @@ Motion estimation bitrate penalty compensation (1.0 = 256) (wmv2)
 type: integer  
 readonly: no  
 required: no  
-default: 0  
+default: 256  
 
 ### mepre
 
@@ -13837,6 +14079,15 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (wmv2)  
+type: string  
+readonly: no  
+required: no  
 
 ### aac_coder
 
@@ -13959,7 +14210,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 111  
-default: -2147483648  
+default: -1  
 
 ### room_type
 
@@ -13986,7 +14237,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### dialnorm
 
@@ -13998,7 +14249,7 @@ readonly: no
 required: no  
 minimum: -31  
 maximum: -1  
-default: -2147483648  
+default: -31  
 
 ### dsur_mode
 
@@ -14025,7 +14276,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### dmix_mode
 
@@ -14214,7 +14465,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 111  
-default: -2147483648  
+default: -1  
 
 ### room_type
 
@@ -14241,7 +14492,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### dialnorm
 
@@ -14253,7 +14504,7 @@ readonly: no
 required: no  
 minimum: -31  
 maximum: -1  
-default: -2147483648  
+default: -31  
 
 ### dsur_mode
 
@@ -14280,7 +14531,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### dmix_mode
 
@@ -14434,7 +14685,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 30  
-default: 0  
+default: 4  
 
 ### max_prediction_order
 
@@ -14444,7 +14695,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 30  
-default: 0  
+default: 6  
 
 ### dca_adpcm
 
@@ -14474,7 +14725,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 111  
-default: -2147483648  
+default: -1  
 
 ### room_type
 
@@ -14501,7 +14752,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### dialnorm
 
@@ -14513,7 +14764,7 @@ readonly: no
 required: no  
 minimum: -31  
 maximum: -1  
-default: -2147483648  
+default: -31  
 
 ### dsur_mode
 
@@ -14540,7 +14791,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### dmix_mode
 
@@ -14696,7 +14947,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 15  
-default: 0  
+default: 15  
 
 ### lpc_type
 
@@ -14723,7 +14974,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 2  
 
 ### min_partition_order
 
@@ -14733,7 +14984,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 8  
-default: -2147483648  
+default: -1  
 
 ### max_partition_order
 
@@ -14743,7 +14994,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 8  
-default: -2147483648  
+default: -1  
 
 ### prediction_order_method
 
@@ -14806,7 +15057,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 32  
-default: -2147483648  
+default: -1  
 
 ### max_prediction_order
 
@@ -14816,7 +15067,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 32  
-default: -2147483648  
+default: -1  
 
 ### opus_delay
 
@@ -14876,7 +15127,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 5  
-default: 0  
+default: 4  
 
 ### code_size
 
@@ -14888,7 +15139,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 5  
-default: 0  
+default: 4  
 
 ### even_rows_fix
 
@@ -15003,18 +15254,6 @@ maximum: 0
 default: 0  
 format: double  
 
-### auto-alt-ref
-
-  
-description:
-Enable use of alternate reference frames (2-pass only) (libvpx)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 2  
-default: -2147483648  
-
 ### lag-in-frames
 
   
@@ -15024,7 +15263,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### arnr-maxframes
 
@@ -15035,7 +15274,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### arnr-strength
 
@@ -15046,7 +15285,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### arnr-type
 
@@ -15115,7 +15354,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### crf
 
@@ -15127,7 +15366,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 63  
-default: -2147483648  
+default: -1  
 
 ### static-thresh
 
@@ -15172,7 +15411,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 100  
-default: -2147483648  
+default: -1  
 
 ### overshoot-pct
 
@@ -15184,7 +15423,19 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1000  
-default: -2147483648  
+default: -1  
+
+### auto-alt-ref
+
+  
+description:
+Enable use of alternate reference frames (2-pass only) (libvpx)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 2  
+default: -1  
 
 ### cpu-used
 
@@ -15196,7 +15447,16 @@ readonly: no
 required: no  
 minimum: -16  
 maximum: 16  
-default: 0  
+default: 1  
+
+### ts-parameters
+
+  
+description:
+Temporal scaling configuration using a :-separated list of key=value parameters (libvpx)  
+type: string  
+readonly: no  
+required: no  
 
 ### speed
 
@@ -15208,7 +15468,7 @@ readonly: no
 required: no  
 minimum: -16  
 maximum: 16  
-default: 0  
+default: 1  
 
 ### quality
 
@@ -15261,7 +15521,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 6  
-default: 0  
+default: 3  
 
 ### arnr_type
 
@@ -15273,7 +15533,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 3  
-default: 0  
+default: 3  
 
 ### rc_lookahead
 
@@ -15285,19 +15545,19 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 25  
-default: 0  
+default: 25  
 
-### auto-alt-ref
+### sharpness
 
   
 description:
-Enable use of alternate reference frames (2-pass only) (libvpx-vp9)  
+Increase sharpness at the expense of lower PSNR (libvpx)  
 type: integer  
 readonly: no  
 required: no  
 minimum: -1  
-maximum: 2  
-default: -2147483648  
+maximum: 7  
+default: -1  
 
 ### lag-in-frames
 
@@ -15308,7 +15568,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### arnr-maxframes
 
@@ -15319,7 +15579,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### arnr-strength
 
@@ -15330,7 +15590,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### arnr-type
 
@@ -15399,7 +15659,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### crf
 
@@ -15411,7 +15671,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 63  
-default: -2147483648  
+default: -1  
 
 ### static-thresh
 
@@ -15456,7 +15716,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 100  
-default: -2147483648  
+default: -1  
 
 ### overshoot-pct
 
@@ -15468,7 +15728,19 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1000  
-default: -2147483648  
+default: -1  
+
+### auto-alt-ref
+
+  
+description:
+Enable use of alternate reference frames (2-pass only) (libvpx-vp9)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 6  
+default: -1  
 
 ### cpu-used
 
@@ -15480,7 +15752,7 @@ readonly: no
 required: no  
 minimum: -8  
 maximum: 8  
-default: 0  
+default: 1  
 
 ### lossless
 
@@ -15492,7 +15764,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
-default: -2147483648  
+default: -1  
 
 ### tile-columns
 
@@ -15504,7 +15776,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 6  
-default: -2147483648  
+default: -1  
 
 ### tile-rows
 
@@ -15516,7 +15788,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 2  
-default: -2147483648  
+default: -1  
 
 ### frame-parallel
 
@@ -15590,7 +15862,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 10000  
-default: -2147483648  
+default: -1  
 
 ### speed
 
@@ -15602,7 +15874,7 @@ readonly: no
 required: no  
 minimum: -16  
 maximum: 16  
-default: 0  
+default: 1  
 
 ### quality
 
@@ -15655,7 +15927,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 6  
-default: 0  
+default: 3  
 
 ### arnr_type
 
@@ -15667,7 +15939,7 @@ readonly: no
 required: no  
 minimum: 1  
 maximum: 3  
-default: 0  
+default: 3  
 
 ### rc_lookahead
 
@@ -15679,7 +15951,19 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 25  
-default: 0  
+default: 25  
+
+### sharpness
+
+  
+description:
+Increase sharpness at the expense of lower PSNR (libvpx-vp9)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 7  
+default: -1  
 
 ### preset
 
@@ -15794,7 +16078,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### aq-mode
 
@@ -15850,7 +16134,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### weightb
 
@@ -16025,7 +16309,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### stats
 
@@ -16061,7 +16345,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 200  
-default: -2147483648  
+default: -1  
 
 ### me_method
 
@@ -16133,7 +16417,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 2  
-default: -2147483648  
+default: -1  
 
 ### chromaoffset
 
@@ -16143,7 +16427,7 @@ QP difference between chroma and luma (libx264)
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### sc_threshold
 
@@ -16153,7 +16437,7 @@ Scene change threshold (libx264)
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### noise_reduction
 
@@ -16163,7 +16447,7 @@ Noise reduction (libx264)
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### x264-params
 
@@ -16287,7 +16571,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### aq-mode
 
@@ -16343,7 +16627,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### weightb
 
@@ -16518,7 +16802,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### stats
 
@@ -16554,7 +16838,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 200  
-default: -2147483648  
+default: -1  
 
 ### me_method
 
@@ -16626,7 +16910,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 2  
-default: -2147483648  
+default: -1  
 
 ### chromaoffset
 
@@ -16636,7 +16920,7 @@ QP difference between chroma and luma (libx264rgb)
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### sc_threshold
 
@@ -16646,7 +16930,7 @@ Scene change threshold (libx264rgb)
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### noise_reduction
 
@@ -16656,7 +16940,7 @@ Noise reduction (libx264rgb)
 type: integer  
 readonly: no  
 required: no  
-default: -2147483648  
+default: -1  
 
 ### x264-params
 
@@ -16732,7 +17016,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -16743,7 +17027,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 4  
-default: 0  
+default: 4  
 
 ### num_output_buffers
 
@@ -16754,7 +17038,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -16765,7 +17049,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 4  
-default: 0  
+default: 4  
 
 ### low_power
 
@@ -16775,6 +17059,47 @@ Use low-power encoding mode (only available on some platforms; may not support a
 type: string  
 readonly: no  
 required: no  
+
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between IDR frames (h264_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (h264_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### rc_mode
+
+  
+description:
+Set rate control mode (h264_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* CQP
+* CBR
+* VBR
+* ICQ
+* QVBR
+* AVBR
 
 ### qp
 
@@ -16797,7 +17122,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -2147483648  
+default: -1  
 
 ### coder
 
@@ -16893,6 +17218,47 @@ Use low-power encoding mode (only available on some platforms; may not support a
 type: string  
 readonly: no  
 required: no  
+
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between IDR frames (hevc_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (hevc_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### rc_mode
+
+  
+description:
+Set rate control mode (hevc_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* CQP
+* CBR
+* VBR
+* ICQ
+* QVBR
+* AVBR
 
 ### qp
 
@@ -16991,6 +17357,28 @@ type: string
 readonly: no  
 required: no  
 
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between IDR frames (mjpeg_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (mjpeg_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
 ### jfif
 
   
@@ -17017,6 +17405,47 @@ Use low-power encoding mode (only available on some platforms; may not support a
 type: string  
 readonly: no  
 required: no  
+
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between IDR frames (mpeg2_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (mpeg2_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### rc_mode
+
+  
+description:
+Set rate control mode (mpeg2_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* CQP
+* CBR
+* VBR
+* ICQ
+* QVBR
+* AVBR
 
 ### profile
 
@@ -17057,7 +17486,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -17068,7 +17497,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 4  
-default: 0  
+default: 4  
 
 ### num_output_buffers
 
@@ -17079,7 +17508,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 6  
-default: 0  
+default: 16  
 
 ### num_capture_buffers
 
@@ -17090,7 +17519,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 4  
-default: 0  
+default: 4  
 
 ### low_power
 
@@ -17100,6 +17529,47 @@ Use low-power encoding mode (only available on some platforms; may not support a
 type: string  
 readonly: no  
 required: no  
+
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between IDR frames (vp8_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (vp8_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### rc_mode
+
+  
+description:
+Set rate control mode (vp8_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* CQP
+* CBR
+* VBR
+* ICQ
+* QVBR
+* AVBR
 
 ### loop_filter_level
 
@@ -17111,7 +17581,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 63  
-default: 0  
+default: 16  
 
 ### loop_filter_sharpness
 
@@ -17123,7 +17593,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 15  
-default: 0  
+default: 4  
 
 ### low_power
 
@@ -17133,6 +17603,47 @@ Use low-power encoding mode (only available on some platforms; may not support a
 type: string  
 readonly: no  
 required: no  
+
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between IDR frames (vp9_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (vp9_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### rc_mode
+
+  
+description:
+Set rate control mode (vp9_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* CQP
+* CBR
+* VBR
+* ICQ
+* QVBR
+* AVBR
 
 ### loop_filter_level
 
@@ -17144,7 +17655,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 63  
-default: 0  
+default: 16  
 
 ### loop_filter_sharpness
 
@@ -17156,5 +17667,5 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 15  
-default: 0  
+default: 4  
 

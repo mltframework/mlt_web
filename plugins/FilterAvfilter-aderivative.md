@@ -13,5 +13,5 @@ title: aderivative
 media types:
 Audio  
 description: Compute derivative of input audio.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  

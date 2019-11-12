@@ -13,7 +13,7 @@ title: chorus
 media types:
 Audio  
 description: Add a chorus effect to the audio.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -77,4 +77,20 @@ set depths
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

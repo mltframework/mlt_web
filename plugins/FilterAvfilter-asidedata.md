@@ -13,7 +13,7 @@ title: asidedata
 media types:
 Audio  
 description: Manipulate audio frame side data.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -56,4 +56,28 @@ values:
 * AUDIO_SERVICE_TYPE
 * MASTERING_DISPLAY_METADATA
 * GOP_TIMECODE
+* SPHERICAL
+* CONTENT_LIGHT_LEVEL
+* ICC_PROFILE
+* QP_TABLE_PROPERTIES
+* QP_TABLE_DATA
+* S12M_TIMECOD
+* DYNAMIC_HDR_PLUS
+* REGIONS_OF_INTEREST
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

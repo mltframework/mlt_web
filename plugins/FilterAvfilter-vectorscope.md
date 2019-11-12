@@ -13,7 +13,7 @@ title: vectorscope
 media types:
 Video  
 description: Video vectorscope.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -64,7 +64,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2  
-default: 0  
+default: 1  
 
 ### av.y
 
@@ -76,7 +76,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 2  
-default: 0  
+default: 2  
 
 ### av.intensity
 
@@ -319,4 +319,20 @@ values:
 * auto
 * 601
 * 709
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

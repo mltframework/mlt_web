@@ -13,7 +13,7 @@ title: acrusher
 media types:
 Audio  
 description: Reduce audio bit resolution.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -157,4 +157,20 @@ minimum: 0.01
 maximum: 200  
 default: 0.3  
 format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

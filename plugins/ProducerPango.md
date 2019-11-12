@@ -27,7 +27,7 @@ Environment variable MLT_PANGO_PRODUCER_CACHE could be used to override and incr
 
 ## Parameters
 
-### argument
+### resource
 
 title: File    
 description:
@@ -39,7 +39,7 @@ requires xml-like encoding special chars from:
 </pre>
 type: string  
 readonly: no  
-required: true  
+required: no  
 widget: fileopen  
 
 ### markup

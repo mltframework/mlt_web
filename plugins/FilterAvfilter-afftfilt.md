@@ -13,7 +13,7 @@ title: afftfilt
 media types:
 Audio  
 description: Apply arbitrary expressions to samples in frequency domain.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,7 +26,7 @@ set channels real expressions
 type: string  
 readonly: no  
 required: no  
-default: '1'  
+default: 're'  
 
 ### av.imag
 
@@ -36,32 +36,19 @@ set channels imaginary expressions
 type: string  
 readonly: no  
 required: no  
+default: 'im'  
 
 ### av.win_size
 
   
 description:
 set window size  
-type: string  
+type: integer  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
-
-* w16
-* w32
-* w64
-* w128
-* w256
-* w512
-* w1024
-* w2048
-* w4096
-* w8192
-* w16384
-* w32768
-* w65536
-* w131072
+minimum: 16  
+maximum: 131072  
+default: 4096  
 
 ### av.win_func
 
@@ -79,7 +66,22 @@ values:
 * hann
 * hanning
 * hamming
+* blackman
+* welch
+* flattop
+* bharris
+* bnuttall
+* bhann
 * sine
+* nuttall
+* lanczos
+* gauss
+* tukey
+* dolph
+* cauchy
+* parzen
+* poisson
+* bohman
 
 ### av.overlap
 
@@ -92,4 +94,20 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0.75  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

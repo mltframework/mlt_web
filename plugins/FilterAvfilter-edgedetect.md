@@ -13,7 +13,7 @@ title: edgedetect
 media types:
 Video  
 description: Detect and draw edge.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -76,4 +76,20 @@ values:
 * r
 * g
 * b
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

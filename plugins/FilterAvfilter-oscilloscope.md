@@ -13,7 +13,7 @@ title: oscilloscope
 media types:
 Video  
 description: 2D Video Oscilloscope.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -136,7 +136,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 15  
-default: 0  
+default: 7  
 
 ### av.g
 
@@ -164,4 +164,20 @@ draw scope
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

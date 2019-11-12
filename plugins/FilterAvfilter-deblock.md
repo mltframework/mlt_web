@@ -13,7 +13,7 @@ title: deblock
 media types:
 Video  
 description: Deblock video.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -42,7 +42,7 @@ readonly: no
 required: no  
 minimum: 4  
 maximum: 512  
-default: 0  
+default: 8  
 
 ### av.alpha
 
@@ -102,5 +102,21 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 15  
-default: 0  
+default: 15  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

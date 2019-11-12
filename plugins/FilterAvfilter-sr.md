@@ -13,7 +13,7 @@ title: sr
 media types:
 Video  
 description: Apply DNN-based image super resolution to the input.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,7 +26,7 @@ DNN backend used for model execution
 type: string  
 readonly: no  
 required: no  
-format: flags  
+format: integer or keyword  
 values:  
 
 * native
@@ -41,7 +41,7 @@ readonly: no
 required: no  
 minimum: 2  
 maximum: 4  
-default: 0  
+default: 2  
 
 ### av.model
 
@@ -52,14 +52,19 @@ type: string
 readonly: no  
 required: no  
 
-### av.threads
+### position
 
   
 description:
-Maximum number of threads  
-type: integer  
+The MLT position value to set on avfilter frames  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-default: 0  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

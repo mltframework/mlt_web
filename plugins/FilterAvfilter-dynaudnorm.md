@@ -13,7 +13,7 @@ title: dynaudnorm
 media types:
 Audio  
 description: Dynamic Audio Normalizer.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 10  
 maximum: 8000  
-default: 0  
+default: 500  
 
 ### av.g
 
@@ -40,7 +40,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 301  
-default: 0  
+default: 31  
 
 ### av.p
 
@@ -120,4 +120,20 @@ minimum: 0
 maximum: 30  
 default: 0  
 format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

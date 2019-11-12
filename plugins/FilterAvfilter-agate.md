@@ -13,7 +13,7 @@ title: agate
 media types:
 Audio  
 description: Audio gate.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -30,6 +30,20 @@ minimum: 0.015625
 maximum: 64  
 default: 1  
 format: double  
+
+### av.mode
+
+  
+description:
+set mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* downward
+* upward
 
 ### av.range
 
@@ -162,4 +176,20 @@ minimum: 0.015625
 maximum: 64  
 default: 1  
 format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

@@ -13,7 +13,7 @@ title: doubleweave
 media types:
 Video  
 description: Weave input video fields into double number of frames.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -33,4 +33,20 @@ values:
 * t
 * bottom
 * b
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

@@ -13,5 +13,5 @@ title: volumedetect
 media types:
 Audio  
 description: Detect audio volume.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  

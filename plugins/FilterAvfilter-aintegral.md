@@ -13,5 +13,5 @@ title: aintegral
 media types:
 Audio  
 description: Compute integral of input audio.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  

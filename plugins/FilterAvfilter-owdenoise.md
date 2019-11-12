@@ -13,7 +13,7 @@ title: owdenoise
 media types:
 Video  
 description: Denoise using wavelets.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 8  
 maximum: 16  
-default: 0  
+default: 8  
 
 ### av.luma_strength
 
@@ -81,4 +81,20 @@ minimum: 0
 maximum: 1000  
 default: 1  
 format: double  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

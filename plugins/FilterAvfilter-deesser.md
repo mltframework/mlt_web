@@ -1,0 +1,90 @@
+---
+layout: standard
+title: Documentation
+wrap_title: "Filter: avfilter.deesser"
+category: plugin
+---
+* TOC
+{:toc}
+
+## Plugin Information
+
+title: deesser  
+media types:
+Audio  
+description: Apply de-essing to the audio.  
+version: Lavfi7.57.100  
+creator: libavfilter maintainers  
+
+## Parameters
+
+### av.i
+
+  
+description:
+set intensity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.m
+
+  
+description:
+set max deessing  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.5  
+format: double  
+
+### av.f
+
+  
+description:
+set frequency  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.5  
+format: double  
+
+### av.s
+
+  
+description:
+set output mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* i
+* o
+* e
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
+

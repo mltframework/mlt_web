@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Documentation
-wrap_title: "Filter: vid.stab.deshake"
+wrap_title: "Filter: deshake"
 category: plugin
 ---
 * TOC

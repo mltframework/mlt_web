@@ -13,7 +13,7 @@ title: highshelf
 media types:
 Audio  
 description: Apply a high shelf filter.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -130,6 +130,32 @@ maximum: 900
 default: 0  
 format: double  
 
+### av.mix
+
+  
+description:
+set mix  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.m
+
+  
+description:
+set mix  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
+
 ### av.channels
 
   
@@ -158,4 +184,20 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

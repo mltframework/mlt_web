@@ -13,7 +13,7 @@ title: afade
 media types:
 Audio  
 description: Fade in/out input audio.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -79,7 +79,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 44100  
 format: 64-bit  
 
 ### av.ns
@@ -91,7 +91,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 44100  
 format: 64-bit  
 
 ### av.start_time
@@ -158,6 +158,7 @@ values:
 * dese
 * desi
 * losi
+* nofade
 
 ### av.c
 
@@ -187,4 +188,21 @@ values:
 * dese
 * desi
 * losi
+* nofade
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

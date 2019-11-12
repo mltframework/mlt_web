@@ -13,7 +13,7 @@ title: unsharp
 media types:
 Video  
 description: Sharpen or blur the input video.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.lx
 
@@ -40,7 +40,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.luma_msize_y
 
@@ -52,7 +52,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.ly
 
@@ -64,7 +64,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.luma_amount
 
@@ -100,7 +100,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.cx
 
@@ -112,7 +112,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.chroma_msize_y
 
@@ -124,7 +124,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.cy
 
@@ -136,7 +136,7 @@ readonly: no
 required: no  
 minimum: 3  
 maximum: 23  
-default: 0  
+default: 5  
 
 ### av.chroma_amount
 
@@ -170,4 +170,31 @@ ignored
 type: string  
 readonly: no  
 required: no  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

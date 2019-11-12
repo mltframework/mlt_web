@@ -13,7 +13,7 @@ title: fade
 media types:
 Video  
 description: Fade in/out input video.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -69,7 +69,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 25  
 
 ### av.n
 
@@ -80,7 +80,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 25  
 
 ### av.alpha
 
@@ -155,4 +155,20 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

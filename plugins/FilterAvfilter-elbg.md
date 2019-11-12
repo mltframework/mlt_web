@@ -13,7 +13,7 @@ title: elbg
 media types:
 Video  
 description: Apply posterize effect, using the ELBG algorithm.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -27,7 +27,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 256  
 
 ### av.l
 
@@ -38,7 +38,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 256  
 
 ### av.nb_steps
 
@@ -49,7 +49,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### av.n
 
@@ -60,7 +60,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-default: 0  
+default: 1  
 
 ### av.seed
 
@@ -72,7 +72,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: -2147483648  
-default: -2147483648  
+default: -1  
 
 ### av.s
 
@@ -84,7 +84,7 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: -2147483648  
-default: -2147483648  
+default: -1  
 
 ### av.pal8
 
@@ -94,4 +94,20 @@ set the pal8 output
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

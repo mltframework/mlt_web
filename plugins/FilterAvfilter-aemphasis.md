@@ -13,7 +13,7 @@ title: aemphasis
 media types:
 Audio  
 description: Audio emphasis.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -78,4 +78,20 @@ values:
 * 75fm
 * 50kf
 * 75kf
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

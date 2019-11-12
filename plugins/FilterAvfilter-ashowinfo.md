@@ -13,5 +13,5 @@ title: ashowinfo
 media types:
 Audio  
 description: Show textual information for each audio frame.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  

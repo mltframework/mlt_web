@@ -13,7 +13,7 @@ title: shuffleplanes
 media types:
 Video  
 description: Shuffle video planes.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -40,7 +40,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 4  
-default: 0  
+default: 1  
 
 ### av.map2
 
@@ -52,7 +52,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 4  
-default: 0  
+default: 2  
 
 ### av.map3
 
@@ -64,5 +64,21 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 4  
-default: 0  
+default: 3  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

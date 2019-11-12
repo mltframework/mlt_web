@@ -67,3 +67,14 @@ minimum: 0
 maximum: 1  
 widget: checkbox  
 
+### background_color
+
+title: Background color    
+description:
+An integer formed like 0xaabbggrr that will be used as background color for the compositing operation. Defaults to 0 (fully transparent)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+widget: color  
+

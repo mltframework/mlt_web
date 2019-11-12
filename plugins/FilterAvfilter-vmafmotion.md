@@ -13,7 +13,7 @@ title: vmafmotion
 media types:
 Video  
 description: Calculate the VMAF Motion score.  
-version: Lavfi7.40.101  
+version: Lavfi7.57.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,4 +26,20 @@ Set file where to store per-frame difference information
 type: string  
 readonly: no  
 required: no  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 
