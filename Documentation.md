@@ -38,6 +38,7 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
   * [Examples by Harry van Haaren](https://github.com/harryhaaren/mltutorial)
 
 #### Miscellaneous
+* [Preview Scaling]({{ "/docs/previewscaling/" | prepend: site.baseurl }})
 * [Profiles]({{ "/docs/profiles/" | prepend: site.baseurl }}) - consumer (output)
 configuration
 * [Time Values]({{ "/blog/time_properties/" | prepend: site.baseurl }})
