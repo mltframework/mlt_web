@@ -37,22 +37,22 @@ type: float
 readonly: no  
 required: no  
 minimum: 30  
-maximum: 164  
-default: 97  
+maximum: 182  
+default: 106  
 
 ### 1
 
-title: divider    
+title: div    
 type: integer  
 readonly: no  
 required: no  
 minimum: 2  
 maximum: 4  
-default: 3  
+default: 2  
 
 ### 2
 
-title: feedback    
+title: Q    
 type: float  
 readonly: no  
 required: no  
@@ -62,7 +62,7 @@ default: 0.75
 
 ### 3
 
-title: dry    
+title: blend    
 type: float  
 readonly: no  
 required: no  
@@ -72,23 +72,13 @@ default: 0.5
 
 ### 4
 
-title: blend    
+title: feedback    
 type: float  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 1  
-
-### 5
-
-title: tune (Hz)    
-type: float  
-readonly: no  
-required: no  
-minimum: 415  
-maximum: 467  
-default: 440  
+default: 0.25  
 
 ### instances
 

@@ -38,7 +38,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.75  
+default: 0.5  
 
 ### 1
 
@@ -58,7 +58,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.25  
+default: 0.75  
 
 ### 3
 

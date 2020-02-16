@@ -36,7 +36,7 @@ widget: text
 title: Geometry    
 description:
 A set of X/Y coordinates by which to adjust the text.  
-type: geometry  
+type: rect  
 readonly: no  
 required: no  
 default: 0%/0%:100%x100%:100  
@@ -61,6 +61,7 @@ type: integer
 readonly: no  
 required: no  
 default: 48  
+unit: pixels  
 widget: spinner  
 
 ### style
@@ -134,6 +135,7 @@ required: no
 minimum: 0  
 maximum: 3  
 default: 0  
+unit: pixels  
 widget: spinner  
 
 ### pad
@@ -145,6 +147,7 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+unit: pixels  
 widget: spinner  
 
 ### halign

@@ -57,8 +57,8 @@ type: float
 readonly: no  
 required: no  
 minimum: 20  
-maximum: 3400  
-default: 941.601  
+maximum: 3800  
+default: 1023.52  
 scale: log  
 
 ### 3
@@ -103,7 +103,7 @@ default: 0.25
 
 ### 7
 
-title: x/z    
+title: shape    
 type: float  
 readonly: no  
 required: no  

@@ -17210,6 +17210,28 @@ values:
 * 6.1
 * 6.2
 
+### num_output_buffers
+
+  
+description:
+Number of buffers in the output context (hevc_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 6  
+default: 16  
+
+### num_capture_buffers
+
+  
+description:
+Number of buffers in the capture context (hevc_v4l2m2m)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 4  
+default: 4  
+
 ### low_power
 
   

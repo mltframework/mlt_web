@@ -196,3 +196,25 @@ type: geometry
 readonly: no  
 required: no  
 
+### fill
+
+title: Fill geometry    
+description:
+Determines whether the image will be scaled up to fill the geometry. Otherwise, if the B frame image fits within the geometry, it will not be scaled. If 0, and the B frame image exceeds the geometry, then it is scaled down to fit within the geometry.  
+type: boolean  
+readonly: no  
+required: no  
+default: 1  
+widget: checkbox  
+
+### invert
+
+title: Invert    
+description:
+Whether to swap the A and B clips  
+type: boolean  
+readonly: no  
+required: no  
+default: 1  
+widget: checkbox  
+

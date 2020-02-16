@@ -736,6 +736,7 @@ wrap_title: Filter Plugins
 * [panner](../FilterPanner/): Audio Pan
 * [qtblend](../FilterQtblend/): Composite and transform
 * [qtext](../FilterQtext/): QText
+* [rbpitch](../FilterRbpitch/): Rubberband Pitch
 * [region](../FilterRegion/): Regionalize
 * [resample](../FilterResample/): Resample
 * [rescale](../FilterRescale/): Rescale

@@ -46,17 +46,27 @@ default: 63
 
 ### 2
 
-title: volume    
+title: div    
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 4  
+default: 1  
+
+### 3
+
+title: vol    
 type: float  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.75  
+default: 0.25  
 
-### 3
+### 4
 
-title: damping    
+title: tone    
 type: float  
 readonly: no  
 required: no  

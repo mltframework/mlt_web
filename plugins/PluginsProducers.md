@@ -64,6 +64,7 @@ wrap_title: Producer Plugins
 * [slowmotion](../ProducerSlowmotion/): Slow Motion
 * [timewarp](../ProducerTimewarp/): Time Warp
 * [tone](../ProducerTone/): Tone
+* [vorbis](../ProducerVorbis/): Ogg Vorbis
 * [xml](../ProducerXml/): XML File
 * [xml-nogl](../ProducerXml-nogl/): XML without OpenGL
 * [xml-string](../ProducerXml-string/): XML String

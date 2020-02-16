@@ -25,7 +25,7 @@ license: GPLv2
 title: Rectangle    
 description:
 Keyframable rectangle specification.  
-type: geometry  
+type: rect  
 readonly: no  
 required: no  
 

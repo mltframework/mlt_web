@@ -12,6 +12,6 @@ category: plugin
 title: scanline0r  
 media types:
 Video  
-description: interlaced blak lines  
-version: 0.2  
+description: interlaced dark lines  
+version: 0.3  
 creator: Martin Bayer  

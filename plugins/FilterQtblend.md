@@ -25,7 +25,7 @@ license: LGPLv2.1
 title: Rectangle    
 description:
 Keyframable rectangle specification.  
-type: geometry  
+type: rect  
 readonly: no  
 required: no  
 
@@ -53,6 +53,7 @@ required: no
 minimum: 0  
 maximum: 360  
 default: 1  
+unit: degrees  
 widget: spinner  
 
 ### rotate_center

@@ -38,7 +38,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 
 ### 1
 
@@ -97,8 +97,8 @@ type: float
 readonly: no  
 required: no  
 minimum: -12  
-maximum: 18  
-default: 3  
+maximum: 36  
+default: 12  
 
 ### 7[*]
 

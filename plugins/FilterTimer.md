@@ -92,7 +92,7 @@ values:
 title: Geometry    
 description:
 A set of X/Y coordinates by which to adjust the text.  
-type: geometry  
+type: rect  
 readonly: no  
 required: no  
 default: 0%/0%:100%x100%:100  

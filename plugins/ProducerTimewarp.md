@@ -53,6 +53,16 @@ type: string
 readonly: no  
 required: true  
 
+### warp_pitch
+
+title: Pitch Compensation    
+description:
+Enable or disable pitch compensation  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+
 ### warp_speed
 
 title: Warp Speed    

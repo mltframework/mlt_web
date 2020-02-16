@@ -78,7 +78,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 8  
-default: 1  
+default: 0  
 
 ### 5
 
@@ -98,7 +98,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0.75  
 
 ### 7
 
@@ -108,7 +108,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.75  
+default: 1  
 
 ### 8
 
@@ -118,7 +118,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.75  
+default: 0.25  
 
 ### 9
 
@@ -128,7 +128,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.25  
+default: 0.75  
 
 ### 10
 
@@ -138,7 +138,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.5  
+default: 0.75  
 
 ### instances
 

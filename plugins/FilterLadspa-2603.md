@@ -37,8 +37,8 @@ type: float
 readonly: no  
 required: no  
 minimum: 50  
-maximum: 400  
-default: 141.421  
+maximum: 800  
+default: 100  
 scale: log  
 
 ### 1
@@ -63,16 +63,26 @@ default: 0.25
 
 ### 3
 
+title: lo.vol (dB)    
+type: float  
+readonly: no  
+required: no  
+minimum: -60  
+maximum: 60  
+default: 0  
+
+### 4
+
 title: hi.f (Hz)    
 type: float  
 readonly: no  
 required: no  
 minimum: 400  
 maximum: 5000  
-default: 1414.21  
+default: 752.121  
 scale: log  
 
-### 4
+### 5
 
 title: hi.gain    
 type: float  
@@ -81,6 +91,16 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0.25  
+
+### 6
+
+title: hi.vol (dB)    
+type: float  
+readonly: no  
+required: no  
+minimum: -60  
+maximum: 60  
+default: 0  
 
 ### instances
 

@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Ogg Vorbis (*deprecated*)  
+title: Ogg Vorbis  
 media types:
 Audio  
 description: OGG Vorbis file reader.  

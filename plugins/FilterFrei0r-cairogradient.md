@@ -13,7 +13,7 @@ title: cairogradient
 media types:
 Video  
 description: Draws a gradient on top of image. Filter is given gradient start and end points, colors and opacities.  
-version: 0.1  
+version: 1  
 creator: Janne Liljeblad  
 
 ## Parameters

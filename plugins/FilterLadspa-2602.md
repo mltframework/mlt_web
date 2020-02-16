@@ -36,9 +36,9 @@ title: open (dB)
 type: float  
 readonly: no  
 required: no  
-minimum: -60  
+minimum: -55  
 maximum: 0  
-default: -45  
+default: -41.25  
 
 ### 1
 

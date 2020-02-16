@@ -98,6 +98,7 @@ required: no
 minimum: 0  
 maximum: 3  
 default: 0  
+unit: pixels  
 widget: spinner  
 
 ### align
@@ -120,6 +121,7 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+unit: pixels  
 widget: spinner  
 
 ### text
@@ -165,6 +167,7 @@ type: integer
 readonly: no  
 required: no  
 default: 48  
+unit: pixels  
 widget: spinner  
 
 ### style
@@ -215,6 +218,7 @@ The original, unscaled width of the rendered title.
 type: integer  
 readonly: true  
 required: no  
+unit: pixels  
 
 ### real_height
 
@@ -224,6 +228,7 @@ The original, unscaled height of the rendered title.
 type: integer  
 readonly: true  
 required: no  
+unit: pixels  
 
 ### width
 
@@ -233,6 +238,7 @@ The last requested scaled image width.
 type: integer  
 readonly: true  
 required: no  
+unit: pixels  
 
 ### height
 
@@ -242,6 +248,7 @@ The last requested scaled image height.
 type: integer  
 readonly: true  
 required: no  
+unit: pixels  
 
 ### force_aspect_ratio
 
@@ -261,6 +268,7 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+unit: degrees  
 widget: spinner  
 
 ### width_crop
@@ -272,6 +280,7 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+unit: pixels  
 widget: spinner  
 
 ### width_fit
@@ -283,6 +292,7 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+unit: pixels  
 widget: spinner  
 
 ### line_spacing
@@ -318,6 +328,7 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
+unit: pixels  
 widget: spinner  
 
 ### wrap_type

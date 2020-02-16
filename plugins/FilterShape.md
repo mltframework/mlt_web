@@ -13,7 +13,7 @@ title: Shape Alpha
 media types:
 Video  
 description:   
-version: 3  
+version: 4  
 creator: Charles Yates  
 copyright: Visual Media FX ?  
 license: LGPLv2.1  
@@ -59,6 +59,15 @@ default: 0.1
 title: Invert    
 description:
 Use the inverse of the alpha or luma value.  
+type: boolean  
+readonly: no  
+required: no  
+
+### reverse
+
+title: Reverse    
+description:
+Use the complement of the mix level.  
 type: boolean  
 readonly: no  
 required: no  

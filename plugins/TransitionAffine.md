@@ -13,7 +13,7 @@ title: Transform
 media types:
 Video  
 description:   
-version: 3  
+version: 4  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Meltytech, LLC  
@@ -103,6 +103,7 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+unit: pixels  
 
 ### oy
 
@@ -112,6 +113,7 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+unit: pixels  
 
 ### rotate_x
 
@@ -284,6 +286,17 @@ type: float
 readonly: no  
 required: no  
 default: 0  
+
+### invert_scale
+
+title: Invert Scale    
+description:
+Whether to invert the scale_x and scale_y values. This is helpful to make animation interpolation sane because otherwise the scale values do not animate linearly.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
 
 ### b_alpha
 
