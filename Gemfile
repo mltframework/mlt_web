@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
-
-gem 'jekyll-paginate'
-
+gem 'jekyll'
+group :jekyll_plugins do
+  gem 'jekyll-paginate'
+end
