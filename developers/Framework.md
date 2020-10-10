@@ -618,8 +618,8 @@ Something, somewhere, must ensure that all frames are pulled from the
 multitrack and elect the correct frame to pass on.
 
 Hence, MLT provides a wrapper for the multitrack, which is called a
-'tractor', and its the tractors task to ensure that all tracks are pulled
-evenly, the correct frame is output and that we have 'producer like'
+'tractor', and it is the tractor's task to ensure that all tracks are pulled
+evenly, that the correct frame is output, and that we have producer-like
 behaviour.
 
 Thus, a multitrack is conceptually 'pulled' by a tractor as shown here:
