@@ -13,10 +13,19 @@ title: hwupload
 media types:
 Video  
 description: Upload a normal frame to a hardware frame  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
+
+### av.derive_device
+
+  
+description:
+Derive a new device of this type  
+type: string  
+readonly: no  
+required: no  
 
 ### position
 

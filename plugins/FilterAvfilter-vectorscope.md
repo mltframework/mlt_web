@@ -13,7 +13,7 @@ title: vectorscope
 media types:
 Video  
 description: Video vectorscope.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -30,6 +30,7 @@ format: integer or keyword
 values:  
 
 * gray
+* tint
 * color
 * color2
 * color3
@@ -48,6 +49,7 @@ format: integer or keyword
 values:  
 
 * gray
+* tint
 * color
 * color2
 * color3
@@ -148,6 +150,7 @@ values:
 * none
 * green
 * color
+* invert
 
 ### av.g
 
@@ -163,6 +166,7 @@ values:
 * none
 * green
 * color
+* invert
 
 ### av.opacity
 
@@ -319,6 +323,54 @@ values:
 * auto
 * 601
 * 709
+
+### av.tint0
+
+  
+description:
+set 1st tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
+### av.t0
+
+  
+description:
+set 1st tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
+### av.tint1
+
+  
+description:
+set 2nd tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
+### av.t1
+
+  
+description:
+set 2nd tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
 
 ### position
 

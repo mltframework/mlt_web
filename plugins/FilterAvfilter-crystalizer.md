@@ -13,7 +13,7 @@ title: crystalizer
 media types:
 Audio  
 description: Simple expand audio dynamic range filter.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -38,6 +38,17 @@ enable clipping
 type: string  
 readonly: no  
 required: no  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

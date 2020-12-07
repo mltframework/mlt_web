@@ -13,7 +13,7 @@ title: metadata
 media types:
 Video  
 description: Manipulate video frame metadata.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -70,6 +70,7 @@ values:
 * equal
 * greater
 * expr
+* ends_with
 
 ### av.expr
 
@@ -85,6 +86,15 @@ required: no
   
 description:
 set file where to print metadata information  
+type: string  
+readonly: no  
+required: no  
+
+### av.direct
+
+  
+description:
+reduce buffering when printing to user-set file or pipe  
 type: string  
 readonly: no  
 required: no  

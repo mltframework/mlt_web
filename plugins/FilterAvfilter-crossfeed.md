@@ -13,7 +13,7 @@ title: crossfeed
 media types:
 Audio  
 description: Apply headphone crossfeed filter.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -40,6 +40,19 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 1  
+default: 0.5  
+format: double  
+
+### av.slope
+
+  
+description:
+set curve slope  
+type: float  
+readonly: no  
+required: no  
+minimum: 0.01  
 maximum: 1  
 default: 0.5  
 format: double  

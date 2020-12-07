@@ -13,7 +13,7 @@ title: tblend
 media types:
 Video  
 description: Blend successive frames.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

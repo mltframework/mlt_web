@@ -554,7 +554,16 @@ required: no
 
 title: Pixel format    
 description:
-See &#39;ffmpeg -pix_fmt list&#39; to see a list of values. Normally, this is not required, but some codecs support multiple pixel formats, especially chroma bit-depth.  
+See &#39;ffmpeg -pix_fmts&#39; to see a list of values. Normally, this is not required, but some codecs support multiple pixel formats, especially chroma bit-depth.  
+type: string  
+readonly: no  
+required: no  
+
+### sample_fmt
+
+title: Audio sample format    
+description:
+See &#39;ffmpeg -sample_fmts&#39; to see a list of values. Normally, this is not required, but some codecs support multiple sample formats, especially bit-depth and planar vs. interleaved. This is evaluated at a lower priority than mlt_audio_format.  
 type: string  
 readonly: no  
 required: no  
@@ -1047,6 +1056,31 @@ type: string
 readonly: no  
 required: no  
 
+### frag_duration
+
+  
+description:
+fragment duration (in seconds, fractional value can be set) (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### frag_type
+
+  
+description:
+set type of interval for fragments (dash)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* every_frame
+* duration
+* pframes
+
 ### remove_at_exit
 
   
@@ -1235,6 +1269,15 @@ type: string
 readonly: no  
 required: no  
 
+### ldash
+
+  
+description:
+Enable Low-latency dash. Constrains the value of a few elements (dash)  
+type: string  
+readonly: no  
+required: no  
+
 ### master_m3u8_publish_rate
 
   
@@ -1246,6 +1289,67 @@ required: no
 minimum: 0  
 maximum: -2147483648  
 default: 0  
+
+### write_prft
+
+  
+description:
+Write producer reference time element (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### mpd_profile
+
+  
+description:
+Set profiles. Elements and values used in the manifest may be constrained by them (dash)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* dash
+* dvb_dash
+
+### http_opts
+
+  
+description:
+HTTP protocol options (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### target_latency
+
+  
+description:
+Set desired target latency for Low-latency dash (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### min_playback_rate
+
+  
+description:
+Set desired minimum playback rate (dash)  
+type: string  
+readonly: no  
+required: no  
+format: numerator/denominator  
+
+### max_playback_rate
+
+  
+description:
+Set desired maximum playback rate (dash)  
+type: string  
+readonly: no  
+required: no  
+format: numerator/denominator  
 
 ### movflags
 
@@ -1270,11 +1374,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -1725,18 +1831,6 @@ readonly: no
 required: no  
 default: 'sha256'  
 
-### format_version
-
-  
-description:
-file format version (hash)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-maximum: 2  
-default: 2  
-
 ### window_size
 
   
@@ -1983,6 +2077,15 @@ readonly: no
 required: no  
 default: 'init.mp4'  
 
+### hls_fmp4_init_resend
+
+  
+description:
+resend fragment mp4 init file after refresh m3u8 every time (hls)  
+type: string  
+readonly: no  
+required: no  
+
 ### hls_flags
 
   
@@ -2014,7 +2117,7 @@ values:
 
   
 description:
-set filename expansion with strftime at segment creation(will be deprecated ) (hls)  
+set filename expansion with strftime at segment creation(will be deprecated) (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -2082,6 +2185,7 @@ values:
 
 * generic
 * epoch
+* epoch_us
 * datetime
 
 ### http_user_agent
@@ -2215,6 +2319,15 @@ type: string
 readonly: no  
 required: no  
 
+### protocol_opts
+
+  
+description:
+specify protocol options for the opened files (image2)  
+type: string  
+readonly: no  
+required: no  
+
 ### movflags
 
   
@@ -2238,11 +2351,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -2489,11 +2604,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -2739,17 +2856,101 @@ readonly: no
 required: no  
 default: 'md5'  
 
-### format_version
+### reserve_index_space
 
   
 description:
-file format version (md5)  
+Reserve a given amount of space (in bytes) at the beginning of the file for the index (cues). (matroska)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### cluster_size_limit
+
+  
+description:
+Store at most the provided amount of bytes in a cluster.  (matroska)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
+### cluster_time_limit
+
+  
+description:
+Store at most the provided number of milliseconds in a cluster. (matroska)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+format: 64-bit  
+
+### dash
+
+  
+description:
+Create a WebM file conforming to WebM DASH specification (matroska)  
+type: string  
+readonly: no  
+required: no  
+
+### dash_track_number
+
+  
+description:
+Track number for the DASH stream (matroska)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
-maximum: 2  
-default: 2  
+default: 1  
+
+### live
+
+  
+description:
+Write files assuming it is a live stream. (matroska)  
+type: string  
+readonly: no  
+required: no  
+
+### allow_raw_vfw
+
+  
+description:
+allow RAW VFW mode (matroska)  
+type: string  
+readonly: no  
+required: no  
+
+### write_crc32
+
+  
+description:
+write a CRC32 element inside every Level 1 element (matroska)  
+type: string  
+readonly: no  
+required: no  
+
+### default_mode
+
+  
+description:
+Controls how a track&#39;s FlagDefault is inferred (matroska)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* infer
+* infer_no_subs
+* passthrough
 
 ### reserve_index_space
 
@@ -2802,8 +3003,7 @@ Track number for the DASH stream (matroska)
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 127  
+minimum: 1  
 default: 1  
 
 ### live
@@ -2833,87 +3033,20 @@ type: string
 readonly: no  
 required: no  
 
-### reserve_index_space
+### default_mode
 
   
 description:
-Reserve a given amount of space (in bytes) at the beginning of the file for the index (cues). (matroska)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### cluster_size_limit
-
-  
-description:
-Store at most the provided amount of bytes in a cluster.  (matroska)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-default: -1  
-
-### cluster_time_limit
-
-  
-description:
-Store at most the provided number of milliseconds in a cluster. (matroska)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-default: -1  
-format: 64-bit  
-
-### dash
-
-  
-description:
-Create a WebM file conforming to WebM DASH specification (matroska)  
+Controls how a track&#39;s FlagDefault is inferred (matroska)  
 type: string  
 readonly: no  
 required: no  
+format: integer or keyword  
+values:  
 
-### dash_track_number
-
-  
-description:
-Track number for the DASH stream (matroska)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 127  
-default: 1  
-
-### live
-
-  
-description:
-Write files assuming it is a live stream. (matroska)  
-type: string  
-readonly: no  
-required: no  
-
-### allow_raw_vfw
-
-  
-description:
-allow RAW VFW mode (matroska)  
-type: string  
-readonly: no  
-required: no  
-
-### write_crc32
-
-  
-description:
-write a CRC32 element inside every Level 1 element (matroska)  
-type: string  
-readonly: no  
-required: no  
+* infer
+* infer_no_subs
+* passthrough
 
 ### movflags
 
@@ -2938,11 +3071,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -3219,11 +3354,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -3616,8 +3753,8 @@ Set the first pid of the PMT. (mpegts)
 type: integer  
 readonly: no  
 required: no  
-minimum: 16  
-maximum: 7936  
+minimum: 32  
+maximum: 8186  
 default: 4096  
 
 ### mpegts_start_pid
@@ -3628,8 +3765,8 @@ Set the first pid. (mpegts)
 type: integer  
 readonly: no  
 required: no  
-minimum: 16  
-maximum: 3840  
+minimum: 32  
+maximum: 8186  
 default: 256  
 
 ### mpegts_m2ts_mode
@@ -3678,17 +3815,6 @@ values:
 * system_b
 * initial_discontinuity
 
-### resend_headers
-
-  
-description:
-Reemit PAT/PMT before writing the next packet (mpegts)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
 ### mpegts_copyts
 
   
@@ -3727,34 +3853,26 @@ PCR retransmission time in milliseconds (mpegts)
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
-default: 20  
+minimum: -1  
+default: -1  
 
 ### pat_period
 
   
 description:
 PAT/PMT retransmission time limit in seconds (mpegts)  
-type: float  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 2147480000.0  
-default: 2147480000.0  
-format: double  
 
 ### sdt_period
 
   
 description:
 SDT retransmission time limit in seconds (mpegts)  
-type: float  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 2147480000.0  
-default: 2147480000.0  
-format: double  
 
 ### boundary_tag
 
@@ -4107,11 +4225,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -5142,6 +5262,16 @@ required: no
 minimum: -1  
 default: 60  
 
+### hash
+
+  
+description:
+set hash to use (streamhash)  
+type: string  
+readonly: no  
+required: no  
+default: 'sha256'  
+
 ### use_fifo
 
   
@@ -5183,11 +5313,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -5434,11 +5566,13 @@ values:
 * disable_chpl
 * default_base_moof
 * dash
+* cmaf
 * frag_discont
 * delay_moov
 * global_sidx
 * skip_sidx
 * write_colr
+* prefer_icc
 * write_gama
 * use_metadata_tags
 * skip_trailer
@@ -5788,8 +5922,7 @@ Track number for the DASH stream (webm)
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 127  
+minimum: 1  
 default: 1  
 
 ### live
@@ -5819,20 +5952,26 @@ type: string
 readonly: no  
 required: no  
 
+### default_mode
+
+  
+description:
+Controls how a track&#39;s FlagDefault is inferred (webm)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* infer
+* infer_no_subs
+* passthrough
+
 ### adaptation_sets
 
   
 description:
 Adaptation sets. Syntax: id=0,streams=0,1,2 id=1,streams=3,4 and so on (webm_dash_manifest)  
-type: string  
-readonly: no  
-required: no  
-
-### debug_mode
-
-  
-description:
-[private option - users should never set this]. Create deterministic output (webm_dash_manifest)  
 type: string  
 readonly: no  
 required: no  
@@ -5989,7 +6128,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.29.100'  
+default: 'Lavf58.45.100'  
 
 ### stream_name
 
@@ -6252,6 +6391,19 @@ values:
 * fast
 * noout
 * local_header
+
+### export_side_data
+
+  
+description:
+Export metadata as side data  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* prft
 
 ### g
 
@@ -6817,27 +6969,7 @@ format: integer or keyword
 values:  
 
 * unknown
-* aac_main
-* aac_low
-* aac_ssr
-* aac_ltp
-* aac_he
-* aac_he_v2
-* aac_ld
-* aac_eld
-* mpeg2_aac_low
-* mpeg2_aac_he
-* dts
-* dts_es
-* dts_96_24
-* dts_hd_hra
-* dts_hd_ma
-* mpeg4_sp
-* mpeg4_core
-* mpeg4_main
-* mpeg4_asp
 * main10
-* msbc
 
 ### level
 
@@ -7260,6 +7392,7 @@ values:
 * smpte431
 * smpte432
 * jedec-p22
+* ebu3213
 * unspecified
 
 ### color_trc
@@ -7449,6 +7582,19 @@ required: no
   
 description:
 Maximum number of pixels  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2147483647  
+default: 2147483647  
+format: 64-bit  
+
+### max_samples
+
+  
+description:
+Maximum number of samples  
 type: integer  
 readonly: no  
 required: no  
@@ -7818,6 +7964,18 @@ pre motion estimation (amv)
 type: integer  
 readonly: no  
 required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (amv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
 default: 0  
 
 ### a53cc
@@ -8451,6 +8609,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (flv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -8846,6 +9016,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (h261)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -9236,6 +9418,18 @@ pre motion estimation (h263)
 type: integer  
 readonly: no  
 required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (h263)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
 default: 0  
 
 ### a53cc
@@ -9644,6 +9838,18 @@ pre motion estimation (h263p)
 type: integer  
 readonly: no  
 required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (h263p)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
 default: 0  
 
 ### a53cc
@@ -10139,6 +10345,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (mjpeg)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -10586,6 +10804,18 @@ pre motion estimation (mpeg1video)
 type: integer  
 readonly: no  
 required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (mpeg1video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
 default: 0  
 
 ### a53cc
@@ -11059,6 +11289,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (mpeg2video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -11449,6 +11691,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (mpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -11821,6 +12075,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (msmpeg4v2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -12191,6 +12457,18 @@ pre motion estimation (msmpeg4)
 type: integer  
 readonly: no  
 required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (msmpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
 default: 0  
 
 ### a53cc
@@ -12717,6 +12995,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (rv10)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -13087,6 +13377,18 @@ pre motion estimation (rv20)
 type: integer  
 readonly: no  
 required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (rv20)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
 default: 0  
 
 ### a53cc
@@ -13708,6 +14010,18 @@ readonly: no
 required: no  
 default: 0  
 
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (wmv1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
 ### a53cc
 
   
@@ -14078,6 +14392,18 @@ pre motion estimation (wmv2)
 type: integer  
 readonly: no  
 required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (wmv2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
 default: 0  
 
 ### a53cc
@@ -15081,6 +15407,15 @@ minimum: 2.5
 maximum: 360  
 default: 360  
 
+### apply_phase_inv
+
+  
+description:
+Apply intensity stereo phase inversion (opus)  
+type: string  
+readonly: no  
+required: no  
+
 ### sbc_delay
 
   
@@ -15141,6 +15476,15 @@ minimum: 2
 maximum: 5  
 default: 4  
 
+### palette
+
+  
+description:
+set the global palette (dvdsub)  
+type: string  
+readonly: no  
+required: no  
+
 ### even_rows_fix
 
   
@@ -15149,6 +15493,17 @@ Make number of rows even (workaround for some players) (dvdsub)
 type: string  
 readonly: no  
 required: no  
+
+### height
+
+  
+description:
+Frame height, usually video height (mov_text)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### reservoir
 
@@ -15425,6 +15780,15 @@ minimum: -1
 maximum: 1000  
 default: -1  
 
+### ts-parameters
+
+  
+description:
+Temporal scaling configuration using a :-separated list of key=value parameters (libvpx)  
+type: string  
+readonly: no  
+required: no  
+
 ### auto-alt-ref
 
   
@@ -15448,15 +15812,6 @@ required: no
 minimum: -16  
 maximum: 16  
 default: 1  
-
-### ts-parameters
-
-  
-description:
-Temporal scaling configuration using a :-separated list of key=value parameters (libvpx)  
-type: string  
-readonly: no  
-required: no  
 
 ### speed
 
@@ -15729,6 +16084,15 @@ required: no
 minimum: -1  
 maximum: 1000  
 default: -1  
+
+### ts-parameters
+
+  
+description:
+Temporal scaling configuration using a :-separated list of key=value parameters (libvpx-vp9)  
+type: string  
+readonly: no  
+required: no  
 
 ### auto-alt-ref
 
@@ -16962,6 +17326,17 @@ required: no
 minimum: -1  
 default: -1  
 
+### qp
+
+  
+description:
+set the x265 qp (libx265)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
 ### forced-idr
 
   
@@ -17028,6 +17403,414 @@ readonly: no
 required: no  
 minimum: 4  
 default: 4  
+
+### preset
+
+  
+description:
+Set the encoding preset (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* slow
+* medium
+* fast
+* hp
+* hq
+* bd
+* ll
+* llhq
+* llhp
+* lossless
+* losslesshp
+
+### profile
+
+  
+description:
+Set the encoding profile (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* baseline
+* main
+* high
+* high444p
+
+### level
+
+  
+description:
+Set the encoding level restriction (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* 1
+* 1.0
+* 1b
+* 1.0b
+* 1.1
+* 1.2
+* 1.3
+* 2
+* 2.0
+* 2.1
+* 2.2
+* 3
+* 3.0
+* 3.1
+* 3.2
+* 4
+* 4.0
+* 4.1
+* 4.2
+* 5
+* 5.0
+* 5.1
+
+### rc
+
+  
+description:
+Override the preset rate-control (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* constqp
+* vbr
+* cbr
+* vbr_minqp
+* ll_2pass_quality
+* ll_2pass_size
+* vbr_2pass
+* cbr_ld_hq
+* cbr_hq
+* vbr_hq
+
+### rc-lookahead
+
+  
+description:
+Number of frames to look ahead for rate-control (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### surfaces
+
+  
+description:
+Number of concurrent surfaces (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 64  
+default: 0  
+
+### cbr
+
+  
+description:
+Use cbr encoding mode (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### 2pass
+
+  
+description:
+Use 2pass encoding mode (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### gpu
+
+  
+description:
+Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* any
+* list
+
+### delay
+
+  
+description:
+Delay frame output by the given amount of frames (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 2147483647  
+
+### no-scenecut
+
+  
+description:
+When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### forced-idr
+
+  
+description:
+If forcing keyframes, force them as IDR frames. (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### b_adapt
+
+  
+description:
+When lookahead is enabled, set this to 0 to disable adaptive B-frame decision (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial-aq
+
+  
+description:
+set to 1 to enable Spatial AQ (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial_aq
+
+  
+description:
+set to 1 to enable Spatial AQ (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal-aq
+
+  
+description:
+set to 1 to enable Temporal AQ (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal_aq
+
+  
+description:
+set to 1 to enable Temporal AQ (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### zerolatency
+
+  
+description:
+Set 1 to indicate zero latency operation (no reordering delay) (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### nonref_p
+
+  
+description:
+Set this to 1 to enable automatic insertion of non-reference P-frames (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### strict_gop
+
+  
+description:
+Set 1 to minimize GOP-to-GOP rate fluctuations (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### aq-strength
+
+  
+description:
+When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 8  
+
+### cq
+
+  
+description:
+Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (h264_nvenc)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 51  
+default: 0  
+
+### aud
+
+  
+description:
+Use access unit delimiters (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### bluray-compat
+
+  
+description:
+Bluray compatibility workarounds (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### init_qpP
+
+  
+description:
+Initial QP value for P frame (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpB
+
+  
+description:
+Initial QP value for B frame (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpI
+
+  
+description:
+Initial QP value for I frame (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### qp
+
+  
+description:
+Constant quantization parameter rate control method (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### weighted_pred
+
+  
+description:
+Set 1 to enable weighted prediction (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### coder
+
+  
+description:
+Coder type (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* auto
+* cabac
+* cavlc
+* ac
+* vlc
+
+### b_ref_mode
+
+  
+description:
+Use B frames as references (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* each
+* middle
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### dpb_size
+
+  
+description:
+Specifies the DPB size used for encoding (0 means automatic) (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### num_output_buffers
 
@@ -17209,6 +17992,1586 @@ values:
 * 6
 * 6.1
 * 6.2
+
+### preset
+
+  
+description:
+Set the encoding preset (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* slow
+* medium
+* fast
+* hp
+* hq
+* bd
+* ll
+* llhq
+* llhp
+* lossless
+* losslesshp
+
+### profile
+
+  
+description:
+Set the encoding profile (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* baseline
+* main
+* high
+* high444p
+
+### level
+
+  
+description:
+Set the encoding level restriction (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* 1
+* 1.0
+* 1b
+* 1.0b
+* 1.1
+* 1.2
+* 1.3
+* 2
+* 2.0
+* 2.1
+* 2.2
+* 3
+* 3.0
+* 3.1
+* 3.2
+* 4
+* 4.0
+* 4.1
+* 4.2
+* 5
+* 5.0
+* 5.1
+
+### rc
+
+  
+description:
+Override the preset rate-control (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* constqp
+* vbr
+* cbr
+* vbr_minqp
+* ll_2pass_quality
+* ll_2pass_size
+* vbr_2pass
+* cbr_ld_hq
+* cbr_hq
+* vbr_hq
+
+### rc-lookahead
+
+  
+description:
+Number of frames to look ahead for rate-control (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### surfaces
+
+  
+description:
+Number of concurrent surfaces (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 64  
+default: 0  
+
+### cbr
+
+  
+description:
+Use cbr encoding mode (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### 2pass
+
+  
+description:
+Use 2pass encoding mode (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### gpu
+
+  
+description:
+Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* any
+* list
+
+### delay
+
+  
+description:
+Delay frame output by the given amount of frames (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 2147483647  
+
+### no-scenecut
+
+  
+description:
+When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### forced-idr
+
+  
+description:
+If forcing keyframes, force them as IDR frames. (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### b_adapt
+
+  
+description:
+When lookahead is enabled, set this to 0 to disable adaptive B-frame decision (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial-aq
+
+  
+description:
+set to 1 to enable Spatial AQ (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial_aq
+
+  
+description:
+set to 1 to enable Spatial AQ (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal-aq
+
+  
+description:
+set to 1 to enable Temporal AQ (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal_aq
+
+  
+description:
+set to 1 to enable Temporal AQ (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### zerolatency
+
+  
+description:
+Set 1 to indicate zero latency operation (no reordering delay) (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### nonref_p
+
+  
+description:
+Set this to 1 to enable automatic insertion of non-reference P-frames (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### strict_gop
+
+  
+description:
+Set 1 to minimize GOP-to-GOP rate fluctuations (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### aq-strength
+
+  
+description:
+When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 8  
+
+### cq
+
+  
+description:
+Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (nvenc)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 51  
+default: 0  
+
+### aud
+
+  
+description:
+Use access unit delimiters (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### bluray-compat
+
+  
+description:
+Bluray compatibility workarounds (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### init_qpP
+
+  
+description:
+Initial QP value for P frame (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpB
+
+  
+description:
+Initial QP value for B frame (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpI
+
+  
+description:
+Initial QP value for I frame (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### qp
+
+  
+description:
+Constant quantization parameter rate control method (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### weighted_pred
+
+  
+description:
+Set 1 to enable weighted prediction (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### coder
+
+  
+description:
+Coder type (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* auto
+* cabac
+* cavlc
+* ac
+* vlc
+
+### b_ref_mode
+
+  
+description:
+Use B frames as references (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* each
+* middle
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### dpb_size
+
+  
+description:
+Specifies the DPB size used for encoding (0 means automatic) (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### preset
+
+  
+description:
+Set the encoding preset (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* slow
+* medium
+* fast
+* hp
+* hq
+* bd
+* ll
+* llhq
+* llhp
+* lossless
+* losslesshp
+
+### profile
+
+  
+description:
+Set the encoding profile (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* baseline
+* main
+* high
+* high444p
+
+### level
+
+  
+description:
+Set the encoding level restriction (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* 1
+* 1.0
+* 1b
+* 1.0b
+* 1.1
+* 1.2
+* 1.3
+* 2
+* 2.0
+* 2.1
+* 2.2
+* 3
+* 3.0
+* 3.1
+* 3.2
+* 4
+* 4.0
+* 4.1
+* 4.2
+* 5
+* 5.0
+* 5.1
+
+### rc
+
+  
+description:
+Override the preset rate-control (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* constqp
+* vbr
+* cbr
+* vbr_minqp
+* ll_2pass_quality
+* ll_2pass_size
+* vbr_2pass
+* cbr_ld_hq
+* cbr_hq
+* vbr_hq
+
+### rc-lookahead
+
+  
+description:
+Number of frames to look ahead for rate-control (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### surfaces
+
+  
+description:
+Number of concurrent surfaces (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 64  
+default: 0  
+
+### cbr
+
+  
+description:
+Use cbr encoding mode (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### 2pass
+
+  
+description:
+Use 2pass encoding mode (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### gpu
+
+  
+description:
+Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* any
+* list
+
+### delay
+
+  
+description:
+Delay frame output by the given amount of frames (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 2147483647  
+
+### no-scenecut
+
+  
+description:
+When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### forced-idr
+
+  
+description:
+If forcing keyframes, force them as IDR frames. (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### b_adapt
+
+  
+description:
+When lookahead is enabled, set this to 0 to disable adaptive B-frame decision (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial-aq
+
+  
+description:
+set to 1 to enable Spatial AQ (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial_aq
+
+  
+description:
+set to 1 to enable Spatial AQ (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal-aq
+
+  
+description:
+set to 1 to enable Temporal AQ (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal_aq
+
+  
+description:
+set to 1 to enable Temporal AQ (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### zerolatency
+
+  
+description:
+Set 1 to indicate zero latency operation (no reordering delay) (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### nonref_p
+
+  
+description:
+Set this to 1 to enable automatic insertion of non-reference P-frames (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### strict_gop
+
+  
+description:
+Set 1 to minimize GOP-to-GOP rate fluctuations (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### aq-strength
+
+  
+description:
+When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 8  
+
+### cq
+
+  
+description:
+Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (nvenc_h264)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 51  
+default: 0  
+
+### aud
+
+  
+description:
+Use access unit delimiters (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### bluray-compat
+
+  
+description:
+Bluray compatibility workarounds (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### init_qpP
+
+  
+description:
+Initial QP value for P frame (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpB
+
+  
+description:
+Initial QP value for B frame (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpI
+
+  
+description:
+Initial QP value for I frame (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### qp
+
+  
+description:
+Constant quantization parameter rate control method (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### weighted_pred
+
+  
+description:
+Set 1 to enable weighted prediction (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### coder
+
+  
+description:
+Coder type (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* auto
+* cabac
+* cavlc
+* ac
+* vlc
+
+### b_ref_mode
+
+  
+description:
+Use B frames as references (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* each
+* middle
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+
+### dpb_size
+
+  
+description:
+Specifies the DPB size used for encoding (0 means automatic) (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### preset
+
+  
+description:
+Set the encoding preset (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* slow
+* medium
+* fast
+* hp
+* hq
+* bd
+* ll
+* llhq
+* llhp
+* lossless
+* losslesshp
+
+### profile
+
+  
+description:
+Set the encoding profile (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* main10
+* rext
+
+### level
+
+  
+description:
+Set the encoding level restriction (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* 1
+* 1.0
+* 2
+* 2.0
+* 2.1
+* 3
+* 3.0
+* 3.1
+* 4
+* 4.0
+* 4.1
+* 5
+* 5.0
+* 5.1
+* 5.2
+* 6
+* 6.0
+* 6.1
+* 6.2
+
+### tier
+
+  
+description:
+Set the encoding tier (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* high
+
+### rc
+
+  
+description:
+Override the preset rate-control (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* constqp
+* vbr
+* cbr
+* vbr_minqp
+* ll_2pass_quality
+* ll_2pass_size
+* vbr_2pass
+* cbr_ld_hq
+* cbr_hq
+* vbr_hq
+
+### rc-lookahead
+
+  
+description:
+Number of frames to look ahead for rate-control (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### surfaces
+
+  
+description:
+Number of concurrent surfaces (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 64  
+default: 0  
+
+### cbr
+
+  
+description:
+Use cbr encoding mode (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### 2pass
+
+  
+description:
+Use 2pass encoding mode (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### gpu
+
+  
+description:
+Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* any
+* list
+
+### delay
+
+  
+description:
+Delay frame output by the given amount of frames (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 2147483647  
+
+### no-scenecut
+
+  
+description:
+When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### forced-idr
+
+  
+description:
+If forcing keyframes, force them as IDR frames. (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial_aq
+
+  
+description:
+set to 1 to enable Spatial AQ (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial-aq
+
+  
+description:
+set to 1 to enable Spatial AQ (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal_aq
+
+  
+description:
+set to 1 to enable Temporal AQ (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal-aq
+
+  
+description:
+set to 1 to enable Temporal AQ (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### zerolatency
+
+  
+description:
+Set 1 to indicate zero latency operation (no reordering delay) (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### nonref_p
+
+  
+description:
+Set this to 1 to enable automatic insertion of non-reference P-frames (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### strict_gop
+
+  
+description:
+Set 1 to minimize GOP-to-GOP rate fluctuations (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### aq-strength
+
+  
+description:
+When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 8  
+
+### cq
+
+  
+description:
+Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (nvenc_hevc)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 51  
+default: 0  
+
+### aud
+
+  
+description:
+Use access unit delimiters (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### bluray-compat
+
+  
+description:
+Bluray compatibility workarounds (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### init_qpP
+
+  
+description:
+Initial QP value for P frame (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpB
+
+  
+description:
+Initial QP value for B frame (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpI
+
+  
+description:
+Initial QP value for I frame (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### qp
+
+  
+description:
+Constant quantization parameter rate control method (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### weighted_pred
+
+  
+description:
+Set 1 to enable weighted prediction (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### b_ref_mode
+
+  
+description:
+Use B frames as references (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* each
+* middle
+
+### dpb_size
+
+  
+description:
+Specifies the DPB size used for encoding (0 means automatic) (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### preset
+
+  
+description:
+Set the encoding preset (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* slow
+* medium
+* fast
+* hp
+* hq
+* bd
+* ll
+* llhq
+* llhp
+* lossless
+* losslesshp
+
+### profile
+
+  
+description:
+Set the encoding profile (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* main10
+* rext
+
+### level
+
+  
+description:
+Set the encoding level restriction (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* 1
+* 1.0
+* 2
+* 2.0
+* 2.1
+* 3
+* 3.0
+* 3.1
+* 4
+* 4.0
+* 4.1
+* 5
+* 5.0
+* 5.1
+* 5.2
+* 6
+* 6.0
+* 6.1
+* 6.2
+
+### tier
+
+  
+description:
+Set the encoding tier (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* high
+
+### rc
+
+  
+description:
+Override the preset rate-control (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* constqp
+* vbr
+* cbr
+* vbr_minqp
+* ll_2pass_quality
+* ll_2pass_size
+* vbr_2pass
+* cbr_ld_hq
+* cbr_hq
+* vbr_hq
+
+### rc-lookahead
+
+  
+description:
+Number of frames to look ahead for rate-control (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### surfaces
+
+  
+description:
+Number of concurrent surfaces (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 64  
+default: 0  
+
+### cbr
+
+  
+description:
+Use cbr encoding mode (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### 2pass
+
+  
+description:
+Use 2pass encoding mode (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### gpu
+
+  
+description:
+Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* any
+* list
+
+### delay
+
+  
+description:
+Delay frame output by the given amount of frames (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 2147483647  
+
+### no-scenecut
+
+  
+description:
+When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### forced-idr
+
+  
+description:
+If forcing keyframes, force them as IDR frames. (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial_aq
+
+  
+description:
+set to 1 to enable Spatial AQ (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### spatial-aq
+
+  
+description:
+set to 1 to enable Spatial AQ (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal_aq
+
+  
+description:
+set to 1 to enable Temporal AQ (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### temporal-aq
+
+  
+description:
+set to 1 to enable Temporal AQ (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### zerolatency
+
+  
+description:
+Set 1 to indicate zero latency operation (no reordering delay) (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### nonref_p
+
+  
+description:
+Set this to 1 to enable automatic insertion of non-reference P-frames (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### strict_gop
+
+  
+description:
+Set 1 to minimize GOP-to-GOP rate fluctuations (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### aq-strength
+
+  
+description:
+When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 8  
+
+### cq
+
+  
+description:
+Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (hevc_nvenc)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 51  
+default: 0  
+
+### aud
+
+  
+description:
+Use access unit delimiters (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### bluray-compat
+
+  
+description:
+Bluray compatibility workarounds (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### init_qpP
+
+  
+description:
+Initial QP value for P frame (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpB
+
+  
+description:
+Initial QP value for B frame (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### init_qpI
+
+  
+description:
+Initial QP value for I frame (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### qp
+
+  
+description:
+Constant quantization parameter rate control method (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 51  
+default: -1  
+
+### weighted_pred
+
+  
+description:
+Set 1 to enable weighted prediction (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### b_ref_mode
+
+  
+description:
+Use B frames as references (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* each
+* middle
+
+### dpb_size
+
+  
+description:
+Specifies the DPB size used for encoding (0 means automatic) (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### num_output_buffers
 

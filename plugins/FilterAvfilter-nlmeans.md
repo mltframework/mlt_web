@@ -13,7 +13,7 @@ title: nlmeans
 media types:
 Video  
 description: Non-local means denoiser.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

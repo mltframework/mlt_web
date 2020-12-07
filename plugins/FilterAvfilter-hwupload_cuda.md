@@ -13,7 +13,7 @@ title: hwupload_cuda
 media types:
 Video  
 description: Upload a system memory frame to a CUDA device.  
-version: Lavfi6.107.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,4 +28,20 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
 

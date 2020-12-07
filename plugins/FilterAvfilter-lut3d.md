@@ -13,7 +13,7 @@ title: lut3d
 media types:
 Video  
 description: Adjust colors using a 3D LUT.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

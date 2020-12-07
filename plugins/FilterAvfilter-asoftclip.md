@@ -13,7 +13,7 @@ title: asoftclip
 media types:
 Audio  
 description: Audio Soft Clipper.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -49,6 +49,17 @@ minimum: 0.01
 maximum: 3  
 default: 1  
 format: double  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

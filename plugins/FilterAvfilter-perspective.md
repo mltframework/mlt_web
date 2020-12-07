@@ -13,7 +13,7 @@ title: perspective
 media types:
 Video  
 description: Correct the perspective of video.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

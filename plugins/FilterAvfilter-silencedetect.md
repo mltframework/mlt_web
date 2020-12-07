@@ -13,7 +13,7 @@ title: silencedetect
 media types:
 Audio  
 description: Detect silence.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -47,26 +47,18 @@ format: double
   
 description:
 set minimum duration in seconds  
-type: float  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 86400  
-default: 2  
-format: double  
 
 ### av.duration
 
   
 description:
 set minimum duration in seconds  
-type: float  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 86400  
-default: 2  
-format: double  
 
 ### av.mono
 

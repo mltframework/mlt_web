@@ -36,8 +36,11 @@ values:
 * {"HH"=>"MM:SS.S"}
 * {"MM"=>"SS"}
 * {"MM"=>"SS.SS"}
+* {"MM"=>"SS.SSS"}
 * SS
 * SS.S
+* SS.SS
+* SS.SSS
 
 ### start
 

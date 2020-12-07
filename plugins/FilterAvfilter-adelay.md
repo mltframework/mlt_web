@@ -13,7 +13,7 @@ title: adelay
 media types:
 Audio  
 description: Delay one or more audio channels.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -23,6 +23,15 @@ creator: libavfilter maintainers
   
 description:
 set list of delays for each channel  
+type: string  
+readonly: no  
+required: no  
+
+### av.all
+
+  
+description:
+use last available delay for remained channels  
 type: string  
 readonly: no  
 required: no  

@@ -13,10 +13,24 @@ title: derain
 media types:
 Video  
 description: Apply derain filter to the input.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
+
+### av.filter_type
+
+  
+description:
+filter type(derain/dehaze)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* derain
+* dehaze
 
 ### av.dnn_backend
 

@@ -13,7 +13,7 @@ title: sab
 media types:
 Video  
 description: Apply shape adaptive blur.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

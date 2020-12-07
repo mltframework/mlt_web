@@ -13,7 +13,7 @@ title: chromahold
 media types:
 Video  
 description: Turns a certain color range into gray.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

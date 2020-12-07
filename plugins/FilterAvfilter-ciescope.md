@@ -13,7 +13,7 @@ title: ciescope
 media types:
 Video  
 description: Video CIE scope.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -42,6 +42,7 @@ values:
 * rec709
 * uhdtv
 * rec2020
+* dcip3
 
 ### av.cie
 
@@ -82,6 +83,7 @@ values:
 * rec709
 * uhdtv
 * rec2020
+* dcip3
 
 ### av.size
 

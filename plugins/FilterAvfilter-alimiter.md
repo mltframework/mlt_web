@@ -13,7 +13,7 @@ title: alimiter
 media types:
 Audio  
 description: Audio lookahead limiter.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: astats
 media types:
 Audio  
 description: Show time domain statistics about audio frames.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -82,6 +82,8 @@ values:
 * Dynamic_range
 * Zero_crossings
 * Zero_crossings_rate
+* Noise_floor
+* Noise_floor_count
 * Number_of_samples
 * Number_of_NaNs
 * Number_of_Infs
@@ -118,10 +120,23 @@ values:
 * Dynamic_range
 * Zero_crossings
 * Zero_crossings_rate
+* Noise_floor
+* Noise_floor_count
 * Number_of_samples
 * Number_of_NaNs
 * Number_of_Infs
 * Number_of_denormals
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

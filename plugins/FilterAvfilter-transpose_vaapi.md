@@ -13,7 +13,7 @@ title: transpose_vaapi
 media types:
 Video  
 description: VAAPI VPP for transpose  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: GTK+  
+title: GTK+ (*deprecated*)  
 media types:
 Audio  Video  
 description: A wrapper for sdl_preview that makes it easy to embed in GTK+ applications.  

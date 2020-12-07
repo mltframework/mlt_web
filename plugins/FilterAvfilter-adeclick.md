@@ -13,7 +13,7 @@ title: adeclick
 media types:
 Audio  
 description: Remove impulsive noise from input audio.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

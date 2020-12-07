@@ -13,10 +13,22 @@ title: dynaudnorm
 media types:
 Audio  
 description: Dynamic Audio Normalizer.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
+
+### av.framelen
+
+  
+description:
+set the frame length in msec  
+type: integer  
+readonly: no  
+required: no  
+minimum: 10  
+maximum: 8000  
+default: 500  
 
 ### av.f
 
@@ -30,6 +42,18 @@ minimum: 10
 maximum: 8000  
 default: 500  
 
+### av.gausssize
+
+  
+description:
+set the filter size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 3  
+maximum: 301  
+default: 31  
+
 ### av.g
 
   
@@ -42,6 +66,19 @@ minimum: 3
 maximum: 301  
 default: 31  
 
+### av.peak
+
+  
+description:
+set the peak value  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.95  
+format: double  
+
 ### av.p
 
   
@@ -53,6 +90,19 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0.95  
+format: double  
+
+### av.maxgain
+
+  
+description:
+set the max amplification  
+type: float  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 100  
+default: 10  
 format: double  
 
 ### av.m
@@ -68,6 +118,19 @@ maximum: 100
 default: 10  
 format: double  
 
+### av.targetrms
+
+  
+description:
+set the target RMS  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
 ### av.r
 
   
@@ -81,11 +144,29 @@ maximum: 1
 default: 0  
 format: double  
 
+### av.coupling
+
+  
+description:
+set channel coupling  
+type: string  
+readonly: no  
+required: no  
+
 ### av.n
 
   
 description:
 set channel coupling  
+type: string  
+readonly: no  
+required: no  
+
+### av.correctdc
+
+  
+description:
+set DC correction  
 type: string  
 readonly: no  
 required: no  
@@ -99,6 +180,15 @@ type: string
 readonly: no  
 required: no  
 
+### av.altboundary
+
+  
+description:
+set alternative boundary mode  
+type: string  
+readonly: no  
+required: no  
+
 ### av.b
 
   
@@ -107,6 +197,19 @@ set alternative boundary mode
 type: string  
 readonly: no  
 required: no  
+
+### av.compress
+
+  
+description:
+set the compress factor  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 30  
+default: 0  
+format: double  
 
 ### av.s
 
@@ -118,6 +221,32 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 30  
+default: 0  
+format: double  
+
+### av.threshold
+
+  
+description:
+set the threshold value  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.t
+
+  
+description:
+set the threshold value  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
 default: 0  
 format: double  
 

@@ -13,7 +13,7 @@ title: colorbalance
 media types:
 Video  
 description: Adjust the color balance.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -29,7 +29,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.gs
 
@@ -42,7 +41,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.bs
 
@@ -55,7 +53,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.rm
 
@@ -68,7 +65,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.gm
 
@@ -81,7 +77,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.bm
 
@@ -94,7 +89,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.rh
 
@@ -107,7 +101,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.gh
 
@@ -120,7 +113,6 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
 
 ### av.bh
 
@@ -133,7 +125,15 @@ required: no
 minimum: -1  
 maximum: 1  
 default: 0  
-format: double  
+
+### av.pl
+
+  
+description:
+preserve lightness  
+type: string  
+readonly: no  
+required: no  
 
 ### av.threads
 

@@ -13,7 +13,7 @@ title: shuffleplanes
 media types:
 Video  
 description: Shuffle video planes.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -27,7 +27,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 4  
+maximum: 3  
 default: 0  
 
 ### av.map1
@@ -39,7 +39,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 4  
+maximum: 3  
 default: 1  
 
 ### av.map2
@@ -51,7 +51,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 4  
+maximum: 3  
 default: 2  
 
 ### av.map3
@@ -63,7 +63,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 4  
+maximum: 3  
 default: 3  
 
 ### position

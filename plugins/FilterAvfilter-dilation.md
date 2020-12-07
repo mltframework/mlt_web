@@ -13,7 +13,7 @@ title: dilation
 media types:
 Video  
 description: Apply dilation effect.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

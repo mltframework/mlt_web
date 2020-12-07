@@ -13,7 +13,7 @@ title: scale_vaapi
 media types:
 Video  
 description: Scale to/from VAAPI surfaces.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -116,6 +116,33 @@ Output chroma sample location
 type: string  
 readonly: no  
 required: no  
+
+### av.force_original_aspect_ratio
+
+  
+description:
+decrease or increase w/h if necessary to keep the original AR  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disable
+* decrease
+* increase
+
+### av.force_divisible_by
+
+  
+description:
+enforce that the output resolution is divisible by a defined integer when force_original_aspect_ratio is used  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 256  
+default: 1  
 
 ### position
 

@@ -13,7 +13,7 @@ title: lumakey
 media types:
 Video  
 description: Turns a certain luma into transparency.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -23,36 +23,39 @@ creator: libavfilter maintainers
   
 description:
 set the threshold value  
-type: integer  
+type: float  
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 65535  
+maximum: 1  
 default: 0  
+format: double  
 
 ### av.tolerance
 
   
 description:
 set the tolerance value  
-type: integer  
+type: float  
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 65535  
-default: 1  
+maximum: 1  
+default: 0.01  
+format: double  
 
 ### av.softness
 
   
 description:
 set the softness value  
-type: integer  
+type: float  
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 65535  
+maximum: 1  
 default: 0  
+format: double  
 
 ### av.threads
 

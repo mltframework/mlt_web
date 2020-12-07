@@ -13,7 +13,7 @@ title: waveform
 media types:
 Video  
 description: Video waveform monitor.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -192,6 +192,7 @@ values:
 * color
 * acolor
 * xflat
+* yflat
 
 ### av.f
 
@@ -211,6 +212,7 @@ values:
 * color
 * acolor
 * xflat
+* yflat
 
 ### av.graticule
 
@@ -226,6 +228,7 @@ values:
 * none
 * green
 * orange
+* invert
 
 ### av.g
 
@@ -241,6 +244,7 @@ values:
 * none
 * green
 * orange
+* invert
 
 ### av.opacity
 
@@ -347,6 +351,54 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0.75  
+
+### av.tint0
+
+  
+description:
+set 1st tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
+### av.t0
+
+  
+description:
+set 1st tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
+### av.tint1
+
+  
+description:
+set 2nd tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
+### av.t1
+
+  
+description:
+set 2nd tint  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
 
 ### av.threads
 

@@ -13,7 +13,7 @@ title: setrange
 media types:
 Video  
 description: Force color range for the output video frame.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

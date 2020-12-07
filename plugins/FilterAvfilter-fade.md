@@ -13,7 +13,7 @@ title: fade
 media types:
 Video  
 description: Fade in/out input video.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -22,21 +22,29 @@ creator: libavfilter maintainers
 
   
 description:
-&#39;in&#39; or &#39;out&#39; for fade-in/fade-out  
+set the fade direction  
 type: string  
 readonly: no  
 required: no  
 format: integer or keyword  
+values:  
+
+* in
+* out
 
 ### av.t
 
   
 description:
-&#39;in&#39; or &#39;out&#39; for fade-in/fade-out  
+set the fade direction  
 type: string  
 readonly: no  
 required: no  
 format: integer or keyword  
+values:  
+
+* in
+* out
 
 ### av.start_frame
 
@@ -68,7 +76,7 @@ Number of frames to which the effect should be applied.
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
+minimum: 1  
 default: 25  
 
 ### av.n
@@ -79,7 +87,7 @@ Number of frames to which the effect should be applied.
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
+minimum: 1  
 default: 25  
 
 ### av.alpha

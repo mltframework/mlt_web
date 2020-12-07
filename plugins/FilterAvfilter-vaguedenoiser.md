@@ -13,7 +13,7 @@ title: vaguedenoiser
 media types:
 Video  
 description: Apply a Wavelet based Denoiser.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -80,6 +80,20 @@ required: no
 minimum: 0  
 maximum: 15  
 default: 15  
+
+### av.type
+
+  
+description:
+set threshold type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* universal
+* bayes
 
 ### position
 

@@ -13,7 +13,7 @@ title: dctdnoiz
 media types:
 Video  
 description: Denoise frames using 2D DCT.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

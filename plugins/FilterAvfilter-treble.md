@@ -13,7 +13,7 @@ title: treble
 media types:
 Audio  
 description: Boost or cut upper frequencies.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -170,6 +170,24 @@ required: no
   
 description:
 set channels to filter  
+type: string  
+readonly: no  
+required: no  
+
+### av.normalize
+
+  
+description:
+normalize coefficients  
+type: string  
+readonly: no  
+required: no  
+
+### av.n
+
+  
+description:
+normalize coefficients  
 type: string  
 readonly: no  
 required: no  

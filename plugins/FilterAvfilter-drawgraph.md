@@ -13,7 +13,7 @@ title: drawgraph
 media types:
 Video  
 description: Draw a graph using input video metadata.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -177,6 +177,24 @@ required: no
   
 description:
 set graph size  
+type: string  
+readonly: no  
+required: no  
+
+### av.rate
+
+  
+description:
+set video rate  
+type: string  
+readonly: no  
+required: no  
+
+### av.r
+
+  
+description:
+set video rate  
 type: string  
 readonly: no  
 required: no  

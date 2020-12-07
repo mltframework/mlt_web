@@ -13,7 +13,7 @@ title: aemphasis
 media types:
 Audio  
 description: Audio emphasis.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

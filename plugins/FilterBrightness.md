@@ -13,22 +13,12 @@ title: Brightness
 media types:
 Video  
 description: Adjust the brightness and opacity of the image.  
-version: 3  
+version: 4  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Parameters
-
-### argument
-
-title: Start level    
-type: float  
-readonly: no  
-required: no  
-minimum: 0.0  
-maximum: 15.0  
-default: 1.0  
 
 ### start
 
@@ -69,4 +59,15 @@ readonly: no
 required: no  
 minimum: -1  
 maximum: 1  
+
+### threads
+
+title: Thread count    
+description:
+Use 0 to use the slice count, which defaults to the number of detected CPUs. Otherwise, set the number of threads to use up to the slice count.  
+type:   
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 

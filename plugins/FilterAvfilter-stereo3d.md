@@ -13,7 +13,7 @@ title: stereo3d
 media types:
 Video  
 description: Convert video stereoscopic 3D view.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -30,9 +30,13 @@ format: integer or keyword
 values:  
 
 * ab2l
+* tb2l
 * ab2r
+* tb2r
 * abl
+* tbl
 * abr
+* tbr
 * al
 * ar
 * sbs2l
@@ -56,9 +60,13 @@ format: integer or keyword
 values:  
 
 * ab2l
+* tb2l
 * ab2r
+* tb2r
 * abl
+* tbl
 * abr
+* tbr
 * agmc
 * agmd
 * agmg

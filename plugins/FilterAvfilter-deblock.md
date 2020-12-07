@@ -13,7 +13,7 @@ title: deblock
 media types:
 Video  
 description: Deblock video.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -13,7 +13,7 @@ title: bbox
 media types:
 Video  
 description: Compute bounding box for each frame.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

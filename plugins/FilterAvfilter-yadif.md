@@ -13,7 +13,7 @@ title: yadif
 media types:
 Video  
 description: Deinterlace the input image.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

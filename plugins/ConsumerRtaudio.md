@@ -13,9 +13,9 @@ title: RtAudio
 media types:
 Audio  
 description: RtAudio provides native, realtime audio output across Linux, Macintosh OS X, Windows, and some BSD operating systems.  
-version: 1  
+version: 2  
 creator: Gary P. Scavone  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: LGPLv2.1  
 URL: [http://www.music.mcgill.ca/~gary/rtaudio/](http://www.music.mcgill.ca/~gary/rtaudio/)  
 
@@ -73,4 +73,13 @@ minimum: 0
 maximum: 1  
 default: 0  
 widget: checkbox  
+
+### video_delay
+
+title: Video delay    
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+unit: milliseconds  
 

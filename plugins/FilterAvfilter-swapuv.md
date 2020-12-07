@@ -13,7 +13,7 @@ title: swapuv
 media types:
 Video  
 description: Swap U and V components.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

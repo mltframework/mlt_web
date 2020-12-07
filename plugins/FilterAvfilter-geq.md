@@ -13,7 +13,7 @@ title: geq
 media types:
 Video  
 description: Apply generic equation to each pixel.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -143,6 +143,38 @@ set blue expression
 type: string  
 readonly: no  
 required: no  
+
+### av.interpolation
+
+  
+description:
+set interpolation method  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* nearest
+* n
+* bilinear
+* b
+
+### av.i
+
+  
+description:
+set interpolation method  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* nearest
+* n
+* bilinear
+* b
 
 ### av.threads
 

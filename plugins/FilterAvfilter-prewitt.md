@@ -13,7 +13,7 @@ title: prewitt
 media types:
 Video  
 description: Apply prewitt operator.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters

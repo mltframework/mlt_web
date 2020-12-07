@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Linear Systems SDI  
+title: Linear Systems SDI (*deprecated*)  
 media types:
 Audio  Video  
 description:   

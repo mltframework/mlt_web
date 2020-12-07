@@ -13,7 +13,7 @@ title: allpass
 media types:
 Audio  
 description: Apply a two-pole all-pass filter.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -147,6 +147,48 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
+
+### av.normalize
+
+  
+description:
+normalize coefficients  
+type: string  
+readonly: no  
+required: no  
+
+### av.n
+
+  
+description:
+normalize coefficients  
+type: string  
+readonly: no  
+required: no  
+
+### av.order
+
+  
+description:
+set filter order  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 2  
+default: 2  
+
+### av.o
+
+  
+description:
+set filter order  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 2  
+default: 2  
 
 ### av.threads
 

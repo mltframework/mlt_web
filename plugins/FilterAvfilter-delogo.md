@@ -13,7 +13,7 @@ title: delogo
 media types:
 Video  
 description: Remove logo from input video.  
-version: Lavfi7.57.100  
+version: Lavfi7.85.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -23,44 +23,40 @@ creator: libavfilter maintainers
   
 description:
 set logo x position  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: -1  
-default: -1  
+default: '-1'  
 
 ### av.y
 
   
 description:
 set logo y position  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: -1  
-default: -1  
+default: '-1'  
 
 ### av.w
 
   
 description:
 set logo width  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: -1  
-default: -1  
+default: '-1'  
 
 ### av.h
 
   
 description:
 set logo height  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: -1  
-default: -1  
+default: '-1'  
 
 ### av.show
 
