@@ -9,13 +9,24 @@ title: Road Map
 
 * link and chain for timing effects
 * remove deprecated stuff including `mlt_geometry` (convert anything affected to `mlt_rect`)
+* remove the following modules:
+  - dv
+  - gtk2
+  - kino
+  - linsys
+  - lumas
+  - motion_est?
+  - sdl? (depends on Flowblade)
+  - swfdec
+  - videostab
+* merge vmfx module into plus
+* rename `opengl` module to `movit`
 * add const and cleanup constructors in C++ API
 * rename `mlt_service_type` enums to be like `mlt_service_...`
 * rename `mlt_image_rgb24a` as `mlt_image_rgba`
 * remove `mlt_image_opengl`
 * rename `mlt_image_glsl` as `mlt_image_movit`
 * rename `mlt_image_glsl_texture` as `mlt_image_opengl_texture`
-* rename `opengl` module to `movit`
 * make structures in framework private:
   - `mlt_animation_item_s`
   - `mlt_audio_s`
@@ -40,9 +51,15 @@ title: Road Map
 * collapse `mlt_tractor`, `mlt_multitrack`, and `mlt_field` APIs?
 * tighten the property namespace (inconsistent service name prefixing, hiding, and putting things on `mlt_frame`)
 * add `mlt_rational` type and property functions, and convert things like aspect ratios and frame rates to use it
+* add a `mlt_image` class
+* add 16-byte alignment for FFmpeg including aligned image plane and audio channel buffers
+* change `mlt_frame_get_image()` to take `mlt_image` instead of multiple parameters (as well as get_image in all services)
+* change `mlt_frame_get_audio()` to take `mlt_audio` instead of multiple parameters (as well as get_audio in all services)
 
 ### Finishing Current Features
 
+* add ability to have relative audio and video index in avformat producer along with a fail over to the first stream of
+  respective type when invalid
 * YAML Tiny docs for all services 
 * convert most services and properties to `mlt_animation`
 * add more usage of `mlt_slices`
@@ -52,7 +69,6 @@ title: Road Map
 * document expectations in each type of service (e.g. meta properties, frame-threading)
 * improve `mlt_consumer:real_time` > 1
 * try to integrate `mlt_animation` with avfilter `sendcmd`
-* add OpenTimelineIO producer and consumer
 * more text effects like outline and blur (text and backround) in qtext html and letter spacing in plain text
 * cleanup the property transfer mess in `mlt_tractor.c`
 * fix the issue that necessitates `mlt_multitrack.c:resize_service_caches()`
@@ -72,8 +88,9 @@ title: Road Map
   * ensures scene-referred linear color image processing
   * compatible with avfilter, OpenCV, and Qt high bit depth
 * determine new `mlt_image_formats` needed for new processing framework
+* integrate OpenColorIO
+* add OpenTimelineIO producer and consumer
 * automate and test arm64 builds
-* automate, document, and test builds for iOS and Android
 * add an abstract playback consumer that encompasses the logic of `sdl2` but only fires events and does not integrate
   any technologies outside of MLT
 * add support for timed text
