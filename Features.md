@@ -7,7 +7,7 @@ permalink: /features/
 
 #### Framework
 
--   Small, clean API with minimal dependencies (POSIX and C99)
+-   Small, clean API with minimal dependencies (POSIX and C11)
 -   Modular design for the addition of new components
 -   Simple integration with other multimedia libraries and applications
 -   Supports the authoring and manipulation (ala DOM) of time-based

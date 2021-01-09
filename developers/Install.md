@@ -66,7 +66,7 @@ documented in their parent.
 
 The MLT core is dependent on:
 
--   a C99 compliant C compiler
+-   a C11 compliant C compiler
 -   posix threading (pthread)
 -   standard posix libraries (libc)
 
