@@ -55,6 +55,8 @@ title: Road Map
 * add 16-byte alignment for FFmpeg including aligned image plane and audio channel buffers
 * change `mlt_frame_get_image()` to take `mlt_image` instead of multiple parameters (as well as get_image in all services)
 * change `mlt_frame_get_audio()` to take `mlt_audio` instead of multiple parameters (as well as get_audio in all services)
+* remove the `height += 1` in `mlt_image_format_size()`
+* allow building jackrack module in a ladspa-only mode
 
 ### Finishing Current Features
 
