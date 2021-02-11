@@ -79,6 +79,8 @@ that were using mlt_geometry have not yet been updated. There is still
 much work to do....
 
 Services supporting new property animation:
+(NOTE: This list is old and more have been converted. Version 7 of MLT adds a new `animation` parameter attribute
+to indicate parameters supporting it and will replace this list.)
 
 * core/filter_brightness
 * core/filter_gamma
@@ -118,13 +120,8 @@ Services supporting new property animation:
 Services using old mlt_geometry API:
 
 * core/transition_composite
-* frei0r
-* gtk2/producer_pango
+* gdk/producer_pango
 * motion_est/filter_autotrack_rectangle
 * motion_est/filter_crop_detect
 * motion_est/filter_motion_est
-* oldfilm/filter_vignette
 * plus/transition_affine
-* videostab/filter_videostab
-* videostab/filter_videostab2
-* vmfx/filter_shape
