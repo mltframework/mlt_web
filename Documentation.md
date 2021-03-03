@@ -32,6 +32,7 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 * [XML Authoring Examples]({{ "/docs/authoringexamples/" | prepend: site.baseurl }})
 * [Scripting Language Bindings]({{ "/docs/scriptbindings/" | prepend: site.baseurl }})
 * [Contributing]({{ "/docs/contributing/" | prepend: site.baseurl }})
+* [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.baseurl }})
 
 *external:*
 
