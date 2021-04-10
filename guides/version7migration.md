@@ -13,15 +13,17 @@ from v7 to master just prior to release.
 
 ## Framework
 
-- TODO: document `mlt_luma_map` - see `lumas` below.
-- `mlt_events` has changed:
+- Since luma file generation was removed, see documentation for `mlt_luma_map`.
+- `mlt_events` has changed majorly:
   - `mlt_transmitter` was removed as being unnecessary
   - `mlt_event_data` was added and replaces the variable arguments to `mlt_events_fire()` and `mlt_listener()`.
+
 - `mlt_image_rgb24a` is renamed to `mlt_image_rgba`
 - `mlt_image_rgb24` is renamed to `mlt_image_rgb`
 - `mlt_image_glsl` is renamed to `mlt_image_movit`
 - `mlt_image_glsl_texture` is renamed to `mlt_image_opengl_texture`
 - `mlt_image_opengl` is removed
+
 - `mlt_geometry` is removed
 
 ## Modules
@@ -42,11 +44,14 @@ The following modules have been removed. Most of them were previous indicated as
   This means there will no longer be files generated, but the old file names like `%luma01.pgm` are still supported and
   generated dynamically and adapt to the `mlt_profile` resolution.
 
-The following services have been removed as no longer relevant:
+The `opengl` module is renamed to `movit` but the names of the services are the same.
+The service of the `vmfx` module were moved into `plus` but the names of the services are the same.
+
+The following services have been removed:
 - `core/data_feed`
 - `core/data_show`
 - `core/region` transition and filter
 
-The `opengl` module is renamed to `movit` but the names of the services are the same.
+## Other
 
-
+- The build system has moved completely to CMake. Read the top-level `CMakeLists.txt` for the options.

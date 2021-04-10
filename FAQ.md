@@ -39,33 +39,38 @@ codec (B) pictures. For example,
 It can make a lot of sense to use these options when playing but not when
 encoding/rendering.
 
-#### Why does VDPAU not seem to offer the same performance improvement as other media players?
+#### Why does hardware accellerated decoding not seem to offer the same performance improvement as other media players?
 
-First of all, VDPAU is disabled by default. If you believe your build of
-MLT includes support for VDPAU verify that it is enabled and working
+First of all, `hwaccel` is disabled by default. If you believe your build of
+MLT includes support for `hwaccel` verify that it is enabled and working
 by playing some H.264 file with melt using:
-`melt -debug some-h264.mp4 2>&1 | grep vdpau`
+`melt -verbose avformat:some-h264.mp4\\?hwaccel=vaapi 2>&1 | grep -i va`
 
-If there are no messages, it is not using VDPAU.
+and read the messages to see if it is working.
 
-Secondly, MLT is not highly optimized for X11 playback, which is what
-VDPAU is designed for. Rather, MLT is often used for SDI output,
+Secondly, MLT is not highly optimized for desktop playback, which is what
+`hwaccel` is designed for. Rather, MLT is often used for SDI output,
 encoding, streaming, and rendering complex multitrack compositions.
 Also, it uses many and various open source plugins and libraries that
 are not optimized for processing on the GPU. Therefore, MLT must pull
 decoded images back into system memory instead of just leaving it in the
-video memory for display with X11, and this memory transfer is a major
+video memory for display, and this memory transfer is a major
 bottleneck. It only seems to offer a benefit when the CPU is not very
 good at H.264 decoding because it is older or designed for low power
-consumption. Perhaps when a substantial set of essential filters and
-transitions are ported to some GPU technology such as GLSL or !OpenCL
-then VDPAU will show more benefit.
+consumption.
 
-#### Is VA-API supported?
+#### Is VA-API decoding supported?
 
-No, see the comments above about VDPAU performance. When more filters
-and transitions use the GPU, then it probably makes sense to integrate
-VA-API.
+Yes, as of version 6.26.0. To use it, you must add a query string to the file name using an escaped question mark:
+`\?hwaccel=vaapi`
+It defaults to the device `/dev/dri/renderD128`. If you need to use another device add another query string parameter:
+`\?hwaccel=vaapi&hwaccel_device=/dev/dri/renderD129`
+If you are using `melt` at the command line there are two things. Melt needs something with a colon in front of the
+file name to prevent interpreting the string as a property setter. You can use either `file:` or `avformat:`.
+Secondly, some characters have special meaning in a shell such as backslash and ampersand. These may need to be
+escaped (typically backslash) or the string single-quoted. Examples:
+`melt -verbose 'file:some.mp4\?hwaccel=vaapi`
+`melt -verbose file:$HOME/Videos/some.mp4\\?hwaccel=vaapi`
 
 #### How does the transition filter work?
 
