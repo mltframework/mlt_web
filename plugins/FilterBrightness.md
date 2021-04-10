@@ -22,7 +22,7 @@ license: LGPLv2.1
 
 ### start
 
-title: Start level    
+title: Start level (*deprecated*)    
 type: float  
 readonly: no  
 required: no  
@@ -30,7 +30,7 @@ minimum: 0.0
 maximum: 15.0  
 default: 1.0  
 
-### end
+### end (*deprecated*)
 
 title: End level    
 type: float  

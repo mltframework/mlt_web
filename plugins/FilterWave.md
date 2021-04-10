@@ -20,7 +20,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### start
+### start (*deprecated*)
 
 title: Amplitude    
 description:
@@ -31,7 +31,7 @@ required: no
 minimum: 1  
 default: 10  
 
-### end
+### end (*deprecated*)
 
 title: End amplitude    
 type: integer  

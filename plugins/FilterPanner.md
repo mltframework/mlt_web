@@ -24,7 +24,7 @@ Only handles up to 6 channels. Needs more work balance for surround and other ch
 
 ## Parameters
 
-### start
+### start (*deprecated*)
 
 title: Start    
 description:
@@ -38,7 +38,7 @@ required: no
 minimum: 0  
 maximum: 1  
 
-### end
+### end (*deprecated*)
 
 title: End    
 description:

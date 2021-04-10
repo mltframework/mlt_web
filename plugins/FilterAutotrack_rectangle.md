@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Autotrack Rectangle  
+title: Autotrack Rectangle (*deprecated*)  
 media types:
 Video  
 description:   

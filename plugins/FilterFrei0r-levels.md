@@ -13,7 +13,7 @@ title: Levels
 media types:
 Video  
 description: Adjust luminance or color channel intensity  
-version: 0.3  
+version: 0.4  
 creator: Maksim Golovkin  
 
 ## Parameters
@@ -22,13 +22,13 @@ creator: Maksim Golovkin
 
 title: Channel    
 description:
-Channel to adjust levels  
+Channel to adjust levels. 0%=R, 10%=G, 20%=B, 30%=Luma  
 type: float  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 0.3  
 widget: spinner  
 
 ### 1
@@ -113,7 +113,7 @@ widget: checkbox
 
 title: Histogram position    
 description:
-Histogram position  
+Histogram position. 0%=TL, 10%=TR, 20%=BL, 30%=BR  
 type: float  
 readonly: no  
 required: no  

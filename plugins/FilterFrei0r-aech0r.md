@@ -20,35 +20,22 @@ creator: d-j-a-y & vloop
 
 ### 0
 
-title: Fade    
+title: Fade Factor    
 description:
-influence  
+Disappearance rate of the echo  
 type: float  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.03125  
+default: 0.15  
 widget: spinner  
 
 ### 1
 
-title: Fade period    
-description:
-influence grain  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0.0  
-widget: spinner  
-
-### 2
-
 title: Direction    
 description:
-Lighter or darker  
+Darker or Brighter echo  
 type: boolean  
 readonly: no  
 required: no  
@@ -57,68 +44,55 @@ maximum: 1
 default: 0  
 widget: checkbox  
 
-### 3
+### 2
 
-title: Plans fade    
+title: Keep RED    
 description:
-RGB  
-type: float  
+Influence on Red channel  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.0  
-widget: spinner  
+default: 1  
+widget: checkbox  
+
+### 3
+
+title: Keep GREEN    
+description:
+Influence on Green channel  
+type: boolean  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: checkbox  
 
 ### 4
 
-title: Fade R    
+title: Keep BLUE    
 description:
-influence  
-type: float  
+Influence on Blue channel  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.0  
-widget: spinner  
+default: 0  
+widget: checkbox  
 
 ### 5
 
-title: Fade G    
+title: Strobe period    
 description:
-influence  
+Rate of the stroboscope: from 0 to 8 frames  
 type: float  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.0  
-widget: spinner  
-
-### 6
-
-title: Fade B    
-description:
-influence  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0.0  
-widget: spinner  
-
-### 7
-
-title: Plans comparaison    
-description:
-RGB  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0.0  
+default: 0  
 widget: spinner  
 

@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Regionalize  
+title: Regionalize (*deprecated*)  
 media types:
 Video  
 description: Apply one or more filters to a region of the video image. The region can be shaped as well using the alpha channel of another producer.  

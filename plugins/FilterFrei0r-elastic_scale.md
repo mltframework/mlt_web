@@ -12,7 +12,7 @@ category: plugin
 title: Elastic scale filter  
 media types:
 Video  
-description: This is a frei0r filter which allows to scale video footage non-linearly.  
+description: This is a frei0r filter which allows one to scale video footage non-linearly.  
 version: 0.2  
 creator: Matthias Schnoell  
 

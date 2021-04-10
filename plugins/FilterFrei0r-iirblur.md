@@ -13,7 +13,7 @@ title: IIR blur
 media types:
 Video  
 description: Three types of fast IIR blurring  
-version: 0.1  
+version: 0.2  
 creator: Marko Cebokli  
 
 ## Parameters

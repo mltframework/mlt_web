@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Motion Estimation  
+title: Motion Estimation (*deprecated*)  
 media types:
 Video  
 description:   

@@ -171,7 +171,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 12
@@ -184,7 +184,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 13
@@ -197,7 +197,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 14

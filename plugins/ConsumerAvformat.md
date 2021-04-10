@@ -22,7 +22,7 @@ URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)
 
 ## Notes
 
-The avformat consumer uses the FFmpeg/libav libraries to encode to a file or network stream. You can get a lot of information about how to encode with FFmpeg all over the web including FFmpeg/libav&#39;s web site. With melt, you simply need to add &quot;-consumer avformat:output.file&quot; to the command line followed by the encoding parameters by translating ffmpeg&#39;s &#39;-option value&#39; syntax to melt&#39;s &#39;option=value&#39; syntax. Not all ffmpeg options are supported. Some are very specific to avconv/ffmpeg, the command line utility, and not an &quot;AVOption&quot; used in the libraries. In some cases, there are ffmpeg options that are not AVOptions but which closely resemble an existing MLT property. In that case, MLT supports the ffmpeg option name. For example, ffmpeg&#39;s &quot;-ac&quot; is equivalent to the MLT &quot;channels&quot; property. Therefore, the avformat consumer also supports the &quot;ac&quot; property. Complete details are below. Please note that the exact options depend on the version of libavformat and libavcodec on your system. The following is based on FFmpeg v4.0.
+The avformat consumer uses the FFmpeg libraries to encode to a file or network stream. You can get a lot of information about how to encode with FFmpeg all over the web including FFmpeg&#39;s web site. With melt, you simply need to add &quot;-consumer avformat:output.file&quot; to the command line followed by the encoding parameters by translating ffmpeg&#39;s &#39;-option value&#39; syntax to melt&#39;s &#39;option=value&#39; syntax. Not all ffmpeg options are supported. Some are very specific to avconv/ffmpeg, the command line utility, and not an &quot;AVOption&quot; used in the libraries. In some cases, there are ffmpeg options that are not AVOptions but which closely resemble an existing MLT property. In that case, MLT supports the ffmpeg option name. For example, ffmpeg&#39;s &quot;-ac&quot; is equivalent to the MLT &quot;channels&quot; property. Therefore, the avformat consumer also supports the &quot;ac&quot; property. Complete details are below. Please note that the exact options depend on the version of libavformat and libavcodec on your system. The following is based on FFmpeg v4.0.
 
 ## Parameters
 
@@ -15504,6 +15504,311 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### cpu-used
+
+  
+description:
+Quality/Speed ratio modifier (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 8  
+default: 1  
+
+### auto-alt-ref
+
+  
+description:
+Enable use of alternate reference frames (2-pass only) (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 2  
+default: -1  
+
+### lag-in-frames
+
+  
+description:
+Number of frames to look ahead at for alternate reference frame selection (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
+### arnr-max-frames
+
+  
+description:
+altref noise reduction max frame count (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
+### arnr-strength
+
+  
+description:
+altref noise reduction filter strength (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 6  
+default: -1  
+
+### aq-mode
+
+  
+description:
+adaptive quantization mode (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* variance
+* complexity
+* cyclic
+
+### error-resilience
+
+  
+description:
+Error resilience configuration (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* default
+
+### crf
+
+  
+description:
+Select the quality for constant quality mode (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 63  
+default: -1  
+
+### static-thresh
+
+  
+description:
+A change threshold on blocks below which they will be skipped by the encoder (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### drop-threshold
+
+  
+description:
+Frame drop threshold (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### denoise-noise-level
+
+  
+description:
+Amount of noise to be removed (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
+### denoise-block-size
+
+  
+description:
+Denoise block size  (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
+### undershoot-pct
+
+  
+description:
+Datarate undershoot (min) target (%) (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 100  
+default: -1  
+
+### overshoot-pct
+
+  
+description:
+Datarate overshoot (max) target (%) (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1000  
+default: -1  
+
+### minsection-pct
+
+  
+description:
+GOP min bitrate (% of target) (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 100  
+default: -1  
+
+### maxsection-pct
+
+  
+description:
+GOP max bitrate (% of target) (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 5000  
+default: -1  
+
+### frame-parallel
+
+  
+description:
+Enable frame parallel decodability features (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### tiles
+
+  
+description:
+Tile columns x rows (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### tile-columns
+
+  
+description:
+Log2 of number of tile columns to use (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 6  
+default: -1  
+
+### tile-rows
+
+  
+description:
+Log2 of number of tile rows to use (libaom-av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 6  
+default: -1  
+
+### row-mt
+
+  
+description:
+Enable row based multi-threading (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-cdef
+
+  
+description:
+Enable CDEF filtering (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-global-motion
+
+  
+description:
+Enable global motion (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-intrabc
+
+  
+description:
+Enable intra block copy prediction mode (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-restoration
+
+  
+description:
+Enable Loop Restoration filtering (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### usage
+
+  
+description:
+Quality and compression efficiency vs speed trade-off (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* good
+* realtime
+
+### tune
+
+  
+description:
+The metric that the encoder tunes for. Automatically chosen by the encoder by default (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* psnr
+* ssim
 
 ### reservoir
 

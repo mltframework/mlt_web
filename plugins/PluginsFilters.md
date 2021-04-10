@@ -9,7 +9,7 @@ wrap_title: Filter Plugins
 * [audiospectrum](../FilterAudiospectrum/): Audio Spectrum Filter
 * [audiowave](../FilterAudiowave/): Audio Waveform
 * [audiowaveform](../FilterAudiowaveform/): Audio Waveform Filter
-* [autotrack_rectangle](../FilterAutotrack_rectangle/): Autotrack Rectangle
+* [autotrack_rectangle](../FilterAutotrack_rectangle/): Autotrack Rectangle (*deprecated*)
 * [avfilter.abench](../FilterAvfilter-abench/): abench
 * [avfilter.acompressor](../FilterAvfilter-acompressor/): acompressor
 * [avfilter.acontrast](../FilterAvfilter-acontrast/): acontrast
@@ -260,7 +260,7 @@ wrap_title: Filter Plugins
 * [crop](../FilterCrop/): Crop
 * [crop_detect](../FilterCrop_detect/): 
 * [dance](../FilterDance/): Dance
-* [data_show](../FilterData_show/): Template
+* [data_show](../FilterData_show/): Template (*deprecated*)
 * [deshake](../FilterDeshake/): Vid.Stab Deshake
 * [dust](../FilterDust/): Dust
 * [dynamic_loudness](../FilterDynamic_loudness/): Dynamic Loudness
@@ -736,7 +736,7 @@ wrap_title: Filter Plugins
 * [mask_start](../FilterMask_start/): Setup a filter mask
 * [mirror](../FilterMirror/): Mirror
 * [mono](../FilterMono/): Mixdown
-* [motion_est](../FilterMotion_est/): Motion Estimation
+* [motion_est](../FilterMotion_est/): Motion Estimation (*deprecated*)
 * [movit.blur](../FilterMovit-blur/): Blur (GLSL)
 * [movit.diffusion](../FilterMovit-diffusion/): Diffusion (GLSL)
 * [movit.flip](../FilterMovit-flip/): Flip (GLSL)
@@ -757,7 +757,7 @@ wrap_title: Filter Plugins
 * [qtcrop](../FilterQtcrop/): Crop by padding
 * [qtext](../FilterQtext/): QText
 * [rbpitch](../FilterRbpitch/): Rubberband Pitch
-* [region](../FilterRegion/): Regionalize
+* [region](../FilterRegion/): Regionalize (*deprecated*)
 * [resample](../FilterResample/): Resample
 * [rescale](../FilterRescale/): Rescale
 * [resize](../FilterResize/): Pad
@@ -830,11 +830,13 @@ wrap_title: Filter Plugins
 * [sox.vad](../FilterSox-vad/): vad
 * [sox.vol](../FilterSox-vol/): vol
 * [spot_remover](../FilterSpot_remover/): Spot Remover
+* [strobe](../FilterStrobe/): Alpha strobing
 * [tcolor](../FilterTcolor/): Technicolor
 * [text](../FilterText/): Text
 * [threshold](../FilterThreshold/): Threshold
 * [timer](../FilterTimer/): Timer
-* [transition](../FilterTransition/): Transition as Filter
+* [transition](../FilterTransition/): Transition as Filter (*deprecated*)
+* [typewriter](../FilterTypewriter/): TypeWriter
 * [videostab](../FilterVideostab/): Videostab (*deprecated*)
 * [videostab2](../FilterVideostab2/): Videostab2 (*deprecated*)
 * [vidstab](../FilterVidstab/): Vid.Stab Detect and Transform

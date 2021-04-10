@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Template  
+title: Template (*deprecated*)  
 media types:
 Video  
 description: Show data based on properties of the producer.  

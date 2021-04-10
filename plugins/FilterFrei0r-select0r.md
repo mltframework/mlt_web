@@ -13,7 +13,7 @@ title: select0r
 media types:
 Video  
 description: Color based alpha selection  
-version: 0.5  
+version: 0.6  
 creator: Marko Cebokli  
 
 ## Parameters

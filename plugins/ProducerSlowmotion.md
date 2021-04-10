@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Slow Motion  
+title: Slow Motion (*deprecated*)  
 media types:
 Video  
 description:   

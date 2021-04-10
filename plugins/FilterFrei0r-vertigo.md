@@ -13,7 +13,7 @@ title: Vertigo
 media types:
 Video  
 description: alpha blending with zoomed and rotated images  
-version: 1.1  
+version: 1.2  
 creator: Fukuchi Kentarou  
 
 ## Parameters

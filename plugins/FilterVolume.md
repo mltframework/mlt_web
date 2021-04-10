@@ -20,7 +20,7 @@ license: GPLv2
 
 ## Parameters
 
-### argument
+### argument (*deprecated*)
 
 title: Gain    
 description:
@@ -82,7 +82,7 @@ readonly: no
 required: no  
 default: 20dB  
 
-### end
+### end (*deprecated*)
 
 title: End gain    
 description:

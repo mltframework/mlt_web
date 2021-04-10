@@ -20,7 +20,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### start
+### start (*deprecated*)
 
 title: Size    
 description:
@@ -32,7 +32,7 @@ minimum: 1
 default: 2  
 unit: pixels  
 
-### end
+### end (*deprecated*)
 
 title: End size    
 type: integer  
