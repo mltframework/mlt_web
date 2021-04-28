@@ -5,15 +5,14 @@ wrap_title: Install
 permalink: /docs/install/
 ---
 
-This document provides a description of the MLT project installation and
-organisation.
+This document provides a description of the MLT project installation and organization.
 
 ### Directories
 
 The directory heirarchy is defined as follows:
 
 -   demo - A selection of samples to show off capabilities.
--   docs - Location of all documentation
+-   docs - Location of the man page
 -   presets - Properties presets for various services
 -   profiles - MLT profile configurations
 -   src - All project source is provided here
@@ -22,34 +21,27 @@ The directory heirarchy is defined as follows:
     -   mlt++ - C++ wrapper for framework
     -   modules - All services are defined here
         -   avformat - FFmpeg/Libav dependent services
-        -   avsync - services to help test audio/video synchronization
         -   core - independent MLT services
         -   decklink - Blackmagick Design SDI/HDMI services
-        -   dgraft - ports of Donald Graft's filters (\*)
-        -   dv - libdv dependent services
-        -   effectv - ports of !EffecTV filters (\*)
-        -   feeds - templates for use with core's data filters
         -   frei0r - adapter for frei0r video plugins
-        -   gtk2 - GTK+ pango and pixbuf dependent services
+        -   gdk - GDK dependent services
         -   jackrack - adapter for LADSPA audio plugins and JACK server
         -   kdenlive - services contributed by Kdenlive project
-        -   kino - DV/AVI demuxer from Kino project (\*)
-        -   linsys - DVEO SDI card consumer (\*)
-        -   lumas - wipe file generator for core's luma transition
-        -   motion\_est - motion estimation-based filters (\*)
+        -   movit - Movit dependent services (\*)
+        -   ndi - NewTek NDI dependent services
         -   normalize - audio normalisation functions (\*)
         -   oldfilm - filters to make pristine video dirty
-        -   opengl - !OpenGL dependent services (\*)
+        -   opencv - OpenCV dependent services
         -   plus - miscellaneous services (pending move to core)
-        -   qimage - Qt dependent services (\*)
+        -   plusgpl - miscellaneous services under the GPL license (\*)
+        -   qt - Qt dependent services (\*)
         -   resample - libresample dependent services (\*)
-        -   rotoscoping - spline-based alpha mask filter (\*)
-        -   rtaudio - audio consumer based on !RtAudio project code
+        -   rtaudio - audio consumer based on RtAudio project code
+        -   rubberband - Rubberband audio pitch dependent services (\*)
         -   sdl - SDL dependent services
-        -   sox - !SoX dependent audio filters
-        -   swfdec - Swfdec dependent producer for Flash files
-        -   videostab - video stabilization filters (\*)
-        -   vmfx - services contributed by (defunct) Visual Media FX
+        -   sdl2 - SDL dependent services
+        -   sox - SoX dependent audio filters
+        -   vid.stab - video stabilization filters (\*)
         -   vorbis - vorbis dependenent services
         -   xine - Xine-derived sources (\*)
         -   xml - XML (de)serialization services
@@ -67,8 +59,8 @@ documented in their parent.
 The MLT core is dependent on:
 
 -   a C11 compliant C compiler
--   posix threading (pthread)
--   standard posix libraries (libc)
+-   POSIX threading (pthread)
+-   standard POSIX libraries (libc)
 
 The MLT applications and libraries provided are all dependent on the
 core.
@@ -77,35 +69,25 @@ The modules have the following dependencies:
 
   | *Module* | *Description* |
   | avformat | [FFmpeg](http://www.ffmpeg.org) or [libav](http://www.libav.org) v0.7 or later |
-  | dv | [libdv](http://libdv.sf.net) 0.102 or later |
-  | gtk2 | [GTK2](http://www.gtk.org) and associated dependencies |
+  | gdk | [GTK2](http://www.gtk.org) and associated dependencies |
   | jackrack | [JACK](http://jackaudio.org), [libxml2](http://www.xmlsoft.org/), and ladspa.h |
-  | opengl | [Movit](http://git.sesse.net/movit) |
-  | qimage | [Qt](http://www.qt-project.org) 4.4 or later |
+  | movit | [Movit](http://git.sesse.net/movit) |
+  | qt | [Qt](http://www.qt-project.org) 4.4 or later |
   | resample | [libsamplerate](http://www.mega-nerd.com/SRC) 0.15 or later |
   | sdl | [SDL](http://www.libsdl.org) 1.2 or later |
   | sox | [SoX](http://sox.sourceforge.net) 13 or later |
-  | swfdec | [swfdec](http://github.com/mltframework/swfdec) 0.8 or later |
   | vorbis | [libvorbis](http://www.vorbis.com) 1.0.1 or later |
   | xml | [libxml12](http://www.xmlsoft.org) 2.5 or later |
 
 ### Configuration
 
-Configuration is triggered from the top level directory via a
-./configure script.
+Configuration is triggered from the top level directory via a `CMakeLists.txt` file.
 
-Each source bearing subdirectory shown above have their own configure
-script which are called automatically from the top level.
+Each source bearing subdirectory shown above have their own `CMakeLists.txt`
+file, which is called automatically from the top level.
 
-Typically, new modules can be introduced without modification to the
-configure script and arguments are accepted and passed through to all
-subdirectories.
-
-More information on usage is found by running:
-`./configure --help`
-
-Note: This script must be run to register new services after a git clone
-or subsequent update.
+More information on usage is found by viewing `CMakeLists.txt` and the
+[cmake documentation](https://cmake.org/cmake/help/latest/i).
 
 ### Compilation
 
@@ -122,7 +104,7 @@ Note: This applies to your current shell only and it assumes sh or bash.
 
 ### Installation
 
-The install is triggered by running make install from the top level
+The install is triggered by running `cmake --install` from the build
 directory.
 
 The framework produces a single shared object which is installed in
