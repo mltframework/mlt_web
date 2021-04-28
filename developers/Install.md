@@ -68,11 +68,11 @@ core.
 The modules have the following dependencies:
 
   | *Module* | *Description* |
-  | avformat | [FFmpeg](http://www.ffmpeg.org) or [libav](http://www.libav.org) v0.7 or later |
+  | avformat | [FFmpeg](http://www.ffmpeg.org) 4.0 or later |
   | gdk | [GTK2](http://www.gtk.org) and associated dependencies |
   | jackrack | [JACK](http://jackaudio.org), [libxml2](http://www.xmlsoft.org/), and ladspa.h |
   | movit | [Movit](http://git.sesse.net/movit) |
-  | qt | [Qt](http://www.qt-project.org) 4.4 or later |
+  | qt | [Qt](http://www.qt-project.org) 5.6 or later |
   | resample | [libsamplerate](http://www.mega-nerd.com/SRC) 0.15 or later |
   | sdl | [SDL](http://www.libsdl.org) 1.2 or later |
   | sox | [SoX](http://sox.sourceforge.net) 13 or later |
