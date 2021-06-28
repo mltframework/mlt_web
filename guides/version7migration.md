@@ -5,11 +5,7 @@ wrap_title: Version 7 Migration Guide
 permalink: /docs/v7migration/
 ---
 
-The purpose of this document is to explain how to migrate a MLT major version 6 application to major version 7. Version
-7 is still in development and is expected to be released by May, 2021. There is a `v7` branch in git. See the [Road
-Map]({{ "/changes/todo/" | prepend: site.baseurl }}) for more information about the plans. This document only
-includes what has been implemented thus far. It will be updated as changes are merged into the v7 branch and then
-from v7 to master just prior to release.
+The purpose of this document is to explain how to migrate a MLT major version 6 application to major version 7.
 
 ## Build
 
