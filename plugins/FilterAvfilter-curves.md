@@ -13,7 +13,7 @@ title: curves
 media types:
 Video  
 description: Adjust components curves.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

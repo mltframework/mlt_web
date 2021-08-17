@@ -13,7 +13,7 @@ title: thistogram
 media types:
 Video  
 description: Compute and draw a temporal histogram.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -183,6 +183,23 @@ set envelope color
 type: string  
 readonly: no  
 required: no  
+
+### av.slide
+
+  
+description:
+set slide mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* frame
+* replace
+* scroll
+* rscroll
+* picture
 
 ### position
 

@@ -17,7 +17,6 @@ version: 0.3.4
 creator: Rafal Lalik <rafallalik@gmail.com>  
 copyright: Copyright (C) Rafal Lalik  
 license: GPL  
-URL: [none](none)  
 
 ## Notes
 

@@ -33,5 +33,5 @@ title: Options
 type: string  
 readonly: no  
 required: no  
-format: gain [frequency(3000) [width[s|h|k|q|o]](0.5s)]  
+format: gain [frequency(3000) [width[s|h|k|q|o]]\(0.5s)]  
 

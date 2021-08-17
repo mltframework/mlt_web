@@ -13,7 +13,7 @@ title: datascope
 media types:
 Video  
 description: Video data analysis.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -107,6 +107,18 @@ values:
 
 * hex
 * dec
+
+### av.components
+
+  
+description:
+set components to display  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 15  
 
 ### av.threads
 

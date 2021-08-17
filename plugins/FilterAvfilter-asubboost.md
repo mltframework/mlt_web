@@ -13,7 +13,7 @@ title: asubboost
 media types:
 Audio  
 description: Boost subwoofer frequencies.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -28,7 +28,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.5  
+default: 0.7  
 format: double  
 
 ### av.wet
@@ -41,7 +41,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.8  
+default: 0.7  
 format: double  
 
 ### av.decay
@@ -67,7 +67,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.5  
+default: 0.9  
 format: double  
 
 ### av.cutoff
@@ -108,6 +108,17 @@ minimum: 1
 maximum: 100  
 default: 20  
 format: double  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

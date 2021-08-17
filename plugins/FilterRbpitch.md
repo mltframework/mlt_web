@@ -14,7 +14,7 @@ media types:
 Audio  
 description: Adjust the audio pitch using the Rubberband library.  
 version: 1  
-creator: Brian Matherly  
+creator:   
 copyright: Meltytech, LLC  
 license: GPLv2  
 
@@ -50,6 +50,15 @@ required: no
 minimum: 0.1  
 maximum: 10  
 default: 1.0  
+
+### stretch
+
+title: Stretch    
+description:
+Stretch the audio to fill the requested samples. This option will have no effect if the requested sample size is the same as the received sample size.  
+type: boolean  
+readonly: true  
+required: no  
 
 ### latency
 

@@ -13,7 +13,7 @@ title: afade
 media types:
 Audio  
 description: Fade in/out input audio.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -141,6 +141,7 @@ required: no
 format: integer or keyword  
 values:  
 
+* nofade
 * tri
 * qsin
 * esin
@@ -158,7 +159,8 @@ values:
 * dese
 * desi
 * losi
-* nofade
+* sinc
+* isinc
 
 ### av.c
 
@@ -171,6 +173,7 @@ required: no
 format: integer or keyword  
 values:  
 
+* nofade
 * tri
 * qsin
 * esin
@@ -188,7 +191,8 @@ values:
 * dese
 * desi
 * losi
-* nofade
+* sinc
+* isinc
 
 ### position
 

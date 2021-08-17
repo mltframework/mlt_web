@@ -14,8 +14,8 @@ media types:
 Video  
 description: A simple lift/gamma/gain effect, used for color grading.  
 version: 1  
-creator: Brian Matherly  
-copyright: Brian Matherly  
+creator:   
+copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Notes

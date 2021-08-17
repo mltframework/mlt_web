@@ -13,7 +13,7 @@ title: Transform
 media types:
 Video  
 description:   
-version: 5  
+version: 6  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Meltytech, LLC  
@@ -21,20 +21,11 @@ license: LGPLv2.1
 
 ## Parameters
 
-### geometry
-
-title: Rectangle    
-description:
-This property is deprecated. Use rect instead.  
-type: geometry  
-readonly: no  
-required: no  
-
 ### distort
 
 title: Ignore aspect ratio    
 description:
-Determines whether the image aspect ratio will be distorted while scaling to completely fill the geometry rectangle.  
+Determines whether the image aspect ratio will be distorted while scaling to completely fill the rectangle.  
 type: boolean  
 readonly: no  
 required: no  
@@ -88,7 +79,7 @@ default: 0
 
 title: Key-framed    
 description:
-Whether rotate, shear, and offset are key-framed or not. This (&quot;key-framed&quot;) refers to the legacy, deprecated, mlt_geometry-based property evaluation. Most of the properties support mlt_animation now.  
+Whether rotate, shear, and offset are key-framed or not.  
 type: boolean  
 readonly: no  
 required: no  
@@ -260,7 +251,7 @@ required: no
 
 title: Scale    
 description:
-Whether to automatic upscale B frame image to ensure the geometry area is filled.  
+Whether to automatic upscale B frame image to ensure the rectangle is filled.  
 type: boolean  
 readonly: no  
 required: no  
@@ -310,9 +301,9 @@ default: 0
 
 ### fill
 
-title: Fill geometry    
+title: Fill rectangle    
 description:
-Determines whether the image will be scaled up to fill the geometry. Otherwise, if the B frame image fits within the geometry, it will not be scaled. If 0, and the B frame image exceeds the geometry, then it is scaled down to fit within the geometry.  
+Determines whether the image will be scaled up to fill the rectangle. Otherwise, if the B frame image fits within the rectangle, it will not be scaled. If 0, and the B frame image exceeds the rectangle, then it is scaled down to fit within the rectangle.  
 type: boolean  
 readonly: no  
 required: no  
@@ -323,7 +314,7 @@ widget: checkbox
 
 title: Horizontal alignment    
 description:
-Set the horizontal alignment within the geometry rectangle.  
+Set the horizontal alignment within the rectangle.  
 type: string  
 readonly: no  
 required: no  
@@ -339,7 +330,7 @@ values:
 
 title: Vertical alignment    
 description:
-Set the vertical alignment within the geometry rectangle.  
+Set the vertical alignment within the rectangle.  
 type: string  
 readonly: no  
 required: no  
@@ -366,7 +357,7 @@ default: 0
 
 title: Rectangle    
 description:
-This replaces the geometry property and specifies a specifies a rectangle for the size and position of the image. The format of this is &quot;X/Y:WxH[:opacity]&quot; and can be animated with key frames. Unlike the geometry property, if you use percentages you must use them for every field in the above format. For example, you cannot mix and match usage of absolute coordinates and percentages for size and opacity.  
+This specifies the size and position of the image. The format of this is &quot;X/Y:WxH[:opacity]&quot; and can be animated with key frames. If you use percentages you must use them for every field in the above format. For example, you cannot mix and match usage of absolute coordinates and percentages for size and opacity.  
 type: rect  
 readonly: no  
 required: no  

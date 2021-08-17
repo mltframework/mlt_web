@@ -13,7 +13,7 @@ title: weave
 media types:
 Video  
 description: Weave input video fields into frames.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -33,6 +33,17 @@ values:
 * t
 * bottom
 * b
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

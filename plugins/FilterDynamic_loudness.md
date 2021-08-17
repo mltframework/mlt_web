@@ -14,8 +14,8 @@ media types:
 Audio  
 description: Dynamically correct audio loudness as recommended by EBU R128.  
 version: 1  
-creator: Brian Matherly <code@brianmatherly.com>  
-copyright: Brian Matherly <code@brianmatherly.com>  
+creator:   
+copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Notes

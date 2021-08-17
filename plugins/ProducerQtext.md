@@ -14,8 +14,8 @@ media types:
 Video  
 description: A title generator that uses the Qt framework to render text.  
 version: 1  
-creator: Brian Matherly  
-copyright: Brian Matherly  
+creator:   
+copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Notes

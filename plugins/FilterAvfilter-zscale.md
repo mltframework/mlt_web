@@ -13,7 +13,7 @@ title: zscale
 media types:
 Video  
 description: Apply resizing, colorspace and bit depth conversion.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -728,6 +728,30 @@ allow approximate gamma
 type: string  
 readonly: no  
 required: no  
+
+### av.param_a
+
+  
+description:
+parameter A, which is parameter &quot;b&quot; for bicubic, and the number of filter taps for lanczos  
+type: float  
+readonly: no  
+required: no  
+minimum: -1.79769e+308  
+default: nan  
+format: double  
+
+### av.param_b
+
+  
+description:
+parameter B, which is parameter &quot;c&quot; for bicubic  
+type: float  
+readonly: no  
+required: no  
+minimum: -1.79769e+308  
+default: nan  
+format: double  
 
 ### position
 

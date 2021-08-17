@@ -52,7 +52,6 @@ wrap_title: Producer Plugins
 * [ladspa.1881](../ProducerLadspa-1881/): Sine + cosine oscillator
 * [ladspa.1885](../ProducerLadspa-1885/): Nonbandlimited single-sample impulses (Frequency: Control)
 * [ladspa.2038](../ProducerLadspa-2038/): DAHDSR Envelope with Control Gate and Trigger (Control Inputs)
-* [libdv](../ProducerLibdv/): libdv (*deprecated*)
 * [loader](../ProducerLoader/): Loader
 * [melt](../ProducerMelt/): Melt
 * [melt_file](../ProducerMelt_file/): Melt
@@ -62,7 +61,6 @@ wrap_title: Producer Plugins
 * [pixbuf](../ProducerPixbuf/): GDK-PixBuf
 * [qimage](../ProducerQimage/): Qt QImage
 * [qtext](../ProducerQtext/): Qt Titler
-* [slowmotion](../ProducerSlowmotion/): Slow Motion (*deprecated*)
 * [timewarp](../ProducerTimewarp/): Time Warp
 * [tone](../ProducerTone/): Tone
 * [vorbis](../ProducerVorbis/): Ogg Vorbis

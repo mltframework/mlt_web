@@ -17,7 +17,7 @@ In addition to the parameters listed below, this producer inherits all parameter
 In addition to modifying the speed of the video, the audio is also slowed down or sped up to match the video.
   
 version: 1  
-creator: Brian Matherly  
+creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

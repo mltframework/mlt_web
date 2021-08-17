@@ -13,7 +13,7 @@ title: subtitles
 media types:
 Video  
 description: Render text subtitles onto input video using the libass library.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

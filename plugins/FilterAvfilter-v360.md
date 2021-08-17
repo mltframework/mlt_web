@@ -13,7 +13,7 @@ title: v360
 media types:
 Video  
 description: Convert 360 projection of video.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -54,6 +54,9 @@ values:
 * tsp
 * hequirect
 * he
+* equisolid
+* og
+* octahedron
 
 ### av.output
 
@@ -92,6 +95,9 @@ values:
 * tsp
 * hequirect
 * he
+* equisolid
+* og
+* octahedron
 
 ### av.interp
 
@@ -117,6 +123,7 @@ values:
 * spline16
 * gauss
 * gaussian
+* mitchell
 
 ### av.w
 

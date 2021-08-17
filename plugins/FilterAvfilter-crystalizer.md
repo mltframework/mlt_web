@@ -12,8 +12,8 @@ category: plugin
 title: crystalizer  
 media types:
 Audio  
-description: Simple expand audio dynamic range filter.  
-version: Lavfi7.85.100  
+description: Simple audio noise sharpening filter.  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -26,7 +26,7 @@ set intensity
 type: float  
 readonly: no  
 required: no  
-minimum: 0  
+minimum: -10  
 maximum: 10  
 default: 2  
 

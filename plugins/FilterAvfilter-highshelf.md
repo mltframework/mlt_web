@@ -13,7 +13,7 @@ title: highshelf
 media types:
 Audio  
 description: Apply a high shelf filter.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -130,6 +130,30 @@ maximum: 900
 default: 0  
 format: double  
 
+### av.poles
+
+  
+description:
+set number of poles  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 2  
+default: 2  
+
+### av.p
+
+  
+description:
+set number of poles  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 2  
+default: 2  
+
 ### av.mix
 
   
@@ -191,6 +215,72 @@ normalize coefficients
 type: string  
 readonly: no  
 required: no  
+
+### av.transform
+
+  
+description:
+set transform type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* di
+* dii
+* tdii
+* latt
+
+### av.a
+
+  
+description:
+set transform type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* di
+* dii
+* tdii
+* latt
+
+### av.precision
+
+  
+description:
+set filtering precision  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* s16
+* s32
+* f32
+* f64
+
+### av.r
+
+  
+description:
+set filtering precision  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* s16
+* s32
+* f32
+* f64
 
 ### av.threads
 

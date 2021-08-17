@@ -13,7 +13,7 @@ title: abench
 media types:
 Audio  
 description: Benchmark part of a filtergraph.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

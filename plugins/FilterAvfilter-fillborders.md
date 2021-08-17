@@ -13,7 +13,7 @@ title: fillborders
 media types:
 Video  
 description: Fill borders of the input video.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -76,12 +76,15 @@ values:
 * smear
 * mirror
 * fixed
+* reflect
+* wrap
+* fade
 
 ### av.color
 
   
 description:
-set the color for the fixed mode  
+set the color for the fixed/fade mode  
 type: string  
 readonly: no  
 required: no  

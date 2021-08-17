@@ -13,7 +13,7 @@ title: shuffleplanes
 media types:
 Video  
 description: Shuffle video planes.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

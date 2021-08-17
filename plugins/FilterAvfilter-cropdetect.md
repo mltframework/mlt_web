@@ -13,7 +13,7 @@ title: cropdetect
 media types:
 Video  
 description: Auto-detect crop size.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -51,6 +51,17 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### av.skip
+
+  
+description:
+Number of initial frames to skip  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 2  
 
 ### av.reset_count
 

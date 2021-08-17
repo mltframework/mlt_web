@@ -14,7 +14,7 @@ media types:
 Video  
 description: An audio visualization filter that draws an audio waveform on the image.  
 version: 1  
-creator: Brian Matherly  
+creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

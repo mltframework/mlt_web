@@ -15,7 +15,7 @@ Video
 description: An audio visualization filter that moves the image around proportional to the magnitude of the audio spectrum.
   
 version: 1  
-creator: Brian Matherly <code@brianmatherly.com>  
+creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

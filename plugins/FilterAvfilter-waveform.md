@@ -13,7 +13,7 @@ title: waveform
 media types:
 Video  
 description: Video waveform monitor.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -43,5 +43,4 @@ wrap_title: Transition Plugins
 * [movit.mix](../TransitionMovit-mix/): Dissolve (GLSL)
 * [movit.overlay](../TransitionMovit-overlay/): Overlay (GLSL)
 * [qtblend](../TransitionQtblend/): Composite and transform
-* [region](../TransitionRegion/): Regionalize
 * [vqm](../TransitionVqm/): Video Quality Measurement

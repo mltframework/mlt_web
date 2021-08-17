@@ -13,7 +13,7 @@ title: lenscorrection
 media types:
 Video  
 description: Rectify the image by correcting for lens distortion.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -69,6 +69,29 @@ minimum: -1
 maximum: 1  
 default: 0  
 format: double  
+
+### av.i
+
+  
+description:
+set interpolation type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* nearest
+* bilinear
+
+### av.fc
+
+  
+description:
+set the color of the unmapped pixels  
+type: string  
+readonly: no  
+required: no  
 
 ### av.threads
 

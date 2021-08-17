@@ -13,7 +13,7 @@ title: gradfun
 media types:
 Video  
 description: Debands video quickly using gradients.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -45,7 +45,7 @@ widget: fileopen
 
 title: Process all frames    
 description:
-Without this option, the XML consumer does not process any frames and simply serializes the service network. However, some filters (.e.g, videostab) require two passes where the first pass performs some analysis and stores the result in a property. Therefore, set this property to 1 (true) to cause the consumer to process all frames before serializing to XML.  
+Without this option, the XML consumer does not process any frames and simply serializes the service network. However, some filters (.e.g, vid.stab) require two passes where the first pass performs some analysis and stores the result in a property. Therefore, set this property to 1 (true) to cause the consumer to process all frames before serializing to XML.  
 type: boolean  
 readonly: no  
 required: no  

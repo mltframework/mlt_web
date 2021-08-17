@@ -13,7 +13,7 @@ title: pad
 media types:
 Video  
 description: Pad the input video.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

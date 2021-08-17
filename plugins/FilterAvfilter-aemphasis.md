@@ -13,7 +13,7 @@ title: aemphasis
 media types:
 Audio  
 description: Audio emphasis.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -78,6 +78,17 @@ values:
 * 75fm
 * 50kf
 * 75kf
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

@@ -13,7 +13,7 @@ title: uspp
 media types:
 Video  
 description: Apply Ultra Simple / Slow Post-processing filter.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

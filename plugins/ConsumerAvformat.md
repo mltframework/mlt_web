@@ -883,6 +883,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_mpeg2
+
+  
+description:
+Use MPE2 ID when writing (adts)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_id3v2
 
   
@@ -903,6 +912,21 @@ required: no
 minimum: 3  
 maximum: 4  
 default: 4  
+
+### type
+
+  
+description:
+set file type (alp)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* tun
+* pcm
 
 ### plays
 
@@ -925,6 +949,39 @@ type: string
 readonly: no  
 required: no  
 format: numerator/denominator  
+
+### version_major
+
+  
+description:
+override file major version (argo_asf)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 65535  
+default: 2  
+
+### version_minor
+
+  
+description:
+override file minor version (argo_asf)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 65535  
+default: 1  
+
+### name
+
+  
+description:
+embedded file name (max 8 characters) (argo_asf)  
+type: string  
+readonly: no  
+required: no  
 
 ### packet_size
 
@@ -1001,6 +1058,15 @@ default: 0
   
 description:
 write channel mask into wave format header (avi)  
+type: string  
+readonly: no  
+required: no  
+
+### flipped_raw_rgb
+
+  
+description:
+Raw RGB bitmaps are stored bottom-up (avi)  
 type: string  
 readonly: no  
 required: no  
@@ -1191,6 +1257,16 @@ type: string
 readonly: no  
 required: no  
 
+### hls_master_name
+
+  
+description:
+HLS master playlist name (dash)  
+type: string  
+readonly: no  
+required: no  
+default: 'master.m3u8'  
+
 ### streaming
 
   
@@ -1350,6 +1426,18 @@ type: string
 readonly: no  
 required: no  
 format: numerator/denominator  
+
+### update_period
+
+  
+description:
+Set the mpd update interval (dash)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+format: 64-bit  
 
 ### movflags
 
@@ -1698,6 +1786,15 @@ type: string
 readonly: no  
 required: no  
 
+### timeshift
+
+  
+description:
+Delay fifo output (fifo)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_header_ret
 
   
@@ -1891,23 +1988,19 @@ format: 64-bit
 
   
 description:
-set segment length in seconds (hls)  
-type: float  
+set segment length (hls)  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-default: 2  
 
 ### hls_init_time
 
   
 description:
-set segment length in seconds at init list (hls)  
-type: float  
+set segment length at init list (hls)  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-default: 0  
 
 ### hls_list_size
 
@@ -2928,6 +3021,15 @@ type: string
 readonly: no  
 required: no  
 
+### flipped_raw_rgb
+
+  
+description:
+Raw RGB bitmaps in VFW mode are stored bottom-up (matroska)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_crc32
 
   
@@ -3020,6 +3122,15 @@ required: no
   
 description:
 allow RAW VFW mode (matroska)  
+type: string  
+readonly: no  
+required: no  
+
+### flipped_raw_rgb
+
+  
+description:
+Raw RGB bitmaps in VFW mode are stored bottom-up (matroska)  
 type: string  
 readonly: no  
 required: no  
@@ -4515,6 +4626,24 @@ minimum: -1
 maximum: 65535  
 default: -1  
 
+### mpegts_muxer_options
+
+  
+description:
+set list of options for the MPEG-TS muxer (rtp_mpegts)  
+type: string  
+readonly: no  
+required: no  
+
+### rtp_muxer_options
+
+  
+description:
+set list of options for the RTP muxer (rtp_mpegts)  
+type: string  
+readonly: no  
+required: no  
+
 ### rtpflags
 
   
@@ -5943,6 +6072,15 @@ type: string
 readonly: no  
 required: no  
 
+### flipped_raw_rgb
+
+  
+description:
+Raw RGB bitmaps in VFW mode are stored bottom-up (webm)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_crc32
 
   
@@ -6128,7 +6266,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.45.100'  
+default: 'Lavf58.76.100'  
 
 ### stream_name
 
@@ -6578,6 +6716,26 @@ type: float
 readonly: no  
 required: no  
 default: 1.25  
+
+### err_detect
+
+  
+description:
+set error detection flags  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* crccheck
+* bitstream
+* buffer
+* explode
+* ignore_err
+* careful
+* compliant
+* aggressive
 
 ### mpeg_quant
 
@@ -7455,6 +7613,9 @@ values:
 * bt2020nc
 * bt2020c
 * smpte2085
+* chroma-derived-nc
+* chroma-derived-c
+* ictcp
 * unspecified
 * ycocg
 * bt2020_ncl
@@ -7774,20 +7935,6 @@ readonly: no
 required: no  
 default: 999999  
 
-### rc_strategy
-
-  
-description:
-ratecontrol method (amv)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### motion_est
 
   
@@ -7987,6 +8134,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (amv)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### pred
 
   
@@ -8057,6 +8218,31 @@ values:
 * avg
 * paeth
 * mixed
+
+### quality
+
+  
+description:
+set quality (cfhd)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* film3+
+* film3
+* film2+
+* film2
+* film1.5
+* film1+
+* film1
+* high+
+* high
+* medium+
+* medium
+* low+
+* low
 
 ### max_extra_cb_iterations
 
@@ -8172,6 +8358,47 @@ required: no
 minimum: 0  
 maximum: 1024  
 default: 7  
+
+### compression
+
+  
+description:
+set compression type (exr)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* rle
+* zip1
+* zip16
+
+### format
+
+  
+description:
+set pixel type (exr)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* half
+* float
+
+### gamma
+
+  
+description:
+set gamma (exr)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0.001  
+default: 1  
 
 ### slicecrc
 
@@ -8417,20 +8644,6 @@ readonly: no
 required: no  
 default: 999999  
 
-### rc_strategy
-
-  
-description:
-ratecontrol method (flv)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### motion_est
 
   
@@ -8630,6 +8843,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (flv)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### gifflags
 
   
@@ -8649,6 +8876,15 @@ values:
   
 description:
 enable encoding only images per frame (gif)  
+type: string  
+readonly: no  
+required: no  
+
+### global_palette
+
+  
+description:
+write a palette to the global gif header where feasible (gif)  
 type: string  
 readonly: no  
 required: no  
@@ -8823,20 +9059,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (h261)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -9037,6 +9259,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (h261)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### obmc
 
   
@@ -9227,20 +9463,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (h263)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -9440,6 +9662,20 @@ Use A53 Closed Captions (if available) (h263)
 type: string  
 readonly: no  
 required: no  
+
+### rc_strategy
+
+  
+description:
+ratecontrol method (h263)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
 
 ### umv
 
@@ -9648,20 +9884,6 @@ readonly: no
 required: no  
 default: 999999  
 
-### rc_strategy
-
-  
-description:
-ratecontrol method (h263p)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### motion_est
 
   
@@ -9861,6 +10083,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (h263p)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### non_deterministic
 
   
@@ -9936,6 +10172,56 @@ values:
 
 * dwt97int
 * dwt53
+
+### sop
+
+  
+description:
+SOP marker (jpeg2000)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### eph
+
+  
+description:
+EPH marker (jpeg2000)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### prog
+
+  
+description:
+Progression Order (jpeg2000)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* lrcp
+* rlcp
+* rpcl
+* pcrl
+* cprl
+
+### layer_rates
+
+  
+description:
+Layer Rates (jpeg2000)  
+type: string  
+readonly: no  
+required: no  
 
 ### pred
 
@@ -10153,20 +10439,6 @@ readonly: no
 required: no  
 default: 999999  
 
-### rc_strategy
-
-  
-description:
-ratecontrol method (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### motion_est
 
   
@@ -10366,6 +10638,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (mjpeg)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### pred
 
   
@@ -10400,15 +10686,6 @@ values:
   
 description:
 MPEG GOP Timecode in hh:mm:ss[:;.]ff format. Overrides timecode_frame_start. (mpeg1video)  
-type: string  
-readonly: no  
-required: no  
-
-### intra_vlc
-
-  
-description:
-Use MPEG-2 intra VLC table. (mpeg1video)  
 type: string  
 readonly: no  
 required: no  
@@ -10614,20 +10891,6 @@ readonly: no
 required: no  
 default: 999999  
 
-### rc_strategy
-
-  
-description:
-ratecontrol method (mpeg1video)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### motion_est
 
   
@@ -10827,20 +11090,25 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (mpeg1video)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### gop_timecode
 
   
 description:
 MPEG GOP Timecode in hh:mm:ss[:;.]ff format. Overrides timecode_frame_start. (mpeg2video)  
-type: string  
-readonly: no  
-required: no  
-
-### intra_vlc
-
-  
-description:
-Use MPEG-2 intra VLC table. (mpeg2video)  
 type: string  
 readonly: no  
 required: no  
@@ -10874,6 +11142,15 @@ required: no
 minimum: -1  
 default: -1  
 format: 64-bit  
+
+### intra_vlc
+
+  
+description:
+Use MPEG-2 intra VLC table. (mpeg2video)  
+type: string  
+readonly: no  
+required: no  
 
 ### non_linear_quant
 
@@ -11097,20 +11374,6 @@ readonly: no
 required: no  
 default: 999999  
 
-### rc_strategy
-
-  
-description:
-ratecontrol method (mpeg2video)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### motion_est
 
   
@@ -11310,6 +11573,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (mpeg2video)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### data_partitioning
 
   
@@ -11498,20 +11775,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (mpeg4)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -11712,6 +11975,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (mpeg4)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### mpv_flags
 
   
@@ -11882,20 +12159,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (msmpeg4v2)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -12096,6 +12359,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (msmpeg4v2)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### mpv_flags
 
   
@@ -12266,20 +12543,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (msmpeg4)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -12480,6 +12743,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (msmpeg4)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### dpi
 
   
@@ -12631,6 +12908,46 @@ Whether to respect known limitations in Quake 3 decoder (roqvideo)
 type: string  
 readonly: no  
 required: no  
+
+### skip_frame_thresh
+
+  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 24  
+default: 1  
+
+### start_one_color_thresh
+
+  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 24  
+default: 1  
+
+### continue_one_color_thresh
+
+  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 24  
+default: 0  
+
+### sixteen_color_thresh
+
+  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 24  
+default: 1  
 
 ### mpv_flags
 
@@ -12802,20 +13119,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (rv10)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -13016,6 +13319,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (rv10)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### mpv_flags
 
   
@@ -13186,20 +13503,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (rv20)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -13400,6 +13703,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (rv20)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### rle
 
   
@@ -13491,6 +13808,399 @@ values:
 
 * dwt97
 * dwt53
+
+### rc_eq
+
+  
+description:
+Set rate control equation. When computing the expression, besides the standard functions defined in the section &#39;Expression Evaluation&#39;, the following functions are available: bits2qp(bits), qp2bits(qp). Also the following constants are available: iTex pTex tex mv fCode iCount mcVar var isI isP isB avgQP qComp avgIITex avgPITex avgPPTex avgBPTex avgTex. (snow)  
+type: string  
+readonly: no  
+required: no  
+
+### mpv_flags
+
+  
+description:
+Flags common for all mpegvideo-based encoders. (speedhq)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* skip_rd
+* strict_gop
+* qp_rd
+* cbp_rd
+* naq
+* mv0
+
+### luma_elim_threshold
+
+  
+description:
+single coefficient elimination threshold for luminance (negative values also consider dc coefficient) (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### chroma_elim_threshold
+
+  
+description:
+single coefficient elimination threshold for chrominance (negative values also consider dc coefficient) (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### quantizer_noise_shaping
+
+  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### error_rate
+
+  
+description:
+Simulate errors in the bitstream to test error concealment. (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### qsquish
+
+  
+description:
+how to keep quantizer between qmin and qmax (0 = clip, 1 = use differentiable function) (speedhq)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 99  
+default: 0  
+
+### rc_qmod_amp
+
+  
+description:
+experimental quantizer modulation (speedhq)  
+type: float  
+readonly: no  
+required: no  
+default: 0  
+
+### rc_qmod_freq
+
+  
+description:
+experimental quantizer modulation (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### rc_eq
+
+  
+description:
+Set rate control equation. When computing the expression, besides the standard functions defined in the section &#39;Expression Evaluation&#39;, the following functions are available: bits2qp(bits), qp2bits(qp). Also the following constants are available: iTex pTex tex mv fCode iCount mcVar var isI isP isB avgQP qComp avgIITex avgPITex avgPPTex avgBPTex avgTex. (speedhq)  
+type: string  
+readonly: no  
+required: no  
+
+### rc_init_cplx
+
+  
+description:
+initial complexity for 1-pass encoding (speedhq)  
+type: float  
+readonly: no  
+required: no  
+default: 0  
+
+### rc_buf_aggressivity
+
+  
+description:
+currently useless (speedhq)  
+type: float  
+readonly: no  
+required: no  
+default: 1  
+
+### border_mask
+
+  
+description:
+increase the quantizer for macroblocks close to borders (speedhq)  
+type: float  
+readonly: no  
+required: no  
+default: 0  
+
+### lmin
+
+  
+description:
+minimum Lagrange factor (VBR) (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 236  
+
+### lmax
+
+  
+description:
+maximum Lagrange factor (VBR) (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 3658  
+
+### ibias
+
+  
+description:
+intra quant bias (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 999999  
+
+### pbias
+
+  
+description:
+inter quant bias (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 999999  
+
+### motion_est
+
+  
+description:
+motion estimation algorithm (speedhq)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
+### force_duplicated_matrix
+
+  
+description:
+Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (speedhq)  
+type: string  
+readonly: no  
+required: no  
+
+### b_strategy
+
+  
+description:
+Strategy to choose between I/P/B-frames (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Adjust sensitivity of b_frame_strategy 1 (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Downscale frames for dynamic B-frame decision (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### skip_threshold
+
+  
+description:
+Frame skip threshold (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### skip_factor
+
+  
+description:
+Frame skip factor (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### skip_exp
+
+  
+description:
+Frame skip exponent (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### skip_cmp
+
+  
+description:
+Frame skip compare function (speedhq)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* sad
+* sse
+* satd
+* dct
+* psnr
+* bit
+* rd
+* zero
+* vsad
+* vsse
+* nsse
+* dct264
+* dctmax
+* chroma
+* msad
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### noise_reduction
+
+  
+description:
+Noise reduction (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### mpeg_quant
+
+  
+description:
+Use MPEG quantizers instead of H.263 (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### ps
+
+  
+description:
+RTP payload size in bytes (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### mepc
+
+  
+description:
+Motion estimation bitrate penalty compensation (1.0 = 256) (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 256  
+
+### mepre
+
+  
+description:
+pre motion estimation (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### intra_penalty
+
+  
+description:
+Penalty for intra blocks in block decision (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1073741823  
+default: 0  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (speedhq)  
+type: string  
+readonly: no  
+required: no  
+
+### rc_strategy
+
+  
+description:
+ratecontrol method (speedhq)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
 
 ### rle
 
@@ -13818,20 +14528,6 @@ readonly: no
 required: no  
 default: 999999  
 
-### rc_strategy
-
-  
-description:
-ratecontrol method (wmv1)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### motion_est
 
   
@@ -14031,6 +14727,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (wmv1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### mpv_flags
 
   
@@ -14201,20 +14911,6 @@ type: integer
 readonly: no  
 required: no  
 default: 999999  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (wmv2)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### motion_est
 
@@ -14415,6 +15111,20 @@ type: string
 readonly: no  
 required: no  
 
+### rc_strategy
+
+  
+description:
+ratecontrol method (wmv2)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ffmpeg
+* xvid
+
 ### aac_coder
 
   
@@ -14493,15 +15203,6 @@ type: string
 readonly: no  
 required: no  
 
-### per_frame_metadata
-
-  
-description:
-Allow Changing Metadata Per-Frame (ac3)  
-type: string  
-readonly: no  
-required: no  
-
 ### center_mixlev
 
   
@@ -14552,6 +15253,15 @@ values:
 * notindicated
 * large
 * small
+
+### per_frame_metadata
+
+  
+description:
+Allow Changing Metadata Per-Frame (ac3)  
+type: string  
+readonly: no  
+required: no  
 
 ### copyright
 
@@ -14748,15 +15458,6 @@ values:
 
 * auto
 
-### per_frame_metadata
-
-  
-description:
-Allow Changing Metadata Per-Frame (ac3_fixed)  
-type: string  
-readonly: no  
-required: no  
-
 ### center_mixlev
 
   
@@ -14807,6 +15508,15 @@ values:
 * notindicated
 * large
 * small
+
+### per_frame_metadata
+
+  
+description:
+Allow Changing Metadata Per-Frame (ac3_fixed)  
+type: string  
+readonly: no  
+required: no  
 
 ### copyright
 
@@ -15032,15 +15742,6 @@ type: string
 readonly: no  
 required: no  
 
-### per_frame_metadata
-
-  
-description:
-Allow Changing Metadata Per-Frame (eac3)  
-type: string  
-readonly: no  
-required: no  
-
 ### mixing_level
 
   
@@ -15067,6 +15768,15 @@ values:
 * notindicated
 * large
 * small
+
+### per_frame_metadata
+
+  
+description:
+Allow Changing Metadata Per-Frame (eac3)  
+type: string  
+readonly: no  
+required: no  
 
 ### copyright
 
@@ -15452,6 +16162,18 @@ type: string
 readonly: no  
 required: no  
 
+### block_size
+
+  
+description:
+set the block size (adpcm_argo)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
 ### code_size
 
   
@@ -15475,6 +16197,114 @@ required: no
 minimum: 2  
 maximum: 5  
 default: 4  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ima_amv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ima_alp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ima_apm)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ima_qt)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ima_ssi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ima_wav)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ms)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_swf)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_yamaha)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
 
 ### palette
 
@@ -15810,6 +16640,258 @@ values:
 * psnr
 * ssim
 
+### enable-rect-partitions
+
+  
+description:
+Enable rectangular partitions (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-1to4-partitions
+
+  
+description:
+Enable 1:4/4:1 partitions (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-ab-partitions
+
+  
+description:
+Enable ab shape partitions (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-angle-delta
+
+  
+description:
+Enable angle delta intra prediction (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-cfl-intra
+
+  
+description:
+Enable chroma predicted from luma intra prediction (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-filter-intra
+
+  
+description:
+Enable filter intra predictor (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-intra-edge-filter
+
+  
+description:
+Enable intra edge filter (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-smooth-intra
+
+  
+description:
+Enable smooth intra prediction mode (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-paeth-intra
+
+  
+description:
+Enable paeth predictor in intra prediction (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-palette
+
+  
+description:
+Enable palette prediction mode (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-flip-idtx
+
+  
+description:
+Enable extended transform type (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-tx64
+
+  
+description:
+Enable 64-pt transform (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### reduced-tx-type-set
+
+  
+description:
+Use reduced set of transform types (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### use-intra-dct-only
+
+  
+description:
+Use DCT only for INTRA modes (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### use-inter-dct-only
+
+  
+description:
+Use DCT only for INTER modes (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### use-intra-default-tx-only
+
+  
+description:
+Use default-transform only for INTRA modes (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-ref-frame-mvs
+
+  
+description:
+Enable temporal mv prediction (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-reduced-reference-set
+
+  
+description:
+Use reduced set of single and compound references (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-obmc
+
+  
+description:
+Enable obmc (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-dual-filter
+
+  
+description:
+Enable dual filter (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-diff-wtd-comp
+
+  
+description:
+Enable difference-weighted compound (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-dist-wtd-comp
+
+  
+description:
+Enable distance-weighted compound (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-onesided-comp
+
+  
+description:
+Enable one sided compound (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-interinter-wedge
+
+  
+description:
+Enable interinter wedge compound (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-interintra-wedge
+
+  
+description:
+Enable interintra wedge compound (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-masked-comp
+
+  
+description:
+Enable masked compound (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-interintra-comp
+
+  
+description:
+Enable interintra compound (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
+### enable-smooth-interintra
+
+  
+description:
+Enable smooth interintra mode (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
+
 ### reservoir
 
   
@@ -15875,6 +16957,15 @@ required: no
 minimum: 0  
 maximum: 100  
 default: 0  
+
+### fec
+
+  
+description:
+Enable inband FEC. Expected packet loss must be non-zero (libopus)  
+type: string  
+readonly: no  
+required: no  
 
 ### vbr
 
@@ -16634,6 +17725,138 @@ minimum: -1
 maximum: 7  
 default: -1  
 
+### lossless
+
+  
+description:
+Use lossless mode (libwebp_anim)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### preset
+
+  
+description:
+Configuration preset (libwebp_anim)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* default
+* picture
+* photo
+* drawing
+* icon
+* text
+
+### cr_threshold
+
+  
+description:
+Conditional replenishment threshold (libwebp_anim)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### cr_size
+
+  
+description:
+Conditional replenishment block size (libwebp_anim)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 256  
+default: 16  
+
+### quality
+
+  
+description:
+Quality (libwebp_anim)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 100  
+default: 75  
+
+### lossless
+
+  
+description:
+Use lossless mode (libwebp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### preset
+
+  
+description:
+Configuration preset (libwebp)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* default
+* picture
+* photo
+* drawing
+* icon
+* text
+
+### cr_threshold
+
+  
+description:
+Conditional replenishment threshold (libwebp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### cr_size
+
+  
+description:
+Conditional replenishment block size (libwebp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 256  
+default: 16  
+
+### quality
+
+  
+description:
+Quality (libwebp)  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 100  
+default: 75  
+
 ### preset
 
   
@@ -17096,7 +18319,7 @@ QP difference between chroma and luma (libx264)
 type: integer  
 readonly: no  
 required: no  
-default: -1  
+default: 0  
 
 ### sc_threshold
 
@@ -17589,7 +18812,7 @@ QP difference between chroma and luma (libx264rgb)
 type: integer  
 readonly: no  
 required: no  
-default: -1  
+default: 0  
 
 ### sc_threshold
 
@@ -17732,6 +18955,29 @@ values:
 * llhp
 * lossless
 * losslesshp
+* p1
+* p2
+* p3
+* p4
+* p5
+* p6
+* p7
+
+### tune
+
+  
+description:
+Set the encoding tuning info (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* hq
+* ll
+* ull
+* lossless
 
 ### profile
 
@@ -17783,6 +19029,10 @@ values:
 * 5
 * 5.0
 * 5.1
+* 5.2
+* 6.0
+* 6.1
+* 6.2
 
 ### rc
 
@@ -18117,6 +19367,33 @@ required: no
 minimum: 0  
 default: 0  
 
+### multipass
+
+  
+description:
+Set the multipass encoding (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* qres
+* fullres
+
+### ldkfs
+
+  
+description:
+Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
+default: 0  
+
 ### num_output_buffers
 
   
@@ -18321,6 +19598,29 @@ values:
 * llhp
 * lossless
 * losslesshp
+* p1
+* p2
+* p3
+* p4
+* p5
+* p6
+* p7
+
+### tune
+
+  
+description:
+Set the encoding tuning info (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* hq
+* ll
+* ull
+* lossless
 
 ### profile
 
@@ -18372,6 +19672,10 @@ values:
 * 5
 * 5.0
 * 5.1
+* 5.2
+* 6.0
+* 6.1
+* 6.2
 
 ### rc
 
@@ -18706,6 +20010,33 @@ required: no
 minimum: 0  
 default: 0  
 
+### multipass
+
+  
+description:
+Set the multipass encoding (nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* qres
+* fullres
+
+### ldkfs
+
+  
+description:
+Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
+default: 0  
+
 ### preset
 
   
@@ -18729,6 +20060,29 @@ values:
 * llhp
 * lossless
 * losslesshp
+* p1
+* p2
+* p3
+* p4
+* p5
+* p6
+* p7
+
+### tune
+
+  
+description:
+Set the encoding tuning info (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* hq
+* ll
+* ull
+* lossless
 
 ### profile
 
@@ -18780,6 +20134,10 @@ values:
 * 5
 * 5.0
 * 5.1
+* 5.2
+* 6.0
+* 6.1
+* 6.2
 
 ### rc
 
@@ -19114,6 +20472,33 @@ required: no
 minimum: 0  
 default: 0  
 
+### multipass
+
+  
+description:
+Set the multipass encoding (nvenc_h264)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* qres
+* fullres
+
+### ldkfs
+
+  
+description:
+Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (nvenc_h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
+default: 0  
+
 ### preset
 
   
@@ -19137,6 +20522,29 @@ values:
 * llhp
 * lossless
 * losslesshp
+* p1
+* p2
+* p3
+* p4
+* p5
+* p6
+* p7
+
+### tune
+
+  
+description:
+Set the encoding tuning info (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* hq
+* ll
+* ull
+* lossless
 
 ### profile
 
@@ -19485,6 +20893,24 @@ values:
 * each
 * middle
 
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### s12m_tc
+
+  
+description:
+Use timecode (if available) (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+
 ### dpb_size
 
   
@@ -19494,6 +20920,33 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+default: 0  
+
+### multipass
+
+  
+description:
+Set the multipass encoding (nvenc_hevc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* qres
+* fullres
+
+### ldkfs
+
+  
+description:
+Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (nvenc_hevc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
 default: 0  
 
 ### preset
@@ -19519,6 +20972,29 @@ values:
 * llhp
 * lossless
 * losslesshp
+* p1
+* p2
+* p3
+* p4
+* p5
+* p6
+* p7
+
+### tune
+
+  
+description:
+Set the encoding tuning info (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* hq
+* ll
+* ull
+* lossless
 
 ### profile
 
@@ -19867,6 +21343,24 @@ values:
 * each
 * middle
 
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### s12m_tc
+
+  
+description:
+Use timecode (if available) (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
 ### dpb_size
 
   
@@ -19876,6 +21370,33 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+default: 0  
+
+### multipass
+
+  
+description:
+Set the multipass encoding (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* qres
+* fullres
+
+### ldkfs
+
+  
+description:
+Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 255  
 default: 0  
 
 ### num_output_buffers
@@ -20037,6 +21558,15 @@ format: flags
 values:  
 
 * hdr
+
+### tiles
+
+  
+description:
+Tile columns x rows (hevc_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### low_power
 

@@ -17,7 +17,6 @@ version: 1.0
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  
-URL: [none](none)  
 
 ## Notes
 

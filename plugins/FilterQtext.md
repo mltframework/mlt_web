@@ -14,7 +14,7 @@ media types:
 Video  
 description: Overlay text onto the video  
 version: 3  
-creator: Brian Matherly  
+creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

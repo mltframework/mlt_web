@@ -13,7 +13,7 @@ title: eq
 media types:
 Video  
 description: Adjust brightness, contrast, gamma, and saturation.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

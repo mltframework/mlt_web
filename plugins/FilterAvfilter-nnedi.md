@@ -13,7 +13,7 @@ title: nnedi
 media types:
 Video  
 description: Apply neural network edge directed interpolation intra-only deinterlacer.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -69,7 +69,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 7  
+maximum: 15  
 default: 7  
 
 ### av.nsize
@@ -134,7 +134,9 @@ format: integer or keyword
 values:  
 
 * a
+* abs
 * s
+* mse
 
 ### av.pscrn
 
@@ -150,15 +152,18 @@ values:
 * none
 * original
 * new
+* new2
+* new3
 
-### av.fapprox
+### av.threads
 
   
+description:
+Maximum number of threads  
 type: integer  
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 3  
 default: 0  
 
 ### position

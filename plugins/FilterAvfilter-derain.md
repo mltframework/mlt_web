@@ -13,7 +13,7 @@ title: derain
 media types:
 Video  
 description: Apply derain filter to the input.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -53,6 +53,26 @@ path to model file
 type: string  
 readonly: no  
 required: no  
+
+### av.input
+
+  
+description:
+input name of the model  
+type: string  
+readonly: no  
+required: no  
+default: 'x'  
+
+### av.output
+
+  
+description:
+output name of the model  
+type: string  
+readonly: no  
+required: no  
+default: 'y'  
 
 ### position
 

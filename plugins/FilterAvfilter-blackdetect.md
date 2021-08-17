@@ -13,7 +13,7 @@ title: blackdetect
 media types:
 Video  
 description: Detect video intervals that are (almost) black.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -93,6 +93,17 @@ minimum: 0
 maximum: 1  
 default: 0.1  
 format: double  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

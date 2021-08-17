@@ -13,7 +13,7 @@ title: hwupload_cuda
 media types:
 Video  
 description: Upload a system memory frame to a CUDA device.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

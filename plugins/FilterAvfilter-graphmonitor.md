@@ -13,7 +13,7 @@ title: graphmonitor
 media types:
 Video  
 description: Show various filtergraph stats.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -108,6 +108,7 @@ values:
 * format
 * size
 * rate
+* eof
 
 ### av.f
 
@@ -129,6 +130,7 @@ values:
 * format
 * size
 * rate
+* eof
 
 ### av.rate
 

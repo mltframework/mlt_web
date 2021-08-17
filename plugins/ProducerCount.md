@@ -14,8 +14,8 @@ media types:
 Audio  Video  
 description: Generate frames with a counter and synchronized tone. The counter can go up or down.  
 version: 1  
-creator: Brian Matherly  
-copyright: Brian Matherly  
+creator:   
+copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Parameters

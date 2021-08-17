@@ -34,7 +34,7 @@ performs scaling from [16,235] -&gt; [0, 255].
 It is possible to create unscaled (full) range:
 melt sg_gm_2013_clip_title.avi -attach frei0r.alpha0ps 0=0.21 -consumer \
   avformat:sg_gm_2013_clip_title.matte_full.mp4 crf=10 preset=placebo an=1 \
-  mlt_image_format=rgb24a pix_fmt=yuvj422p
+  mlt_image_format=rgba pix_fmt=yuvj422p
 ffmpeg -i sg_gm_2013_clip_title.avi -vf &quot;alphaextract&quot; -pix_fmt \
   yuvj422p -preset placebo -crf 10 -y sg_gm_2013_clip_title.matte_full.mp4
 The fill can be converted from rgba to yuv422:

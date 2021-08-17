@@ -13,7 +13,7 @@ title: dnn_processing
 media types:
 Video  
 description: Apply DNN processing filter to the input.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -54,6 +54,33 @@ required: no
   
 description:
 output name of the model  
+type: string  
+readonly: no  
+required: no  
+
+### av.backend_configs
+
+  
+description:
+backend configs  
+type: string  
+readonly: no  
+required: no  
+
+### av.options
+
+  
+description:
+backend configs  
+type: string  
+readonly: no  
+required: no  
+
+### av.async
+
+  
+description:
+use DNN async inference  
 type: string  
 readonly: no  
 required: no  

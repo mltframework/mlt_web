@@ -17,7 +17,6 @@ version: 0.2.6
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  
-URL: [none](none)  
 
 ## Notes
 

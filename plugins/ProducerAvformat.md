@@ -767,6 +767,26 @@ required: no
 minimum: 1  
 default: 1024  
 
+### framerate
+
+  
+description:
+(avs3)  
+type: string  
+readonly: no  
+required: no  
+
+### raw_packet_size
+
+  
+description:
+(avs3)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### linespeed
 
   
@@ -824,10 +844,10 @@ description:
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 8000  
 default: 11025  
 
-### framerate
+### frame_rate
 
   
 description:
@@ -1322,7 +1342,7 @@ List of file extensions that hls is allowed to access (hls)
 type: string  
 readonly: no  
 required: no  
-default: '3gp,aac,avi,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,wav'  
+default: '3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,wav'  
 
 ### max_reload
 
@@ -1760,6 +1780,17 @@ required: no
 minimum: 1  
 default: 1024  
 
+### raw_packet_size
+
+  
+description:
+(ipu)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### flv_metadata
 
   
@@ -2112,6 +2143,15 @@ required: no
   
 description:
 extract eia 608 captions from s436m track (mxf)  
+type: string  
+readonly: no  
+required: no  
+
+### framerate
+
+  
+description:
+(obu)  
 type: string  
 readonly: no  
 required: no  
@@ -2619,6 +2659,32 @@ values:
 
 * filter_src
 
+### listen_timeout
+
+  
+description:
+set maximum timeout (in seconds) to wait for incoming connections (rtp)  
+type: integer  
+readonly: no  
+required: no  
+default: 10  
+
+### allowed_media_types
+
+  
+description:
+set media types to accept from the server (rtp)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* video
+* audio
+* data
+* subtitle
+
 ### reorder_queue_size
 
   
@@ -2681,6 +2747,7 @@ values:
 * filter_src
 * listen
 * prefer_tcp
+* satip_raw
 
 ### allowed_media_types
 
@@ -2782,7 +2849,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.45.100'  
+default: 'Lavf58.76.100'  
 
 ### user-agent
 
@@ -2792,7 +2859,7 @@ override User-Agent header (deprecated, use user_agent) (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.45.100'  
+default: 'Lavf58.76.100'  
 
 ### raw_packet_size
 
@@ -2852,6 +2919,16 @@ values:
 * filter_src
 * custom_io
 * rtcp_to_source
+
+### listen_timeout
+
+  
+description:
+set maximum timeout (in seconds) to wait for incoming connections (sdp)  
+type: integer  
+readonly: no  
+required: no  
+default: 10  
 
 ### allowed_media_types
 
@@ -3060,6 +3137,18 @@ type: string
 readonly: no  
 required: no  
 
+### max_size
+
+  
+description:
+max size of single packet (w64)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1024  
+maximum: 4194304  
+default: 4096  
+
 ### ignore_length
 
   
@@ -3068,6 +3157,18 @@ Ignore length (wav)
 type: string  
 readonly: no  
 required: no  
+
+### max_size
+
+  
+description:
+max size of single packet (wav)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1024  
+maximum: 4194304  
+default: 4096  
 
 ### live
 
@@ -3188,6 +3289,53 @@ required: no
   
 description:
 force loop over input file sequence (bmp_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (cri_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (cri_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (cri_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (cri_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (cri_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -3760,6 +3908,100 @@ required: no
 
   
 description:
+force frame size in bytes (pgx_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (pgx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (pgx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (pgx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (pgx_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (photocd_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (photocd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (photocd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (photocd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (photocd_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
 force frame size in bytes (pictor_pipe)  
 type: integer  
 readonly: no  
@@ -4230,6 +4472,53 @@ required: no
 
   
 description:
+force frame size in bytes (xbm_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (xbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (xbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (xbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (xbm_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
 force frame size in bytes (xpm_pipe)  
 type: integer  
 readonly: no  
@@ -4428,7 +4717,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.45.100'  
+default: 'Lavf58.76.100'  
 
 ### stream_name
 
@@ -4641,6 +4930,18 @@ type: string
 readonly: no  
 required: no  
 
+### window_id
+
+  
+description:
+Window to capture. (x11grab)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: -2147483648  
+default: 0  
+
 ### x
 
   
@@ -4753,6 +5054,15 @@ minimum: 1
 maximum: 128  
 default: 3  
 
+### select_region
+
+  
+description:
+Select the grabbing region graphically using the pointer. (x11grab)  
+type: string  
+readonly: no  
+required: no  
+
 ### flags
 
   
@@ -4799,6 +5109,7 @@ values:
 
 * mvs
 * venc_params
+* film_grain
 
 ### ar
 
@@ -5164,6 +5475,9 @@ values:
 * bt2020nc
 * bt2020c
 * smpte2085
+* chroma-derived-nc
+* chroma-derived-c
+* ictcp
 * unspecified
 * ycocg
 * bt2020_ncl
@@ -5398,6 +5712,17 @@ type: string
 readonly: no  
 required: no  
 default: ''  
+
+### part
+
+  
+description:
+Set the decoding part (exr)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### gamma
 
@@ -5670,6 +5995,18 @@ readonly: no
 required: no  
 minimum: 20  
 default: 20  
+
+### lowres
+
+  
+description:
+Lower the decoding resolution by a power of two (photocd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 4  
+default: 0  
 
 ### skip_cursor
 
@@ -6038,6 +6375,21 @@ type: string
 readonly: no  
 required: no  
 
+### data_field
+
+  
+description:
+select data field (cc_dec)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* first
+* second
+
 ### compute_edt
 
   
@@ -6221,6 +6573,80 @@ default: -1
   
 description:
 Output all spatial layers (libdav1d)  
+type: string  
+readonly: no  
+required: no  
+
+### operating_point
+
+  
+description:
+Select an operating point of the scalable bitstream (av1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 31  
+default: 0  
+
+### deint
+
+  
+description:
+Set deinterlacing mode (av1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* weave
+* bob
+* adaptive
+
+### gpu
+
+  
+description:
+GPU to be used for decoding (av1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### surfaces
+
+  
+description:
+Maximum surfaces to be used for decoding (av1_cuvid)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 25  
+
+### drop_second_field
+
+  
+description:
+Drop second field when deinterlacing (av1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### crop
+
+  
+description:
+Crop (top)x(bottom)x(left)x(right) (av1_cuvid)  
+type: string  
+readonly: no  
+required: no  
+
+### resize
+
+  
+description:
+Resize (width)x(height) (av1_cuvid)  
 type: string  
 readonly: no  
 required: no  

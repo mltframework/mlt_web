@@ -13,7 +13,7 @@ title: tmix
 media types:
 Video  
 description: Mix successive video frames.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

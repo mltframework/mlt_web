@@ -17,7 +17,6 @@ version: 0.3
 creator: Till Theato <root@ttill.de>  
 copyright: Copyright (C) 2011 Till Theato  
 license: GPL  
-URL: [none](none)  
 
 ## Bugs
 

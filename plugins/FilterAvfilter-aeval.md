@@ -13,7 +13,7 @@ title: aeval
 media types:
 Audio  
 description: Filter audio signal according to a specified expression.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

@@ -14,7 +14,7 @@ media types:
 Video  
 description: Overlay a timer onto the video. The timer can count up or down.  
 version: 1  
-creator: Brian Matherly  
+creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
@@ -74,6 +74,16 @@ readonly: no
 required: no  
 default: 00:00:00.000  
 widget: text  
+
+### speed
+
+title: Speed    
+description:
+Clock speed multiplier. For example, speed 10.0 makes the timer tick 10 seconds for each second of playback. Scales Duration but does not affect Start or Offset. For example: start 5s, duration 30s, offset 7s and speed 10.0 will have the timer start at playback time 00:00:05.000 with value 00:00:07, count 10 seconds per second of playback and stop at playback time 00:00:08.000 with value 00:00:37.  
+type: float  
+readonly: no  
+required: no  
+default: 1.0  
 
 ### direction
 

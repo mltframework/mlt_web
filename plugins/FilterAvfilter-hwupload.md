@@ -13,7 +13,7 @@ title: hwupload
 media types:
 Video  
 description: Upload a normal frame to a hardware frame  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

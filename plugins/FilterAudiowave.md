@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Audio Waveform  
+title: Audio Waveform (*deprecated*)  
 media types:
 Video  
 description: Generate audio waveforms.  
@@ -17,6 +17,10 @@ version: 1
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
+
+## Notes
+
+This filter is deprecated and will eventually be removed. Use the audiowaveform filter instead.
 
 ## Bugs
 

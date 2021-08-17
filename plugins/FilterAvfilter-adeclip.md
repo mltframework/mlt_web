@@ -13,10 +13,23 @@ title: adeclip
 media types:
 Audio  
 description: Remove clipping from input audio.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
+
+### av.window
+
+  
+description:
+set window size  
+type: float  
+readonly: no  
+required: no  
+minimum: 10  
+maximum: 100  
+default: 55  
+format: double  
 
 ### av.w
 
@@ -29,6 +42,19 @@ required: no
 minimum: 10  
 maximum: 100  
 default: 55  
+format: double  
+
+### av.overlap
+
+  
+description:
+set window overlap  
+type: float  
+readonly: no  
+required: no  
+minimum: 50  
+maximum: 95  
+default: 75  
 format: double  
 
 ### av.o
@@ -44,6 +70,19 @@ maximum: 95
 default: 75  
 format: double  
 
+### av.arorder
+
+  
+description:
+set autoregression order  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 25  
+default: 8  
+format: double  
+
 ### av.a
 
   
@@ -55,6 +94,19 @@ required: no
 minimum: 0  
 maximum: 25  
 default: 8  
+format: double  
+
+### av.threshold
+
+  
+description:
+set threshold  
+type: float  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 100  
+default: 10  
 format: double  
 
 ### av.t
@@ -70,6 +122,18 @@ maximum: 100
 default: 10  
 format: double  
 
+### av.hsize
+
+  
+description:
+set histogram size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 100  
+maximum: 9999  
+default: 1000  
+
 ### av.n
 
   
@@ -82,6 +146,22 @@ minimum: 100
 maximum: 9999  
 default: 1000  
 
+### av.method
+
+  
+description:
+set overlap method  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* add
+* a
+* save
+* s
+
 ### av.m
 
   
@@ -93,7 +173,9 @@ required: no
 format: integer or keyword  
 values:  
 
+* add
 * a
+* save
 * s
 
 ### av.threads

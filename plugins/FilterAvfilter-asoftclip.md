@@ -13,7 +13,7 @@ title: asoftclip
 media types:
 Audio  
 description: Audio Soft Clipper.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -29,6 +29,7 @@ required: no
 format: integer or keyword  
 values:  
 
+* hard
 * tanh
 * atan
 * cubic
@@ -36,6 +37,33 @@ values:
 * alg
 * quintic
 * sin
+* erf
+
+### av.threshold
+
+  
+description:
+set softclip threshold  
+type: float  
+readonly: no  
+required: no  
+minimum: 1e-06  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.output
+
+  
+description:
+set softclip output gain  
+type: float  
+readonly: no  
+required: no  
+minimum: 1e-06  
+maximum: 16  
+default: 1  
+format: double  
 
 ### av.param
 
@@ -49,6 +77,18 @@ minimum: 0.01
 maximum: 3  
 default: 1  
 format: double  
+
+### av.oversample
+
+  
+description:
+set oversample factor  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 32  
+default: 1  
 
 ### av.threads
 

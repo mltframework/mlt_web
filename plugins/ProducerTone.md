@@ -14,7 +14,7 @@ media types:
 Audio  
 description: Generate audio tones.  
 version: 1  
-creator: Brian Matherly  
+creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 

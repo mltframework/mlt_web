@@ -13,7 +13,7 @@ title: Composite
 media types:
 Video  
 description: A key-framable alpha-channel compositor for two frames.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -46,8 +46,8 @@ default: loader
 
 title: Geometry    
 description:
-Key frame specification. This is a &quot;;&quot; delimited form of the deprecated start, key[n], end properties.  
-type: geometry  
+A possibly keyframed rectangle  
+type: rect  
 readonly: no  
 required: no  
 
@@ -152,30 +152,6 @@ type:
 readonly: no  
 required: no  
 
-### start
-
-title: Start geometry    
-description:
-<pre>
-(deprecated) A geometry specification as X/Y:WxH[!][:mix]
-X, Y, W, H are assumed to pixel units unless they have the suffix '%'.
-'!' is a shortcut to specify distort.
-Mix is always a 2 digit percentage, defaults to 100.
-</pre>
-type: geometry  
-readonly: no  
-required: no  
-default: 0%/0%:100%x100%  
-
-### end
-
-title: End geometry    
-description:
-(deprecated) X/Y:WxH[:mix] - The end geometry specification (see &quot;start&quot;).  
-type: geometry  
-readonly: no  
-required: no  
-
 ### sliced_composite
 
 title: Use sliced compositing    
@@ -186,15 +162,6 @@ readonly: no
 required: no  
 default: 0  
 widget: checkbox  
-
-### key[F]
-
-title: Key frame geometry    
-description:
-(deprecated) X/Y:WxH[:mix] - set a key frame for geometry between the in and out. F is a frame number and can be negative to make it relative to the out point.  
-type: geometry  
-readonly: no  
-required: no  
 
 ### fill
 

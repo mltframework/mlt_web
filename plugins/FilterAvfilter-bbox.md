@@ -13,7 +13,7 @@ title: bbox
 media types:
 Video  
 description: Compute bounding box for each frame.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -27,7 +27,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 254  
+maximum: 65535  
 default: 16  
 
 ### position

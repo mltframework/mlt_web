@@ -13,7 +13,7 @@ title: stereowiden
 media types:
 Audio  
 description: Apply stereo widening effect.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

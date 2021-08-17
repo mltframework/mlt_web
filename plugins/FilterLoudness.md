@@ -14,8 +14,8 @@ media types:
 Audio  
 description: Correct audio loudness as recommended by EBU R128.  
 version: 1  
-creator: Brian Matherly <pez4brian@yahoo.com>  
-copyright: Brian Matherly <pez4brian@yahoo.com>  
+creator:   
+copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Notes

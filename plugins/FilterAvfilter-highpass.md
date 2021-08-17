@@ -13,7 +13,7 @@ title: highpass
 media types:
 Audio  
 description: Apply a high-pass filter with 3dB point frequency.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -189,6 +189,72 @@ normalize coefficients
 type: string  
 readonly: no  
 required: no  
+
+### av.transform
+
+  
+description:
+set transform type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* di
+* dii
+* tdii
+* latt
+
+### av.a
+
+  
+description:
+set transform type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* di
+* dii
+* tdii
+* latt
+
+### av.precision
+
+  
+description:
+set filtering precision  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* s16
+* s32
+* f32
+* f64
+
+### av.r
+
+  
+description:
+set filtering precision  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* s16
+* s32
+* f32
+* f64
 
 ### av.threads
 

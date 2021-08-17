@@ -33,5 +33,5 @@ title: Options
 type: string  
 readonly: no  
 required: no  
-format: [-1|-2] frequency [width[q|o|h|k]](0.707q)  
+format: [-1|-2] frequency [width[q|o|h|k]]\(0.707q)  
 

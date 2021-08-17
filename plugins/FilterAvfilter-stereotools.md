@@ -13,7 +13,7 @@ title: stereotools
 media types:
 Audio  
 description: Apply various stereo tools.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -135,6 +135,8 @@ values:
 * lr>rl
 * ms>ll
 * ms>rr
+* ms>rl
+* lr>l-r
 
 ### av.slev
 

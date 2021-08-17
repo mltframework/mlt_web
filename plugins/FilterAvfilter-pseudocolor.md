@@ -13,7 +13,7 @@ title: pseudocolor
 media types:
 Video  
 description: Make pseudocolored video frames.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -58,6 +58,18 @@ readonly: no
 required: no  
 default: 'val'  
 
+### av.index
+
+  
+description:
+set component as base  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
+
 ### av.i
 
   
@@ -68,6 +80,75 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 3  
+default: 0  
+
+### av.preset
+
+  
+description:
+set preset  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* magma
+* inferno
+* plasma
+* viridis
+* turbo
+* cividis
+* range1
+* range2
+* shadows
+* highlights
+
+### av.p
+
+  
+description:
+set preset  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* magma
+* inferno
+* plasma
+* viridis
+* turbo
+* cividis
+* range1
+* range2
+* shadows
+* highlights
+
+### av.opacity
+
+  
+description:
+set pseudocolor opacity  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
 default: 0  
 
 ### position

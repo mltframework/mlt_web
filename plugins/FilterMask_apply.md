@@ -50,6 +50,6 @@ required: no
 values:  
 
 * ["mutable", true]
-* ["default", "rgb24a"]
-* ["values", ["yuv422", "rgb24", "rgb24a"]]
+* ["default", "rgba"]
+* ["values", ["yuv422", "rgb", "rgba"]]
 

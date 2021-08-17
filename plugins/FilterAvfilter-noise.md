@@ -13,7 +13,7 @@ title: noise
 media types:
 Video  
 description: Add noise.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

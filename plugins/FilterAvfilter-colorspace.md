@@ -13,7 +13,7 @@ title: colorspace
 media types:
 Video  
 description: Convert between colorspaces.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters
@@ -117,6 +117,7 @@ values:
 * gamma28
 * smpte170m
 * smpte240m
+* linear
 * srgb
 * iec61966-2-1
 * xvycc
@@ -282,6 +283,7 @@ values:
 * gamma28
 * smpte170m
 * smpte240m
+* linear
 * srgb
 * iec61966-2-1
 * xvycc

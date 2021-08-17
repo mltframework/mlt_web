@@ -13,7 +13,7 @@ title: anlmdn
 media types:
 Audio  
 description: Reduce broadband noise from stream using Non-Local Means.  
-version: Lavfi7.85.100  
+version: Lavfi7.110.100  
 creator: libavfilter maintainers  
 
 ## Parameters

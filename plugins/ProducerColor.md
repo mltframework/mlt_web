@@ -43,6 +43,6 @@ values:
 
 * yuv420p
 * yuv422
-* rgb24
-* rgb24a
+* rgb
+* rgba
 
