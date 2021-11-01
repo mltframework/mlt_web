@@ -13,7 +13,7 @@ title: TypeWriter
 media types:
 Video  
 description: Typewriter effect applied to kdenlivetitler producer  
-version: 0.3.4  
+version: 0.3.5  
 creator: Rafal Lalik <rafallalik@gmail.com>  
 copyright: Copyright (C) Rafal Lalik  
 license: GPL  

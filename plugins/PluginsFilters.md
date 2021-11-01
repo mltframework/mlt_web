@@ -301,6 +301,14 @@ wrap_title: Filter Plugins
 * [frei0r.balanc0r](../FilterFrei0r-balanc0r/): White Balance
 * [frei0r.baltan](../FilterFrei0r-baltan/): Baltan
 * [frei0r.bgsubtract0r](../FilterFrei0r-bgsubtract0r/): BgSubtract0r
+* [frei0r.bigsh0t_eq_mask](../FilterFrei0r-bigsh0t_eq_mask/): eq_mask
+* [frei0r.bigsh0t_eq_to_rect](../FilterFrei0r-bigsh0t_eq_to_rect/): eq_to_rect
+* [frei0r.bigsh0t_eq_to_stereo](../FilterFrei0r-bigsh0t_eq_to_stereo/): eq_to_stereo
+* [frei0r.bigsh0t_hemi_to_eq](../FilterFrei0r-bigsh0t_hemi_to_eq/): hemi_to_eq
+* [frei0r.bigsh0t_rect_to_eq](../FilterFrei0r-bigsh0t_rect_to_eq/): rect_to_eq
+* [frei0r.bigsh0t_stabilize_360](../FilterFrei0r-bigsh0t_stabilize_360/): stabilize_360
+* [frei0r.bigsh0t_transform_360](../FilterFrei0r-bigsh0t_transform_360/): transform_360
+* [frei0r.bigsh0t_zenith_correction](../FilterFrei0r-bigsh0t_zenith_correction/): zenith_correction
 * [frei0r.bluescreen0r](../FilterFrei0r-bluescreen0r/): bluescreen0r
 * [frei0r.brightness](../FilterFrei0r-brightness/): Brightness
 * [frei0r.bw0r](../FilterFrei0r-bw0r/): bw0r
@@ -368,6 +376,7 @@ wrap_title: Filter Plugins
 * [frei0r.sopsat](../FilterFrei0r-sopsat/): SOP/Sat
 * [frei0r.spillsupress](../FilterFrei0r-spillsupress/): spillsupress
 * [frei0r.squareblur](../FilterFrei0r-squareblur/): Squareblur
+* [frei0r.tehRoxx0r](../FilterFrei0r-tehroxx0r/): TehRoxx0r
 * [frei0r.tehroxx0r](../FilterFrei0r-tehroxx0r/): TehRoxx0r
 * [frei0r.three_point_balance](../FilterFrei0r-three_point_balance/): 3 point color balance
 * [frei0r.threelay0r](../FilterFrei0r-threelay0r/): threelay0r
@@ -384,7 +393,7 @@ wrap_title: Filter Plugins
 * [grain](../FilterGrain/): Grain
 * [grayscale](../FilterGrayscale/): Greyscale
 * [greyscale](../FilterGreyscale/): Greyscale
-* [gtkrescale](../FilterGtkrescale/): Gtk Rescale
+* [gtkrescale](../FilterGtkrescale/): 
 * [invert](../FilterInvert/): Invert
 * [jackrack](../FilterJackrack/): JACK
 * [ladspa](../FilterLadspa/): LADSPA
