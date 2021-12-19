@@ -86,6 +86,7 @@ set the color of the padded area border
 type: string  
 readonly: no  
 required: no  
+default: 'black'  
 
 ### av.eval
 

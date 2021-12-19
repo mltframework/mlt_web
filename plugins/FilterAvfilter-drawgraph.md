@@ -106,6 +106,7 @@ set background color
 type: string  
 readonly: no  
 required: no  
+default: 'white'  
 
 ### av.min
 

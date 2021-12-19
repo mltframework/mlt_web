@@ -271,6 +271,16 @@ readonly: no
 required: no  
 default: 1  
 
+### rotate
+
+title: Rotation Override    
+description:
+While there is automatic rotation for orientation, some files are missing the metadata for it. This provides an override. It can only rotate by a multiple of 90 degrees.  
+type: integer  
+readonly: no  
+required: no  
+unit: degrees  
+
 ### avioflags
 
   

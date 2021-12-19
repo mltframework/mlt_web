@@ -88,6 +88,7 @@ set the color for the fixed/fade mode
 type: string  
 readonly: no  
 required: no  
+default: 'black'  
 
 ### position
 

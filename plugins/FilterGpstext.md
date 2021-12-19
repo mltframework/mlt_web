@@ -55,8 +55,8 @@ offset the actual time. For example,  "#gps_datetime_now %I:%M:%S %p +3600#" sho
 only the time in 12-hour format, offset by 1 hour.
 Speed and distance keywords may include an extra format keyword to convert
 the value to metric/imperial units. Default is meters and km/h respectively.
-Supported formats, distance: m|meter, km|kilometer*, mi|mile*, ft|feet;
-speed: ms|m/s|meter, km|km/h|kilo, mi|mi/h|mile, ft|ft/s|feet.
+Supported formats, distance: m|meter, km|kilometer*, mi|mile*, ft|feet, nm|nautical*;
+speed: ms|m/s|meter, km|km/h|kilo, mi|mi/h|mile, ft|ft/s|feet, kn|nm/h|knots.
 Computed values are calculated since begining of GPS file or since
 "gps_processing_start_time" property, if set.
 The # may be escaped with "\".
@@ -121,7 +121,7 @@ widget: text
 title: Speed multiplier    
 description:
 If the video file is a timelapse (or slow motion), use this value to set the speed up/slow down ratio. Sample values: 30 for 30x timelapse, 0.25 for 4x slow motion footage.  
-type: double  
+type: float  
 readonly: no  
 required: no  
 default: 1  
@@ -132,7 +132,7 @@ widget: text
 title: Updates per second    
 description:
 Controls how many times per second is the GPS text updated on video (interpolated). A value of 0 will only update text when a real gps point has been recorded. Can be used in combination with speed_multiplier.  
-type: double  
+type: float  
 readonly: no  
 required: no  
 default: 1  

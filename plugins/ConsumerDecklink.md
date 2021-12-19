@@ -108,3 +108,14 @@ maximum: 1
 default: 0  
 widget: checkbox  
 
+### terminate_on_pause
+
+title: Stop automatically    
+description:
+Whether to stop playback at the end of the producer or when playback is paused.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
+

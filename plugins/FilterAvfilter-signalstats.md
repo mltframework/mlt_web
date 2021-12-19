@@ -56,6 +56,7 @@ set highlight color
 type: string  
 readonly: no  
 required: no  
+default: 'yellow'  
 
 ### av.color
 
@@ -65,6 +66,7 @@ set highlight color
 type: string  
 readonly: no  
 required: no  
+default: 'yellow'  
 
 ### av.threads
 

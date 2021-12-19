@@ -26,6 +26,7 @@ set the chromahold key color
 type: string  
 readonly: no  
 required: no  
+default: 'black'  
 
 ### av.similarity
 

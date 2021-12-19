@@ -20,9 +20,9 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### resolution
 
-title: Video Standard    
+title: Resolution    
 description:
 The size of the window as WxH pixels.  
 type: string  
@@ -42,12 +42,10 @@ required: no
 
 title: Video off    
 description:
-If 1, disable video output  
-type: integer  
+Disable video output  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 0  
 widget: checkbox  
 
@@ -55,12 +53,10 @@ widget: checkbox
 
 title: Audio off    
 description:
-If 1, disable audio output  
-type: integer  
+Disable audio output  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 0  
 widget: checkbox  
 
@@ -68,7 +64,7 @@ widget: checkbox
 
 title: Audio buffer    
 description:
-Size of the sdl audio buffer.  
+Size of the SDL audio buffer.  
 type: integer  
 readonly: no  
 required: no  
@@ -79,12 +75,21 @@ default: 2048
 
 title: Audio scrubbing    
 description:
-If enabled, sound is played even when the speed is not normal.  
-type: integer  
+Play sound even when the speed is not normal.  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 1  
+widget: checkbox  
+
+### terminate_on_pause
+
+title: Stop automatically    
+description:
+Whether to stop playback at the end of the producer or when playback is paused.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
 widget: checkbox  
 

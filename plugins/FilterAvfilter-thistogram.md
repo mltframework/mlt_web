@@ -174,6 +174,7 @@ set envelope color
 type: string  
 readonly: no  
 required: no  
+default: 'gold'  
 
 ### av.ec
 
@@ -183,6 +184,7 @@ set envelope color
 type: string  
 readonly: no  
 required: no  
+default: 'gold'  
 
 ### av.slide
 
