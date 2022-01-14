@@ -12,7 +12,7 @@ customised user interfaces and other tools.
 | Name | Type | Description | License
 |------|------|-------------|--------
 | [Flowblade](http://code.google.com/p/flowblade/) | Application | Non-linear movie editor for GTK+ written in Python | GPLv3
-| [Kdenlive](http://www.kdenlive.org) | Application | Non-linear video editor for the (http://kde.org)[KDE4] environnment | GPLv2
+| [Kdenlive](http://www.kdenlive.org) | Application | Non-linear cross-platform video editor | GPLv3
 | [Shotcut](http://www.shotcutapp.com/) | Application | A free, open source, cross-platform video editor. | GPLv3
 | [Synfig Studio](http://www.synfig.org/) | Application | A free, open source, cross-platform 2D animation program. | GPLv2
 | [Movie Editor](https://play.google.com/store/apps/details?id=com.goseet.MovieEditor) | Application | Video editor for Android | Proprietary
