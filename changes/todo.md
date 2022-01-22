@@ -17,7 +17,6 @@ See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.bas
 * document the `meta.` property name taxonomy
 * document expectations in each type of service (e.g. meta properties, frame-threading)
 * improve `mlt_consumer:real_time` > 1
-* try to integrate `mlt_animation` with avfilter `sendcmd`
 * more text effects like outline and blur (text and backround) in qtext html and letter spacing in plain text
 * cleanup the property transfer mess in `mlt_tractor.c`
 * fix the cache issue that necessitates `mlt_multitrack.c:resize_service_caches()`
