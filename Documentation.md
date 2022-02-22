@@ -30,6 +30,7 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 * [Framework Design]({{ "/docs/framework/" | prepend: site.baseurl }})
 * [XML]({{ "/docs/mltxml/" | prepend: site.baseurl }}) - XML document format
 * [XML Authoring Examples]({{ "/docs/authoringexamples/" | prepend: site.baseurl }})
+* [Property Naming Conventions]({{ "/docs/propertynaming/" | prepend: site.baseurl }})
 * [Scripting Language Bindings]({{ "/docs/scriptbindings/" | prepend: site.baseurl }})
 * [Contributing]({{ "/docs/contributing/" | prepend: site.baseurl }})
 * [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.baseurl }})

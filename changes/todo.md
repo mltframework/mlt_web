@@ -14,11 +14,9 @@ See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.bas
 * convert most services and properties to `mlt_animation`
 * add more usage of `mlt_slices`
 * add more tests (difficult to define coverage required at this point)
-* document the `meta.` property name taxonomy
 * document expectations in each type of service (e.g. meta properties, frame-threading)
 * improve `mlt_consumer:real_time` > 1
 * more text effects like outline and blur (text and backround) in qtext html and letter spacing in plain text
-* cleanup the property transfer mess in `mlt_tractor.c`
 * fix the cache issue that necessitates `mlt_multitrack.c:resize_service_caches()`
 * integrate `telecide` (Donald Graft's inverse telecine) filter into link? Or replace with some AVFilters?
 
