@@ -47,7 +47,7 @@ widget: checkbox
 
 title: Invert    
 description:
-Wether to swap black and white  
+Whether to swap black and white  
 type: integer  
 readonly: no  
 required: no  

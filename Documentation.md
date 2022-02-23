@@ -15,6 +15,7 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 #### Plugins (Services)
 * [Consumers]({{ "/plugins/PluginsConsumers/" | prepend: site.baseurl }}) (outputs/sinks)
 * [Filters]({{ "/plugins/PluginsFilters/" | prepend: site.baseurl }})
+* [Links]({{ "/plugins/PluginsLinks/" | prepend: site.baseurl }}) (time effects)
 * [Producers]({{ "/plugins/PluginsProducers/" | prepend: site.baseurl }}) (inputs/sources)
 * [Transitions]({{ "/plugins/PluginsTransitions/" | prepend: site.baseurl }}) (mixers)
 

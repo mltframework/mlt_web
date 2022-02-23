@@ -24,5 +24,5 @@ If a property &quot;consumer_aspect_ratio&quot; exists on the frame, then rescal
 
 ## Bugs
 
-* It only implements a nearest neighbour scaling - it is used as the base class for the gtkrescale and mcrescale filters.
+* It only implements a nearest neighbour scaling - it is used as the base class for the gtkrescale and swscale filters.
 

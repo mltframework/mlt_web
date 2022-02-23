@@ -13,7 +13,7 @@ title: Edgeglow
 media types:
 Video  
 description: Edgeglow filter  
-version: 0.2  
+version: 0.3  
 creator: Salsaman  
 
 ## Parameters
