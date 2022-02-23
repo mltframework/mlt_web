@@ -17,7 +17,7 @@ no hyphen.
   contains a transition to do some of its work.
 - The prefix `meta.` is special and means it contains metadata. Producer properties that have this prefix are
   automatically copied to the frames it generates.
-- The prefix `set.` is special. Producer properties that have this prefix are automatically copies to the frames it
+- The prefix `set.` is special. Producer properties that have this prefix are automatically copied to the frames it
   generates, but the `set.` prefix is stripped from the frame's property name.
 - The prefix `consumer.` means this is a consumer property that should be copied to the frames so the services can see them.
 
