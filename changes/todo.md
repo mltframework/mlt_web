@@ -10,7 +10,6 @@ See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.bas
 
 * add ability to have relative audio and video index in avformat producer along with a fail over to the first stream of
   respective type when invalid
-* YAML docs for all services
 * convert most services and properties to `mlt_animation`
 * add more usage of `mlt_slices`
 * add more tests (difficult to define coverage required at this point)
@@ -18,7 +17,6 @@ See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.bas
 * improve `mlt_consumer:real_time` > 1
 * more text effects like outline and blur (text and backround) in qtext html and letter spacing in plain text
 * fix the cache issue that necessitates `mlt_multitrack.c:resize_service_caches()`
-* integrate `telecide` (Donald Graft's inverse telecine) filter into link? Or replace with some AVFilters?
 
 ## 8.x (Next)
 
