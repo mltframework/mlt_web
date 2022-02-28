@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Documentation
-wrap_title: "Consumer: sdl_audio"
+wrap_title: "Consumer: sdl2_audio"
 category: plugin
 ---
 * TOC
@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: SDL Audio Only  
+title: SDL2 Audio Only  
 media types:
 Audio  
 description: Simple DirectMedia Layer audio only output module.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -65,4 +65,13 @@ minimum: 0
 maximum: 1  
 default: 0  
 widget: checkbox  
+
+### video_delay
+
+title: Video delay    
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+unit: milliseconds  
 

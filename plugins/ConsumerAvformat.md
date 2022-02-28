@@ -96,7 +96,7 @@ minimum: 0
 
 title: Display aspect ratio    
 type:   
-readonly: true  
+readonly: yes  
 required: no  
 
 ### sample_aspect_num
@@ -161,11 +161,11 @@ unit: frames/second
 
 title: Frame rate    
 type:   
-readonly: true  
+readonly: yes  
 required: no  
 unit: frames/second  
 
-### deinterlace_method
+### deinterlacer
 
 title: Deinterlacer    
 type: string  
@@ -685,7 +685,6 @@ format: flags
 values:  
 
 * flush_packets
-* latm
 * bitexact
 * shortest
 * autobsf
@@ -887,7 +886,7 @@ required: no
 
   
 description:
-Use MPE2 ID when writing (adts)  
+Set MPEG version to MPEG-2 (adts)  
 type: string  
 readonly: no  
 required: no  
@@ -937,7 +936,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-maximum: -2147483648  
+maximum: 65535  
 default: 1  
 
 ### final_delay
@@ -979,6 +978,15 @@ default: 1
   
 description:
 embedded file name (max 8 characters) (argo_asf)  
+type: string  
+readonly: no  
+required: no  
+
+### skip_rate_check
+
+  
+description:
+skip sample rate check (argo_cvg)  
 type: string  
 readonly: no  
 required: no  
@@ -1101,17 +1109,6 @@ readonly: no
 required: no  
 minimum: 0  
 default: 5  
-
-### min_seg_duration
-
-  
-description:
-minimum segment duration (in microseconds) (will be deprecated) (dash)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 5000000  
 
 ### seg_duration
 
@@ -1577,6 +1574,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -1691,6 +1689,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (f4v)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (f4v)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### fifo_format
 
@@ -2028,7 +2037,7 @@ default: 1
 
   
 description:
-set hls mpegts list of options for the container format used for hls (hls)  
+set hls mpegts list of options for the container format used for hls (deprecated, use hls_segment_options instead of it.) (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -2041,17 +2050,6 @@ set hls vtt list of options for the container format used for hls (hls)
 type: string  
 readonly: no  
 required: no  
-
-### hls_wrap
-
-  
-description:
-set number after which the index wraps (will be deprecated) (hls)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
 
 ### hls_allow_cache
 
@@ -2077,6 +2075,15 @@ required: no
   
 description:
 filename template for segment files (hls)  
+type: string  
+readonly: no  
+required: no  
+
+### hls_segment_options
+
+  
+description:
+set segments files format options of hls (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -2206,29 +2213,11 @@ values:
 * independent_segments
 * iframes_only
 
-### use_localtime
-
-  
-description:
-set filename expansion with strftime at segment creation(will be deprecated) (hls)  
-type: string  
-readonly: no  
-required: no  
-
 ### strftime
 
   
 description:
 set filename expansion with strftime at segment creation (hls)  
-type: string  
-readonly: no  
-required: no  
-
-### use_localtime_mkdir
-
-  
-description:
-create last directory component in strftime-generated filename(will be deprecated) (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -2559,6 +2548,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -2673,6 +2663,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (ipod)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (ipod)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### movflags
 
@@ -2812,6 +2813,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -2926,6 +2928,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (ismv)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (ismv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### smc-interval
 
@@ -3297,6 +3310,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -3411,6 +3425,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (mov)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (mov)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### id3v2_version
 
@@ -3580,6 +3605,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -3694,6 +3720,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (mp4)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (mp4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### muxrate
 
@@ -3925,6 +3962,7 @@ values:
 * pat_pmt_at_frames
 * system_b
 * initial_discontinuity
+* nit
 
 ### mpegts_copyts
 
@@ -3939,7 +3977,7 @@ required: no
 
   
 description:
-set PAT, PMT and SDT version (mpegts)  
+set PAT, PMT, SDT and NIT version (mpegts)  
 type: integer  
 readonly: no  
 required: no  
@@ -3981,6 +4019,15 @@ required: no
   
 description:
 SDT retransmission time limit in seconds (mpegts)  
+type: string  
+readonly: no  
+required: no  
+
+### nit_period
+
+  
+description:
+NIT retransmission time limit in seconds (mpegts)  
 type: string  
 readonly: no  
 required: no  
@@ -4451,6 +4498,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -4565,6 +4613,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (psp)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (psp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### rtpflags
 
@@ -5557,6 +5616,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -5671,6 +5731,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (3g2)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (3g2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### movflags
 
@@ -5810,6 +5881,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 255  
 default: 0  
 
 ### video_track_timescale
@@ -5924,6 +5996,17 @@ write zero-length name string in hdlr atoms within mdia and minf atoms (3gp)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (3gp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
 
 ### write_bext
 
@@ -6266,7 +6349,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.76.100'  
+default: 'Lavf59.16.100'  
 
 ### stream_name
 
@@ -6670,26 +6753,6 @@ readonly: no
 required: no  
 default: 1.25  
 
-### b_strategy
-
-  
-description:
-strategy to choose between I/P/B-frames  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### ps
-
-  
-description:
-RTP payload size in bytes  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### strict
 
   
@@ -6736,16 +6799,6 @@ values:
 * careful
 * compliant
 * aggressive
-
-### mpeg_quant
-
-  
-description:
-use MPEG quantizers instead of H.263  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
 
 ### maxrate
 
@@ -6897,21 +6950,6 @@ values:
 * faani
 * simpleauto
 
-### pred
-
-  
-description:
-prediction method  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* left
-* plane
-* median
-
 ### aspect
 
   
@@ -6965,16 +7003,6 @@ readonly: no
 required: no  
 default: 0  
 
-### preme
-
-  
-description:
-pre motion estimation  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### pre_dia_size
 
   
@@ -7013,30 +7041,6 @@ readonly: no
 required: no  
 default: 0  
 
-### coder
-
-  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* vlc
-* ac
-* raw
-* rle
-
-### context
-
-  
-description:
-context model  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### mbd
 
   
@@ -7051,26 +7055,6 @@ values:
 * simple
 * bits
 * rd
-
-### sc_threshold
-
-  
-description:
-scene change threshold  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### nr
-
-  
-description:
-noise reduction  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
 
 ### rc_init_occupancy
 
@@ -7139,64 +7123,6 @@ format: integer or keyword
 values:  
 
 * unknown
-
-### skip_threshold
-
-  
-description:
-frame skip threshold  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### skip_factor
-
-  
-description:
-frame skip factor  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### skip_exp
-
-  
-description:
-frame skip exponent  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### skipcmp
-
-  
-description:
-frame skip compare function  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* sad
-* sse
-* satd
-* dct
-* psnr
-* bit
-* rd
-* zero
-* vsad
-* vsse
-* nsse
-* w53
-* w97
-* dctmax
-* chroma
-* msad
 
 ### cmp
 
@@ -7362,16 +7288,6 @@ minimum: 1
 maximum: 32767  
 default: 3658  
 
-### mepc
-
-  
-description:
-motion estimation bitrate penalty compensation (1.0 = 256)  
-type: integer  
-readonly: no  
-required: no  
-default: 256  
-
 ### bidir_refine
 
   
@@ -7383,18 +7299,6 @@ required: no
 minimum: 0  
 maximum: 4  
 default: 1  
-
-### brd_scale
-
-  
-description:
-downscale frames for dynamic B-frame decision  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 10  
-default: 0  
 
 ### keyint_min
 
@@ -7416,16 +7320,6 @@ readonly: no
 required: no  
 default: 1  
 
-### chromaoffset
-
-  
-description:
-chroma QP offset from luma  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### trellis
 
   
@@ -7445,17 +7339,6 @@ required: no
 minimum: 0  
 default: 256  
 
-### b_sensitivity
-
-  
-description:
-adjust sensitivity of b_frame_strategy 1  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
 ### compression_level
 
   
@@ -7463,34 +7346,6 @@ type: integer
 readonly: no  
 required: no  
 default: -1  
-
-### min_prediction_order
-
-  
-type: integer  
-readonly: no  
-required: no  
-default: -1  
-
-### max_prediction_order
-
-  
-type: integer  
-readonly: no  
-required: no  
-default: -1  
-
-### timecode_frame_start
-
-  
-description:
-GOP timecode frame start number, in non-drop-frame format  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-default: -1  
-format: 64-bit  
 
 ### channel_layout
 
@@ -7704,13 +7559,6 @@ values:
 * em
 * vo
 * ka
-
-### side_data_only_packets
-
-  
-type: string  
-readonly: no  
-required: no  
 
 ### field_order
 
@@ -7950,50 +7798,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (amv)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -8071,18 +7875,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -8125,29 +7917,6 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
-### a53cc
-
-  
-description:
-Use A53 Closed Captions (if available) (amv)  
-type: string  
-readonly: no  
-required: no  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (amv)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### pred
 
   
@@ -8176,6 +7945,71 @@ values:
 
 * default
 * optimal
+
+### force_duplicated_matrix
+
+  
+description:
+Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (amv)  
+type: string  
+readonly: no  
+required: no  
+
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (amv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
+### a53cc
+
+  
+description:
+Deprecated, does nothing (amv)  
+type: string  
+readonly: no  
+required: no  
+
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (amv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (amv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (amv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### dpi
 
@@ -8659,50 +8493,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (flv)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -8780,18 +8570,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -8834,28 +8612,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (flv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (flv)  
+Deprecated, does nothing (flv)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (flv)  
+Deprecated, does nothing (flv)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (flv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (flv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (flv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### gifflags
 
@@ -9075,50 +8895,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (h261)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -9196,18 +8972,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -9250,28 +9014,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (h261)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (h261)  
+Deprecated, does nothing (h261)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (h261)  
+Deprecated, does nothing (h261)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (h261)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (h261)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (h261)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### obmc
 
@@ -9479,50 +9285,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (h263)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -9600,18 +9362,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -9654,28 +9404,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (h263)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (h263)  
+Deprecated, does nothing (h263)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (h263)  
+Deprecated, does nothing (h263)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (h263)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (h263)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (h263)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### umv
 
@@ -9899,50 +9691,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (h263p)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -10020,18 +9768,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -10074,28 +9810,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (h263p)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (h263p)  
+Deprecated, does nothing (h263p)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (h263p)  
+Deprecated, does nothing (h263p)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (h263p)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (h263p)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (h263p)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### non_deterministic
 
@@ -10454,50 +10232,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -10575,18 +10309,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -10629,29 +10351,6 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
-### a53cc
-
-  
-description:
-Use A53 Closed Captions (if available) (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-
-### rc_strategy
-
-  
-description:
-ratecontrol method (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
-
 ### pred
 
   
@@ -10680,6 +10379,71 @@ values:
 
 * default
 * optimal
+
+### force_duplicated_matrix
+
+  
+description:
+Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mjpeg)  
+type: string  
+readonly: no  
+required: no  
+
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (mjpeg)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
+### a53cc
+
+  
+description:
+Deprecated, does nothing (mjpeg)  
+type: string  
+readonly: no  
+required: no  
+
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (mjpeg)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (mjpeg)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (mjpeg)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### gop_timecode
 
@@ -10719,6 +10483,41 @@ required: no
 minimum: -1  
 default: -1  
 format: 64-bit  
+
+### b_strategy
+
+  
+description:
+Strategy to choose between I/P/B-frames (mpeg1video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Adjust sensitivity of b_frame_strategy 1 (mpeg1video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Downscale frames for dynamic B-frame decision (mpeg1video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### mpv_flags
 
@@ -10906,50 +10705,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mpeg1video)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -11027,18 +10782,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -11081,28 +10824,35 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (mpeg1video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (mpeg1video)  
+Deprecated, does nothing (mpeg1video)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (mpeg1video)  
+Deprecated, does nothing (mpeg1video)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### gop_timecode
 
@@ -11143,6 +10893,41 @@ minimum: -1
 default: -1  
 format: 64-bit  
 
+### b_strategy
+
+  
+description:
+Strategy to choose between I/P/B-frames (mpeg2video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Adjust sensitivity of b_frame_strategy 1 (mpeg2video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Downscale frames for dynamic B-frame decision (mpeg2video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
+
 ### intra_vlc
 
   
@@ -11166,6 +10951,15 @@ required: no
   
 description:
 Enable alternate scantable. (mpeg2video)  
+type: string  
+readonly: no  
+required: no  
+
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (mpeg2video)  
 type: string  
 readonly: no  
 required: no  
@@ -11389,50 +11183,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mpeg2video)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -11510,18 +11260,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -11564,28 +11302,26 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
-### a53cc
+### mpeg_quant
 
   
 description:
-Use A53 Closed Captions (if available) (mpeg2video)  
-type: string  
+Deprecated, does nothing (mpeg2video)  
+type: integer  
 readonly: no  
 required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (mpeg2video)  
+Deprecated, does nothing (mpeg2video)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### data_partitioning
 
@@ -11604,6 +11340,53 @@ Enable alternate scantable. (mpeg4)
 type: string  
 readonly: no  
 required: no  
+
+### mpeg_quant
+
+  
+description:
+Use MPEG quantizers instead of H.263 (mpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### b_strategy
+
+  
+description:
+Strategy to choose between I/P/B-frames (mpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Adjust sensitivity of b_frame_strategy 1 (mpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Downscale frames for dynamic B-frame decision (mpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### mpv_flags
 
@@ -11791,50 +11574,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mpeg4)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (mpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (mpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (mpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -11912,18 +11651,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (mpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -11970,24 +11697,19 @@ default: 0
 
   
 description:
-Use A53 Closed Captions (if available) (mpeg4)  
+Deprecated, does nothing (mpeg4)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (mpeg4)  
+Deprecated, does nothing (mpeg4)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
-
-* ffmpeg
-* xvid
 
 ### mpv_flags
 
@@ -12175,50 +11897,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (msmpeg4v2)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -12296,18 +11974,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -12350,28 +12016,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (msmpeg4v2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (msmpeg4v2)  
+Deprecated, does nothing (msmpeg4v2)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (msmpeg4v2)  
+Deprecated, does nothing (msmpeg4v2)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (msmpeg4v2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (msmpeg4v2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (msmpeg4v2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### mpv_flags
 
@@ -12559,50 +12267,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (msmpeg4)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -12680,18 +12344,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -12734,28 +12386,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (msmpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (msmpeg4)  
+Deprecated, does nothing (msmpeg4)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (msmpeg4)  
+Deprecated, does nothing (msmpeg4)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (msmpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (msmpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (msmpeg4)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### dpi
 
@@ -13135,50 +12829,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (rv10)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -13256,18 +12906,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -13310,28 +12948,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (rv10)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (rv10)  
+Deprecated, does nothing (rv10)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (rv10)  
+Deprecated, does nothing (rv10)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (rv10)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (rv10)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (rv10)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### mpv_flags
 
@@ -13519,50 +13199,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (rv20)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -13640,18 +13276,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -13694,28 +13318,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (rv20)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (rv20)  
+Deprecated, does nothing (rv20)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (rv20)  
+Deprecated, does nothing (rv20)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (rv20)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (rv20)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (rv20)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### rle
 
@@ -14004,50 +13670,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (speedhq)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -14125,18 +13747,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -14179,28 +13789,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (speedhq)  
+Deprecated, does nothing (speedhq)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (speedhq)  
+Deprecated, does nothing (speedhq)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (speedhq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### rle
 
@@ -14543,50 +14195,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (wmv1)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -14664,18 +14272,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -14718,28 +14314,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (wmv1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (wmv1)  
+Deprecated, does nothing (wmv1)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (wmv1)  
+Deprecated, does nothing (wmv1)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (wmv1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (wmv1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (wmv1)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### mpv_flags
 
@@ -14927,50 +14565,6 @@ values:
 * epzs
 * xone
 
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (wmv2)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Strategy to choose between I/P/B-frames (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Adjust sensitivity of b_frame_strategy 1 (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Downscale frames for dynamic B-frame decision (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
-
 ### skip_threshold
 
   
@@ -15048,18 +14642,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mpeg_quant
-
-  
-description:
-Use MPEG quantizers instead of H.263 (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
 ### ps
 
   
@@ -15102,28 +14684,70 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### mpeg_quant
+
+  
+description:
+Deprecated, does nothing (wmv2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 0  
+default: 0  
+
 ### a53cc
 
   
 description:
-Use A53 Closed Captions (if available) (wmv2)  
+Deprecated, does nothing (wmv2)  
 type: string  
 readonly: no  
 required: no  
 
-### rc_strategy
+### force_duplicated_matrix
 
   
 description:
-ratecontrol method (wmv2)  
+Deprecated, does nothing (wmv2)  
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
-values:  
 
-* ffmpeg
-* xvid
+### b_strategy
+
+  
+description:
+Deprecated, does nothing (wmv2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 2  
+default: 0  
+
+### b_sensitivity
+
+  
+description:
+Deprecated, does nothing (wmv2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 40  
+
+### brd_scale
+
+  
+description:
+Deprecated, does nothing (wmv2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
 
 ### aac_coder
 
@@ -16263,6 +15887,18 @@ default: 1024
   
 description:
 set the block size (adpcm_ima_wav)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 32  
+maximum: 8192  
+default: 1024  
+
+### block_size
+
+  
+description:
+set the block size (adpcm_ima_ws)  
 type: integer  
 readonly: no  
 required: no  
@@ -18231,12 +17867,12 @@ values:
 
   
 description:
-AVC-Intra class 50/100/200 (libx264)  
+AVC-Intra class 50/100/200/300/480 (libx264)  
 type: integer  
 readonly: no  
 required: no  
 minimum: -1  
-maximum: 200  
+maximum: 480  
 default: -1  
 
 ### me_method
@@ -18340,6 +17976,15 @@ type: integer
 readonly: no  
 required: no  
 default: -1  
+
+### udu_sei
+
+  
+description:
+Use user data unregistered SEI if available (libx264)  
+type: string  
+readonly: no  
+required: no  
 
 ### x264-params
 
@@ -18724,12 +18369,12 @@ values:
 
   
 description:
-AVC-Intra class 50/100/200 (libx264rgb)  
+AVC-Intra class 50/100/200/300/480 (libx264rgb)  
 type: integer  
 readonly: no  
 required: no  
 minimum: -1  
-maximum: 200  
+maximum: 480  
 default: -1  
 
 ### me_method
@@ -18834,6 +18479,15 @@ readonly: no
 required: no  
 default: -1  
 
+### udu_sei
+
+  
+description:
+Use user data unregistered SEI if available (libx264rgb)  
+type: string  
+readonly: no  
+required: no  
+
 ### x264-params
 
   
@@ -18897,6 +18551,15 @@ required: no
   
 description:
 set the x265 profile (libx265)  
+type: string  
+readonly: no  
+required: no  
+
+### udu_sei
+
+  
+description:
+Use user data unregistered SEI if available (libx265)  
 type: string  
 readonly: no  
 required: no  
@@ -19302,6 +18965,30 @@ minimum: -1
 maximum: 51  
 default: -1  
 
+### qp_cb_offset
+
+  
+description:
+Quantization parameter offset for cb channel (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -12  
+maximum: 12  
+default: 0  
+
+### qp_cr_offset
+
+  
+description:
+Quantization parameter offset for cr channel (h264_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -12  
+maximum: 12  
+default: 0  
+
 ### weighted_pred
 
   
@@ -19393,6 +19080,51 @@ required: no
 minimum: 0  
 maximum: 255  
 default: 0  
+
+### extra_sei
+
+  
+description:
+Pass on extra SEI data (e.g. a53 cc) to be included in the bitstream (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### udu_sei
+
+  
+description:
+Pass on user data unregistered SEI if available (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### intra-refresh
+
+  
+description:
+Use Periodic Intra Refresh instead of IDR frames (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### single-slice-intra-refresh
+
+  
+description:
+Use single slice intra refresh (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### constrained-encoding
+
+  
+description:
+Enable constrainedFrame encoding where each slice in the constrained picture is independent of other slices (h264_nvenc)  
+type: string  
+readonly: no  
+required: no  
 
 ### num_output_buffers
 
@@ -19574,1380 +19306,6 @@ values:
 * 6
 * 6.1
 * 6.2
-
-### preset
-
-  
-description:
-Set the encoding preset (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* default
-* slow
-* medium
-* fast
-* hp
-* hq
-* bd
-* ll
-* llhq
-* llhp
-* lossless
-* losslesshp
-* p1
-* p2
-* p3
-* p4
-* p5
-* p6
-* p7
-
-### tune
-
-  
-description:
-Set the encoding tuning info (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* hq
-* ll
-* ull
-* lossless
-
-### profile
-
-  
-description:
-Set the encoding profile (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* baseline
-* main
-* high
-* high444p
-
-### level
-
-  
-description:
-Set the encoding level restriction (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* auto
-* 1
-* 1.0
-* 1b
-* 1.0b
-* 1.1
-* 1.2
-* 1.3
-* 2
-* 2.0
-* 2.1
-* 2.2
-* 3
-* 3.0
-* 3.1
-* 3.2
-* 4
-* 4.0
-* 4.1
-* 4.2
-* 5
-* 5.0
-* 5.1
-* 5.2
-* 6.0
-* 6.1
-* 6.2
-
-### rc
-
-  
-description:
-Override the preset rate-control (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* constqp
-* vbr
-* cbr
-* vbr_minqp
-* ll_2pass_quality
-* ll_2pass_size
-* vbr_2pass
-* cbr_ld_hq
-* cbr_hq
-* vbr_hq
-
-### rc-lookahead
-
-  
-description:
-Number of frames to look ahead for rate-control (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### surfaces
-
-  
-description:
-Number of concurrent surfaces (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 64  
-default: 0  
-
-### cbr
-
-  
-description:
-Use cbr encoding mode (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### 2pass
-
-  
-description:
-Use 2pass encoding mode (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### gpu
-
-  
-description:
-Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* any
-* list
-
-### delay
-
-  
-description:
-Delay frame output by the given amount of frames (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 2147483647  
-
-### no-scenecut
-
-  
-description:
-When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### forced-idr
-
-  
-description:
-If forcing keyframes, force them as IDR frames. (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### b_adapt
-
-  
-description:
-When lookahead is enabled, set this to 0 to disable adaptive B-frame decision (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### spatial-aq
-
-  
-description:
-set to 1 to enable Spatial AQ (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### spatial_aq
-
-  
-description:
-set to 1 to enable Spatial AQ (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### temporal-aq
-
-  
-description:
-set to 1 to enable Temporal AQ (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### temporal_aq
-
-  
-description:
-set to 1 to enable Temporal AQ (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### zerolatency
-
-  
-description:
-Set 1 to indicate zero latency operation (no reordering delay) (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### nonref_p
-
-  
-description:
-Set this to 1 to enable automatic insertion of non-reference P-frames (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### strict_gop
-
-  
-description:
-Set 1 to minimize GOP-to-GOP rate fluctuations (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### aq-strength
-
-  
-description:
-When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-maximum: 15  
-default: 8  
-
-### cq
-
-  
-description:
-Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (nvenc)  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 51  
-default: 0  
-
-### aud
-
-  
-description:
-Use access unit delimiters (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### bluray-compat
-
-  
-description:
-Bluray compatibility workarounds (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### init_qpP
-
-  
-description:
-Initial QP value for P frame (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### init_qpB
-
-  
-description:
-Initial QP value for B frame (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### init_qpI
-
-  
-description:
-Initial QP value for I frame (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### qp
-
-  
-description:
-Constant quantization parameter rate control method (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### weighted_pred
-
-  
-description:
-Set 1 to enable weighted prediction (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
-### coder
-
-  
-description:
-Coder type (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* default
-* auto
-* cabac
-* cavlc
-* ac
-* vlc
-
-### b_ref_mode
-
-  
-description:
-Use B frames as references (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* disabled
-* each
-* middle
-
-### a53cc
-
-  
-description:
-Use A53 Closed Captions (if available) (nvenc)  
-type: string  
-readonly: no  
-required: no  
-
-### dpb_size
-
-  
-description:
-Specifies the DPB size used for encoding (0 means automatic) (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### multipass
-
-  
-description:
-Set the multipass encoding (nvenc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* disabled
-* qres
-* fullres
-
-### ldkfs
-
-  
-description:
-Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (nvenc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 255  
-default: 0  
-
-### preset
-
-  
-description:
-Set the encoding preset (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* default
-* slow
-* medium
-* fast
-* hp
-* hq
-* bd
-* ll
-* llhq
-* llhp
-* lossless
-* losslesshp
-* p1
-* p2
-* p3
-* p4
-* p5
-* p6
-* p7
-
-### tune
-
-  
-description:
-Set the encoding tuning info (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* hq
-* ll
-* ull
-* lossless
-
-### profile
-
-  
-description:
-Set the encoding profile (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* baseline
-* main
-* high
-* high444p
-
-### level
-
-  
-description:
-Set the encoding level restriction (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* auto
-* 1
-* 1.0
-* 1b
-* 1.0b
-* 1.1
-* 1.2
-* 1.3
-* 2
-* 2.0
-* 2.1
-* 2.2
-* 3
-* 3.0
-* 3.1
-* 3.2
-* 4
-* 4.0
-* 4.1
-* 4.2
-* 5
-* 5.0
-* 5.1
-* 5.2
-* 6.0
-* 6.1
-* 6.2
-
-### rc
-
-  
-description:
-Override the preset rate-control (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* constqp
-* vbr
-* cbr
-* vbr_minqp
-* ll_2pass_quality
-* ll_2pass_size
-* vbr_2pass
-* cbr_ld_hq
-* cbr_hq
-* vbr_hq
-
-### rc-lookahead
-
-  
-description:
-Number of frames to look ahead for rate-control (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### surfaces
-
-  
-description:
-Number of concurrent surfaces (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 64  
-default: 0  
-
-### cbr
-
-  
-description:
-Use cbr encoding mode (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### 2pass
-
-  
-description:
-Use 2pass encoding mode (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### gpu
-
-  
-description:
-Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* any
-* list
-
-### delay
-
-  
-description:
-Delay frame output by the given amount of frames (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 2147483647  
-
-### no-scenecut
-
-  
-description:
-When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### forced-idr
-
-  
-description:
-If forcing keyframes, force them as IDR frames. (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### b_adapt
-
-  
-description:
-When lookahead is enabled, set this to 0 to disable adaptive B-frame decision (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### spatial-aq
-
-  
-description:
-set to 1 to enable Spatial AQ (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### spatial_aq
-
-  
-description:
-set to 1 to enable Spatial AQ (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### temporal-aq
-
-  
-description:
-set to 1 to enable Temporal AQ (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### temporal_aq
-
-  
-description:
-set to 1 to enable Temporal AQ (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### zerolatency
-
-  
-description:
-Set 1 to indicate zero latency operation (no reordering delay) (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### nonref_p
-
-  
-description:
-Set this to 1 to enable automatic insertion of non-reference P-frames (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### strict_gop
-
-  
-description:
-Set 1 to minimize GOP-to-GOP rate fluctuations (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### aq-strength
-
-  
-description:
-When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-maximum: 15  
-default: 8  
-
-### cq
-
-  
-description:
-Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (nvenc_h264)  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 51  
-default: 0  
-
-### aud
-
-  
-description:
-Use access unit delimiters (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### bluray-compat
-
-  
-description:
-Bluray compatibility workarounds (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### init_qpP
-
-  
-description:
-Initial QP value for P frame (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### init_qpB
-
-  
-description:
-Initial QP value for B frame (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### init_qpI
-
-  
-description:
-Initial QP value for I frame (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### qp
-
-  
-description:
-Constant quantization parameter rate control method (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### weighted_pred
-
-  
-description:
-Set 1 to enable weighted prediction (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
-### coder
-
-  
-description:
-Coder type (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* default
-* auto
-* cabac
-* cavlc
-* ac
-* vlc
-
-### b_ref_mode
-
-  
-description:
-Use B frames as references (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* disabled
-* each
-* middle
-
-### a53cc
-
-  
-description:
-Use A53 Closed Captions (if available) (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-
-### dpb_size
-
-  
-description:
-Specifies the DPB size used for encoding (0 means automatic) (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### multipass
-
-  
-description:
-Set the multipass encoding (nvenc_h264)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* disabled
-* qres
-* fullres
-
-### ldkfs
-
-  
-description:
-Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (nvenc_h264)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 255  
-default: 0  
-
-### preset
-
-  
-description:
-Set the encoding preset (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* default
-* slow
-* medium
-* fast
-* hp
-* hq
-* bd
-* ll
-* llhq
-* llhp
-* lossless
-* losslesshp
-* p1
-* p2
-* p3
-* p4
-* p5
-* p6
-* p7
-
-### tune
-
-  
-description:
-Set the encoding tuning info (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* hq
-* ll
-* ull
-* lossless
-
-### profile
-
-  
-description:
-Set the encoding profile (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* main
-* main10
-* rext
-
-### level
-
-  
-description:
-Set the encoding level restriction (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* auto
-* 1
-* 1.0
-* 2
-* 2.0
-* 2.1
-* 3
-* 3.0
-* 3.1
-* 4
-* 4.0
-* 4.1
-* 5
-* 5.0
-* 5.1
-* 5.2
-* 6
-* 6.0
-* 6.1
-* 6.2
-
-### tier
-
-  
-description:
-Set the encoding tier (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* main
-* high
-
-### rc
-
-  
-description:
-Override the preset rate-control (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* constqp
-* vbr
-* cbr
-* vbr_minqp
-* ll_2pass_quality
-* ll_2pass_size
-* vbr_2pass
-* cbr_ld_hq
-* cbr_hq
-* vbr_hq
-
-### rc-lookahead
-
-  
-description:
-Number of frames to look ahead for rate-control (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### surfaces
-
-  
-description:
-Number of concurrent surfaces (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 64  
-default: 0  
-
-### cbr
-
-  
-description:
-Use cbr encoding mode (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### 2pass
-
-  
-description:
-Use 2pass encoding mode (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### gpu
-
-  
-description:
-Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* any
-* list
-
-### delay
-
-  
-description:
-Delay frame output by the given amount of frames (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 2147483647  
-
-### no-scenecut
-
-  
-description:
-When lookahead is enabled, set this to 1 to disable adaptive I-frame insertion at scene cuts (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### forced-idr
-
-  
-description:
-If forcing keyframes, force them as IDR frames. (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### spatial_aq
-
-  
-description:
-set to 1 to enable Spatial AQ (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### spatial-aq
-
-  
-description:
-set to 1 to enable Spatial AQ (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### temporal_aq
-
-  
-description:
-set to 1 to enable Temporal AQ (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### temporal-aq
-
-  
-description:
-set to 1 to enable Temporal AQ (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### zerolatency
-
-  
-description:
-Set 1 to indicate zero latency operation (no reordering delay) (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### nonref_p
-
-  
-description:
-Set this to 1 to enable automatic insertion of non-reference P-frames (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### strict_gop
-
-  
-description:
-Set 1 to minimize GOP-to-GOP rate fluctuations (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### aq-strength
-
-  
-description:
-When Spatial AQ is enabled, this field is used to specify AQ strength. AQ strength scale is from 1 (low) - 15 (aggressive) (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-maximum: 15  
-default: 8  
-
-### cq
-
-  
-description:
-Set target quality level (0 to 51, 0 means automatic) for constant quality mode in VBR rate control (nvenc_hevc)  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 51  
-default: 0  
-
-### aud
-
-  
-description:
-Use access unit delimiters (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### bluray-compat
-
-  
-description:
-Bluray compatibility workarounds (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### init_qpP
-
-  
-description:
-Initial QP value for P frame (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### init_qpB
-
-  
-description:
-Initial QP value for B frame (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### init_qpI
-
-  
-description:
-Initial QP value for I frame (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### qp
-
-  
-description:
-Constant quantization parameter rate control method (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: -1  
-maximum: 51  
-default: -1  
-
-### weighted_pred
-
-  
-description:
-Set 1 to enable weighted prediction (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
-
-### b_ref_mode
-
-  
-description:
-Use B frames as references (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* disabled
-* each
-* middle
-
-### a53cc
-
-  
-description:
-Use A53 Closed Captions (if available) (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### s12m_tc
-
-  
-description:
-Use timecode (if available) (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-
-### dpb_size
-
-  
-description:
-Specifies the DPB size used for encoding (0 means automatic) (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
-### multipass
-
-  
-description:
-Set the multipass encoding (nvenc_hevc)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* disabled
-* qres
-* fullres
-
-### ldkfs
-
-  
-description:
-Low delay key frame scale; Specifies the Scene Change frame size increase allowed in case of single frame VBV and CBR (nvenc_hevc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 255  
-default: 0  
 
 ### preset
 
@@ -21316,6 +19674,30 @@ minimum: -1
 maximum: 51  
 default: -1  
 
+### qp_cb_offset
+
+  
+description:
+Quantization parameter offset for cb channel (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -12  
+maximum: 12  
+default: 0  
+
+### qp_cr_offset
+
+  
+description:
+Quantization parameter offset for cr channel (hevc_nvenc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -12  
+maximum: 12  
+default: 0  
+
 ### weighted_pred
 
   
@@ -21398,6 +19780,51 @@ required: no
 minimum: 0  
 maximum: 255  
 default: 0  
+
+### extra_sei
+
+  
+description:
+Pass on extra SEI data (e.g. a53 cc) to be included in the bitstream (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### udu_sei
+
+  
+description:
+Pass on user data unregistered SEI if available (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### intra-refresh
+
+  
+description:
+Use Periodic Intra Refresh instead of IDR frames (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### single-slice-intra-refresh
+
+  
+description:
+Use single slice intra refresh (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
+
+### constrained-encoding
+
+  
+description:
+Enable constrainedFrame encoding where each slice in the constrained picture is independent of other slices (hevc_nvenc)  
+type: string  
+readonly: no  
+required: no  
 
 ### num_output_buffers
 

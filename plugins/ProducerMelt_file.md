@@ -31,5 +31,5 @@ description:
 The name of the melt text file.  
 type:   
 readonly: no  
-required: true  
+required: yes  
 

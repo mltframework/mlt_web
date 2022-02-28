@@ -26,6 +26,7 @@ Amount of blur
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -39,6 +40,7 @@ Blur type
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.333344  
@@ -52,6 +54,7 @@ Edge compensation
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Fons Adriaensen <fons@linuxaudio.org>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Delay
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.02  
 maximum: 0.1  
 default: 0.06  
@@ -46,6 +46,7 @@ title: Xover
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 50  
 maximum: 1000  
 default: 223.607  
@@ -57,6 +58,7 @@ title: RT-low
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 8  
 default: 2.75  
@@ -67,6 +69,7 @@ title: RT-mid
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 8  
 default: 2.75  
@@ -77,6 +80,7 @@ title: Damping
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1500  
 maximum: 24000  
 default: 6000  
@@ -88,6 +92,7 @@ title: F1-freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 40  
 maximum: 10000  
 default: 159.054  
@@ -99,6 +104,7 @@ title: F1-gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -109,6 +115,7 @@ title: F2-freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 40  
 maximum: 10000  
 default: 2514.87  
@@ -120,6 +127,7 @@ title: F2-gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -130,6 +138,7 @@ title: XYZ gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -9  
 maximum: 9  
 default: 0  
@@ -145,7 +154,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -154,6 +163,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

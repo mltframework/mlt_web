@@ -26,6 +26,7 @@ Slope of the red color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -39,6 +40,7 @@ Slope of the green color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -52,6 +54,7 @@ Slope of the blue color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -65,6 +68,7 @@ Slope of the alpha component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -78,6 +82,7 @@ Offset of the red color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -91,6 +96,7 @@ Offset of the green color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -104,6 +110,7 @@ Offset of the blue color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -117,6 +124,7 @@ Offset of the alpha component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -130,6 +138,7 @@ Power (Gamma) of the red color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -143,6 +152,7 @@ Power (Gamma) of the green color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -156,6 +166,7 @@ Power (Gamma) of the blue color component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -169,6 +180,7 @@ Power (Gamma) of the alpha component
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  
@@ -182,6 +194,7 @@ Overall saturation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.1  

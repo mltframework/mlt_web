@@ -37,9 +37,10 @@ Draw a red ellipse around the object
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 2
@@ -50,6 +51,7 @@ How often to detect an object in number of frames, divided by 1000
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.025  
@@ -63,6 +65,7 @@ How many threads to use divided by 100; 0 uses CPU count
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.01  
@@ -76,6 +79,7 @@ The search window scale factor, divided by 10
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.12  
@@ -89,6 +93,7 @@ Minimum number of rectangles that makes up an object, divided by 100
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.02  
@@ -102,6 +107,7 @@ Minimum window size in pixels, divided by 1000
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -115,6 +121,7 @@ Maximum object size in pixels, divided by 10000
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.05  

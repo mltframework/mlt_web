@@ -36,7 +36,8 @@ description:
 Linewidth in picture  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 2  
@@ -50,7 +51,8 @@ description:
 Maximal number of lines in picture  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 5  
@@ -64,7 +66,8 @@ description:
 Make image up to n values darker behind line  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 40  
@@ -77,7 +80,8 @@ description:
 Make image up to n values lighter behind line  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 40  

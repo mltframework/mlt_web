@@ -26,6 +26,7 @@ X position of profile
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -39,6 +40,7 @@ Y position of profile
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -52,6 +54,7 @@ Tilt of profile
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -65,6 +68,7 @@ Length of profile
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.576465  
@@ -78,6 +82,7 @@ Channel to numerically display
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.375005  
@@ -91,6 +96,7 @@ Position of marker 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -104,6 +110,7 @@ Position of marker 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -117,6 +124,7 @@ Show R trace on scope
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -130,6 +138,7 @@ Show G trace on scope
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -143,6 +152,7 @@ Show B trace on scope
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -156,6 +166,7 @@ Show Y&#39; trace on scope
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -169,6 +180,7 @@ Show Pr trace on scope
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -182,6 +194,7 @@ Show Pb trace on scope
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -195,6 +208,7 @@ Show Alpha trace on scope
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -208,6 +222,7 @@ e
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -219,6 +234,7 @@ title: Display RMS
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -230,6 +246,7 @@ title: Display minimum
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -241,6 +258,7 @@ title: Display maximum
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -254,6 +272,7 @@ use 0-255 instead of 0.0-1.0
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -267,6 +286,7 @@ rec 601 or rec 709
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -280,6 +300,7 @@ Color of the profile marker
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

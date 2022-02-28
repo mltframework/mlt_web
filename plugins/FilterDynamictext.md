@@ -51,7 +51,7 @@ The # may be escaped with "\".
 </pre>
 type: string  
 readonly: no  
-required: true  
+required: yes  
 default: #timecode#  
 widget: text  
 

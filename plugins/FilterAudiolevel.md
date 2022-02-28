@@ -43,7 +43,7 @@ widget: checkbox
 description:
 &lt;N&gt; is the channel number starting with 0. This is updated on every frame with audio.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 minimum: 0  
 maximum: 1  

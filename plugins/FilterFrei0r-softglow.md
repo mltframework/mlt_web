@@ -26,6 +26,7 @@ Blur of the glow
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -39,6 +40,7 @@ Brightness of highlight areas
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.75  
@@ -52,6 +54,7 @@ Sharpness of highlight areas
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.85  
@@ -65,6 +68,7 @@ Blend mode used to blend highlight blur with input image
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

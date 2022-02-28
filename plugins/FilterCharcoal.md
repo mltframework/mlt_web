@@ -26,6 +26,7 @@ title: Line Width
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 default: 1  
 unit: pixels  
@@ -36,6 +37,7 @@ title: Line Height
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 default: 1  
 unit: pixels  
@@ -46,6 +48,7 @@ title: Contrast
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 1.5  
 
 ### mix
@@ -54,6 +57,7 @@ title: Color
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### invert
@@ -62,5 +66,6 @@ title: Invert
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 

@@ -30,6 +30,7 @@ Luma value that defines the center point of transition from prelevel to postleve
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 255  
 default: 128  
@@ -42,6 +43,7 @@ This defines the width of the transition from prelevel to postlevel luma value. 
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 128  
 default: 0  
@@ -54,6 +56,7 @@ Opacity value before the transition in opacity value begins.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 255  
 default: 0  
@@ -66,6 +69,7 @@ Opacity value after the transition in opacity value ends.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 255  
 default: 255  

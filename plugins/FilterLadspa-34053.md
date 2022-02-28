@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Markus Schmidt / Damien Zammit / Thor Harald Johansen  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Bypass
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 5
@@ -44,6 +44,7 @@ title: Input
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -54,6 +55,7 @@ title: Output
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -64,6 +66,7 @@ title: Split 1/2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 66.874  
@@ -75,6 +78,7 @@ title: Split 2/3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 447.214  
@@ -86,6 +90,7 @@ title: Split 3/4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 2990.7  
@@ -97,6 +102,7 @@ title: S1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -0.5  
 maximum: 0.5  
 default: -0.25  
@@ -107,6 +113,7 @@ title: S2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -0.5  
 maximum: 0.5  
 default: -0.25  
@@ -117,6 +124,7 @@ title: S3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -0.5  
 maximum: 0.5  
 default: -0.25  
@@ -127,6 +135,7 @@ title: Q1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.25  
 maximum: 4  
 default: 1.1875  
@@ -137,6 +146,7 @@ title: Q2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.25  
 maximum: 4  
 default: 1.1875  
@@ -147,6 +157,7 @@ title: Q3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.25  
 maximum: 4  
 default: 1.1875  
@@ -157,6 +168,7 @@ title: Filter Mode
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -167,6 +179,7 @@ title: Reduction 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1.5849e-05  
 maximum: 1  
 default: 1.5849e-05  
@@ -177,6 +190,7 @@ title: Threshold 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.000976563  
 maximum: 1  
 default: 0.250732  
@@ -187,6 +201,7 @@ title: Ratio 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 20  
 default: 1  
@@ -197,6 +212,7 @@ title: Attack 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 94.5742  
@@ -208,6 +224,7 @@ title: Release 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 94.5742  
@@ -219,6 +236,7 @@ title: Makeup 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 64  
 default: 1  
@@ -229,6 +247,7 @@ title: Knee 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 8  
 default: 2.75  
@@ -239,6 +258,7 @@ title: Detection 1
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -249,6 +269,7 @@ title: Bypass 1
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 36
@@ -257,6 +278,7 @@ title: Solo 1
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 37
@@ -265,6 +287,7 @@ title: Reduction 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1.5849e-05  
 maximum: 1  
 default: 1.5849e-05  
@@ -275,6 +298,7 @@ title: Threshold 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.000976563  
 maximum: 1  
 default: 0.250732  
@@ -285,6 +309,7 @@ title: Ratio 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 20  
 default: 1  
@@ -295,6 +320,7 @@ title: Attack 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 100  
@@ -306,6 +332,7 @@ title: Release 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 94.5742  
@@ -317,6 +344,7 @@ title: Makeup 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 64  
 default: 1  
@@ -327,6 +355,7 @@ title: Knee 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 8  
 default: 2.75  
@@ -337,6 +366,7 @@ title: Detection 2
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -347,6 +377,7 @@ title: Bypass 2
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 48
@@ -355,6 +386,7 @@ title: Solo 2
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 49
@@ -363,6 +395,7 @@ title: Reduction 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1.5849e-05  
 maximum: 1  
 default: 1.5849e-05  
@@ -373,6 +406,7 @@ title: Threshold 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.000976563  
 maximum: 1  
 default: 0.000976563  
@@ -383,6 +417,7 @@ title: Ratio 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 20  
 default: 1  
@@ -393,6 +428,7 @@ title: Attack 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 94.5742  
@@ -404,6 +440,7 @@ title: Release 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 100  
@@ -415,6 +452,7 @@ title: Makeup 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 64  
 default: 1  
@@ -425,6 +463,7 @@ title: Knee 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 8  
 default: 2.75  
@@ -435,6 +474,7 @@ title: Detection 3
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -445,6 +485,7 @@ title: Bypass 3
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 60
@@ -453,6 +494,7 @@ title: Solo 3
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 61
@@ -461,6 +503,7 @@ title: Reduction 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1.5849e-05  
 maximum: 1  
 default: 1.5849e-05  
@@ -471,6 +514,7 @@ title: Threshold 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.000976563  
 maximum: 1  
 default: 0.000976563  
@@ -481,6 +525,7 @@ title: Ratio 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 20  
 default: 1  
@@ -491,6 +536,7 @@ title: Attack 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 94.5742  
@@ -502,6 +548,7 @@ title: Release 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 94.5742  
@@ -513,6 +560,7 @@ title: Makeup 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 64  
 default: 1  
@@ -523,6 +571,7 @@ title: Knee 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 8  
 default: 2.75  
@@ -533,6 +582,7 @@ title: Detection 4
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -543,6 +593,7 @@ title: Bypass 4
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 72
@@ -551,14 +602,16 @@ title: Solo 4
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 7[*]
 
 title: Input L    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -567,8 +620,9 @@ default: 0
 
 title: Input R    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -577,8 +631,9 @@ default: 0
 
 title: Output L    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -587,8 +642,9 @@ default: 0
 
 title: Output R    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -597,8 +653,9 @@ default: 0
 
 title: 0dB-InL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -607,8 +664,9 @@ default: 0
 
 title: 0dB-InR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -617,8 +675,9 @@ default: 0
 
 title: 0dB-OutL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -627,8 +686,9 @@ default: 0
 
 title: 0dB-OutR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -637,8 +697,9 @@ default: 0
 
 title: Gating 1    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0.0625  
 maximum: 1  
 default: 1  
@@ -647,8 +708,9 @@ default: 1
 
 title: Output 1    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -657,8 +719,9 @@ default: 0
 
 title: Gating 2    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0.0625  
 maximum: 1  
 default: 1  
@@ -667,8 +730,9 @@ default: 1
 
 title: Output 2    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -677,8 +741,9 @@ default: 0
 
 title: Gating 3    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0.0625  
 maximum: 1  
 default: 1  
@@ -687,8 +752,9 @@ default: 1
 
 title: Output 3    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -697,8 +763,9 @@ default: 0
 
 title: Gating 4    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0.0625  
 maximum: 1  
 default: 1  
@@ -707,8 +774,9 @@ default: 1
 
 title: Output 4    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -724,7 +792,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -733,6 +801,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

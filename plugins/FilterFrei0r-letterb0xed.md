@@ -24,6 +24,7 @@ title: Border Width
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.4  
@@ -35,6 +36,7 @@ title: Transparency
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

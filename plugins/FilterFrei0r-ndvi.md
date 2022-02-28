@@ -37,6 +37,7 @@ The number of color levels to use in the false image (divided by 1000).
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.256  
@@ -50,6 +51,7 @@ A scaling factor to be applied to the visible component (divided by 10).
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.1  
@@ -63,6 +65,7 @@ An offset to be applied to the visible component (mapped to [-100%, 100%].
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -76,6 +79,7 @@ A scaling factor to be applied to the near-infrared component (divided by 10).
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.1  
@@ -89,6 +93,7 @@ An offset to be applied to the near-infrared component (mapped to [-100%, 100%].
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  

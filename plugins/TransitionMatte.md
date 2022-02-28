@@ -22,7 +22,7 @@ license: LGPLv2.1
 
 Please note that the transition automatically detects if the frame
 from track B has scaled or non-scaled luma. The frame property
-&quot;full_luma&quot; should indicate it.
+&quot;full_range&quot; should indicate it.
 If you need to prepare fill and key (matte) files, you can use melt or
 ffmpeg to extract alpha channel from existing video:
 melt sg_gm_2013_clip_title.avi -attach frei0r.alpha0ps 0=0.21 -consumer \

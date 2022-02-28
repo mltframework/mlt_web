@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Steve Harris <steve@plugin.org.uk>  
-copyright: Copyright (C) 2013-2014 Meltytech, LLC  
 license: GPLv2  
 
 ## Notes
@@ -30,6 +29,7 @@ title: Base frequency (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.048  
 maximum: 24000  
 default: 21120000.0  
@@ -41,6 +41,7 @@ title: Pitch offset
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 8  
 default: 0  
@@ -56,6 +57,6 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

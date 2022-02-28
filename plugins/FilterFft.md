@@ -40,7 +40,7 @@ The level of the sample window. 0 indicates that there are no samples in the win
 The transform of a window that is not full may show frequency spikes that are not really present in the audio.
 </pre>
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 minimum: 0  
 maximum: 1.0  
@@ -51,7 +51,7 @@ title: Bin Width
 description:
 The width of each bin in Hz.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: Hz  
 
@@ -61,7 +61,7 @@ title: Bin Count
 description:
 The number of bins that are output from the transform.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### bins
@@ -73,6 +73,6 @@ A pointer to an array of floats that represent the magnitude of the output of th
 bin[i] = sqrt( real[i]^2 + imag[i]^2 )
 </pre>
 type:   
-readonly: true  
+readonly: yes  
 required: no  
 

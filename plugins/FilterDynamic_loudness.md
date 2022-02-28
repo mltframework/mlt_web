@@ -83,7 +83,7 @@ title: Input Program Loudness
 description:
 The program loudness measured on the input over the duration of the window.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: LUFS  
 
@@ -93,7 +93,7 @@ title: Output Gain
 description:
 The amount of gain applied to the last frame. Updated with each new frame.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: dB  
 
@@ -103,6 +103,6 @@ title: Reset Count
 description:
 The number of times the filter has reset the loudness measurement. The measurement is reset whenever the filter detects a discontinuity in the frame sequence. It also resets when it detects that the producer has changed.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

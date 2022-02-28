@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Tim Goetze <tim@quitte.de>  
-copyright: Copyright (C) 2013-2014 Meltytech, LLC  
 license: GPLv2  
 
 ## Notes
@@ -30,6 +29,7 @@ title: model
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 3  
 default: 1  
@@ -40,6 +40,7 @@ title: bpm
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4  
 maximum: 240  
 default: 63  
@@ -50,6 +51,7 @@ title: div
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 4  
 default: 1  
@@ -60,6 +62,7 @@ title: vol
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.25  
@@ -70,6 +73,7 @@ title: tone
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.75  
@@ -85,6 +89,6 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

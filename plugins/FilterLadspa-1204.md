@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Steve Harris <steve@plugin.org.uk>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Low-shelving gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 30  
 default: 0  
@@ -46,6 +46,7 @@ title: Low-shelving frequency (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4.8  
 maximum: 23520  
 default: 4.8  
@@ -57,6 +58,7 @@ title: Low-shelving slope
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -67,6 +69,7 @@ title: Band 1 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 30  
 default: 0  
@@ -77,6 +80,7 @@ title: Band 1 frequency (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4.8  
 maximum: 23520  
 default: 40.1597  
@@ -88,6 +92,7 @@ title: Band 1 bandwidth (octaves)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 1  
@@ -98,6 +103,7 @@ title: Band 2 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 30  
 default: 0  
@@ -108,6 +114,7 @@ title: Band 2 frequency (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4.8  
 maximum: 23520  
 default: 336  
@@ -119,6 +126,7 @@ title: Band 2 bandwidth (octaves)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 1  
@@ -129,6 +137,7 @@ title: Band 3 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 30  
 default: 0  
@@ -139,6 +148,7 @@ title: Band 3 frequency (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4.8  
 maximum: 23520  
 default: 2811.18  
@@ -150,6 +160,7 @@ title: Band 3 bandwidth (octaves)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 1  
@@ -160,6 +171,7 @@ title: High-shelving gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 30  
 default: 0  
@@ -170,6 +182,7 @@ title: High-shelving frequency (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4.8  
 maximum: 23520  
 default: 23520  
@@ -181,6 +194,7 @@ title: High-shelving slope
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -196,7 +210,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -205,6 +219,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

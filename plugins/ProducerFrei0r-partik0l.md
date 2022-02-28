@@ -26,6 +26,7 @@ blossom on a higher prime number
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -39,6 +40,7 @@ blossom on a lower prime number
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

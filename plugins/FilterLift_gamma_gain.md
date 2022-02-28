@@ -30,6 +30,7 @@ title: Lift Red
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 0.0  
 
@@ -39,6 +40,7 @@ title: Lift Green
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 0.0  
 
@@ -48,6 +50,7 @@ title: Lift Blue
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 0.0  
 
@@ -57,6 +60,7 @@ title: Gamma Red
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 1.0  
 
@@ -66,6 +70,7 @@ title: Gamma Green
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 1.0  
 
@@ -75,6 +80,7 @@ title: Gamma Blue
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 1.0  
 
@@ -84,6 +90,7 @@ title: Gain Red
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 1.0  
 
@@ -93,6 +100,7 @@ title: Gain Green
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 1.0  
 
@@ -102,6 +110,7 @@ title: Gain Blue
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 1.0  
 

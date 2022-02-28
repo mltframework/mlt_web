@@ -26,6 +26,7 @@ Number of values per channel
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.104167  
@@ -39,6 +40,7 @@ Id of matrix used for dithering
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

@@ -112,5 +112,5 @@ description:
 The spline, a list of cubic Bézier curves, is described using JSON. The most basic parts are the coordinate tuples: [x, y]; x,y will be mapped from the range 0-1 to the image dimensions. Next layer are the Bézier points: [handle 1, point, handle 2] with handle 1, point, handle 2 being coordinate tuples The spline is a list of Bézier points. Optionally keyframes can be defined as a object of frame values, relative to the filter&#39;s in point, assigned to splines.  
 type: string  
 readonly: no  
-required: true  
+required: yes  
 

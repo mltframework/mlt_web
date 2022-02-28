@@ -13,7 +13,7 @@ title: cairoblend
 media types:
 Video  
 description: Composites second input on the first input with user-defined blend mode and opacity.  
-version: 0.9  
+version: 0.1  
 creator: Janne Liljeblad  
 
 ## Parameters
@@ -26,6 +26,7 @@ Opacity of composited image
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

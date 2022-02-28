@@ -20,17 +20,6 @@ license: GPLv2
 
 ## Parameters
 
-### argument
-
-title: Mix Level    
-description:
-Performs a dissolve if a mix level is not supplied.  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-
 ### mix
 
 title: Mix Level    
@@ -39,6 +28,7 @@ Performs a dissolve if a mix level is not supplied.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 

@@ -86,7 +86,7 @@ title: Program Loudness
 description:
 The measured program loudness since the last reset.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: LUFS  
 
@@ -96,7 +96,7 @@ title: Short-term Loudness
 description:
 The measured short-term loudness.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: LUFS  
 
@@ -106,7 +106,7 @@ title: Momentary Loudness
 description:
 The measured momentary loudness.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: LUFS  
 
@@ -116,7 +116,7 @@ title: Loudness Range
 description:
 The measured loudness range since the last reset.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: LUFS  
 
@@ -126,7 +126,7 @@ title: Peak
 description:
 The measured peak sample value for the last frame that was processed.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: dBFS  
 
@@ -136,7 +136,7 @@ title: Max Peak
 description:
 The measured peak sample value that has been received since the last reset.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: dBFS  
 
@@ -146,7 +146,7 @@ title: True Peak
 description:
 The measured true peak value for the last frame that was processed.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: dBTP  
 
@@ -156,7 +156,7 @@ title: Max True Peak
 description:
 The measured true peak value that has been received since the last reset.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: dBTP  
 
@@ -176,7 +176,7 @@ title: Reset Count
 description:
 The number of times the measurement has been reset. The filter is reset whenever reset is set to 1 or whenever a parameter is changed.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### frames_processed
@@ -185,6 +185,6 @@ title: Frames Processed
 description:
 The number of frames that have been processed since the last reset.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

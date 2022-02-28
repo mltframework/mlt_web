@@ -36,7 +36,8 @@ description:
 Maximum delta value of Up/Down move  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 400  
 default: 14  
@@ -50,7 +51,8 @@ description:
 n&#39;th % have a Y-Delta in picture  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 20  
@@ -64,7 +66,8 @@ description:
 Makes image n values lighter  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 20  
@@ -77,7 +80,8 @@ description:
 Makes image n values darker  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 30  
@@ -90,7 +94,8 @@ description:
 Change value only for n/100  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 70  
@@ -104,7 +109,8 @@ description:
 Makes image n values lighter  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 60  
@@ -117,7 +123,8 @@ description:
 Makes image n values darker  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 20  
@@ -130,7 +137,8 @@ description:
 Time (in frames) of a up/down cycle  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 10000  
 default: 70  

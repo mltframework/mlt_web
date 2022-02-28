@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Audio Waveform (*deprecated*)  
+title: Audio Waveform (*DEPRECATED*)  
 media types:
 Video  
 description: Generate audio waveforms.  

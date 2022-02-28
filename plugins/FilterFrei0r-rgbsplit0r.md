@@ -26,6 +26,7 @@ How far should layers be moved vertically from each other
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -39,6 +40,7 @@ How far should layers be moved horizontally from each other
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  

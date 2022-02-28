@@ -13,11 +13,10 @@ title: FFmpeg Reader
 media types:
 Audio  Video  
 description: Read an audio and/or video file using FFmpeg.  
-version: 2  
-creator: Charles Yates  
-contributor: Dan Dennedy  
-copyright: Copyright (C) 2003-2019 Meltytech, LLC  
-license: LGPL  
+version: 3  
+creator:   
+copyright: Meltytech, LLC  
+license: LGPLv2.1  
 URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)  
 
 ## Notes
@@ -50,7 +49,7 @@ Use 'acodec-list' to see a list of supported audio decoders.
 </pre>
 type: string  
 readonly: no  
-required: true  
+required: yes  
 widget: fileopen  
 
 ### audio_index
@@ -108,7 +107,7 @@ title: Frame rate
 description:
 the framerate of the resource  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: frames/second  
 scale: 2  
@@ -119,14 +118,14 @@ title: Supports seeking
 description:
 if the resource can seek  
 type: boolean  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### width
 
 title: Width    
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 unit: pixels  
 
@@ -134,7 +133,7 @@ unit: pixels
 
 title: Height    
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 unit: pixels  
 
@@ -184,6 +183,15 @@ type: float
 readonly: no  
 required: no  
 widget: checkbox  
+
+### force_full_range
+
+title: Force Full Range Color    
+description:
+When provided, this overrides the detected color range of the video (Y&#39;CbCr only).  
+type: boolean  
+readonly: no  
+required: no  
 
 ### force_colorspace
 
@@ -332,7 +340,6 @@ values:
 * igndts
 * discardcorrupt
 * sortdts
-* keepside
 * fastseek
 * nobuffer
 
@@ -658,6 +665,39 @@ type: string
 readonly: no  
 required: no  
 
+### raw_packet_size
+
+  
+description:
+(amr)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### raw_packet_size
+
+  
+description:
+(amrnb)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### raw_packet_size
+
+  
+description:
+(amrwb)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### ignore_loop
 
   
@@ -822,6 +862,34 @@ required: no
   
 description:
 set framerate (frames per second) (bin)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set frame size (bitpacked)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set pixel format (bitpacked)  
+type: string  
+readonly: no  
+required: no  
+default: 'yuv420p'  
+
+### framerate
+
+  
+description:
+set frame rate (bitpacked)  
 type: string  
 readonly: no  
 required: no  
@@ -1399,6 +1467,15 @@ required: no
   
 description:
 Use HTTP partial requests, 0 = disable, 1 = enable, -1 = auto (hls)  
+type: string  
+readonly: no  
+required: no  
+
+### seg_format_options
+
+  
+description:
+Set options for segment demuxer (hls)  
 type: string  
 readonly: no  
 required: no  
@@ -1992,6 +2069,15 @@ values:
 * dts
 * pts
 
+### use_tfdt
+
+  
+description:
+use tfdt for fragment timestamps (mov,mp4,m4a,3gp,3g2,mj2)  
+type: string  
+readonly: no  
+required: no  
+
 ### export_all
 
   
@@ -2018,6 +2104,18 @@ Enable external track support. (mov,mp4,m4a,3gp,3g2,mj2)
 type: string  
 readonly: no  
 required: no  
+
+### max_stts_delta
+
+  
+description:
+treat offsets above this value as invalid (mov,mp4,m4a,3gp,3g2,mj2)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: -2147483648  
+default: -480001  
 
 ### usetoc
 
@@ -2674,10 +2772,18 @@ values:
   
 description:
 set maximum timeout (in seconds) to wait for incoming connections (rtp)  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-default: 10  
+
+### localaddr
+
+  
+description:
+local address (rtp)  
+type: string  
+readonly: no  
+required: no  
 
 ### allowed_media_types
 
@@ -2813,21 +2919,13 @@ default: -1
 
   
 description:
-set maximum timeout (in seconds) to wait for incoming connections (-1 is infinite, imply flag listen) (deprecated, use listen_timeout) (rtsp)  
+set timeout (in microseconds) of socket I/O operations (rtsp)  
 type: integer  
 readonly: no  
 required: no  
-default: -1  
-
-### stimeout
-
-  
-description:
-set timeout (in microseconds) of socket TCP I/O operations (rtsp)  
-type: integer  
-readonly: no  
-required: no  
+minimum: -2147483648  
 default: 0  
+format: 64-bit  
 
 ### reorder_queue_size
 
@@ -2859,17 +2957,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.76.100'  
-
-### user-agent
-
-  
-description:
-override User-Agent header (deprecated, use user_agent) (rtsp)  
-type: string  
-readonly: no  
-required: no  
-default: 'Lavf58.76.100'  
+default: 'Lavf59.16.100'  
 
 ### raw_packet_size
 
@@ -2935,10 +3023,18 @@ values:
   
 description:
 set maximum timeout (in seconds) to wait for incoming connections (sdp)  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-default: 10  
+
+### localaddr
+
+  
+description:
+local address (sdp)  
+type: string  
+readonly: no  
+required: no  
 
 ### allowed_media_types
 
@@ -3487,6 +3583,53 @@ required: no
   
 description:
 force loop over input file sequence (exr_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (gem_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (gem_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (gem_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (gem_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (gem_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4727,7 +4870,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf58.76.100'  
+default: 'Lavf59.16.100'  
 
 ### stream_name
 
@@ -5583,7 +5726,7 @@ values:
 
   
 description:
-set decoded text subtitle format  
+Deprecated, does nothing  
 type: string  
 readonly: no  
 required: no  
@@ -5591,14 +5734,6 @@ format: integer or keyword
 values:  
 
 * ass
-* ass_with_timings
-
-### refcounted_frames
-
-  
-type: string  
-readonly: no  
-required: no  
 
 ### apply_cropping
 
@@ -5836,6 +5971,27 @@ readonly: no
 required: no  
 minimum: 20  
 default: 20  
+
+### is_avc
+
+  
+description:
+is avc (h264)  
+type: string  
+readonly: no  
+required: no  
+
+### nal_length_size
+
+  
+description:
+nal_length_size (h264)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 4  
+default: 0  
 
 ### enable_er
 
@@ -6385,6 +6541,18 @@ type: string
 readonly: no  
 required: no  
 
+### real_time_latency_msec
+
+  
+description:
+minimum elapsed time between emitting real-time subtitle events (cc_dec)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 500  
+default: 200  
+
 ### data_field
 
   
@@ -6413,7 +6581,7 @@ required: no
 
   
 description:
-compute clut when not available(-1) or always(1) or never(0) (dvbsub)  
+compute clut when not available(-1) or only once (-2) or always(1) or never(0) (dvbsub)  
 type: string  
 readonly: no  
 required: no  

@@ -27,7 +27,7 @@ description:
 A file name specification, URL, or producer name:argument.  
 type: string  
 readonly: no  
-required: true  
+required: yes  
 
 ### frame
 

@@ -92,6 +92,7 @@ title: Horizontal offset
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 unit: pixels  
@@ -102,6 +103,7 @@ title: Vertical offset
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 unit: pixels  
@@ -147,6 +149,7 @@ Fixed amount of rotation around the X axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 unit: degrees  
 
@@ -158,6 +161,7 @@ Fixed amount of rotation around the Y axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 unit: degrees  
 
@@ -169,6 +173,7 @@ Fixed amount of rotation around the Z axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 unit: degrees  
 
@@ -213,6 +218,7 @@ Fixed amount of shear along the X axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 unit: degrees  
 
@@ -224,6 +230,7 @@ Fixed amount of shear along the Y axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 unit: degrees  
 
@@ -235,6 +242,7 @@ Fixed amount of shear along the Z axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 unit: degrees  
 
@@ -266,6 +274,7 @@ A scale factor applied along the X axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### scale_y
@@ -276,6 +285,7 @@ A scale factor applied along the Y axis.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### invert_scale
@@ -361,6 +371,7 @@ This specifies the size and position of the image. The format of this is &quot;X
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 default: 0%/0%:100%x100%:100%  
 
 ### b_scaled

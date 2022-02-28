@@ -24,7 +24,7 @@ If a property &quot;consumer_aspect_ratio&quot; exists on the frame, then rescal
 
 ## Parameters
 
-### argument
+### interpolation
 
 title: Interpolation    
 description:

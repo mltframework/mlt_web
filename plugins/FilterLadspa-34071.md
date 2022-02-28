@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Markus Schmidt / Thor Harald Johansen  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Bypass
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 5
@@ -44,6 +44,7 @@ title: Input
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -54,6 +55,7 @@ title: Threshold
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.000976563  
 maximum: 1  
 default: 0.250732  
@@ -64,6 +66,7 @@ title: Ratio
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 20  
 default: 1  
@@ -74,6 +77,7 @@ title: Attack
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 4.47214  
@@ -85,6 +89,7 @@ title: Release
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 2000  
 default: 94.5742  
@@ -96,6 +101,7 @@ title: Makeup Gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 64  
 default: 1  
@@ -106,6 +112,7 @@ title: Knee
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 8  
 default: 2.75  
@@ -116,6 +123,7 @@ title: Detection
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -126,6 +134,7 @@ title: Stereo Link
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -136,6 +145,7 @@ title: S/C Mode
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 9  
 default: 0  
@@ -146,6 +156,7 @@ title: F1 Freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 18000  
 default: 424.264  
@@ -157,6 +168,7 @@ title: F2 Freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 18000  
 default: 2763.47  
@@ -168,6 +180,7 @@ title: F1 Level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0625  
 maximum: 16  
 default: 1  
@@ -178,6 +191,7 @@ title: F2 Level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0625  
 maximum: 16  
 default: 1  
@@ -188,6 +202,7 @@ title: S/C-Listen
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 27
@@ -196,6 +211,7 @@ title: S/C Route
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0  
@@ -206,6 +222,7 @@ title: S/C Level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.015625  
 maximum: 64  
 default: 1  
@@ -214,8 +231,9 @@ default: 1
 
 title: Input    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -224,8 +242,9 @@ default: 0
 
 title: Output    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -234,24 +253,27 @@ default: 0
 
 title: 0dB-In    
 type: boolean  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 default: 0  
 
 ### 9[*]
 
 title: 0dB-Out    
 type: boolean  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 default: 0  
 
 ### 18[*]
 
 title: Gain Reduction    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0.03125  
 maximum: 1  
 default: 0  
@@ -260,16 +282,18 @@ default: 0
 
 title: F1 Active    
 type: boolean  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 default: 0  
 
 ### 26[*]
 
 title: F2 Active    
 type: boolean  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 default: 0  
 
 ### instances
@@ -283,7 +307,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -292,6 +316,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

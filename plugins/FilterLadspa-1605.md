@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Jesse Chappell <jesse at essej dot net>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Delay Time (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5  
 default: 0  
@@ -46,6 +46,7 @@ title: Dry Level (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 0  
 default: 0  
@@ -56,6 +57,7 @@ title: Wet Level (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 0  
 default: 0  
@@ -66,6 +68,7 @@ title: Feedback
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -76,6 +79,7 @@ title: Crossfade samples
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5000  
 default: 1250  
@@ -91,7 +95,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -100,6 +104,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

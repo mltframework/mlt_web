@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Markus Schmidt / Krzysztof Foltman  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Bypass
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 5
@@ -44,6 +44,7 @@ title: Activation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 64  
 default: 1  
@@ -54,6 +55,7 @@ title: Master
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -64,6 +66,7 @@ title: Mix
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -74,6 +77,7 @@ title: Saturation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 10  
 default: 5.05  
@@ -84,6 +88,7 @@ title: Blend
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -10  
 maximum: 10  
 default: 10  
@@ -94,6 +99,7 @@ title: Lowpass
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 20000  
@@ -105,6 +111,7 @@ title: Highpass
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 10  
@@ -116,6 +123,7 @@ title: Lowpass
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 20000  
@@ -127,6 +135,7 @@ title: Highpass
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 10  
@@ -138,6 +147,7 @@ title: Tone
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 80  
 maximum: 8000  
 default: 2529.82  
@@ -149,6 +159,7 @@ title: Amount
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0625  
 maximum: 16  
 default: 1  
@@ -159,6 +170,7 @@ title: Gradient
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 10  
 default: 1  
@@ -168,8 +180,9 @@ scale: log
 
 title: Input    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -178,8 +191,9 @@ default: 0
 
 title: Output    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -188,8 +202,9 @@ default: 0
 
 title: 0dB    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -198,8 +213,9 @@ default: 0
 
 title: 0dB    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -208,8 +224,9 @@ default: 0
 
 title: Drive    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -225,7 +242,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -234,6 +251,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

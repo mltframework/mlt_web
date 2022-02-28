@@ -13,8 +13,12 @@ title: asidedata
 media types:
 Audio  
 description: Manipulate audio frame side data.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -59,11 +63,10 @@ values:
 * SPHERICAL
 * CONTENT_LIGHT_LEVEL
 * ICC_PROFILE
-* QP_TABLE_PROPERTIES
-* QP_TABLE_DATA
 * S12M_TIMECOD
 * DYNAMIC_HDR_PLUS
 * REGIONS_OF_INTEREST
+* DETECTION_BOUNDING_BOXES
 * SEI_UNREGISTERED
 
 ### position

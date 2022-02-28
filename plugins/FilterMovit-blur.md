@@ -26,6 +26,7 @@ title: Radius
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 3  
 

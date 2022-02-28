@@ -33,6 +33,7 @@ title: Invert selection
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -44,6 +45,7 @@ title: Delta R / A / Hue
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -55,6 +57,7 @@ title: Delta G / B / Chroma
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -66,6 +69,7 @@ title: Delta B / I / I
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -77,6 +81,7 @@ title: Slope
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -88,6 +93,7 @@ title: Selection subspace
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -99,6 +105,7 @@ title: Subspace shape
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -110,6 +117,7 @@ title: Edge mode
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -121,6 +129,7 @@ title: Operation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

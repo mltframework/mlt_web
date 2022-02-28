@@ -28,6 +28,7 @@ Whether to invert which frames are on and which is off
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### interval
@@ -38,6 +39,7 @@ Duration of strobe
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 100  
 default: 1  

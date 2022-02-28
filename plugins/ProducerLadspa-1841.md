@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: CMT (http://www.ladspa.org/cmt, plugin by Nathaniel Virgo)  
-copyright: Copyright (C) 2013-2014 Meltytech, LLC  
 license: GPLv2  
 
 ## Notes
@@ -30,6 +29,7 @@ title: Highest frequency
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 48000  
 default: 48000  
@@ -45,6 +45,6 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

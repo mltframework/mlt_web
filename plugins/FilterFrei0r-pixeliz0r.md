@@ -26,6 +26,7 @@ Horizontal size of one &quot;pixel&quot;
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.0194444  
@@ -39,6 +40,7 @@ Vertical size of one &quot;pixel&quot;
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.0243056  

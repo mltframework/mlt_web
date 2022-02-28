@@ -2,7 +2,9 @@
 title: Documentation
 wrap_title: Producer Plugins
 ---
+* [abnormal](../ProducerAbnormal/): Loader Without Normalization Filters
 * [avformat](../ProducerAvformat/): FFmpeg Reader
+* [avformat-novalidate](../ProducerAvformat-novalidate/): Non-validating FFmpeg Reader
 * [blipflash](../ProducerBlipflash/): Blip Flash
 * [color](../ProducerColor/): Color
 * [colour](../ProducerColour/): Color

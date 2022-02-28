@@ -26,6 +26,7 @@ Phase increment
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.02  
@@ -39,6 +40,7 @@ Zoomrate
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.202  

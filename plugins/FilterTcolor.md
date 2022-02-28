@@ -36,7 +36,8 @@ description:
 Adjust factor for Blue/Yellow axis  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: -400  
 maximum: 400  
 default: 190  
@@ -49,7 +50,8 @@ description:
 Adjust factor for Red/Green axis  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: -400  
 maximum: 400  
 default: 190  

@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Markus Schmidt  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Bypass
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 5
@@ -44,6 +44,7 @@ title: Input Gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -54,6 +55,7 @@ title: Output Gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -64,6 +66,7 @@ title: HP Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 16
@@ -72,6 +75,7 @@ title: HP Freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 66.874  
@@ -83,6 +87,7 @@ title: HP Mode
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 1  
@@ -93,6 +98,7 @@ title: LP Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 19
@@ -101,6 +107,7 @@ title: LP Freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 20000  
@@ -112,6 +119,7 @@ title: LP Mode
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 1  
@@ -122,6 +130,7 @@ title: LS Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 22
@@ -130,6 +139,7 @@ title: Level L
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.015625  
 maximum: 64  
 default: 1  
@@ -140,6 +150,7 @@ title: Freq L
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 447.214  
@@ -151,6 +162,7 @@ title: HS Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 25
@@ -159,6 +171,7 @@ title: Level H
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.015625  
 maximum: 64  
 default: 1  
@@ -169,6 +182,7 @@ title: Freq H
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 2990.7  
@@ -180,6 +194,7 @@ title: F1 Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 28
@@ -188,6 +203,7 @@ title: Level 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.015625  
 maximum: 64  
 default: 1  
@@ -198,6 +214,7 @@ title: Freq 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 447.214  
@@ -209,6 +226,7 @@ title: Q 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 100  
 default: 1  
@@ -220,6 +238,7 @@ title: F2 Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 32
@@ -228,6 +247,7 @@ title: Level 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.015625  
 maximum: 64  
 default: 1  
@@ -238,6 +258,7 @@ title: Freq 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 447.214  
@@ -249,6 +270,7 @@ title: Q 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 100  
 default: 1  
@@ -260,6 +282,7 @@ title: F3 Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 36
@@ -268,6 +291,7 @@ title: Level 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.015625  
 maximum: 64  
 default: 1  
@@ -278,6 +302,7 @@ title: Freq 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 2990.7  
@@ -289,6 +314,7 @@ title: Q 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 100  
 default: 1  
@@ -300,6 +326,7 @@ title: F4 Active
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 40
@@ -308,6 +335,7 @@ title: Level 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.015625  
 maximum: 64  
 default: 1  
@@ -318,6 +346,7 @@ title: Freq 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10  
 maximum: 20000  
 default: 2990.7  
@@ -329,6 +358,7 @@ title: Q 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 100  
 default: 1  
@@ -338,8 +368,9 @@ scale: log
 
 title: Meter-InL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -348,8 +379,9 @@ default: 0
 
 title: Meter-InR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -358,8 +390,9 @@ default: 0
 
 title: Meter-OutL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -368,8 +401,9 @@ default: 0
 
 title: Meter-OutR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -378,8 +412,9 @@ default: 0
 
 title: 0dB-InL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -388,8 +423,9 @@ default: 0
 
 title: 0dB-InR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -398,8 +434,9 @@ default: 0
 
 title: 0dB-OutL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -408,8 +445,9 @@ default: 0
 
 title: 0dB-OutR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -425,7 +463,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -434,6 +472,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

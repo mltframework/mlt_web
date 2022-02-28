@@ -27,7 +27,7 @@ description:
 The text to overlay.  
 type: string  
 readonly: no  
-required: true  
+required: yes  
 default: text  
 widget: text  
 
@@ -39,6 +39,7 @@ A set of X/Y coordinates by which to adjust the text.
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 default: 0%/0%:100%x100%:100  
 
 ### family

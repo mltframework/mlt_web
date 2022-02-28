@@ -190,7 +190,7 @@ title: Real width
 description:
 The original, unscaled width of the rendered image.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### meta.media.height
@@ -199,7 +199,7 @@ title: Real height
 description:
 The original, unscaled height of the rendered image.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### width
@@ -208,7 +208,7 @@ title: Width
 description:
 The last requested scaled image width.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### height
@@ -217,6 +217,6 @@ title: Height
 description:
 The last requested scaled image height.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

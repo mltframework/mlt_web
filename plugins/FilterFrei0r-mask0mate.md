@@ -24,6 +24,7 @@ title: Left
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -35,6 +36,7 @@ title: Right
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -46,6 +48,7 @@ title: Top
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -57,6 +60,7 @@ title: Bottom
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -70,6 +74,7 @@ Invert the mask, creates a hole in the frame.
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -83,6 +88,7 @@ Blur the outline of the mask
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

@@ -26,6 +26,7 @@ X coordinate of corner 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.333333  
@@ -39,6 +40,7 @@ Y coordinate of corner 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.333333  
@@ -52,6 +54,7 @@ X coordinate of corner 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.666666  
@@ -65,6 +68,7 @@ Y coordinate of corner 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.333333  
@@ -78,6 +82,7 @@ X coordinate of corner 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.666666  
@@ -91,6 +96,7 @@ Y coordinate of corner 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.666666  
@@ -104,6 +110,7 @@ X coordinate of corner 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.333333  
@@ -117,6 +124,7 @@ Y coordinate of corner 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.666666  
@@ -130,6 +138,7 @@ Enable stretching
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -143,6 +152,7 @@ Amount of stretching in X direction
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -156,6 +166,7 @@ Amount of stretching in Y direction
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -169,6 +180,7 @@ Quality of interpolation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.166667  
@@ -182,6 +194,7 @@ Makes background transparent
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -195,6 +208,7 @@ Makes smooth transition into transparent
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.01  
@@ -206,6 +220,7 @@ title: Alpha operation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

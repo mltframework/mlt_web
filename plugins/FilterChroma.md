@@ -15,5 +15,14 @@ Video
 description:   
 version: 1  
 creator: Charles Yates  
-copyright: Visual Media FX ?  
 license: LGPLv2.1  
+
+## Parameters
+
+### key
+
+title: Key Color    
+type: color  
+readonly: no  
+required: no  
+

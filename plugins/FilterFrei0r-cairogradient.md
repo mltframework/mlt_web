@@ -48,6 +48,7 @@ Opacity of the first color of the gradient
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -72,6 +73,7 @@ Opacity of the second color of the gradient
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -85,6 +87,7 @@ X position of the start point of the gradient
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -98,6 +101,7 @@ Y position of the start point of the gradient
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -111,6 +115,7 @@ X position of the end point of the gradient
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -124,6 +129,7 @@ Y position of the end point of the gradient
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -137,6 +143,7 @@ Position of first color in the line connecting gradient ends, really useful only
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

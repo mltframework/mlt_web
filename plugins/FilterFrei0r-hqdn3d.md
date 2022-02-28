@@ -26,6 +26,7 @@ Amount of spatial filtering
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.04  
@@ -39,6 +40,7 @@ Amount of temporal filtering
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.06  

@@ -26,6 +26,7 @@ influence of mean px value. &gt; 32 = 0
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

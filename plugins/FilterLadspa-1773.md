@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Tim Goetze <tim@quitte.de>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: 31 Hz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -46,6 +46,7 @@ title: 63 Hz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -56,6 +57,7 @@ title: 125 Hz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -66,6 +68,7 @@ title: 250 Hz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -76,6 +79,7 @@ title: 500 Hz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -86,6 +90,7 @@ title: 1 kHz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -96,6 +101,7 @@ title: 2 kHz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -106,6 +112,7 @@ title: 4 kHz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -116,6 +123,7 @@ title: 8 kHz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -126,6 +134,7 @@ title: 16 kHz
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 24  
 default: 0  
@@ -141,7 +150,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -150,6 +159,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

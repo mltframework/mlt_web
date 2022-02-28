@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Steve Harris <steve@plugin.org.uk>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: L delay (ms)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2700  
 default: 675  
@@ -46,6 +46,7 @@ title: L level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 50  
 default: 25  
@@ -56,6 +57,7 @@ title: C delay (ms)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2700  
 default: 675  
@@ -66,6 +68,7 @@ title: C level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 50  
 default: 25  
@@ -76,6 +79,7 @@ title: R delay (ms)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2700  
 default: 675  
@@ -86,6 +90,7 @@ title: R level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 50  
 default: 25  
@@ -96,6 +101,7 @@ title: Feedback
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -100  
 maximum: 100  
 default: 0  
@@ -106,6 +112,7 @@ title: High damp (%)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 50  
@@ -116,6 +123,7 @@ title: Low damp (%)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 50  
@@ -126,6 +134,7 @@ title: Spread
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 50  
 default: 25  
@@ -136,6 +145,7 @@ title: Dry/Wet level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -151,7 +161,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -160,6 +170,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

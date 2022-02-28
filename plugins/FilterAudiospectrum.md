@@ -121,6 +121,7 @@ X, Y, W, H are assumed to be pixel units unless they have the suffix '%'.
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 default: 0 0 100% 100%  
 
 ### fill
@@ -181,6 +182,19 @@ values:
 * vertical
 * horizontal
 
+### segment_gap
+
+title: Segment Gap    
+description:
+The space in pixels between the segments.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 100  
+default: 10  
+unit: pixels  
+
 ### bands
 
 title: Points    
@@ -225,6 +239,18 @@ minimum: -100
 maximum: 0  
 default: -30  
 unit: dB  
+
+### segments
+
+title: Segments    
+description:
+The number of segments to draw if the graph type is &quot;segment&quot;.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 2  
+maximum: 100  
+default: 10  
 
 ### window_size
 

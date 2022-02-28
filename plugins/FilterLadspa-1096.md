@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: CMT (http://www.ladspa.org/cmt, plugin by Richard W.E. Furse)  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Density (Grains/s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 10  
 
@@ -45,6 +45,7 @@ title: Scatter (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5  
 default: 2.5  
@@ -55,6 +56,7 @@ title: Grain Length (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0.2  
 
@@ -64,6 +66,7 @@ title: Grain Attack (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0.05  
 
@@ -78,7 +81,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -87,6 +90,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

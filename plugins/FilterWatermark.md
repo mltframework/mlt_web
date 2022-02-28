@@ -28,7 +28,7 @@ Image Example: melt clip.dv -filter watermark:logo.png
 
 ## Parameters
 
-### argument
+### resource
 
 title: File/URL    
 description:

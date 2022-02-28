@@ -13,8 +13,12 @@ title: graphmonitor
 media types:
 Video  
 description: Show various filtergraph stats.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -109,6 +113,8 @@ values:
 * size
 * rate
 * eof
+* sample_count_in
+* sample_count_out
 
 ### av.f
 
@@ -131,6 +137,8 @@ values:
 * size
 * rate
 * eof
+* sample_count_in
+* sample_count_out
 
 ### av.rate
 

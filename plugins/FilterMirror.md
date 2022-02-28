@@ -20,9 +20,9 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### mirror
 
-title: File    
+title: Mirror Type    
 description:
 Choose the type of mirror operation.  
 type: string  

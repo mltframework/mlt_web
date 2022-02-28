@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Mike Rawes <mike_rawes[at]yahoo.co.uk>  
-copyright: Copyright (C) 2013-2014 Meltytech, LLC  
 license: GPLv2  
 
 ## Notes
@@ -30,6 +29,7 @@ title: Gate
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 1
@@ -38,6 +38,7 @@ title: Trigger
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 2
@@ -46,6 +47,7 @@ title: Delay Time (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 
@@ -55,6 +57,7 @@ title: Attack Time (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 
@@ -64,6 +67,7 @@ title: Hold Time (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 
@@ -73,6 +77,7 @@ title: Decay Time (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 
@@ -82,6 +87,7 @@ title: Sustain Level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -92,6 +98,7 @@ title: Release Time (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 
@@ -106,6 +113,6 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

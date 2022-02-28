@@ -26,6 +26,7 @@ Type of test pattern
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -39,6 +40,7 @@ Into which color channel to draw
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -52,6 +54,7 @@ Amplitude (contrast) of the pattern
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.8  
@@ -65,6 +68,7 @@ Width of impulse
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.040404  
@@ -78,6 +82,7 @@ Angle of step function
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -91,6 +96,7 @@ Change polarity of impulse/step
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

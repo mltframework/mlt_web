@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Tom Szilagyi  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Band 1 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -46,6 +46,7 @@ title: Band 2 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -56,6 +57,7 @@ title: Band 3 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -66,6 +68,7 @@ title: Band 4 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -76,6 +79,7 @@ title: Band 5 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -86,6 +90,7 @@ title: Band 6 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -96,6 +101,7 @@ title: Band 7 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -106,6 +112,7 @@ title: Band 8 Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -50  
 maximum: 20  
 default: 0  
@@ -116,6 +123,7 @@ title: Band 1 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 40  
 maximum: 280  
 default: 100  
@@ -126,6 +134,7 @@ title: Band 2 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 100  
 maximum: 500  
 default: 200  
@@ -136,6 +145,7 @@ title: Band 3 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 200  
 maximum: 1000  
 default: 400  
@@ -146,6 +156,7 @@ title: Band 4 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 400  
 maximum: 2800  
 default: 1000  
@@ -156,6 +167,7 @@ title: Band 5 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1000  
 maximum: 5000  
 default: 3000  
@@ -166,6 +178,7 @@ title: Band 6 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 3000  
 maximum: 9000  
 default: 6000  
@@ -176,6 +189,7 @@ title: Band 7 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 6000  
 maximum: 18000  
 default: 12000  
@@ -186,6 +200,7 @@ title: Band 8 Freq [Hz]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 10000  
 maximum: 20000  
 default: 15000  
@@ -196,6 +211,7 @@ title: Band 1 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -206,6 +222,7 @@ title: Band 2 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -216,6 +233,7 @@ title: Band 3 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -226,6 +244,7 @@ title: Band 4 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -236,6 +255,7 @@ title: Band 5 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -246,6 +266,7 @@ title: Band 6 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -256,6 +277,7 @@ title: Band 7 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -266,6 +288,7 @@ title: Band 8 Bandwidth [octaves]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 5  
 default: 1  
@@ -281,7 +304,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -290,6 +313,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

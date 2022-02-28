@@ -22,7 +22,7 @@ license: LGPLv2.1
 
 ### start
 
-title: Start level (*deprecated*)    
+title: Start level (*DEPRECATED*)    
 type: float  
 readonly: no  
 required: no  
@@ -30,7 +30,7 @@ minimum: 0.0
 maximum: 15.0  
 default: 1.0  
 
-### end (*deprecated*)
+### end (*DEPRECATED*)
 
 title: End level    
 type: float  
@@ -46,6 +46,7 @@ title: Level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 maximum: 15.0  
 
@@ -57,6 +58,7 @@ When this is less than zero, the alpha factor follows the level property. Otherw
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 

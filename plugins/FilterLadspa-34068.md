@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Markus Schmidt  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Bypass
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 5
@@ -44,6 +44,7 @@ title: Input Gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -54,6 +55,7 @@ title: Output Gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 64  
 default: 1  
@@ -64,6 +66,7 @@ title: Mode
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 0  
@@ -74,6 +77,7 @@ title: Frequency
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 100  
 default: 1  
@@ -85,6 +89,7 @@ title: Modulation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -95,6 +100,7 @@ title: Offset L/R
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -105,6 +111,7 @@ title: Mono-in
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 20
@@ -113,14 +120,16 @@ title: Reset
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 7[*]
 
 title: Meter-InL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -129,8 +138,9 @@ default: 0
 
 title: Meter-InR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -139,8 +149,9 @@ default: 0
 
 title: Meter-OutL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -149,8 +160,9 @@ default: 0
 
 title: Meter-OutR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -159,8 +171,9 @@ default: 0
 
 title: 0dB-InL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -169,8 +182,9 @@ default: 0
 
 title: 0dB-InR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -179,8 +193,9 @@ default: 0
 
 title: 0dB-OutL    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -189,8 +204,9 @@ default: 0
 
 title: 0dB-OutR    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -206,7 +222,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -215,6 +231,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

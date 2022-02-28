@@ -88,6 +88,7 @@ If this value is set, values for properties "start" and "end" are discarded.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 

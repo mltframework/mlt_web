@@ -36,7 +36,8 @@ description:
 Maximal diameter of a dust piece  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 2  
@@ -50,7 +51,8 @@ description:
 How many dust pieces are on the image  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 400  
 default: 10  

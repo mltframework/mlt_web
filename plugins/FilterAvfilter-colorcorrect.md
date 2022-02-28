@@ -13,8 +13,12 @@ title: colorcorrect
 media types:
 Video  
 description: Adjust color white balance selectively for blacks and whites.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -77,6 +81,22 @@ required: no
 minimum: -3  
 maximum: 3  
 default: 1  
+
+### av.analyze
+
+  
+description:
+set the analyze mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* manual
+* average
+* minmax
+* median
 
 ### av.threads
 

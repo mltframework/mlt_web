@@ -22,7 +22,7 @@ license: LGPLv2.1
 
 Supplying a filename with extension &quot;.txt&quot; causes the loader producer to load with pango. If the filename begins with &quot;+&quot; the pango producer interprets the filename as pango text. This is a shortcut to embed titles in melt commands. For MLT XML, it is recommended that you embed the title text in the property value.
 Pango has builtin scaling. It will rescale the originally rendered title to whatever the consumer requests. Therefore, it will lose its aspect ratio if so requested, and it is up to the consumer to request a proper width and height that maintains the image aspect.
-Environment variable MLT_PANGO_PRODUCER_CACHE could be used to override and increase the size of cached converted images of simultaneous use. Fontset used by pango producer loaded once. That behavior prevents using new fonts till process used pango producer been restarted. To force fontmap reload you need to send signal &quot;fontmap-reload&quot; to pango producer: { mlt_profile profile = mlt_profile_init(&quot;dv_pal&quot;); mlt_producer producer = mlt_factory_producer(profile, &quot;pango&quot;, NULL); mlt_events_fire(mlt_producer_properties(producer), &quot;fontmap-reload&quot;, NULL, NULL ); mlt_producer_close(producer); mlt_profile_close(profile); };
+Environment variable MLT_PANGO_PRODUCER_CACHE could be used to override and increase the size of cached converted images of simultaneous use. Fontset used by pango producer loaded once. That behavior prevents using new fonts till process used pango producer been restarted. To force fontmap reload you need to send signal &quot;fontmap-reload&quot; to pango producer: { mlt_profile profile = mlt_profile_init(&quot;dv_pal&quot;); mlt_producer producer = mlt_factory_producer(profile, &quot;pango&quot;, NULL); mlt_events_fire(mlt_producer_properties(producer), &quot;fontmap-reload&quot;, NULL ); mlt_producer_close(producer); mlt_profile_close(profile); };
 
 
 ## Parameters
@@ -137,16 +137,6 @@ readonly: no
 required: no  
 widget: textbox  
 
-### font
-
-title: Font    
-description:
-The default typeface to use when not using markup. FreeType2 renders at 72 dpi. This property is deprecated. Use family, size and style instead.  
-type: string  
-readonly: no  
-required: no  
-widget: combo  
-
 ### family
 
 title: Font family    
@@ -216,7 +206,7 @@ title: Real width
 description:
 The original, unscaled width of the rendered title.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 unit: pixels  
 
@@ -226,7 +216,7 @@ title: Real height
 description:
 The original, unscaled height of the rendered title.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 unit: pixels  
 
@@ -236,7 +226,7 @@ title: Width
 description:
 The last requested scaled image width.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 unit: pixels  
 
@@ -246,7 +236,7 @@ title: Height
 description:
 The last requested scaled image height.  
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 unit: pixels  
 

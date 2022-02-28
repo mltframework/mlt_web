@@ -17,3 +17,17 @@ version: 1
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
+
+## Parameters
+
+### alpha
+
+title: Alpha Channel    
+description:
+A value to overwrite the alpha channel.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 255  
+

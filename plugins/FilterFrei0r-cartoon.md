@@ -26,6 +26,7 @@ level of trip: mapped to [0,1] asymptotical
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -39,6 +40,7 @@ difference space: a value from 0 to 256 (mapped to [0,1])
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.00390625  

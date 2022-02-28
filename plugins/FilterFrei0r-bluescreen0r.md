@@ -37,6 +37,7 @@ Distance to Color (127 is good)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.288  
@@ -50,6 +51,7 @@ Whether to produce the inverse of the effect on the alpha channel
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

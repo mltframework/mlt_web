@@ -26,6 +26,7 @@ Whether to unpremultiply instead
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

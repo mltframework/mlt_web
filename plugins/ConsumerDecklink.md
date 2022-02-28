@@ -30,7 +30,7 @@ Please ensure that you use a MLT profile that is compatible with a broadcast sta
 
 ## Parameters
 
-### argument
+### resource
 
 title: Card    
 type: integer  
@@ -82,7 +82,7 @@ widget: slider
 
 title: Number of devices    
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 minimum: 0  
 
@@ -92,7 +92,7 @@ title: Device model
 description:
 The model name of each device that provides output.  
 type: string  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### sliced_swab

@@ -26,6 +26,7 @@ title: Blur Radius
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 3.0  
 
@@ -35,6 +36,7 @@ title: Blurriness
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.3  

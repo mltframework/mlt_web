@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Steve Harris <steve@plugin.org.uk>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Random seed
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1000  
 default: 0  
@@ -46,6 +46,7 @@ title: Input gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -96  
 maximum: 24  
 default: 0  
@@ -56,6 +57,7 @@ title: Feedback (%)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 0  
@@ -66,6 +68,7 @@ title: Number of taps
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 2  
 maximum: 128  
 default: 2  
@@ -76,6 +79,7 @@ title: First delay (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5  
 default: 0  
@@ -86,6 +90,7 @@ title: Delay range (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0001  
 maximum: 6  
 default: 6  
@@ -96,6 +101,7 @@ title: Delay change
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.2  
 maximum: 5  
 default: 1  
@@ -106,6 +112,7 @@ title: Delay random (%)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 0  
@@ -116,6 +123,7 @@ title: Amplitude change
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.2  
 maximum: 5  
 default: 1  
@@ -126,6 +134,7 @@ title: Amplitude random (%)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 0  
@@ -136,6 +145,7 @@ title: Dry/wet mix
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -151,7 +161,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -160,6 +170,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

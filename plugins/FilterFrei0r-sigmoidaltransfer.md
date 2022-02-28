@@ -26,6 +26,7 @@ Brightnesss of image
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.75  
@@ -39,6 +40,7 @@ Sharpness of transfer
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.85  

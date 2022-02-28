@@ -13,8 +13,12 @@ title: v360
 media types:
 Video  
 description: Convert 360 projection of video.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -57,6 +61,7 @@ values:
 * equisolid
 * og
 * octahedron
+* cylindricalea
 
 ### av.output
 
@@ -98,6 +103,7 @@ values:
 * equisolid
 * og
 * octahedron
+* cylindricalea
 
 ### av.interp
 
@@ -313,9 +319,9 @@ output horizontal field of view
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-05  
+minimum: 0  
 maximum: 360  
-default: 90  
+default: 0  
 
 ### av.v_fov
 
@@ -325,9 +331,9 @@ output vertical field of view
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-05  
+minimum: 0  
 maximum: 360  
-default: 45  
+default: 0  
 
 ### av.d_fov
 
@@ -412,9 +418,9 @@ input horizontal field of view
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-05  
+minimum: 0  
 maximum: 360  
-default: 90  
+default: 0  
 
 ### av.iv_fov
 
@@ -424,9 +430,9 @@ input vertical field of view
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-05  
+minimum: 0  
 maximum: 360  
-default: 45  
+default: 0  
 
 ### av.id_fov
 
@@ -440,11 +446,44 @@ minimum: 0
 maximum: 360  
 default: 0  
 
+### av.h_offset
+
+  
+description:
+output horizontal off-axis offset  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
+### av.v_offset
+
+  
+description:
+output vertical off-axis offset  
+type: float  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1  
+default: 0  
+
 ### av.alpha_mask
 
   
 description:
 build mask in alpha plane  
+type: string  
+readonly: no  
+required: no  
+
+### av.reset_rot
+
+  
+description:
+reset rotation  
 type: string  
 readonly: no  
 required: no  

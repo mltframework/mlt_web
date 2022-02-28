@@ -15,7 +15,6 @@ Video
 description:   
 version: 2  
 creator: Charles Yates  
-copyright: Visual Media FX ?  
 license: LGPLv2.1  
 
 ## Parameters

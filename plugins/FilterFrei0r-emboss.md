@@ -26,6 +26,7 @@ Light direction
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.375  
@@ -39,6 +40,7 @@ Background lightness
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.333333  
@@ -52,6 +54,7 @@ Bump height
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.25  

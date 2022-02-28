@@ -51,21 +51,21 @@ default: -12dBFS
 
 title: Signal power level (RMS)    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### peak
 
 title: Peak signal level    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### gain
 
 title: Gain to normalize    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### use_peak

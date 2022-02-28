@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Krzysztof Foltman / Hans Baier  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Transpose
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -48  
 maximum: 48  
 default: 0  
@@ -46,6 +46,7 @@ title: Detune
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -100  
 maximum: 100  
 default: 0  
@@ -56,6 +57,7 @@ title: Max. Resonance
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.707  
 maximum: 32  
 default: 32  
@@ -66,6 +68,7 @@ title: Mode
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 11  
 default: 0  
@@ -76,6 +79,7 @@ title: Portamento time
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 2000  
 default: 44.7214  
@@ -92,7 +96,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -101,6 +105,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

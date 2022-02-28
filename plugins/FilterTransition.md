@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Transition as Filter (*deprecated*)  
+title: Transition as Filter (*DEPRECATED*)  
 media types:
 Audio  Video  
 description: Use a transition as a filter. The filters supplies the same frame as both the A and B clip to the transition.  
@@ -27,7 +27,7 @@ description:
 The MLT name of a transition.  
 type: string  
 readonly: no  
-required: true  
+required: yes  
 
 ### transition.*
 

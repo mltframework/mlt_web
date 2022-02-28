@@ -28,6 +28,7 @@ The keyframable number of frames to repeat in a row
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 unit: frames  

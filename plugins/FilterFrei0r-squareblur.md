@@ -26,6 +26,7 @@ The size of the kernel, as a proportion to its coverage of the image
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

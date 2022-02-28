@@ -20,7 +20,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### start (*deprecated*)
+### start (*DEPRECATED*)
 
 title: Amplitude    
 description:
@@ -31,7 +31,7 @@ required: no
 minimum: 1  
 default: 10  
 
-### end (*deprecated*)
+### end (*DEPRECATED*)
 
 title: End amplitude    
 type: integer  
@@ -47,6 +47,7 @@ If this value is set the start and end parameters are ignored.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 
 ### speed
@@ -55,6 +56,7 @@ title: Speed
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 default: 5  
 
 ### deformX
@@ -63,6 +65,7 @@ title: Deform horizontally?
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### deformY
@@ -71,5 +74,6 @@ title: Deform vertically?
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 

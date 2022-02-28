@@ -27,7 +27,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### requested
 
 title: Frequency    
 description:

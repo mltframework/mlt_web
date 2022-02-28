@@ -26,6 +26,7 @@ title: Yellow-Blue
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 255  
 default: 75  
@@ -36,6 +37,7 @@ title: Cyan-Red
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 255  
 default: 150  

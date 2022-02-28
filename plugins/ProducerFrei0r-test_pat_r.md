@@ -26,6 +26,7 @@ Type of test pattern
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -39,6 +40,7 @@ Into which color channel to draw
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -52,6 +54,7 @@ Amplitude (contrast) of the pattern
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.8  
@@ -65,6 +68,7 @@ Use linear period sweep
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -78,6 +82,7 @@ Pattern 7 H frequency
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.03  
@@ -91,6 +96,7 @@ Pattern 7 V frequency
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.03  
@@ -104,6 +110,7 @@ Pixel aspect ratio presets
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -117,6 +124,7 @@ Manual pixel aspect ratio
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  

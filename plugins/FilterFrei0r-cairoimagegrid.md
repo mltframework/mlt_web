@@ -26,6 +26,7 @@ Number of rows in the image grid. Input range 0 - 1 is interpreted as range 1 - 
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.105263  
@@ -39,6 +40,7 @@ Number of columns in the image grid. Input range 0 - 1 is interpreted as range 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.105263  

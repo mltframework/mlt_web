@@ -24,7 +24,7 @@ This filter is meant to be included as a normalizing filter attached automatical
 
 ## Parameters
 
-### argument
+### active
 
 title: Active    
 description:

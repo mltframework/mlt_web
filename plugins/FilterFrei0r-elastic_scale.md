@@ -26,6 +26,7 @@ Horizontal center position of the linear area
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -39,6 +40,7 @@ Width of the linear area
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -52,6 +54,7 @@ Amount how much the linear area is scaled
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.7  
@@ -65,6 +68,7 @@ Amount how much the outer left and outer right areas are scaled non linearly
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.7125  

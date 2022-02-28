@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Krzysztof Foltman  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Tempo
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 30  
 maximum: 300  
 default: 97.5  
@@ -46,6 +46,7 @@ title: Subdivide
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 16  
 default: 1  
@@ -56,6 +57,7 @@ title: Time L
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 16  
 default: 1  
@@ -66,6 +68,7 @@ title: Time R
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 16  
 default: 1  
@@ -76,6 +79,7 @@ title: Feedback
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -86,6 +90,7 @@ title: Amount
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 0  
@@ -96,6 +101,7 @@ title: Mix mode
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 3  
 default: 1  
@@ -106,6 +112,7 @@ title: Medium
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 1  
@@ -116,6 +123,7 @@ title: Dry Amount
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 1  
@@ -126,6 +134,7 @@ title: Stereo Width
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: 1  
@@ -141,7 +150,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -150,6 +159,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

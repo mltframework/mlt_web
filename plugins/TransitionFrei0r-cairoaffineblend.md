@@ -13,7 +13,7 @@ title: cairoaffineblend
 media types:
 Video  
 description: Composites second input on first input applying user-defined transformation, opacity and blend mode  
-version: 0.9  
+version: 0.1  
 creator: Janne Liljeblad  
 
 ## Parameters
@@ -26,6 +26,7 @@ X position of second input, value interperted as range -2*width - 3*width
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.4  
@@ -39,6 +40,7 @@ Y position of second input, value interperted as range -2*height - 3*height
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.4  
@@ -52,6 +54,7 @@ X scale of second input, value interperted as range 0 - 5
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -65,6 +68,7 @@ Y scale of second input, value interperted as range 0 - 5
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -78,6 +82,7 @@ Rotation of second input, value interperted as range 0 - 360
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -91,6 +96,7 @@ Opacity of second input
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -115,6 +121,7 @@ X position of rotation center within the second input
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -128,6 +135,7 @@ Y position of rotation center within the second input
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

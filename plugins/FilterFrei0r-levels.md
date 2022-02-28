@@ -26,6 +26,7 @@ Channel to adjust levels. 0%=R, 10%=G, 20%=B, 30%=Luma
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.3  
@@ -39,6 +40,7 @@ Input black level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -52,6 +54,7 @@ Input white level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -65,6 +68,7 @@ Gamma
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.25  
@@ -78,6 +82,7 @@ Black output
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -91,6 +96,7 @@ White output
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -104,6 +110,7 @@ Show histogram
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -117,6 +124,7 @@ Histogram position. 0%=TL, 10%=TR, 20%=BL, 30%=BR
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.3  

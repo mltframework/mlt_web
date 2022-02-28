@@ -13,8 +13,12 @@ title: elbg
 media types:
 Video  
 description: Apply posterize effect, using the ELBG algorithm.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -93,6 +97,15 @@ format: 64-bit
   
 description:
 set the pal8 output  
+type: string  
+readonly: no  
+required: no  
+
+### av.use_alpha
+
+  
+description:
+use alpha channel for mapping  
 type: string  
 readonly: no  
 required: no  

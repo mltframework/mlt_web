@@ -20,12 +20,12 @@ license: GPLv2
 
 ## Parameters
 
-### argument (*deprecated*)
+### gain (*DEPRECATED*)
 
 title: Gain    
 description:
 <pre>
-The gain may be indicated as a floating point value of the gain adjustment.
+This parameter is deprecated; use "level" instead. The gain may be indicated as a floating point value of the gain adjustment.
 The gain may also be indicated as a numeric value with the suffix "dB" to adjust in terms of decibels.
 The gain may also be set to "normalise" to normalise the volume to the target amplitude -12dBFS.
 This value is discarded if value for property "level" is set.
@@ -82,7 +82,7 @@ readonly: no
 required: no  
 default: 20dB  
 
-### end (*deprecated*)
+### end (*DEPRECATED*)
 
 title: End gain    
 description:
@@ -112,5 +112,6 @@ The animated value of the gain adjustment in dB. Properties &quot;gain&quot; and
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 unit: dB  
 

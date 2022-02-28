@@ -47,7 +47,7 @@ title: JACK client name
 description:
 The generated name of the JACK client.  
 type: string  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### channels

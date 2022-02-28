@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: brummer  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: overdrive
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 20  
 default: 10.5  
@@ -46,6 +46,7 @@ title: driveover
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 4
@@ -54,6 +55,7 @@ title: drive
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -64,6 +66,7 @@ title: drivelevel
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -74,6 +77,7 @@ title: drivegain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -84,6 +88,7 @@ title: highpass
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 8  
 maximum: 1000  
 default: 256  
@@ -94,6 +99,7 @@ title: lowpass
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1000  
 maximum: 10000  
 default: 5500  
@@ -104,6 +110,7 @@ title: lowhighpass
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 10
@@ -112,6 +119,7 @@ title: highcut
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1000  
 maximum: 10000  
 default: 5500  
@@ -122,6 +130,7 @@ title: lowcut
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 8  
 maximum: 1000  
 default: 256  
@@ -132,6 +141,7 @@ title: lowhighcut
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 13
@@ -140,6 +150,7 @@ title: trigger
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -150,6 +161,7 @@ title: vibrato
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 1  
 default: 1  
@@ -165,7 +177,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -174,6 +186,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

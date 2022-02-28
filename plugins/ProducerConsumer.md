@@ -20,14 +20,14 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### resource
 
 title: File/URL    
 description:
 A file name, URL, or producer name.  
 type: string  
 readonly: no  
-required: true  
+required: yes  
 
 ### profile
 

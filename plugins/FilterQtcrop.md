@@ -28,6 +28,7 @@ Keyframable rectangle specification
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 default: 0%/0%:100%x100%  
 
 ### circle
@@ -48,6 +49,7 @@ Keyframable amount of circle or rectangle rounding
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.0  

@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Krzysztof Foltman  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Decay time
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.4  
 maximum: 15  
 default: 0.989846  
@@ -47,6 +47,7 @@ title: High Frq Damp
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 2000  
 maximum: 20000  
 default: 6324.56  
@@ -58,6 +59,7 @@ title: Room size
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5  
 default: 0  
@@ -68,6 +70,7 @@ title: Diffusion
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -78,6 +81,7 @@ title: Wet Amount
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0.5  
@@ -88,6 +92,7 @@ title: Dry Amount
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 1  
@@ -98,6 +103,7 @@ title: Pre Delay
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 50  
 default: 0  
@@ -108,6 +114,7 @@ title: Bass Cut
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 20  
 maximum: 20000  
 default: 632.456  
@@ -119,6 +126,7 @@ title: Treble Cut
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 20  
 maximum: 20000  
 default: 3556.56  
@@ -128,8 +136,9 @@ scale: log
 
 title: 0dB    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -138,8 +147,9 @@ default: 0
 
 title: Wet amount    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -148,8 +158,9 @@ default: 0
 
 title: Output    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -165,7 +176,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -174,6 +185,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

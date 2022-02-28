@@ -32,9 +32,10 @@ title: clipOffset
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0.0  
+default: 1  
 widget: spinner  
 
 ### 2
@@ -43,6 +44,7 @@ title: interpolation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -54,9 +56,10 @@ title: analyze
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 widget: checkbox  
 
 ### 4
@@ -65,6 +68,7 @@ title: sampleRadius
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -76,6 +80,7 @@ title: searchRadius
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -87,6 +92,7 @@ title: offset
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -98,6 +104,7 @@ title: subpixels
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -109,6 +116,7 @@ title: stabilizeYaw
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -120,6 +128,7 @@ title: stabilizePitch
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -131,6 +140,7 @@ title: stabilizeRoll
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -142,6 +152,7 @@ title: smoothYaw
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -153,6 +164,7 @@ title: smoothPitch
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -164,6 +176,7 @@ title: smoothRoll
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -175,6 +188,7 @@ title: timeBiasYaw
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -186,6 +200,7 @@ title: timeBiasPitch
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -197,6 +212,7 @@ title: timeBiasRoll
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -208,6 +224,7 @@ title: useBackTrackpoints
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -219,6 +236,7 @@ title: transformWhenAnalyzing
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

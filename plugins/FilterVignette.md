@@ -34,7 +34,8 @@ Implementation or additional usage notes go here.
 title: Feathering    
 type: float  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.8  
@@ -44,7 +45,8 @@ default: 0.8
 title: Radius    
 type: float  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.5  
@@ -54,7 +56,8 @@ default: 0.5
 title: X Position    
 type: float  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.5  
@@ -64,7 +67,8 @@ default: 0.5
 title: Y Position    
 type: float  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.5  
@@ -74,7 +78,8 @@ default: 0.5
 title: Opacity    
 type: float  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.0  
@@ -86,7 +91,7 @@ description:
 Use linear (0) or cosinus (1) mode to fade from opac to black  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

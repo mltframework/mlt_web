@@ -28,6 +28,7 @@ Keyframable rectangle specification.
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 
 ### compositing
 
@@ -50,6 +51,7 @@ Angle for rotation.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 360  
 default: 1  

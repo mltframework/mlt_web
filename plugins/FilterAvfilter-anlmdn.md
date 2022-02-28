@@ -13,10 +13,26 @@ title: anlmdn
 media types:
 Audio  
 description: Reduce broadband noise from stream using Non-Local Means.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
 
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
+
 ## Parameters
+
+### av.strength
+
+  
+description:
+set denoising strength  
+type: float  
+readonly: no  
+required: no  
+minimum: 1e-05  
+maximum: 10  
+default: 1e-05  
 
 ### av.s
 
@@ -30,11 +46,29 @@ minimum: 1e-05
 maximum: 10  
 default: 1e-05  
 
+### av.patch
+
+  
+description:
+set patch duration  
+type: string  
+readonly: no  
+required: no  
+
 ### av.p
 
   
 description:
 set patch duration  
+type: string  
+readonly: no  
+required: no  
+
+### av.research
+
+  
+description:
+set research duration  
 type: string  
 readonly: no  
 required: no  
@@ -47,6 +81,21 @@ set research duration
 type: string  
 readonly: no  
 required: no  
+
+### av.output
+
+  
+description:
+set output mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* i
+* o
+* n
 
 ### av.o
 
@@ -62,6 +111,18 @@ values:
 * i
 * o
 * n
+
+### av.smooth
+
+  
+description:
+set smooth factor  
+type: float  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 15  
+default: 11  
 
 ### av.m
 

@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Steve Harris <steve@plugin.org.uk>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: LF key filter (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 33.6  
 maximum: 4800  
 default: 33.6  
@@ -46,6 +46,7 @@ title: HF key filter (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 240  
 maximum: 23520  
 default: 23520  
@@ -56,6 +57,7 @@ title: Threshold (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: -70  
@@ -66,6 +68,7 @@ title: Attack (ms)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 1000  
 default: 250.008  
@@ -76,6 +79,7 @@ title: Hold (ms)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 2  
 maximum: 2000  
 default: 1500.5  
@@ -86,6 +90,7 @@ title: Decay (ms)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 2  
 maximum: 4000  
 default: 2001  
@@ -96,6 +101,7 @@ title: Range (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -90  
 maximum: 0  
 default: -90  
@@ -106,6 +112,7 @@ title: Output select (-1 = key listen, 0 = gate, 1 = bypass)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: 0  
@@ -121,7 +128,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -130,6 +137,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

@@ -50,6 +50,7 @@ A possibly keyframed rectangle
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 
 ### progressive
 
@@ -184,4 +185,14 @@ readonly: no
 required: no  
 default: 1  
 widget: checkbox  
+
+### crop
+
+title: Crop Rectangle    
+description:
+Defines a cropping rectangle for the second input  
+type: rect  
+readonly: no  
+required: no  
+animation: yes  
 

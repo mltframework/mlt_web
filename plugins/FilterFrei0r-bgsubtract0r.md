@@ -26,6 +26,7 @@ Threshold for difference
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.101961  
@@ -39,6 +40,7 @@ Remove noise
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -52,6 +54,7 @@ Blur alpha channel by given radius (to remove sharp edges)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

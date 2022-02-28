@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: brummer  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: balance
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: -1  
@@ -46,6 +46,7 @@ title: tone-bass
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: -20  
@@ -56,6 +57,7 @@ title: tone-treble
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: -20  
@@ -66,6 +68,7 @@ title: gain-in
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -40  
 maximum: 40  
 default: -40  
@@ -76,6 +79,7 @@ title: gain-out
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -40  
 maximum: 40  
 default: -40  
@@ -86,6 +90,7 @@ title: gain-preamp
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 9
@@ -94,6 +99,7 @@ title: distortion-drive
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -104,6 +110,7 @@ title: distortion-onoff
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 11
@@ -112,6 +119,7 @@ title: freeverb-roomsize
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -122,6 +130,7 @@ title: freeverb-onoff
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 13
@@ -130,6 +139,7 @@ title: ir-frequency
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 20  
 maximum: 2200  
 default: 20  
@@ -140,6 +150,7 @@ title: ir-peakgain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 10  
 default: 0  
@@ -150,6 +161,7 @@ title: ir-onoff
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 16
@@ -158,6 +170,7 @@ title: crybaby-wah
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -168,6 +181,7 @@ title: crybaby-onoff
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 18
@@ -176,6 +190,7 @@ title: echo-release
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 0  
@@ -186,6 +201,7 @@ title: echo-time
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2000  
 default: 0  
@@ -196,6 +212,7 @@ title: echo-onoff
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 21
@@ -204,6 +221,7 @@ title: feedbackgain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: -1  
@@ -214,6 +232,7 @@ title: feedforwardgain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: -1  
@@ -229,7 +248,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -238,6 +257,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

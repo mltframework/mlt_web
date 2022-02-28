@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Krzysztof Foltman  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Min delay
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 10  
 default: 0.1  
@@ -47,6 +47,7 @@ title: Mod depth
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 10  
 default: 0.316228  
@@ -58,6 +59,7 @@ title: Mod rate
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 20  
 default: 0.447214  
@@ -69,6 +71,7 @@ title: Feedback
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -0.99  
 maximum: 0.99  
 default: 0.99  
@@ -79,6 +82,7 @@ title: Stereo phase
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 360  
 default: 0  
@@ -89,6 +93,7 @@ title: Reset
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 10
@@ -97,6 +102,7 @@ title: Amount
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 1  
@@ -107,6 +113,7 @@ title: Dry Amount
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 1  
@@ -122,7 +129,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -131,6 +138,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

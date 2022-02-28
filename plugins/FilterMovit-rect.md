@@ -24,10 +24,11 @@ license: GPLv2
 
 title: Rectangle    
 description:
-Keyframable rectangle specification.  
+Rectangle specifying the position of the top, left corner and size.  
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 
 ### distort
 

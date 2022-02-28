@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: brummer  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: knee
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 20  
 default: 0  
@@ -46,6 +46,7 @@ title: ratio
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 maximum: 20  
 default: 1  
@@ -56,6 +57,7 @@ title: threshold
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -96  
 maximum: 10  
 default: -96  
@@ -66,6 +68,7 @@ title: attack
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -76,6 +79,7 @@ title: release
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 10  
 default: 2.5  
@@ -86,6 +90,7 @@ title: gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -96  
 maximum: 96  
 default: 0  
@@ -101,7 +106,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -110,6 +115,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

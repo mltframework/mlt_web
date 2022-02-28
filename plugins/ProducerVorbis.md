@@ -20,13 +20,13 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### resource
 
 title: File    
 description:
 File to use (only .ogg supported at the moment)  
 type: string  
 readonly: no  
-required: true  
+required: yes  
 widget: fileopen  
 

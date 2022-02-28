@@ -59,6 +59,7 @@ Range of colors around the key, where effect is full strength
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.24  
@@ -72,6 +73,7 @@ Range of colors around the key where effect gradually decreases
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.4  
@@ -85,6 +87,7 @@ Restrict mask to hues close to key
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.25  
@@ -98,6 +101,7 @@ Restrict mask to saturated colors
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.15  
@@ -120,6 +124,7 @@ title: Amount 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.55  
@@ -142,6 +147,7 @@ title: Amount 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -155,6 +161,7 @@ Replace image with the mask
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -168,6 +175,7 @@ Replace alpha channel with the mask
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

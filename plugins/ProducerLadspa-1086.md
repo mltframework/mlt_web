@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: CMT (http://www.ladspa.org/cmt, plugin by Richard W.E. Furse)  
-copyright: Copyright (C) 2013-2014 Meltytech, LLC  
 license: GPLv2  
 
 ## Notes
@@ -35,6 +34,6 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

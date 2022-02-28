@@ -28,7 +28,7 @@ A map of input frame times to output frame times.
 type: float  
 readonly: no  
 required: no  
-animation: true  
+animation: yes  
 
 ### image_mode
 
@@ -49,6 +49,6 @@ title: Speed
 description:
 The instantaneous speed of the last frame that was processed.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 

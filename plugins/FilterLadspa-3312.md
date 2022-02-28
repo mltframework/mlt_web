@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Fraser At Invada Records dot Com  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Room Length
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 3  
 maximum: 100  
 default: 27.25  
@@ -46,6 +46,7 @@ title: Room Width
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 3  
 maximum: 100  
 default: 27.25  
@@ -56,6 +57,7 @@ title: Room Height
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 3  
 maximum: 30  
 default: 9.75  
@@ -66,6 +68,7 @@ title: Source (L/R)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 0.99  
 default: 0.5  
@@ -76,6 +79,7 @@ title: Source (F/B)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.55  
 maximum: 1  
 default: 0.775  
@@ -86,6 +90,7 @@ title: Listener (L/R)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.01  
 maximum: 0.99  
 default: 0.5  
@@ -96,6 +101,7 @@ title: Listener (F/B)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 0.45  
 default: 0.225  
@@ -106,6 +112,7 @@ title: HPF (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 48  
 maximum: 2400  
 default: 48  
@@ -117,6 +124,7 @@ title: Warmth
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -127,6 +135,7 @@ title: Diffusion
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -142,7 +151,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -151,6 +160,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

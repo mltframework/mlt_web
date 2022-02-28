@@ -24,5 +24,18 @@ If there is a service with a property &quot;xml_retain=1&quot; that is not the p
 
 ## Bugs
 
-* [0, "This producer is not thread-safe during its construction because it"]
+* This producer is not thread-safe during its construction because it may modify the mlt_profile, even if is_explicit is set.
+
+
+## Parameters
+
+### resource
+
+title: File    
+description:
+An XML text file containing MLT XML.  
+type: string  
+readonly: no  
+required: yes  
+widget: fileopen  
 

@@ -15,5 +15,17 @@ Video
 description:   
 version: 1  
 creator: Charles Yates  
-copyright: Visual Media FX ?  
 license: LGPLv2.1  
+
+## Parameters
+
+### key
+
+title: Key Color    
+description:
+The color to keep. All others are desaturated.  
+type: color  
+readonly: no  
+required: no  
+default: {"mutable"=>true}  
+

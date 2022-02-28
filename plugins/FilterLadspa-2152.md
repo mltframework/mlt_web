@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Tom Szilagyi  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Attack [ms]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4  
 maximum: 500  
 default: 128  
@@ -46,6 +46,7 @@ title: Release [ms]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 4  
 maximum: 1000  
 default: 502  
@@ -56,6 +57,7 @@ title: Offset Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -66,6 +68,7 @@ title: Makeup Gain [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -76,6 +79,7 @@ title: Function
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 14.1  
 default: 0  
@@ -84,8 +88,9 @@ default: 0
 
 title: Envelope Volume [dB]    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: -60  
 maximum: 20  
 default: 0  
@@ -94,8 +99,9 @@ default: 0
 
 title: Gain Adjustment [dB]    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 minimum: -60  
 maximum: 20  
 default: 0  
@@ -111,7 +117,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -120,6 +126,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

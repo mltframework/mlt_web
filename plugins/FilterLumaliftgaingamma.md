@@ -28,6 +28,7 @@ Adds a value computed using parameter value to color channel values.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -0.5  
 maximum: 0.5  
 default: 0  
@@ -40,6 +41,7 @@ Multiplies color channel values by value computed using parameter value.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -0.5  
 maximum: 0.5  
 default: 0  
@@ -52,6 +54,7 @@ Applies a gamma correction to all color channel values.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.0  
 maximum: 1.0  
 default: 0  

@@ -20,7 +20,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
+### resource
 
 title: Report File    
 description:

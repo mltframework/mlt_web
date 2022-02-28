@@ -13,8 +13,12 @@ title: astats
 media types:
 Audio  
 description: Show time domain statistics about audio frames.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -26,7 +30,7 @@ set the window length
 type: float  
 readonly: no  
 required: no  
-minimum: 0.01  
+minimum: 0  
 maximum: 10  
 default: 0.05  
 format: double  
@@ -44,7 +48,7 @@ required: no
 
   
 description:
-recalculate stats after this many frames  
+Set the number of frames over which cumulative stats are calculated before being reset  
 type: integer  
 readonly: no  
 required: no  
@@ -55,7 +59,7 @@ default: 0
 
   
 description:
-only measure_perchannel these per-channel statistics  
+Select the parameters which are measured per channel  
 type: string  
 readonly: no  
 required: no  
@@ -84,6 +88,7 @@ values:
 * Zero_crossings_rate
 * Noise_floor
 * Noise_floor_count
+* Entropy
 * Number_of_samples
 * Number_of_NaNs
 * Number_of_Infs
@@ -93,7 +98,7 @@ values:
 
   
 description:
-only measure_perchannel these overall statistics  
+Select the parameters which are measured overall  
 type: string  
 readonly: no  
 required: no  
@@ -122,6 +127,7 @@ values:
 * Zero_crossings_rate
 * Noise_floor
 * Noise_floor_count
+* Entropy
 * Number_of_samples
 * Number_of_NaNs
 * Number_of_Infs

@@ -31,6 +31,7 @@ Ignored if pitchscale is set.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -3.3  
 maximum: 3.3  
 default: 0.0  
@@ -47,6 +48,7 @@ Overrides octaveshift.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.1  
 maximum: 10  
 default: 1.0  
@@ -57,7 +59,7 @@ title: Stretch
 description:
 Stretch the audio to fill the requested samples. This option will have no effect if the requested sample size is the same as the received sample size.  
 type: boolean  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### latency
@@ -66,7 +68,7 @@ title: Latency
 description:
 The amount of delay for each sample from the input to the output.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 unit: ms  
 

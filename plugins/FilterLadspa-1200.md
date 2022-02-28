@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Steve Harris <steve@plugin.org.uk>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: LFO1 freq (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1000  
 default: 250  
@@ -46,6 +46,7 @@ title: LFO1 wave (0 = sin, 1 = tri, 2 = saw, 3 = squ, 4 = s&h)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 0  
@@ -56,6 +57,7 @@ title: LFO2 freq (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1000  
 default: 250  
@@ -66,6 +68,7 @@ title: LFO2 wave (0 = sin, 1 = tri, 2 = saw, 3 = squ, 4 = s&h)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 0  
@@ -76,6 +79,7 @@ title: Osc1 freq (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4000  
 default: 440  
@@ -86,6 +90,7 @@ title: Osc1 wave (0 = sin, 1 = tri, 2 = saw, 3 = squ, 4 = noise)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 0  
@@ -96,6 +101,7 @@ title: Osc2 freq (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4000  
 default: 440  
@@ -106,6 +112,7 @@ title: Osc2 wave (0 = sin, 1 = tri, 2 = saw, 3 = squ, 4 = noise)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 4  
 default: 0  
@@ -116,6 +123,7 @@ title: Ringmod 1 depth (0=none, 1=AM, 2=RM)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0  
@@ -126,6 +134,7 @@ title: Ringmod 2 depth (0=none, 1=AM, 2=RM)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0  
@@ -136,6 +145,7 @@ title: Ringmod 3 depth (0=none, 1=AM, 2=RM)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0  
@@ -146,6 +156,7 @@ title: Osc1 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: -70  
@@ -156,6 +167,7 @@ title: RM1 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: -70  
@@ -166,6 +178,7 @@ title: Osc2 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: -70  
@@ -176,6 +189,7 @@ title: RM2 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: -70  
@@ -186,6 +200,7 @@ title: Input gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: 0  
@@ -196,6 +211,7 @@ title: RM3 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: -70  
@@ -206,6 +222,7 @@ title: Xover lower freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 50  
 maximum: 6000  
 default: 1537.5  
@@ -216,6 +233,7 @@ title: Xover upper freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1000  
 maximum: 10000  
 default: 7750  
@@ -226,6 +244,7 @@ title: Dist1 drive
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 3  
 default: 0  
@@ -236,6 +255,7 @@ title: Dist2 drive
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 3  
 default: 0  
@@ -246,6 +266,7 @@ title: Dist3 drive
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 3  
 default: 0  
@@ -256,6 +277,7 @@ title: Filt1 type (0=none, 1=LP, 2=HP, 3=BP, 4=BR, 5=AP)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5  
 default: 0  
@@ -266,6 +288,7 @@ title: Filt1 freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 8000  
 default: 440  
@@ -276,6 +299,7 @@ title: Filt1 q
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -286,6 +310,7 @@ title: Filt1 resonance
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -296,6 +321,7 @@ title: Filt1 LFO1 level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -500  
 maximum: 500  
 default: 0  
@@ -306,6 +332,7 @@ title: Filt1 LFO2 level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -500  
 maximum: 500  
 default: 0  
@@ -316,6 +343,7 @@ title: Filt2 type (0=none, 1=LP, 2=HP, 3=BP, 4=BR, 5=AP)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5  
 default: 0  
@@ -326,6 +354,7 @@ title: Filt2 freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 8000  
 default: 440  
@@ -336,6 +365,7 @@ title: Filt2 q
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -346,6 +376,7 @@ title: Filt2 resonance
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -356,6 +387,7 @@ title: Filt2 LFO1 level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -500  
 maximum: 500  
 default: 0  
@@ -366,6 +398,7 @@ title: Filt2 LFO2 level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -500  
 maximum: 500  
 default: 0  
@@ -376,6 +409,7 @@ title: Filt3 type (0=none, 1=LP, 2=HP, 3=BP, 4=BR, 5=AP)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 5  
 default: 0  
@@ -386,6 +420,7 @@ title: Filt3 freq
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 8000  
 default: 440  
@@ -396,6 +431,7 @@ title: Filt3 q
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -406,6 +442,7 @@ title: Filt3 resonance
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -416,6 +453,7 @@ title: Filt3 LFO1 level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -500  
 maximum: 500  
 default: 0  
@@ -426,6 +464,7 @@ title: Filt3 LFO2 level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -500  
 maximum: 500  
 default: 0  
@@ -436,6 +475,7 @@ title: Delay1 length (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0  
@@ -446,6 +486,7 @@ title: Delay1 feedback
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -456,6 +497,7 @@ title: Delay1 wetness
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -466,6 +508,7 @@ title: Delay2 length (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0  
@@ -476,6 +519,7 @@ title: Delay2 feedback
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -486,6 +530,7 @@ title: Delay2 wetness
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -496,6 +541,7 @@ title: Delay3 length (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 2  
 default: 0  
@@ -506,6 +552,7 @@ title: Delay3 feedback
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -516,6 +563,7 @@ title: Delay3 wetness
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -526,6 +574,7 @@ title: Band 1 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: 0  
@@ -536,6 +585,7 @@ title: Band 2 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: 0  
@@ -546,6 +596,7 @@ title: Band 3 gain (dB)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 20  
 default: 0  
@@ -561,7 +612,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -570,6 +621,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

@@ -20,7 +20,7 @@ license: LGPLv2.1
 
 ## Parameters
 
-### start (*deprecated*)
+### start (*DEPRECATED*)
 
 title: Size    
 description:
@@ -32,7 +32,7 @@ minimum: 1
 default: 2  
 unit: pixels  
 
-### end (*deprecated*)
+### end (*DEPRECATED*)
 
 title: End size    
 type: integer  
@@ -49,6 +49,7 @@ If this value is set the start and end parameters are ignored.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1  
 unit: pixels  
 
@@ -58,6 +59,7 @@ title: Horizontal size
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 1  
 unit: pixels  
@@ -68,6 +70,7 @@ title: Vertical size
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 1  
 unit: pixels  

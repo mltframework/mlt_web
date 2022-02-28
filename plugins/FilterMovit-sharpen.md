@@ -26,6 +26,7 @@ title: Matrix Size
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 25  
 default: 5  
@@ -36,6 +37,7 @@ title: Circle Radius
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 2  
 
@@ -45,6 +47,7 @@ title: Gaussian Radius
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0  
 
@@ -54,6 +57,7 @@ title: Correlation
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0.95  
 
@@ -63,6 +67,7 @@ title: Noise Level
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0.01  
 

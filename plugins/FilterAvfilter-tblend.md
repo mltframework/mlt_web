@@ -13,8 +13,12 @@ title: tblend
 media types:
 Video  
 description: Blend successive frames.  
-version: Lavfi7.110.100  
+version: Lavfi8.24.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -64,6 +68,13 @@ values:
 * subtract
 * vividlight
 * xor
+* softdifference
+* geometric
+* harmonic
+* bleach
+* stain
+* interpolate
+* hardoverlay
 
 ### av.c1_mode
 
@@ -111,6 +122,13 @@ values:
 * subtract
 * vividlight
 * xor
+* softdifference
+* geometric
+* harmonic
+* bleach
+* stain
+* interpolate
+* hardoverlay
 
 ### av.c2_mode
 
@@ -158,6 +176,13 @@ values:
 * subtract
 * vividlight
 * xor
+* softdifference
+* geometric
+* harmonic
+* bleach
+* stain
+* interpolate
+* hardoverlay
 
 ### av.c3_mode
 
@@ -205,6 +230,13 @@ values:
 * subtract
 * vividlight
 * xor
+* softdifference
+* geometric
+* harmonic
+* bleach
+* stain
+* interpolate
+* hardoverlay
 
 ### av.all_mode
 
@@ -252,6 +284,13 @@ values:
 * subtract
 * vividlight
 * xor
+* softdifference
+* geometric
+* harmonic
+* bleach
+* stain
+* interpolate
+* hardoverlay
 
 ### av.c0_expr
 

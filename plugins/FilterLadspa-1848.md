@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: CMT (http://www.ladspa.org/cmt, plugin by Nathaniel Virgo)  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Rate
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1e-05  
 maximum: 0.001  
 default: 0.000505  
@@ -46,6 +46,7 @@ title: Modulator influence
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: 0  
@@ -56,6 +57,7 @@ title: Carrier influence
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: 1  
@@ -71,7 +73,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -80,6 +82,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

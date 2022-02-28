@@ -26,6 +26,7 @@ Halftone pattern dot size
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.4  
@@ -39,6 +40,7 @@ Cyan dots angle
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.3  
@@ -52,6 +54,7 @@ Magenta dots angle
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.45  
@@ -65,6 +68,7 @@ Yellow dots angle
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.25  

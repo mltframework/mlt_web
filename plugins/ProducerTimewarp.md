@@ -51,7 +51,7 @@ However, any arbitrary producer can be specified. E.g.:
 </pre>
 type: string  
 readonly: no  
-required: true  
+required: yes  
 
 ### warp_pitch
 
@@ -69,7 +69,7 @@ title: Warp Speed
 description:
 A convenience parameter to access the speed that was passed as part of the argument.  
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### warp_resource
@@ -78,6 +78,6 @@ title: Warp Producer
 description:
 A convenience parameter to access the resource that was passed as part of the argument  
 type: string  
-readonly: true  
+readonly: yes  
 required: no  
 

@@ -30,6 +30,7 @@ title: Opacity
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -42,6 +43,7 @@ When this is less than zero, the alpha component of the Movit multiply effect fo
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: -1  

@@ -26,6 +26,7 @@ title: Radius
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 default: 20.0  
 
@@ -35,6 +36,7 @@ title: Highlight Blurriness
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 1.0  
@@ -45,6 +47,7 @@ title: Highlight Cutoff Threshold
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.0  
 maximum: 1.0  
 default: 0.2  

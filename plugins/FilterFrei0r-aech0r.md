@@ -26,6 +26,7 @@ Disappearance rate of the echo
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.15  
@@ -39,6 +40,7 @@ Darker or Brighter echo
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -52,9 +54,10 @@ Influence on Red channel
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 3
@@ -65,9 +68,10 @@ Influence on Green channel
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 4
@@ -78,6 +82,7 @@ Influence on Blue channel
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -91,6 +96,7 @@ Rate of the stroboscope: from 0 to 8 frames
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

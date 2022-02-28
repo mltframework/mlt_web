@@ -26,6 +26,7 @@ Sensitivity of the effect for light (higher sensitivity will lead to brighter li
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.2  
@@ -39,6 +40,7 @@ Describes how strong the (accumulated) background should shine through
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -52,6 +54,7 @@ Brightness threshold to distinguish between foreground and background
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.588235  
@@ -65,6 +68,7 @@ Threshold: Difference to background to distinguish between fore- and background
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -78,6 +82,7 @@ Threshold for sum of differences. Can in most cases be ignored (set to 0).
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -91,6 +96,7 @@ Dimming of the light mask
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -104,6 +110,7 @@ Saturation of lights
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.25  
@@ -117,6 +124,7 @@ Prevents some overexposure if the light source stays steady too long (varying sp
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -130,6 +138,7 @@ Display the brightness and threshold, for adjusting the brightness threshold par
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -143,6 +152,7 @@ Display the background difference and threshold
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -156,6 +166,7 @@ Display the sum of the background difference and the threshold
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -169,6 +180,7 @@ Reset filter masks
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -182,6 +194,7 @@ Make the background transparent
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -195,6 +208,7 @@ Uses black as background image instead of the first frame.
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -208,6 +222,7 @@ Alpha value for moving average
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -221,6 +236,7 @@ Nonlinear dimming (may look more natural)
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

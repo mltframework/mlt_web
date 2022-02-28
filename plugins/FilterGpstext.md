@@ -63,7 +63,7 @@ The # may be escaped with "\".
 </pre>
 type: string  
 readonly: no  
-required: true  
+required: yes  
 default: Speed: #gps_speed#km/h
  Distance: #gps_dist#m
  Altitude: #gps_elev#m

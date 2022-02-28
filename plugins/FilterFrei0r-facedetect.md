@@ -37,6 +37,7 @@ How many threads to use divided by 100; 0 uses CPU count
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.01  
@@ -50,6 +51,7 @@ The shape to draw: 0=circle, 0.1=ellipse, 0.2=rectangle, 1=random
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -63,6 +65,7 @@ How often to detect an object in number of frames, divided by 1000
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.025  
@@ -76,6 +79,7 @@ The search window scale factor, divided by 10
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.12  
@@ -89,6 +93,7 @@ Minimum number of rectangles that makes up an object, divided by 100
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.02  
@@ -102,6 +107,7 @@ Minimum window size in pixels, divided by 1000
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -115,6 +121,7 @@ Down scale the image prior detection
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.666667  
@@ -128,6 +135,7 @@ Line width, divided by 100, or fill if 0
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -141,6 +149,7 @@ Draw with antialiasing
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -154,6 +163,7 @@ The alpha channel value for the shapes
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

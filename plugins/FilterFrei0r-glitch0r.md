@@ -26,6 +26,7 @@ How frequently the glitch should be applied
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -39,6 +40,7 @@ Height range of the block that will be shifted/glitched
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.49913  
@@ -52,6 +54,7 @@ How much we should move blocks when glitching
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.499305  
@@ -65,6 +68,7 @@ How intensive should be color distortion
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

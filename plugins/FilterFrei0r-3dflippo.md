@@ -26,6 +26,7 @@ Rotation on the X axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -39,6 +40,7 @@ Rotation on the Y axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -52,6 +54,7 @@ Rotation on the Z axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -65,6 +68,7 @@ Rotation rate on the X axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -78,6 +82,7 @@ Rotation rate on the Y axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -91,6 +96,7 @@ Rotation rate on the Z axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0.5  
@@ -104,6 +110,7 @@ Position of the center of rotation on the X axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -117,6 +124,7 @@ Position of the center of rotation on the Y axis
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -130,6 +138,7 @@ If true, when mapping rotation, make inverted (wrong) assignment
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -143,6 +152,7 @@ Mask for frame transposition is not blanked, so a trace of old transpositions is
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -156,6 +166,7 @@ If true, pixels that are not transposed are black, otherwise, they are copied wi
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  

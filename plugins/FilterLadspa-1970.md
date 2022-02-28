@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Fons Adriaensen <fons@kokkinizita.net>  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Filter
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 3
@@ -44,6 +44,7 @@ title: Gain
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -54,6 +55,7 @@ title: Section 1
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 5
@@ -62,6 +64,7 @@ title: Frequency 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 20  
 maximum: 2000  
 default: 200  
@@ -73,6 +76,7 @@ title: Bandwidth 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.125  
 maximum: 8  
 default: 1  
@@ -84,6 +88,7 @@ title: Gain 1
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -94,6 +99,7 @@ title: Section 2
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 9
@@ -102,6 +108,7 @@ title: Frequency 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 40  
 maximum: 4000  
 default: 400  
@@ -113,6 +120,7 @@ title: Bandwidth 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.125  
 maximum: 8  
 default: 1  
@@ -124,6 +132,7 @@ title: Gain 2
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -134,6 +143,7 @@ title: Section 3
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 13
@@ -142,6 +152,7 @@ title: Frequency 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 100  
 maximum: 10000  
 default: 1000  
@@ -153,6 +164,7 @@ title: Bandwidth 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.125  
 maximum: 8  
 default: 1  
@@ -164,6 +176,7 @@ title: Gain 3
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -174,6 +187,7 @@ title: Section 4
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 17
@@ -182,6 +196,7 @@ title: Frequency 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 200  
 maximum: 20000  
 default: 2000  
@@ -193,6 +208,7 @@ title: Bandwidth 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0.125  
 maximum: 8  
 default: 1  
@@ -204,6 +220,7 @@ title: Gain 4
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -20  
 maximum: 20  
 default: 0  
@@ -219,7 +236,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -228,6 +245,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

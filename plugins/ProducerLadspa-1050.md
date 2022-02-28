@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Richard Furse (LADSPA example plugins)  
-copyright: Copyright (C) 2013-2014 Meltytech, LLC  
 license: GPLv2  
 
 ## Notes
@@ -30,6 +29,7 @@ title: Amplitude
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1.19209e-07  
 default: 1  
 scale: log  
@@ -45,6 +45,6 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 

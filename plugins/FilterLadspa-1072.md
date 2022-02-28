@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: CMT (http://www.ladspa.org/cmt, plugin by Richard W.E. Furse)  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Threshold
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 1.19209e-07  
 default: 1  
 scale: log  
@@ -46,6 +46,7 @@ title: Compression Ratio
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 maximum: 1  
 default: 0.5  
 
@@ -55,6 +56,7 @@ title: Output Envelope Attack (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0.1  
 
@@ -64,6 +66,7 @@ title: Output Envelope Decay (s)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 default: 0.1  
 
@@ -78,7 +81,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -87,6 +90,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

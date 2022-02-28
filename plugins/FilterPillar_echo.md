@@ -34,6 +34,7 @@ X, Y, W, H are assumed to be pixel units unless they have the suffix '%'.
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 default: 0 0 10% 10%  
 
 ### blur
@@ -44,5 +45,6 @@ The blur radius as a percent of the image width
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 4.0  
 

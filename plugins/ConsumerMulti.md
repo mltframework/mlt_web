@@ -38,7 +38,7 @@ consumer, which is how melt and the XML producer support multiple consumers.
 
 ## Parameters
 
-### argument
+### resource
 
 title: File    
 description:

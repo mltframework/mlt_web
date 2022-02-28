@@ -36,7 +36,8 @@ description:
 Maximal value of noise  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 200  
 default: 40  
@@ -50,7 +51,8 @@ description:
 Adjust contrast for the image  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 400  
 default: 160  
@@ -63,7 +65,8 @@ description:
 Adjust brightness for the image  
 type: integer  
 readonly: no  
-required: true  
+required: yes  
+animation: yes  
 minimum: 0  
 maximum: 400  
 default: 70  

@@ -13,9 +13,8 @@ title: Shape Alpha
 media types:
 Video  
 description:   
-version: 4  
+version: 5  
 creator: Charles Yates  
-copyright: Visual Media FX ?  
 license: LGPLv2.1  
 
 ## Parameters
@@ -27,7 +26,7 @@ description:
 The name of a file or MLT producer URL. To use a luma wipe from the lumas module, put % in front of the base name of the luma file e.g. %luma16.pgm  
 type: string  
 readonly: no  
-required: true  
+required: yes  
 
 ### mix
 
@@ -37,6 +36,7 @@ Convert alpha or luma values below this level as opaque and above this level as 
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 100  
@@ -58,7 +58,16 @@ default: 0.1
 
 title: Invert    
 description:
-Use the inverse of the alpha or luma value.  
+Invert the resulting alpha channel.  
+type: boolean  
+readonly: no  
+required: no  
+
+### invert_mask
+
+title: Invert Mask    
+description:
+Use the inverse of the resource&#39;s alpha channel or luma value.  
 type: boolean  
 readonly: no  
 required: no  
@@ -67,7 +76,7 @@ required: no
 
 title: Reverse    
 description:
-Use the complement of the mix level.  
+Use the complement of the mix level. This also inverts the output alpha, which is probably not what you want. See also invert_mask.  
 type: boolean  
 readonly: no  
 required: no  

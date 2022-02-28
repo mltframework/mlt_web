@@ -48,6 +48,7 @@ Amount of temporal smoothing of the input range, to reduce flicker (default 0.0)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -61,6 +62,7 @@ Proportion of independent to linked channel normalization (default 1.0)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -74,6 +76,7 @@ Strength of filter, from no effect to full normalization (default 1.0)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  

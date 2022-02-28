@@ -27,7 +27,7 @@ URL: [http://sox.sourceforge.net/](http://sox.sourceforge.net/)
 
 ## Parameters
 
-### argument
+### effect
 
 title: Options    
 type: string  

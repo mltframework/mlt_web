@@ -15,7 +15,6 @@ Audio
 description: LADSPA plugin  
 version: 1  
 creator: Tom Szilagyi  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Decay [ms]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 10000  
 default: 2500  
@@ -46,6 +46,7 @@ title: Dry Level [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 10  
 default: 0  
@@ -56,6 +57,7 @@ title: Wet Level [dB]
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -70  
 maximum: 10  
 default: 0  
@@ -66,6 +68,7 @@ title: Comb Filters
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 4
@@ -74,6 +77,7 @@ title: Allpass Filters
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 5
@@ -82,6 +86,7 @@ title: Bandpass Filter
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 6
@@ -90,6 +95,7 @@ title: Enhanced Stereo
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 1  
 
 ### 7
@@ -98,6 +104,7 @@ title: Reverb Type
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 42.1  
 default: 0  
@@ -113,7 +120,7 @@ Status parameters (readonly) are provided for each instance and are accessed by 
 e.g. 9[0] provides the value of status 9 for the first instance.
 </pre>
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -122,6 +129,7 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
