@@ -291,7 +291,8 @@ wrap_title: Filter Plugins
 * [avfilter.yaepblur](../FilterAvfilter-yaepblur/): yaepblur
 * [avfilter.zoompan](../FilterAvfilter-zoompan/): zoompan
 * [avfilter.zscale](../FilterAvfilter-zscale/): zscale
-* [boxblur](../FilterBoxblur/): Box Blur
+* [box_blur](../FilterBox_blur/): Box Blur
+* [boxblur](../FilterBoxblur/): Box Blur (*DEPRECATED*)
 * [brightness](../FilterBrightness/): Brightness
 * [burningtv](../FilterBurningtv/): BurningTV
 * [cairoblend_mode](../FilterCairoblend_mode/): Set Cairographics Blend Mode

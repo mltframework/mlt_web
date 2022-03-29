@@ -11,7 +11,6 @@ See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.bas
 * add ability to have relative audio and video index in avformat producer along with a fail over to the first stream of
   respective type when invalid
 * convert most services and properties to `mlt_animation`
-* add more usage of `mlt_slices`
 * add more tests (difficult to define coverage required at this point)
 * document expectations in each type of service (e.g. meta properties, frame-threading)
 * improve `mlt_consumer:real_time` > 1

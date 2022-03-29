@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Box Blur  
+title: Box Blur (*DEPRECATED*)  
 media types:
 Video  
 description:   
@@ -17,6 +17,10 @@ version: 3
 creator: Leny Grisel, Jean-Baptiste Mardelle  
 copyright: Leny Grisel, Jean-Baptiste Mardelle  
 license: LGPLv2.1  
+
+## Notes
+
+This filter is deprecated and will eventually be removed. Use the box_blur filter instead.
 
 ## Parameters
 
