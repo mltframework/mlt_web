@@ -13,7 +13,7 @@ title: biquad
 media types:
 Audio  
 description: Apply a biquad IIR filter with the given coefficients.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -122,6 +122,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
+default: 'all'  
 
 ### av.c
 
@@ -131,6 +132,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
+default: 'all'  
 
 ### av.normalize
 
@@ -163,9 +165,11 @@ values:
 
 * di
 * dii
+* tdi
 * tdii
 * latt
 * svf
+* zdf
 
 ### av.a
 
@@ -180,9 +184,11 @@ values:
 
 * di
 * dii
+* tdi
 * tdii
 * latt
 * svf
+* zdf
 
 ### av.precision
 
@@ -217,6 +223,30 @@ values:
 * s32
 * f32
 * f64
+
+### av.blocksize
+
+  
+description:
+set the block size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 32768  
+default: 0  
+
+### av.b
+
+  
+description:
+set the block size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 32768  
+default: 0  
 
 ### av.threads
 

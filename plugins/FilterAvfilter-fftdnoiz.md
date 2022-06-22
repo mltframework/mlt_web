@@ -13,7 +13,7 @@ title: fftdnoiz
 media types:
 Video  
 description: Denoise frames using 3D FFT.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -31,7 +31,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 30  
+maximum: 100  
 default: 1  
 
 ### av.amount
@@ -50,13 +50,13 @@ default: 1
 
   
 description:
-set block log2(size)  
+set block size  
 type: integer  
 readonly: no  
 required: no  
-minimum: 3  
-maximum: 6  
-default: 4  
+minimum: 8  
+maximum: 256  
+default: 32  
 
 ### av.overlap
 
@@ -69,6 +69,20 @@ required: no
 minimum: 0.2  
 maximum: 0.8  
 default: 0.5  
+
+### av.method
+
+  
+description:
+set method of denoising  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* wiener
+* hard
 
 ### av.prev
 
@@ -105,6 +119,39 @@ required: no
 minimum: 0  
 maximum: 15  
 default: 7  
+
+### av.window
+
+  
+description:
+set window function  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* rect
+* bartlett
+* hann
+* hanning
+* hamming
+* blackman
+* welch
+* flattop
+* bharris
+* bnuttall
+* bhann
+* sine
+* nuttall
+* lanczos
+* gauss
+* tukey
+* dolph
+* cauchy
+* parzen
+* poisson
+* bohman
 
 ### av.threads
 

@@ -13,7 +13,7 @@ title: crossfeed
 media types:
 Audio  
 description: Apply headphone crossfeed filter.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -86,6 +86,18 @@ minimum: 0
 maximum: 1  
 default: 1  
 format: double  
+
+### av.block_size
+
+  
+description:
+set the block size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 32768  
+default: 0  
 
 ### position
 

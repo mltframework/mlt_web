@@ -13,7 +13,7 @@ title: limiter
 media types:
 Video  
 description: Limit pixels components to the specified range.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

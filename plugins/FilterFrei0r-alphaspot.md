@@ -13,7 +13,7 @@ title: alphaspot
 media types:
 Video  
 description: Draws simple shapes into the alpha channel  
-version: 0.1  
+version: 0.2  
 creator: Marko Cebokli  
 
 ## Parameters

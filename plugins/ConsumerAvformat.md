@@ -1658,6 +1658,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_btrt
+
+  
+description:
+force or disable writing btrt (f4v)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_tmcd
 
   
@@ -2632,6 +2641,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_btrt
+
+  
+description:
+force or disable writing btrt (ipod)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_tmcd
 
   
@@ -2897,6 +2915,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_btrt
+
+  
+description:
+force or disable writing btrt (ismv)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_tmcd
 
   
@@ -2972,6 +2999,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### cues_to_front
+
+  
+description:
+Move Cues (the index) to the front by shifting data if necessary (matroska)  
+type: string  
+readonly: no  
+required: no  
 
 ### cluster_size_limit
 
@@ -3077,6 +3113,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### cues_to_front
+
+  
+description:
+Move Cues (the index) to the front by shifting data if necessary (matroska)  
+type: string  
+readonly: no  
+required: no  
 
 ### cluster_size_limit
 
@@ -3394,6 +3439,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_btrt
+
+  
+description:
+force or disable writing btrt (mov)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_tmcd
 
   
@@ -3685,6 +3739,15 @@ required: no
   
 description:
 use stream ids as track ids (mp4)  
+type: string  
+readonly: no  
+required: no  
+
+### write_btrt
+
+  
+description:
+force or disable writing btrt (mp4)  
 type: string  
 readonly: no  
 required: no  
@@ -4582,6 +4645,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_btrt
+
+  
+description:
+force or disable writing btrt (psp)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_tmcd
 
   
@@ -4778,7 +4850,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: -1  
-default: -1  
+default: 1472  
 
 ### reference_stream
 
@@ -5700,6 +5772,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_btrt
+
+  
+description:
+force or disable writing btrt (3g2)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_tmcd
 
   
@@ -5965,6 +6046,15 @@ type: string
 readonly: no  
 required: no  
 
+### write_btrt
+
+  
+description:
+force or disable writing btrt (3gp)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_tmcd
 
   
@@ -6093,6 +6183,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### cues_to_front
+
+  
+description:
+Move Cues (the index) to the front by shifting data if necessary (webm)  
+type: string  
+readonly: no  
+required: no  
 
 ### cluster_size_limit
 
@@ -6349,7 +6448,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf59.16.100'  
+default: 'Lavf59.24.100'  
 
 ### stream_name
 
@@ -7347,6 +7446,13 @@ readonly: no
 required: no  
 default: -1  
 
+### ch_layout
+
+  
+type: string  
+readonly: no  
+required: no  
+
 ### channel_layout
 
   
@@ -7763,41 +7869,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (amv)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (amv)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (amv)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -7885,53 +7956,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mepc
-
-  
-description:
-Motion estimation bitrate penalty compensation (1.0 = 256) (amv)  
-type: integer  
-readonly: no  
-required: no  
-default: 256  
-
-### mepre
-
-  
-description:
-pre motion estimation (amv)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### intra_penalty
-
-  
-description:
-Penalty for intra blocks in block decision (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1073741823  
-default: 0  
-
-### pred
-
-  
-description:
-Prediction method (amv)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* left
-* plane
-* median
-
 ### huffman
 
   
@@ -7954,62 +7978,6 @@ Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (amv)
 type: string  
 readonly: no  
 required: no  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (amv)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (amv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
 
 ### dpi
 
@@ -8458,41 +8426,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (flv)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (flv)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (flv)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -8580,6 +8513,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (flv)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -8610,71 +8558,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (flv)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (flv)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### gifflags
@@ -8860,41 +8743,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (h261)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (h261)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (h261)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -8982,6 +8830,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (h261)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -9012,71 +8875,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (h261)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (h261)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (h261)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### obmc
@@ -9250,41 +9048,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (h263)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (h263)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (h263)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -9372,6 +9135,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (h263)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -9402,71 +9180,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (h263)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (h263)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (h263)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### umv
@@ -9656,41 +9369,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (h263p)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (h263p)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (h263p)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -9778,6 +9456,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (h263p)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -9808,71 +9501,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (h263p)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (h263p)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (h263p)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### non_deterministic
@@ -10197,41 +9825,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -10319,53 +9912,6 @@ readonly: no
 required: no  
 default: 0  
 
-### mepc
-
-  
-description:
-Motion estimation bitrate penalty compensation (1.0 = 256) (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-default: 256  
-
-### mepre
-
-  
-description:
-pre motion estimation (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
-### intra_penalty
-
-  
-description:
-Penalty for intra blocks in block decision (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1073741823  
-default: 0  
-
-### pred
-
-  
-description:
-Prediction method (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* left
-* plane
-* median
-
 ### huffman
 
   
@@ -10388,62 +9934,6 @@ Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mjpeg)
 type: string  
 readonly: no  
 required: no  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
-default: 0  
 
 ### gop_timecode
 
@@ -10670,41 +10160,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (mpeg1video)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -10792,6 +10247,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (mpeg1video)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -10823,36 +10293,6 @@ required: no
 minimum: 0  
 maximum: 1073741823  
 default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (mpeg1video)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (mpeg1video)  
-type: string  
-readonly: no  
-required: no  
 
 ### gop_timecode
 
@@ -11148,41 +10588,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (mpeg2video)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -11270,6 +10675,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (mpeg2video)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -11301,27 +10721,6 @@ required: no
 minimum: 0  
 maximum: 1073741823  
 default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 1  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (mpeg2video)  
-type: string  
-readonly: no  
-required: no  
 
 ### data_partitioning
 
@@ -11539,41 +10938,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (mpeg4)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (mpeg4)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (mpeg4)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -11661,6 +11025,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (mpeg4)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -11692,24 +11071,6 @@ required: no
 minimum: 0  
 maximum: 1073741823  
 default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (mpeg4)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (mpeg4)  
-type: string  
-readonly: no  
-required: no  
 
 ### mpv_flags
 
@@ -11862,41 +11223,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (msmpeg4v2)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -11984,6 +11310,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (msmpeg4v2)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -12014,71 +11355,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (msmpeg4v2)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (msmpeg4v2)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### mpv_flags
@@ -12232,41 +11508,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (msmpeg4)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -12354,6 +11595,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (msmpeg4)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -12384,71 +11640,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (msmpeg4)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (msmpeg4)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### dpi
@@ -12794,41 +11985,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (rv10)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (rv10)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (rv10)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -12916,6 +12072,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (rv10)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -12946,71 +12117,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (rv10)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (rv10)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (rv10)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### mpv_flags
@@ -13164,41 +12270,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (rv20)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (rv20)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (rv20)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -13286,6 +12357,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (rv20)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -13316,71 +12402,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (rv20)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (rv20)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (rv20)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### rle
@@ -13635,41 +12656,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (speedhq)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -13757,6 +12743,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (speedhq)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -13787,71 +12788,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (speedhq)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (speedhq)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### rle
@@ -13934,6 +12870,21 @@ values:
 * left
 * gradient
 * median
+
+### format
+
+  
+description:
+Texture format (vbn)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* raw
+* dxt1
+* dxt5
 
 ### tolerance
 
@@ -14160,41 +13111,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (wmv1)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -14282,6 +13198,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (wmv1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -14312,71 +13243,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (wmv1)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (wmv1)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### mpv_flags
@@ -14530,41 +13396,6 @@ required: no
 minimum: 0  
 default: 3658  
 
-### ibias
-
-  
-description:
-intra quant bias (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### pbias
-
-  
-description:
-inter quant bias (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-default: 999999  
-
-### motion_est
-
-  
-description:
-motion estimation algorithm (wmv2)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* zero
-* epzs
-* xone
-
 ### skip_threshold
 
   
@@ -14652,6 +13483,21 @@ readonly: no
 required: no  
 default: 0  
 
+### motion_est
+
+  
+description:
+motion estimation algorithm (wmv2)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* zero
+* epzs
+* xone
+
 ### mepc
 
   
@@ -14682,71 +13528,6 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
-default: 0  
-
-### mpeg_quant
-
-  
-description:
-Deprecated, does nothing (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
-### a53cc
-
-  
-description:
-Deprecated, does nothing (wmv2)  
-type: string  
-readonly: no  
-required: no  
-
-### force_duplicated_matrix
-
-  
-description:
-Deprecated, does nothing (wmv2)  
-type: string  
-readonly: no  
-required: no  
-
-### b_strategy
-
-  
-description:
-Deprecated, does nothing (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 2  
-default: 0  
-
-### b_sensitivity
-
-  
-description:
-Deprecated, does nothing (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 40  
-
-### brd_scale
-
-  
-description:
-Deprecated, does nothing (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 3  
 default: 0  
 
 ### aac_coder
@@ -16275,6 +15056,15 @@ values:
 
 * psnr
 * ssim
+
+### still-picture
+
+  
+description:
+Encode in single frame mode (typically used for still AVIF images). (libaom-av1)  
+type: string  
+readonly: no  
+required: no  
 
 ### enable-rect-partitions
 
@@ -19179,6 +17969,18 @@ required: no
 minimum: 1  
 default: 1  
 
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (h264_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
+
 ### rc_mode
 
   
@@ -19879,6 +18681,18 @@ required: no
 minimum: 1  
 default: 1  
 
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (hevc_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
+
 ### rc_mode
 
   
@@ -20026,6 +18840,18 @@ required: no
 minimum: 1  
 default: 1  
 
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (mjpeg_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
+
 ### jfif
 
   
@@ -20074,6 +18900,18 @@ readonly: no
 required: no  
 minimum: 1  
 default: 1  
+
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (mpeg2_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
 
 ### rc_mode
 
@@ -20199,6 +19037,18 @@ required: no
 minimum: 1  
 default: 1  
 
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (vp8_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
+
 ### rc_mode
 
   
@@ -20272,6 +19122,18 @@ readonly: no
 required: no  
 minimum: 1  
 default: 1  
+
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (vp9_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
 
 ### rc_mode
 

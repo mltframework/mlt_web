@@ -13,7 +13,7 @@ title: graphmonitor
 media types:
 Video  
 description: Show various filtergraph stats.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -106,8 +106,11 @@ values:
 * queue
 * frame_count_in
 * frame_count_out
+* frame_count_delta
 * pts
+* pts_delta
 * time
+* time_delta
 * timebase
 * format
 * size
@@ -115,6 +118,7 @@ values:
 * eof
 * sample_count_in
 * sample_count_out
+* sample_count_delta
 
 ### av.f
 
@@ -130,8 +134,11 @@ values:
 * queue
 * frame_count_in
 * frame_count_out
+* frame_count_delta
 * pts
+* pts_delta
 * time
+* time_delta
 * timebase
 * format
 * size
@@ -139,6 +146,7 @@ values:
 * eof
 * sample_count_in
 * sample_count_out
+* sample_count_delta
 
 ### av.rate
 

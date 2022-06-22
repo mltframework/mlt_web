@@ -13,7 +13,7 @@ title: dynaudnorm
 media types:
 Audio  
 description: Dynamic Audio Normalizer.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -246,6 +246,52 @@ format: double
   
 description:
 set the threshold value  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.channels
+
+  
+description:
+set channels to filter  
+type: string  
+readonly: no  
+required: no  
+default: 'all'  
+
+### av.h
+
+  
+description:
+set channels to filter  
+type: string  
+readonly: no  
+required: no  
+default: 'all'  
+
+### av.overlap
+
+  
+description:
+set the frame overlap  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.o
+
+  
+description:
+set the frame overlap  
 type: float  
 readonly: no  
 required: no  

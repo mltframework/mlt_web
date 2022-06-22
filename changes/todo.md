@@ -47,12 +47,6 @@ See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.bas
   any technologies outside of MLT
 * add support for timed text
 * add support for timed data
-* find a strategy for integrating an animation format that is well supported by tools and stock assets:
-  * blender
-  * Krita
-  * enve
-  * Lottie and QtLottie (CPU)
-  * Qt Quick (Qt Design Studio)
 * find a framework to integrate AI/ML-based effects
   * background removal
   * upscaling

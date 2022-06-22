@@ -78,6 +78,8 @@ wrap_title: Filter Plugins
 * [avfilter.bitplanenoise](../FilterAvfilter-bitplanenoise/): bitplanenoise
 * [avfilter.blackdetect](../FilterAvfilter-blackdetect/): blackdetect
 * [avfilter.blackframe](../FilterAvfilter-blackframe/): blackframe
+* [avfilter.blockdetect](../FilterAvfilter-blockdetect/): blockdetect
+* [avfilter.blurdetect](../FilterAvfilter-blurdetect/): blurdetect
 * [avfilter.boxblur](../FilterAvfilter-boxblur/): boxblur
 * [avfilter.bwdif](../FilterAvfilter-bwdif/): bwdif
 * [avfilter.cas](../FilterAvfilter-cas/): cas
@@ -124,6 +126,7 @@ wrap_title: Filter Plugins
 * [avfilter.derain](../FilterAvfilter-derain/): derain
 * [avfilter.deshake](../FilterAvfilter-deshake/): deshake
 * [avfilter.despill](../FilterAvfilter-despill/): despill
+* [avfilter.dialoguenhance](../FilterAvfilter-dialoguenhance/): dialoguenhance
 * [avfilter.dilation](../FilterAvfilter-dilation/): dilation
 * [avfilter.dnn_classify](../FilterAvfilter-dnn_classify/): dnn_classify
 * [avfilter.dnn_detect](../FilterAvfilter-dnn_detect/): dnn_detect
@@ -216,6 +219,7 @@ wrap_title: Filter Plugins
 * [avfilter.perspective](../FilterAvfilter-perspective/): perspective
 * [avfilter.phase](../FilterAvfilter-phase/): phase
 * [avfilter.photosensitivity](../FilterAvfilter-photosensitivity/): photosensitivity
+* [avfilter.pixelize](../FilterAvfilter-pixelize/): pixelize
 * [avfilter.pixscope](../FilterAvfilter-pixscope/): pixscope
 * [avfilter.pp](../FilterAvfilter-pp/): pp
 * [avfilter.pp7](../FilterAvfilter-pp7/): pp7
@@ -245,6 +249,7 @@ wrap_title: Filter Plugins
 * [avfilter.sidedata](../FilterAvfilter-sidedata/): sidedata
 * [avfilter.signalstats](../FilterAvfilter-signalstats/): signalstats
 * [avfilter.silencedetect](../FilterAvfilter-silencedetect/): silencedetect
+* [avfilter.siti](../FilterAvfilter-siti/): siti
 * [avfilter.smartblur](../FilterAvfilter-smartblur/): smartblur
 * [avfilter.sobel](../FilterAvfilter-sobel/): sobel
 * [avfilter.speechnorm](../FilterAvfilter-speechnorm/): speechnorm
@@ -783,6 +788,7 @@ wrap_title: Filter Plugins
 * [movit.white_balance](../FilterMovit-white_balance/): White Balance (GLSL)
 * [obscure](../FilterObscure/): Obscure
 * [oldfilm](../FilterOldfilm/): Oldfilm
+* [opencv.tracker](../FilterOpencv-tracker/): OpenCV Motion Tracker
 * [panner](../FilterPanner/): Audio Pan
 * [pillar_echo](../FilterPillar_echo/): Pillar Echo
 * [qtblend](../FilterQtblend/): Composite and transform

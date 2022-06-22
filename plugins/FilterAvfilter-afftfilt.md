@@ -13,7 +13,7 @@ title: afftfilt
 media types:
 Audio  
 description: Apply arbitrary expressions to samples in frequency domain.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -98,6 +98,17 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0.75  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

@@ -13,7 +13,7 @@ title: amplify
 media types:
 Video  
 description: Amplify changes between successive video frames.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -75,7 +75,7 @@ default: 0
   
 description:
 set low limit for amplification  
-type: integer  
+type: float  
 readonly: no  
 required: no  
 minimum: 0  
@@ -87,7 +87,7 @@ default: 65535
   
 description:
 set high limit for amplification  
-type: integer  
+type: float  
 readonly: no  
 required: no  
 minimum: 0  

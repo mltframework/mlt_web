@@ -866,15 +866,6 @@ type: string
 readonly: no  
 required: no  
 
-### video_size
-
-  
-description:
-set frame size (bitpacked)  
-type: string  
-readonly: no  
-required: no  
-
 ### pixel_format
 
   
@@ -884,6 +875,15 @@ type: string
 readonly: no  
 required: no  
 default: 'yuv420p'  
+
+### video_size
+
+  
+description:
+set frame size (bitpacked)  
+type: string  
+readonly: no  
+required: no  
 
 ### framerate
 
@@ -1014,6 +1014,37 @@ readonly: no
 required: no  
 minimum: 1  
 default: 1024  
+
+### sample_rate
+
+  
+description:
+(dfpwm)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 48000  
+
+### channels
+
+  
+description:
+(dfpwm)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 1  
+
+### ch_layout
+
+  
+description:
+(dfpwm)  
+type: string  
+readonly: no  
+required: no  
 
 ### framerate
 
@@ -2185,6 +2216,18 @@ type: string
 readonly: no  
 required: no  
 
+### max_packet_size
+
+  
+description:
+maximum size of emitted packet (mpegts)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 1073741823  
+default: 204800  
+
 ### resync_size
 
   
@@ -2286,6 +2329,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(alaw)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2307,6 +2359,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(mulaw)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2330,6 +2391,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(vidc)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2351,6 +2421,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(f64be)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2374,6 +2453,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(f64le)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2395,6 +2483,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(f32be)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2418,6 +2515,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(f32le)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2439,6 +2545,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(s32be)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2462,6 +2577,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(s32le)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2483,6 +2607,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(s24be)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2506,6 +2639,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(s24le)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2527,6 +2669,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(s16be)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2550,6 +2701,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(s16le)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2571,6 +2731,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(s8)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2594,6 +2763,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(u32be)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2615,6 +2793,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(u32le)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2638,6 +2825,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(u24be)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2659,6 +2855,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(u24le)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2682,6 +2887,15 @@ required: no
 minimum: 0  
 default: 1  
 
+### ch_layout
+
+  
+description:
+(u16be)  
+type: string  
+readonly: no  
+required: no  
+
 ### sample_rate
 
   
@@ -2703,6 +2917,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(u16le)  
+type: string  
+readonly: no  
+required: no  
 
 ### sample_rate
 
@@ -2726,11 +2949,11 @@ required: no
 minimum: 0  
 default: 1  
 
-### video_size
+### ch_layout
 
   
 description:
-set frame size (rawvideo)  
+(u8)  
 type: string  
 readonly: no  
 required: no  
@@ -2744,6 +2967,15 @@ type: string
 readonly: no  
 required: no  
 default: 'yuv420p'  
+
+### video_size
+
+  
+description:
+set frame size (rawvideo)  
+type: string  
+readonly: no  
+required: no  
 
 ### framerate
 
@@ -2957,7 +3189,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf59.16.100'  
+default: 'Lavf59.24.100'  
 
 ### raw_packet_size
 
@@ -3115,6 +3347,15 @@ readonly: no
 required: no  
 minimum: 0  
 default: 1  
+
+### ch_layout
+
+  
+description:
+(sln)  
+type: string  
+readonly: no  
+required: no  
 
 ### raw_packet_size
 
@@ -3818,6 +4059,53 @@ required: no
   
 description:
 force loop over input file sequence (jpegls_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (jpegxl_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (jpegxl_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (jpegxl_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (jpegxl_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (jpegxl_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -4578,6 +4866,53 @@ required: no
 
   
 description:
+force frame size in bytes (vbn_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (vbn_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (vbn_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (vbn_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (vbn_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
 force frame size in bytes (webp_pipe)  
 type: integer  
 readonly: no  
@@ -4870,7 +5205,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf59.16.100'  
+default: 'Lavf59.24.100'  
 
 ### stream_name
 
@@ -5517,6 +5852,13 @@ values:
 * nokey
 * nointra
 * all
+
+### ch_layout
+
+  
+type: string  
+readonly: no  
+required: no  
 
 ### channel_layout
 
@@ -6330,6 +6672,20 @@ values:
 * sub
 * both
 
+### channel_order
+
+  
+description:
+Order in which the channels are to be exported (aac)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* coded
+
 ### cons_noisegen
 
   
@@ -6372,6 +6728,15 @@ minimum: -31
 maximum: 0  
 default: 0  
 
+### downmix
+
+  
+description:
+Request a specific channel layout from the decoder (ac3)  
+type: string  
+readonly: no  
+required: no  
+
 ### cons_noisegen
 
   
@@ -6398,6 +6763,15 @@ default: 1
   
 description:
 enable heavy dynamic range compression (ac3_fixed)  
+type: string  
+readonly: no  
+required: no  
+
+### downmix
+
+  
+description:
+Request a specific channel layout from the decoder (ac3_fixed)  
 type: string  
 readonly: no  
 required: no  
@@ -6432,6 +6806,43 @@ Decode core only without extensions (dca)
 type: string  
 readonly: no  
 required: no  
+
+### channel_order
+
+  
+description:
+Order in which the channels are to be exported (dca)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* coded
+
+### downmix
+
+  
+description:
+Request a specific channel layout from the decoder (dca)  
+type: string  
+readonly: no  
+required: no  
+
+### channel_order
+
+  
+description:
+Order in which the channels are to be exported (dolby_e)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* coded
 
 ### cons_noisegen
 
@@ -6475,6 +6886,15 @@ minimum: -31
 maximum: 0  
 default: 0  
 
+### downmix
+
+  
+description:
+Request a specific channel layout from the decoder (eac3)  
+type: string  
+readonly: no  
+required: no  
+
 ### postfilter
 
   
@@ -6502,11 +6922,29 @@ type: string
 readonly: no  
 required: no  
 
+### downmix
+
+  
+description:
+Request a specific channel layout from the decoder (mlp)  
+type: string  
+readonly: no  
+required: no  
+
 ### apply_phase_inv
 
   
 description:
 Apply intensity stereo phase inversion (opus)  
+type: string  
+readonly: no  
+required: no  
+
+### downmix
+
+  
+description:
+Request a specific channel layout from the decoder (truehd)  
 type: string  
 readonly: no  
 required: no  

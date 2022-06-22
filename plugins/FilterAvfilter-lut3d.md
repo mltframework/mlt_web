@@ -13,7 +13,7 @@ title: lut3d
 media types:
 Video  
 description: Adjust colors using a 3D LUT.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -30,6 +30,20 @@ set 3D LUT file name
 type: string  
 readonly: no  
 required: no  
+
+### av.clut
+
+  
+description:
+when to process CLUT  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* first
+* all
 
 ### av.interp
 

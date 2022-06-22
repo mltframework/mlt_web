@@ -13,7 +13,7 @@ title: unsharp
 media types:
 Video  
 description: Sharpen or blur the input video.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -166,14 +166,77 @@ minimum: -2
 maximum: 5  
 default: 0  
 
-### av.opencl
+### av.alpha_msize_x
 
   
 description:
-ignored  
-type: string  
+set alpha matrix horizontal size  
+type: integer  
 readonly: no  
 required: no  
+minimum: 3  
+maximum: 23  
+default: 5  
+
+### av.ax
+
+  
+description:
+set alpha matrix horizontal size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 3  
+maximum: 23  
+default: 5  
+
+### av.alpha_msize_y
+
+  
+description:
+set alpha matrix vertical size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 3  
+maximum: 23  
+default: 5  
+
+### av.ay
+
+  
+description:
+set alpha matrix vertical size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 3  
+maximum: 23  
+default: 5  
+
+### av.alpha_amount
+
+  
+description:
+set alpha effect strength  
+type: float  
+readonly: no  
+required: no  
+minimum: -2  
+maximum: 5  
+default: 0  
+
+### av.aa
+
+  
+description:
+set alpha effect strength  
+type: float  
+readonly: no  
+required: no  
+minimum: -2  
+maximum: 5  
+default: 0  
 
 ### av.threads
 

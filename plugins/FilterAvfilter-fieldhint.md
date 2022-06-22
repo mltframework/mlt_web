@@ -13,7 +13,7 @@ title: fieldhint
 media types:
 Video  
 description: Field matching using hints.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -44,6 +44,7 @@ values:
 
 * absolute
 * relative
+* pattern
 
 ### position
 

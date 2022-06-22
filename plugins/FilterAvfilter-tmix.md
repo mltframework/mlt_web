@@ -13,7 +13,7 @@ title: tmix
 media types:
 Video  
 description: Mix successive video frames.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -31,7 +31,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 1  
-maximum: 128  
+maximum: 1024  
 default: 3  
 
 ### av.weights
@@ -55,6 +55,16 @@ required: no
 minimum: 0  
 maximum: 32767  
 default: 0  
+
+### av.planes
+
+  
+description:
+set what planes to filter  
+type: string  
+readonly: no  
+required: no  
+format: flags  
 
 ### av.threads
 

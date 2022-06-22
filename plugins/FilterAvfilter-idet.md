@@ -13,7 +13,7 @@ title: idet
 media types:
 Video  
 description: Interlace detect Filter.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

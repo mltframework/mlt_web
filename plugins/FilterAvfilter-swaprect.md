@@ -13,7 +13,7 @@ title: swaprect
 media types:
 Video  
 description: Swap 2 rectangular objects in video.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

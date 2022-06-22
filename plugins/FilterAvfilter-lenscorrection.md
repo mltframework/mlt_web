@@ -13,7 +13,7 @@ title: lenscorrection
 media types:
 Video  
 description: Rectify the image by correcting for lens distortion.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

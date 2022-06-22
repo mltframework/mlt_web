@@ -13,7 +13,7 @@ title: zscale
 media types:
 Video  
 description: Apply resizing, colorspace and bit depth conversion.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -756,6 +756,17 @@ required: no
 minimum: -1.79769e+308  
 default: nan  
 format: double  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

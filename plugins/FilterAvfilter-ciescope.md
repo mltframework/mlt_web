@@ -13,7 +13,7 @@ title: ciescope
 media types:
 Video  
 description: Video CIE scope.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -171,6 +171,15 @@ minimum: 0.1
 maximum: 6  
 default: 2.6  
 format: double  
+
+### av.fill
+
+  
+description:
+fill with CIE colors  
+type: string  
+readonly: no  
+required: no  
 
 ### position
 

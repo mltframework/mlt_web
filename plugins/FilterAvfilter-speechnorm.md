@@ -13,7 +13,7 @@ title: speechnorm
 media types:
 Audio  
 description: Speech Normalizer.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -186,6 +186,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
+default: 'all'  
 
 ### av.h
 
@@ -195,6 +196,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
+default: 'all'  
 
 ### av.invert
 

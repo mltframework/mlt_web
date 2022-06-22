@@ -13,7 +13,7 @@ title: entropy
 media types:
 Video  
 description: Measure video frames entropy.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

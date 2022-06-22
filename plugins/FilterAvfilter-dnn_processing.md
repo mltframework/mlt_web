@@ -13,7 +13,7 @@ title: dnn_processing
 media types:
 Video  
 description: Apply DNN processing filter to the input.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -24,6 +24,7 @@ wrap_title: Producer Plugins
 * [frei0r.test_pat_I](../ProducerFrei0r-test_pat_i/): test_pat_I
 * [frei0r.test_pat_L](../ProducerFrei0r-test_pat_l/): test_pat_L
 * [frei0r.test_pat_R](../ProducerFrei0r-test_pat_r/): test_pat_R
+* [glaxnimate](../ProducerGlaxnimate/): Glaxnimate Animation
 * [hold](../ProducerHold/): Still
 * [kdenlivetitle](../ProducerKdenlivetitle/): Kdenlive Titler
 * [ladspa.1047](../ProducerLadspa-1047/): Sine Oscillator (Freq:control, Amp:control)

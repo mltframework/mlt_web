@@ -13,7 +13,7 @@ title: loudnorm
 media types:
 Audio  
 description: EBU R128 loudness normalization  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -57,7 +57,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 1  
-maximum: 20  
+maximum: 50  
 default: 7  
 format: double  
 
@@ -70,7 +70,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 1  
-maximum: 20  
+maximum: 50  
 default: 7  
 format: double  
 

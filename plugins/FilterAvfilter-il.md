@@ -13,7 +13,7 @@ title: il
 media types:
 Video  
 description: Deinterleave or interleave fields.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

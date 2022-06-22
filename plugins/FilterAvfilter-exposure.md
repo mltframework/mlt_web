@@ -13,7 +13,7 @@ title: exposure
 media types:
 Video  
 description: Adjust exposure of the video stream.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes

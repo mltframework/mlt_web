@@ -13,7 +13,7 @@ title: anlmdn
 media types:
 Audio  
 description: Reduce broadband noise from stream using Non-Local Means.  
-version: Lavfi8.24.100  
+version: Lavfi8.39.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -31,7 +31,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 1e-05  
-maximum: 10  
+maximum: 10000  
 default: 1e-05  
 
 ### av.s
@@ -43,7 +43,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 1e-05  
-maximum: 10  
+maximum: 10000  
 default: 1e-05  
 
 ### av.patch
@@ -121,7 +121,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 1  
-maximum: 15  
+maximum: 1000  
 default: 11  
 
 ### av.m
@@ -133,7 +133,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 1  
-maximum: 15  
+maximum: 1000  
 default: 11  
 
 ### av.threads
