@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: eq_to_stereo  
+title: bigsh0t_eq_to_stereo  
 media types:
 Video  
 description: Projects a stereographic image from an equirectangular.  

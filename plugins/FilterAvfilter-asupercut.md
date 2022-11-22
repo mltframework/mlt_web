@@ -13,7 +13,7 @@ title: asupercut
 media types:
 Audio  
 description: Cut super frequencies.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

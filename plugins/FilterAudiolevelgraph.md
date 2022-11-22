@@ -50,6 +50,7 @@ or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 widget: color  
 
 ### color.*
@@ -80,6 +81,7 @@ or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 widget: color  
 
 ### thickness
@@ -90,6 +92,7 @@ The thickness of the bar or segments.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 20  
 default: 0  
@@ -104,6 +107,7 @@ The rotation angle to be applied to the waveform.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 360  
 default: 0  
@@ -121,6 +125,7 @@ X, Y, W, H are assumed to be pixel units unless they have the suffix '%'.
 type: rect  
 readonly: no  
 required: no  
+animation: yes  
 default: 0 0 100% 100%  
 
 ### mirror
@@ -168,6 +173,7 @@ The number of channels to show.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 default: 2  
 
 ### segments
@@ -178,6 +184,7 @@ The number of segments to draw if the graph type is &quot;segment&quot;.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 2  
 maximum: 100  
 default: 10  
@@ -190,6 +197,7 @@ The space in pixels between the segments.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 10  

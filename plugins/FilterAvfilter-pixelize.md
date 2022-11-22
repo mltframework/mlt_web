@@ -13,7 +13,7 @@ title: pixelize
 media types:
 Video  
 description: Pixelize video.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

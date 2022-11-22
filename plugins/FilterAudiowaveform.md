@@ -35,6 +35,7 @@ or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 widget: color  
 
 ### color.*
@@ -65,6 +66,7 @@ or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 widget: color  
 
 ### thickness
@@ -92,6 +94,7 @@ The audio channel to draw.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 20  
 default: 0  

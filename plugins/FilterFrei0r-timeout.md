@@ -40,6 +40,7 @@ Indicator colour
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #000000  
 widget: color  
 

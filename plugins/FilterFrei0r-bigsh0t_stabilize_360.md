@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: stabilize_360  
+title: bigsh0t_stabilize_360  
 media types:
 Video  
 description: Stabilizes 360 equirectangular footage.  
@@ -59,7 +59,7 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 4

@@ -13,7 +13,7 @@ title: dialoguenhance
 media types:
 Audio  
 description: Audio Dialogue Enhancement.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

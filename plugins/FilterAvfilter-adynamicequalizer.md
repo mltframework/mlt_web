@@ -13,7 +13,7 @@ title: adynamicequalizer
 media types:
 Audio  
 description: Apply Dynamic Equalization of input audio.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: monochrome
 media types:
 Video  
 description: Convert video to gray using custom color filter.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

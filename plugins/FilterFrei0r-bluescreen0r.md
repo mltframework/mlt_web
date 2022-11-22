@@ -26,6 +26,7 @@ The color to make transparent (B G R)
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #00ef00  
 widget: color  
 

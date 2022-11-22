@@ -13,7 +13,7 @@ title: allpass
 media types:
 Audio  
 description: Apply a two-pole all-pass filter.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -86,26 +86,26 @@ values:
 
   
 description:
-set filter-width  
+set width  
 type: float  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 99999  
-default: 707.1  
+default: 0.707  
 format: double  
 
 ### av.w
 
   
 description:
-set filter-width  
+set width  
 type: float  
 readonly: no  
 required: no  
 minimum: 0  
 maximum: 99999  
-default: 707.1  
+default: 0.707  
 format: double  
 
 ### av.mix

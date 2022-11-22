@@ -13,7 +13,7 @@ title: showinfo
 media types:
 Video  
 description: Show textual information for each video frame.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

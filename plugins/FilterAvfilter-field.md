@@ -13,7 +13,7 @@ title: field
 media types:
 Video  
 description: Extract a field from the input video.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

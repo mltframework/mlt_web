@@ -13,7 +13,7 @@ title: siti
 media types:
 Video  
 description: Calculate spatial information (SI) and temporal information (TI).  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: Defish0r
 media types:
 Video  
 description: Non rectilinear lens mappings  
-version: 0.3  
+version: 0.4  
 creator: Marko Cebokli  
 
 ## Parameters
@@ -121,6 +121,48 @@ widget: spinner
 title: Manual Aspect    
 description:
 Manual Pixel Aspect ratio  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0.5  
+widget: spinner  
+
+### 8
+
+title: Crop    
+description:
+Straighten all edges of video frame  
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: checkbox  
+
+### 9
+
+title: Non-Linear scale    
+description:
+Fix camera scaling between 4:3 and 16:9  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: -nan  
+widget: spinner  
+
+### 10
+
+title: Y Scale    
+description:
+Scale Y to affect aspect ratio  
 type: float  
 readonly: no  
 required: no  

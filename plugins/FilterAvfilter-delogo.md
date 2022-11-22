@@ -13,7 +13,7 @@ title: delogo
 media types:
 Video  
 description: Remove logo from input video.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

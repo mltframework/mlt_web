@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: transform_360  
+title: bigsh0t_transform_360  
 media types:
 Video  
 description: Rotates an equirectangular map.  
@@ -75,6 +75,6 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 widget: checkbox  
 

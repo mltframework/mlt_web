@@ -37,6 +37,7 @@ First color of the gradient
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #000000  
 widget: color  
 
@@ -62,6 +63,7 @@ Second color of the gradient
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #ffffff  
 widget: color  
 

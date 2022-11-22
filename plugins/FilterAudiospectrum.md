@@ -50,6 +50,7 @@ or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 widget: color  
 
 ### color.*
@@ -80,6 +81,7 @@ or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 widget: color  
 
 ### thickness
@@ -90,6 +92,7 @@ The thickness of the line used to draw the waveform for line graph. The thicknes
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 20  
 default: 0  
@@ -104,6 +107,7 @@ The rotation angle to be applied to the waveform.
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 360  
 default: 0  
@@ -165,6 +169,7 @@ Affects the amount of curve in the line interpolating between points. 0.0 = a st
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 default: 0.4  
 
 ### gorient
@@ -190,6 +195,7 @@ The space in pixels between the segments.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 100  
 default: 10  
@@ -203,6 +209,7 @@ The number of bands to draw in the spectrum. Each band shows up as a data point 
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 default: 31  
 
 ### frequency_low
@@ -213,6 +220,7 @@ The low end of the frequency range to be used for the graph. motion.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 default: 20  
 unit: Hz  
 
@@ -224,6 +232,7 @@ The high end of the frequency range to be used for the graph. motion.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 default: 20000  
 unit: Hz  
 
@@ -235,6 +244,7 @@ The minimum amplitude of sound that must occur within the frequency range to cau
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -100  
 maximum: 0  
 default: -30  
@@ -248,6 +258,7 @@ The number of segments to draw if the graph type is &quot;segment&quot;.
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 2  
 maximum: 100  
 default: 10  

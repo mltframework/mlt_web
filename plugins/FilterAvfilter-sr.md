@@ -13,7 +13,7 @@ title: sr
 media types:
 Video  
 description: Apply DNN-based image super resolution to the input.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

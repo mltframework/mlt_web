@@ -13,7 +13,7 @@ title: bass
 media types:
 Audio  
 description: Boost or cut lower frequencies.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -86,7 +86,7 @@ values:
 
   
 description:
-set shelf transition steep  
+set width  
 type: float  
 readonly: no  
 required: no  
@@ -99,7 +99,7 @@ format: double
 
   
 description:
-set shelf transition steep  
+set width  
 type: float  
 readonly: no  
 required: no  

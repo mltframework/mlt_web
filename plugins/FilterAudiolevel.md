@@ -13,7 +13,7 @@ title: Audio Levels
 media types:
 Audio  
 description: Compute the audio amplitude.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 contributor: Marco Gittler  
 contributor: Steve Harris  
@@ -29,12 +29,19 @@ This filter provides the amplitude level as a percentage value in floating point
 ### iec_scale
 
 title: Use IEC 60268-18 Scale    
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
 default: 1  
+widget: checkbox  
+
+### dbpeak
+
+title: output true peak value in dB instead of a percentage in _audio_level.<N>    
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
 widget: checkbox  
 
 ### _audio_level.<N>

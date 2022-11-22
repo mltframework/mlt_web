@@ -13,7 +13,7 @@ title: GPS Text
 media types:
 Video  
 description: Overlay GPS-related text onto the video  
-version: 1  
+version: 2  
 creator: Daniel F  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -72,14 +72,14 @@ default: Speed: #gps_speed#km/h
  GPS location: #gps_lat#, #gps_lon#  
 widget: text  
 
-### gps.file
+### resource
 
 title: GPS File/URL    
 description:
 &quot;The fullpath of file containing location (GPS) data. Supported extensions: .gpx, .tcx.&quot;  
 type: string  
 readonly: no  
-required: no  
+required: yes  
 widget: fileopen  
 
 ### time_offset

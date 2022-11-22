@@ -26,6 +26,7 @@ Choose a color from the source image that should be white.
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #7f7f7f  
 widget: color  
 

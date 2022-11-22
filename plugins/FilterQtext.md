@@ -101,6 +101,7 @@ A color value is a hexadecimal representation of RGB plus alpha channel as 0xrrg
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: 255  
 widget: color  
 
@@ -112,6 +113,7 @@ A color value is a hexadecimal representation of RGB plus alpha channel as 0xrrg
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: 32  
 widget: color  
 
@@ -123,6 +125,7 @@ A color value is a hexadecimal representation of RGB plus alpha channel as 0xrrg
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 widget: color  
 
 ### outline

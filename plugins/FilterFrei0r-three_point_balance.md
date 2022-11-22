@@ -26,6 +26,7 @@ Black color
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #000000  
 widget: color  
 
@@ -37,6 +38,7 @@ Gray color
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #7f7f7f  
 widget: color  
 
@@ -48,6 +50,7 @@ White color
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #ffffff  
 widget: color  
 

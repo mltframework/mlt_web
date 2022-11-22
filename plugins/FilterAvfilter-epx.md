@@ -13,7 +13,7 @@ title: epx
 media types:
 Video  
 description: Scale the input using EPX algorithm.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

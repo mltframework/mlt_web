@@ -13,7 +13,7 @@ title: colorbalance
 media types:
 Video  
 description: Adjust the color balance.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

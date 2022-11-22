@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: eq_mask  
+title: bigsh0t_eq_mask  
 media types:
 Video  
 description: Masks part of the VR sphere.  
-version: 2.2  
+version: 2.6  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters

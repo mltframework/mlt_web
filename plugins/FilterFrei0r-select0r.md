@@ -24,6 +24,7 @@ title: Color to select
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #00cc00  
 widget: color  
 

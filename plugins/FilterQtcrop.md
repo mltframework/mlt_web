@@ -62,5 +62,6 @@ The color to use for padding including alpha
 type: color  
 readonly: no  
 required: no  
+animation: yes  
 default: #00000000  
 

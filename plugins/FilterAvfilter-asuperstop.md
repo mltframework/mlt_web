@@ -13,7 +13,7 @@ title: asuperstop
 media types:
 Audio  
 description: Apply high order Butterworth band-stop filter.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: apulsator
 media types:
 Audio  
 description: Audio pulsator.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

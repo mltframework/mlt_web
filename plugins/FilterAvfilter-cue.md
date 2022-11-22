@@ -13,7 +13,7 @@ title: cue
 media types:
 Video  
 description: Delay filtering to match a cue.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -25,4 +25,5 @@ title: Key Color
 type: color  
 readonly: no  
 required: no  
+default: {"animation"=>true}  
 

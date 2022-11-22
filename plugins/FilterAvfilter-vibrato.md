@@ -13,7 +13,7 @@ title: vibrato
 media types:
 Audio  
 description: Apply vibrato effect.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

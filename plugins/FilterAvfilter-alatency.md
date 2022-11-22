@@ -13,7 +13,7 @@ title: alatency
 media types:
 Audio  
 description: Report audio filtering latency.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

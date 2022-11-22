@@ -13,7 +13,7 @@ title: sobel
 media types:
 Video  
 description: Apply sobel operator.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

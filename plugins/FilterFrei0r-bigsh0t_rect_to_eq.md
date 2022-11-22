@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: rect_to_eq  
+title: bigsh0t_rect_to_eq  
 media types:
 Video  
 description: Converts a rectilinear image to an equirectangular map.  
@@ -51,6 +51,6 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1.0e-323  
 widget: spinner  
 

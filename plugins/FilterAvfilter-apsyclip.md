@@ -13,7 +13,7 @@ title: apsyclip
 media types:
 Audio  
 description: Audio Psychoacoustic Clipper.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

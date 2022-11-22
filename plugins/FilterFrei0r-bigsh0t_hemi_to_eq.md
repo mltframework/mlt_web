@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: hemi_to_eq  
+title: bigsh0t_hemi_to_eq  
 media types:
 Video  
 description: Transforms dual-hemisphere video to equirectangular.  
@@ -176,7 +176,7 @@ widget: spinner
 
 ### 13
 
-title: interpolation    
+title: distortionA    
 type: float  
 readonly: no  
 required: no  
@@ -187,6 +187,186 @@ default: 0
 widget: spinner  
 
 ### 14
+
+title: distortionB    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 15
+
+title: distortionC    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 16
+
+title: distortionRadius    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 17
+
+title: vignettingA    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 18
+
+title: vignettingB    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 19
+
+title: vignettingC    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 20
+
+title: vignettingD    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 21
+
+title: vignettingRadius    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 22
+
+title: emorH1    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 23
+
+title: emorH2    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 24
+
+title: emorH3    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 25
+
+title: emorH4    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 26
+
+title: emorH5    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 27
+
+title: emorEnabled    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: checkbox  
+
+### 28
+
+title: interpolation    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+
+### 29
 
 title: projection    
 type: float  

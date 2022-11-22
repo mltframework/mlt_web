@@ -13,7 +13,7 @@ title: afade
 media types:
 Audio  
 description: Fade in/out input audio.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

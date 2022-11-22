@@ -13,7 +13,7 @@ title: vflip
 media types:
 Video  
 description: Flip the input video vertically.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

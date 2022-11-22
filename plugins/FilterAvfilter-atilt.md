@@ -13,7 +13,7 @@ title: atilt
 media types:
 Audio  
 description: Apply spectral tilt to audio.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

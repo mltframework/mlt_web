@@ -27,5 +27,5 @@ The color to keep. All others are desaturated.
 type: color  
 readonly: no  
 required: no  
-default: {"mutable"=>true}  
+default: {"mutable"=>true, "animation"=>true}  
 

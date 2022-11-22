@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: zenith_correction  
+title: bigsh0t_zenith_correction  
 media types:
 Video  
 description: Applies video zenith correction data.  
@@ -47,7 +47,7 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 widget: checkbox  
 
 ### 3

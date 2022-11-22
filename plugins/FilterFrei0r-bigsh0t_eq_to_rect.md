@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: eq_to_rect  
+title: bigsh0t_eq_to_rect  
 media types:
 Video  
 description: Extracts a rectilinear image from an equirectangular.  

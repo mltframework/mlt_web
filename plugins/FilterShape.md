@@ -13,7 +13,7 @@ title: Shape Alpha
 media types:
 Video  
 description:   
-version: 5  
+version: 6  
 creator: Charles Yates  
 license: LGPLv2.1  
 
@@ -109,4 +109,21 @@ type: boolean
 readonly: no  
 required: no  
 default: true  
+
+### alpha_operation
+
+title: Alpha Operation    
+description:
+The way to combine the alpha channel of the mask with the source, but this currently only works when use_mix = 0.  
+type: string  
+readonly: no  
+required: no  
+default: overwrite  
+values:  
+
+* add
+* overwrite
+* maximum
+* minimum
+* subtract
 

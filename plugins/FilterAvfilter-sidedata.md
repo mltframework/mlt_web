@@ -13,7 +13,7 @@ title: sidedata
 media types:
 Video  
 description: Manipulate video frame side data.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

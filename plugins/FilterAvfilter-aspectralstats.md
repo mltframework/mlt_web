@@ -13,7 +13,7 @@ title: aspectralstats
 media types:
 Audio  
 description: Show frequency domain statistics about audio frames.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes

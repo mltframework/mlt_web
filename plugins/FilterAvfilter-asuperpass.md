@@ -13,7 +13,7 @@ title: asuperpass
 media types:
 Audio  
 description: Apply high order Butterworth band-pass filter.  
-version: Lavfi8.39.100  
+version: Lavfi8.44.100  
 creator: libavfilter maintainers  
 
 ## Notes
