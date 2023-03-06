@@ -27,6 +27,7 @@ wrap_title: Filter Plugins
 * [avfilter.adelay](../FilterAvfilter-adelay/): adelay
 * [avfilter.adenorm](../FilterAvfilter-adenorm/): adenorm
 * [avfilter.aderivative](../FilterAvfilter-aderivative/): aderivative
+* [avfilter.adrc](../FilterAvfilter-adrc/): adrc
 * [avfilter.adynamicequalizer](../FilterAvfilter-adynamicequalizer/): adynamicequalizer
 * [avfilter.adynamicsmooth](../FilterAvfilter-adynamicsmooth/): adynamicsmooth
 * [avfilter.aecho](../FilterAvfilter-aecho/): aecho
@@ -45,15 +46,19 @@ wrap_title: Filter Plugins
 * [avfilter.allpass](../FilterAvfilter-allpass/): allpass
 * [avfilter.aloop](../FilterAvfilter-aloop/): aloop
 * [avfilter.alphaextract](../FilterAvfilter-alphaextract/): alphaextract
+* [avfilter.alphamerge](../FilterAvfilter-alphamerge/): alphamerge
 * [avfilter.ametadata](../FilterAvfilter-ametadata/): ametadata
 * [avfilter.amplify](../FilterAvfilter-amplify/): amplify
 * [avfilter.anlmdn](../FilterAvfilter-anlmdn/): anlmdn
+* [avfilter.anlmf](../FilterAvfilter-anlmf/): anlmf
+* [avfilter.anlms](../FilterAvfilter-anlms/): anlms
 * [avfilter.aphaser](../FilterAvfilter-aphaser/): aphaser
 * [avfilter.aphaseshift](../FilterAvfilter-aphaseshift/): aphaseshift
 * [avfilter.apsyclip](../FilterAvfilter-apsyclip/): apsyclip
 * [avfilter.apulsator](../FilterAvfilter-apulsator/): apulsator
 * [avfilter.arealtime](../FilterAvfilter-arealtime/): arealtime
 * [avfilter.arnndn](../FilterAvfilter-arnndn/): arnndn
+* [avfilter.asdr](../FilterAvfilter-asdr/): asdr
 * [avfilter.ashowinfo](../FilterAvfilter-ashowinfo/): ashowinfo
 * [avfilter.asidedata](../FilterAvfilter-asidedata/): asidedata
 * [avfilter.asoftclip](../FilterAvfilter-asoftclip/): asoftclip
@@ -68,6 +73,8 @@ wrap_title: Filter Plugins
 * [avfilter.atadenoise](../FilterAvfilter-atadenoise/): atadenoise
 * [avfilter.atilt](../FilterAvfilter-atilt/): atilt
 * [avfilter.avgblur](../FilterAvfilter-avgblur/): avgblur
+* [avfilter.axcorrelate](../FilterAvfilter-axcorrelate/): axcorrelate
+* [avfilter.backgroundkey](../FilterAvfilter-backgroundkey/): backgroundkey
 * [avfilter.bandpass](../FilterAvfilter-bandpass/): bandpass
 * [avfilter.bandreject](../FilterAvfilter-bandreject/): bandreject
 * [avfilter.bass](../FilterAvfilter-bass/): bass
@@ -78,6 +85,7 @@ wrap_title: Filter Plugins
 * [avfilter.bitplanenoise](../FilterAvfilter-bitplanenoise/): bitplanenoise
 * [avfilter.blackdetect](../FilterAvfilter-blackdetect/): blackdetect
 * [avfilter.blackframe](../FilterAvfilter-blackframe/): blackframe
+* [avfilter.blend](../FilterAvfilter-blend/): blend
 * [avfilter.blockdetect](../FilterAvfilter-blockdetect/): blockdetect
 * [avfilter.blurdetect](../FilterAvfilter-blurdetect/): blurdetect
 * [avfilter.boxblur](../FilterAvfilter-boxblur/): boxblur
@@ -98,12 +106,15 @@ wrap_title: Filter Plugins
 * [avfilter.colorize](../FilterAvfilter-colorize/): colorize
 * [avfilter.colorkey](../FilterAvfilter-colorkey/): colorkey
 * [avfilter.colorlevels](../FilterAvfilter-colorlevels/): colorlevels
+* [avfilter.colormap](../FilterAvfilter-colormap/): colormap
 * [avfilter.colormatrix](../FilterAvfilter-colormatrix/): colormatrix
 * [avfilter.colorspace](../FilterAvfilter-colorspace/): colorspace
 * [avfilter.colortemperature](../FilterAvfilter-colortemperature/): colortemperature
 * [avfilter.compand](../FilterAvfilter-compand/): compand
 * [avfilter.compensationdelay](../FilterAvfilter-compensationdelay/): compensationdelay
 * [avfilter.convolution](../FilterAvfilter-convolution/): convolution
+* [avfilter.convolve](../FilterAvfilter-convolve/): convolve
+* [avfilter.corr](../FilterAvfilter-corr/): corr
 * [avfilter.crop](../FilterAvfilter-crop/): crop
 * [avfilter.cropdetect](../FilterAvfilter-cropdetect/): cropdetect
 * [avfilter.crossfeed](../FilterAvfilter-crossfeed/): crossfeed
@@ -116,6 +127,7 @@ wrap_title: Filter Plugins
 * [avfilter.dctdnoiz](../FilterAvfilter-dctdnoiz/): dctdnoiz
 * [avfilter.deband](../FilterAvfilter-deband/): deband
 * [avfilter.deblock](../FilterAvfilter-deblock/): deblock
+* [avfilter.deconvolve](../FilterAvfilter-deconvolve/): deconvolve
 * [avfilter.dedot](../FilterAvfilter-dedot/): dedot
 * [avfilter.deesser](../FilterAvfilter-deesser/): deesser
 * [avfilter.deflate](../FilterAvfilter-deflate/): deflate
@@ -159,7 +171,9 @@ wrap_title: Filter Plugins
 * [avfilter.firequalizer](../FilterAvfilter-firequalizer/): firequalizer
 * [avfilter.flanger](../FilterAvfilter-flanger/): flanger
 * [avfilter.floodfill](../FilterAvfilter-floodfill/): floodfill
+* [avfilter.framepack](../FilterAvfilter-framepack/): framepack
 * [avfilter.freezedetect](../FilterAvfilter-freezedetect/): freezedetect
+* [avfilter.freezeframes](../FilterAvfilter-freezeframes/): freezeframes
 * [avfilter.fspp](../FilterAvfilter-fspp/): fspp
 * [avfilter.gblur](../FilterAvfilter-gblur/): gblur
 * [avfilter.geq](../FilterAvfilter-geq/): geq
@@ -168,6 +182,7 @@ wrap_title: Filter Plugins
 * [avfilter.grayworld](../FilterAvfilter-grayworld/): grayworld
 * [avfilter.greyedge](../FilterAvfilter-greyedge/): greyedge
 * [avfilter.haas](../FilterAvfilter-haas/): haas
+* [avfilter.haldclut](../FilterAvfilter-haldclut/): haldclut
 * [avfilter.hdcd](../FilterAvfilter-hdcd/): hdcd
 * [avfilter.hflip](../FilterAvfilter-hflip/): hflip
 * [avfilter.highpass](../FilterAvfilter-highpass/): highpass
@@ -183,7 +198,7 @@ wrap_title: Filter Plugins
 * [avfilter.hwdownload](../FilterAvfilter-hwdownload/): hwdownload
 * [avfilter.hwmap](../FilterAvfilter-hwmap/): hwmap
 * [avfilter.hwupload](../FilterAvfilter-hwupload/): hwupload
-* [avfilter.hwupload_cuda](../FilterAvfilter-hwupload_cuda/): hwupload_cuda
+* [avfilter.identity](../FilterAvfilter-identity/): identity
 * [avfilter.idet](../FilterAvfilter-idet/): idet
 * [avfilter.il](../FilterAvfilter-il/): il
 * [avfilter.inflate](../FilterAvfilter-inflate/): inflate
@@ -192,6 +207,7 @@ wrap_title: Filter Plugins
 * [avfilter.lagfun](../FilterAvfilter-lagfun/): lagfun
 * [avfilter.latency](../FilterAvfilter-latency/): latency
 * [avfilter.lenscorrection](../FilterAvfilter-lenscorrection/): lenscorrection
+* [avfilter.libvmaf](../FilterAvfilter-libvmaf/): libvmaf
 * [avfilter.limiter](../FilterAvfilter-limiter/): limiter
 * [avfilter.loop](../FilterAvfilter-loop/): loop
 * [avfilter.loudnorm](../FilterAvfilter-loudnorm/): loudnorm
@@ -200,20 +216,28 @@ wrap_title: Filter Plugins
 * [avfilter.lumakey](../FilterAvfilter-lumakey/): lumakey
 * [avfilter.lut](../FilterAvfilter-lut/): lut
 * [avfilter.lut1d](../FilterAvfilter-lut1d/): lut1d
+* [avfilter.lut2](../FilterAvfilter-lut2/): lut2
 * [avfilter.lut3d](../FilterAvfilter-lut3d/): lut3d
 * [avfilter.lutrgb](../FilterAvfilter-lutrgb/): lutrgb
 * [avfilter.lutyuv](../FilterAvfilter-lutyuv/): lutyuv
+* [avfilter.maskedmax](../FilterAvfilter-maskedmax/): maskedmax
+* [avfilter.maskedmin](../FilterAvfilter-maskedmin/): maskedmin
+* [avfilter.maskedthreshold](../FilterAvfilter-maskedthreshold/): maskedthreshold
 * [avfilter.maskfun](../FilterAvfilter-maskfun/): maskfun
 * [avfilter.mcompand](../FilterAvfilter-mcompand/): mcompand
 * [avfilter.median](../FilterAvfilter-median/): median
 * [avfilter.metadata](../FilterAvfilter-metadata/): metadata
 * [avfilter.monochrome](../FilterAvfilter-monochrome/): monochrome
+* [avfilter.morpho](../FilterAvfilter-morpho/): morpho
+* [avfilter.msad](../FilterAvfilter-msad/): msad
+* [avfilter.multiply](../FilterAvfilter-multiply/): multiply
 * [avfilter.negate](../FilterAvfilter-negate/): negate
 * [avfilter.nlmeans](../FilterAvfilter-nlmeans/): nlmeans
 * [avfilter.nnedi](../FilterAvfilter-nnedi/): nnedi
 * [avfilter.noise](../FilterAvfilter-noise/): noise
 * [avfilter.normalize](../FilterAvfilter-normalize/): normalize
 * [avfilter.oscilloscope](../FilterAvfilter-oscilloscope/): oscilloscope
+* [avfilter.overlay_vaapi](../FilterAvfilter-overlay_vaapi/): overlay_vaapi
 * [avfilter.owdenoise](../FilterAvfilter-owdenoise/): owdenoise
 * [avfilter.pad](../FilterAvfilter-pad/): pad
 * [avfilter.perspective](../FilterAvfilter-perspective/): perspective
@@ -255,6 +279,7 @@ wrap_title: Filter Plugins
 * [avfilter.speechnorm](../FilterAvfilter-speechnorm/): speechnorm
 * [avfilter.spp](../FilterAvfilter-spp/): spp
 * [avfilter.sr](../FilterAvfilter-sr/): sr
+* [avfilter.ssim360](../FilterAvfilter-ssim360/): ssim360
 * [avfilter.stereo3d](../FilterAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../FilterAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../FilterAvfilter-stereowiden/): stereowiden
@@ -265,6 +290,7 @@ wrap_title: Filter Plugins
 * [avfilter.swapuv](../FilterAvfilter-swapuv/): swapuv
 * [avfilter.tblend](../FilterAvfilter-tblend/): tblend
 * [avfilter.thistogram](../FilterAvfilter-thistogram/): thistogram
+* [avfilter.threshold](../FilterAvfilter-threshold/): threshold
 * [avfilter.tiltshelf](../FilterAvfilter-tiltshelf/): tiltshelf
 * [avfilter.tlut2](../FilterAvfilter-tlut2/): tlut2
 * [avfilter.tmedian](../FilterAvfilter-tmedian/): tmedian
@@ -281,10 +307,12 @@ wrap_title: Filter Plugins
 * [avfilter.untile](../FilterAvfilter-untile/): untile
 * [avfilter.v360](../FilterAvfilter-v360/): v360
 * [avfilter.vaguedenoiser](../FilterAvfilter-vaguedenoiser/): vaguedenoiser
+* [avfilter.varblur](../FilterAvfilter-varblur/): varblur
 * [avfilter.vectorscope](../FilterAvfilter-vectorscope/): vectorscope
 * [avfilter.vflip](../FilterAvfilter-vflip/): vflip
 * [avfilter.vibrance](../FilterAvfilter-vibrance/): vibrance
 * [avfilter.vibrato](../FilterAvfilter-vibrato/): vibrato
+* [avfilter.vif](../FilterAvfilter-vif/): vif
 * [avfilter.vignette](../FilterAvfilter-vignette/): vignette
 * [avfilter.virtualbass](../FilterAvfilter-virtualbass/): virtualbass
 * [avfilter.vmafmotion](../FilterAvfilter-vmafmotion/): vmafmotion
@@ -294,6 +322,8 @@ wrap_title: Filter Plugins
 * [avfilter.waveform](../FilterAvfilter-waveform/): waveform
 * [avfilter.weave](../FilterAvfilter-weave/): weave
 * [avfilter.xbr](../FilterAvfilter-xbr/): xbr
+* [avfilter.xcorrelate](../FilterAvfilter-xcorrelate/): xcorrelate
+* [avfilter.xfade](../FilterAvfilter-xfade/): xfade
 * [avfilter.yadif](../FilterAvfilter-yadif/): yadif
 * [avfilter.yaepblur](../FilterAvfilter-yaepblur/): yaepblur
 * [avfilter.zoompan](../FilterAvfilter-zoompan/): zoompan
@@ -799,7 +829,7 @@ wrap_title: Filter Plugins
 * [qtcrop](../FilterQtcrop/): Crop by padding
 * [qtext](../FilterQtext/): QText
 * [rbpitch](../FilterRbpitch/): Rubberband Pitch
-* [resample](../FilterResample/): Resample
+* [resample](../FilterResample/): SRC Audio Resampler
 * [rescale](../FilterRescale/): Rescale
 * [resize](../FilterResize/): Pad
 * [rgblut](../FilterRgblut/): RGBLUT

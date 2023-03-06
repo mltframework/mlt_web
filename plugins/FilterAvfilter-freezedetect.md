@@ -13,7 +13,7 @@ title: freezedetect
 media types:
 Video  
 description: Detects frozen video input.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

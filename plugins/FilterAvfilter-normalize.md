@@ -13,7 +13,7 @@ title: normalize
 media types:
 Video  
 description: Normalize RGB video.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

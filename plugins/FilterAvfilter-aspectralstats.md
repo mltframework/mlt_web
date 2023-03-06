@@ -13,7 +13,7 @@ title: aspectralstats
 media types:
 Audio  
 description: Show frequency domain statistics about audio frames.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -66,6 +66,7 @@ values:
 * parzen
 * poisson
 * bohman
+* kaiser
 
 ### av.overlap
 
@@ -78,6 +79,33 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0.5  
+
+### av.measure
+
+  
+description:
+select the parameters which are measured  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* none
+* all
+* mean
+* variance
+* centroid
+* spread
+* skewness
+* kurtosis
+* entropy
+* flatness
+* crest
+* flux
+* slope
+* decrease
+* rolloff
 
 ### av.threads
 

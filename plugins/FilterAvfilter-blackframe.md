@@ -13,7 +13,7 @@ title: blackframe
 media types:
 Video  
 description: Detect frames that are (almost) black.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

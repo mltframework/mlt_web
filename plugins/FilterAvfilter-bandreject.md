@@ -13,7 +13,7 @@ title: bandreject
 media types:
 Audio  
 description: Apply a two-pole Butterworth band-reject filter.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

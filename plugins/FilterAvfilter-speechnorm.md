@@ -13,7 +13,7 @@ title: speechnorm
 media types:
 Audio  
 description: Speech Normalizer.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -233,6 +233,32 @@ set linked channels filtering
 type: string  
 readonly: no  
 required: no  
+
+### av.rms
+
+  
+description:
+set the RMS value  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.m
+
+  
+description:
+set the RMS value  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
 
 ### position
 

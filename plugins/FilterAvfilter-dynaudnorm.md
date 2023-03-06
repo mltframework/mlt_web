@@ -13,7 +13,7 @@ title: dynaudnorm
 media types:
 Audio  
 description: Dynamic Audio Normalizer.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -299,6 +299,35 @@ minimum: 0
 maximum: 1  
 default: 0  
 format: double  
+
+### av.curve
+
+  
+description:
+set the custom peak mapping curve  
+type: string  
+readonly: no  
+required: no  
+
+### av.v
+
+  
+description:
+set the custom peak mapping curve  
+type: string  
+readonly: no  
+required: no  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

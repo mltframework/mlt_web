@@ -13,22 +13,41 @@ title: Time Remap
 media types:
 Audio  Video  
 description: Remap frames in time.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Parameters
 
-### map
+### time_map
 
-title: Map    
+title: Time Map    
 description:
-A map of input frame times to output frame times.  
+A map of input frame times to output frame times. Ignore if speed_map is set.  
 type: float  
 readonly: no  
 required: no  
 animation: yes  
+
+### speed_map
+
+title: Speed Map    
+description:
+A map of input speed to output frame times. Overrides time_map  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+
+### map (*deprecated*)
+
+  
+description:
+This parameter is deprecated. Use time_map instead.  
+type:   
+readonly: no  
+required: no  
 
 ### image_mode
 

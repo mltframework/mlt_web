@@ -13,7 +13,7 @@ title: cropdetect
 media types:
 Video  
 description: Auto-detect crop size.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -88,6 +88,56 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### av.mode
+
+  
+description:
+set mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* black
+* mvedges
+
+### av.high
+
+  
+description:
+Set high threshold for edge detection  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.0980392  
+
+### av.low
+
+  
+description:
+Set low threshold for edge detection  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0.0588235  
+
+### av.mv_threshold
+
+  
+description:
+motion vector threshold when estimating video window size  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 100  
+default: 8  
 
 ### position
 

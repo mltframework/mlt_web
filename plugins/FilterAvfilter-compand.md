@@ -13,7 +13,7 @@ title: compand
 media types:
 Audio  
 description: Compress or expand audio dynamic range.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

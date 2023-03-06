@@ -13,7 +13,7 @@ title: adeclip
 media types:
 Audio  
 description: Remove clipping from input audio.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

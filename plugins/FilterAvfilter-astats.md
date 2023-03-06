@@ -13,7 +13,7 @@ title: astats
 media types:
 Audio  
 description: Show time domain statistics about audio frames.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -68,31 +68,31 @@ values:
 
 * none
 * all
+* Bit_depth
+* Crest_factor
 * DC_offset
-* Min_level
-* Max_level
-* Min_difference
+* Dynamic_range
+* Entropy
+* Flat_factor
 * Max_difference
+* Max_level
 * Mean_difference
-* RMS_difference
+* Min_difference
+* Min_level
+* Noise_floor
+* Noise_floor_count
+* Number_of_Infs
+* Number_of_NaNs
+* Number_of_denormals
+* Number_of_samples
+* Peak_count
 * Peak_level
+* RMS_difference
 * RMS_level
 * RMS_peak
 * RMS_trough
-* Crest_factor
-* Flat_factor
-* Peak_count
-* Bit_depth
-* Dynamic_range
 * Zero_crossings
 * Zero_crossings_rate
-* Noise_floor
-* Noise_floor_count
-* Entropy
-* Number_of_samples
-* Number_of_NaNs
-* Number_of_Infs
-* Number_of_denormals
 
 ### av.measure_overall
 
@@ -107,31 +107,31 @@ values:
 
 * none
 * all
+* Bit_depth
+* Crest_factor
 * DC_offset
-* Min_level
-* Max_level
-* Min_difference
+* Dynamic_range
+* Entropy
+* Flat_factor
 * Max_difference
+* Max_level
 * Mean_difference
-* RMS_difference
+* Min_difference
+* Min_level
+* Noise_floor
+* Noise_floor_count
+* Number_of_Infs
+* Number_of_NaNs
+* Number_of_denormals
+* Number_of_samples
+* Peak_count
 * Peak_level
+* RMS_difference
 * RMS_level
 * RMS_peak
 * RMS_trough
-* Crest_factor
-* Flat_factor
-* Peak_count
-* Bit_depth
-* Dynamic_range
 * Zero_crossings
 * Zero_crossings_rate
-* Noise_floor
-* Noise_floor_count
-* Entropy
-* Number_of_samples
-* Number_of_NaNs
-* Number_of_Infs
-* Number_of_denormals
 
 ### av.threads
 

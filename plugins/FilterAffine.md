@@ -48,7 +48,7 @@ type: properties
 readonly: no  
 required: no  
 
-### use_normalised
+### use_normalized
 
 title: Use normalized    
 description:
@@ -57,4 +57,13 @@ type: boolean
 readonly: no  
 required: no  
 default: 0  
+
+### use_normalised
+
+title: Use normalized (*DEPRECATED*)    
+description:
+deprecated. See use_normalized  
+type:   
+readonly: no  
+required: no  
 

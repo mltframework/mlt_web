@@ -13,7 +13,7 @@ title: dblur
 media types:
 Video  
 description: Apply Directional Blur filter.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -42,7 +42,7 @@ set radius
 type: float  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 0  
 maximum: 8192  
 default: 5  
 

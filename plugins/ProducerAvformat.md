@@ -289,6 +289,15 @@ readonly: no
 required: no  
 unit: degrees  
 
+### filtergraph
+
+title: Filtergraph    
+description:
+Filtergraph to apply to resource. Uses libavfilter syntax.  
+type: string  
+readonly: no  
+required: no  
+
 ### avioflags
 
   
@@ -698,6 +707,17 @@ required: no
 minimum: 1  
 default: 1024  
 
+### raw_packet_size
+
+  
+description:
+(apac)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
 ### ignore_loop
 
   
@@ -893,6 +913,17 @@ set frame rate (bitpacked)
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(bonk)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### framerate
 
@@ -1118,6 +1149,15 @@ readonly: no
 required: no  
 minimum: 1  
 default: 1024  
+
+### merge_alpha
+
+  
+description:
+return VP6 alpha in the main video stream (ea)  
+type: string  
+readonly: no  
+required: no  
 
 ### raw_packet_size
 
@@ -1519,6 +1559,17 @@ Set options for segment demuxer (hls)
 type: string  
 readonly: no  
 required: no  
+
+### seg_max_retry
+
+  
+description:
+Maximum number of times to reload a segment on error. (hls)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### linespeed
 
@@ -3198,7 +3249,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf59.27.100'  
+default: 'Lavf60.3.100'  
 
 ### raw_packet_size
 
@@ -3927,6 +3978,53 @@ required: no
   
 description:
 force loop over input file sequence (gif_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (hdr_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (hdr_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (hdr_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (hdr_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (hdr_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -5355,7 +5453,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf59.27.100'  
+default: 'Lavf60.3.100'  
 
 ### stream_name
 
@@ -5712,7 +5810,6 @@ values:
 
 * unaligned
 * gray
-* truncated
 * low_delay
 * bitexact
 * output_corrupt
@@ -5733,6 +5830,7 @@ values:
 * export_mvs
 * skip_manual
 * ass_ro_flush_noop
+* icc_profiles
 
 ### export_side_data
 
@@ -6214,19 +6312,6 @@ values:
 * pre_decoder
 * ignore
 
-### sub_text_format
-
-  
-description:
-Deprecated, does nothing  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* ass
-
 ### apply_cropping
 
   
@@ -6316,6 +6401,7 @@ values:
 * ignore_level
 * allow_high_depth
 * allow_profile_mismatch
+* unsafe_output
 
 ### extra_hw_frames
 
@@ -6450,7 +6536,7 @@ Number of buffers in the output context (h263_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6461,7 +6547,7 @@ Number of buffers in the capture context (h263_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### is_avc
@@ -6513,7 +6599,7 @@ Number of buffers in the output context (h264_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6524,7 +6610,7 @@ Number of buffers in the capture context (h264_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### apply_defdispwin
@@ -6553,7 +6639,7 @@ Number of buffers in the output context (hevc_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6564,7 +6650,7 @@ Number of buffers in the capture context (hevc_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### lowres
@@ -6596,7 +6682,7 @@ Number of buffers in the output context (mpeg4_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6607,7 +6693,7 @@ Number of buffers in the capture context (mpeg4_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### num_output_buffers
@@ -6618,7 +6704,7 @@ Number of buffers in the output context (mpeg1_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6629,7 +6715,7 @@ Number of buffers in the capture context (mpeg1_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### num_output_buffers
@@ -6640,7 +6726,7 @@ Number of buffers in the output context (mpeg2_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6651,7 +6737,7 @@ Number of buffers in the capture context (mpeg2_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### lowres
@@ -6749,7 +6835,7 @@ Number of buffers in the output context (vc1_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6760,7 +6846,7 @@ Number of buffers in the capture context (vc1_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### num_output_buffers
@@ -6771,7 +6857,7 @@ Number of buffers in the output context (vp8_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6782,7 +6868,7 @@ Number of buffers in the capture context (vp8_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### num_output_buffers
@@ -6793,7 +6879,7 @@ Number of buffers in the output context (vp9_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -6804,7 +6890,7 @@ Number of buffers in the capture context (vp9_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 20  
+minimum: 2  
 default: 20  
 
 ### dual_mono_mode
@@ -6828,6 +6914,36 @@ values:
   
 description:
 Order in which the channels are to be exported (aac)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* coded
+
+### dual_mono_mode
+
+  
+description:
+Select the channel to decode for dual mono (aac_fixed)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* main
+* sub
+* both
+
+### channel_order
+
+  
+description:
+Order in which the channels are to be exported (aac_fixed)  
 type: string  
 readonly: no  
 required: no  
@@ -7307,6 +7423,18 @@ default: 0
   
 description:
 Frame threads (libdav1d)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 256  
+default: 0  
+
+### max_frame_delay
+
+  
+description:
+Max frame delay (libdav1d)  
 type: integer  
 readonly: no  
 required: no  

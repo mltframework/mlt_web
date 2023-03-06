@@ -13,7 +13,7 @@ title: zscale
 media types:
 Video  
 description: Apply resizing, colorspace and bit depth conversion.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -282,6 +282,7 @@ values:
 * bt470m
 * bt470bg
 * smpte170m
+* smpte240m
 * bt709
 * linear
 * log100
@@ -315,6 +316,7 @@ values:
 * bt470m
 * bt470bg
 * smpte170m
+* smpte240m
 * bt709
 * linear
 * log100
@@ -350,7 +352,7 @@ values:
 * fcc
 * bt470bg
 * smpte170m
-* smpte2400m
+* smpte240m
 * ycgco
 * bt2020nc
 * bt2020c
@@ -382,7 +384,7 @@ values:
 * fcc
 * bt470bg
 * smpte170m
-* smpte2400m
+* smpte240m
 * ycgco
 * bt2020nc
 * bt2020c
@@ -528,6 +530,7 @@ values:
 * bt470m
 * bt470bg
 * smpte170m
+* smpte240m
 * bt709
 * linear
 * log100
@@ -561,6 +564,7 @@ values:
 * bt470m
 * bt470bg
 * smpte170m
+* smpte240m
 * bt709
 * linear
 * log100
@@ -596,7 +600,7 @@ values:
 * fcc
 * bt470bg
 * smpte170m
-* smpte2400m
+* smpte240m
 * ycgco
 * bt2020nc
 * bt2020c
@@ -628,7 +632,7 @@ values:
 * fcc
 * bt470bg
 * smpte170m
-* smpte2400m
+* smpte240m
 * ycgco
 * bt2020nc
 * bt2020c

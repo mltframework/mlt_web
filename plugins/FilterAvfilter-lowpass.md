@@ -13,7 +13,7 @@ title: lowpass
 media types:
 Audio  
 description: Apply a low-pass filter with 3dB point frequency.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

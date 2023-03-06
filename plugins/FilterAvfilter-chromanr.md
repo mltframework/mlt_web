@@ -13,7 +13,7 @@ title: chromanr
 media types:
 Video  
 description: Reduce chrominance noise.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -38,7 +38,7 @@ default: 30
 
   
 description:
-set horizontal size  
+set horizontal patch size  
 type: integer  
 readonly: no  
 required: no  
@@ -50,7 +50,7 @@ default: 5
 
   
 description:
-set vertical size  
+set vertical patch size  
 type: integer  
 readonly: no  
 required: no  

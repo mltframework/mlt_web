@@ -13,7 +13,7 @@ title: yaepblur
 media types:
 Video  
 description: Yet another edge preserving blur filter.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

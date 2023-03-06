@@ -13,7 +13,7 @@ title: deesser
 media types:
 Audio  
 description: Apply de-essing to the audio.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

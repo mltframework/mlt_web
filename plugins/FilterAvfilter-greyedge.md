@@ -13,7 +13,7 @@ title: greyedge
 media types:
 Video  
 description: Estimates scene illumination by grey edge assumption.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: pseudocolor
 media types:
 Video  
 description: Make pseudocolored video frames.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -112,6 +112,7 @@ values:
 * nominal
 * preferred
 * total
+* spectral
 
 ### av.p
 
@@ -139,6 +140,7 @@ values:
 * nominal
 * preferred
 * total
+* spectral
 
 ### av.opacity
 

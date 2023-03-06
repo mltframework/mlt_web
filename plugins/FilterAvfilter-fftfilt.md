@@ -13,7 +13,7 @@ title: fftfilt
 media types:
 Video  
 description: Apply arbitrary expressions to pixels in frequency domain.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

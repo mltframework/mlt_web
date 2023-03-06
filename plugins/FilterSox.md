@@ -81,7 +81,7 @@ maximum: 1
 default: 0  
 widget: checkbox  
 
-### normalise
+### normalize
 
 title: Dynamic normalization    
 description:
@@ -93,6 +93,15 @@ minimum: 0
 maximum: 1  
 default: 0  
 widget: checkbox  
+
+### normalise
+
+title: Dynamic normalisation (*DEPRECATED*)    
+description:
+Deprecated. See normalize  
+type:   
+readonly: no  
+required: no  
 
 ### window
 

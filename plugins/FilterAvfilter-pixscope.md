@@ -13,7 +13,7 @@ title: pixscope
 media types:
 Video  
 description: Pixel data analysis.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes

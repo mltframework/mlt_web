@@ -13,12 +13,21 @@ title: Count
 media types:
 Audio  Video  
 description: Generate frames with a counter and synchronized tone. The counter can go up or down.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Parameters
+
+### argument
+
+title: Factory Producer Name    
+description:
+This is not a saved property with a name. This optional argument tells the count producer which loader producer to use, if any, when it creates its child producers. For example, you can use loader-nogl to prevent it from using movit filters in a thread not initialized with OpenGL and Movit.  
+type: string  
+readonly: no  
+required: no  
 
 ### direction
 

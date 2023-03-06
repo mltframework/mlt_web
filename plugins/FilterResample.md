@@ -12,26 +12,21 @@ category: plugin
 title: Resample  
 media types:
 Audio  Hidden  
-description: Adjust an audio stream&#39;s sampling rate, and duplicate channels if producer provides less than consumer requested.
-This filter is automatically invoked by the loader producer for the sake of normalisation over inputs and with the consumer.
+description: Adjust an audio stream&#39;s sampling rate.
+This filter is automatically invoked by the loader producer to normalize audio from the producer to provide the rate requested by the consumer.
   
 version: 1  
 creator: Dan Dennedy <dan@dennedy.org>  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
-## Bugs
-
-* Assumes 2 channels during libsamplerate initialisation. Untested with >2 channels.
-
-
 ## Parameters
 
-### requested
+### frequency
 
 title: Frequency    
 description:
-The target sample rate.  
+The target sample rate. If not set, the filter will convert to the sample rate requested by the consumer.  
 type: integer  
 readonly: no  
 required: no  

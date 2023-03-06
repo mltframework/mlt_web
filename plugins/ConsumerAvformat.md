@@ -991,6 +991,24 @@ type: string
 readonly: no  
 required: no  
 
+### loop
+
+  
+description:
+set loop flag (argo_cvg)  
+type: string  
+readonly: no  
+required: no  
+
+### reverb
+
+  
+description:
+set reverb flag (argo_cvg)  
+type: string  
+readonly: no  
+required: no  
+
 ### packet_size
 
   
@@ -1078,6 +1096,28 @@ Raw RGB bitmaps are stored bottom-up (avi)
 type: string  
 readonly: no  
 required: no  
+
+### movie_timescale
+
+  
+description:
+set movie timescale (avif)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1000  
+
+### loop
+
+  
+description:
+Number of times to loop animated AVIF: 0 - infinite loop (avif)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### adaptation_sets
 
@@ -2041,15 +2081,6 @@ readonly: no
 required: no  
 minimum: 1  
 default: 1  
-
-### hls_ts_options
-
-  
-description:
-set hls mpegts list of options for the container format used for hls (deprecated, use hls_segment_options instead of it.) (hls)  
-type: string  
-readonly: no  
-required: no  
 
 ### hls_vtt_options
 
@@ -4026,6 +4057,7 @@ values:
 * system_b
 * initial_discontinuity
 * nit
+* omit_rai
 
 ### mpegts_copyts
 
@@ -4986,6 +5018,15 @@ type: string
 readonly: no  
 required: no  
 
+### min_seg_duration
+
+  
+description:
+set minimum segment duration (segment)  
+type: string  
+readonly: no  
+required: no  
+
 ### segment_times
 
   
@@ -5248,6 +5289,15 @@ required: no
   
 description:
 set approximation value used for the segment times (stream_segment,ssegment)  
+type: string  
+readonly: no  
+required: no  
+
+### min_seg_duration
+
+  
+description:
+set minimum segment duration (stream_segment,ssegment)  
 type: string  
 readonly: no  
 required: no  
@@ -6448,7 +6498,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf59.27.100'  
+default: 'Lavf60.3.100'  
 
 ### stream_name
 
@@ -16078,6 +16128,17 @@ type: string
 readonly: no  
 required: no  
 
+### min-gf-interval
+
+  
+description:
+Minimum golden/alternate reference frame interval (libvpx-vp9)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
 ### speed
 
   
@@ -17382,6 +17443,15 @@ type: string
 readonly: no  
 required: no  
 
+### a53cc
+
+  
+description:
+Use A53 Closed Captions (if available) (libx265)  
+type: string  
+readonly: no  
+required: no  
+
 ### x265-params
 
   
@@ -17399,7 +17469,7 @@ Number of buffers in the output context (h263_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -17421,7 +17491,7 @@ Number of buffers in the output context (h264_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -17570,6 +17640,7 @@ values:
 * identifier
 * timing
 * recovery_point
+* a53_cc
 
 ### profile
 
@@ -17625,7 +17696,7 @@ Number of buffers in the output context (hevc_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -17799,6 +17870,7 @@ format: flags
 values:  
 
 * hdr
+* a53_cc
 
 ### tiles
 
@@ -17992,7 +18064,7 @@ Number of buffers in the output context (mpeg4_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers
@@ -18014,7 +18086,7 @@ Number of buffers in the output context (vp8_v4l2m2m)
 type: integer  
 readonly: no  
 required: no  
-minimum: 6  
+minimum: 2  
 default: 16  
 
 ### num_capture_buffers

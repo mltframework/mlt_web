@@ -13,7 +13,7 @@ title: curves
 media types:
 Video  
 description: Adjust components curves.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -143,6 +143,20 @@ save Gnuplot script of the curves in specified file
 type: string  
 readonly: no  
 required: no  
+
+### av.interp
+
+  
+description:
+specify the kind of interpolation  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* natural
+* pchip
 
 ### av.threads
 

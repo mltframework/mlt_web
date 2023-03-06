@@ -27,7 +27,7 @@ description:
 <pre>
 This parameter is deprecated; use "level" instead. The gain may be indicated as a floating point value of the gain adjustment.
 The gain may also be indicated as a numeric value with the suffix "dB" to adjust in terms of decibels.
-The gain may also be set to "normalise" to normalise the volume to the target amplitude -12dBFS.
+The gain may also be set to "normalize" to normalize the volume to the target amplitude -12dBFS.
 This value is discarded if value for property "level" is set.
 </pre>
 type: string  
@@ -38,25 +38,34 @@ required: no
 
 title: Window    
 description:
-The number of video frames over which to smooth normalisation.  
+The number of video frames over which to smooth normalization.  
 type: integer  
 readonly: no  
 required: no  
 default: 75  
 
-### normalise
+### normalize
 
-title: Normalise    
+title: Normalize    
 description:
 <pre>
-Normalise the volume to the specified amplitude.
+Normalize the volume to the specified amplitude.
 The normalization may be indicated as a floating point value of the relative volume.
-The normalisation may also be indicated as a numeric value with the suffix "dB" to set the amplitude in decibels.
+The normalization may also be indicated as a numeric value with the suffix "dB" to set the amplitude in decibels.
 </pre>
 type: string  
 readonly: no  
 required: no  
 default: -12dBFS  
+
+### normalise
+
+title: Normalise (*DEPRECATED*)    
+description:
+Deprecated. See normalize  
+type:   
+readonly: no  
+required: no  
 
 ### limiter
 
@@ -76,7 +85,7 @@ default: -6dBFS
 
 title: Max gain    
 description:
-A floating point or decibel value of the maximum gain that can be applied during normalisation.  
+A floating point or decibel value of the maximum gain that can be applied during normalization.  
 type: string  
 readonly: no  
 required: no  
@@ -98,7 +107,7 @@ required: no
 
 title: Max gain    
 description:
-A floating point or decibel value of the maximum gain that can be applied during normalisation.  
+A floating point or decibel value of the maximum gain that can be applied during normalization.  
 type: string  
 readonly: no  
 required: no  

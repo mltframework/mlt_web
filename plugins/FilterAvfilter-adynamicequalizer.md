@@ -13,7 +13,7 @@ title: adynamicequalizer
 media types:
 Audio  
 description: Apply Dynamic Equalization of input audio.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -113,19 +113,6 @@ maximum: 2000
 default: 200  
 format: double  
 
-### av.knee
-
-  
-description:
-set knee factor  
-type: float  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 8  
-default: 1  
-format: double  
-
 ### av.ratio
 
   
@@ -134,8 +121,8 @@ set ratio factor
 type: float  
 readonly: no  
 required: no  
-minimum: 1  
-maximum: 20  
+minimum: 0  
+maximum: 30  
 default: 1  
 format: double  
 
@@ -148,7 +135,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 30  
+maximum: 100  
 default: 0  
 format: double  
 
@@ -160,22 +147,9 @@ set max gain
 type: float  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 200  
-default: 0  
-format: double  
-
-### av.slew
-
-  
-description:
-set slew factor  
-type: float  
-readonly: no  
-required: no  
 minimum: 1  
 maximum: 200  
-default: 1  
+default: 50  
 format: double  
 
 ### av.mode
@@ -207,6 +181,35 @@ values:
 * bell
 * lowshelf
 * highshelf
+
+### av.direction
+
+  
+description:
+set direction  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* downward
+* upward
+
+### av.auto
+
+  
+description:
+set auto threshold  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* disabled
+* false
+* true
 
 ### av.threads
 

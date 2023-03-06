@@ -47,7 +47,7 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### 3

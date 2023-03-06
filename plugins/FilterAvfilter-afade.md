@@ -13,7 +13,7 @@ title: afade
 media types:
 Audio  
 description: Fade in/out input audio.  
-version: Lavfi8.44.100  
+version: Lavfi9.3.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -197,6 +197,32 @@ values:
 * losi
 * sinc
 * isinc
+
+### av.silence
+
+  
+description:
+set the silence gain  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.unity
+
+  
+description:
+set the unity gain  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
 
 ### position
 
