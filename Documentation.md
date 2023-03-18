@@ -29,6 +29,7 @@ videos by Kris Occhipinti](https://www.youtube.com/playlist?list=PLcUid3OP_4OWC-
 * [Doxygen API Documentation](https://www.mltframework.org/doxygen/annotated.html)
 * [Install]({{ "/docs/install/" | prepend: site.baseurl }}) - see also [BuildTips]({{ "/docs/buildtips/" | prepend: site.baseurl }})
 * [Framework Design]({{ "/docs/framework/" | prepend: site.baseurl }})
+* [MLT++]({{ "/docs/mlt++/" | prepend: site.baseurl }}) - C++ wrapper library
 * [XML]({{ "/docs/mltxml/" | prepend: site.baseurl }}) - XML document format
 * [XML Authoring Examples]({{ "/docs/authoringexamples/" | prepend: site.baseurl }})
 * [Property Naming Conventions]({{ "/docs/propertynaming/" | prepend: site.baseurl }})
