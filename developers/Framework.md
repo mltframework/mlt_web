@@ -57,7 +57,7 @@ the design is loosely based on the Producer/Consumer design pattern.
 It employs Reverse Polish Notation for the application of audio and
 video FX.
 
-The framework is designed to be colour space neutral - the currently
+The framework is designed to be color space neutral - the currently
 implemented modules, however, are very much 8bit YUV422 oriented. In
 theory, the modules could be entirely replaced.
 
@@ -169,7 +169,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        // Report an error during initialisation
+        // Report an error during initialization
         fprintf(stderr, "Unable to locate factory modules\n");
     }
 
@@ -181,7 +181,7 @@ int main(int argc, char *argv[])
 This is a simple example - it doesn't provide any seeking capabilities or
 runtime configuration options.
 
-The first step of any MLT application is the factory initialisation - this
+The first step of any MLT application is the factory initialization - this
 ensures that the environment is configured and MLT can function. The factory
 is covered in more detail below.
 
@@ -194,8 +194,8 @@ The defaults requested here are a special case - the NULL usage requests
 that we use the default producers and consumers.
 
 The default producer is "loader". This producer matches file names to
-locate a service to use and attaches 'normalising filters' (such as scalers,
-deinterlacers, resamplers and field normalisers) to the loaded content -
+locate a service to use and attaches 'normalizing filters' (such as scalers,
+deinterlacers, resamplers and field normalizers) to the loaded content -
 these filters ensure that the consumer gets what it asks for.
 
 The default consumer is "sdl". The combination of loader and sdl will
@@ -218,7 +218,7 @@ This will create a XML document on stdout.
 `MLT_CONSUMER=xml MLT_PRODUCER=avformat ./hello file.avi`
 
 This will play the video using the avformat producer directly, thus it will
-bypass the normalising functions.
+bypass the normalizing functions.
 
 `MLT_CONSUMER=libdv ./hello file.avi > /dev/dv1394`
 
@@ -230,10 +230,10 @@ to DV and broadcast it to your DV device.
 As shown in the 'Hello World' example, factories create service objects.
 
 The framework itself provides no services - they are provided in the form of
-a plugin structure. A plugin is organised in the form of a 'module' and a
+a plugin structure. A plugin is organized in the form of a 'module' and a
 module can provide many services of different types.
 
-Once the factory is initialised, all the configured services are available
+Once the factory is initialized, all the configured services are available
 for use.
 
 mlt_factory_prefix() returns the path to the location of the installed
@@ -248,23 +248,23 @@ pairs as shown in the following table:
 
   |*Name*           |*Description*                  |*Values*         |
   |---              |---                            |---              |
-  |MLT_NORMALISATION|The normalisation of the system|PAL or NTSC      |
+  |MLT_NORMALISATION|The normalization of the system|PAL or NTSC      |
   |MLT_PRODUCER     |The default producer           |"loader" or other|
   |MLT_CONSUMER     |The default consumer           |"sdl" or other   |
   |MLT_TEST_CARD    |The default test card producer |any producer     |
 
 
-These values are initialised from the environment variables of the same
+These values are initialized from the environment variables of the same
 name.
 
-As shown above, a producer can be created using the 'default normalising'
+As shown above, a producer can be created using the 'default normalizing'
 producer, and they can also be requested by name. Filters and transitions
 are always requested by name - there is no concept of a 'default' for these.
 
 #### Service Properties
 
 All services have their own set of
-properties than can be manipulated to affect their behaviour.
+properties than can be manipulated to affect their behavior.
 
 In order to set properties on a service, we need to retrieve the properties
 object associated to it. For producers, this is done by invoking:
@@ -287,7 +287,7 @@ A more complete description of the properties object is found below.
 #### Playlists
 
 So far, we've shown a simple producer/consumer configuration - the next
-phase is to organise producers in playlists.
+phase is to organize producers in playlists.
 
 Let's assume that we're adapting the Hello World example, and wish to queue
 a number of files for playout, ie:
@@ -337,7 +337,7 @@ will create multiple references to it.
 Now all we need do is to replace these lines in the main function:
 
 ~~~
-// Create a normalised producer
+// Create a normalized producer
        mlt_producer world = mlt_factory_producer( NULL, argv[ 1 ] );
 ~~~
 
@@ -351,7 +351,7 @@ with:
 and we have a means to play multiple clips.
 
 [&#42;] This reference functionality was introduced in mlt 0.1.2 - it is 100%
-compatable with the early mechanism of registering the reference and
+compatible with the early mechanism of registering the reference and
 destructor with the properties of the playlist object.
 
 #### Filters
@@ -581,12 +581,12 @@ required.
 In the mix example above, you can simply call:
 
 ~~~
-// Optimise the playlist
+// Optimize the playlist
 mlt_producer_optimise( mlt_playlist_producer( playlist ) );
 ~~~
 
 after the mix calls have be done. Note that this is automatically applied
-to deserialised MLT XML.
+to deserialized MLT XML.
 
 #### Multiple Tracks and Transitions
 
@@ -594,10 +594,10 @@ MLT's approach to multiple tracks is governed by two requirements:
 
 1. The need for a consumer and producer to communicate with one another via
     a single frame;
-2. The desire to be able to serialise and manipulate a 'network' (or filter
+2. The desire to be able to serialize and manipulate a 'network' (or filter
     graph if you prefer).
 
-We can visualise a multitrack in the way that an NLE presents it:
+We can visualize a multitrack in the way that an NLE presents it:
 
 <pre>
    +-----------------+                          +-----------------------+
@@ -627,7 +627,7 @@ multitrack and elect the correct frame to pass on.
 Hence, MLT provides a wrapper for the multitrack, which is called a
 'tractor', and it is the tractor's task to ensure that all tracks are pulled
 evenly, that the correct frame is output, and that we have producer-like
-behaviour.
+behavior.
 
 Thus, a multitrack is conceptually 'pulled' by a tractor as shown here:
 
@@ -915,11 +915,11 @@ an existing "name" change the value. They also free up memory associated to
 the previous value. Note that it also possible to change type in this way
 too.
 
-Steps 6 and 7 demonstrate that the properties object handles deserialisation
+Steps 6 and 7 demonstrate that the properties object handles deserialization
 from strings. The string value of "0" is set, the integer value of 0 is
 retrieved.
 
-Steps 8 and 9 demonstrate that the properties object handles serialisation
+Steps 8 and 9 demonstrate that the properties object handles serialization
 to strings.
 
 To show all the name/value pairs in a properties, it is possible to iterate
@@ -970,14 +970,14 @@ When the properties are closed, or the value of "image" is changed, the
 destructor is invoked.
 
 2. The string value returned by mlt_properties_get is NULL.
-Typically, you wouldn't wish to serialise an image as a string, but
+Typically, you wouldn't wish to serialize an image as a string, but
 other structures might need such functionality - you can specify a
-serialiser as the last argument if required (declaration is char
-&#42;serialise( void &#42; )).
+serializer as the last argument if required (declaration is char
+&#42;serialize( void &#42; )).
 
 Properties also provides some more advanced usage capabilities.
 
-It has the ability to inherit all serialisable values from another properties
+It has the ability to inherit all serializable values from another properties
 object:
 ~~~
 mlt_properties_inherit( this, that );
@@ -1010,12 +1010,12 @@ The queuing operations are used in:
 #### mlt_pool
 
 The MLT framework provides memory pooling capabilities through the mlt_pool
-API. Once initilialised, these can be seen as a straightforward drop in
+API. Once initilialized, these can be seen as a straightforward drop in
 replacement for malloc/realloc/free functionality.
 
 The background behind this API is that malloc/free operations are
 notoriously inefficient, especially when dealing with large blocks of memory
-(such as an image). On linux, malloc is optimised for memory allocations
+(such as an image). On linux, malloc is optimized for memory allocations
 less than 128k - memory blocks allocated of these sizes or less are retained
 in the process heap for subsequent reuse, thus bypassing the kernel calls
 for repeated allocation/frees for small blocks of memory. However, blocks of
@@ -1133,8 +1133,8 @@ By default, a frame has the following properties:
   |alpha             |The generated alpha mask            |NULL or pointer   |
   |width             |The width of the image              |                  |
   |height            |The height of the image             |                  |
-  |normalised_width  |The normalised width of the image   |720               |
-  |normalised_height |The normalised height of the image  |576 or 480        |
+  |normalised_width  |The normalized width of the image   |720               |
+  |normalised_height |The normalized height of the image  |576 or 480        |
   |progressive       |Indicates progressive/interlaced    |0 or 1            |
   |top_field_first   |Indicates top field first           |0 or 1            |
   |audio             |The generated audio                 |NULL or pointer   |
@@ -1146,9 +1146,9 @@ By default, a frame has the following properties:
   |test_audio        |Used to indicate no audio available |0 or 1            |
 
 The consumer can attach the following properties which affect the default
-behaviour of a frame:
+behavior of a frame:
 
-  |test_card_producer|Synthesise test images from here    |NULL or pointer   |
+  |test_card_producer|Synthesize test images from here    |NULL or pointer   |
   |consumer_aspect_  |Apply this aspect ratio to the test |double            |
   |ratio             |card producer                       |                  |
   |rescale.interp    |Use this scale method for test image|"string"          |
@@ -1159,7 +1159,7 @@ to ensure that effects are consistently handled as PAL or NTSC, regardless
 of the consumers or producers width/height image request.
 
 The test_image and audio flags are used to determine when images and audio
-should be synthesised.
+should be synthesized.
 
 Additional properties may be provided by the producer implementation, and
 filters, transitions and consumers may add additional properties to
@@ -1180,18 +1180,18 @@ n outputs and is represented as follows:
     +-----------+
 </pre>
 
-Descendents of service impose restrictions on how inputs and outputs can be
+Descendants of service impose restrictions on how inputs and outputs can be
 connected and will provide a basic set of properties. Typically, the service
-instance is encapsulated by the descendent in order for it to ensure that
+instance is encapsulated by the descendant in order for it to ensure that
 its connection rules are followed.
 
 A service does not define any properties when constructed. It should be
-noted that producers, filters and transitions my be serialised (say, via the
+noted that producers, filters and transitions my be serialized (say, via the
 xml consumer), and care should be taken to distinguish between
-serialisable and transient properties. The convention used is to prefix
+serializable and transient properties. The convention used is to prefix
 transient properties with an underscore.
 
-Typically, only direct descendents of services need invoke these methods and
+Typically, only direct descendants of services need invoke these methods and
 developers are encouraged to use those extensions when defining new services.
 
 #### mlt_producer
@@ -1222,7 +1222,7 @@ When instantiated, a producer has the following properties:
   |out               |The out point in frames             |in to length - 1  |
   |length            |The length of the input in frames   |0 to n            |
   |aspect_ratio      |aspect_ratio of the source          |0 to n            |
-  |eof               |end of clip behaviour               |"pause" or "loop" |
+  |eof               |end of clip behavior                |"pause" or "loop" |
   |resource          |Constructor argument (ie: file name)|"<resource>"      |
 
 Additional properties may be provided by the producer implementation.
