@@ -792,6 +792,51 @@ watermark - just what the world needed, right? ;-)
 Incidentally, the same thing could be achieved with the more trivial
 watermark filter inserted between the producer and the consumer.
 
+#### Chain and Links
+
+Filters are a simple way to manipulate images and audio as long as your
+processing does not depend on any frames other than the one being processed.
+But some processes require data from previous or next frames in order to
+interpolate from future samples or perform temporal processing. Examples of
+such processes would be audio resampling or video deinterlacing. Yet other
+processes might want to access completely unrelated frames like time remapping.
+Filters can not request a producer to seek to a particular frame because
+filters do not know about the producers they are receiving frames from. That is
+where chains and links are useful.
+
+A chain is a type of producer that provides a wrapper for a standard producer.
+As a wrapper, it passes properties down to the encapsulated source producer.
+A link is another type of producer that can be connected to a "next" producer.
+That next producer could be the source producer in the chain, or it could be
+another link. Since links are producers they have a mlt_producer_seek()
+function. And since they know about the "next" producer, they can call
+mlt_producer_seek() on the next producer/link in the chain.
+
+Similar to filters, frames are pulled from the first link and down the line
+until the frame request reaches the producer. But unlike filters, each link can
+perform seeking on the next producer/link in the chain. It may even seek
+multiple times and request multiple frames if it needs data from multiple
+frames.
+
+<pre>
++------------------------------------------------+
+|chain                                           |
+| +----------+  +-------+  +-------+  +-------+  |
+| | producer |->| link2 |->| link1 |->| link0 |--|->
+| +----------+  +-------+  +-------+  +-------+  |
++------------------------------------------------+
+</pre>
+
+Similar to filters, links can be designed with special purposes, registered in
+the service repository and loaded with the factory.
+
+Normalizing links can be loaded on a chain by calling
+mlt_chain_attach_normalizers(). This is analogous to normalizing filters being
+added to a producer using the loader producer. Like any other producer, chains
+can have filters attached to them. But it is best to use normalizing links
+instead of normalizing filters. In fact, mlt_chain_attach_normalizers() will
+remove any normalizing filters from the source producer.
+
 ### STRUCTURE AND DESIGN
 
 #### Class Hierarchy
@@ -806,6 +851,8 @@ mlt_properties
     mlt_producer
       mlt_playlist
       mlt_tractor
+      mlt_chain
+      mlt_link
     mlt_filter
     mlt_transition
     mlt_consumer
