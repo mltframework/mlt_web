@@ -147,8 +147,9 @@ using namespace Mlt;
 int main( void )
 {
     Factory::init( );
-    Producer p( "pango:", "Hello World" );
-    Consumer c( "sdl" );
+    Profile profile;
+    Producer p( profile, "pango:", "Hello World" );
+    Consumer c( profile, "sdl" );
     c.connect( p );
     c.run( );
     return 0;
@@ -192,14 +193,15 @@ using namespace Mlt;
 int main( int argc, char **argv )
 {
     Factory::init( );
-    Playlist list;
+    Profile profile;
+    Playlist list( profile );
     for ( int i = 1; i < argc; i ++ )
     {
-        Producer p( argv[i] );
+        Producer p( profile, argv[i] );
         if ( p.is_valid( ) )
             list.append( p );
     }
-    Consumer c( "sdl" );
+    Consumer c( profile, "sdl" );
     c.connect( list );
     c.run( );
     return 0;
@@ -238,19 +240,20 @@ using namespace Mlt;
 int main( int argc, char **argv )
 {
     Factory::init( );
-    Playlist list;
+    Profile profile;
+    Playlist list( profile );
     for ( int i = 1; i < argc; i ++ )
     {
-        Producer p( argv[i] );
+        Producer p( profile, argv[i] );
         if ( p.is_valid( ) )
             list.append( p );
     }
-    Filter f( "watermark", "pango:" );
+    Filter f( profile, "watermark", "pango:" );
     f.set( "producer.text", "MLT++" );
     f.set( "producer.fgcolour", "0x000000ff" );
     f.set( "producer.bgcolour", "0xff000080" );
     list.attach( f );
-    Consumer c( "sdl" );
+    Consumer c( profile, "sdl" );
     c.connect( list );
     c.run( );
     return 0;
@@ -306,9 +309,10 @@ a very trivial thing to do:
 ~~~
 Tractor *dub( char *video_file, char *audio_file )
 {
-    Tractor *tractor = new Tractor( );
-    Producer video( video_file );
-    Producer audio( audio_file );
+    Profile profile;
+    Tractor *tractor = new Tractor( profile );
+    Producer video( profile, video_file );
+    Producer audio( profile, audio_file );
     tractor->set_track( video, 0 );
     tractor->set_track( audio, 1 );
     return tractor;
@@ -327,10 +331,11 @@ which combines frames from two producers to produce a new frame.
 ~~~
 Tractor *mix( char *video_file, char *audio_file )
 {
-    Tractor *tractor = new Tractor( );
-    Transition mix( "mix" );
-    Producer video( video_file );
-    Producer audio( audio_file );
+    Profile profile;
+    Tractor *tractor = new Tractor( profile );
+    Transition mix( profile, "mix" );
+    Producer video( profile, video_file );
+    Producer audio( profile, audio_file );
     tractor.set_track( video, 0 );
     tractor.set_track( audio, 1 );
     tractor.field.plant_transition( mix, 0, 1 );
@@ -351,7 +356,7 @@ To apply a 25 frame luma transition between the first and second cut on
 the playlist, you could use:
 
 ~~~
-Transition luma;
+Transition luma( profile, "luma" );
 playlist.mix( 0, 25, luma );
 ~~~
 
@@ -373,7 +378,7 @@ class Xml
     public:
         Xml( MltTractor &tractor ) :
             tractor( tractor ),
-            consumer( "xml" )
+            consumer( *tractor.profile(), "xml" )
         {
             consumer.connect( tractor );
             tractor.listen( tractor, "producer-changed", 
@@ -487,7 +492,8 @@ For various reasons, you might want to serialize a producer to a string.
 To do this, you just need to specify a property to write to:
 
 ~~~
-Consumer xml( "xml", "buffer" );
+Profile profile;
+Consumer xml( profile, "xml", "buffer" );
 xml.connect( producer );
 xml.start( );
 buffer = xml.get( "buffer" );
@@ -503,7 +509,8 @@ Should you receive an XML document as a string, and you want to send it
 on to a server, you can use:
 
 ~~~
-Consumer client( "mvsp", "localhost:5250" );
+Profile profile;
+Consumer client( profile, "mvsp", "localhost:5250" );
 client.set( "xml", buffer );
 client.start( );
 ~~~
@@ -511,7 +518,8 @@ client.start( );
 If you need to obtain an MLT object from a XML string:
 
 ~~~
-Producer producer( "xml-string", buffer );
+Profile profile;
+Producer producer( profile, "xml-string", buffer );
 ~~~
 
 The following shows a working example of an extended server:
