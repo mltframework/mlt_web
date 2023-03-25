@@ -9,17 +9,17 @@ permalink: /docs/codingstyleguide/
 
 There are not a lot of rules, but here are some general preferences:
 
-* We prefer braces on their own line
-* Indentation should be made with a single tab (not spaces)
-* Apply liberal usage of spaces in statements and expressions
-* There is no hard line length
+* We prefer the left curly brace on the same line as the start of the statement (execpt for functions)
+* Indentation should be made with four spaces
 * Do not use "this" as the name of private context structures. Instead, prefer
   a name that describes the type of object (e.g. filter or producer)
 * Do not compare to null. Prefer "if ( pointer )" over "if ( pointer != NULL )"
-* Single space between keyword and parenthesis but not function and parenthesis.
 * Function names should be all lowercase with underscores between words
 
 The code in src/framework serves as a good example of these style preferences.
+
+Before submitting, the code should be formatted by clang-format using the .clang-format
+file in the root of the project. "ninja clang-format" is a convenient way to run this.
 
 ### Conventions
 
