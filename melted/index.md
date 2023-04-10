@@ -21,11 +21,6 @@ there is a [build script]({{ "/docs/buildscripts/" | prepend:site.baseurl }}) to
    * send [MVCP]({{ "/docs/mvcp/" | prepend:site.baseurl }}) commands and exit - very useful for scripts especially ones triggered by cron or
 [at](http://linux.die.net/man/1/at)
    * append [MLT XML]({{ "/docs/mltxml/" | prepend:site.baseurl }}) to a playout unit's playlist and exit
-* [Shotcut](https://www.shotcut.org/) is the premier, cross-platform
-GUI client for Melted that is actively being developed.
-* [Rugen](https://github.com/mltframework/rugen) is an old GTK+
-GUI client that was not cross-platform, did not actually play any video
-itself, and has thus been abandoned.
 
 ## Related Documents
 

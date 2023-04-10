@@ -8,13 +8,13 @@ permalink: /docs/contributing/
 #### Getting the Latest Source Code
 
 MLT now uses the [Git](http://git-scm.com/) distributed version
-control system hosted by [GitHub](http://github.com/).
+control system hosted by [GitHub](https://github.com/).
 
 You can get the latest version of the *MLT framework* source code
 (including mlt++ and other language bindings) using:
 
 `git clone git://github.com/mltframework/mlt.git` or `git clone
-!http://github.com/mltframework/mlt.git`
+!https://github.com/mltframework/mlt.git`
 
 You can browse the repository through the web interface:
 https://github.com/mltframework/mlt
@@ -23,7 +23,7 @@ You can fetch the latest version of the *Melted Video Server* source
 code (including libmvcp) using:
 
 `git clone git://github.com/mltframework/melted.git` or `git clone
-!http://github.com/mltframework/melted.git`
+!https://github.com/mltframework/melted.git`
 
 You can browse the repository through the web interface:
 https://github.com/mltframework/melted
@@ -32,7 +32,7 @@ You can fetch the latest version of the *Melted GTK+ Client* (rugen)
 source code using:
 
 `git clone git://github.com/mltframework/rugen.git` or `git clone
-!http://github.com/mltframework/rugen.git`
+!https://github.com/mltframework/rugen`
 
 You can browse the repository through the web interface:
 https://github.com/mltframework/rugen

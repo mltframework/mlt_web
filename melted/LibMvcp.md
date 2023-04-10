@@ -600,7 +600,7 @@ TABLE OF CONTENTS
    A more complete example of use of the server side can queuing can be found
    at:
 
-       http://users.pandora.be/acp/rugen
+       https://github.com/mltframework/rugen
 
    The demo client provided with mvcp is used for retaining backward
    compatability with the client side queuing API.
@@ -638,11 +638,7 @@ TABLE OF CONTENTS
 2.11. Examples
 --------------
 
-   Please refer to mvcp-console and mvcp-client source for examples provided with
-   the project. Rugen is another example:
-
-      http://users.pandora.be/acp/rugen
-
+   Please refer to mvcp-console and mvcp-client source for examples provided with the project.
 
 3. The Low Level Parser API
 ---------------------------
