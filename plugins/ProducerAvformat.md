@@ -248,7 +248,7 @@ readonly: no
 required: no  
 widget: checkbox  
 
-### mute_on_pause
+### mute_on_pause (*DEPRECATED*)
 
 title: Mute on Pause    
 description:
@@ -256,7 +256,7 @@ Mute the audio when the same frame is requested twice in a row.
 type: boolean  
 readonly: no  
 required: no  
-default: 1  
+default: 0  
 widget: checkbox  
 
 ### seek_threshold
