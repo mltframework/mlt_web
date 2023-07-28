@@ -228,7 +228,7 @@ description:
 Chooses one of the 9 styles to draw the graph line:
 0 = one color -> same color and size for the entire graph
 1 = two colors -> same as 2 and 3 but the entire line is the same thickness
-2 = solid past, thin future -> from the begining of the graph to the current position (="past")
+2 = solid past, thin future -> from the beginning of the graph to the current position (="past")
 it will be drawn using the 1st color and chosen thickness, but for the "future" part of the
 graph it will use the 2nd color and thickness will be 2px (or 1px if main thickness is below 3)
 3 = solid future, thin past
@@ -444,7 +444,7 @@ required: no
 
 title: Map hint    
 description:
-Returns the middle lat, lon coordonates of the gps file.  
+Returns the middle lat, lon coordinates of the gps file.  
 type:   
 readonly: yes  
 required: no  

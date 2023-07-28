@@ -20,15 +20,6 @@ license: LGPLv2.1
 
 ## Parameters
 
-### argument
-
-title: Factory Producer Name    
-description:
-This is not a saved property with a name. This optional argument tells the count producer which loader producer to use, if any, when it creates its child producers. For example, you can use loader-nogl to prevent it from using movit filters in a thread not initialized with OpenGL and Movit.  
-type: string  
-readonly: no  
-required: no  
-
 ### direction
 
 title: Count Direction    

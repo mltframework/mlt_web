@@ -388,6 +388,7 @@ wrap_title: Filter Plugins
 * [frei0r.normaliz0r](../FilterFrei0r-normaliz0r/): Normaliz0r
 * [frei0r.nosync0r](../FilterFrei0r-nosync0r/): nosync0r
 * [frei0r.pixeliz0r](../FilterFrei0r-pixeliz0r/): pixeliz0r
+* [frei0r.pixs0r](../FilterFrei0r-pixs0r/): pixs0r
 * [frei0r.posterize](../FilterFrei0r-posterize/): posterize
 * [frei0r.pr0be](../FilterFrei0r-pr0be/): pr0be
 * [frei0r.pr0file](../FilterFrei0r-pr0file/): pr0file

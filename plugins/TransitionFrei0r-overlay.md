@@ -12,8 +12,6 @@ category: plugin
 title: overlay  
 media types:
 Video  
-description: Perform an RGB[A] overlay operation between the pixel sources, using the generalised algorithm:
-D =  A * (B + (2 * B) * (255 - A))
-  
+description: Perform an RGB[A] overlay operation between the pixel sources, using the generalised algorithm: D =  A * (B + (2 * B) * (255 - A))  
 version: 0.2  
 creator: Jean-Sebastien Senecal  

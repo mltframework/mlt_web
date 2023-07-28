@@ -57,7 +57,7 @@ Speed and distance keywords may include an extra format keyword to convert
 the value to metric/imperial units. Default is meters and km/h respectively.
 Supported formats, distance: m|meter, km|kilometer*, mi|mile*, ft|feet, nm|nautical*;
 speed: ms|m/s|meter, km|km/h|kilo, mi|mi/h|mile, ft|ft/s|feet, kn|nm/h|knots.
-Computed values are calculated since begining of GPS file or since
+Computed values are calculated since beginning of GPS file or since
 "gps_processing_start_time" property, if set.
 The # may be escaped with "\".
 </pre>
@@ -109,7 +109,7 @@ widget: text
 
 title: GPS processing start time    
 description:
-A UTC date and time (formatted as &quot;yyyy-MM-dd hh:mm:ss&quot;) from which to start processing the gps file. Use if the GPS file has extra points before the video and you want to ignore them (can be used to track the distance since begining of a segment). If the string provided doesn&#39;t perfectly match the format, it will be ignored.  
+A UTC date and time (formatted as &quot;yyyy-MM-dd hh:mm:ss&quot;) from which to start processing the gps file. Use if the GPS file has extra points before the video and you want to ignore them (can be used to track the distance since beginning of a segment). If the string provided doesn&#39;t perfectly match the format, it will be ignored.  
 type: string  
 readonly: no  
 required: no  

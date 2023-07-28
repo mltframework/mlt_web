@@ -267,6 +267,7 @@ Number of frames required to trigger a seek forward rather than continuous read 
 type: integer  
 readonly: no  
 required: no  
+default: 64  
 unit: frames  
 
 ### autorotate

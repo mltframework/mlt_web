@@ -31,6 +31,22 @@ wrap_title: Transition Plugins
 * [frei0r.overlay](../TransitionFrei0r-overlay/): overlay
 * [frei0r.saturation](../TransitionFrei0r-saturation/): saturation
 * [frei0r.screen](../TransitionFrei0r-screen/): screen
+* [frei0r.sleid0r_push-down](../TransitionFrei0r-sleid0r_push-down/): push-down
+* [frei0r.sleid0r_push-left](../TransitionFrei0r-sleid0r_push-left/): push-left
+* [frei0r.sleid0r_push-right](../TransitionFrei0r-sleid0r_push-right/): push-right
+* [frei0r.sleid0r_push-up](../TransitionFrei0r-sleid0r_push-up/): push-up
+* [frei0r.sleid0r_slide-down](../TransitionFrei0r-sleid0r_slide-down/): slide-down
+* [frei0r.sleid0r_slide-left](../TransitionFrei0r-sleid0r_slide-left/): slide-left
+* [frei0r.sleid0r_slide-right](../TransitionFrei0r-sleid0r_slide-right/): slide-right
+* [frei0r.sleid0r_slide-up](../TransitionFrei0r-sleid0r_slide-up/): slide-up
+* [frei0r.sleid0r_wipe-barn-door-h](../TransitionFrei0r-sleid0r_wipe-barn-door-h/): wipe-barn-door-h
+* [frei0r.sleid0r_wipe-barn-door-v](../TransitionFrei0r-sleid0r_wipe-barn-door-v/): wipe-barn-door-v
+* [frei0r.sleid0r_wipe-circle](../TransitionFrei0r-sleid0r_wipe-circle/): wipe-circle
+* [frei0r.sleid0r_wipe-down](../TransitionFrei0r-sleid0r_wipe-down/): wipe-down
+* [frei0r.sleid0r_wipe-left](../TransitionFrei0r-sleid0r_wipe-left/): wipe-left
+* [frei0r.sleid0r_wipe-rect](../TransitionFrei0r-sleid0r_wipe-rect/): wipe-rect
+* [frei0r.sleid0r_wipe-right](../TransitionFrei0r-sleid0r_wipe-right/): wipe-right
+* [frei0r.sleid0r_wipe-up](../TransitionFrei0r-sleid0r_wipe-up/): wipe-up
 * [frei0r.softlight](../TransitionFrei0r-softlight/): softlight
 * [frei0r.subtract](../TransitionFrei0r-subtract/): subtract
 * [frei0r.uvmap](../TransitionFrei0r-uvmap/): UV Map
