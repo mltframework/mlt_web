@@ -9,9 +9,11 @@ wrap_title: Filter Plugins
 * [audiolevel](../FilterAudiolevel/): Audio Levels
 * [audiolevelgraph](../FilterAudiolevelgraph/): Audio Level Visualization Filter
 * [audiomap](../FilterAudiomap/): Remap Channels
+* [audioseam](../FilterAudioseam/): Audio Seam
 * [audiospectrum](../FilterAudiospectrum/): Audio Spectrum Filter
 * [audiowave](../FilterAudiowave/): Audio Waveform (*DEPRECATED*)
 * [audiowaveform](../FilterAudiowaveform/): Audio Waveform Filter
+* [autofade](../FilterAutofade/): Auto Fade
 * [avcolor_space](../FilterAvcolor_space/): FFmpeg Image Converter
 * [avcolour_space](../FilterAvcolour_space/): FFmpeg Image Converter
 * [avdeinterlace](../FilterAvdeinterlace/): Legacy FFmpeg Deinterlacer (*DEPRECATED*)
