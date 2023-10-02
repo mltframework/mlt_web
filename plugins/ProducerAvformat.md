@@ -56,7 +56,19 @@ widget: fileopen
 
 title: Audio index    
 description:
-Choose the index of audio stream to use (-1 is off). When this value is equal to the maximum size of a 32-bit signed integer or the string &quot;all&quot; then all audio tracks are coalesced into a bundle of channels on one audio track.  
+Choose the absolute stream index of audio stream to use (-1 is off). When this value is equal to the maximum size of a 32-bit signed integer or the string &quot;all&quot; then all audio tracks are coalesced into a bundle of channels on one audio track.  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: 0  
+widget: spinner  
+
+### astream
+
+title: Audio Stream    
+description:
+Choose the relative stream index (n-th) of audio to use (-1 is off). When this value is equal to the maximum size of a 32-bit signed integer or the string &quot;all&quot; then all audio tracks are coalesced into a bundle of channels on one audio track. This property has a higher priority than audio_index.  
 type: integer  
 readonly: no  
 required: no  
@@ -68,7 +80,19 @@ widget: spinner
 
 title: Video index    
 description:
-Choose the index of video stream to use (-1 is off)  
+Choose the absolute index of video stream to use (-1 is off)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: 0  
+widget: spinner  
+
+### vstream
+
+title: Video Stream    
+description:
+Choose the relative stream index (n-th) of video to use (-1 is off). This property has a higher priority than video_index.  
 type: integer  
 readonly: no  
 required: no  

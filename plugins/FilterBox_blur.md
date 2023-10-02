@@ -13,7 +13,7 @@ title: Box Blur
 media types:
 Video  
 description:   
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -45,4 +45,14 @@ animation: yes
 minimum: 0  
 default: 1  
 unit: percent  
+
+### preserve_alpha
+
+title: Preserve Alpha    
+description:
+Exclude the alpha channel from the blur operation  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
 

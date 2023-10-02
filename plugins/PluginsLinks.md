@@ -7,6 +7,7 @@ wrap_title: Link Plugins
 * [avcolor_space](../LinkAvcolor_space/): FFmpeg Image Converter
 * [avcolour_space](../LinkAvcolour_space/): FFmpeg Image Converter
 * [avdeinterlace](../LinkAvdeinterlace/): FFmpeg Deinterlacer
+* [avfilter.adeclick](../LinkAvfilter-adeclick/): adeclick
 * [crop](../LinkCrop/): Crop
 * [deinterlace](../LinkDeinterlace/): Xine Deinterlacer
 * [fieldorder](../LinkFieldorder/): Field order
