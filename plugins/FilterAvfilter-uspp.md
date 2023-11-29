@@ -13,8 +13,12 @@ title: uspp
 media types:
 Video  
 description: Apply Ultra Simple / Slow Post-processing filter.  
-version: Lavfi7.110.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
 
 ## Parameters
 
@@ -50,6 +54,27 @@ use B-frames&#39; QP
 type: string  
 readonly: no  
 required: no  
+
+### av.codec
+
+  
+description:
+Codec name  
+type: string  
+readonly: no  
+required: no  
+default: 'snow'  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

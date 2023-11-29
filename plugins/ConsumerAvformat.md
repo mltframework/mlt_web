@@ -864,6 +864,15 @@ readonly: no
 required: no  
 default: ', '  
 
+### write_crc
+
+  
+description:
+enable checksum (ac4)  
+type: string  
+readonly: no  
+required: no  
+
 ### write_id3v2
 
   
@@ -6498,7 +6507,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf60.3.100'  
+default: 'Lavf60.16.100'  
 
 ### stream_name
 
@@ -6724,7 +6733,7 @@ Set video bitrate tolerance (in bits/s). In 1-pass mode, bitrate tolerance speci
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 0  
 default: 4000000  
 
 ### flags
@@ -7265,6 +7274,8 @@ values:
 ### level
 
   
+description:
+encoding level, usually corresponding to the profile level, codec-specific  
 type: string  
 readonly: no  
 required: no  
@@ -7649,6 +7660,8 @@ values:
 * unspecified
 * mpeg
 * jpeg
+* limited
+* full
 
 ### chroma_sample_location
 
@@ -14560,6 +14573,93 @@ minimum: -1
 maximum: 32  
 default: -1  
 
+### max_interval
+
+  
+description:
+Max number of frames between each new header (mlp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 8  
+maximum: 128  
+default: 16  
+
+### lpc_coeff_precision
+
+  
+description:
+LPC coefficient precision (mlp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 15  
+default: 15  
+
+### lpc_type
+
+  
+description:
+LPC algorithm (mlp)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* levinson
+* cholesky
+
+### lpc_passes
+
+  
+description:
+Number of passes to use for Cholesky factorization during LPC analysis (mlp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 2  
+
+### codebook_search
+
+  
+description:
+Max number of codebook searches (mlp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 100  
+default: 3  
+
+### prediction_order
+
+  
+description:
+Search method for selecting prediction order (mlp)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* estimation
+* search
+
+### rematrix_precision
+
+  
+description:
+Rematrix coefficient precision (mlp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 14  
+default: 1  
+
 ### opus_delay
 
   
@@ -14598,6 +14698,93 @@ use mSBC mode (wideband speech mono SBC) (sbc)
 type: string  
 readonly: no  
 required: no  
+
+### max_interval
+
+  
+description:
+Max number of frames between each new header (truehd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 8  
+maximum: 128  
+default: 16  
+
+### lpc_coeff_precision
+
+  
+description:
+LPC coefficient precision (truehd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 15  
+default: 15  
+
+### lpc_type
+
+  
+description:
+LPC algorithm (truehd)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* levinson
+* cholesky
+
+### lpc_passes
+
+  
+description:
+Number of passes to use for Cholesky factorization during LPC analysis (truehd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 2  
+
+### codebook_search
+
+  
+description:
+Max number of codebook searches (truehd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 100  
+default: 3  
+
+### prediction_order
+
+  
+description:
+Search method for selecting prediction order (truehd)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* estimation
+* search
+
+### rematrix_precision
+
+  
+description:
+Rematrix coefficient precision (truehd)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 14  
+default: 1  
 
 ### joint_stereo
 
@@ -15401,6 +15588,24 @@ required: no
   
 description:
 use ABR (libmp3lame)  
+type: string  
+readonly: no  
+required: no  
+
+### copyright
+
+  
+description:
+set copyright flag (libmp3lame)  
+type: string  
+readonly: no  
+required: no  
+
+### original
+
+  
+description:
+set original flag (libmp3lame)  
 type: string  
 readonly: no  
 required: no  
@@ -16874,6 +17079,15 @@ type: string
 readonly: no  
 required: no  
 
+### mb_info
+
+  
+description:
+Set mb_info data through AVSideData, only useful when used from the API (libx264)  
+type: string  
+readonly: no  
+required: no  
+
 ### preset
 
   
@@ -17376,6 +17590,15 @@ type: string
 readonly: no  
 required: no  
 
+### mb_info
+
+  
+description:
+Set mb_info data through AVSideData, only useful when used from the API (libx264rgb)  
+type: string  
+readonly: no  
+required: no  
+
 ### crf
 
   
@@ -17482,6 +17705,155 @@ readonly: no
 required: no  
 minimum: 4  
 default: 4  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (av1_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between IDR frames (av1_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (av1_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (av1_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
+
+### max_frame_size
+
+  
+description:
+Maximum frame size (in bytes) (av1_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### rc_mode
+
+  
+description:
+Set rate control mode (av1_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* CQP
+* CBR
+* VBR
+* ICQ
+* QVBR
+* AVBR
+
+### profile
+
+  
+description:
+Set profile (seq_profile) (av1_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* high
+* professional
+
+### tier
+
+  
+description:
+Set tier (seq_tier) (av1_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* high
+
+### level
+
+  
+description:
+Set level (seq_level_idx) (av1_vaapi)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* 2.0
+* 2.1
+* 3.0
+* 3.1
+* 4.0
+* 4.1
+* 5.0
+* 5.1
+* 5.2
+* 5.3
+* 6.0
+* 6.1
+* 6.2
+* 6.3
+
+### tiles
+
+  
+description:
+Tile columns x rows (Use minimal tile column/row number automatically by default) (av1_vaapi)  
+type: string  
+readonly: no  
+required: no  
+
+### tile_groups
+
+  
+description:
+Number of tile groups for encoding (av1_vaapi)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 4096  
+default: 1  
 
 ### num_output_buffers
 
@@ -17656,6 +18028,7 @@ values:
 * constrained_baseline
 * main
 * high
+* high10
 
 ### level
 

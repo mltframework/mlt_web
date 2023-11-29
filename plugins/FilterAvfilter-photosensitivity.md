@@ -13,7 +13,7 @@ title: photosensitivity
 media types:
 Video  
 description: Filter out photosensitive epilepsy seizure-inducing flashes.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: equalizer
 media types:
 Audio  
 description: Apply two-pole peaking equalization (EQ) filter.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes

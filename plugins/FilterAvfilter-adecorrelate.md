@@ -13,7 +13,7 @@ title: adecorrelate
 media types:
 Audio  
 description: Apply decorrelation to input audio.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes

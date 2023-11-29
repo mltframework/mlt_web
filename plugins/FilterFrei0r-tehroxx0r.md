@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Documentation
-wrap_title: "Filter: frei0r.tehRoxx0r"
+wrap_title: "Filter: frei0r.tehroxx0r"
 category: plugin
 ---
 * TOC

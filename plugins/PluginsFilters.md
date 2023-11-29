@@ -86,6 +86,7 @@ wrap_title: Filter Plugins
 * [avfilter.boxblur](../FilterAvfilter-boxblur/): boxblur
 * [avfilter.bwdif](../FilterAvfilter-bwdif/): bwdif
 * [avfilter.cas](../FilterAvfilter-cas/): cas
+* [avfilter.ccrepack](../FilterAvfilter-ccrepack/): ccrepack
 * [avfilter.channelmap](../FilterAvfilter-channelmap/): channelmap
 * [avfilter.chorus](../FilterAvfilter-chorus/): chorus
 * [avfilter.chromahold](../FilterAvfilter-chromahold/): chromahold
@@ -206,6 +207,7 @@ wrap_title: Filter Plugins
 * [avfilter.lutrgb](../FilterAvfilter-lutrgb/): lutrgb
 * [avfilter.lutyuv](../FilterAvfilter-lutyuv/): lutyuv
 * [avfilter.maskfun](../FilterAvfilter-maskfun/): maskfun
+* [avfilter.mcdeint](../FilterAvfilter-mcdeint/): mcdeint
 * [avfilter.mcompand](../FilterAvfilter-mcompand/): mcompand
 * [avfilter.median](../FilterAvfilter-median/): median
 * [avfilter.metadata](../FilterAvfilter-metadata/): metadata
@@ -280,6 +282,7 @@ wrap_title: Filter Plugins
 * [avfilter.tremolo](../FilterAvfilter-tremolo/): tremolo
 * [avfilter.unsharp](../FilterAvfilter-unsharp/): unsharp
 * [avfilter.untile](../FilterAvfilter-untile/): untile
+* [avfilter.uspp](../FilterAvfilter-uspp/): uspp
 * [avfilter.v360](../FilterAvfilter-v360/): v360
 * [avfilter.vaguedenoiser](../FilterAvfilter-vaguedenoiser/): vaguedenoiser
 * [avfilter.vectorscope](../FilterAvfilter-vectorscope/): vectorscope
@@ -327,6 +330,9 @@ wrap_title: Filter Plugins
 * [frei0r.R](../FilterFrei0r-r/): R
 * [frei0r.aech0r](../FilterFrei0r-aech0r/): aech0r
 * [frei0r.alpha0ps](../FilterFrei0r-alpha0ps/): alpha0ps
+* [frei0r.alpha0ps_alpha0ps](../FilterFrei0r-alpha0ps_alpha0ps/): alpha0ps
+* [frei0r.alpha0ps_alphagrad](../FilterFrei0r-alpha0ps_alphagrad/): alphagrad
+* [frei0r.alpha0ps_alphaspot](../FilterFrei0r-alpha0ps_alphaspot/): alphaspot
 * [frei0r.alphagrad](../FilterFrei0r-alphagrad/): alphagrad
 * [frei0r.alphaspot](../FilterFrei0r-alphaspot/): alphaspot
 * [frei0r.balanc0r](../FilterFrei0r-balanc0r/): White Balance
@@ -362,6 +368,7 @@ wrap_title: Filter Plugins
 * [frei0r.defish0r](../FilterFrei0r-defish0r/): Defish0r
 * [frei0r.delay0r](../FilterFrei0r-delay0r/): delay0r
 * [frei0r.delaygrab](../FilterFrei0r-delaygrab/): Delaygrab
+* [frei0r.denoise_hqdn3d](../FilterFrei0r-denoise_hqdn3d/): hqdn3d
 * [frei0r.distort0r](../FilterFrei0r-distort0r/): Distort0r
 * [frei0r.dither](../FilterFrei0r-dither/): dither
 * [frei0r.edgeglow](../FilterFrei0r-edgeglow/): Edgeglow
@@ -377,6 +384,7 @@ wrap_title: Filter Plugins
 * [frei0r.hqdn3d](../FilterFrei0r-hqdn3d/): hqdn3d
 * [frei0r.hueshift0r](../FilterFrei0r-hueshift0r/): Hueshift0r
 * [frei0r.invert0r](../FilterFrei0r-invert0r/): Invert0r
+* [frei0r.kaleid0sc0pe](../FilterFrei0r-kaleid0sc0pe/): Kaleid0sc0pe
 * [frei0r.keyspillm0pup](../FilterFrei0r-keyspillm0pup/): keyspillm0pup
 * [frei0r.lenscorrection](../FilterFrei0r-lenscorrection/): Lens Correction
 * [frei0r.letterb0xed](../FilterFrei0r-letterb0xed/): LetterB0xed
@@ -384,6 +392,8 @@ wrap_title: Filter Plugins
 * [frei0r.lightgraffiti](../FilterFrei0r-lightgraffiti/): Light Graffiti
 * [frei0r.luminance](../FilterFrei0r-luminance/): Luminance
 * [frei0r.mask0mate](../FilterFrei0r-mask0mate/): Mask0Mate
+* [frei0r.measure_pr0be](../FilterFrei0r-measure_pr0be/): pr0be
+* [frei0r.measure_pr0file](../FilterFrei0r-measure_pr0file/): pr0file
 * [frei0r.medians](../FilterFrei0r-medians/): Medians
 * [frei0r.ndvi](../FilterFrei0r-ndvi/): NDVI filter
 * [frei0r.nervous](../FilterFrei0r-nervous/): Nervous
@@ -411,6 +421,7 @@ wrap_title: Filter Plugins
 * [frei0r.spillsupress](../FilterFrei0r-spillsupress/): spillsupress
 * [frei0r.squareblur](../FilterFrei0r-squareblur/): Squareblur
 * [frei0r.tehRoxx0r](../FilterFrei0r-tehroxx0r/): TehRoxx0r
+* [frei0r.tehroxx0r](../FilterFrei0r-tehroxx0r/): TehRoxx0r
 * [frei0r.three_point_balance](../FilterFrei0r-three_point_balance/): 3 point color balance
 * [frei0r.threelay0r](../FilterFrei0r-threelay0r/): threelay0r
 * [frei0r.threshold0r](../FilterFrei0r-threshold0r/): Threshold0r
@@ -422,9 +433,7 @@ wrap_title: Filter Plugins
 * [frei0r.vertigo](../FilterFrei0r-vertigo/): Vertigo
 * [frei0r.vignette](../FilterFrei0r-vignette/): Vignette
 * [gamma](../FilterGamma/): Gamma
-* [glsl.manager](../FilterGlsl-manager/): GLSL Manager
-* [gpsgraphic](../FilterGpsgraphic/): GPS Graphic
-* [gpstext](../FilterGpstext/): GPS Text
+* [glsl.manager](../FilterGlsl-manager/): 
 * [grain](../FilterGrain/): Grain
 * [grayscale](../FilterGrayscale/): Greyscale
 * [greyscale](../FilterGreyscale/): Greyscale

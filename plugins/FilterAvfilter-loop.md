@@ -13,7 +13,7 @@ title: loop
 media types:
 Video  
 description: Loop video frames.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -54,9 +54,18 @@ set the loop start frame
 type: integer  
 readonly: no  
 required: no  
-minimum: 0  
+minimum: -1  
 default: 0  
 format: 64-bit  
+
+### av.time
+
+  
+description:
+set the loop start time  
+type: string  
+readonly: no  
+required: no  
 
 ### position
 

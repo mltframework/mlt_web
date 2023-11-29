@@ -92,7 +92,7 @@ widget: checkbox
 
 title: Bézier spline    
 description:
-Use cubic Bézier spline. Has to be a sorted list of points in the format &quot;handle1x;handle1y#pointx;pointy#handle2x;handle2y&quot;(pointx = in, pointy = out). Points are separated by a &quot;|&quot;.The values can have &quot;double&quot; precision. x, y for points should be in the range 0-1. x,y for handles might also be out of this range.  
+Use cubic Bézier spline. Has to be a sorted list of points in the format &#39;handle1x;handle1y#pointx;pointy#handle2x;handle2y&#39;(pointx = in, pointy = out). Points are separated by a &#39;|&#39;.The values can have &#39;double&#39; precision. x, y for points should be in the range 0-1. x,y for handles might also be out of this range.  
 type: string  
 readonly: no  
 required: no  

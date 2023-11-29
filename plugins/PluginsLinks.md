@@ -2,8 +2,8 @@
 title: Documentation
 wrap_title: Link Plugins
 ---
-* [audiochannels](../LinkAudiochannels/): 
-* [audioconvert](../LinkAudioconvert/): 
+* [audiochannels](../LinkAudiochannels/): Convert Audio Channel Count
+* [audioconvert](../LinkAudioconvert/): Audio Sample Format Converter
 * [avcolor_space](../LinkAvcolor_space/): FFmpeg Image Converter
 * [avcolour_space](../LinkAvcolour_space/): FFmpeg Image Converter
 * [avdeinterlace](../LinkAvdeinterlace/): FFmpeg Deinterlacer
@@ -12,7 +12,7 @@ wrap_title: Link Plugins
 * [deinterlace](../LinkDeinterlace/): Xine Deinterlacer
 * [fieldorder](../LinkFieldorder/): Field order
 * [gtkrescale](../LinkGtkrescale/): Gtk Rescale
-* [imageconvert](../LinkImageconvert/): 
+* [imageconvert](../LinkImageconvert/): Basic Image Converter
 * [movit.convert](../LinkMovit-convert/): Image Converter (GLSL)
 * [movit.crop](../LinkMovit-crop/): Crop (GLSL)
 * [movit.resample](../LinkMovit-resample/): Image Scaler (GLSL)

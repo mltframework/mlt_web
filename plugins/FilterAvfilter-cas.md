@@ -13,7 +13,7 @@ title: cas
 media types:
 Video  
 description: Contrast Adaptive Sharpen.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes

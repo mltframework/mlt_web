@@ -13,7 +13,7 @@ title: graphmonitor
 media types:
 Video  
 description: Show various filtergraph stats.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -72,11 +72,14 @@ set mode
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
+format: flags  
 values:  
 
 * full
 * compact
+* nozero
+* noeof
+* nodisabled
 
 ### av.m
 
@@ -86,11 +89,14 @@ set mode
 type: string  
 readonly: no  
 required: no  
-format: integer or keyword  
+format: flags  
 values:  
 
 * full
 * compact
+* nozero
+* noeof
+* nodisabled
 
 ### av.flags
 
@@ -103,6 +109,8 @@ required: no
 format: flags  
 values:  
 
+* none
+* all
 * queue
 * frame_count_in
 * frame_count_out
@@ -119,6 +127,7 @@ values:
 * sample_count_in
 * sample_count_out
 * sample_count_delta
+* disabled
 
 ### av.f
 
@@ -131,6 +140,8 @@ required: no
 format: flags  
 values:  
 
+* none
+* all
 * queue
 * frame_count_in
 * frame_count_out
@@ -147,6 +158,7 @@ values:
 * sample_count_in
 * sample_count_out
 * sample_count_delta
+* disabled
 
 ### av.rate
 

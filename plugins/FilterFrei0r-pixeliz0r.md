@@ -22,7 +22,7 @@ creator: Gephex crew
 
 title: Block width    
 description:
-Horizontal size of one &quot;pixel&quot;  
+Horizontal size of one &#39;pixel&#39;  
 type: float  
 readonly: no  
 required: no  
@@ -36,7 +36,7 @@ widget: spinner
 
 title: Block height    
 description:
-Vertical size of one &quot;pixel&quot;  
+Vertical size of one &#39;pixel&#39;  
 type: float  
 readonly: no  
 required: no  

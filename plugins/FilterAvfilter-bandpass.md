@@ -13,7 +13,7 @@ title: bandpass
 media types:
 Audio  
 description: Apply a two-pole Butterworth band-pass filter.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes

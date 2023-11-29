@@ -13,7 +13,7 @@ title: waveform
 media types:
 Video  
 description: Video waveform monitor.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -431,6 +431,20 @@ values:
 
 * none
 * size
+
+### av.input
+
+  
+description:
+set input formats selection  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* all
+* first
 
 ### av.threads
 

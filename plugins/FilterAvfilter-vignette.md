@@ -13,7 +13,7 @@ title: vignette
 media types:
 Video  
 description: Make or reverse a vignette effect.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes

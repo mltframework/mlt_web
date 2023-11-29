@@ -13,7 +13,7 @@ title: astats
 media types:
 Audio  
 description: Show time domain statistics about audio frames.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -93,6 +93,7 @@ values:
 * RMS_trough
 * Zero_crossings
 * Zero_crossings_rate
+* Abs_Peak_count
 
 ### av.measure_overall
 
@@ -132,6 +133,7 @@ values:
 * RMS_trough
 * Zero_crossings
 * Zero_crossings_rate
+* Abs_Peak_count
 
 ### av.threads
 

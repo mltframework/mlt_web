@@ -13,7 +13,7 @@ title: Dynamic text
 media types:
 Video  
 description: Overlay dynamic text onto the video  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -202,4 +202,17 @@ values:
 * top
 * middle
 * bottom
+
+### opacity
+
+title: Opacity    
+description:
+Opacity of all elements - text, outline, and background  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1.0  
+default: 1.0  
+widget: slider  
 

@@ -1199,6 +1199,15 @@ default: 1024
 
   
 description:
+(evc)  
+type: string  
+readonly: no  
+required: no  
+
+### framerate
+
+  
+description:
 set the framerate (fits)  
 type: string  
 readonly: no  
@@ -1478,6 +1487,44 @@ required: no
 minimum: 1  
 default: 1024  
 
+### hca_lowkey
+
+  
+description:
+Low key used for handling CRI HCA files (hca)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 4294967295  
+default: 0  
+format: 64-bit  
+
+### hca_highkey
+
+  
+description:
+High key used for handling CRI HCA files (hca)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 4294967295  
+default: 0  
+format: 64-bit  
+
+### hca_subkey
+
+  
+description:
+Subkey used for handling CRI HCA files (hca)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 65535  
+default: 0  
+
 ### framerate
 
   
@@ -1536,7 +1583,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 1000  
+default: 3  
 
 ### m3u8_hold_counters
 
@@ -2233,6 +2280,15 @@ minimum: 0
 maximum: -2147483648  
 default: -480001  
 
+### interleaved_read
+
+  
+description:
+Interleave packets from multiple tracks at demuxer level (mov,mp4,m4a,3gp,3g2,mj2)  
+type: string  
+readonly: no  
+required: no  
+
 ### usetoc
 
   
@@ -2391,6 +2447,17 @@ description:
 type: string  
 readonly: no  
 required: no  
+
+### raw_packet_size
+
+  
+description:
+(osq)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### sample_rate
 
@@ -3274,7 +3341,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf60.3.100'  
+default: 'Lavf60.16.100'  
 
 ### raw_packet_size
 
@@ -3568,6 +3635,26 @@ URI for .sub file (vobsub)
 type: string  
 readonly: no  
 required: no  
+
+### framerate
+
+  
+description:
+(vvc)  
+type: string  
+readonly: no  
+required: no  
+
+### raw_packet_size
+
+  
+description:
+(vvc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
 
 ### max_size
 
@@ -5478,7 +5565,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf60.3.100'  
+default: 'Lavf60.16.100'  
 
 ### stream_name
 
@@ -6084,8 +6171,8 @@ values:
 * default
 * noref
 * bidir
-* nokey
 * nointra
+* nokey
 * all
 
 ### skip_idct
@@ -6103,8 +6190,8 @@ values:
 * default
 * noref
 * bidir
-* nokey
 * nointra
+* nokey
 * all
 
 ### skip_frame
@@ -6122,8 +6209,8 @@ values:
 * default
 * noref
 * bidir
-* nokey
 * nointra
+* nokey
 * all
 
 ### ch_layout
@@ -6268,6 +6355,8 @@ values:
 * unspecified
 * mpeg
 * jpeg
+* limited
+* full
 
 ### chroma_sample_location
 

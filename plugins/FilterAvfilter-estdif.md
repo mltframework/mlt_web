@@ -13,7 +13,7 @@ title: estdif
 media types:
 Video  
 description: Apply Edge Slope Tracing deinterlace.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -94,36 +94,36 @@ default: 2
   
 description:
 specify the edge cost for edge matching  
-type: float  
+type: integer  
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 9  
-default: 1  
+maximum: 50  
+default: 2  
 
 ### av.mcost
 
   
 description:
 specify the middle cost for edge matching  
-type: float  
+type: integer  
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 1  
-default: 0.5  
+maximum: 50  
+default: 1  
 
 ### av.dcost
 
   
 description:
 specify the distance cost for edge matching  
-type: float  
+type: integer  
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 1  
-default: 0.5  
+maximum: 50  
+default: 1  
 
 ### av.interp
 

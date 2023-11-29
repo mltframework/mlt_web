@@ -13,7 +13,7 @@ title: adynamicequalizer
 media types:
 Audio  
 description: Apply Dynamic Equalization of input audio.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -167,6 +167,22 @@ values:
 * cut
 * boost
 
+### av.dftype
+
+  
+description:
+set detection filter type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* bandpass
+* lowpass
+* highpass
+* peak
+
 ### av.tftype
 
   
@@ -210,6 +226,21 @@ values:
 * disabled
 * false
 * true
+
+### av.precision
+
+  
+description:
+set processing precision  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* float
+* double
 
 ### av.threads
 

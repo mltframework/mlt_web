@@ -13,7 +13,7 @@ title: compensationdelay
 media types:
 Audio  
 description: Audio Compensation Delay Line.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: deflate
 media types:
 Video  
 description: Apply deflate effect.  
-version: Lavfi9.3.100  
+version: Lavfi9.12.100  
 creator: libavfilter maintainers  
 
 ## Notes
