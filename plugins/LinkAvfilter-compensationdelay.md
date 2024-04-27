@@ -1,0 +1,114 @@
+---
+layout: standard
+title: Documentation
+wrap_title: "Link: avfilter.compensationdelay"
+category: plugin
+---
+* TOC
+{:toc}
+
+## Plugin Information
+
+title: compensationdelay  
+media types:
+Audio  
+description: Audio Compensation Delay Line.  
+version: Lavfi10.1.100  
+creator: libavfilter maintainers  
+
+## Notes
+
+Many parameters support animated values (keyframes) but only the numeric ones. Many numeric properties have type string because they accept an expression (see FFmpeg documentation) even though they evaluate to a numeric value.
+
+## Parameters
+
+### av.mm
+
+  
+description:
+set mm distance  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 10  
+default: 0  
+
+### av.cm
+
+  
+description:
+set cm distance  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 100  
+default: 0  
+
+### av.m
+
+  
+description:
+set meter distance  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 100  
+default: 0  
+
+### av.dry
+
+  
+description:
+set dry amount  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+format: double  
+
+### av.wet
+
+  
+description:
+set wet amount  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 1  
+format: double  
+
+### av.temp
+
+  
+description:
+set temperature °C  
+type: integer  
+readonly: no  
+required: no  
+minimum: -50  
+maximum: 50  
+default: 20  
+
+### position
+
+  
+description:
+The MLT position value to set on avfilter frames  
+type: string  
+readonly: no  
+required: no  
+default: frame  
+values:  
+
+* frame
+* filter
+* source
+* producer
+

@@ -13,7 +13,7 @@ title: w3fdif
 media types:
 Video  
 description: Apply Martin Weston three field deinterlace.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

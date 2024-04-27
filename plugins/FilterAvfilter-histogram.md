@@ -13,7 +13,7 @@ title: histogram
 media types:
 Video  
 description: Compute and draw a histogram.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

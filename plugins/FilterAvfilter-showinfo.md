@@ -13,7 +13,7 @@ title: showinfo
 media types:
 Video  
 description: Show textual information for each video frame.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -27,6 +27,15 @@ Many parameters support animated values (keyframes) but only the numeric ones. M
   
 description:
 calculate checksums  
+type: string  
+readonly: no  
+required: no  
+
+### av.udu_sei_as_ascii
+
+  
+description:
+try to print user data unregistered SEI as ascii character when possible  
 type: string  
 readonly: no  
 required: no  

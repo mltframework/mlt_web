@@ -13,7 +13,7 @@ title: bwdif
 media types:
 Video  
 description: Deinterlace the input image.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

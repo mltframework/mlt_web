@@ -13,7 +13,7 @@ title: addroi
 media types:
 Video  
 description: Add region of interest to frame.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

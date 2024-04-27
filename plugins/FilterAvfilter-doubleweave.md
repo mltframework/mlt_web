@@ -13,7 +13,7 @@ title: doubleweave
 media types:
 Video  
 description: Weave input video fields into double number of frames.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

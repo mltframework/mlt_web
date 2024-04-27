@@ -13,7 +13,7 @@ title: acontrast
 media types:
 Audio  
 description: Simple audio dynamic range compression/expansion filter.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

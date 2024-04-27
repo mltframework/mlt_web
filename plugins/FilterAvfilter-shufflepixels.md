@@ -13,7 +13,7 @@ title: shufflepixels
 media types:
 Video  
 description: Shuffle video pixels.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

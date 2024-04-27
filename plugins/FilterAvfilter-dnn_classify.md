@@ -13,7 +13,7 @@ title: dnn_classify
 media types:
 Video  
 description: Apply DNN classify filter to the input.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

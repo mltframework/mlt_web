@@ -13,7 +13,7 @@ title: edgedetect
 media types:
 Video  
 description: Detect and draw edge.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

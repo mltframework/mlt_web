@@ -4,6 +4,8 @@ wrap_title: Filter Plugins
 ---
 * [BurningTV](../FilterBurningtv/): BurningTV
 * [affine](../FilterAffine/): Transform
+* [ambisonic-decoder](../FilterAmbisonic-decoder/): Ambisonic Decoder
+* [ambisonic-encoder](../FilterAmbisonic-encoder/): Ambisonic Encoder
 * [audiochannels](../FilterAudiochannels/): Convert Audio Channel Count
 * [audioconvert](../FilterAudioconvert/): Audio Sample Format Converter
 * [audiolevel](../FilterAudiolevel/): Audio Levels
@@ -165,6 +167,7 @@ wrap_title: Filter Plugins
 * [avfilter.floodfill](../FilterAvfilter-floodfill/): floodfill
 * [avfilter.freezedetect](../FilterAvfilter-freezedetect/): freezedetect
 * [avfilter.fspp](../FilterAvfilter-fspp/): fspp
+* [avfilter.fsync](../FilterAvfilter-fsync/): fsync
 * [avfilter.gblur](../FilterAvfilter-gblur/): gblur
 * [avfilter.geq](../FilterAvfilter-geq/): geq
 * [avfilter.gradfun](../FilterAvfilter-gradfun/): gradfun
@@ -268,6 +271,7 @@ wrap_title: Filter Plugins
 * [avfilter.swapuv](../FilterAvfilter-swapuv/): swapuv
 * [avfilter.tblend](../FilterAvfilter-tblend/): tblend
 * [avfilter.thistogram](../FilterAvfilter-thistogram/): thistogram
+* [avfilter.tiltandshift](../FilterAvfilter-tiltandshift/): tiltandshift
 * [avfilter.tiltshelf](../FilterAvfilter-tiltshelf/): tiltshelf
 * [avfilter.tlut2](../FilterAvfilter-tlut2/): tlut2
 * [avfilter.tmedian](../FilterAvfilter-tmedian/): tmedian

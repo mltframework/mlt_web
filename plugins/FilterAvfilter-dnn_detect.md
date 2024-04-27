@@ -13,7 +13,7 @@ title: dnn_detect
 media types:
 Video  
 description: Apply DNN detect filter to the input.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -103,6 +103,67 @@ default: 0.5
   
 description:
 path to labels file  
+type: string  
+readonly: no  
+required: no  
+
+### av.model_type
+
+  
+description:
+DNN detection model type  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* ssd
+* yolo
+* yolov3
+* yolov4
+
+### av.cell_w
+
+  
+description:
+cell width  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: -2147483648  
+default: 0  
+
+### av.cell_h
+
+  
+description:
+cell height  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: -2147483648  
+default: 0  
+
+### av.nb_classes
+
+  
+description:
+The number of class  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: -2147483648  
+default: 0  
+
+### av.anchors
+
+  
+description:
+anchors, splited by &#39;&amp;&#39;  
 type: string  
 readonly: no  
 required: no  

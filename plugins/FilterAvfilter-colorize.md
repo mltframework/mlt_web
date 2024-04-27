@@ -13,7 +13,7 @@ title: colorize
 media types:
 Video  
 description: Overlay a solid color on the video stream.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

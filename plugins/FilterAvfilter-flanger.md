@@ -13,7 +13,7 @@ title: flanger
 media types:
 Audio  
 description: Apply a flanging effect to the audio.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

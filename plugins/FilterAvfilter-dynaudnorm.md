@@ -13,7 +13,7 @@ title: dynaudnorm
 media types:
 Audio  
 description: Dynamic Audio Normalizer.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

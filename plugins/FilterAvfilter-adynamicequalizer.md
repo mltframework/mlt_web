@@ -13,7 +13,7 @@ title: adynamicequalizer
 media types:
 Audio  
 description: Apply Dynamic Equalization of input audio.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -91,11 +91,11 @@ format: double
 
   
 description:
-set attack duration  
+set detection attack duration  
 type: float  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 0.01  
 maximum: 2000  
 default: 20  
 format: double  
@@ -104,11 +104,11 @@ format: double
 
   
 description:
-set release duration  
+set detection release duration  
 type: float  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 0.01  
 maximum: 2000  
 default: 200  
 format: double  
@@ -135,7 +135,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 100  
+maximum: 1000  
 default: 0  
 format: double  
 
@@ -148,7 +148,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 1  
-maximum: 200  
+maximum: 2000  
 default: 50  
 format: double  
 
@@ -164,8 +164,10 @@ format: integer or keyword
 values:  
 
 * listen
-* cut
-* boost
+* cutbelow
+* cutabove
+* boostbelow
+* boostabove
 
 ### av.dftype
 
@@ -198,20 +200,6 @@ values:
 * lowshelf
 * highshelf
 
-### av.direction
-
-  
-description:
-set direction  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* downward
-* upward
-
 ### av.auto
 
   
@@ -226,6 +214,7 @@ values:
 * disabled
 * false
 * true
+* adaptive
 
 ### av.precision
 

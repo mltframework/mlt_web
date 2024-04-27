@@ -133,7 +133,6 @@ type: string
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 3  
 default: 0  
 widget: spinner  
 

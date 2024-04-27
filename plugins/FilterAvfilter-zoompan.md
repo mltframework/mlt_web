@@ -13,7 +13,7 @@ title: zoompan
 media types:
 Video  
 description: Apply Zoom &amp; Pan effect.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

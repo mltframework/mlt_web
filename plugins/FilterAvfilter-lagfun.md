@@ -13,7 +13,7 @@ title: lagfun
 media types:
 Video  
 description: Slowly update darker pixels.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

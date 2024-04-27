@@ -13,7 +13,7 @@ title: alphaextract
 media types:
 Video  
 description: Extract an alpha channel as a grayscale image component.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

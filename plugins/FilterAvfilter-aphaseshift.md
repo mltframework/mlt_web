@@ -13,7 +13,7 @@ title: aphaseshift
 media types:
 Audio  
 description: Apply phase shifting to input audio.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

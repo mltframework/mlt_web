@@ -13,7 +13,7 @@ title: highpass
 media types:
 Audio  
 description: Apply a high-pass filter with 3dB point frequency.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

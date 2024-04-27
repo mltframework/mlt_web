@@ -13,7 +13,7 @@ title: hflip
 media types:
 Video  
 description: Horizontally flip the input video.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

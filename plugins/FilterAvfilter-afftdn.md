@@ -13,7 +13,7 @@ title: afftdn
 media types:
 Audio  
 description: Denoise audio samples using FFT.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

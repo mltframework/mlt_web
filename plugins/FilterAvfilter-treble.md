@@ -13,7 +13,7 @@ title: treble
 media types:
 Audio  
 description: Boost or cut upper frequencies.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

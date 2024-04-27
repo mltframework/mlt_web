@@ -1082,17 +1082,6 @@ required: no
 minimum: 0  
 default: 48000  
 
-### channels
-
-  
-description:
-(dfpwm)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2318,18 +2307,6 @@ type: string
 readonly: no  
 required: no  
 
-### ts_packetsize
-
-  
-description:
-output option carrying the raw packet size (mpegts)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
-
 ### scan_all_pmts
 
   
@@ -2388,18 +2365,6 @@ compute exact PCR for each transport stream packet (mpegtsraw)
 type: string  
 readonly: no  
 required: no  
-
-### ts_packetsize
-
-  
-description:
-output option carrying the raw packet size (mpegtsraw)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 0  
-default: 0  
 
 ### framerate
 
@@ -2470,17 +2435,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(alaw)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2501,17 +2455,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(mulaw)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2532,17 +2475,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(vidc)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2563,17 +2495,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(f64be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2594,17 +2515,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(f64le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2625,17 +2535,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(f32be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2656,17 +2555,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(f32le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2687,17 +2575,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(s32be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2718,17 +2595,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(s32le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2749,17 +2615,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(s24be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2780,17 +2635,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(s24le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2811,17 +2655,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(s16be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2842,17 +2675,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(s16le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2873,17 +2695,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(s8)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2904,17 +2715,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(u32be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2935,17 +2735,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(u32le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2966,17 +2755,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(u24be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -2997,17 +2775,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(u24le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -3028,17 +2795,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(u16be)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -3059,17 +2815,6 @@ required: no
 minimum: 0  
 default: 44100  
 
-### channels
-
-  
-description:
-(u16le)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
-
 ### ch_layout
 
   
@@ -3089,17 +2834,6 @@ readonly: no
 required: no  
 minimum: 0  
 default: 44100  
-
-### channels
-
-  
-description:
-(u8)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
 
 ### ch_layout
 
@@ -3341,7 +3075,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf60.16.100'  
+default: 'Lavf61.1.100'  
 
 ### raw_packet_size
 
@@ -3488,17 +3222,6 @@ readonly: no
 required: no  
 minimum: 0  
 default: 8000  
-
-### channels
-
-  
-description:
-(sln)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 1  
 
 ### ch_layout
 
@@ -3664,9 +3387,9 @@ max size of single packet (w64)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1024  
+minimum: 0  
 maximum: 4194304  
-default: 4096  
+default: 0  
 
 ### ignore_length
 
@@ -3685,9 +3408,9 @@ max size of single packet (wav)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1024  
+minimum: 0  
 maximum: 4194304  
-default: 4096  
+default: 0  
 
 ### live
 
@@ -5499,6 +5222,73 @@ required: no
 minimum: 1  
 default: 2  
 
+### device
+
+  
+description:
+DRM device path (kmsgrab)  
+type: string  
+readonly: no  
+required: no  
+default: '/dev/dri/card0'  
+
+### format
+
+  
+description:
+Pixel format for framebuffer (kmsgrab)  
+type: string  
+readonly: no  
+required: no  
+
+### format_modifier
+
+  
+description:
+DRM format modifier for framebuffer (kmsgrab)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 72057594037927935  
+format: 64-bit  
+
+### crtc_id
+
+  
+description:
+CRTC ID to define capture source (kmsgrab)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 4294967295  
+default: 0  
+format: 64-bit  
+
+### plane_id
+
+  
+description:
+Plane ID to define capture source (kmsgrab)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 4294967295  
+default: 0  
+format: 64-bit  
+
+### framerate
+
+  
+description:
+Framerate to capture at (kmsgrab)  
+type: string  
+readonly: no  
+required: no  
+format: numerator/denominator  
+
 ### graph
 
   
@@ -5565,7 +5355,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf60.16.100'  
+default: 'Lavf61.1.100'  
 
 ### stream_name
 
@@ -5970,17 +5760,6 @@ required: no
 minimum: 0  
 default: 0  
 
-### ac
-
-  
-description:
-set number of audio channels  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
 ### bug
 
   
@@ -6214,20 +5993,6 @@ values:
 * all
 
 ### ch_layout
-
-  
-type: string  
-readonly: no  
-required: no  
-
-### channel_layout
-
-  
-type: string  
-readonly: no  
-required: no  
-
-### request_channel_layout
 
   
 type: string  
@@ -6540,6 +6305,25 @@ minimum: 0
 maximum: 100  
 default: 95  
 
+### side_data_prefer_packet
+
+  
+description:
+Comma-separated list of side data types for which user-supplied (container) data is preferred over coded bytestream  
+type: string  
+readonly: no  
+required: no  
+values:  
+
+* replaygain
+* displaymatrix
+* spherical
+* stereo3d
+* audio_service_type
+* mastering_display_metadata
+* content_light_level
+* icc_profile
+
 ### layer
 
   
@@ -6705,6 +6489,24 @@ required: no
 minimum: -1  
 default: -1  
 
+### skip_gray
+
+  
+description:
+Do not return gray gap frames (h264)  
+type: string  
+readonly: no  
+required: no  
+
+### noref_gray
+
+  
+description:
+Avoid using gray gap frames as references (h264)  
+type: string  
+readonly: no  
+required: no  
+
 ### num_output_buffers
 
   
@@ -6787,6 +6589,22 @@ Use external huffman table. (mjpeg)
 type: string  
 readonly: no  
 required: no  
+
+### cc_format
+
+  
+description:
+extract a specific Closed Captions format (mpeg2video)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* a53
+* scte20
+* dvd
 
 ### num_output_buffers
 

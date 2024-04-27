@@ -13,7 +13,7 @@ title: dedot
 media types:
 Video  
 description: Reduce cross-luminance and cross-color.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

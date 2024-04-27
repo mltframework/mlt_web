@@ -13,7 +13,7 @@ title: thistogram
 media types:
 Video  
 description: Compute and draw a temporal histogram.  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes

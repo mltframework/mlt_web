@@ -13,7 +13,7 @@ title: procamp_vaapi
 media types:
 Video  
 description: ProcAmp (color balance) adjustments for hue, saturation, brightness, contrast  
-version: Lavfi9.12.100  
+version: Lavfi10.1.100  
 creator: libavfilter maintainers  
 
 ## Notes
