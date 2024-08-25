@@ -28,7 +28,7 @@ The GPS text filter will search for keywords in the text to be overlaid and will
 
 title: GPS text    
 description:
-<pre>
+```
 The text to overlay. May include keywords enclosed in "#".
 Keywords include:
   * #gps_lat#           - the GPS latitude value
@@ -70,16 +70,19 @@ Computed values are calculated since beginning of GPS file or since
 Temperature can include the extra uppercase letter "F" or "K" to convert degrees
 Celsius (default) to Fahrenheit or Kelvin respectively.
 The # may be escaped with "\".
-</pre>
+```
 type: string  
 readonly: no  
 required: yes  
-default: Speed: #gps_speed#km/h
- Distance: #gps_dist#m
- Altitude: #gps_elev#m
+default:
+```
+Speed: #gps_speed#km/h
+Distance: #gps_dist#m
+Altitude: #gps_elev#m
 
- GPS time: #gps_datetime_now#
- GPS location: #gps_lat#, #gps_lon#  
+GPS time: #gps_datetime_now#
+GPS location: #gps_lat#, #gps_lon#
+```
 widget: text  
 
 ### resource
