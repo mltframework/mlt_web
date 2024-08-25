@@ -13,7 +13,7 @@ title: GPS Text
 media types:
 Video  
 description: Overlay GPS-related text onto the video  
-version: 2  
+version: 5  
 creator: Daniel F  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -46,6 +46,11 @@ Keywords include:
   * #gps_dist_uphill#   - total distance travelled uphill so far
   * #gps_dist_downhill# - total distance travelled downhill so far
   * #gps_dist_flat#     - total distance travelled on flat area so far
+  * #gps_cadence#       - (bike) cadence, in revolutions per minute
+  * #gps_temperature#   - ambient temperature (<atemp> in .gpx)
+  * #gps_power#         - power in watts
+  * #gps_grade_percentage# - gradient of GPS track (computed from GPS and elev)
+  * #gps_grade_degrees# - same as above but converted to degrees
 An extra word "RAW" (uppercase!) can be added to the keyword to display the
 unchanged value from the file. If a keyword can't produce valid data it will
 print "--".
@@ -53,12 +58,17 @@ Time-based keywords can include a strftime format string to customize the
 output and a number (representing seconds) preceeded by '+' or '-' which will
 offset the actual time. For example,  "#gps_datetime_now %I:%M:%S %p +3600#" shows
 only the time in 12-hour format, offset by 1 hour.
+The speed keyword can have an extra "vertical" or "3D" word as a format to show
+vertical speed, and 3D speed (takes into account altitude).
 Speed and distance keywords may include an extra format keyword to convert
 the value to metric/imperial units. Default is meters and km/h respectively.
 Supported formats, distance: m|meter, km|kilometer*, mi|mile*, ft|feet, nm|nautical*;
-speed: ms|m/s|meter, km|km/h|kilo, mi|mi/h|mile, ft|ft/s|feet, kn|nm/h|knots.
+speed: ms|m/s|meter, km|km/h|kilo, mi|mi/h|mile, ft|ft/s|feet, kn|nm/h|knots,
+mmin|m/min, ftmin|ft/min.
 Computed values are calculated since beginning of GPS file or since
 "gps_processing_start_time" property, if set.
+Temperature can include the extra uppercase letter "F" or "K" to convert degrees
+Celsius (default) to Fahrenheit or Kelvin respectively.
 The # may be escaped with "\".
 </pre>
 type: string  

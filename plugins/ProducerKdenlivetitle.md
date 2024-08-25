@@ -13,7 +13,7 @@ title: Kdenlive Titler
 media types:
 Video  
 description:   
-version: 3  
+version: 4  
 creator: Marco Gittler, Jean-Baptiste Mardelle  
 copyright: Marco Gittler, Jean-Baptiste Mardelle  
 license: LGPLv2.1  

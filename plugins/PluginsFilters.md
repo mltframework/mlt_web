@@ -50,7 +50,6 @@ wrap_title: Filter Plugins
 * [avfilter.allpass](../FilterAvfilter-allpass/): allpass
 * [avfilter.aloop](../FilterAvfilter-aloop/): aloop
 * [avfilter.alphaextract](../FilterAvfilter-alphaextract/): alphaextract
-* [avfilter.ametadata](../FilterAvfilter-ametadata/): ametadata
 * [avfilter.amplify](../FilterAvfilter-amplify/): amplify
 * [avfilter.anlmdn](../FilterAvfilter-anlmdn/): anlmdn
 * [avfilter.aphaser](../FilterAvfilter-aphaser/): aphaser
@@ -213,7 +212,6 @@ wrap_title: Filter Plugins
 * [avfilter.mcdeint](../FilterAvfilter-mcdeint/): mcdeint
 * [avfilter.mcompand](../FilterAvfilter-mcompand/): mcompand
 * [avfilter.median](../FilterAvfilter-median/): median
-* [avfilter.metadata](../FilterAvfilter-metadata/): metadata
 * [avfilter.monochrome](../FilterAvfilter-monochrome/): monochrome
 * [avfilter.negate](../FilterAvfilter-negate/): negate
 * [avfilter.nlmeans](../FilterAvfilter-nlmeans/): nlmeans
@@ -321,6 +319,7 @@ wrap_title: Filter Plugins
 * [dance](../FilterDance/): Dance
 * [deinterlace](../FilterDeinterlace/): Xine Deinterlacer
 * [deshake](../FilterDeshake/): Vid.Stab Deshake
+* [dropshadow](../FilterDropshadow/): Drop Shadow
 * [dust](../FilterDust/): Dust
 * [dynamic_loudness](../FilterDynamic_loudness/): Dynamic Loudness
 * [dynamictext](../FilterDynamictext/): Dynamic text
@@ -438,6 +437,8 @@ wrap_title: Filter Plugins
 * [frei0r.vignette](../FilterFrei0r-vignette/): Vignette
 * [gamma](../FilterGamma/): Gamma
 * [glsl.manager](../FilterGlsl-manager/): 
+* [gpsgraphic](../FilterGpsgraphic/): GPS Graphic
+* [gpstext](../FilterGpstext/): GPS Text
 * [grain](../FilterGrain/): Grain
 * [grayscale](../FilterGrayscale/): Greyscale
 * [greyscale](../FilterGreyscale/): Greyscale
@@ -887,6 +888,8 @@ wrap_title: Filter Plugins
 * [sox.vol](../FilterSox-vol/): vol
 * [spot_remover](../FilterSpot_remover/): Spot Remover
 * [strobe](../FilterStrobe/): Alpha strobing
+* [subtitle](../FilterSubtitle/): Subtitle
+* [subtitle_feed](../FilterSubtitle_feed/): Subtitle
 * [swresample](../FilterSwresample/): FFmpeg Audio Resampler
 * [swscale](../FilterSwscale/): FFmpeg Image Scaler
 * [tcolor](../FilterTcolor/): Technicolor

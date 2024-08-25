@@ -38,7 +38,6 @@ wrap_title: Link Plugins
 * [avfilter.allpass](../LinkAvfilter-allpass/): allpass
 * [avfilter.aloop](../LinkAvfilter-aloop/): aloop
 * [avfilter.alphaextract](../LinkAvfilter-alphaextract/): alphaextract
-* [avfilter.ametadata](../LinkAvfilter-ametadata/): ametadata
 * [avfilter.amplify](../LinkAvfilter-amplify/): amplify
 * [avfilter.anlmdn](../LinkAvfilter-anlmdn/): anlmdn
 * [avfilter.aphaser](../LinkAvfilter-aphaser/): aphaser
@@ -201,7 +200,6 @@ wrap_title: Link Plugins
 * [avfilter.mcdeint](../LinkAvfilter-mcdeint/): mcdeint
 * [avfilter.mcompand](../LinkAvfilter-mcompand/): mcompand
 * [avfilter.median](../LinkAvfilter-median/): median
-* [avfilter.metadata](../LinkAvfilter-metadata/): metadata
 * [avfilter.monochrome](../LinkAvfilter-monochrome/): monochrome
 * [avfilter.negate](../LinkAvfilter-negate/): negate
 * [avfilter.nlmeans](../LinkAvfilter-nlmeans/): nlmeans

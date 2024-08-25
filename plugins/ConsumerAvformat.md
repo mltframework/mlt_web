@@ -13,7 +13,7 @@ title: FFmpeg Output
 media types:
 Audio  Video  
 description: Write or stream audio and/or video using FFmpeg.  
-version: 3  
+version: 4  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Copyright (C) 2003-2019 Meltytech, LLC  
@@ -315,6 +315,150 @@ required: no
 minimum: 0  
 maximum: 16  
 default: 0  
+
+### subtitle.0.feed
+
+title: Feed for subtitle stream 0    
+description:
+Specify the name of the feed for subtitle stream 0.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.0.lang
+
+title: Language for subtitle stream 0    
+description:
+Specify the 3 digit language code for subtitle stream 0.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.1.feed
+
+title: Feed for subtitle stream 1    
+description:
+Specify the name of the feed for subtitle stream 1.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.1.lang
+
+title: Language for subtitle stream 1    
+description:
+Specify the 3 digit language code for subtitle stream 1.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.2.feed
+
+title: Feed for subtitle stream 2    
+description:
+Specify the name of the feed for subtitle stream 2.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.2.lang
+
+title: Language for subtitle stream 2    
+description:
+Specify the 3 digit language code for subtitle stream 2.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.3.feed
+
+title: Feed for subtitle stream 3    
+description:
+Specify the name of the feed for subtitle stream 3.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.3.lang
+
+title: Language for subtitle stream 3    
+description:
+Specify the 3 digit language code for subtitle stream 3.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.4.feed
+
+title: Feed for subtitle stream 4    
+description:
+Specify the name of the feed for subtitle stream 4.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.4.lang
+
+title: Language for subtitle stream 4    
+description:
+Specify the 3 digit language code for subtitle stream 4.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.5.feed
+
+title: Feed for subtitle stream 5    
+description:
+Specify the name of the feed for subtitle stream 5.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.5.lang
+
+title: Language for subtitle stream 5    
+description:
+Specify the 3 digit language code for subtitle stream 5.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.6.feed
+
+title: Feed for subtitle stream 6    
+description:
+Specify the name of the feed for subtitle stream 6.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.6.lang
+
+title: Language for subtitle stream 6    
+description:
+Specify the 3 digit language code for subtitle stream 6.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.7.feed
+
+title: Feed for subtitle stream 7    
+description:
+Specify the name of the feed for subtitle stream 7.  
+type: string  
+readonly: no  
+required: no  
+
+### subtitle.7.lang
+
+title: Language for subtitle stream 7    
+description:
+Specify the 3 digit language code for subtitle stream 7.  
+type: string  
+readonly: no  
+required: no  
 
 ### terminate_on_pause
 
@@ -646,6 +790,16 @@ widget: checkbox
 ### vn
 
 title: Disable video    
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+widget: checkbox  
+
+### sn
+
+title: Disable subtitles    
 type: integer  
 readonly: no  
 required: no  

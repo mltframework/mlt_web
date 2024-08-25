@@ -13,7 +13,7 @@ title: GPS Graphic
 media types:
 Video  
 description: Overlay GPS-related graphics onto the video  
-version: 1  
+version: 2  
 creator: Daniel F  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -225,7 +225,7 @@ widget: spinner
 title: Graph color style    
 description:
 <pre>
-Chooses one of the 9 styles to draw the graph line:
+Chooses one of the following styles to draw the graph line:
 0 = one color -> same color and size for the entire graph
 1 = two colors -> same as 2 and 3 but the entire line is the same thickness
 2 = solid past, thin future -> from the beginning of the graph to the current position (="past")
@@ -241,6 +241,12 @@ rect area
 value from file to the maximum one, not affected by crops or trim
 8 = color by heart rate
 9 = color by speed -> same as above but gradient is affected by smoothing
+10 = color by speed (max 100km/h) -> max speed accepted is 100km/h - to cover bad gps errors
+11 = color by grade (max 90 degrees) -> the gradient follows the grade value but relative to a
+maximum of 90 degrees (if max grade is less than 90, it will use that value); affected by smoothing
+12 = Color by grade (max 20 degrees) -> as above but max color is relative to max 20 degrees; this
+provides expected colors for most GPS tracks otherwise a single steeper area would make the rest of
+the track indistinguishible from flat ground
 </pre>
 type: integer  
 readonly: no  
@@ -343,7 +349,7 @@ widget: checkbox
 
 title: Legend unit    
 description:
-Sets the unit to be used for displaying values of type altitude and speed. Default is meters and km/h respectively. The unit is matched anywhere in the string so extra spaces can be used to tweak displaying. Supported formats, distance: m|meter, km|kilometer*, mi|mile*, ft|feet, nm|nautical*; speed: ms|m/s|meter, km|km/h|kilometer, mi|mi/h|mile, ft|ft/s|feet, kn|nm/h|knots.  
+Sets the unit to be used for displaying values of type altitude and speed. Default is meters and km/h respectively. The unit is matched anywhere in the string so extra spaces can be used to tweak displaying. Supported formats, distance: m|meter, km|kilometer*, mi|mile*, ft|feet, nm|nautical*; speed: ms|m/s|meter, km|km/h|kilometer, mi|mi/h|mile, ft|ft/s|feet, kn|nm/h|knots, mmin|m/min, ftmin|ft/min.  
 type: string  
 readonly: no  
 required: no  
