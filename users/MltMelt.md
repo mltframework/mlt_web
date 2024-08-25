@@ -25,20 +25,23 @@ melt [options] [producer [name=value]* ]+
       -attach-clip filter[:arg] [name=value]*  Attach a filter to a producer
       -audio-track | -hide-video               Add an audio-only track
       -blank frames                            Add blank silence to a track
+      -chain id[:arg] [name=value]*            Add a producer as a chain
       -consumer id[:arg] [name=value]*         Set the consumer (sink)
       -debug                                   Set the logging level to debug
       -filter filter[:arg] [name=value]*       Add a filter to the current track
+      -getc                                    Get keyboard input using getc
       -group [name=value]*                     Apply properties repeatedly
       -help                                    Show this message
       -jack                                    Enable JACK transport synchronization
       -join clips                              Join multiple clips into one cut
+      -link id[:arg] [name=value]*             Add a link to a chain
+      -loglevel "quiet" | "panic" | "fatal" |  Set the logging level (least to most)
+                "error" | "warning" | "info" | "verbose" | "debug" | "timings"
       -mix length                              Add a mix between the last two cuts
       -mixer transition                        Add a transition to the mix
       -null-track | -hide-track                Add a hidden track
       -profile name                            Set the processing settings
       -progress                                Display progress along with the position
-      -remove                                  Remove the most recent cut
-      -repeat times                            Repeat the last cut
       -query                                   List all of the registered services
       -query "consumers" | "consumer"=id       List consumers or show info about one
       -query "filters" | "filter"=id           List filters or show info about one
@@ -49,7 +52,12 @@ melt [options] [producer [name=value]* ]+
       -query "formats"                         List audio/video formats
       -query "audio_codecs"                    List audio codecs
       -query "video_codecs"                    List video codecs
+      -quiet                                   Set the logging level to quiet
+      -remove                                  Remove the most recent cut
+      -repeat times                            Repeat the last cut
+      -repository path                         Set the directory of MLT modules
       -serialise [filename]                    Write the commands to a text file
+      -setlocale                               Make numeric strings locale-sensitive
       -silent                                  Do not display position/transport help
       -split relative-frame                    Split the last cut into two cuts
       -swap                                    Rearrange the last two cuts
