@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Composite  
+title: Composite (*DEPRECATED*)
 media types:
 Video  
 description: A key-framable alpha-channel compositor for two frames.  
@@ -126,7 +126,7 @@ values:
 
 title: Luma map    
 description:
-The luma map file name. If not supplied, a dissolve.  
+The luma map file name.
 type: string  
 readonly: no  
 required: no  
