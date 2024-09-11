@@ -7,9 +7,8 @@ permalink: /support/
 
 If you need help with a bug, then please use the [bug tracker on GitHub](https://github.com/mltframework/mlt/issues).
 
-Community support is available through:
+Community support is available in [GitHub Discussions](https://github.com/mltframework/mlt/discussions).
 
-- the [mailing list](https://sourceforge.net/p/mlt/mailman/), or
-- the [mlt tag on Stack Overflow](http://stackoverflow.com/questions/tagged/mlt)
+There is a [mlt tag on Stack Overflow](http://stackoverflow.com/questions/tagged/mlt), but that gets less attention to people in the know about MLT and more attention from people who are not helpful.
 
 Also, you may want to check the [FAQ]({{"/faq/" | prepend: site.baseurl }}).
