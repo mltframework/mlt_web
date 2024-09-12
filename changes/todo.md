@@ -61,8 +61,6 @@ This is a todo list from many years ago. Some ideas may still be interesting and
 * add a libraw producer
 * add field-aware scaler 
 * add [EDL]([http://www.edlmax.com/EdlMaxHelp/Edl/maxguide.html) import and export
-* add LV2 audio filter
-* consolidate composite and affine transitions into a single transition that can also take its properties from frame
 * automatic cropping using `motion_est`
 * automatic cropping when sample aspect != display aspect (DV) 
 * use `motion_est` module for scene change detection
@@ -91,5 +89,4 @@ matching](http://bemasc.net/wordpress/2011/07/26/an-auto-aligner-for-pitivi/)
   [Newton for After Effects](http://www.studiodaily.com/studiomonthly/news/Newton-the-First-Physics-Engine-for-After-Effects_13207.html) -
   maybe with QML version of WebVfx plugin?
 * OpenFX
-* VST
   

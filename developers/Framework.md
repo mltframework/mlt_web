@@ -198,7 +198,7 @@ locate a service to use and attaches 'normalizing filters' (such as scalers,
 deinterlacers, resamplers and field normalizers) to the loaded content -
 these filters ensure that the consumer gets what it asks for.
 
-The default consumer is "sdl". The combination of loader and sdl will
+The default consumer is "sdl2". The combination of loader and sdl2 will
 provide a media player.
 
 In this example, we connect the producer and then start the consumer. We
@@ -250,7 +250,7 @@ pairs as shown in the following table:
   |---              |---                            |---              |
   |MLT_NORMALISATION|The normalization of the system|PAL or NTSC      |
   |MLT_PRODUCER     |The default producer           |"loader" or other|
-  |MLT_CONSUMER     |The default consumer           |"sdl" or other   |
+  |MLT_CONSUMER     |The default consumer           |"sdl2" or other   |
   |MLT_TEST_CARD    |The default test card producer |any producer     |
 
 
@@ -729,8 +729,8 @@ mlt_producer create_tracks( int argc, char **argv )
     // Obtain the multitrack
     mlt_multitrack multitrack = mlt_tractor_multitrack( tractor );
 
-    // Create a composite transition
-    mlt_transition transition = mlt_factory_transition( "composite", "10%/10%:15%x15%" );
+    // Create a transition to blend tracks
+    mlt_transition transition = mlt_factory_transition( "qtblend", "10%/10%:15%x15%" );
 
     // Create track 0
     mlt_producer track0 = create_playlist( argc, argv );

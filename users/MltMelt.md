@@ -148,7 +148,7 @@ the requirements of your configuration (which, by default, will be PAL).
 #### Consumers
 
 Consumers are the components that process the generated frames.
-If no consumer is specified, then the "sdl" consumer is used,
+If no consumer is specified, then the "sdl2" consumer is used,
 which displays the resulting video in a simple playback window.
 
 <pre>
@@ -164,10 +164,8 @@ $ melt -query consumers
      - cbrts
      - xgl
      - decklink
-     - sdl
-     - sdl_audio
-     - sdl_preview
-     - sdl_still
+     - sdl2
+     - sdl2_audio
      - avformat
      - rtaudio
      - sdi

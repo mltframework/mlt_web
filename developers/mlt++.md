@@ -149,7 +149,7 @@ int main( void )
     Factory::init( );
     Profile profile;
     Producer p( profile, "pango:", "Hello World" );
-    Consumer c( profile, "sdl" );
+    Consumer c( profile, "sdl2" );
     c.connect( p );
     c.run( );
     return 0;
@@ -161,7 +161,7 @@ object which produces 'frames'), create a 'consumer' (an object which consumes
 frames), connect them together, start the consumer and wait until done (here
 we just wait for the user to close the window).
 
-In this case, we construct a window as a consumer using the 'sdl' consumer
+In this case, we construct a window as a consumer using the 'sdl2' consumer
 (SDL is a standard portable library which provides platform independent
 access to accelerated video display and audio) and use the 'pango' 
 producer to generate frames with the words 'Hello World' (pango is a 
@@ -201,7 +201,7 @@ int main( int argc, char **argv )
         if ( p.is_valid( ) )
             list.append( p );
     }
-    Consumer c( profile, "sdl" );
+    Consumer c( profile, "sdl2" );
     c.connect( list );
     c.run( );
     return 0;
@@ -253,7 +253,7 @@ int main( int argc, char **argv )
     f.set( "producer.fgcolour", "0x000000ff" );
     f.set( "producer.bgcolour", "0xff000080" );
     list.attach( f );
-    Consumer c( profile, "sdl" );
+    Consumer c( profile, "sdl2" );
     c.connect( list );
     c.run( );
     return 0;

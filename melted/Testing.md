@@ -119,18 +119,18 @@ level client (mvcp-client).
 --> 201 OK
 --> one or more lines listing devices with an ID in second column
 
-2.2 Add a device as a melted unit: UADD {sdl, bluefish}
+2.2 Add a device as a melted unit: UADD {sdl2, bluefish}
 --> 201 OK
 --> U0
 
 2.3 List the units: ULS
 --> 201 OK
---> U0 ?? {sdl, bluefish} 1
+--> U0 ?? {sdl2, bluefish} 1
 --> It is important that the last column is '1' to indicate it is online.
 
 2.4 List the units: ULS
 --> 201 OK
---> U0 ?? {sdl, bluefish} 1
+--> U0 ?? {sdl2, bluefish} 1
 
 2.5 Attempt unit commands for a unit that does not exist: LOAD U6 foo
 --> 403 Unit not found

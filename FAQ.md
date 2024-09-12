@@ -148,7 +148,7 @@ can send to and/or receive from jackd. You just need to attach the
 filter to the SDL consumer and tell SDL to not output audio. Here is
 something roughly equivalent in melt:
 
-`melt ... -consumer sdl audio_off=1 frequency=44100 -attach jackrack out_1=system:playback_1 out_2=system:playback_2`
+`melt ... -consumer sdl2 audio_off=1 frequency=44100 -attach jackrack out_1=system:playback_1 out_2=system:playback_2`
 
 The frequency must match whatever jackd is running! The above assumes
 you want to send to the "system" jack client ports playback_1 and
@@ -211,19 +211,6 @@ Here is an example command line:
 
 If you want to burn the frame number then use #frame# instead of #timecode#.
 
-#### How to center a text in a video?
-
-`melt colour:red -filter watermark:"+LinuxTag~Flop Bobber.txt"
-composite.progressive=1 producer.align=centre composite.valign=c
-composite.halign=c`
-
-#### When changing the font for pango it is rather small.
-
-Use the producer.size property
-
-`melt colour:red -filter watermark:"+Flop.txt"
-composite.progressive=1 producer.font="DIN-Light" producer.size=48`
-
 #### How to repeat the very first frame of a video for 200 frames?
 
 The split can be used here together with swap, that reverses frame
@@ -260,14 +247,6 @@ substitute any consumer or remove -consumer from the command line to
 simply view it. This only works on seekable sources, and some
 files/formats are better at handling this rigorous seeking than others.
 So, "your mileage may vary."
-
-#### Is it possible to do multiple composites?
-
-On 2005-06-26 the following example was working:
-
-`melt colour:blue -attach watermark:"+hello.txt" producer.size=266
-composite.alpha\_a=0 -attach watermark:colour:red composite.alpha\_b=0
-composite.or=1`
 
 #### How do you normalize audio?
 You need version 0.7.6+ and the sox filter to normalize audio

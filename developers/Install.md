@@ -74,7 +74,7 @@ The modules have the following dependencies:
   | movit | [Movit](http://git.sesse.net/movit) |
   | qt | [Qt](http://www.qt-project.org) 5.6 or later |
   | resample | [libsamplerate](http://www.mega-nerd.com/SRC) 0.15 or later |
-  | sdl | [SDL](http://www.libsdl.org) 1.2 or later |
+  | sdl2 | [SDL](http://www.libsdl.org) 2.0 or later |
   | sox | [SoX](http://sox.sourceforge.net) 13 or later |
   | vorbis | [libvorbis](http://www.vorbis.com) 1.0.1 or later |
   | xml | [libxml12](http://www.xmlsoft.org) 2.5 or later |

@@ -318,7 +318,7 @@ TABLE OF CONTENTS
    and would provide a response formatted as follows:
 
        201 OK
-       U0 00 sdl:360x288 1
+       U0 00 sdl2:360x288 1
 
    with a trailing empty line.
 

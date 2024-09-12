@@ -178,7 +178,7 @@ playback speed, position, or even which producer is connected to which
 consumer.
 
 The consumer receives the first non-blank frame (see below). It has no say
-in the order in which gets them (the sdl consumer when used with melt might
+in the order in which gets them (the sdl2 consumer when used with melt might
 appear to be an exception - it isn't - it simply has a route back to the
 application to allow the application to interpret key presses).
 

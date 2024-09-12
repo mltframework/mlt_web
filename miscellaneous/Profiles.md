@@ -129,8 +129,8 @@ parameter that you override on the consumer properties.
 
 1. melt -profile dv_ntsc some.dv ...
 2. MLT_PROFILE=dv_ntsc melt some.dv
-3. melt some.dv -consumer sdl mlt_profile=dv_ntsc
-4. melt some.dv -consumer sdl mlt\_profile=dv\_ntsc progressive=1
+3. melt some.dv -consumer sdl2 mlt_profile=dv_ntsc
+4. melt some.dv -consumer sdl2 mlt\_profile=dv\_ntsc progressive=1
 5. MLT\_PROFILE=./my\_profile.txt melt some.dv
 
 ### Luma and Data Feed Files

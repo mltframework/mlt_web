@@ -8,7 +8,7 @@ permalink: /docs/copyrightpolicy/
 #### Copyright Attribution
 
 Any contributions to the framework, melt, melted, libmvcp, and the core,
-avformat, gtk2, normalize, resample, sdl, sox, and xml modules must
+avformat, gtk2, normalize, resample, sdl, sdl2, sox, and xml modules must
 assign copyright to "Meltytech, LLC." Otherwise, you can copyright it in
 a name of your choosing unless, of course, you have integrated a fair
 amount of code that someone else wrote and copyrighted.

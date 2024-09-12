@@ -53,7 +53,7 @@ this point, MLT's configure should be able to detect libmovit.
     or real_time &lt; 1 at this time.
 -   The xgl consumer only works on systems with X11, provides no sound,
     and is generally only useful for troubleshooting and prototyping
-    with melt. You can also use "-consumer qglsl 0=sdl" but that is
+    with melt. You can also use "-consumer qglsl 0=sdl2" but that is
     known to crash at exit - unless you run it in gdb :-  
 -   If you are using WebVfx, then the qglsl is not compatible with
     qmelt, the simple Qt Application-based melt wrapper. Also, the
