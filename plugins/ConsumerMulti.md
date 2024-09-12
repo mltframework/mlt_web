@@ -23,7 +23,7 @@ license: LGPL
 There are a few ways of defining each of the outputs and their properties.
 One form is a flat set of properties on this consumer that follows the pattern:
 &lt;N&gt;=&lt;service&gt; [&lt;N&gt;.&lt;property&gt;=&lt;value&gt;]*
-For example, 0=sdl 0.rescale=bilinear 1=avformat 1.target=foo.dv ...
+For example, 0=sdl2 0.rescale=bilinear 1=avformat 1.target=foo.dv ...
 To change the profile for a particular output set the property &quot;mlt_profile.&quot;
 You can put these into a MLT properties file and supply that to this consumer.
 Another way is to create a separate properties list for each output and set

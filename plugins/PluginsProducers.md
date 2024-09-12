@@ -66,6 +66,7 @@ wrap_title: Producer Plugins
 * [pixbuf](../ProducerPixbuf/): GDK-PixBuf
 * [qimage](../ProducerQimage/): Qt QImage
 * [qtext](../ProducerQtext/): Qt Titler
+* [subtitle](../ProducerSubtitle/): 
 * [timewarp](../ProducerTimewarp/): Time Warp
 * [tone](../ProducerTone/): Tone
 * [vorbis](../ProducerVorbis/): Ogg Vorbis

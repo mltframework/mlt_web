@@ -72,13 +72,13 @@ unit: Hz
 
 title: Initial Zoom    
 description:
-<pre>
+```
 The amount to zoom the image before any motion occurs. This can be used to
 avoid black on the sides of the image when it moves.
   100% = no zoom
 < 100% = zoom out (make the image smaller)
 > 100% = zoom in (make the image larger)
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -91,12 +91,12 @@ unit: '%'
 
 title: Zoom    
 description:
-<pre>
+```
 The amount that the audio affects the zoom of the image.
 < 0% = Image will zoom out (get smaller) with more sound
   0% = no zoom
 > 0% = Image will zoom in (get larger) with more sound
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -109,11 +109,11 @@ unit: '%'
 
 title: Left    
 description:
-<pre>
+```
 The amount that the audio affects the left offset of the image.
   0% = no left offset
 > 0% = Image will move left with more sound
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -126,11 +126,11 @@ unit: '%'
 
 title: Right    
 description:
-<pre>
+```
 The amount that the audio affects the right offset of the image.
   0% = no right offset
 > 0% = Image will move right with more sound
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -143,11 +143,11 @@ unit: '%'
 
 title: Up    
 description:
-<pre>
+```
 The amount that the audio affects the upward offset of the image.
   0% = no upward offset
 > 0% = Image will move up with more sound
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -160,11 +160,11 @@ unit: '%'
 
 title: Down    
 description:
-<pre>
+```
 The amount that the audio affects the downward offset of the image.
   0% = no downward offset
 > 0% = Image will move down with more sound
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -177,11 +177,11 @@ unit: '%'
 
 title: Clockwise    
 description:
-<pre>
+```
 The amount that the audio affects the clockwise rotation of the image.
   0% = no clockwise rotation
 > 0% = Image will rotate clockwise with more sound
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -194,11 +194,11 @@ unit: degrees
 
 title: Counterclockwise    
 description:
-<pre>
+```
 The amount that the audio affects the counterclockwise rotation of the image.
   0% = no counterclockwise rotation
 > 0% = Image will rotate counterclockwise with more sound
-</pre>
+```
 type: float  
 readonly: no  
 required: no  

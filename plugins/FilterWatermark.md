@@ -13,14 +13,14 @@ title: Overlay
 media types:
 Video  
 description: Overlay text or images onto the video  
-version: 1  
+version: 2  
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
 
 ## Notes
 
-The watermark filter combines a frame producer and a composite transition to overlay the specified text or image onto the video. Supplying a filename with extension &quot;.txt&quot; causes the loader to load a pango producer. Supplying a file name with an extension supported by gtk-pixbuf causes the loader to load a pixbuf producer. See the pango and pixbuf producers for details.
+The watermark filter combines a frame producer and a transition to overlay the specified text or image onto the video. Supplying a filename with extension &quot;.txt&quot; causes the loader to load a pango producer. Supplying a file name with an extension supported by gtk-pixbuf causes the loader to load a pixbuf producer. See the pango and pixbuf producers for details.
 Note: If the filename begins with &quot;+&quot; the pango producer interprets the filename as pango text.
 Text Example: melt colour:red -filter watermark:&quot;+First Line~Second Line.txt&quot; composite.progressive=1 producer.align=centre composite.valign=c composite.halign=c
 Image Example: melt clip.dv -filter watermark:logo.png
@@ -38,6 +38,16 @@ readonly: no
 required: no  
 widget: fileopen  
 
+### transition
+
+title: Composite Service    
+description:
+The name of the MLT transition service to use for compositing.  
+type: string  
+readonly: no  
+required: yes  
+default: affine  
+
 ### distort
 
 title: Allow distorted scaling    
@@ -53,24 +63,24 @@ widget: checkbox
 
 title: Producer    
 description:
-<pre>
+```
 Properties may be set on the encapsulated producer.
 e.g.: producer.align=centre
 See "pango" and "pixbuf" producers for details.
-</pre>
+```
 type:   
 readonly: no  
 required: no  
 
 ### composite.*
 
-title: Composite    
+title: Composite Service Property    
 description:
-<pre>
-Properties may be set on the encapsulated composite.
+```
+Properties may be set on the encapsulated transition.
 e.g.: composite.valign=c
 See "composite" transition for details.
-</pre>
+```
 type:   
 readonly: no  
 required: no  

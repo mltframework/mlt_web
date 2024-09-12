@@ -74,15 +74,12 @@ The # may be escaped with "\".
 type: string  
 readonly: no  
 required: yes  
-default:
-```
-Speed: #gps_speed#km/h
-Distance: #gps_dist#m
-Altitude: #gps_elev#m
+default: Speed: #gps_speed#km/h
+ Distance: #gps_dist#m
+ Altitude: #gps_elev#m
 
-GPS time: #gps_datetime_now#
-GPS location: #gps_lat#, #gps_lon#
-```
+ GPS time: #gps_datetime_now#
+ GPS location: #gps_lat#, #gps_lon#  
 widget: text  
 
 ### resource

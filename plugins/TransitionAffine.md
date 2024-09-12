@@ -13,7 +13,7 @@ title: Transform
 media types:
 Video  
 description:   
-version: 6  
+version: 7  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Meltytech, LLC  
@@ -34,9 +34,9 @@ widget: checkbox
 
 ### fill
 
-title: Upscale to fill    
+title: Fill rectangle    
 description:
-Determines whether the image will be scaled up to fill the rectangle or whether the size will be constrained to 100% of the profile resolution.  
+Determines whether the image will be scaled up to fill the rectangle. Otherwise, if the B frame image fits within the rectangle, it will not be scaled. If 0, and the B frame image exceeds the rectangle, then it is scaled down to fit within the rectangle.  
 type: boolean  
 readonly: no  
 required: no  
@@ -308,17 +308,6 @@ type: boolean
 readonly: no  
 required: no  
 default: 0  
-
-### fill
-
-title: Fill rectangle    
-description:
-Determines whether the image will be scaled up to fill the rectangle. Otherwise, if the B frame image fits within the rectangle, it will not be scaled. If 0, and the B frame image exceeds the rectangle, then it is scaled down to fit within the rectangle.  
-type: boolean  
-readonly: no  
-required: no  
-default: 1  
-widget: checkbox  
 
 ### halign
 

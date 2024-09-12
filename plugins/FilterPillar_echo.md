@@ -26,11 +26,11 @@ license: LGPLv2.1
 
 title: Rectangle    
 description:
-<pre>
+```
 Defines the rectangle of the area of interest.
 Format is: "X Y W H".
 X, Y, W, H are assumed to be pixel units unless they have the suffix '%'.
-</pre>
+```
 type: rect  
 readonly: no  
 required: no  

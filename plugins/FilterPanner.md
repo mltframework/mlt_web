@@ -28,10 +28,10 @@ Only handles up to 6 channels. Needs more work balance for surround and other ch
 
 title: Start    
 description:
-<pre>
+```
 The position of the audio relative to its neighbor channel. For example, when channel is set to 0 for left, then start 0 is full left, 0.5 is center, and 1.0 is full right.
 If value for property "split" is set value of this property is discarded.
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -42,10 +42,10 @@ maximum: 1
 
 title: End    
 description:
-<pre>
+```
 The ending value of the audio position. It will be interpolated from start to end over the in-out range.
 If value for property "split" is set value of this property is discarded.
-</pre>
+```
 type: float  
 readonly: no  
 required: no  
@@ -81,10 +81,10 @@ widget: checkbox
 
 title: Split    
 description:
-<pre>
+```
 The animated position of the audio relative to its neighbor channel. For example, when channel is set to 0 for left, then start 0 is full left, 0.5 is center, and 1.0 is full right.
 If this value is set, values for properties "start" and "end" are discarded.
-</pre>
+```
 type: float  
 readonly: no  
 required: no  

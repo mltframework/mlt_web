@@ -45,5 +45,5 @@ ffmpeg -i sg_gm_2013_clip_title.avi -pix_fmt yuv422p -preset placebo -crf 10 -y 
 Putting it all together:
 melt sg_gm_2013_clip_title.matte_full.mp4 -track noise: -track \
   sg_gm_2013_clip_title.fill.mp4 -transition matte a_track=2 \
-  b_track=0 -transition composite a_track=1 b_track=2
+  b_track=0 -transition qtblend a_track=1 b_track=2
 

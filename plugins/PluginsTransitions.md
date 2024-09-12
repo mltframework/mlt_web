@@ -3,7 +3,7 @@ title: Documentation
 wrap_title: Transition Plugins
 ---
 * [affine](../TransitionAffine/): Transform
-* [composite](../TransitionComposite/): Composite
+* [composite](../TransitionComposite/): Composite (*DEPRECATED*)
 * [frei0r.addition](../TransitionFrei0r-addition/): addition
 * [frei0r.addition_alpha](../TransitionFrei0r-addition_alpha/): addition_alpha
 * [frei0r.alphaatop](../TransitionFrei0r-alphaatop/): alphaatop

@@ -37,7 +37,7 @@ This service uses mlt_cache to prevent many simultaneous, open instances of liba
 
 title: File/URL    
 description:
-<pre>
+```
 A file name specification or URL in the form:
 [{protocol}|{format}]:{resource}[?{format-parameter}[&{format-parameter}...]]
 For example, video4linux2:/dev/video1?width=320&height=240
@@ -46,7 +46,7 @@ If you need '?' in the resource name it must be escaped as '\?'.
 Use 'f-list' to see a list of supported file formats.
 Use 'vcodec-list' to see a list of supported video decoders.
 Use 'acodec-list' to see a list of supported audio decoders.
-</pre>
+```
 type: string  
 readonly: no  
 required: yes  

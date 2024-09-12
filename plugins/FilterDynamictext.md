@@ -29,7 +29,7 @@ The dynamic text filter will search for keywords in the text to be overlaid and 
 
 title: Dynamic text    
 description:
-<pre>
+```
 The text to overlay. May include keywords enclosed in "#".
 Keywords include:
   * #createdate#    - Best guess of file creation date
@@ -48,7 +48,7 @@ and the format string and the keyword comes first. For example,
 "#localtime %I:%M:%S %p#" shows only the time in 12-hour format.
 Keywords may also be any frame property (e.g. #meta.media.0.codec.frame_rate#)
 The # may be escaped with "\".
-</pre>
+```
 type: string  
 readonly: no  
 required: yes  

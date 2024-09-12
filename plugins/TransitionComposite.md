@@ -20,7 +20,7 @@ license: LGPLv2.1
 
 ## Notes
 
-Performs dissolves and luma wipes in addition to alpha compositing.
+Deprecated: use &quot;affine&quot; or &quot;qtblend&quot; instead. Performs dissolves and luma wipes in addition to alpha compositing.
 By default, the aspect ratio of the B frame is respected and the size portion of the geometry specification simply defines a bounding rectangle.
 This performs field-based rendering unless the A frame property &quot;progressive&quot; or &quot;consumer_progressive&quot; or the transition property &quot;progressive&quot; is set to 1.
 

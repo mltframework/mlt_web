@@ -24,12 +24,12 @@ license: GPLv2
 
 title: Gain    
 description:
-<pre>
+```
 This parameter is deprecated; use "level" instead. The gain may be indicated as a floating point value of the gain adjustment.
 The gain may also be indicated as a numeric value with the suffix "dB" to adjust in terms of decibels.
 The gain may also be set to "normalize" to normalize the volume to the target amplitude -12dBFS.
 This value is discarded if value for property "level" is set.
-</pre>
+```
 type: string  
 readonly: no  
 required: no  
@@ -48,11 +48,11 @@ default: 75
 
 title: Normalize    
 description:
-<pre>
+```
 Normalize the volume to the specified amplitude.
 The normalization may be indicated as a floating point value of the relative volume.
 The normalization may also be indicated as a numeric value with the suffix "dB" to set the amplitude in decibels.
-</pre>
+```
 type: string  
 readonly: no  
 required: no  
@@ -71,11 +71,11 @@ required: no
 
 title: Limiter    
 description:
-<pre>
+```
 Limit all samples above the specified amplitude.
 The limiting may be indicated as a floating point value of the relative volume.
 The limiting may also be indicated as a numeric value with the suffix "dB" to set the limiting amplitude in decibels.
-</pre>
+```
 type: string  
 readonly: no  
 required: no  
@@ -95,10 +95,10 @@ default: 20dB
 
 title: End gain    
 description:
-<pre>
+```
 A gain value just like the Gain property. This causes the gain to be interpolated from 'gain' to 'end' over the duration.
 This value is discarded if value for property "level" is set.
-</pre>
+```
 type: string  
 readonly: no  
 required: no  

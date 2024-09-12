@@ -27,7 +27,7 @@ license: LGPLv2.1
 
 title: Speed and Resource    
 description:
-<pre>
+```
 The speed factor and the producer resource in the form: [speed:resource]
 The speed can be any decimal number between 20 and 0.01.
 Negative speed values cause the file to be played backwards.
@@ -48,7 +48,7 @@ Examples:
 The most common use for this producer is to change the speed of a file.
 However, any arbitrary producer can be specified. E.g.:
         "2.0:colour:red"
-</pre>
+```
 type: string  
 readonly: no  
 required: yes  

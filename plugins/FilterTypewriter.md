@@ -58,13 +58,13 @@ default: 0
 
 title: Macro expansion type    
 description:
-<pre>
+```
 Defines type of macro expansion:
 0 - custom macro,
 1 - expansion char-by-char
 2 - expansion word-by-word
 3 - expansion line-by-line
-</pre>
+```
 type: integer  
 readonly: no  
 required: no  

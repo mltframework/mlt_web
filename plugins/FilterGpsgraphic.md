@@ -68,13 +68,13 @@ widget: text
 
 title: Graph data source    
 description:
-<pre>
+```
 What data from the GPS file is used for drawing:
 0 = GPS location/track
 1 = altitude (if available)
 2 = heart rate (if available)
 3 = speed (always available, computed from location)
-</pre>
+```
 type: integer  
 readonly: no  
 required: no  
@@ -87,7 +87,7 @@ widget: combo
 
 title: Graph type    
 description:
-<pre>
+```
 How to draw the selected data:
 0 = a basic 2D map line (for location) or 1D graph per time (others)
 1 = zooms in onto the map/graph and centers around the current location
@@ -100,7 +100,7 @@ keep the dot centered)
 * if data source is not GPS location, the centering will only be done for horizontal axis
 (time), vertical axis crop will behave just like for the type 0 (it will statically keep
 the same min/max limit allowing the now_dot to move up and down).
-</pre>
+```
 type: integer  
 readonly: no  
 required: no  
@@ -139,13 +139,13 @@ widget: spinner
 
 title: Crop mode horizontal    
 description:
-<pre>
+```
 Decides how to interpret the crop_left_p and crop_right_p values:
 0 = a percentage from min..max
 1 = an absolute value (ie: it can crop between 22.2 and 22.3 degrees of longitude)
 Note: for the horizontal type, absolute values are the longitude (for the location
 source type) and time (in miliseconds since epoch) for the rest of the data source types)
-</pre>
+```
 type: integer  
 readonly: no  
 required: no  
@@ -180,7 +180,7 @@ widget: spinner
 
 title: Crop mode vertical    
 description:
-<pre>
+```
 Decides how to interpret the crop_bot_p and crop_top_p values:
 0 = a percentage from min..max
 1 = an absolute value (ie: it can zoom in to between 100 and 150m of altitude to show
@@ -189,7 +189,7 @@ Note: for the vertical type, absolute values are latitude degrees (for the locat
 source type) and altitude, heart rate, speed for the others interpreted as the legend_unit
 type where applicable (ie: a value of 10 for altitude will be considered meters by default
 but if changing legend_unit to feet it will mean 10 feet).
-</pre>
+```
 type: integer  
 readonly: no  
 required: no  
@@ -224,7 +224,7 @@ widget: spinner
 
 title: Graph color style    
 description:
-<pre>
+```
 Chooses one of the following styles to draw the graph line:
 0 = one color -> same color and size for the entire graph
 1 = two colors -> same as 2 and 3 but the entire line is the same thickness
@@ -247,7 +247,7 @@ maximum of 90 degrees (if max grade is less than 90, it will use that value); af
 12 = Color by grade (max 20 degrees) -> as above but max color is relative to max 20 degrees; this
 provides expected colors for most GPS tracks otherwise a single steeper area would make the rest of
 the track indistinguishible from flat ground
-</pre>
+```
 type: integer  
 readonly: no  
 required: no  
@@ -260,7 +260,7 @@ widget: combo
 
 title: Colours    
 description:
-<pre>
+```
 Sets the colours of the graph line.
 Multiple colours can be specified with incrementing suffixes to cause the
 line to be drawn in a specific way (ie: gradient or past/future).
@@ -273,7 +273,7 @@ color.5 = #ffff0000
 A color value is a hexadecimal representation of RGB plus alpha channel
 as 0xrrggbbaa. Colors can also be the words: white, black, red, green,
 or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
-</pre>
+```
 type: color  
 readonly: no  
 required: no  

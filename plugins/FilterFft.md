@@ -35,10 +35,10 @@ default: 2048
 
 title: Window Level    
 description:
-<pre>
+```
 The level of the sample window. 0 indicates that there are no samples in the window. 1.0 indicates that the window is full.
 The transform of a window that is not full may show frequency spikes that are not really present in the audio.
-</pre>
+```
 type: float  
 readonly: yes  
 required: no  
@@ -68,10 +68,10 @@ required: no
 
 title: Output Bins    
 description:
-<pre>
+```
 A pointer to an array of floats that represent the magnitude of the output of the transform.
 bin[i] = sqrt( real[i]^2 + imag[i]^2 )
-</pre>
+```
 type:   
 readonly: yes  
 required: no  

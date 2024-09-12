@@ -11,7 +11,7 @@ wrap_title: Consumer Plugins
 * [null](../ConsumerNull/): NULL
 * [qglsl](../ConsumerQglsl/): Qt OpenGL Context
 * [rtaudio](../ConsumerRtaudio/): RtAudio
-* [sdl](../ConsumerSdl/): SDL Fast YUV
+* [sdl](../ConsumerSdl/): SDL Fast YUV (*DEPRECATED*)
 * [sdl2](../ConsumerSdl2/): SDL2
 * [sdl2_audio](../ConsumerSdl2_audio/): SDL2 Audio Only
 * [xgl](../ConsumerXgl/): 

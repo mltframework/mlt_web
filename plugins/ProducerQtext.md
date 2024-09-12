@@ -30,10 +30,10 @@ qtext has builtin scaling. It will rescale the originally rendered title to what
 
 title: File    
 description:
-<pre>
+```
 A text file containing text to be rendered.
 The text file contents initialize the value of the "text" parameter.
-</pre>
+```
 type: string  
 readonly: no  
 required: no  

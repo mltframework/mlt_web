@@ -28,13 +28,13 @@ Pixbuf has builtin scaling. It will rescale the originally rendered title to wha
 
 title: File    
 description:
-<pre>
+```
 The name of a graphics file loadable by a gdk-pixbuf loader. See the output of gdk-pixbuf-query-loaders. Definitely png, jpeg, tiff, pnm, and xpm will work.
 If "%" in filename, the filename is used with sprintf to generate a filename from a counter for multi-file/flipbook animation. The file sequence ends when numeric discontinuity >100.
 If the file sequence does not begin within the count of 100 you can pass the begin property like a query string parameter, for example: anim-%04d.png?begin=1000.
 If filename contains "/.all.", suffix with an extension to load all pictures with matching extension from a directory.
 If filename contains the string "<svg", then pixbuf tries to load the filename as inline SVG XML, which is convenient for melt commands. If filename extension is .csv (format is: picture_filename;ttl), then pixbuf reads pictures and corresponding ttl from it, which is convenient for generating a slideshow with different image duration; in this case main ttl property is ignored.
-</pre>
+```
 type: string  
 readonly: no  
 required: yes  

@@ -24,14 +24,14 @@ license: LGPLv2.1
 
 title: Background Color    
 description:
-<pre>
+```
 The background color to be applied to the entire frame. The default color
 is transparent.
 
 A color value is a hexadecimal representation of RGB plus alpha channel
 as 0xrrggbbaa. Colors can also be the words: white, black, red, green,
 or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
-</pre>
+```
 type: color  
 readonly: no  
 required: no  
@@ -42,7 +42,7 @@ widget: color
 
 title: Foreground color    
 description:
-<pre>
+```
 The color of the waveform.
 
 Multiple colors can be specified with incrementing suffixes to cause the
@@ -62,7 +62,7 @@ To create a gradient, define more colors:
 A color value is a hexadecimal representation of RGB plus alpha channel
 as 0xrrggbbaa. Colors can also be the words: white, black, red, green,
 or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
-</pre>
+```
 type: color  
 readonly: no  
 required: no  
@@ -87,10 +87,10 @@ widget: spinner
 
 title: Audio Channel    
 description:
-<pre>
+```
 The audio channel to draw.
 "0" indicates that all channels should be drawn. "-1" indicates that all channels will be added together in a single waveform.
-</pre>
+```
 type: integer  
 readonly: no  
 required: no  
@@ -117,11 +117,11 @@ widget: spinner
 
 title: Rectangle    
 description:
-<pre>
+```
 Defines the rectangle that the waveform(s) should be drawn in.
 Format is: "X Y W H".
 X, Y, W, H are assumed to be pixel units unless they have the suffix '%'.
-</pre>
+```
 type: rect  
 readonly: no  
 required: no  

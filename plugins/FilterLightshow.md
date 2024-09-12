@@ -72,7 +72,7 @@ unit: Hz
 
 title: Light Color    
 description:
-<pre>
+```
 The color of the light.
 
 Multiple colors can be specified with incrementing suffixes to cause the
@@ -92,7 +92,7 @@ To create a gradient, define more colors:
 A color value is a hexadecimal representation of RGB plus alpha channel
 as 0xrrggbbaa. Colors can also be the words: white, black, red, green,
 or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.
-</pre>
+```
 type: color  
 readonly: no  
 required: no  
@@ -102,11 +102,11 @@ widget: color
 
 title: Rectangle    
 description:
-<pre>
+```
 Defines the rectangle that the color should be drawn in.
 Format is: "X Y W H".
 X, Y, W, H are assumed to be pixel units unless they have the suffix '%'.
-</pre>
+```
 type: rect  
 readonly: no  
 required: no  

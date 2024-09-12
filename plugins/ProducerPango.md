@@ -31,12 +31,12 @@ Environment variable MLT_PANGO_PRODUCER_CACHE could be used to override and incr
 
 title: File    
 description:
-<pre>
+```
 A text file containing Pango markup, see:
 https://developer.gnome.org/pango/stable/PangoMarkupFormat.html
 requires xml-like encoding special chars from:
 <, >, &   -to-   &lt;, &gt;, &amp;
-</pre>
+```
 type: string  
 readonly: no  
 required: no  
@@ -46,12 +46,12 @@ widget: fileopen
 
 title: Markup    
 description:
-<pre>
+```
 A string containing Pango markup see:
 http://developer.gnome.org/doc/API/2.0/pango/PangoMarkupFormat.html
 requires xml-like encoding special chars from:
 <, >, &   -to-   &lt;, &gt;, &amp;
-</pre>
+```
 type: string  
 readonly: no  
 required: no  
@@ -128,10 +128,10 @@ widget: spinner
 
 title: Text    
 description:
-<pre>
+```
 A non-markup string in UTF-8 encoding
 (can contain markup chars un-encoded)
-</pre>
+```
 type: string  
 readonly: no  
 required: no  
