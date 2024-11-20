@@ -7,57 +7,57 @@ permalink: /docs/opengl/
 
 ### Building
 
-The opengl module requires the movit library, which is not typically
+The movit module requires the movit library, which is not typically
 included with distributions as it is still very new (as of February,
-2013). git clone http://git.sesse.net/movit/ in order to get the movit
+2013). `git clone http://git.sesse.net/movit/` in order to get the movit
 source code. It might say that you need some things like gtest, libpng,
 and SDL, but not really for our needs. We only need Eigen3 and GLEW,
-which are very common. Then, you can run "CXXFLAGS-fPIC ./autogen.sh"
-with whatever additional parameters you like such as perhaps --prefix.
-It is important to put -fPIC into the CXXFLAGS because we are going to
-be linking the lib into a shared library as a MLT plugin. Finally, "make
-libmovit.a install" to build only the lib and not the unit tests and
+which are very common. Then, you can run `CXXFLAGS-fPIC ./autogen.sh`
+with whatever additional parameters you like such as perhaps `--prefix`.
+It is important to put `-fPIC` into the CXXFLAGS because we are going to
+be linking the lib into a shared library as a MLT plugin. Finally, `make
+libmovit.a install` to build only the lib and not the unit tests and
 demo program. Install is important because it will add a pkg-config file
-and put some runtime shader programs into $prefix/share (datadir). At
+and put some runtime shader programs into `$prefix/share` (datadir). At
 this point, MLT's configure should be able to detect libmovit.
 
 ### For Melt Users and Scripters
 
--   All opengl filters apply before any CPU-based ones.
--   opengl filters do not accept in & out points. Therefore, they apply
+-   All OpenGL filters apply before any CPU-based ones.
+-   OpenGL filters do not accept in & out points. Therefore, they apply
     to the entirety of a clip or track depending upon what it is
-    attached (with melt use -attach-clip to attach the filter to the
-    clip as -filter attaches to a track).
--   opengl filters are prefixed with either glsl. or movit. at
+    attached (with melt use `-attach-clip` to attach the filter to the
+    clip as `-filter` attaches to a track).
+-   OpenGL filters are prefixed with either `glsl.` or `movit.` at
     this time.
 -   There are no guaranteed CPU-based variants of each of these effects.
--   You need to use the qglsl consumer to render when using the melt
+-   You need to use the `qglsl` consumer to render when using the melt
     command line utility. The qglsl consumer acts like multi consumer
     but does not necessarily support every combination of consumer at
-    this time - only intended to drive avformat at this time.
--   melt and the xml producer will automatically use qglsl if they see
-    an explicit filter or transition that begins with movit. or glsl. in
+    this time - only intended to drive the `avformat` consumer at this time.
+-   `melt` and the `xml` producer will automatically use `qglsl` if they see
+    an explicit filter or transition that begins with `movit.` or `glsl.` in
     the command line or XML, but you can also force it by adding a
-    property glsl.=1 to anywhere on the command line. You can also force
-    it on the XML producer with a qglsl=1 query string parameter added
+    property `glsl.=1` to anywhere on the command line. You can also force
+    it on the XML producer with a `qglsl=1` query string parameter added
     to the XML filename. Of course, query string parameters break the
     file type by filename extension handling, and you will have to
     explicitly request the XML producer by prefacing the filename
-    with "xml:". For example, melt xml:myfile.mlt?qglsl=1
+    with "xml:". For example, `melt xml:myfile.mlt?qglsl=1`
 -   You should avoid adding any CPU filters between the GPU filters and
     a GPU transition, but that might be difficult to avoid.
--   The environment variable MLT_MOVIT_PATH tells MLT where the Movit
+-   The environment variable `MLT_MOVIT_PATH` tells MLT where the Movit
     shader program files are located in case you did not install them or
     move them after movit and MLT were last built.
--   Do not try to use parallel rendering threads with real_time &gt; 1
-    or real_time &lt; 1 at this time.
--   The xgl consumer only works on systems with X11, provides no sound,
+-   Do not try to use parallel rendering threads with consumer propery
+    `real_time` &gt; 1 or &lt; 1 at this time.
+-   The `xgl` consumer only works on systems with X11, provides no sound,
     and is generally only useful for troubleshooting and prototyping
-    with melt. You can also use "-consumer qglsl 0=sdl2" but that is
-    known to crash at exit - unless you run it in gdb :-  
+    with melt. You can also use `-consumer qglsl 0=sdl2` but that is
+    known to crash at exit.  
 -   If you are using WebVfx, then the qglsl is not compatible with
     qmelt, the simple Qt Application-based melt wrapper. Also, the
-    opengl module is generally incompatible with webvfx.
+    movit module is generally incompatible with webvfx.
 
 ### Services
 
@@ -79,7 +79,7 @@ this point, MLT's configure should be able to detect libmovit.
 * movit.mix (transition)
 * movit.overlay (transition)
 * qglsl consumer (a wrapper to multi consumer that uses Qt
-  to abstract platform-specific !OpenGL context)
+  to abstract platform-specific OpenGL context)
 * xgl consumer (X11 video-only)
 * glsl.manager (special filter used only by apps)
 
@@ -94,45 +94,42 @@ other words, the geometry parameter lives on a discrete movit.rect
 filter and movit.overlay simply composites. There is nothing at this
 time that does rotation or skewing.
 
-Use "melt -query" to get more information about these at this time
+Use `melt -query` to get more information about these at this time
 including properties.
 
 ### For App Developers
 
-Do not use mlt_image_opengl - that is legacy, deprecated and basically
-equivalent to rgba24.
-
-You will want to use !OpenGL as a display mechanism in your app to get
-the most benefit from this. That means you need to create an !OpenGL
+You will want to use OpenGL as a display mechanism in your app to get
+the most benefit from this. That means you need to create an OpenGL
 context for your display and another one that "shares" with it to use
 with MLT as the "render context."
 
 You must allocate a "glsl.manager" filter to determine first if the MLT
-build includes the opengl module. Next, you need to fire the MLT event
+build includes the movit module. Next, you need to fire the MLT event
 "init glsl" on this filter to let MLT test for GL extensions. However,
 it is important that you fire this event when the render context is
 valid and *current* on the thread on which rendering actually takes
 place! Therefore, there is a new MLT consumer event
 "consumer-thread-started" that you must handle. It is within this
 handler that you should make the render context current and fire "init
-glsl" on the glsl.manager. See src/modules/qimage/consumer_qglsl.cpp
+glsl" on the glsl.manager. See `src/modules/qimage/consumer_qglsl.cpp`
 for a simple example.
 
 After firing "init glsl" you can get the int-as-boolean property
-"glsl_supported" to determine if the !OpenGL subsystem on this computer
+"glsl_supported" to determine if the OpenGL subsystem on this computer
 is adequate. Lastly, you should have a consumer "consumer-frame-show"
-event handler that calls mlt_frame_get_image() or
-Mlt::Frame::get_image() on the supplied frame argument. You can give it
-any mlt_image_format, but if you want to integrate a GL texture
-rendered by MLT, then use mlt_image_glsl_texture. The returned image
+event handler that calls `mlt_frame_get_image()` or
+`Mlt::Frame::get_image()` on the supplied frame argument. You can give it
+any `mlt_image_format`, but if you want to integrate a GL texture
+rendered by MLT, then use `mlt_image_opengl_texture`. The returned image
 image pointer must be cast to a pointer to GLuint, which contains the
-texture name. If you are using real_time = 1 or -1, then the app's
-display GL context can be current, but if you are using real_time = 0,
+texture name. If you are using `real_time` = 1 or -1, then the app's
+display GL context can be current, but if you are using `real_time` = 0,
 then the render context must be current.
 
 Just as the "init glsl" event must be fired on the thread on the
 glsl.manager filter on the rendering thread, you should also fire "close
-glsl" on the rendering thread before destroying the !OpenGL context.
+glsl" on the rendering thread before destroying the OpenGL context.
 This will make it deallocate any frame buffer, pixel buffer, and texture
 objects that it has created. Typically, you do this inside of a
 "consumer-thread-stopped" MLT event listener so that it is performed on
@@ -167,9 +164,9 @@ first two MLT event handler arguments:
 handle is a return variable that is the thread context object pointer
 equivalent to pthread_t or QThread.
 
-Priority is a the POSIX sched_priority
+Priority is a the POSIX `sched_priority`
 
-thread_function_t is a function pointer with the following signature:
+`thread_function_t` is a function pointer with the following signature:
 `void* f(void *data)`
 
 Data is an opaque pointer passed to the function pointer.
@@ -177,7 +174,7 @@ Data is an opaque pointer passed to the function pointer.
 Your new thread must run function(data).
 
 The second event is "consumer-thread-join" on the consumer object. The
-event handler should wait for the thread to complete (pthread\_join) and
+event handler should wait for the thread to complete (`pthread_join`) and
 thencleanup the thread resources including destructing the handle. The
 event provides one additional argument in addition to the standard first
 two MLT event handler arguments:
@@ -185,20 +182,20 @@ two MLT event handler arguments:
 
 #### Synchronization
 
-As of January 12, 2014, the opengl module no longer calls glFinish() due
+As of January 12, 2014, the movit module no longer calls `glFinish()` due
 to unwanted side effects. If you are using rendering to GL textures
-using mlt_image_glsl_texture and using them from another thread - for
+using `mlt_image_opengl_texture` and using them from another thread - for
 example, for display - then you need to synchronize on a
 [GL fence sync object](http://www.opengl.org/wiki/Sync_Object).
-Basically, after you call mlt_frame_get_image() or
-Mlt::Frame::get_image(), and before trying to use the texture ID with a
+Basically, after you call `mlt_frame_get_image()` or
+`Mlt::Frame::get_image()`, and before trying to use the texture ID with a
 GL function, then you need to get the sync object pointer from the
-frame's movit.convert.fence data property and call
+frame's "movit.convert.fence" data property and call
 [glClientWaitSync()](http://www.opengl.org/sdk/docs/man3/xhtml/glClientWaitSync.xml)
 on it:
 
-~~~
+```c++
 GLsync sync = (GLsync) frame.get_data("movit.convert.fence");
 if (sync)
     glClientWaitSync(sync, 0, GL_TIMEOUT_IGNORED);
-~~~
+```
