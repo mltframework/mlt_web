@@ -116,16 +116,13 @@ wrap_title: Link Plugins
 * [avfilter.deinterlace_vaapi](../LinkAvfilter-deinterlace_vaapi/): deinterlace_vaapi
 * [avfilter.delogo](../LinkAvfilter-delogo/): delogo
 * [avfilter.denoise_vaapi](../LinkAvfilter-denoise_vaapi/): denoise_vaapi
-* [avfilter.derain](../LinkAvfilter-derain/): derain
 * [avfilter.deshake](../LinkAvfilter-deshake/): deshake
 * [avfilter.despill](../LinkAvfilter-despill/): despill
 * [avfilter.dialoguenhance](../LinkAvfilter-dialoguenhance/): dialoguenhance
 * [avfilter.dilation](../LinkAvfilter-dilation/): dilation
-* [avfilter.dnn_classify](../LinkAvfilter-dnn_classify/): dnn_classify
-* [avfilter.dnn_detect](../LinkAvfilter-dnn_detect/): dnn_detect
-* [avfilter.dnn_processing](../LinkAvfilter-dnn_processing/): dnn_processing
 * [avfilter.doubleweave](../LinkAvfilter-doubleweave/): doubleweave
 * [avfilter.drawbox](../LinkAvfilter-drawbox/): drawbox
+* [avfilter.drawbox_vaapi](../LinkAvfilter-drawbox_vaapi/): drawbox_vaapi
 * [avfilter.drawgraph](../LinkAvfilter-drawgraph/): drawgraph
 * [avfilter.drawgrid](../LinkAvfilter-drawgrid/): drawgrid
 * [avfilter.drmeter](../LinkAvfilter-drmeter/): drmeter
@@ -177,6 +174,7 @@ wrap_title: Link Plugins
 * [avfilter.hwdownload](../LinkAvfilter-hwdownload/): hwdownload
 * [avfilter.hwmap](../LinkAvfilter-hwmap/): hwmap
 * [avfilter.hwupload](../LinkAvfilter-hwupload/): hwupload
+* [avfilter.hwupload_cuda](../LinkAvfilter-hwupload_cuda/): hwupload_cuda
 * [avfilter.idet](../LinkAvfilter-idet/): idet
 * [avfilter.il](../LinkAvfilter-il/): il
 * [avfilter.inflate](../LinkAvfilter-inflate/): inflate
@@ -209,6 +207,7 @@ wrap_title: Link Plugins
 * [avfilter.oscilloscope](../LinkAvfilter-oscilloscope/): oscilloscope
 * [avfilter.owdenoise](../LinkAvfilter-owdenoise/): owdenoise
 * [avfilter.pad](../LinkAvfilter-pad/): pad
+* [avfilter.pad_vaapi](../LinkAvfilter-pad_vaapi/): pad_vaapi
 * [avfilter.perspective](../LinkAvfilter-perspective/): perspective
 * [avfilter.phase](../LinkAvfilter-phase/): phase
 * [avfilter.photosensitivity](../LinkAvfilter-photosensitivity/): photosensitivity
@@ -247,7 +246,6 @@ wrap_title: Link Plugins
 * [avfilter.sobel](../LinkAvfilter-sobel/): sobel
 * [avfilter.speechnorm](../LinkAvfilter-speechnorm/): speechnorm
 * [avfilter.spp](../LinkAvfilter-spp/): spp
-* [avfilter.sr](../LinkAvfilter-sr/): sr
 * [avfilter.stereo3d](../LinkAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../LinkAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../LinkAvfilter-stereowiden/): stereowiden

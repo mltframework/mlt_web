@@ -13,7 +13,7 @@ title: lutrgb
 media types:
 Video  
 description: Compute and apply a lookup table to the RGB input video.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

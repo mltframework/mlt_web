@@ -128,16 +128,13 @@ wrap_title: Filter Plugins
 * [avfilter.deinterlace_vaapi](../FilterAvfilter-deinterlace_vaapi/): deinterlace_vaapi
 * [avfilter.delogo](../FilterAvfilter-delogo/): delogo
 * [avfilter.denoise_vaapi](../FilterAvfilter-denoise_vaapi/): denoise_vaapi
-* [avfilter.derain](../FilterAvfilter-derain/): derain
 * [avfilter.deshake](../FilterAvfilter-deshake/): deshake
 * [avfilter.despill](../FilterAvfilter-despill/): despill
 * [avfilter.dialoguenhance](../FilterAvfilter-dialoguenhance/): dialoguenhance
 * [avfilter.dilation](../FilterAvfilter-dilation/): dilation
-* [avfilter.dnn_classify](../FilterAvfilter-dnn_classify/): dnn_classify
-* [avfilter.dnn_detect](../FilterAvfilter-dnn_detect/): dnn_detect
-* [avfilter.dnn_processing](../FilterAvfilter-dnn_processing/): dnn_processing
 * [avfilter.doubleweave](../FilterAvfilter-doubleweave/): doubleweave
 * [avfilter.drawbox](../FilterAvfilter-drawbox/): drawbox
+* [avfilter.drawbox_vaapi](../FilterAvfilter-drawbox_vaapi/): drawbox_vaapi
 * [avfilter.drawgraph](../FilterAvfilter-drawgraph/): drawgraph
 * [avfilter.drawgrid](../FilterAvfilter-drawgrid/): drawgrid
 * [avfilter.drmeter](../FilterAvfilter-drmeter/): drmeter
@@ -189,6 +186,7 @@ wrap_title: Filter Plugins
 * [avfilter.hwdownload](../FilterAvfilter-hwdownload/): hwdownload
 * [avfilter.hwmap](../FilterAvfilter-hwmap/): hwmap
 * [avfilter.hwupload](../FilterAvfilter-hwupload/): hwupload
+* [avfilter.hwupload_cuda](../FilterAvfilter-hwupload_cuda/): hwupload_cuda
 * [avfilter.idet](../FilterAvfilter-idet/): idet
 * [avfilter.il](../FilterAvfilter-il/): il
 * [avfilter.inflate](../FilterAvfilter-inflate/): inflate
@@ -221,6 +219,7 @@ wrap_title: Filter Plugins
 * [avfilter.oscilloscope](../FilterAvfilter-oscilloscope/): oscilloscope
 * [avfilter.owdenoise](../FilterAvfilter-owdenoise/): owdenoise
 * [avfilter.pad](../FilterAvfilter-pad/): pad
+* [avfilter.pad_vaapi](../FilterAvfilter-pad_vaapi/): pad_vaapi
 * [avfilter.perspective](../FilterAvfilter-perspective/): perspective
 * [avfilter.phase](../FilterAvfilter-phase/): phase
 * [avfilter.photosensitivity](../FilterAvfilter-photosensitivity/): photosensitivity
@@ -259,7 +258,6 @@ wrap_title: Filter Plugins
 * [avfilter.sobel](../FilterAvfilter-sobel/): sobel
 * [avfilter.speechnorm](../FilterAvfilter-speechnorm/): speechnorm
 * [avfilter.spp](../FilterAvfilter-spp/): spp
-* [avfilter.sr](../FilterAvfilter-sr/): sr
 * [avfilter.stereo3d](../FilterAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../FilterAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../FilterAvfilter-stereowiden/): stereowiden

@@ -13,7 +13,7 @@ title: silencedetect
 media types:
 Audio  
 description: Detect silence.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: biquad
 media types:
 Audio  
 description: Apply a biquad IIR filter with the given coefficients.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

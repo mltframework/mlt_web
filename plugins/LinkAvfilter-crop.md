@@ -13,7 +13,7 @@ title: crop
 media types:
 Video  
 description: Crop the input video.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

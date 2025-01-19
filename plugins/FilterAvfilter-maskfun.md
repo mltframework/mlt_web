@@ -13,7 +13,7 @@ title: maskfun
 media types:
 Video  
 description: Create Mask.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

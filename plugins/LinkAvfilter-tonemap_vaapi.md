@@ -13,7 +13,7 @@ title: tonemap_vaapi
 media types:
 Video  
 description: VAAPI VPP for tone-mapping  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -81,6 +81,24 @@ required: no
   
 description:
 Output color transfer characteristics set  
+type: string  
+readonly: no  
+required: no  
+
+### av.display
+
+  
+description:
+set mastering display colour volume  
+type: string  
+readonly: no  
+required: no  
+
+### av.light
+
+  
+description:
+set content light level information  
 type: string  
 readonly: no  
 required: no  

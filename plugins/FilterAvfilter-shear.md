@@ -13,7 +13,7 @@ title: shear
 media types:
 Video  
 description: Shear transform the input image.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

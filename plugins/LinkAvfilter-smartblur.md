@@ -13,7 +13,7 @@ title: smartblur
 media types:
 Video  
 description: Blur the input video without impacting the outlines.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -159,6 +159,78 @@ default: -31
   
 description:
 set chroma threshold  
+type: integer  
+readonly: no  
+required: no  
+minimum: -31  
+maximum: 30  
+default: -31  
+
+### av.alpha_radius
+
+  
+description:
+set alpha radius  
+type: float  
+readonly: no  
+required: no  
+minimum: -0.9  
+maximum: 5  
+default: -0.9  
+
+### av.ar
+
+  
+description:
+set alpha radius  
+type: float  
+readonly: no  
+required: no  
+minimum: -0.9  
+maximum: 5  
+default: -0.9  
+
+### av.alpha_strength
+
+  
+description:
+set alpha strength  
+type: float  
+readonly: no  
+required: no  
+minimum: -2  
+maximum: 1  
+default: -2  
+
+### av.as
+
+  
+description:
+set alpha strength  
+type: float  
+readonly: no  
+required: no  
+minimum: -2  
+maximum: 1  
+default: -2  
+
+### av.alpha_threshold
+
+  
+description:
+set alpha threshold  
+type: integer  
+readonly: no  
+required: no  
+minimum: -31  
+maximum: 30  
+default: -31  
+
+### av.at
+
+  
+description:
+set alpha threshold  
 type: integer  
 readonly: no  
 required: no  

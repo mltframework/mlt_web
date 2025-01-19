@@ -155,7 +155,7 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: -nan  
+default: 1  
 widget: spinner  
 
 ### 10

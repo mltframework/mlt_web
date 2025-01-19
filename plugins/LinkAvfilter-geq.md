@@ -13,7 +13,7 @@ title: geq
 media types:
 Video  
 description: Apply generic equation to each pixel.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

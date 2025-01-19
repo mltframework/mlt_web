@@ -13,7 +13,7 @@ title: nnedi
 media types:
 Video  
 description: Apply neural network edge directed interpolation intra-only deinterlacer.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

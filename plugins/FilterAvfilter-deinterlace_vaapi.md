@@ -13,7 +13,7 @@ title: deinterlace_vaapi
 media types:
 Video  
 description: Deinterlacing of VAAPI surfaces  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: vaguedenoiser
 media types:
 Video  
 description: Apply a Wavelet based Denoiser.  
-version: Lavfi10.1.100  
+version: Lavfi10.4.100  
 creator: libavfilter maintainers  
 
 ## Notes
