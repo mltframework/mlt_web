@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Documentation
-wrap_title: "Filter: frei0r.bigsh0t_eq_to_rect"
+wrap_title: "Filter: frei0r.mirr0r"
 category: plugin
 ---
 * TOC
@@ -9,18 +9,20 @@ category: plugin
 
 ## Plugin Information
 
-title: bigsh0t_eq_to_rect  
+title: Mirr0r  
 media types:
 Video  
-description: Extracts a rectilinear image from an equirectangular.  
-version: 2.7  
-creator: Leo Sutic <leo@sutic.nu>  
+description: Repeats and flips the input image when it goes out of bounds, allowing for adjustable offset, zoom and rotation. A versatile tool for creative video effects.  
+version: 1  
+creator: Johann JEG  
 
 ## Parameters
 
 ### 0
 
-title: yaw    
+title: x_offset    
+description:
+Horizontal offset for image positioning.  
 type: float  
 readonly: no  
 required: no  
@@ -32,7 +34,9 @@ widget: spinner
 
 ### 1
 
-title: pitch    
+title: y_offset    
+description:
+Vertical offset for image positioning.  
 type: float  
 readonly: no  
 required: no  
@@ -44,31 +48,23 @@ widget: spinner
 
 ### 2
 
-title: roll    
+title: zoom    
+description:
+Zoom level for image scaling.  
 type: float  
 readonly: no  
 required: no  
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 0.5  
 widget: spinner  
 
 ### 3
 
-title: fov    
-type: float  
-readonly: no  
-required: no  
-animation: yes  
-minimum: 0  
-maximum: 1  
-default: 1  
-widget: spinner  
-
-### 4
-
-title: fisheye    
+title: rotation    
+description:
+Rotation angle in degrees.  
 type: float  
 readonly: no  
 required: no  
@@ -76,17 +72,5 @@ animation: yes
 minimum: 0  
 maximum: 1  
 default: 0  
-widget: spinner  
-
-### 5
-
-title: interpolation    
-type: float  
-readonly: no  
-required: no  
-animation: yes  
-minimum: 0  
-maximum: 1  
-default: 1  
 widget: spinner  
 

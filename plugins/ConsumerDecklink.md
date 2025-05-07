@@ -13,9 +13,9 @@ title: Blackmagic Design DeckLink Output
 media types:
 Audio  Video  
 description: Output audio and video using Blackmagic Design DeckLink SDI or Intensity HDMI cards.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
-copyright: Copyright (C) 2010-2018 Meltytech, LLC  
+copyright: Copyright (C) 2010-2025 Meltytech, LLC  
 license: LGPL  
 
 ## Notes

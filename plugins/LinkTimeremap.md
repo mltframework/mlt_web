@@ -24,7 +24,7 @@ license: LGPLv2.1
 
 title: Time Map    
 description:
-A map of input frame times to output frame times. Ignore if speed_map is set.  
+A map of input frame times to output frame times. Ignored if speed_map is set.  
 type: float  
 readonly: no  
 required: no  
@@ -57,6 +57,7 @@ The image mode to use.
 type: string  
 readonly: no  
 required: no  
+default: nearest  
 values:  
 
 * nearest
@@ -70,4 +71,12 @@ The instantaneous speed of the last frame that was processed.
 type: float  
 readonly: yes  
 required: no  
+
+### pitch
+
+title: Pitch Compensation    
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
 

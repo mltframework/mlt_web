@@ -13,7 +13,7 @@ title: bigsh0t_eq_to_stereo
 media types:
 Video  
 description: Projects a stereographic image from an equirectangular.  
-version: 2.6  
+version: 2.7  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters

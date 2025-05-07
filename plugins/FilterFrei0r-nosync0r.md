@@ -32,3 +32,17 @@ maximum: 1
 default: 0  
 widget: spinner  
 
+### 1
+
+title: VSync    
+description:
+the vsync offset  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: spinner  
+

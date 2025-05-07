@@ -71,5 +71,6 @@ wrap_title: Producer Plugins
 * [tone](../ProducerTone/): Tone
 * [vorbis](../ProducerVorbis/): Ogg Vorbis
 * [xml](../ProducerXml/): XML File
+* [xml-clip](../ProducerXml-clip/): An XML clip producer
 * [xml-nogl](../ProducerXml-nogl/): XML without OpenGL
 * [xml-string](../ProducerXml-string/): XML String

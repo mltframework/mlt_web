@@ -13,7 +13,7 @@ title: bigsh0t_transform_360
 media types:
 Video  
 description: Rotates an equirectangular map.  
-version: 2.6  
+version: 2.7  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters

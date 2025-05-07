@@ -13,7 +13,7 @@ title: pixeliz0r
 media types:
 Video  
 description: Pixelize input image.  
-version: 1  
+version: 2  
 creator: Gephex crew  
 
 ## Parameters
@@ -45,4 +45,18 @@ minimum: 0
 maximum: 1  
 default: 0.0243056  
 widget: spinner  
+
+### 2
+
+title: Pass-through alpha    
+description:
+Do not average the alpha channel over each block  
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 0  
+widget: checkbox  
 

@@ -13,7 +13,7 @@ title: bigsh0t_stabilize_360
 media types:
 Video  
 description: Stabilizes 360 equirectangular footage.  
-version: 2.6  
+version: 2.7  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters

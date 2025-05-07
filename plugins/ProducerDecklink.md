@@ -13,9 +13,9 @@ title: Blackmagic Design DeckLink Capture
 media types:
 Audio  Video  
 description: Capture video and audio using Blackmagic Design DeckLink SDI or Intensity HDMI cards.  
-version: 1  
+version: 3  
 creator: Dan Dennedy  
-copyright: Copyright (C) 2011-2018 Meltytech, LLC  
+copyright: Copyright (C) 2011-2025 Meltytech, LLC  
 license: LGPL  
 
 ## Notes

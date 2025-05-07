@@ -13,7 +13,7 @@ title: bigsh0t_rect_to_eq
 media types:
 Video  
 description: Converts a rectilinear image to an equirectangular map.  
-version: 2.6  
+version: 2.7  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters
@@ -51,6 +51,6 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 6.61647e-311  
+default: 1.4e-322  
 widget: spinner  
 

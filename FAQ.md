@@ -86,7 +86,7 @@ More advanced stuff can be done if you hand author XML like:
     <property name="markup">Audio Mix</property>
     <property name="mlt_service">pango</property>
     <property name="meta.fx_cut">1</property>
- <filter mlt_service="transition" transition="mix">
+    <filter mlt_service="transition" transition="mix">
       <property name="start">0.5</property>
     </filter>
   </producer>

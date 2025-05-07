@@ -13,7 +13,7 @@ title: bigsh0t_hemi_to_eq
 media types:
 Video  
 description: Transforms dual-hemisphere video to equirectangular.  
-version: 2.6  
+version: 2.7  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters

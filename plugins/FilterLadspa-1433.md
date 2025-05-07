@@ -31,18 +31,7 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 
 ### 0
 
-title: Enabled    
-type: boolean  
-readonly: no  
-required: no  
-animation: yes  
-minimum: 0  
-maximum: 1  
-default: 1  
-
-### 1
-
-title: Pitch shift (Frequency)    
+title: Pitch shift    
 type: float  
 readonly: no  
 required: no  
@@ -52,18 +41,7 @@ maximum: 4
 default: 1  
 scale: log  
 
-### 2
-
-title: Pitch shift (Cents)    
-type: integer  
-readonly: no  
-required: no  
-animation: yes  
-minimum: -100  
-maximum: 100  
-default: 0  
-
-### 3
+### 1
 
 title: Buffer size    
 type: integer  
@@ -74,7 +52,7 @@ minimum: 1
 maximum: 7  
 default: 4  
 
-### 6[*]
+### 4[*]
 
 title: latency    
 type: float  

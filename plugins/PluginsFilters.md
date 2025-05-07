@@ -128,10 +128,14 @@ wrap_title: Filter Plugins
 * [avfilter.deinterlace_vaapi](../FilterAvfilter-deinterlace_vaapi/): deinterlace_vaapi
 * [avfilter.delogo](../FilterAvfilter-delogo/): delogo
 * [avfilter.denoise_vaapi](../FilterAvfilter-denoise_vaapi/): denoise_vaapi
+* [avfilter.derain](../FilterAvfilter-derain/): derain
 * [avfilter.deshake](../FilterAvfilter-deshake/): deshake
 * [avfilter.despill](../FilterAvfilter-despill/): despill
 * [avfilter.dialoguenhance](../FilterAvfilter-dialoguenhance/): dialoguenhance
 * [avfilter.dilation](../FilterAvfilter-dilation/): dilation
+* [avfilter.dnn_classify](../FilterAvfilter-dnn_classify/): dnn_classify
+* [avfilter.dnn_detect](../FilterAvfilter-dnn_detect/): dnn_detect
+* [avfilter.dnn_processing](../FilterAvfilter-dnn_processing/): dnn_processing
 * [avfilter.doubleweave](../FilterAvfilter-doubleweave/): doubleweave
 * [avfilter.drawbox](../FilterAvfilter-drawbox/): drawbox
 * [avfilter.drawbox_vaapi](../FilterAvfilter-drawbox_vaapi/): drawbox_vaapi
@@ -186,7 +190,6 @@ wrap_title: Filter Plugins
 * [avfilter.hwdownload](../FilterAvfilter-hwdownload/): hwdownload
 * [avfilter.hwmap](../FilterAvfilter-hwmap/): hwmap
 * [avfilter.hwupload](../FilterAvfilter-hwupload/): hwupload
-* [avfilter.hwupload_cuda](../FilterAvfilter-hwupload_cuda/): hwupload_cuda
 * [avfilter.idet](../FilterAvfilter-idet/): idet
 * [avfilter.il](../FilterAvfilter-il/): il
 * [avfilter.inflate](../FilterAvfilter-inflate/): inflate
@@ -258,6 +261,7 @@ wrap_title: Filter Plugins
 * [avfilter.sobel](../FilterAvfilter-sobel/): sobel
 * [avfilter.speechnorm](../FilterAvfilter-speechnorm/): speechnorm
 * [avfilter.spp](../FilterAvfilter-spp/): spp
+* [avfilter.sr](../FilterAvfilter-sr/): sr
 * [avfilter.stereo3d](../FilterAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../FilterAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../FilterAvfilter-stereowiden/): stereowiden
@@ -376,10 +380,10 @@ wrap_title: Filter Plugins
 * [frei0r.elastic_scale](../FilterFrei0r-elastic_scale/): Elastic scale filter
 * [frei0r.emboss](../FilterFrei0r-emboss/): emboss
 * [frei0r.equaliz0r](../FilterFrei0r-equaliz0r/): Equaliz0r
-* [frei0r.facebl0r](../FilterFrei0r-facebl0r/): FaceBl0r
-* [frei0r.facedetect](../FilterFrei0r-facedetect/): opencvfacedetect
+* [frei0r.filmgrain](../FilterFrei0r-filmgrain/): Film Grain
 * [frei0r.flippo](../FilterFrei0r-flippo/): Flippo
 * [frei0r.gamma](../FilterFrei0r-gamma/): Gamma
+* [frei0r.gateweave](../FilterFrei0r-gateweave/): Gate Weave
 * [frei0r.glitch0r](../FilterFrei0r-glitch0r/): Glitch0r
 * [frei0r.glow](../FilterFrei0r-glow/): Glow
 * [frei0r.hqdn3d](../FilterFrei0r-hqdn3d/): hqdn3d
@@ -396,6 +400,7 @@ wrap_title: Filter Plugins
 * [frei0r.measure_pr0be](../FilterFrei0r-measure_pr0be/): pr0be
 * [frei0r.measure_pr0file](../FilterFrei0r-measure_pr0file/): pr0file
 * [frei0r.medians](../FilterFrei0r-medians/): Medians
+* [frei0r.mirr0r](../FilterFrei0r-mirr0r/): Mirr0r
 * [frei0r.ndvi](../FilterFrei0r-ndvi/): NDVI filter
 * [frei0r.nervous](../FilterFrei0r-nervous/): Nervous
 * [frei0r.normaliz0r](../FilterFrei0r-normaliz0r/): Normaliz0r
@@ -408,10 +413,8 @@ wrap_title: Filter Plugins
 * [frei0r.premultiply](../FilterFrei0r-premultiply/): Premultiply or Unpremultiply
 * [frei0r.primaries](../FilterFrei0r-primaries/): primaries
 * [frei0r.rgbnoise](../FilterFrei0r-rgbnoise/): rgbnoise
-* [frei0r.rgbparade](../FilterFrei0r-rgbparade/): RGB-Parade
 * [frei0r.rgbsplit0r](../FilterFrei0r-rgbsplit0r/): rgbsplit0r
 * [frei0r.saturat0r](../FilterFrei0r-saturat0r/): Saturat0r
-* [frei0r.scale0tilt](../FilterFrei0r-scale0tilt/): Scale0Tilt
 * [frei0r.scanline0r](../FilterFrei0r-scanline0r/): scanline0r
 * [frei0r.select0r](../FilterFrei0r-select0r/): select0r
 * [frei0r.sharpness](../FilterFrei0r-sharpness/): Sharpness
@@ -430,17 +433,19 @@ wrap_title: Filter Plugins
 * [frei0r.tint0r](../FilterFrei0r-tint0r/): Tint0r
 * [frei0r.transparency](../FilterFrei0r-transparency/): Transparency
 * [frei0r.twolay0r](../FilterFrei0r-twolay0r/): Twolay0r
-* [frei0r.vectorscope](../FilterFrei0r-vectorscope/): Vectorscope
 * [frei0r.vertigo](../FilterFrei0r-vertigo/): Vertigo
 * [frei0r.vignette](../FilterFrei0r-vignette/): Vignette
 * [gamma](../FilterGamma/): Gamma
 * [glsl.manager](../FilterGlsl-manager/): 
 * [gpsgraphic](../FilterGpsgraphic/): GPS Graphic
 * [gpstext](../FilterGpstext/): GPS Text
+* [gradientmap](../FilterGradientmap/): Gradient Map
 * [grain](../FilterGrain/): Grain
 * [grayscale](../FilterGrayscale/): Greyscale
 * [greyscale](../FilterGreyscale/): Greyscale
 * [gtkrescale](../FilterGtkrescale/): Gtk Rescale
+* [hslprimaries](../FilterHslprimaries/): HSL Primaries
+* [hslrange](../FilterHslrange/): HSL Range
 * [imageconvert](../FilterImageconvert/): Basic Image Converter
 * [invert](../FilterInvert/): Invert
 * [jack](../FilterJack/): JACK
@@ -454,44 +459,6 @@ wrap_title: Filter Plugins
 * [ladspa.1046](../FilterLadspa-1046/): Sine Oscillator (Freq:control, Amp:audio)
 * [ladspa.1048](../FilterLadspa-1048/): Mono Amplifier
 * [ladspa.1049](../FilterLadspa-1049/): Stereo Amplifier
-* [ladspa.1051](../FilterLadspa-1051/): Low Pass Filter (One Pole)
-* [ladspa.1052](../FilterLadspa-1052/): High Pass Filter (One Pole)
-* [ladspa.1053](../FilterLadspa-1053/): Echo Delay Line (Maximum Delay 0.01s)
-* [ladspa.1054](../FilterLadspa-1054/): Echo Delay Line (Maximum Delay 0.1s)
-* [ladspa.1055](../FilterLadspa-1055/): Echo Delay Line (Maximum Delay 1s)
-* [ladspa.1056](../FilterLadspa-1056/): Echo Delay Line (Maximum Delay 5s)
-* [ladspa.1057](../FilterLadspa-1057/): Echo Delay Line (Maximum Delay 60s)
-* [ladspa.1058](../FilterLadspa-1058/): Feedback Delay Line (Maximum Delay 0.01s)
-* [ladspa.1059](../FilterLadspa-1059/): Feedback Delay Line (Maximum Delay 0.1s)
-* [ladspa.1060](../FilterLadspa-1060/): Feedback Delay Line (Maximum Delay 1s)
-* [ladspa.1061](../FilterLadspa-1061/): Feedback Delay Line (Maximum Delay 5s)
-* [ladspa.1062](../FilterLadspa-1062/): Feedback Delay Line (Maximum Delay 60s)
-* [ladspa.1063](../FilterLadspa-1063/): Sine Oscillator (Freq:audio, Amp:audio)
-* [ladspa.1064](../FilterLadspa-1064/): Sine Oscillator (Freq:audio, Amp:control)
-* [ladspa.1065](../FilterLadspa-1065/): Sine Oscillator (Freq:control, Amp:audio)
-* [ladspa.1067](../FilterLadspa-1067/): Amplifier (Mono)
-* [ladspa.1068](../FilterLadspa-1068/): Amplifier (Stereo)
-* [ladspa.1070](../FilterLadspa-1070/): Amplitude Modulator
-* [ladspa.1071](../FilterLadspa-1071/): Mixer (Stereo to Mono)
-* [ladspa.1072](../FilterLadspa-1072/): Simple Compressor (Peak Envelope Tracking)
-* [ladspa.1073](../FilterLadspa-1073/): Simple Compressor (RMS Envelope Tracking)
-* [ladspa.1074](../FilterLadspa-1074/): Simple Expander (Peak Envelope Tracking)
-* [ladspa.1075](../FilterLadspa-1075/): Simple Expander (RMS Envelope Tracking)
-* [ladspa.1076](../FilterLadspa-1076/): Simple Limiter (Peak Envelope Tracking)
-* [ladspa.1077](../FilterLadspa-1077/): Simple Limiter (RMS Envelope Tracking)
-* [ladspa.1087](../FilterLadspa-1087/): Ambisonic Encoder (B-Format)
-* [ladspa.1088](../FilterLadspa-1088/): Ambisonic Encoder (FMH-Format)
-* [ladspa.1089](../FilterLadspa-1089/): FMH-Format to B-Format (Discards RSTUV Channels)
-* [ladspa.1090](../FilterLadspa-1090/): Ambisonic Decoder (B-Format to Stereo)
-* [ladspa.1091](../FilterLadspa-1091/): Ambisonic Decoder (B-Format to Quad)
-* [ladspa.1092](../FilterLadspa-1092/): Ambisonic Decoder (B-Format to Cube)
-* [ladspa.1093](../FilterLadspa-1093/): Ambisonic Decoder (FMH-Format to Octagon)
-* [ladspa.1094](../FilterLadspa-1094/): Ambisonic Rotation (B-Format, Horizontal)
-* [ladspa.1095](../FilterLadspa-1095/): Ambisonic Rotation (FMH-Format, Horizontal)
-* [ladspa.1096](../FilterLadspa-1096/): Granular Scatter Processor
-* [ladspa.1097](../FilterLadspa-1097/): Wave Shaper (Sine-Based)
-* [ladspa.1098](../FilterLadspa-1098/): Identity (Audio)
-* [ladspa.1123](../FilterLadspa-1123/): Freeverb (Version 3)
 * [ladspa.1181](../FilterLadspa-1181/): Simple amplifier
 * [ladspa.1185](../FilterLadspa-1185/): Diode Processor
 * [ladspa.1186](../FilterLadspa-1186/): Audio Divider (Suboctave Generator)
@@ -528,9 +495,6 @@ wrap_title: Filter Plugins
 * [ladspa.1218](../FilterLadspa-1218/): 4 x 4 pole allpass
 * [ladspa.1219](../FilterLadspa-1219/): Auto phaser
 * [ladspa.1220](../FilterLadspa-1220/): Harmonic generator
-* [ladspa.1224](../FilterLadspa-1224/): VCF 303
-* [ladspa.1225](../FilterLadspa-1225/): Canyon Delay
-* [ladspa.1227](../FilterLadspa-1227/): Lo Fi
 * [ladspa.1337](../FilterLadspa-1337/): Vocoder
 * [ladspa.1401](../FilterLadspa-1401/): Surround matrix encoder
 * [ladspa.1402](../FilterLadspa-1402/): Delayorama
@@ -570,46 +534,6 @@ wrap_title: Filter Plugins
 * [ladspa.1439](../FilterLadspa-1439/): Gong beater
 * [ladspa.1440](../FilterLadspa-1440/): Hilbert transformer
 * [ladspa.1605](../FilterLadspa-1605/): Reverse Delay (5s max)
-* [ladspa.1641](../FilterLadspa-1641/): Bandlimited Sawtooth Oscillator (FA)
-* [ladspa.1643](../FilterLadspa-1643/): Bandlimited Square Oscillator (FA)
-* [ladspa.1645](../FilterLadspa-1645/): Bandlimited Variable Width Pulse Oscillator (FAPA)
-* [ladspa.1646](../FilterLadspa-1646/): Bandlimited Variable Width Pulse Oscillator (FAPC)
-* [ladspa.1647](../FilterLadspa-1647/): Bandlimited Variable Width Pulse Oscillator (FCPA)
-* [ladspa.1649](../FilterLadspa-1649/): Bandlimited Variable Slope Triangle Oscillator (FASA)
-* [ladspa.1650](../FilterLadspa-1650/): Bandlimited Variable Slope Triangle Oscillator (FASC)
-* [ladspa.1651](../FilterLadspa-1651/): Bandlimited Variable Slope Triangle Oscillator (FCSA)
-* [ladspa.1653](../FilterLadspa-1653/): ADSR Envelope
-* [ladspa.1654](../FilterLadspa-1654/): Amplifier (GAIA)
-* [ladspa.1655](../FilterLadspa-1655/): Amplifier (GCIA)
-* [ladspa.1656](../FilterLadspa-1656/): Frequency Modulator (FAMA)
-* [ladspa.1657](../FilterLadspa-1657/): Frequency Modulator (FAMC)
-* [ladspa.1658](../FilterLadspa-1658/): Frequency Modulator (FCMA)
-* [ladspa.1661](../FilterLadspa-1661/): Random Wave Generator (FASA)
-* [ladspa.1662](../FilterLadspa-1662/): Random Wave Generator (FASC)
-* [ladspa.1663](../FilterLadspa-1663/): Random Wave Generator (FCSA)
-* [ladspa.1665](../FilterLadspa-1665/): Signal Sum (IAIA)
-* [ladspa.1666](../FilterLadspa-1666/): Signal Sum (IAIC)
-* [ladspa.1668](../FilterLadspa-1668/): Signal Product (IAIA)
-* [ladspa.1669](../FilterLadspa-1669/): Signal Product (IAIC)
-* [ladspa.1671](../FilterLadspa-1671/): 4 Pole Low-Pass Filter with Resonance (FARAIA)
-* [ladspa.1672](../FilterLadspa-1672/): 4 Pole Low-Pass Filter with Resonance (FCRCIA)
-* [ladspa.1673](../FilterLadspa-1673/): Signal Branch (IA)
-* [ladspa.1675](../FilterLadspa-1675/): Analogue Style 64 Step Sequencer
-* [ladspa.1676](../FilterLadspa-1676/): Analogue Style 32 Step Sequencer
-* [ladspa.1677](../FilterLadspa-1677/): Analogue Style 16 Step Sequencer
-* [ladspa.1678](../FilterLadspa-1678/): Clock Oscillator with Gate (FAGA)
-* [ladspa.1679](../FilterLadspa-1679/): Clock Oscillator with Gate (FCGA)
-* [ladspa.1680](../FilterLadspa-1680/): ADSR Envelope with Gate and Trigger
-* [ladspa.1767](../FilterLadspa-1767/): C* ChorusI - Mono chorus/flanger
-* [ladspa.1771](../FilterLadspa-1771/): C* Saturate - Various static nonlinearities, 8x oversampled
-* [ladspa.1772](../FilterLadspa-1772/): C* Compress - Compressor and saturating limiter
-* [ladspa.1773](../FilterLadspa-1773/): C* Eq10 - 10-band equaliser
-* [ladspa.1779](../FilterLadspa-1779/): C* Plate - Versatile plate reverb
-* [ladspa.1788](../FilterLadspa-1788/): C* Wider - Stereo image synthesis
-* [ladspa.1795](../FilterLadspa-1795/): C* PlateX2 - Versatile plate reverb, stereo inputs
-* [ladspa.1845](../FilterLadspa-1845/): Hard Gate
-* [ladspa.1846](../FilterLadspa-1846/): Disintegrator
-* [ladspa.1848](../FilterLadspa-1848/): Dynamic Sledgehammer
 * [ladspa.1882](../FilterLadspa-1882/): SC4
 * [ladspa.1883](../FilterLadspa-1883/): SE4
 * [ladspa.1886](../FilterLadspa-1886/): Exponential signal decay
@@ -641,141 +565,6 @@ wrap_title: Filter Plugins
 * [ladspa.1915](../FilterLadspa-1915/): Crossfade
 * [ladspa.1916](../FilterLadspa-1916/): SC4 mono
 * [ladspa.1917](../FilterLadspa-1917/): Crossfade (4 outs)
-* [ladspa.1941](../FilterLadspa-1941/): Mvclpf-1   Digital implementation of the VC filter invented by R.A.Moog
-* [ladspa.1942](../FilterLadspa-1942/): Mvclpf-2   Digital implementation of the VC filter invented by R.A.Moog
-* [ladspa.1943](../FilterLadspa-1943/): Mvclpf-3   Digital implementation of the VC filter invented by R.A.Moog
-* [ladspa.1944](../FilterLadspa-1944/): Chorus1 - Based on CSound orchestra by Sean Costello
-* [ladspa.1945](../FilterLadspa-1945/): Chorus2 - Based on CSound orchestra by Sean Costello
-* [ladspa.1946](../FilterLadspa-1946/): Phaser1 - Similar to CSound's phaser1 by Sean Costello
-* [ladspa.1947](../FilterLadspa-1947/): Phaser1 with LFO
-* [ladspa.1948](../FilterLadspa-1948/): Mvclpf-4   Digital implementation of the VC filter invented by R.A.Moog
-* [ladspa.1949](../FilterLadspa-1949/): Auto Wah
-* [ladspa.1951](../FilterLadspa-1951/): Triple chorus
-* [ladspa.1952](../FilterLadspa-1952/): Pulse-VCO  --  Anti-aliased oscillator
-* [ladspa.1953](../FilterLadspa-1953/): Saw-VCO  --  Anti-aliased oscillator
-* [ladspa.1954](../FilterLadspa-1954/): Rec-VCO  --  Anti-aliased oscillator
-* [ladspa.1955](../FilterLadspa-1955/): Stereo width
-* [ladspa.1956](../FilterLadspa-1956/): Stereo balance and panner
-* [ladspa.1957](../FilterLadspa-1957/): UHJ Encoder
-* [ladspa.1958](../FilterLadspa-1958/): UHJ Decoder
-* [ladspa.1960](../FilterLadspa-1960/): Mvchpf-1   Digital implementation of the VC HP filter invented by R.A. Moog
-* [ladspa.1961](../FilterLadspa-1961/): Three cardioids to AMB matrix
-* [ladspa.1962](../FilterLadspa-1962/): Virtual stereo microphone
-* [ladspa.1963](../FilterLadspa-1963/): AMB order 3,1 panner
-* [ladspa.1964](../FilterLadspa-1964/): AMB order 3,1 rotator
-* [ladspa.1965](../FilterLadspa-1965/): AMB order 3,3 panner
-* [ladspa.1966](../FilterLadspa-1966/): AMB order 3,3 rotator
-* [ladspa.1967](../FilterLadspa-1967/): AMB order 2,2 panner
-* [ladspa.1968](../FilterLadspa-1968/): AMB order 2,2 rotator
-* [ladspa.1970](../FilterLadspa-1970/): 4-band parametric filter
-* [ladspa.1973](../FilterLadspa-1973/): AMB order 1,1 mono panner
-* [ladspa.1974](../FilterLadspa-1974/): AMB order 1,1 stereo panner
-* [ladspa.1975](../FilterLadspa-1975/): AMB order 1,1 rotator
-* [ladspa.1976](../FilterLadspa-1976/): AMB order 1,1 square decoder
-* [ladspa.1977](../FilterLadspa-1977/): AMB order 1,1 hexagon decoder
-* [ladspa.1978](../FilterLadspa-1978/): AMB order 1,1 cube decoder
-* [ladspa.1979](../FilterLadspa-1979/): AMB order 2,1 panner
-* [ladspa.1980](../FilterLadspa-1980/): AMB order 2,1 rotator
-* [ladspa.2021](../FilterLadspa-2021/): DAHDSR Envelope with Gate and Trigger (Audio-Rate Inputs)
-* [ladspa.2022](../FilterLadspa-2022/): DAHDSR Envelope with Gate and Trigger (Control Inputs)
-* [ladspa.2023](../FilterLadspa-2023/): Clock Pulse Oscillator with Gate (FAPAGA)
-* [ladspa.2024](../FilterLadspa-2024/): Clock Pulse Oscillator with Gate (FCPCGA)
-* [ladspa.2025](../FilterLadspa-2025/): Signal Tracker (Audio Rates)
-* [ladspa.2026](../FilterLadspa-2026/): Signal Tracker (Control Rates)
-* [ladspa.2027](../FilterLadspa-2027/): Quantiser (20 Steps)
-* [ladspa.2028](../FilterLadspa-2028/): Quantiser (50 Steps)
-* [ladspa.2029](../FilterLadspa-2029/): Quantiser (100 Steps)
-* [ladspa.2030](../FilterLadspa-2030/): Signal Difference (IAMA)
-* [ladspa.2031](../FilterLadspa-2031/): Signal Difference (IAMC)
-* [ladspa.2032](../FilterLadspa-2032/): Signal Difference (ICMA)
-* [ladspa.2034](../FilterLadspa-2034/): Signal Ratio (NADA)
-* [ladspa.2035](../FilterLadspa-2035/): Signal Ratio (NADC)
-* [ladspa.2036](../FilterLadspa-2036/): Signal Ratio (NCDA)
-* [ladspa.2141](../FilterLadspa-2141/): TAP Equalizer
-* [ladspa.2142](../FilterLadspa-2142/): TAP Reverberator
-* [ladspa.2143](../FilterLadspa-2143/): TAP Stereo Echo
-* [ladspa.2144](../FilterLadspa-2144/): TAP Tremolo
-* [ladspa.2145](../FilterLadspa-2145/): TAP Scaling Limiter
-* [ladspa.2146](../FilterLadspa-2146/): TAP AutoPanner
-* [ladspa.2147](../FilterLadspa-2147/): TAP DeEsser
-* [ladspa.2148](../FilterLadspa-2148/): TAP Vibrato
-* [ladspa.2149](../FilterLadspa-2149/): TAP Rotary Speaker
-* [ladspa.2150](../FilterLadspa-2150/): TAP Pitch Shifter
-* [ladspa.2151](../FilterLadspa-2151/): TAP Equalizer/BW
-* [ladspa.2152](../FilterLadspa-2152/): TAP Dynamics (M)
-* [ladspa.2153](../FilterLadspa-2153/): TAP Dynamics (St)
-* [ladspa.2154](../FilterLadspa-2154/): TAP Reflector
-* [ladspa.2155](../FilterLadspa-2155/): TAP Pink/Fractal Noise
-* [ladspa.2156](../FilterLadspa-2156/): TAP Fractal Doubler
-* [ladspa.2157](../FilterLadspa-2157/): TAP Sigmoid Booster
-* [ladspa.2158](../FilterLadspa-2158/): TAP TubeWarmth
-* [ladspa.2159](../FilterLadspa-2159/): TAP Chorus/Flanger
-* [ladspa.2184](../FilterLadspa-2184/): Sync-Saw-VCO  --  Hard-sync-capable anti-aliased oscillator
-* [ladspa.2185](../FilterLadspa-2185/): Sync-Rect-VCO  --  Hard-sync-capable anti-aliased oscillator
-* [ladspa.2186](../FilterLadspa-2186/): Sync-Tri-VCO  --  Hard-sync-capable anti-aliased oscillator
-* [ladspa.2586](../FilterLadspa-2586/): C* PhaserII - Mono phaser
-* [ladspa.2588](../FilterLadspa-2588/): C* Scape - Stereo delay with chromatic resonances
-* [ladspa.2589](../FilterLadspa-2589/): C* ToneStack - Classic amplifier tone stack emulation
-* [ladspa.2592](../FilterLadspa-2592/): C* AmpVTS - Idealised guitar amplification
-* [ladspa.2593](../FilterLadspa-2593/): C* AutoFilter - Self-modulating resonant filter
-* [ladspa.2594](../FilterLadspa-2594/): C* Eq10X2 - Stereo 10-band equaliser
-* [ladspa.2595](../FilterLadspa-2595/): C* Narrower - Stereo image width reduction
-* [ladspa.2598](../FilterLadspa-2598/): C* CompressX2 - Stereo compressor and saturating limiter
-* [ladspa.2601](../FilterLadspa-2601/): C* CabinetIII - Simplistic loudspeaker cabinet emulation
-* [ladspa.2602](../FilterLadspa-2602/): C* Noisegate - Attenuating hum and noise
-* [ladspa.2603](../FilterLadspa-2603/): C* Spice - Not an exciter
-* [ladspa.2606](../FilterLadspa-2606/): C* CabinetIV - Idealised loudspeaker cabinet
-* [ladspa.2607](../FilterLadspa-2607/): C* SpiceX2 - Not an exciter either
-* [ladspa.2608](../FilterLadspa-2608/): C* Eq4p - 4-band parametric shelving equaliser
-* [ladspa.2609](../FilterLadspa-2609/): C* EqFA4p - 4-band parametric eq
-* [ladspa.3301](../FilterLadspa-3301/): :: Invada :: Input Module
-* [ladspa.3302](../FilterLadspa-3302/): :: Invada :: Filter - Low Pass Mono
-* [ladspa.3303](../FilterLadspa-3303/): :: Invada :: Filter - High Pass Mono
-* [ladspa.3304](../FilterLadspa-3304/): :: Invada :: Filter - Low Pass Stereo
-* [ladspa.3305](../FilterLadspa-3305/): :: Invada :: Filter - High Pass Stereo
-* [ladspa.3306](../FilterLadspa-3306/): :: Invada :: Tube - Mono
-* [ladspa.3307](../FilterLadspa-3307/): :: Invada :: Tube - Stereo
-* [ladspa.3308](../FilterLadspa-3308/): :: Invada :: Compressor - Mono
-* [ladspa.3309](../FilterLadspa-3309/): :: Invada :: Compressor - Stereo
-* [ladspa.3311](../FilterLadspa-3311/): :: Invada :: ER Reverb - Mono In
-* [ladspa.3312](../FilterLadspa-3312/): :: Invada :: ER Reverb - Sum L+R In
-* [ladspa.33917](../FilterLadspa-33917/): Calf Flanger LADSPA
-* [ladspa.33918](../FilterLadspa-33918/): Calf Reverb LADSPA
-* [ladspa.33919](../FilterLadspa-33919/): Calf Filter LADSPA
-* [ladspa.33922](../FilterLadspa-33922/): Calf Vintage Delay LADSPA
-* [ladspa.33923](../FilterLadspa-33923/): Calf Rotary Speaker LADSPA
-* [ladspa.33924](../FilterLadspa-33924/): Calf Phaser LADSPA
-* [ladspa.33951](../FilterLadspa-33951/): Calf Filterclavier LADSPA
-* [ladspa.34049](../FilterLadspa-34049/): Calf MultiChorus LADSPA
-* [ladspa.34050](../FilterLadspa-34050/): Calf Compressor LADSPA
-* [ladspa.34051](../FilterLadspa-34051/): Calf Gate LADSPA
-* [ladspa.34052](../FilterLadspa-34052/): Calf Sidechain Gate LADSPA
-* [ladspa.34053](../FilterLadspa-34053/): Calf Multiband Gate LADSPA
-* [ladspa.34065](../FilterLadspa-34065/): Calf Equalizer 5 Band LADSPA
-* [ladspa.34066](../FilterLadspa-34066/): Calf Equalizer 8 Band LADSPA
-* [ladspa.34067](../FilterLadspa-34067/): Calf Equalizer 12 Band LADSPA
-* [ladspa.34068](../FilterLadspa-34068/): Calf Pulsator LADSPA
-* [ladspa.34069](../FilterLadspa-34069/): Calf Deesser LADSPA
-* [ladspa.34070](../FilterLadspa-34070/): Calf Multiband Compressor LADSPA
-* [ladspa.34071](../FilterLadspa-34071/): Calf Sidechain Compressor LADSPA
-* [ladspa.34080](../FilterLadspa-34080/): Calf Multiband Limiter LADSPA
-* [ladspa.34081](../FilterLadspa-34081/): Calf Limiter LADSPA
-* [ladspa.34096](../FilterLadspa-34096/): Calf Saturator LADSPA
-* [ladspa.34097](../FilterLadspa-34097/): Calf Exciter LADSPA
-* [ladspa.34098](../FilterLadspa-34098/): Calf Bass Enhancer LADSPA
-* [ladspa.34184](../FilterLadspa-34184/): Calf Stereo Tools LADSPA
-* [ladspa.34185](../FilterLadspa-34185/): Calf Mono Input LADSPA
-* [ladspa.3701](../FilterLadspa-3701/): zita-reverb
-* [ladspa.3702](../FilterLadspa-3702/): zita-reverb-amb
-* [ladspa.4061](../FilterLadspa-4061/): guitarix_distortion
-* [ladspa.4062](../FilterLadspa-4062/): guitarix_crybaby
-* [ladspa.4063](../FilterLadspa-4063/): guitarix_echo
-* [ladspa.4064](../FilterLadspa-4064/): guitarix_freeverb
-* [ladspa.4065](../FilterLadspa-4065/): guitarix_IR
-* [ladspa.4066](../FilterLadspa-4066/): guitarix_amp
-* [ladspa.4067](../FilterLadspa-4067/): guitarix_compressor
-* [ladspa.4068](../FilterLadspa-4068/): guitarix
-* [ladspa.4221](../FilterLadspa-4221/): Bauer stereophonic-to-binaural 0.9.1 (3.1.0)
 * [lift_gamma_gain](../FilterLift_gamma_gain/): Lift, Gamma, and Gain
 * [lightshow](../FilterLightshow/): Light Show
 * [lines](../FilterLines/): Scratchlines
@@ -813,7 +602,7 @@ wrap_title: Filter Plugins
 * [qtcrop](../FilterQtcrop/): Crop by padding
 * [qtext](../FilterQtext/): QText
 * [rbpitch](../FilterRbpitch/): Rubberband Pitch
-* [resample](../FilterResample/): SRC Audio Resampler
+* [resample](../FilterResample/): Resample
 * [rescale](../FilterRescale/): Rescale
 * [resize](../FilterResize/): Pad
 * [rgblut](../FilterRgblut/): RGBLUT
@@ -891,7 +680,7 @@ wrap_title: Filter Plugins
 * [swresample](../FilterSwresample/): FFmpeg Audio Resampler
 * [swscale](../FilterSwscale/): FFmpeg Image Scaler
 * [tcolor](../FilterTcolor/): Technicolor
-* [telecide](../FilterTelecide/): Inverse Telecine (*DEPRECATED*)
+* [telecide](../FilterTelecide/): 
 * [text](../FilterText/): Text
 * [threshold](../FilterThreshold/): Threshold
 * [timer](../FilterTimer/): Timer

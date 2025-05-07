@@ -22,6 +22,7 @@ wrap_title: Transition Plugins
 * [frei0r.difference](../TransitionFrei0r-difference/): difference
 * [frei0r.divide](../TransitionFrei0r-divide/): divide
 * [frei0r.dodge](../TransitionFrei0r-dodge/): dodge
+* [frei0r.euclid_eraser](../TransitionFrei0r-euclid_eraser/): euclid_eraser
 * [frei0r.grain_extract](../TransitionFrei0r-grain_extract/): grain_extract
 * [frei0r.grain_merge](../TransitionFrei0r-grain_merge/): grain_merge
 * [frei0r.hardlight](../TransitionFrei0r-hardlight/): hardlight

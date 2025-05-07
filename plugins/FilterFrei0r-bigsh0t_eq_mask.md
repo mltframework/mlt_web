@@ -13,7 +13,7 @@ title: bigsh0t_eq_mask
 media types:
 Video  
 description: Masks part of the VR sphere.  
-version: 2.6  
+version: 2.7  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters

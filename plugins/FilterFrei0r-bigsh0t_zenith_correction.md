@@ -13,7 +13,7 @@ title: bigsh0t_zenith_correction
 media types:
 Video  
 description: Applies video zenith correction data.  
-version: 2.6  
+version: 2.7  
 creator: Leo Sutic <leo@sutic.nu>  
 
 ## Parameters
@@ -47,7 +47,7 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0  
+default: 1  
 widget: checkbox  
 
 ### 3
