@@ -13,7 +13,7 @@ title: drawbox_vaapi
 media types:
 Video  
 description: Draw a colored box on the input video.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

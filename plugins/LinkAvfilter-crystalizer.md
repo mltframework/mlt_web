@@ -13,7 +13,7 @@ title: crystalizer
 media types:
 Audio  
 description: Simple audio noise sharpening filter.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

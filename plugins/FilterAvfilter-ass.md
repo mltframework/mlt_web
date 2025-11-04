@@ -13,7 +13,7 @@ title: ass
 media types:
 Video  
 description: Render ASS subtitles onto input video using the libass library.  
-version: Lavfi8.39.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

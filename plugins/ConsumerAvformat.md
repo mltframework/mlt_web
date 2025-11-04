@@ -840,7 +840,6 @@ values:
 
 * flush_packets
 * bitexact
-* shortest
 * autobsf
 
 ### fdebug
@@ -1780,6 +1779,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -2725,6 +2725,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -2999,6 +3000,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -3143,6 +3145,64 @@ required: no
 minimum: 1  
 maximum: 65535  
 default: 20  
+
+### precision
+
+  
+description:
+precision of the fractional part of the timestamp, 2 for centiseconds (lrc)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 6  
+default: 2  
+
+### override_time_code_rate
+
+  
+description:
+override the `Time Code Rate` value in the output (mcc)  
+type: string  
+readonly: no  
+required: no  
+
+### use_u_alias
+
+  
+description:
+use the U alias for E1h 00h 00h 00h, disabled by default because some .mcc files disagree on whether it has 2 or 3 zero bytes (mcc)  
+type: string  
+readonly: no  
+required: no  
+
+### mcc_version
+
+  
+description:
+the mcc file format version (mcc)  
+type: string  
+readonly: no  
+required: no  
+
+### creation_program
+
+  
+description:
+the creation program (mcc)  
+type: string  
+readonly: no  
+required: no  
+
+### creation_time
+
+  
+description:
+the creation time (mcc)  
+type: string  
+readonly: no  
+required: no  
+default: 'now'  
 
 ### hash
 
@@ -3523,6 +3583,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -3827,6 +3888,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -4740,6 +4802,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -5027,6 +5090,63 @@ readonly: no
 required: no  
 minimum: -1  
 default: 1472  
+
+### ca_file
+
+  
+description:
+Certificate Authority database file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### cafile
+
+  
+description:
+Certificate Authority database file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### tls_verify
+
+  
+description:
+Verify the peer certificate (rtsp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### cert_file
+
+  
+description:
+Certificate file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### key_file
+
+  
+description:
+Private key file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### verifyhost
+
+  
+description:
+Verify against a specific hostname (rtsp)  
+type: string  
+readonly: no  
+required: no  
 
 ### reference_stream
 
@@ -5885,6 +6005,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -6159,6 +6280,7 @@ values:
 * use_metadata_tags
 * write_colr
 * write_gama
+* hybrid_fragmented
 
 ### moov_size
 
@@ -6605,6 +6727,55 @@ minimum: 0
 maximum: 65535  
 default: 1  
 
+### handshake_timeout
+
+  
+description:
+Timeout in milliseconds for ICE and DTLS handshake. (whip)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: 5000  
+
+### pkt_size
+
+  
+description:
+The maximum size, in bytes, of RTP packets that send out (whip)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: 1200  
+
+### authorization
+
+  
+description:
+The optional Bearer token for WHIP Authorization (whip)  
+type: string  
+readonly: no  
+required: no  
+
+### cert_file
+
+  
+description:
+The optional certificate file path for DTLS (whip)  
+type: string  
+readonly: no  
+required: no  
+
+### key_file
+
+  
+description:
+The optional private key file path for DTLS (whip)  
+type: string  
+readonly: no  
+required: no  
+
 ### xoffset
 
   
@@ -6642,7 +6813,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf61.3.104'  
+default: 'Lavf62.3.100'  
 
 ### stream_name
 
@@ -6705,74 +6876,6 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
-
-### window_title
-
-  
-description:
-set SDL window title (sdl,sdl2)  
-type: string  
-readonly: no  
-required: no  
-
-### window_size
-
-  
-description:
-set SDL window forced size (sdl,sdl2)  
-type: string  
-readonly: no  
-required: no  
-
-### window_x
-
-  
-description:
-set SDL window x position (sdl,sdl2)  
-type: integer  
-readonly: no  
-required: no  
-default: 805240832  
-
-### window_y
-
-  
-description:
-set SDL window y position (sdl,sdl2)  
-type: integer  
-readonly: no  
-required: no  
-default: 805240832  
-
-### window_fullscreen
-
-  
-description:
-set SDL window fullscreen (sdl,sdl2)  
-type: string  
-readonly: no  
-required: no  
-
-### window_borderless
-
-  
-description:
-set SDL window border off (sdl,sdl2)  
-type: string  
-readonly: no  
-required: no  
-
-### window_enable_quit
-
-  
-description:
-set if quit action is available (sdl,sdl2)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 1  
-default: 1  
 
 ### display_name
 
@@ -7657,15 +7760,6 @@ required: no
 minimum: 0  
 default: 3  
 
-### ticks_per_frame
-
-  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 1  
-
 ### color_primaries
 
   
@@ -7918,7 +8012,6 @@ values:
 * qp_rd
 * cbp_rd
 * naq
-* mv0
 
 ### luma_elim_threshold
 
@@ -8110,16 +8203,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (amv)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -8139,29 +8222,6 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
-
-### huffman
-
-  
-description:
-Huffman table strategy (amv)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* default
-* optimal
-
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (amv)  
-type: string  
-readonly: no  
-required: no  
 
 ### dpi
 
@@ -8402,9 +8462,12 @@ default: 1
   
 description:
 Protect slices with CRCs (ffv1)  
-type: string  
+type: integer  
 readonly: no  
 required: no  
+minimum: -1  
+maximum: 2  
+default: -1  
 
 ### coder
 
@@ -8433,6 +8496,47 @@ required: no
 minimum: 0  
 maximum: 1  
 default: 0  
+
+### qtable
+
+  
+description:
+Quantization table (ffv1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* 8bit
+* greater8bit
+
+### remap_mode
+
+  
+description:
+Remap Mode (ffv1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* false
+* dualrle
+* flipdualrle
+
+### remap_optimizer
+
+  
+description:
+Remap Optimizer (ffv1)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
 
 ### context
 
@@ -8678,16 +8782,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (flv)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -8753,6 +8847,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (flv)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### gifflags
@@ -8995,16 +9099,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (h261)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -9070,6 +9164,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (h261)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### obmc
@@ -9300,16 +9404,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (h263)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -9375,6 +9469,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (h263)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### umv
@@ -9621,16 +9725,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (h263p)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -9696,6 +9790,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (h263p)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### non_deterministic
@@ -9869,6 +9973,29 @@ values:
 * gradient
 * median
 
+### huffman
+
+  
+description:
+Huffman table strategy (mjpeg)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* optimal
+
+### force_duplicated_matrix
+
+  
+description:
+Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mjpeg)  
+type: string  
+readonly: no  
+required: no  
+
 ### mpv_flags
 
   
@@ -9885,7 +10012,6 @@ values:
 * qp_rd
 * cbp_rd
 * naq
-* mv0
 
 ### luma_elim_threshold
 
@@ -10077,16 +10203,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (mjpeg)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -10106,29 +10222,6 @@ type: integer
 readonly: no  
 required: no  
 default: 0  
-
-### huffman
-
-  
-description:
-Huffman table strategy (mjpeg)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* default
-* optimal
-
-### force_duplicated_matrix
-
-  
-description:
-Always write luma and chroma matrix for mjpeg, useful for rtp streaming. (mjpeg)  
-type: string  
-readonly: no  
-required: no  
 
 ### gop_timecode
 
@@ -10412,16 +10505,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (mpeg1video)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -10487,6 +10570,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (mpeg1video)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### gop_timecode
@@ -10840,16 +10933,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (mpeg2video)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -10915,6 +10998,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (mpeg2video)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### data_partitioning
@@ -11190,16 +11283,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (mpeg4)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -11265,6 +11348,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (mpeg4)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### mpv_flags
@@ -11475,16 +11568,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (msmpeg4v2)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -11550,6 +11633,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (msmpeg4v2)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### mpv_flags
@@ -11760,16 +11853,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (msmpeg4)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -11835,6 +11918,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (msmpeg4)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### dpi
@@ -12237,16 +12330,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (rv10)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -12312,6 +12395,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (rv10)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### mpv_flags
@@ -12522,16 +12615,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (rv20)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -12599,6 +12682,16 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### sc_threshold
+
+  
+description:
+Scene change threshold (rv20)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
 ### rle
 
   
@@ -12649,7 +12742,7 @@ required: no
 
   
 description:
-Penalty for intra blocks in block decission (snow)  
+Penalty for intra blocks in block decision (snow)  
 type: integer  
 readonly: no  
 required: no  
@@ -12908,16 +13001,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (speedhq)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -12983,6 +13066,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (speedhq)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### rle
@@ -13063,7 +13156,6 @@ values:
 
 * none
 * left
-* gradient
 * median
 
 ### format
@@ -13363,16 +13455,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (wmv1)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -13438,6 +13520,16 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1073741823  
+default: 0  
+
+### sc_threshold
+
+  
+description:
+Scene change threshold (wmv1)  
+type: integer  
+readonly: no  
+required: no  
 default: 0  
 
 ### mpv_flags
@@ -13648,16 +13740,6 @@ values:
 * chroma
 * msad
 
-### sc_threshold
-
-  
-description:
-Scene change threshold (wmv2)  
-type: integer  
-readonly: no  
-required: no  
-default: 0  
-
 ### noise_reduction
 
   
@@ -13725,6 +13807,16 @@ minimum: 0
 maximum: 1073741823  
 default: 0  
 
+### sc_threshold
+
+  
+description:
+Scene change threshold (wmv2)  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
 ### aac_coder
 
   
@@ -13736,7 +13828,6 @@ required: no
 format: integer or keyword  
 values:  
 
-* anmr
 * twoloop
 * fast
 
@@ -13772,24 +13863,6 @@ required: no
   
 description:
 Temporal noise shaping (aac)  
-type: string  
-readonly: no  
-required: no  
-
-### aac_ltp
-
-  
-description:
-Long term prediction (aac)  
-type: string  
-readonly: no  
-required: no  
-
-### aac_pred
-
-  
-description:
-AAC-Main prediction (aac)  
 type: string  
 readonly: no  
 required: no  
@@ -15092,6 +15165,18 @@ minimum: 32
 maximum: 8192  
 default: 1024  
 
+### min_bpp
+
+  
+description:
+minimum bits-per-pixel for subtitle colors (2, 4 or 8) (dvbsub)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 2  
+maximum: 8  
+default: 4  
+
 ### palette
 
   
@@ -15835,6 +15920,17 @@ Apply intensity stereo phase inversion (libopus)
 type: string  
 readonly: no  
 required: no  
+
+### speed_level
+
+  
+description:
+Sets the encoding speed level (libtheora)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
 
 ### iblock
 
@@ -17874,20 +17970,11 @@ required: no
 minimum: 4  
 default: 4  
 
-### low_power
-
-  
-description:
-Use low-power encoding mode (only available on some platforms; may not support all encoding features) (av1_vaapi)  
-type: string  
-readonly: no  
-required: no  
-
 ### idr_interval
 
   
 description:
-Distance (in I-frames) between IDR frames (av1_vaapi)  
+Distance (in I-frames) between key frames (av1_vaapi)  
 type: integer  
 readonly: no  
 required: no  
@@ -17909,13 +17996,22 @@ default: 1
 
   
 description:
-Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (av1_vaapi)  
+Maximum processing parallelism. Increase this to improve single channel performance. (av1_vaapi)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
 maximum: 64  
 default: 2  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (av1_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_frame_size
 
@@ -18054,20 +18150,11 @@ required: no
 minimum: 4  
 default: 4  
 
-### low_power
-
-  
-description:
-Use low-power encoding mode (only available on some platforms; may not support all encoding features) (h264_vaapi)  
-type: string  
-readonly: no  
-required: no  
-
 ### idr_interval
 
   
 description:
-Distance (in I-frames) between IDR frames (h264_vaapi)  
+Distance (in I-frames) between key frames (h264_vaapi)  
 type: integer  
 readonly: no  
 required: no  
@@ -18089,13 +18176,22 @@ default: 1
 
   
 description:
-Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (h264_vaapi)  
+Maximum processing parallelism. Increase this to improve single channel performance. (h264_vaapi)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
 maximum: 64  
 default: 2  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (h264_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_frame_size
 
@@ -18247,6 +18343,208 @@ values:
 * 6.1
 * 6.2
 
+### idr_interval
+
+  
+description:
+Distance (in I-frames) between key frames (h264_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (h264_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. (h264_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
+
+### qp
+
+  
+description:
+Use an explicit constant quantizer for the whole stream (h264_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 255  
+default: -1  
+
+### quality
+
+  
+description:
+Set encode quality (trades off against speed, higher is faster) (h264_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### rc_mode
+
+  
+description:
+Select rate control type (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* driver
+* cqp
+* cbr
+* vbr
+
+### tune
+
+  
+description:
+Select tuning type (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* hq
+* ll
+* ull
+* lossless
+
+### usage
+
+  
+description:
+Select usage type (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* default
+* transcode
+* stream
+* record
+* conference
+
+### content
+
+  
+description:
+Select content type (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* default
+* camera
+* desktop
+* rendered
+
+### profile
+
+  
+description:
+Set profile (profile_idc and constraint_set*_flag) (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* constrained_baseline
+* main
+* high
+* high444p
+
+### level
+
+  
+description:
+Set level (level_idc) (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* 1
+* 1.1
+* 1.2
+* 1.3
+* 2
+* 2.1
+* 2.2
+* 3
+* 3.1
+* 3.2
+* 4
+* 4.1
+* 4.2
+* 5
+* 5.1
+* 5.2
+* 6
+* 6.1
+* 6.2
+
+### coder
+
+  
+description:
+Entropy coder type (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* cabac
+* vlc
+
+### units
+
+  
+description:
+Set units to include (h264_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* aud
+* identifier
+* timing
+* recovery
+* a53_cc
+
 ### num_output_buffers
 
   
@@ -18269,20 +18567,11 @@ required: no
 minimum: 4  
 default: 4  
 
-### low_power
-
-  
-description:
-Use low-power encoding mode (only available on some platforms; may not support all encoding features) (hevc_vaapi)  
-type: string  
-readonly: no  
-required: no  
-
 ### idr_interval
 
   
 description:
-Distance (in I-frames) between IDR frames (hevc_vaapi)  
+Distance (in I-frames) between key frames (hevc_vaapi)  
 type: integer  
 readonly: no  
 required: no  
@@ -18304,13 +18593,22 @@ default: 1
 
   
 description:
-Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (hevc_vaapi)  
+Maximum processing parallelism. Increase this to improve single channel performance. (hevc_vaapi)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
 maximum: 64  
 default: 2  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (hevc_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_frame_size
 
@@ -18449,20 +18747,203 @@ type: string
 readonly: no  
 required: no  
 
-### low_power
+### idr_interval
 
   
 description:
-Use low-power encoding mode (only available on some platforms; may not support all encoding features) (mjpeg_vaapi)  
+Distance (in I-frames) between key frames (hevc_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### b_depth
+
+  
+description:
+Maximum B-frame reference depth (hevc_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
+
+### async_depth
+
+  
+description:
+Maximum processing parallelism. Increase this to improve single channel performance. (hevc_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 64  
+default: 2  
+
+### qp
+
+  
+description:
+Use an explicit constant quantizer for the whole stream (hevc_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 255  
+default: -1  
+
+### quality
+
+  
+description:
+Set encode quality (trades off against speed, higher is faster) (hevc_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### rc_mode
+
+  
+description:
+Select rate control type (hevc_vulkan)  
 type: string  
 readonly: no  
 required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* driver
+* cqp
+* cbr
+* vbr
+
+### tune
+
+  
+description:
+Select tuning type (hevc_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* hq
+* ll
+* ull
+* lossless
+
+### usage
+
+  
+description:
+Select usage type (hevc_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* default
+* transcode
+* stream
+* record
+* conference
+
+### content
+
+  
+description:
+Select content type (hevc_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* default
+* camera
+* desktop
+* rendered
+
+### profile
+
+  
+description:
+Set profile (profile_idc and constraint_set*_flag) (hevc_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* main10
+* rext
+
+### tier
+
+  
+description:
+Set tier (general_tier_flag) (hevc_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* main
+* high
+
+### level
+
+  
+description:
+Set level (general_level_idc) (hevc_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* 1
+* 2
+* 2.1
+* 3
+* 3.1
+* 4
+* 4.1
+* 5
+* 5.1
+* 5.2
+* 6
+* 6.1
+* 6.2
+
+### units
+
+  
+description:
+Set units to include (hevc_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* hdr
+* a53_cc
 
 ### idr_interval
 
   
 description:
-Distance (in I-frames) between IDR frames (mjpeg_vaapi)  
+Distance (in I-frames) between key frames (mjpeg_vaapi)  
 type: integer  
 readonly: no  
 required: no  
@@ -18484,13 +18965,22 @@ default: 1
 
   
 description:
-Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (mjpeg_vaapi)  
+Maximum processing parallelism. Increase this to improve single channel performance. (mjpeg_vaapi)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
 maximum: 64  
 default: 2  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (mjpeg_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_frame_size
 
@@ -18521,20 +19011,11 @@ type: string
 readonly: no  
 required: no  
 
-### low_power
-
-  
-description:
-Use low-power encoding mode (only available on some platforms; may not support all encoding features) (mpeg2_vaapi)  
-type: string  
-readonly: no  
-required: no  
-
 ### idr_interval
 
   
 description:
-Distance (in I-frames) between IDR frames (mpeg2_vaapi)  
+Distance (in I-frames) between key frames (mpeg2_vaapi)  
 type: integer  
 readonly: no  
 required: no  
@@ -18556,13 +19037,22 @@ default: 1
 
   
 description:
-Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (mpeg2_vaapi)  
+Maximum processing parallelism. Increase this to improve single channel performance. (mpeg2_vaapi)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
 maximum: 64  
 default: 2  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (mpeg2_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_frame_size
 
@@ -18677,20 +19167,11 @@ required: no
 minimum: 4  
 default: 4  
 
-### low_power
-
-  
-description:
-Use low-power encoding mode (only available on some platforms; may not support all encoding features) (vp8_vaapi)  
-type: string  
-readonly: no  
-required: no  
-
 ### idr_interval
 
   
 description:
-Distance (in I-frames) between IDR frames (vp8_vaapi)  
+Distance (in I-frames) between key frames (vp8_vaapi)  
 type: integer  
 readonly: no  
 required: no  
@@ -18712,13 +19193,22 @@ default: 1
 
   
 description:
-Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (vp8_vaapi)  
+Maximum processing parallelism. Increase this to improve single channel performance. (vp8_vaapi)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
 maximum: 64  
 default: 2  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (vp8_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_frame_size
 
@@ -18783,20 +19273,11 @@ minimum: 0
 maximum: 15  
 default: 4  
 
-### low_power
-
-  
-description:
-Use low-power encoding mode (only available on some platforms; may not support all encoding features) (vp9_vaapi)  
-type: string  
-readonly: no  
-required: no  
-
 ### idr_interval
 
   
 description:
-Distance (in I-frames) between IDR frames (vp9_vaapi)  
+Distance (in I-frames) between key frames (vp9_vaapi)  
 type: integer  
 readonly: no  
 required: no  
@@ -18818,13 +19299,22 @@ default: 1
 
   
 description:
-Maximum processing parallelism. Increase this to improve single channel performance. This option doesn&#39;t work if driver doesn&#39;t implement vaSyncBuffer function. (vp9_vaapi)  
+Maximum processing parallelism. Increase this to improve single channel performance. (vp9_vaapi)  
 type: integer  
 readonly: no  
 required: no  
 minimum: 1  
 maximum: 64  
 default: 2  
+
+### low_power
+
+  
+description:
+Use low-power encoding mode (only available on some platforms; may not support all encoding features) (vp9_vaapi)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_frame_size
 

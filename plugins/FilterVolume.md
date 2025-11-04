@@ -13,7 +13,7 @@ title: Volume
 media types:
 Audio  
 description: Adjust an audio stream&#39;s volume level. This filter is based on the &#39;normalize&#39; utility  
-version: 2  
+version: 3  
 creator: Dan Denneedy  
 copyright: Meltytech, LLC  
 license: GPLv2  
@@ -123,4 +123,15 @@ readonly: no
 required: no  
 animation: yes  
 unit: dB  
+
+### channel_mask
+
+title: Channel Mask    
+description:
+Which channels to affect. Each bit represents a channel; for example, 1 = channel 0 (left), 2 = channel 1 (right), 3 = both left and right channels. The default is to overwrite all of the channels.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 4294967295  
 

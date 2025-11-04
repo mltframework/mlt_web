@@ -13,7 +13,7 @@ title: asubboost
 media types:
 Audio  
 description: Boost subwoofer frequencies.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: adenorm
 media types:
 Audio  
 description: Remedy denormals by adding extremely low-level noise.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

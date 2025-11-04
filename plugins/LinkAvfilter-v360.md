@@ -13,7 +13,7 @@ title: v360
 media types:
 Video  
 description: Convert 360 projection of video.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

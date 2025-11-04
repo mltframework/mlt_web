@@ -13,7 +13,7 @@ title: superequalizer
 media types:
 Audio  
 description: Apply 18 band equalization filter.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

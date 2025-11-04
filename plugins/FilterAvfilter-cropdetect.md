@@ -13,7 +13,7 @@ title: cropdetect
 media types:
 Video  
 description: Auto-detect crop size.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

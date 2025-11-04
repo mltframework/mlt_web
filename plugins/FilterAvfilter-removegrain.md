@@ -13,7 +13,7 @@ title: removegrain
 media types:
 Video  
 description: Remove grain.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

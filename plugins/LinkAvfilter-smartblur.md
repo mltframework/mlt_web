@@ -13,7 +13,7 @@ title: smartblur
 media types:
 Video  
 description: Blur the input video without impacting the outlines.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

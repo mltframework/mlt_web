@@ -50,6 +50,7 @@ wrap_title: Link Plugins
 * [avfilter.asidedata](../LinkAvfilter-asidedata/): asidedata
 * [avfilter.asoftclip](../LinkAvfilter-asoftclip/): asoftclip
 * [avfilter.aspectralstats](../LinkAvfilter-aspectralstats/): aspectralstats
+* [avfilter.ass](../LinkAvfilter-ass/): ass
 * [avfilter.astats](../LinkAvfilter-astats/): astats
 * [avfilter.asubboost](../LinkAvfilter-asubboost/): asubboost
 * [avfilter.asubcut](../LinkAvfilter-asubcut/): asubcut
@@ -87,6 +88,7 @@ wrap_title: Link Plugins
 * [avfilter.colorchannelmixer](../LinkAvfilter-colorchannelmixer/): colorchannelmixer
 * [avfilter.colorcontrast](../LinkAvfilter-colorcontrast/): colorcontrast
 * [avfilter.colorcorrect](../LinkAvfilter-colorcorrect/): colorcorrect
+* [avfilter.colordetect](../LinkAvfilter-colordetect/): colordetect
 * [avfilter.colorhold](../LinkAvfilter-colorhold/): colorhold
 * [avfilter.colorize](../LinkAvfilter-colorize/): colorize
 * [avfilter.colorkey](../LinkAvfilter-colorkey/): colorkey
@@ -253,6 +255,7 @@ wrap_title: Link Plugins
 * [avfilter.stereo3d](../LinkAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../LinkAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../LinkAvfilter-stereowiden/): stereowiden
+* [avfilter.subtitles](../LinkAvfilter-subtitles/): subtitles
 * [avfilter.super2xsai](../LinkAvfilter-super2xsai/): super2xsai
 * [avfilter.superequalizer](../LinkAvfilter-superequalizer/): superequalizer
 * [avfilter.swaprect](../LinkAvfilter-swaprect/): swaprect

@@ -130,7 +130,7 @@ required: no
 
 ### loop
 
-title: Loop sequence of images indefinitively    
+title: Loop sequence of images indefinitely    
 description:
 when 1 (default) loop sequences of images, when 0, play them only once  
 type: boolean  

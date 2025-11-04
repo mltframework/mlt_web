@@ -13,7 +13,7 @@ title: deflicker
 media types:
 Video  
 description: Remove temporal frame luminance variations.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

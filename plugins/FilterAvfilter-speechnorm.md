@@ -13,7 +13,7 @@ title: speechnorm
 media types:
 Audio  
 description: Speech Normalizer.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: fsync
 media types:
 Video  
 description: Synchronize video frames from external source.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: GVerb
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 2  
 creator: Juhana Sadeharju <kouhia at nic.funet.fi>, LADSPAification by Steve Harris <steve@plugin.org.uk>  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -130,4 +130,15 @@ animation: yes
 minimum: 0  
 maximum: 1  
 default: 1  
+
+### channel_mask
+
+title: Channel Mask    
+description:
+A bitmask inidicating which channels to affect.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 4294967295  
 

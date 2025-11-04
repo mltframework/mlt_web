@@ -13,7 +13,7 @@ title: scale_vaapi
 media types:
 Video  
 description: Scale to/from VAAPI surfaces.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -147,6 +147,15 @@ required: no
 minimum: 1  
 maximum: 256  
 default: 1  
+
+### av.reset_sar
+
+  
+description:
+reset SAR to 1 and scale to square pixels if scaling proportionally  
+type: string  
+readonly: no  
+required: no  
 
 ### position
 

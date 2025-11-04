@@ -13,7 +13,7 @@ title: ccrepack
 media types:
 Video  
 description: Repack CEA-708 closed caption metadata  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

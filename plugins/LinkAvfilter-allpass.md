@@ -13,7 +13,7 @@ title: allpass
 media types:
 Audio  
 description: Apply a two-pole all-pass filter.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

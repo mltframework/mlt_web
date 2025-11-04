@@ -13,7 +13,7 @@ title: vibrance
 media types:
 Video  
 description: Boost or alter saturation.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -80,7 +80,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.072186  
+default: 0.212656  
 
 ### av.glum
 
@@ -104,7 +104,7 @@ readonly: no
 required: no  
 minimum: 0  
 maximum: 1  
-default: 0.212656  
+default: 0.072186  
 
 ### av.alternate
 

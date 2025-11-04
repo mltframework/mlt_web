@@ -13,7 +13,7 @@ title: lowshelf
 media types:
 Audio  
 description: Apply a low shelf filter.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -62,6 +62,7 @@ wrap_title: Filter Plugins
 * [avfilter.asidedata](../FilterAvfilter-asidedata/): asidedata
 * [avfilter.asoftclip](../FilterAvfilter-asoftclip/): asoftclip
 * [avfilter.aspectralstats](../FilterAvfilter-aspectralstats/): aspectralstats
+* [avfilter.ass](../FilterAvfilter-ass/): ass
 * [avfilter.astats](../FilterAvfilter-astats/): astats
 * [avfilter.asubboost](../FilterAvfilter-asubboost/): asubboost
 * [avfilter.asubcut](../FilterAvfilter-asubcut/): asubcut
@@ -99,6 +100,7 @@ wrap_title: Filter Plugins
 * [avfilter.colorchannelmixer](../FilterAvfilter-colorchannelmixer/): colorchannelmixer
 * [avfilter.colorcontrast](../FilterAvfilter-colorcontrast/): colorcontrast
 * [avfilter.colorcorrect](../FilterAvfilter-colorcorrect/): colorcorrect
+* [avfilter.colordetect](../FilterAvfilter-colordetect/): colordetect
 * [avfilter.colorhold](../FilterAvfilter-colorhold/): colorhold
 * [avfilter.colorize](../FilterAvfilter-colorize/): colorize
 * [avfilter.colorkey](../FilterAvfilter-colorkey/): colorkey
@@ -265,6 +267,7 @@ wrap_title: Filter Plugins
 * [avfilter.stereo3d](../FilterAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../FilterAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../FilterAvfilter-stereowiden/): stereowiden
+* [avfilter.subtitles](../FilterAvfilter-subtitles/): subtitles
 * [avfilter.super2xsai](../FilterAvfilter-super2xsai/): super2xsai
 * [avfilter.superequalizer](../FilterAvfilter-superequalizer/): superequalizer
 * [avfilter.swaprect](../FilterAvfilter-swaprect/): swaprect
@@ -449,7 +452,7 @@ wrap_title: Filter Plugins
 * [imageconvert](../FilterImageconvert/): Basic Image Converter
 * [invert](../FilterInvert/): Invert
 * [jack](../FilterJack/): JACK
-* [jackrack](../FilterJackrack/): JACK
+* [jackrack](../FilterJackrack/): JACK Rack XML (*DEPRECATED*)
 * [ladspa](../FilterLadspa/): LADSPA
 * [ladspa.1041](../FilterLadspa-1041/): Simple Low Pass Filter
 * [ladspa.1042](../FilterLadspa-1042/): Simple High Pass Filter
@@ -596,9 +599,11 @@ wrap_title: Filter Plugins
 * [obscure](../FilterObscure/): Obscure
 * [oldfilm](../FilterOldfilm/): Oldfilm
 * [opencv.tracker](../FilterOpencv-tracker/): OpenCV Motion Tracker
+* [outline](../FilterOutline/): Outline
 * [panner](../FilterPanner/): Audio Pan
 * [pillar_echo](../FilterPillar_echo/): Pillar Echo
 * [qtblend](../FilterQtblend/): Composite and transform
+* [qtblend_mode](../FilterQtblend_mode/): Set Qt Blend Mode
 * [qtcrop](../FilterQtcrop/): Crop by padding
 * [qtext](../FilterQtext/): QText
 * [rbpitch](../FilterRbpitch/): Rubberband Pitch

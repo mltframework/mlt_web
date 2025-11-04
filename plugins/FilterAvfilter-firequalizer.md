@@ -13,7 +13,7 @@ title: firequalizer
 media types:
 Audio  
 description: Finite Impulse Response Equalizer.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

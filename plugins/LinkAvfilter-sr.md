@@ -13,7 +13,7 @@ title: sr
 media types:
 Video  
 description: Apply DNN-based image super resolution to the input.  
-version: Lavfi10.1.100  
+version: Lavfi10.2.102  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -43,35 +43,6 @@ required: no
 minimum: 2  
 maximum: 4  
 default: 2  
-
-### av.model
-
-  
-description:
-path to model file specifying network architecture and its parameters  
-type: string  
-readonly: no  
-required: no  
-
-### av.input
-
-  
-description:
-input name of the model  
-type: string  
-readonly: no  
-required: no  
-default: 'x'  
-
-### av.output
-
-  
-description:
-output name of the model  
-type: string  
-readonly: no  
-required: no  
-default: 'y'  
 
 ### position
 

@@ -13,7 +13,7 @@ title: adelay
 media types:
 Audio  
 description: Delay one or more audio channels.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

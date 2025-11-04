@@ -13,7 +13,7 @@ title: kerndeint
 media types:
 Video  
 description: Apply kernel deinterlacing to the input.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

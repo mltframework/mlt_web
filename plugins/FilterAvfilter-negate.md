@@ -13,7 +13,7 @@ title: negate
 media types:
 Video  
 description: Negate input video.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

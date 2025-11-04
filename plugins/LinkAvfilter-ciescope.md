@@ -13,7 +13,7 @@ title: ciescope
 media types:
 Video  
 description: Video CIE scope.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

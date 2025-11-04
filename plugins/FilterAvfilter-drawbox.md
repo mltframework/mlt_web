@@ -13,7 +13,7 @@ title: drawbox
 media types:
 Video  
 description: Draw a colored box on the input video.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -135,7 +135,7 @@ required: no
 
   
 description:
-use datas from bounding box in side data  
+use data from bounding box in side data  
 type: string  
 readonly: no  
 required: no  

@@ -13,7 +13,7 @@ title: tonemap_vaapi
 media types:
 Video  
 description: VAAPI VPP for tone-mapping  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: dnn_classify
 media types:
 Video  
 description: Apply DNN classify filter to the input.  
-version: Lavfi10.1.100  
+version: Lavfi10.2.102  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -31,60 +31,6 @@ type: string
 readonly: no  
 required: no  
 format: integer or keyword  
-
-### av.model
-
-  
-description:
-path to model file  
-type: string  
-readonly: no  
-required: no  
-
-### av.input
-
-  
-description:
-input name of the model  
-type: string  
-readonly: no  
-required: no  
-
-### av.output
-
-  
-description:
-output name of the model  
-type: string  
-readonly: no  
-required: no  
-
-### av.backend_configs
-
-  
-description:
-backend configs  
-type: string  
-readonly: no  
-required: no  
-
-### av.options
-
-  
-description:
-backend configs (deprecated, use backend_configs)  
-type: string  
-readonly: no  
-required: no  
-
-### av.async
-
-  
-description:
-use DNN async inference (ignored, use backend_configs=&#39;async=1&#39;)  
-type: string  
-readonly: no  
-required: no  
 
 ### av.confidence
 

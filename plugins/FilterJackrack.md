@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: JACK  
+title: JACK Rack XML (*DEPRECATED*)  
 media types:
 Audio  
 description: Process audio using JACK.  

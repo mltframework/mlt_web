@@ -13,7 +13,7 @@ title: rotate
 media types:
 Video  
 description: Rotate the input image.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

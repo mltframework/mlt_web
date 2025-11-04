@@ -13,7 +13,7 @@ title: blurdetect
 media types:
 Video  
 description: Blurdetect filter.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes

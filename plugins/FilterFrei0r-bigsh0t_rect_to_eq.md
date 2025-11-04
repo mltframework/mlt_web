@@ -51,6 +51,6 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 1.4e-322  
+default: 0  
 widget: spinner  
 

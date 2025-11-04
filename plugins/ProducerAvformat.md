@@ -808,6 +808,15 @@ required: no
 minimum: 0  
 default: 48000  
 
+### framerate
+
+  
+description:
+set frame rate (apv)  
+type: string  
+readonly: no  
+required: no  
+
 ### subfps
 
   
@@ -1252,18 +1261,6 @@ type: string
 readonly: no  
 required: no  
 
-### missing_streams
-
-  
-description:
-(flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 255  
-default: 0  
-
 ### flv_metadata
 
   
@@ -1290,18 +1287,6 @@ Ignore the Size of previous tag (live_flv)
 type: string  
 readonly: no  
 required: no  
-
-### missing_streams
-
-  
-description:
-(live_flv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 255  
-default: 0  
 
 ### raw_packet_size
 
@@ -1573,7 +1558,26 @@ List of file extensions that hls is allowed to access (hls)
 type: string  
 readonly: no  
 required: no  
-default: '3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,wav'  
+default: '3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,vtt,wav,webvtt,cmfv,cmfa,ec3,fmp4'  
+
+### allowed_segment_extensions
+
+  
+description:
+List of file extensions that hls is allowed to access (hls)  
+type: string  
+readonly: no  
+required: no  
+default: '3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,vtt,wav,webvtt,cmfv,cmfa,ec3,fmp4,html'  
+
+### extension_picky
+
+  
+description:
+Be picky with all extensions matching (hls)  
+type: string  
+readonly: no  
+required: no  
 
 ### max_reload
 
@@ -1584,7 +1588,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 3  
+default: 100  
 
 ### m3u8_hold_counters
 
@@ -2069,18 +2073,6 @@ type: string
 readonly: no  
 required: no  
 
-### missing_streams
-
-  
-description:
-(kux)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 255  
-default: 0  
-
 ### raw_packet_size
 
   
@@ -2111,6 +2103,15 @@ readonly: no
 required: no  
 minimum: 1  
 default: 1024  
+
+### eia608_extract
+
+  
+description:
+extract EIA-608/708 captions from VANC packets (mcc)  
+type: string  
+readonly: no  
+required: no  
 
 ### subfps
 
@@ -2341,7 +2342,7 @@ required: no
 
   
 description:
-re-use streams when PMT&#39;s version/pids change (mpegts)  
+reuse streams when PMT&#39;s version/pids change (mpegts)  
 type: string  
 readonly: no  
 required: no  
@@ -3087,7 +3088,64 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf61.3.104'  
+default: 'Lavf62.3.100'  
+
+### ca_file
+
+  
+description:
+Certificate Authority database file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### cafile
+
+  
+description:
+Certificate Authority database file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### tls_verify
+
+  
+description:
+Verify the peer certificate (rtsp)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### cert_file
+
+  
+description:
+Certificate file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### key_file
+
+  
+description:
+Private key file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### verifyhost
+
+  
+description:
+Verify against a specific hostname (rtsp)  
+type: string  
+readonly: no  
+required: no  
 
 ### raw_packet_size
 
@@ -5211,8 +5269,17 @@ description:
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 2  
+minimum: 0  
+default: 0  
+
+### ch_layout
+
+  
+description:
+(alsa)  
+type: string  
+readonly: no  
+required: no  
 
 ### framerate
 
@@ -5356,7 +5423,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf61.3.104'  
+default: 'Lavf62.3.100'  
 
 ### stream_name
 
@@ -5716,7 +5783,6 @@ values:
 * low_delay
 * bitexact
 * output_corrupt
-* drop_changed
 
 ### flags2
 
@@ -5749,6 +5815,7 @@ values:
 * mvs
 * venc_params
 * film_grain
+* enhancements
 
 ### ar
 
@@ -5999,15 +6066,6 @@ values:
 type: string  
 readonly: no  
 required: no  
-
-### ticks_per_frame
-
-  
-type: integer  
-readonly: no  
-required: no  
-minimum: 1  
-default: 1  
 
 ### color_primaries
 
@@ -6353,7 +6411,7 @@ default: 0
 
   
 description:
-Set the float gamma value when decoding (exr)  
+Set the float gamma value when decoding (deprecated, use a scaler) (exr)  
 type: float  
 readonly: no  
 required: no  
@@ -6364,7 +6422,7 @@ default: 1
 
   
 description:
-color transfer characteristics to apply to EXR linear input (exr)  
+color transfer characteristics to apply to EXR linear input (deprecated, use a scaler) (exr)  
 type: string  
 readonly: no  
 required: no  
@@ -6546,7 +6604,34 @@ required: no
 
   
 description:
-stricly apply default display window size (hevc)  
+strictly apply default display window size (hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### view_ids
+
+  
+description:
+Array of view IDs that should be decoded and output; a single -1 to decode all views (hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### view_ids_available
+
+  
+description:
+Array of available view IDs is exported here (hevc)  
+type: string  
+readonly: no  
+required: no  
+
+### view_pos_available
+
+  
+description:
+Array of view positions for view_ids_available is exported here, as AVStereo3DView (hevc)  
 type: string  
 readonly: no  
 required: no  
@@ -6609,6 +6694,7 @@ values:
 * a53
 * scte20
 * dvd
+* dish
 
 ### num_output_buffers
 
@@ -6987,6 +7073,18 @@ Force non-standard decoding process (alac)
 type: string  
 readonly: no  
 required: no  
+
+### max_order
+
+  
+description:
+Sets the maximum order (ALS simple profile allows max 15) (als)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1023  
+default: 1023  
 
 ### max_samples
 

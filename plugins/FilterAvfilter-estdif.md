@@ -13,7 +13,7 @@ title: estdif
 media types:
 Video  
 description: Apply Edge Slope Tracing deinterlace.  
-version: Lavfi10.4.100  
+version: Lavfi11.4.100  
 creator: libavfilter maintainers  
 
 ## Notes
