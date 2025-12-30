@@ -3,3 +3,4 @@ _site
 vendor
 .bundle
 Gemfile.lock
+*_vulkan.md
