@@ -13,7 +13,7 @@ title: HSL Range
 media types:
 Video  
 description: Adjust Hue, Saturation and Lightness for a range of hue values. The user can specify the range of the hue values to be adjusted.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

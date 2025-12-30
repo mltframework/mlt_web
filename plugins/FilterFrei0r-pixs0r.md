@@ -22,7 +22,7 @@ creator: xsbee
 
 title: shift_intensity    
 description:
-Agressiveness of row/column-shifting  
+Aggressiveness of row/column-shifting  
 type: float  
 readonly: no  
 required: no  

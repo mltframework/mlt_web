@@ -13,7 +13,7 @@ title: Lift, Gamma, and Gain
 media types:
 Video  
 description: A simple lift/gamma/gain effect, used for color grading.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

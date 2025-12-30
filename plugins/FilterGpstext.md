@@ -13,7 +13,7 @@ title: GPS Text
 media types:
 Video  
 description: Overlay GPS-related text onto the video  
-version: 5  
+version: 6  
 creator: Daniel F  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: FFmpeg Output
 media types:
 Audio  Video  
 description: Write or stream audio and/or video using FFmpeg.  
-version: 4  
+version: 5  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Copyright (C) 2003-2019 Meltytech, LLC  
@@ -22,7 +22,7 @@ URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)
 
 ## Notes
 
-The avformat consumer uses the FFmpeg libraries to encode to a file or network stream. You can get a lot of information about how to encode with FFmpeg all over the web including FFmpeg&#39;s web site. With melt, you simply need to add &quot;-consumer avformat:output.file&quot; to the command line followed by the encoding parameters by translating ffmpeg&#39;s &#39;-option value&#39; syntax to melt&#39;s &#39;option=value&#39; syntax. Not all ffmpeg options are supported. Some are very specific to avconv/ffmpeg, the command line utility, and not an &quot;AVOption&quot; used in the libraries. In some cases, there are ffmpeg options that are not AVOptions but which closely resemble an existing MLT property. In that case, MLT supports the ffmpeg option name. For example, ffmpeg&#39;s &quot;-ac&quot; is equivalent to the MLT &quot;channels&quot; property. Therefore, the avformat consumer also supports the &quot;ac&quot; property. Complete details are below. Please note that the exact options depend on the version of libavformat and libavcodec on your system. The following is based on FFmpeg v4.0.
+The avformat consumer uses the FFmpeg libraries to encode to a file or network stream. You can get a lot of information about how to encode with FFmpeg all over the web including FFmpeg&#39;s web site. With melt, you simply need to add &quot;-consumer avformat:output.file&quot; to the command line followed by the encoding parameters by translating ffmpeg&#39;s &#39;-option value&#39; syntax to melt&#39;s &#39;option=value&#39; syntax. Not all ffmpeg options are supported. Some are very specific to avconv/ffmpeg, the command line utility, and not an &quot;AVOption&quot; used in the libraries. In some cases, there are ffmpeg options that are not AVOptions but which closely resemble an existing MLT property. In that case, MLT supports the ffmpeg option name. For example, ffmpeg&#39;s &quot;-ac&quot; is equivalent to the MLT &quot;channels&quot; property. Therefore, the avformat consumer also supports the &quot;ac&quot; property. Complete details are below. Please note that the exact options depend on the version of libavformat and libavcodec on your system.
 
 ## Parameters
 
@@ -8537,6 +8537,113 @@ type: string
 readonly: no  
 required: no  
 format: integer or keyword  
+
+### slicecrc
+
+  
+description:
+Protect slices with CRCs (ffv1_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 2  
+default: -1  
+
+### context
+
+  
+description:
+Context model (ffv1_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1  
+default: 0  
+
+### coder
+
+  
+description:
+Coder type (ffv1_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* rice
+* range_def
+* range_tab
+
+### qtable
+
+  
+description:
+Quantization table (ffv1_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* default
+* 8bit
+* greater8bit
+
+### slices_h
+
+  
+description:
+Number of horizontal slices (ffv1_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1024  
+default: -1  
+
+### slices_v
+
+  
+description:
+Number of vertical slices (ffv1_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 1024  
+default: -1  
+
+### force_pcm
+
+  
+description:
+Code all slices with no prediction (ffv1_vulkan)  
+type: string  
+readonly: no  
+required: no  
+
+### rct_search
+
+  
+description:
+Run a search for RCT parameters (level 4 only) (ffv1_vulkan)  
+type: string  
+readonly: no  
+required: no  
+
+### async_depth
+
+  
+description:
+Internal parallelization depth (ffv1_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
 
 ### context
 

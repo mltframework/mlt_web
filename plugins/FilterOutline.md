@@ -13,7 +13,7 @@ title: Outline
 media types:
 Video  
 description: Simulate a stroke along edges within an alpha channel. It is not very smart or sophisticate, which is why you should limit the thickness and avoid hard angles.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: GPLv2  

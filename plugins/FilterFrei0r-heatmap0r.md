@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Documentation
-wrap_title: "Filter: frei0r.tint0r"
+wrap_title: "Filter: frei0r.heatmap0r"
 category: plugin
 ---
 * TOC
@@ -9,12 +9,12 @@ category: plugin
 
 ## Plugin Information
 
-title: Tint0r  
+title: heatmap0r  
 media types:
 Video  
-description: Tint a source image with specified colors  
+description: Performs a continuous trichromatic tinting  
 version: 0.1  
-creator: Maksim Golovkin & Cynthia  
+creator: Cynthia  
 
 ## Parameters
 
@@ -22,15 +22,27 @@ creator: Maksim Golovkin & Cynthia
 
 title: Map black to    
 description:
-The color to map source color with null luminance  
+The color to map source color with zero luminance  
 type: color  
 readonly: no  
 required: no  
 animation: yes  
-default: #000000  
+default: #44007f  
 widget: color  
 
 ### 1
+
+title: Map grey to    
+description:
+The color to map source color with mid luminance  
+type: color  
+readonly: no  
+required: no  
+animation: yes  
+default: #ff007f  
+widget: color  
+
+### 2
 
 title: Map white to    
 description:
@@ -39,20 +51,20 @@ type: color
 readonly: no  
 required: no  
 animation: yes  
-default: #7fff7f  
+default: #ffff00  
 widget: color  
 
-### 2
+### 3
 
-title: Tint amount    
+title: Grey point    
 description:
-Amount of color  
+Point in the luminance axis grey color is located  
 type: float  
 readonly: no  
 required: no  
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0.25  
+default: 0.5  
 widget: spinner  
 

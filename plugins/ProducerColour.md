@@ -13,7 +13,7 @@ title: Color
 media types:
 Video  
 description: A simple color generator.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

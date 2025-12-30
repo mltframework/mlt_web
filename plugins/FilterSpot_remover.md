@@ -15,7 +15,7 @@ Video
 description: Replace an area with interpolated pixels.
 The new pixel values are interpolated from the nearest pixels immediately outside of the specified area.
   
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

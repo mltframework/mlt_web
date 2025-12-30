@@ -13,7 +13,7 @@ title: Transform
 media types:
 Video  
 description:   
-version: 5  
+version: 6  
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

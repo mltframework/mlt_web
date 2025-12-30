@@ -13,7 +13,7 @@ title: FFmpeg Image Converter
 media types:
 Video  Hidden  
 description: Converts the colorspace and pixel format.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

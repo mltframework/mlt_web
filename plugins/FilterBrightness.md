@@ -13,7 +13,7 @@ title: Brightness
 media types:
 Video  
 description: Adjust the brightness and opacity of the image.  
-version: 4  
+version: 5  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -60,7 +60,6 @@ readonly: no
 required: no  
 animation: yes  
 minimum: -1  
-maximum: 1  
 
 ### threads
 

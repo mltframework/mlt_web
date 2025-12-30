@@ -12,7 +12,7 @@ category: plugin
 title: euclid_eraser  
 media types:
 Video  
-description: Erasing backgrounds with euclidian distance  
+description: Erasing backgrounds with euclidean distance  
 version: 0.1  
 creator: Erik H. Beck  
 

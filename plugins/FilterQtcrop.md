@@ -13,7 +13,7 @@ title: Crop by padding
 media types:
 Video  
 description: This filter crops the image to a rounded rectangle or circle by padding it with a color.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: Timer
 media types:
 Video  
 description: Overlay a timer onto the video. The timer can count up or down.  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

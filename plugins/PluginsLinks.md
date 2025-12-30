@@ -118,14 +118,10 @@ wrap_title: Link Plugins
 * [avfilter.deinterlace_vaapi](../LinkAvfilter-deinterlace_vaapi/): deinterlace_vaapi
 * [avfilter.delogo](../LinkAvfilter-delogo/): delogo
 * [avfilter.denoise_vaapi](../LinkAvfilter-denoise_vaapi/): denoise_vaapi
-* [avfilter.derain](../LinkAvfilter-derain/): derain
 * [avfilter.deshake](../LinkAvfilter-deshake/): deshake
 * [avfilter.despill](../LinkAvfilter-despill/): despill
 * [avfilter.dialoguenhance](../LinkAvfilter-dialoguenhance/): dialoguenhance
 * [avfilter.dilation](../LinkAvfilter-dilation/): dilation
-* [avfilter.dnn_classify](../LinkAvfilter-dnn_classify/): dnn_classify
-* [avfilter.dnn_detect](../LinkAvfilter-dnn_detect/): dnn_detect
-* [avfilter.dnn_processing](../LinkAvfilter-dnn_processing/): dnn_processing
 * [avfilter.doubleweave](../LinkAvfilter-doubleweave/): doubleweave
 * [avfilter.drawbox](../LinkAvfilter-drawbox/): drawbox
 * [avfilter.drawbox_vaapi](../LinkAvfilter-drawbox_vaapi/): drawbox_vaapi
@@ -218,7 +214,6 @@ wrap_title: Link Plugins
 * [avfilter.photosensitivity](../LinkAvfilter-photosensitivity/): photosensitivity
 * [avfilter.pixelize](../LinkAvfilter-pixelize/): pixelize
 * [avfilter.pixscope](../LinkAvfilter-pixscope/): pixscope
-* [avfilter.pp](../LinkAvfilter-pp/): pp
 * [avfilter.pp7](../LinkAvfilter-pp7/): pp7
 * [avfilter.prewitt](../LinkAvfilter-prewitt/): prewitt
 * [avfilter.procamp_vaapi](../LinkAvfilter-procamp_vaapi/): procamp_vaapi
@@ -231,6 +226,7 @@ wrap_title: Link Plugins
 * [avfilter.roberts](../LinkAvfilter-roberts/): roberts
 * [avfilter.rotate](../LinkAvfilter-rotate/): rotate
 * [avfilter.sab](../LinkAvfilter-sab/): sab
+* [avfilter.scale](../LinkAvfilter-scale/): scale
 * [avfilter.scale_vaapi](../LinkAvfilter-scale_vaapi/): scale_vaapi
 * [avfilter.scdet](../LinkAvfilter-scdet/): scdet
 * [avfilter.scharr](../LinkAvfilter-scharr/): scharr
@@ -251,7 +247,6 @@ wrap_title: Link Plugins
 * [avfilter.sobel](../LinkAvfilter-sobel/): sobel
 * [avfilter.speechnorm](../LinkAvfilter-speechnorm/): speechnorm
 * [avfilter.spp](../LinkAvfilter-spp/): spp
-* [avfilter.sr](../LinkAvfilter-sr/): sr
 * [avfilter.stereo3d](../LinkAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../LinkAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../LinkAvfilter-stereowiden/): stereowiden
@@ -297,6 +292,7 @@ wrap_title: Link Plugins
 * [avfilter.yaepblur](../LinkAvfilter-yaepblur/): yaepblur
 * [avfilter.zoompan](../LinkAvfilter-zoompan/): zoompan
 * [avfilter.zscale](../LinkAvfilter-zscale/): zscale
+* [color_transform](../LinkColor_transform/): Colorspace & Transfer Characteristics
 * [crop](../LinkCrop/): Crop
 * [deinterlace](../LinkDeinterlace/): Xine Deinterlacer
 * [fieldorder](../LinkFieldorder/): Field order

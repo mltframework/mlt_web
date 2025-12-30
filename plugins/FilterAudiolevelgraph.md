@@ -13,7 +13,7 @@ title: Audio Level Visualization Filter
 media types:
 Video  
 description: An audio visualization filter that draws an audio level meter on the image.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

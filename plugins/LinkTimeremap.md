@@ -13,7 +13,7 @@ title: Time Remap
 media types:
 Audio  Video  
 description: Remap frames in time.  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

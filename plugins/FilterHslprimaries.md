@@ -13,7 +13,7 @@ title: HSL Primaries
 media types:
 Video  
 description: Adjust Hue, Saturation and Lightness for each of the 6 primary/secondary colors.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

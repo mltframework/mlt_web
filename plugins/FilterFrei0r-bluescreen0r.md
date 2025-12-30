@@ -13,7 +13,7 @@ title: bluescreen0r
 media types:
 Video  
 description: Color to alpha (blit SRCALPHA)  
-version: 0.4  
+version: 0.5  
 creator: Hedde Bosman  
 
 ## Parameters

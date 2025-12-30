@@ -13,7 +13,7 @@ title: Auto Fade
 media types:
 Audio  
 description: Automatically fade audio between clips in a playlist. This filter will fade the audio out at the end of a clip and fade the audio in at the beginning of a clip. Only to be used as a filter on playlist producers. Uses the &quot;meta.playlist.clip_position&quot; and &quot;meta.playlist.clip_length&quot; properties that are added by the playlist producer to determine where the splices between clips occur.  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

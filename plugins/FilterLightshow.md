@@ -14,7 +14,7 @@ media types:
 Video  
 description: An audio visualization filter that colors the image proportional to the magnitude of the audio spectrum.
   
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

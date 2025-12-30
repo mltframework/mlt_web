@@ -13,7 +13,7 @@ title: Subtitle
 media types:
 Video  
 description: Overlay subtitles onto the video  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

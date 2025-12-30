@@ -13,23 +13,23 @@ title: sigmoidaltransfer
 media types:
 Video  
 description: Desaturates image and creates a particular look that could be called Stamp, Newspaper or Photocopy  
-version: 0.9  
-creator: Janne Liljeblad  
+version: 1  
+creator: Janne Liljeblad & Cynthia  
 
 ## Parameters
 
 ### 0
 
-title: brightness    
+title: base    
 description:
-Brightnesss of image  
+Brightness of image. Midpoint of sigmoidal curve  
 type: float  
 readonly: no  
 required: no  
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0.75  
+default: 0.5  
 widget: spinner  
 
 ### 1
@@ -43,6 +43,6 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 1  
-default: 0.85  
+default: 0.6  
 widget: spinner  
 

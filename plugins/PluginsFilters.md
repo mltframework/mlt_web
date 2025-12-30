@@ -130,14 +130,10 @@ wrap_title: Filter Plugins
 * [avfilter.deinterlace_vaapi](../FilterAvfilter-deinterlace_vaapi/): deinterlace_vaapi
 * [avfilter.delogo](../FilterAvfilter-delogo/): delogo
 * [avfilter.denoise_vaapi](../FilterAvfilter-denoise_vaapi/): denoise_vaapi
-* [avfilter.derain](../FilterAvfilter-derain/): derain
 * [avfilter.deshake](../FilterAvfilter-deshake/): deshake
 * [avfilter.despill](../FilterAvfilter-despill/): despill
 * [avfilter.dialoguenhance](../FilterAvfilter-dialoguenhance/): dialoguenhance
 * [avfilter.dilation](../FilterAvfilter-dilation/): dilation
-* [avfilter.dnn_classify](../FilterAvfilter-dnn_classify/): dnn_classify
-* [avfilter.dnn_detect](../FilterAvfilter-dnn_detect/): dnn_detect
-* [avfilter.dnn_processing](../FilterAvfilter-dnn_processing/): dnn_processing
 * [avfilter.doubleweave](../FilterAvfilter-doubleweave/): doubleweave
 * [avfilter.drawbox](../FilterAvfilter-drawbox/): drawbox
 * [avfilter.drawbox_vaapi](../FilterAvfilter-drawbox_vaapi/): drawbox_vaapi
@@ -230,7 +226,6 @@ wrap_title: Filter Plugins
 * [avfilter.photosensitivity](../FilterAvfilter-photosensitivity/): photosensitivity
 * [avfilter.pixelize](../FilterAvfilter-pixelize/): pixelize
 * [avfilter.pixscope](../FilterAvfilter-pixscope/): pixscope
-* [avfilter.pp](../FilterAvfilter-pp/): pp
 * [avfilter.pp7](../FilterAvfilter-pp7/): pp7
 * [avfilter.prewitt](../FilterAvfilter-prewitt/): prewitt
 * [avfilter.procamp_vaapi](../FilterAvfilter-procamp_vaapi/): procamp_vaapi
@@ -243,6 +238,7 @@ wrap_title: Filter Plugins
 * [avfilter.roberts](../FilterAvfilter-roberts/): roberts
 * [avfilter.rotate](../FilterAvfilter-rotate/): rotate
 * [avfilter.sab](../FilterAvfilter-sab/): sab
+* [avfilter.scale](../FilterAvfilter-scale/): scale
 * [avfilter.scale_vaapi](../FilterAvfilter-scale_vaapi/): scale_vaapi
 * [avfilter.scdet](../FilterAvfilter-scdet/): scdet
 * [avfilter.scharr](../FilterAvfilter-scharr/): scharr
@@ -263,7 +259,6 @@ wrap_title: Filter Plugins
 * [avfilter.sobel](../FilterAvfilter-sobel/): sobel
 * [avfilter.speechnorm](../FilterAvfilter-speechnorm/): speechnorm
 * [avfilter.spp](../FilterAvfilter-spp/): spp
-* [avfilter.sr](../FilterAvfilter-sr/): sr
 * [avfilter.stereo3d](../FilterAvfilter-stereo3d/): stereo3d
 * [avfilter.stereotools](../FilterAvfilter-stereotools/): stereotools
 * [avfilter.stereowiden](../FilterAvfilter-stereowiden/): stereowiden
@@ -320,6 +315,7 @@ wrap_title: Filter Plugins
 * [choppy](../FilterChoppy/): Choppy
 * [chroma](../FilterChroma/): Chroma Key
 * [chroma_hold](../FilterChroma_hold/): Chroma Hold
+* [color_transform](../FilterColor_transform/): Colorspace & Transfer Characteristics
 * [crop](../FilterCrop/): Crop
 * [dance](../FilterDance/): Dance
 * [deinterlace](../FilterDeinterlace/): Xine Deinterlacer
@@ -389,6 +385,7 @@ wrap_title: Filter Plugins
 * [frei0r.gateweave](../FilterFrei0r-gateweave/): Gate Weave
 * [frei0r.glitch0r](../FilterFrei0r-glitch0r/): Glitch0r
 * [frei0r.glow](../FilterFrei0r-glow/): Glow
+* [frei0r.heatmap0r](../FilterFrei0r-heatmap0r/): heatmap0r
 * [frei0r.hqdn3d](../FilterFrei0r-hqdn3d/): hqdn3d
 * [frei0r.hueshift0r](../FilterFrei0r-hueshift0r/): Hueshift0r
 * [frei0r.invert0r](../FilterFrei0r-invert0r/): Invert0r
@@ -408,6 +405,7 @@ wrap_title: Filter Plugins
 * [frei0r.nervous](../FilterFrei0r-nervous/): Nervous
 * [frei0r.normaliz0r](../FilterFrei0r-normaliz0r/): Normaliz0r
 * [frei0r.nosync0r](../FilterFrei0r-nosync0r/): nosync0r
+* [frei0r.ntsc](../FilterFrei0r-ntsc/): NTSC
 * [frei0r.pixeliz0r](../FilterFrei0r-pixeliz0r/): pixeliz0r
 * [frei0r.pixs0r](../FilterFrei0r-pixs0r/): pixs0r
 * [frei0r.posterize](../FilterFrei0r-posterize/): posterize
@@ -683,6 +681,7 @@ wrap_title: Filter Plugins
 * [subtitle](../FilterSubtitle/): Subtitle
 * [subtitle_feed](../FilterSubtitle_feed/): Subtitle
 * [swresample](../FilterSwresample/): FFmpeg Audio Resampler
+* [sws_colortransform](../FilterSws_colortransform/): libswscale Color Transform
 * [swscale](../FilterSwscale/): FFmpeg Image Scaler
 * [tcolor](../FilterTcolor/): Technicolor
 * [telecide](../FilterTelecide/): 

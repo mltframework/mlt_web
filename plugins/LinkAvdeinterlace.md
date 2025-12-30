@@ -15,7 +15,7 @@ Video  Hidden
 description: Deinterlace interlaced video.
 This link can be added to a chain to normalize video from the producer to provide deinterlaced images if requested by the consumer.
   
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

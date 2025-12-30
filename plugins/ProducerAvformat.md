@@ -13,7 +13,7 @@ title: FFmpeg Reader
 media types:
 Audio  Video  
 description: Read an audio and/or video file using FFmpeg.  
-version: 3  
+version: 4  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

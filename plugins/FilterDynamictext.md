@@ -13,7 +13,7 @@ title: Dynamic text
 media types:
 Video  
 description: Overlay dynamic text onto the video  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: Alpha strobing
 media types:
 Video  
 description: Strobes the alpha channel to 0. Many other filters overwrite the alpha channel, in that case this needs to be last.  
-version: 1  
+version: 2  
 creator: Martin Sandsmark  
 copyright: Martin Sandsmark  
 license: LGPLv2.1  

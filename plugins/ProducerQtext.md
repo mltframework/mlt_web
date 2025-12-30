@@ -13,7 +13,7 @@ title: Qt Titler
 media types:
 Video  
 description: A title generator that uses the Qt framework to render text.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

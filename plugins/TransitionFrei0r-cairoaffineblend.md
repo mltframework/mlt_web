@@ -22,7 +22,7 @@ creator: Janne Liljeblad
 
 title: x    
 description:
-X position of second input, value interperted as range -2*width - 3*width  
+X position of second input, value interpreted as range -2*width - 3*width  
 type: float  
 readonly: no  
 required: no  
@@ -36,7 +36,7 @@ widget: spinner
 
 title: y    
 description:
-Y position of second input, value interperted as range -2*height - 3*height  
+Y position of second input, value interpreted as range -2*height - 3*height  
 type: float  
 readonly: no  
 required: no  
@@ -50,7 +50,7 @@ widget: spinner
 
 title: x scale    
 description:
-X scale of second input, value interperted as range 0 - 5  
+X scale of second input, value interpreted as range 0 - 5  
 type: float  
 readonly: no  
 required: no  
@@ -64,7 +64,7 @@ widget: spinner
 
 title: y scale    
 description:
-Y scale of second input, value interperted as range 0 - 5  
+Y scale of second input, value interpreted as range 0 - 5  
 type: float  
 readonly: no  
 required: no  
@@ -78,7 +78,7 @@ widget: spinner
 
 title: rotation    
 description:
-Rotation of second input, value interperted as range 0 - 360  
+Rotation of second input, value interpreted as range 0 - 360  
 type: float  
 readonly: no  
 required: no  

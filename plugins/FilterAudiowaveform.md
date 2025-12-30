@@ -13,7 +13,7 @@ title: Audio Waveform Filter
 media types:
 Video  
 description: An audio visualization filter that draws an audio waveform on the image.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

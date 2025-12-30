@@ -13,7 +13,7 @@ title: Drop Shadow
 media types:
 Video  
 description: Create a shadow effect from the alpha channel.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
