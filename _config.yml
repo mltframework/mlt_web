@@ -43,12 +43,10 @@ collections:
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: google-plus
-    url: https://plus.google.com/+MltframeworkOrg
   - title: facebook
     url: https://www.facebook.com/MLTframework/
   - title: twitter
-    url: https://twitter.com/MLTframework
+    url: https://x.com/MLTframework
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
