@@ -13,7 +13,7 @@ title: Timer
 media types:
 Video  
 description: Overlay a timer onto the video. The timer can count up or down.  
-version: 3  
+version: 4  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -204,6 +204,28 @@ minimum: 0
 maximum: 3  
 default: 0  
 widget: spinner  
+
+### underline
+
+title: Underline    
+description:
+Apply underline decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
+
+### strikethrough
+
+title: Strikethrough    
+description:
+Apply strikethrough decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
 
 ### pad
 

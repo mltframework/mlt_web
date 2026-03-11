@@ -15,7 +15,7 @@ Video
 description: Adjust the opacity of an image through the alpha channel.  
 version: 5  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Notes

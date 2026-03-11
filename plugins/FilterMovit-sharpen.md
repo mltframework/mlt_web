@@ -15,7 +15,7 @@ Video
 description: Deconvolution Sharpen is a filter that sharpens by way of deconvolution (i.e., trying to reverse the blur kernel, as opposed to just boosting high frequencies), more specifically by FIR Wiener filters. It is the same algorithm as used by the (now largely abandoned) Refocus plug-in for GIMP, and I suspect the same as in Photoshop&#39;s “Smart Sharpen” filter. The effect gives generally better results than unsharp masking, but can be very GPU intensive, and requires a fair bit of tweaking to get good results without ringing and/or excessive noise.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Parameters

@@ -17,7 +17,7 @@ version: 2
 creator: Dan Dennedy  
 contributor: Marco Gittler  
 contributor: Steve Harris  
-copyright: Dan Dennedy, Marco Gittler, and Steve Harris  
+copyright: Meltytech, LLC, Marco Gittler, and Steve Harris  
 license: GPLv2  
 
 ## Notes

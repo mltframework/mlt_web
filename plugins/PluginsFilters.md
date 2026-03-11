@@ -72,6 +72,7 @@ wrap_title: Filter Plugins
 * [avfilter.atadenoise](../FilterAvfilter-atadenoise/): atadenoise
 * [avfilter.atilt](../FilterAvfilter-atilt/): atilt
 * [avfilter.avgblur](../FilterAvfilter-avgblur/): avgblur
+* [avfilter.avgblur_vulkan](../FilterAvfilter-avgblur_vulkan/): avgblur_vulkan
 * [avfilter.backgroundkey](../FilterAvfilter-backgroundkey/): backgroundkey
 * [avfilter.bandpass](../FilterAvfilter-bandpass/): bandpass
 * [avfilter.bandreject](../FilterAvfilter-bandreject/): bandreject
@@ -82,15 +83,18 @@ wrap_title: Filter Plugins
 * [avfilter.biquad](../FilterAvfilter-biquad/): biquad
 * [avfilter.bitplanenoise](../FilterAvfilter-bitplanenoise/): bitplanenoise
 * [avfilter.blackdetect](../FilterAvfilter-blackdetect/): blackdetect
+* [avfilter.blackdetect_vulkan](../FilterAvfilter-blackdetect_vulkan/): blackdetect_vulkan
 * [avfilter.blackframe](../FilterAvfilter-blackframe/): blackframe
 * [avfilter.blockdetect](../FilterAvfilter-blockdetect/): blockdetect
 * [avfilter.blurdetect](../FilterAvfilter-blurdetect/): blurdetect
 * [avfilter.boxblur](../FilterAvfilter-boxblur/): boxblur
 * [avfilter.bwdif](../FilterAvfilter-bwdif/): bwdif
+* [avfilter.bwdif_vulkan](../FilterAvfilter-bwdif_vulkan/): bwdif_vulkan
 * [avfilter.cas](../FilterAvfilter-cas/): cas
 * [avfilter.ccrepack](../FilterAvfilter-ccrepack/): ccrepack
 * [avfilter.channelmap](../FilterAvfilter-channelmap/): channelmap
 * [avfilter.chorus](../FilterAvfilter-chorus/): chorus
+* [avfilter.chromaber_vulkan](../FilterAvfilter-chromaber_vulkan/): chromaber_vulkan
 * [avfilter.chromahold](../FilterAvfilter-chromahold/): chromahold
 * [avfilter.chromakey](../FilterAvfilter-chromakey/): chromakey
 * [avfilter.chromanr](../FilterAvfilter-chromanr/): chromanr
@@ -162,11 +166,13 @@ wrap_title: Filter Plugins
 * [avfilter.find_rect](../FilterAvfilter-find_rect/): find_rect
 * [avfilter.firequalizer](../FilterAvfilter-firequalizer/): firequalizer
 * [avfilter.flanger](../FilterAvfilter-flanger/): flanger
+* [avfilter.flip_vulkan](../FilterAvfilter-flip_vulkan/): flip_vulkan
 * [avfilter.floodfill](../FilterAvfilter-floodfill/): floodfill
 * [avfilter.freezedetect](../FilterAvfilter-freezedetect/): freezedetect
 * [avfilter.fspp](../FilterAvfilter-fspp/): fspp
 * [avfilter.fsync](../FilterAvfilter-fsync/): fsync
 * [avfilter.gblur](../FilterAvfilter-gblur/): gblur
+* [avfilter.gblur_vulkan](../FilterAvfilter-gblur_vulkan/): gblur_vulkan
 * [avfilter.geq](../FilterAvfilter-geq/): geq
 * [avfilter.gradfun](../FilterAvfilter-gradfun/): gradfun
 * [avfilter.graphmonitor](../FilterAvfilter-graphmonitor/): graphmonitor
@@ -175,6 +181,7 @@ wrap_title: Filter Plugins
 * [avfilter.haas](../FilterAvfilter-haas/): haas
 * [avfilter.hdcd](../FilterAvfilter-hdcd/): hdcd
 * [avfilter.hflip](../FilterAvfilter-hflip/): hflip
+* [avfilter.hflip_vulkan](../FilterAvfilter-hflip_vulkan/): hflip_vulkan
 * [avfilter.highpass](../FilterAvfilter-highpass/): highpass
 * [avfilter.highshelf](../FilterAvfilter-highshelf/): highshelf
 * [avfilter.histeq](../FilterAvfilter-histeq/): histeq
@@ -191,6 +198,7 @@ wrap_title: Filter Plugins
 * [avfilter.idet](../FilterAvfilter-idet/): idet
 * [avfilter.il](../FilterAvfilter-il/): il
 * [avfilter.inflate](../FilterAvfilter-inflate/): inflate
+* [avfilter.interlace_vulkan](../FilterAvfilter-interlace_vulkan/): interlace_vulkan
 * [avfilter.kerndeint](../FilterAvfilter-kerndeint/): kerndeint
 * [avfilter.kirsch](../FilterAvfilter-kirsch/): kirsch
 * [avfilter.lagfun](../FilterAvfilter-lagfun/): lagfun
@@ -214,6 +222,7 @@ wrap_title: Filter Plugins
 * [avfilter.monochrome](../FilterAvfilter-monochrome/): monochrome
 * [avfilter.negate](../FilterAvfilter-negate/): negate
 * [avfilter.nlmeans](../FilterAvfilter-nlmeans/): nlmeans
+* [avfilter.nlmeans_vulkan](../FilterAvfilter-nlmeans_vulkan/): nlmeans_vulkan
 * [avfilter.nnedi](../FilterAvfilter-nnedi/): nnedi
 * [avfilter.noise](../FilterAvfilter-noise/): noise
 * [avfilter.normalize](../FilterAvfilter-normalize/): normalize
@@ -240,7 +249,9 @@ wrap_title: Filter Plugins
 * [avfilter.sab](../FilterAvfilter-sab/): sab
 * [avfilter.scale](../FilterAvfilter-scale/): scale
 * [avfilter.scale_vaapi](../FilterAvfilter-scale_vaapi/): scale_vaapi
+* [avfilter.scale_vulkan](../FilterAvfilter-scale_vulkan/): scale_vulkan
 * [avfilter.scdet](../FilterAvfilter-scdet/): scdet
+* [avfilter.scdet_vulkan](../FilterAvfilter-scdet_vulkan/): scdet_vulkan
 * [avfilter.scharr](../FilterAvfilter-scharr/): scharr
 * [avfilter.scroll](../FilterAvfilter-scroll/): scroll
 * [avfilter.selectivecolor](../FilterAvfilter-selectivecolor/): selectivecolor
@@ -280,6 +291,7 @@ wrap_title: Filter Plugins
 * [avfilter.tpad](../FilterAvfilter-tpad/): tpad
 * [avfilter.transpose](../FilterAvfilter-transpose/): transpose
 * [avfilter.transpose_vaapi](../FilterAvfilter-transpose_vaapi/): transpose_vaapi
+* [avfilter.transpose_vulkan](../FilterAvfilter-transpose_vulkan/): transpose_vulkan
 * [avfilter.treble](../FilterAvfilter-treble/): treble
 * [avfilter.tremolo](../FilterAvfilter-tremolo/): tremolo
 * [avfilter.unsharp](../FilterAvfilter-unsharp/): unsharp
@@ -289,6 +301,7 @@ wrap_title: Filter Plugins
 * [avfilter.vaguedenoiser](../FilterAvfilter-vaguedenoiser/): vaguedenoiser
 * [avfilter.vectorscope](../FilterAvfilter-vectorscope/): vectorscope
 * [avfilter.vflip](../FilterAvfilter-vflip/): vflip
+* [avfilter.vflip_vulkan](../FilterAvfilter-vflip_vulkan/): vflip_vulkan
 * [avfilter.vibrance](../FilterAvfilter-vibrance/): vibrance
 * [avfilter.vibrato](../FilterAvfilter-vibrato/): vibrato
 * [avfilter.vignette](../FilterAvfilter-vignette/): vignette
@@ -437,7 +450,7 @@ wrap_title: Filter Plugins
 * [frei0r.vertigo](../FilterFrei0r-vertigo/): Vertigo
 * [frei0r.vignette](../FilterFrei0r-vignette/): Vignette
 * [gamma](../FilterGamma/): Gamma
-* [glsl.manager](../FilterGlsl-manager/): 
+* [glsl.manager](../FilterGlsl-manager/): GLSL Manager
 * [gpsgraphic](../FilterGpsgraphic/): GPS Graphic
 * [gpstext](../FilterGpstext/): GPS Text
 * [gradientmap](../FilterGradientmap/): Gradient Map
@@ -587,6 +600,7 @@ wrap_title: Filter Plugins
 * [movit.lift_gamma_gain](../FilterMovit-lift_gamma_gain/): Lift, Gamma, and Gain (GLSL)
 * [movit.mirror](../FilterMovit-mirror/): Mirror (GLSL)
 * [movit.opacity](../FilterMovit-opacity/): Opacity (GLSL)
+* [movit.overlay_mode](../FilterMovit-overlay_mode/): Movit Overlay Mode
 * [movit.rect](../FilterMovit-rect/): Position and Size (GLSL)
 * [movit.resample](../FilterMovit-resample/): Image Scaler (GLSL)
 * [movit.resize](../FilterMovit-resize/): Image Padding (GLSL)

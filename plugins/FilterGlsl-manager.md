@@ -15,5 +15,5 @@ Video  Hidden
 description: This is a special filter to manage OpenGL and Movit. See https://mltframework.org/docs/opengl/ for more information.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  

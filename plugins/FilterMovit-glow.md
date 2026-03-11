@@ -15,7 +15,7 @@ Video
 description: Cut out the highlights of the image (everything above a certain threshold), blur them, and overlay them onto the original image.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Parameters

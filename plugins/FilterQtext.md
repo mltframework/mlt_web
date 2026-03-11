@@ -13,7 +13,7 @@ title: QText
 media types:
 Video  
 description: Overlay text onto the video  
-version: 5  
+version: 6  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -141,6 +141,28 @@ maximum: 3
 default: 0  
 unit: pixels  
 widget: spinner  
+
+### underline
+
+title: Underline    
+description:
+Apply underline decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
+
+### strikethrough
+
+title: Strikethrough    
+description:
+Apply strikethrough decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
 
 ### pad
 

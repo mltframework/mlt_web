@@ -60,6 +60,7 @@ wrap_title: Link Plugins
 * [avfilter.atadenoise](../LinkAvfilter-atadenoise/): atadenoise
 * [avfilter.atilt](../LinkAvfilter-atilt/): atilt
 * [avfilter.avgblur](../LinkAvfilter-avgblur/): avgblur
+* [avfilter.avgblur_vulkan](../LinkAvfilter-avgblur_vulkan/): avgblur_vulkan
 * [avfilter.backgroundkey](../LinkAvfilter-backgroundkey/): backgroundkey
 * [avfilter.bandpass](../LinkAvfilter-bandpass/): bandpass
 * [avfilter.bandreject](../LinkAvfilter-bandreject/): bandreject
@@ -70,15 +71,18 @@ wrap_title: Link Plugins
 * [avfilter.biquad](../LinkAvfilter-biquad/): biquad
 * [avfilter.bitplanenoise](../LinkAvfilter-bitplanenoise/): bitplanenoise
 * [avfilter.blackdetect](../LinkAvfilter-blackdetect/): blackdetect
+* [avfilter.blackdetect_vulkan](../LinkAvfilter-blackdetect_vulkan/): blackdetect_vulkan
 * [avfilter.blackframe](../LinkAvfilter-blackframe/): blackframe
 * [avfilter.blockdetect](../LinkAvfilter-blockdetect/): blockdetect
 * [avfilter.blurdetect](../LinkAvfilter-blurdetect/): blurdetect
 * [avfilter.boxblur](../LinkAvfilter-boxblur/): boxblur
 * [avfilter.bwdif](../LinkAvfilter-bwdif/): bwdif
+* [avfilter.bwdif_vulkan](../LinkAvfilter-bwdif_vulkan/): bwdif_vulkan
 * [avfilter.cas](../LinkAvfilter-cas/): cas
 * [avfilter.ccrepack](../LinkAvfilter-ccrepack/): ccrepack
 * [avfilter.channelmap](../LinkAvfilter-channelmap/): channelmap
 * [avfilter.chorus](../LinkAvfilter-chorus/): chorus
+* [avfilter.chromaber_vulkan](../LinkAvfilter-chromaber_vulkan/): chromaber_vulkan
 * [avfilter.chromahold](../LinkAvfilter-chromahold/): chromahold
 * [avfilter.chromakey](../LinkAvfilter-chromakey/): chromakey
 * [avfilter.chromanr](../LinkAvfilter-chromanr/): chromanr
@@ -150,11 +154,13 @@ wrap_title: Link Plugins
 * [avfilter.find_rect](../LinkAvfilter-find_rect/): find_rect
 * [avfilter.firequalizer](../LinkAvfilter-firequalizer/): firequalizer
 * [avfilter.flanger](../LinkAvfilter-flanger/): flanger
+* [avfilter.flip_vulkan](../LinkAvfilter-flip_vulkan/): flip_vulkan
 * [avfilter.floodfill](../LinkAvfilter-floodfill/): floodfill
 * [avfilter.freezedetect](../LinkAvfilter-freezedetect/): freezedetect
 * [avfilter.fspp](../LinkAvfilter-fspp/): fspp
 * [avfilter.fsync](../LinkAvfilter-fsync/): fsync
 * [avfilter.gblur](../LinkAvfilter-gblur/): gblur
+* [avfilter.gblur_vulkan](../LinkAvfilter-gblur_vulkan/): gblur_vulkan
 * [avfilter.geq](../LinkAvfilter-geq/): geq
 * [avfilter.gradfun](../LinkAvfilter-gradfun/): gradfun
 * [avfilter.graphmonitor](../LinkAvfilter-graphmonitor/): graphmonitor
@@ -163,6 +169,7 @@ wrap_title: Link Plugins
 * [avfilter.haas](../LinkAvfilter-haas/): haas
 * [avfilter.hdcd](../LinkAvfilter-hdcd/): hdcd
 * [avfilter.hflip](../LinkAvfilter-hflip/): hflip
+* [avfilter.hflip_vulkan](../LinkAvfilter-hflip_vulkan/): hflip_vulkan
 * [avfilter.highpass](../LinkAvfilter-highpass/): highpass
 * [avfilter.highshelf](../LinkAvfilter-highshelf/): highshelf
 * [avfilter.histeq](../LinkAvfilter-histeq/): histeq
@@ -179,6 +186,7 @@ wrap_title: Link Plugins
 * [avfilter.idet](../LinkAvfilter-idet/): idet
 * [avfilter.il](../LinkAvfilter-il/): il
 * [avfilter.inflate](../LinkAvfilter-inflate/): inflate
+* [avfilter.interlace_vulkan](../LinkAvfilter-interlace_vulkan/): interlace_vulkan
 * [avfilter.kerndeint](../LinkAvfilter-kerndeint/): kerndeint
 * [avfilter.kirsch](../LinkAvfilter-kirsch/): kirsch
 * [avfilter.lagfun](../LinkAvfilter-lagfun/): lagfun
@@ -202,6 +210,7 @@ wrap_title: Link Plugins
 * [avfilter.monochrome](../LinkAvfilter-monochrome/): monochrome
 * [avfilter.negate](../LinkAvfilter-negate/): negate
 * [avfilter.nlmeans](../LinkAvfilter-nlmeans/): nlmeans
+* [avfilter.nlmeans_vulkan](../LinkAvfilter-nlmeans_vulkan/): nlmeans_vulkan
 * [avfilter.nnedi](../LinkAvfilter-nnedi/): nnedi
 * [avfilter.noise](../LinkAvfilter-noise/): noise
 * [avfilter.normalize](../LinkAvfilter-normalize/): normalize
@@ -228,7 +237,9 @@ wrap_title: Link Plugins
 * [avfilter.sab](../LinkAvfilter-sab/): sab
 * [avfilter.scale](../LinkAvfilter-scale/): scale
 * [avfilter.scale_vaapi](../LinkAvfilter-scale_vaapi/): scale_vaapi
+* [avfilter.scale_vulkan](../LinkAvfilter-scale_vulkan/): scale_vulkan
 * [avfilter.scdet](../LinkAvfilter-scdet/): scdet
+* [avfilter.scdet_vulkan](../LinkAvfilter-scdet_vulkan/): scdet_vulkan
 * [avfilter.scharr](../LinkAvfilter-scharr/): scharr
 * [avfilter.scroll](../LinkAvfilter-scroll/): scroll
 * [avfilter.selectivecolor](../LinkAvfilter-selectivecolor/): selectivecolor
@@ -268,6 +279,7 @@ wrap_title: Link Plugins
 * [avfilter.tpad](../LinkAvfilter-tpad/): tpad
 * [avfilter.transpose](../LinkAvfilter-transpose/): transpose
 * [avfilter.transpose_vaapi](../LinkAvfilter-transpose_vaapi/): transpose_vaapi
+* [avfilter.transpose_vulkan](../LinkAvfilter-transpose_vulkan/): transpose_vulkan
 * [avfilter.treble](../LinkAvfilter-treble/): treble
 * [avfilter.tremolo](../LinkAvfilter-tremolo/): tremolo
 * [avfilter.unsharp](../LinkAvfilter-unsharp/): unsharp
@@ -277,6 +289,7 @@ wrap_title: Link Plugins
 * [avfilter.vaguedenoiser](../LinkAvfilter-vaguedenoiser/): vaguedenoiser
 * [avfilter.vectorscope](../LinkAvfilter-vectorscope/): vectorscope
 * [avfilter.vflip](../LinkAvfilter-vflip/): vflip
+* [avfilter.vflip_vulkan](../LinkAvfilter-vflip_vulkan/): vflip_vulkan
 * [avfilter.vibrance](../LinkAvfilter-vibrance/): vibrance
 * [avfilter.vibrato](../LinkAvfilter-vibrato/): vibrato
 * [avfilter.vignette](../LinkAvfilter-vignette/): vignette

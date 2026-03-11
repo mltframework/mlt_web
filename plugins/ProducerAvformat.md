@@ -13,7 +13,7 @@ title: FFmpeg Reader
 media types:
 Audio  Video  
 description: Read an audio and/or video file using FFmpeg.  
-version: 4  
+version: 5  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -21,7 +21,7 @@ URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)
 
 ## Notes
 
-This service uses mlt_cache to prevent many simultaneous, open instances of libavformat and libavcodec contexts, file handles, and threads in memory at the same time. Not only does it save on RAM usage, but kernels enforce maximum open file handles and threads per process. Without caching, large projects could easily run into these limits. The default producer cache size is in mlt_cache at size 4. When using mlt_multitrack, the size is adjusted automatically to be the number of tracks plus one if at least 4. This makes it rather dynamic and automatic; however, there are some service graph configurations or authoring scenarios that do not exclusively use the multitrack for multi-layer operations and may need a larger avformat producer cache size. One can set the environment variable MLT_AVFORMAT_PRODUCER_CACHE to a number to override and increase the size of this cache (or to lower it for limited use cases and seeking to minimize RAM). One can set the environment variables MLT_AVFORMAT_HWACCEL and MLT_AVFORMAT_HWACCEL_DEVICE to affect the usage of hwaccel decoding globally. Hardware decoding gracefully falls back to software decoding.
+This service uses mlt_cache to prevent many simultaneous, open instances of libavformat and libavcodec contexts, file handles, and threads in memory at the same time. Not only does it save on RAM usage, but kernels enforce maximum open file handles and threads per process. Without caching, large projects could easily run into these limits. The default producer cache size is in mlt_cache at size 4. When using mlt_multitrack, the size is adjusted automatically to be the number of tracks plus one if at least 4. This makes it rather dynamic and automatic; however, there are some service graph configurations or authoring scenarios that do not exclusively use the multitrack for multi-layer operations and may need a larger avformat producer cache size. One can set the environment variable MLT_AVFORMAT_PRODUCER_CACHE to a number to override and increase the size of this cache (or to lower it for limited use cases and seeking to minimize RAM). One can set the environment variables MLT_AVFORMAT_HWACCEL, MLT_AVFORMAT_HWACCEL_DEVICE, and MLT_AVFORMAT_HWACCEL_PPS to affect the usage of hwaccel decoding globally. MLT_AVFORMAT_HWACCEL_PPS sets a threshold for pixels per second (width * height * fps); hwaccel is only used when the video&#39;s PPS is less than or equal to this threshold. You should not use MLT_AVFORMAT_HWACCEL_PPS in conjunction with the consumer scale property. Hardware decoding gracefully falls back to software decoding.
 
 ## Bugs
 

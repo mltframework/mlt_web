@@ -15,7 +15,7 @@ Video
 description: Remove pixels from the edges of the video.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Notes

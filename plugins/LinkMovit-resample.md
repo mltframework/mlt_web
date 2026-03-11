@@ -15,7 +15,7 @@ Video  Hidden
 description: Change the resolution of a video or image.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Notes

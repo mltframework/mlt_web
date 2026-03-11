@@ -15,7 +15,7 @@ Video
 description: A simple video cross-fade or mixing effect.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Parameters

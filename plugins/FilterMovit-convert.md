@@ -15,7 +15,7 @@ Video  Hidden
 description: Converts the colorspace and pixel format.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Notes

@@ -15,7 +15,7 @@ Video
 description: This performs the PSNR and SSIM video quality measurements by comparing the B frames to the reference frame A. It outputs the numbers to stdout in space-delimited format for easy by another tool. The bottom half of the B frame is placed below the top half of the A frame for visual comparison.  
 version: 2  
 creator: Dan Dennedy  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv3  
 
 ## Parameters

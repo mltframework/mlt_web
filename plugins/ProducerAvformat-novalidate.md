@@ -13,7 +13,7 @@ title: Non-validating FFmpeg Reader
 media types:
 Audio  Video  
 description: Read an audio and/or video file using FFmpeg.  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

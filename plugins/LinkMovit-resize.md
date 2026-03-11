@@ -15,7 +15,7 @@ Video  Hidden
 description: Pad an image with black to fulfill the requested image size.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Notes

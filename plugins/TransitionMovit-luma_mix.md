@@ -15,7 +15,7 @@ Video
 description: A generic dissolve and wipe transition processor.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Parameters

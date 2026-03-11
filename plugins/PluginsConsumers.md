@@ -14,5 +14,5 @@ wrap_title: Consumer Plugins
 * [sdl](../ConsumerSdl/): SDL Fast YUV (*DEPRECATED*)
 * [sdl2](../ConsumerSdl2/): SDL2
 * [sdl2_audio](../ConsumerSdl2_audio/): SDL2 Audio Only
-* [xgl](../ConsumerXgl/): 
+* [xgl](../ConsumerXgl/): OpenGL Video (*DEPRECATED*)
 * [xml](../ConsumerXml/): XML

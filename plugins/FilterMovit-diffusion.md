@@ -15,7 +15,7 @@ Video
 description: There are many different effects that go under the name of &quot;diffusion&quot;, seemingly all of the inspired by the effect you get when you put a diffusion filter in front of your camera lens. The effect most people want is a general flattening/smoothing of the light, and reduction of fine detail (most notably, blemishes in people&#39;s skin), without ruining edges, which a regular blur would do. We do a relatively simple version, sometimes known as &quot;white diffusion&quot;, where we first blur the picture, and then overlay it on the original using the original as a matte.  
 version: 1  
 creator: Steinar H. Gunderson  
-copyright: Dan Dennedy  
+copyright: Meltytech, LLC  
 license: GPLv2  
 
 ## Parameters

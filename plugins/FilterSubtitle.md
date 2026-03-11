@@ -13,7 +13,7 @@ title: Subtitle
 media types:
 Video  
 description: Overlay subtitles onto the video  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -151,6 +151,28 @@ required: no
 minimum: 0  
 default: 0  
 widget: spinner  
+
+### underline
+
+title: Underline    
+description:
+Apply underline decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
+
+### strikethrough
+
+title: Strikethrough    
+description:
+Apply strikethrough decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
 
 ### pad
 
