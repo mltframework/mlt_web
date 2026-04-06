@@ -8,13 +8,11 @@ All of this is speculative and only ideas for consideration at this point.
 
 See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.baseurl }})
 
-* add ability to have relative audio and video index in avformat producer along with a fail over to the first stream of
-  respective type when invalid
 * convert most services and properties to `mlt_animation`
 * add more tests (difficult to define coverage required at this point)
 * document expectations in each type of service (e.g. meta properties, frame-threading)
 * improve `mlt_consumer:real_time` > 1
-* more text effects like outline and blur (text and backround) in qtext html and letter spacing in plain text
+* letter spacing in text services
 * fix the cache issue that necessitates `mlt_multitrack.c:resize_service_caches()`
 
 ## 8.x (Next)
@@ -54,39 +52,3 @@ See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.bas
   * sharpening
   * optical flow
  
-## Old Roadmap
-
-This is a todo list from many years ago. Some ideas may still be interesting and relevant.
-
-* add a libraw producer
-* add field-aware scaler 
-* add [EDL]([http://www.edlmax.com/EdlMaxHelp/Edl/maxguide.html) import and export
-* automatic cropping using `motion_est`
-* automatic cropping when sample aspect != display aspect (DV) 
-* use `motion_est` module for scene change detection
-* expand `motion_est` module to track filter masks 
-* integrate blender ([gvfx](http://gvfx.blogspot.com/))
-* [Bob+Weave](http://www.guthspot.se/video/#deinterlacesmooth] for slow motion or double framerate
-* add weave interlacer (e.g. 50p to PAL DVD)
-* [audio
-matching](http://bemasc.net/wordpress/2011/07/26/an-auto-aligner-for-pitivi/)
-* add a gstreamer producer that uses decodebin2 
-* add gstreamer consumer support? (or implement a gstreamer element gstmlt)
-* pass-through for formats that can support this
-* [AFD](http://en.wikipedia.org/wiki/Active_Format_Description) support
-* gegl module? 
-* VideoJack (vjack) support? 
-* expand YAML Tiny parser to support JSON 
-* convert melt syntax to YAML Tiny / JSON
-* add shared-mime-info loader based on [xdgmime](http://webcvs.freedesktop.org/mime/xdgmime/)
-* add SNMP support to Melted 
-* add 'fx cut' to XFER command in Melted 
-* add sample accuracy to audio
-* add field level accuracy to video 
-* [Intel Media SDK](http://software.intel.com/en-us/articles/media/)?
-* audio buses and video layers 
-* integrate physics engine? See [Box2d](http://code.google.com/p/box2d/) in
-  [Newton for After Effects](http://www.studiodaily.com/studiomonthly/news/Newton-the-First-Physics-Engine-for-After-Effects_13207.html) -
-  maybe with QML version of WebVfx plugin?
-* OpenFX
-  
