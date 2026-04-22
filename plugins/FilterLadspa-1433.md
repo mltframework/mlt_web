@@ -32,6 +32,8 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 ### 0
 
 title: Pitch shift    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -39,7 +41,6 @@ animation: yes
 minimum: 0.25  
 maximum: 4  
 default: 1  
-scale: log  
 
 ### 1
 

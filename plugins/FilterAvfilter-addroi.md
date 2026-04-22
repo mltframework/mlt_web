@@ -30,7 +30,7 @@ Region distance from left edge of frame.
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y
 
@@ -40,7 +40,7 @@ Region distance from top edge of frame.
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.w
 
@@ -50,7 +50,7 @@ Region width.
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.h
 
@@ -60,7 +60,7 @@ Region height.
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.qoffset
 

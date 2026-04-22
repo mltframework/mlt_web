@@ -31,7 +31,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 1e+06  
+maximum: 1000000.0  
 default: 2  
 format: double  
 
@@ -44,7 +44,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 2  
-maximum: 1e+06  
+maximum: 1000000.0  
 default: 22050  
 format: double  
 

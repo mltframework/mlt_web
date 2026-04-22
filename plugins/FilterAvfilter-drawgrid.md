@@ -30,7 +30,7 @@ set horizontal offset
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y
 
@@ -40,7 +40,7 @@ set vertical offset
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.width
 
@@ -50,7 +50,7 @@ set width of grid cell
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.w
 
@@ -60,7 +60,7 @@ set width of grid cell
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.height
 
@@ -70,7 +70,7 @@ set height of grid cell
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.h
 
@@ -80,7 +80,7 @@ set height of grid cell
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.color
 
@@ -90,7 +90,7 @@ set color of the grid
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.c
 
@@ -100,7 +100,7 @@ set color of the grid
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.thickness
 
@@ -110,7 +110,7 @@ set grid line thickness
 type: string  
 readonly: no  
 required: no  
-default: '1'  
+default: 1  
 
 ### av.t
 
@@ -120,7 +120,7 @@ set grid line thickness
 type: string  
 readonly: no  
 required: no  
-default: '1'  
+default: 1  
 
 ### av.replace
 

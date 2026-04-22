@@ -186,7 +186,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.h
 
@@ -196,7 +196,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.invert
 

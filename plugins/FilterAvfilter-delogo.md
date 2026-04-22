@@ -30,7 +30,7 @@ set logo x position
 type: string  
 readonly: no  
 required: no  
-default: '-1'  
+default: -1  
 
 ### av.y
 
@@ -40,7 +40,7 @@ set logo y position
 type: string  
 readonly: no  
 required: no  
-default: '-1'  
+default: -1  
 
 ### av.w
 
@@ -50,7 +50,7 @@ set logo width
 type: string  
 readonly: no  
 required: no  
-default: '-1'  
+default: -1  
 
 ### av.h
 
@@ -60,7 +60,7 @@ set logo height
 type: string  
 readonly: no  
 required: no  
-default: '-1'  
+default: -1  
 
 ### av.show
 

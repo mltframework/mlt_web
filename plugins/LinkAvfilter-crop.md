@@ -30,7 +30,7 @@ set the width crop area expression
 type: string  
 readonly: no  
 required: no  
-default: 'iw'  
+default: iw  
 
 ### av.w
 
@@ -40,7 +40,7 @@ set the width crop area expression
 type: string  
 readonly: no  
 required: no  
-default: 'iw'  
+default: iw  
 
 ### av.out_h
 
@@ -50,7 +50,7 @@ set the height crop area expression
 type: string  
 readonly: no  
 required: no  
-default: 'ih'  
+default: ih  
 
 ### av.h
 
@@ -60,7 +60,7 @@ set the height crop area expression
 type: string  
 readonly: no  
 required: no  
-default: 'ih'  
+default: ih  
 
 ### av.x
 
@@ -70,7 +70,7 @@ set the x crop area expression
 type: string  
 readonly: no  
 required: no  
-default: '(in_w-out_w)/2'  
+default: (in_w-out_w)/2  
 
 ### av.y
 
@@ -80,7 +80,7 @@ set the y crop area expression
 type: string  
 readonly: no  
 required: no  
-default: '(in_h-out_h)/2'  
+default: (in_h-out_h)/2  
 
 ### av.keep_aspect
 

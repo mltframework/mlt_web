@@ -42,7 +42,7 @@ set weight for each frame
 type: string  
 readonly: no  
 required: no  
-default: '1 1 1'  
+default: 1 1 1  
 
 ### av.scale
 

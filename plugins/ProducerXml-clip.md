@@ -28,5 +28,5 @@ An XML text file containing MLT XML.
 type: string  
 readonly: no  
 required: yes  
-widget: fileope  
+widget: fileopen  
 

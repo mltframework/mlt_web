@@ -13,7 +13,7 @@ title: FFmpeg Reader
 media types:
 Audio  Video  
 description: Read an audio and/or video file using FFmpeg.  
-version: 5  
+version: 6  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -323,6 +323,15 @@ type: string
 readonly: no  
 required: no  
 
+### lut
+
+title: LUT File    
+description:
+Path to a LUT file applied to the resource using the ffmpeg lut3d filter.  
+type: string  
+readonly: no  
+required: no  
+
 ### avioflags
 
   
@@ -579,7 +588,7 @@ set information dump field separator
 type: string  
 readonly: no  
 required: no  
-default: ', '  
+default: ,   
 
 ### codec_whitelist
 
@@ -940,7 +949,7 @@ set pixel format (bitpacked)
 type: string  
 readonly: no  
 required: no  
-default: 'yuv420p'  
+default: yuv420p  
 
 ### video_size
 
@@ -1558,7 +1567,7 @@ List of file extensions that hls is allowed to access (hls)
 type: string  
 readonly: no  
 required: no  
-default: '3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,vtt,wav,webvtt,cmfv,cmfa,ec3,fmp4'  
+default: 3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,vtt,wav,webvtt,cmfv,cmfa,ec3,fmp4  
 
 ### allowed_segment_extensions
 
@@ -1568,7 +1577,7 @@ List of file extensions that hls is allowed to access (hls)
 type: string  
 readonly: no  
 required: no  
-default: '3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,vtt,wav,webvtt,cmfv,cmfa,ec3,fmp4,html'  
+default: 3gp,aac,avi,ac3,eac3,flac,mkv,m3u8,m4a,m4s,m4v,mpg,mov,mp2,mp3,mp4,mpeg,mpegts,ogg,ogv,oga,ts,vob,vtt,wav,webvtt,cmfv,cmfa,ec3,fmp4,html  
 
 ### extension_picky
 
@@ -2214,7 +2223,7 @@ required: no
 
   
 description:
-(mov,mp4,m4a,3gp,3g2,mj2)  
+ (mov,mp4,m4a,3gp,3g2,mj2)  
 type: string  
 readonly: no  
 required: no  
@@ -2865,7 +2874,7 @@ set pixel format (rawvideo)
 type: string  
 readonly: no  
 required: no  
-default: 'yuv420p'  
+default: yuv420p  
 
 ### video_size
 
@@ -3088,7 +3097,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf62.3.100'  
+default: Lavf62.3.100  
 
 ### ca_file
 
@@ -5298,7 +5307,7 @@ DRM device path (kmsgrab)
 type: string  
 readonly: no  
 required: no  
-default: '/dev/dri/card0'  
+default: /dev/dri/card0  
 
 ### format
 
@@ -5423,7 +5432,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf62.3.100'  
+default: Lavf62.3.100  
 
 ### stream_name
 
@@ -5433,7 +5442,7 @@ set stream description (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'record'  
+default: record  
 
 ### sample_rate
 
@@ -5709,7 +5718,7 @@ description:
 type: string  
 readonly: no  
 required: no  
-default: 'ntsc'  
+default: ntsc  
 
 ### draw_mouse
 
@@ -6394,7 +6403,6 @@ Set the decoding layer (exr)
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### part
 

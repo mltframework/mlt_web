@@ -66,7 +66,6 @@ Flags to pass to libswscale
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### av.interl
 
@@ -419,8 +418,8 @@ Scaler param 0
 type: float  
 readonly: no  
 required: no  
-minimum: -1.79769e+308  
-default: 1.79769e+308  
+minimum: -179769313486231570814527423731  
+default: 179769000000000006323030492138942643493033036433685336215410983  
 format: double  
 
 ### av.param1
@@ -431,8 +430,8 @@ Scaler param 1
 type: float  
 readonly: no  
 required: no  
-minimum: -1.79769e+308  
-default: 1.79769e+308  
+minimum: -179769313486231570814527423731  
+default: 179769000000000006323030492138942643493033036433685336215410983  
 format: double  
 
 ### av.eval

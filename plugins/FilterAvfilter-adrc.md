@@ -30,7 +30,7 @@ set the transfer expression
 type: string  
 readonly: no  
 required: no  
-default: 'p'  
+default: p  
 
 ### av.attack
 
@@ -66,7 +66,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.threads
 

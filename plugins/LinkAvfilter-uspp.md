@@ -63,7 +63,7 @@ Codec name
 type: string  
 readonly: no  
 required: no  
-default: 'snow'  
+default: snow  
 
 ### av.threads
 

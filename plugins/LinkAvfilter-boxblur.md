@@ -30,7 +30,7 @@ Radius of the luma blurring box
 type: string  
 readonly: no  
 required: no  
-default: '2'  
+default: 2  
 
 ### av.lr
 
@@ -40,7 +40,7 @@ Radius of the luma blurring box
 type: string  
 readonly: no  
 required: no  
-default: '2'  
+default: 2  
 
 ### av.luma_power
 

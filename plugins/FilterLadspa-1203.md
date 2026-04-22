@@ -49,7 +49,7 @@ required: no
 animation: yes  
 minimum: 0  
 maximum: 19200  
-default: 21120000.0  
+default: 21120000  
 
 ### 2
 

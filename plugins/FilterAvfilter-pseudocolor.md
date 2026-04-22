@@ -30,7 +30,7 @@ set component #0 expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: val  
 
 ### av.c1
 
@@ -40,7 +40,7 @@ set component #1 expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: val  
 
 ### av.c2
 
@@ -50,7 +50,7 @@ set component #2 expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: val  
 
 ### av.c3
 
@@ -60,7 +60,7 @@ set component #3 expression
 type: string  
 readonly: no  
 required: no  
-default: 'val'  
+default: val  
 
 ### av.index
 

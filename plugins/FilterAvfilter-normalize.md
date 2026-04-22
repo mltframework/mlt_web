@@ -30,7 +30,7 @@ output color to which darkest input color is mapped
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.whitept
 
@@ -40,7 +40,7 @@ output color to which brightest input color is mapped
 type: string  
 readonly: no  
 required: no  
-default: 'white'  
+default: white  
 
 ### av.smoothing
 

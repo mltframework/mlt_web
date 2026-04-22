@@ -30,7 +30,7 @@ set gain curve
 type: string  
 readonly: no  
 required: no  
-default: 'gain_interpolate(f)'  
+default: gain_interpolate(f)  
 
 ### av.gain_entry
 
@@ -50,7 +50,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 1e+10  
+maximum: 10000000000.0  
 default: 0.01  
 format: double  
 
@@ -63,7 +63,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 1e+10  
+maximum: 10000000000.0  
 default: 5  
 format: double  
 

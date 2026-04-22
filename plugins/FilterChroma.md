@@ -25,5 +25,17 @@ title: Key Color
 type: color  
 readonly: no  
 required: no  
-default: {"animation"=>true}  
+animation: yes  
+default: #0000ff  
+
+### variance
+
+title: Variance    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1.0  
+default: 0.15  
 

@@ -168,7 +168,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.c
 
@@ -178,7 +178,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.normalize
 

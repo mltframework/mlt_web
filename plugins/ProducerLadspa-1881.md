@@ -26,14 +26,15 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 ### 0
 
 title: Base frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
 animation: yes  
 minimum: 0.048  
 maximum: 24000  
-default: 21120000.0  
-scale: log  
+default: 21120000  
 
 ### 1
 

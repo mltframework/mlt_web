@@ -30,7 +30,7 @@ set angle (in radians)
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.a
 
@@ -40,7 +40,7 @@ set angle (in radians)
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.out_w
 
@@ -50,7 +50,7 @@ set output width expression
 type: string  
 readonly: no  
 required: no  
-default: 'iw'  
+default: iw  
 
 ### av.ow
 
@@ -60,7 +60,7 @@ set output width expression
 type: string  
 readonly: no  
 required: no  
-default: 'iw'  
+default: iw  
 
 ### av.out_h
 
@@ -70,7 +70,7 @@ set output height expression
 type: string  
 readonly: no  
 required: no  
-default: 'ih'  
+default: ih  
 
 ### av.oh
 
@@ -80,7 +80,7 @@ set output height expression
 type: string  
 readonly: no  
 required: no  
-default: 'ih'  
+default: ih  
 
 ### av.fillcolor
 
@@ -90,7 +90,7 @@ set background fill color
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.c
 
@@ -100,7 +100,7 @@ set background fill color
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.bilinear
 

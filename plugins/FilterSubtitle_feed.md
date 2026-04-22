@@ -58,7 +58,7 @@ title: Language
 description:
 The three character language identifier for the subtitles.  
 type: string  
-readonly: yes  
+readonly: no  
 required: no  
 default: eng  
 

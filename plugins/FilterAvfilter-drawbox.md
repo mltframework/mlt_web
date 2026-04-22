@@ -30,7 +30,7 @@ set horizontal position of the left box edge
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y
 
@@ -40,7 +40,7 @@ set vertical position of the top box edge
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.width
 
@@ -50,7 +50,7 @@ set width of the box
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.w
 
@@ -60,7 +60,7 @@ set width of the box
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.height
 
@@ -70,7 +70,7 @@ set height of the box
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.h
 
@@ -80,7 +80,7 @@ set height of the box
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.color
 
@@ -90,7 +90,7 @@ set color of the box
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.c
 
@@ -100,7 +100,7 @@ set color of the box
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.thickness
 
@@ -110,7 +110,7 @@ set the box thickness
 type: string  
 readonly: no  
 required: no  
-default: '3'  
+default: 3  
 
 ### av.t
 
@@ -120,7 +120,7 @@ set the box thickness
 type: string  
 readonly: no  
 required: no  
-default: '3'  
+default: 3  
 
 ### av.replace
 

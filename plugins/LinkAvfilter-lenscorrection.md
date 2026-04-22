@@ -96,7 +96,7 @@ set the color of the unmapped pixels
 type: string  
 readonly: no  
 required: no  
-default: 'black@0'  
+default: black@0  
 
 ### av.threads
 

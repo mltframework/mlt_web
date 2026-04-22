@@ -745,7 +745,7 @@ parameter A, which is parameter &quot;b&quot; for bicubic, and the number of fil
 type: float  
 readonly: no  
 required: no  
-minimum: -1.79769e+308  
+minimum: -179769313486231570814527423731  
 default: nan  
 format: double  
 
@@ -757,7 +757,7 @@ parameter B, which is parameter &quot;c&quot; for bicubic
 type: float  
 readonly: no  
 required: no  
-minimum: -1.79769e+308  
+minimum: -179769313486231570814527423731  
 default: nan  
 format: double  
 

@@ -1,7 +1,7 @@
 ---
 layout: standard
 title: Documentation
-wrap_title: "Consumer: "
+wrap_title: "Consumer: null"
 category: plugin
 ---
 * TOC

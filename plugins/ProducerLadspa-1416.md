@@ -37,14 +37,15 @@ default: 1
 ### 1
 
 title: Frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
 animation: yes  
 minimum: 0.048  
 maximum: 23952  
-default: 21120000.0  
-scale: log  
+default: 21120000  
 
 ### 2
 

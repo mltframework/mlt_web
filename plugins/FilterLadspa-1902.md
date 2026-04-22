@@ -32,6 +32,8 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 ### 0
 
 title: Cutoff Frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -39,7 +41,6 @@ animation: yes
 minimum: 4.8  
 maximum: 21600  
 default: 39.3137  
-scale: log  
 
 ### 1
 

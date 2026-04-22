@@ -30,7 +30,7 @@ set rect width
 type: string  
 readonly: no  
 required: no  
-default: 'w/2'  
+default: w/2  
 
 ### av.h
 
@@ -40,7 +40,7 @@ set rect height
 type: string  
 readonly: no  
 required: no  
-default: 'h/2'  
+default: h/2  
 
 ### av.x1
 
@@ -50,7 +50,7 @@ set 1st rect x top left coordinate
 type: string  
 readonly: no  
 required: no  
-default: 'w/2'  
+default: w/2  
 
 ### av.y1
 
@@ -60,7 +60,7 @@ set 1st rect y top left coordinate
 type: string  
 readonly: no  
 required: no  
-default: 'h/2'  
+default: h/2  
 
 ### av.x2
 
@@ -70,7 +70,7 @@ set 2nd rect x top left coordinate
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y2
 
@@ -80,7 +80,7 @@ set 2nd rect y top left coordinate
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### position
 

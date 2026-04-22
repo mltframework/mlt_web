@@ -30,7 +30,7 @@ set the pad area width
 type: string  
 readonly: no  
 required: no  
-default: 'iw'  
+default: iw  
 
 ### av.w
 
@@ -40,7 +40,7 @@ set the pad area width
 type: string  
 readonly: no  
 required: no  
-default: 'iw'  
+default: iw  
 
 ### av.height
 
@@ -50,7 +50,7 @@ set the pad area height
 type: string  
 readonly: no  
 required: no  
-default: 'ih'  
+default: ih  
 
 ### av.h
 
@@ -60,7 +60,7 @@ set the pad area height
 type: string  
 readonly: no  
 required: no  
-default: 'ih'  
+default: ih  
 
 ### av.x
 
@@ -70,7 +70,7 @@ set the x offset for the input image position
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y
 
@@ -80,7 +80,7 @@ set the y offset for the input image position
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.color
 
@@ -90,7 +90,7 @@ set the color of the padded area border
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.aspect
 

@@ -30,7 +30,7 @@ set volume adjustment expression
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.precision
 

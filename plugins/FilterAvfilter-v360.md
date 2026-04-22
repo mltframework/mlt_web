@@ -189,7 +189,7 @@ input cubemap face order
 type: string  
 readonly: no  
 required: no  
-default: 'rludfb'  
+default: rludfb  
 
 ### av.out_forder
 
@@ -199,7 +199,7 @@ output cubemap face order
 type: string  
 readonly: no  
 required: no  
-default: 'rludfb'  
+default: rludfb  
 
 ### av.in_frot
 
@@ -209,7 +209,7 @@ input cubemap face rotation
 type: string  
 readonly: no  
 required: no  
-default: '000000'  
+default: 0  
 
 ### av.out_frot
 
@@ -219,7 +219,7 @@ output cubemap face rotation
 type: string  
 readonly: no  
 required: no  
-default: '000000'  
+default: 0  
 
 ### av.in_pad
 
@@ -309,7 +309,7 @@ rotation order
 type: string  
 readonly: no  
 required: no  
-default: 'ypr'  
+default: ypr  
 
 ### av.h_fov
 

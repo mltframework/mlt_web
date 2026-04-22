@@ -134,7 +134,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.threads
 

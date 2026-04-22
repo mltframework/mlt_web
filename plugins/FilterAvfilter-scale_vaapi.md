@@ -30,7 +30,7 @@ Output video width
 type: string  
 readonly: no  
 required: no  
-default: 'iw'  
+default: iw  
 
 ### av.h
 
@@ -40,7 +40,7 @@ Output video height
 type: string  
 readonly: no  
 required: no  
-default: 'ih'  
+default: ih  
 
 ### av.format
 

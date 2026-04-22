@@ -150,3 +150,231 @@ required: no
 default: 1  
 widget: text  
 
+### gps_start_text
+
+title: GPS start time    
+description:
+Date and time of the first valid GPS point.  
+type:   
+readonly: yes  
+required: no  
+
+### video_start_text
+
+title: Video start time    
+description:
+Date and time of the video file.  
+type:   
+readonly: yes  
+required: no  
+
+### auto_gps_offset_start
+
+title: Auto offset start    
+description:
+Provides a helper offset to guarantee start of video file syncs with the start of gps file. Correctly sets the offset if video file and gps recording was started at the same time.  
+type:   
+readonly: yes  
+required: no  
+
+### auto_gps_offset_now
+
+title: Auto offset now    
+description:
+Provides a helper offset to sync the first gps point to current video time (it is updated every second). Correctly sets the offset if you video record the moment gps starts.  
+type:   
+readonly: yes  
+required: no  
+
+### auto_gps_processing_start_now
+
+title: Auto gps processing start now    
+description:
+Provides a helper offset to sync the gps_processing_start_time property to current video time (it is updated every second). DateTime string.  
+type:   
+readonly: yes  
+required: no  
+
+### geometry
+
+title: Geometry    
+description:
+A set of X/Y coordinates by which to adjust the text.  
+type: rect  
+readonly: no  
+required: no  
+default: 10%/10%:80%x80%:100%  
+
+### family
+
+title: Font family    
+description:
+The typeface of the font.  
+type: string  
+readonly: no  
+required: no  
+default: Sans  
+widget: combo  
+
+### size
+
+title: Font size    
+description:
+The size in pixels of the font.  
+type: integer  
+readonly: no  
+required: no  
+default: 26  
+widget: spinner  
+
+### style
+
+title: Font style    
+description:
+The style of the font.  
+type: string  
+readonly: no  
+required: no  
+default: normal  
+widget: combo  
+values:  
+
+* normal
+* italic
+
+### weight
+
+title: Font weight    
+description:
+The weight of the font.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 100  
+maximum: 1000  
+default: 400  
+widget: spinner  
+
+### fgcolour
+
+title: Foreground color    
+description:
+A color value is a hexadecimal representation of RGB plus alpha channel as 0xrrggbbaa. Colors can also be the words: white, black, red, green, or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.  
+type: string  
+readonly: no  
+required: no  
+default: 4294967295  
+widget: color  
+
+### bgcolour
+
+title: Background color    
+description:
+A color value is a hexadecimal representation of RGB plus alpha channel as 0xrrggbbaa. Colors can also be the words: white, black, red, green, or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.  
+type: string  
+readonly: no  
+required: no  
+default: 0  
+widget: color  
+
+### olcolour
+
+title: Outline color    
+description:
+A color value is a hexadecimal representation of RGB plus alpha channel as 0xrrggbbaa. Colors can also be the words: white, black, red, green, or blue. You can also use a HTML-style color values #rrggbb or #aarrggbb.  
+type: string  
+readonly: no  
+required: no  
+widget: color  
+
+### outline
+
+title: Outline Width    
+description:
+The width of the outline in pixels.  
+type: string  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 3  
+default: 0  
+widget: spinner  
+
+### underline
+
+title: Underline    
+description:
+Apply underline decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
+
+### strikethrough
+
+title: Strikethrough    
+description:
+Apply strikethrough decoration to the text.  
+type: boolean  
+readonly: no  
+required: no  
+default: 0  
+widget: checkbox  
+
+### pad
+
+title: Padding    
+description:
+The number of pixels to pad the background rectangle beyond edges of text.  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+widget: spinner  
+
+### halign
+
+title: Horizontal alignment    
+description:
+Set the horizontal alignment within the geometry rectangle.  
+type: string  
+readonly: no  
+required: no  
+default: left  
+widget: combo  
+values:  
+
+* left
+* centre
+* right
+
+### valign
+
+title: Vertical alignment    
+description:
+Set the vertical alignment within the geometry rectangle.  
+type: string  
+readonly: no  
+required: no  
+default: bottom  
+widget: combo  
+values:  
+
+* top
+* middle
+* bottom
+
+### opacity
+
+title: Opacity    
+description:
+Opacity of all elements - text, outline, and background  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 1.0  
+default: 1.0  
+widget: slider  
+

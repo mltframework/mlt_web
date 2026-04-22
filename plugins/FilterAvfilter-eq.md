@@ -30,7 +30,7 @@ set the contrast adjustment, negative values give a negative image
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.brightness
 
@@ -40,7 +40,7 @@ set the brightness adjustment
 type: string  
 readonly: no  
 required: no  
-default: '0.0'  
+default: 0.0  
 
 ### av.saturation
 
@@ -50,7 +50,7 @@ set the saturation adjustment
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.gamma
 
@@ -60,7 +60,7 @@ set the initial gamma value
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.gamma_r
 
@@ -70,7 +70,7 @@ gamma value for red
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.gamma_g
 
@@ -80,7 +80,7 @@ gamma value for green
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.gamma_b
 
@@ -90,7 +90,7 @@ gamma value for blue
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.gamma_weight
 
@@ -100,7 +100,7 @@ set the gamma weight which reduces the effect of gamma on bright areas
 type: string  
 readonly: no  
 required: no  
-default: '1.0'  
+default: 1.0  
 
 ### av.eval
 

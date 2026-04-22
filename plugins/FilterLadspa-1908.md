@@ -43,6 +43,8 @@ default: 0
 ### 1
 
 title: Cutoff frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -50,7 +52,6 @@ animation: yes
 minimum: 96  
 maximum: 24000  
 default: 1517.89  
-scale: log  
 
 ### 2
 

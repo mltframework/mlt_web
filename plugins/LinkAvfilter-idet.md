@@ -64,7 +64,7 @@ type: float
 readonly: no  
 required: no  
 minimum: -1  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.analyze_interlaced_flag

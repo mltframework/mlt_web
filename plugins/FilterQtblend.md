@@ -70,6 +70,16 @@ minimum: 0
 maximum: 1  
 widget: checkbox  
 
+### rotate_anchor
+
+title: Rotation anchor point    
+description:
+Keyframable anchor point for rotation. X and Y coordinates define the rotation center. Values are normalized (0-1 for inside rectangle, negative or &gt;1 for outside). Default is center (0.5, 0.5). Takes precedence over rotate_center when set.  
+type: rect  
+readonly: no  
+required: no  
+animation: yes  
+
 ### background_color
 
 title: Background color    

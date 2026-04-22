@@ -30,7 +30,7 @@ set matrix for 1st plane
 type: string  
 readonly: no  
 required: no  
-default: '0 0 0 0 1 0 0 0 0'  
+default: 0 0 0 0 1 0 0 0 0  
 
 ### av.1m
 
@@ -40,7 +40,7 @@ set matrix for 2nd plane
 type: string  
 readonly: no  
 required: no  
-default: '0 0 0 0 1 0 0 0 0'  
+default: 0 0 0 0 1 0 0 0 0  
 
 ### av.2m
 
@@ -50,7 +50,7 @@ set matrix for 3rd plane
 type: string  
 readonly: no  
 required: no  
-default: '0 0 0 0 1 0 0 0 0'  
+default: 0 0 0 0 1 0 0 0 0  
 
 ### av.3m
 
@@ -60,7 +60,7 @@ set matrix for 4th plane
 type: string  
 readonly: no  
 required: no  
-default: '0 0 0 0 1 0 0 0 0'  
+default: 0 0 0 0 1 0 0 0 0  
 
 ### av.0rdiv
 
@@ -71,7 +71,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.1rdiv
@@ -83,7 +83,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.2rdiv
@@ -95,7 +95,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.3rdiv
@@ -107,7 +107,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.0bias
@@ -119,7 +119,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.1bias
@@ -131,7 +131,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.2bias
@@ -143,7 +143,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.3bias
@@ -155,7 +155,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 2147480000.0  
+maximum: 2147483647.0  
 default: 0  
 
 ### av.0mode

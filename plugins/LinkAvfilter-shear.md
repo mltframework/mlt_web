@@ -54,7 +54,7 @@ set background fill color
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.c
 
@@ -64,7 +64,7 @@ set background fill color
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.interp
 

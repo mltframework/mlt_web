@@ -32,13 +32,14 @@ Automatically adapts to the number of channels and sampling rate of the consumer
 ### 1
 
 title: Amplitude    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
 animation: yes  
 minimum: 1.19209e-07  
 default: 1  
-scale: log  
 
 ### instances
 

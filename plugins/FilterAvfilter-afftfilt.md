@@ -30,7 +30,7 @@ set channels real expressions
 type: string  
 readonly: no  
 required: no  
-default: 're'  
+default: re  
 
 ### av.imag
 
@@ -40,7 +40,7 @@ set channels imaginary expressions
 type: string  
 readonly: no  
 required: no  
-default: 'im'  
+default: im  
 
 ### av.win_size
 

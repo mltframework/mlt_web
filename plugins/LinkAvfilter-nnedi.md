@@ -30,7 +30,7 @@ set weights file
 type: string  
 readonly: no  
 required: no  
-default: 'nnedi3_weights.bin'  
+default: nnedi3_weights.bin  
 
 ### av.deint
 

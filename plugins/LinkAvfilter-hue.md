@@ -39,7 +39,7 @@ set the saturation expression
 type: string  
 readonly: no  
 required: no  
-default: '1'  
+default: 1  
 
 ### av.H
 
@@ -58,7 +58,7 @@ set the brightness expression
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### position
 

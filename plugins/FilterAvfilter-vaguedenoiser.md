@@ -31,7 +31,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 1.79769e+308  
+maximum: 1797693134862315708145274237317  
 default: 2  
 
 ### av.method

@@ -54,6 +54,8 @@ default: 2.5
 ### 2
 
 title: LFO frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -61,7 +63,6 @@ animation: yes
 minimum: 0.05  
 maximum: 100  
 default: 0.33437  
-scale: log  
 
 ### 3
 

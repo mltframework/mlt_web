@@ -30,7 +30,7 @@ set 1st plane threshold
 type: float  
 readonly: no  
 required: no  
-minimum: 3e-05  
+minimum: 3.0e-05  
 maximum: 0.5  
 default: 0.02  
 
@@ -42,7 +42,7 @@ set 2nd plane threshold
 type: float  
 readonly: no  
 required: no  
-minimum: 3e-05  
+minimum: 3.0e-05  
 maximum: 0.5  
 default: 0.02  
 
@@ -54,7 +54,7 @@ set 3rd plane threshold
 type: float  
 readonly: no  
 required: no  
-minimum: 3e-05  
+minimum: 3.0e-05  
 maximum: 0.5  
 default: 0.02  
 
@@ -66,7 +66,7 @@ set 4th plane threshold
 type: float  
 readonly: no  
 required: no  
-minimum: 3e-05  
+minimum: 3.0e-05  
 maximum: 0.5  
 default: 0.02  
 

@@ -98,7 +98,7 @@ set the color of the added frames
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### position
 

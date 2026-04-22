@@ -608,7 +608,7 @@ wrap_title: Filter Plugins
 * [movit.sharpen](../FilterMovit-sharpen/): Deconvolution Sharpen (GLSL)
 * [movit.vignette](../FilterMovit-vignette/): Vignette (GLSL)
 * [movit.white_balance](../FilterMovit-white_balance/): White Balance (GLSL)
-* [obscure](../FilterObscure/): Obscure
+* [obscure](../FilterObscure/): Obscure (*DEPRECATED*)
 * [oldfilm](../FilterOldfilm/): Oldfilm
 * [opencv.tracker](../FilterOpencv-tracker/): OpenCV Motion Tracker
 * [outline](../FilterOutline/): Outline
@@ -698,7 +698,7 @@ wrap_title: Filter Plugins
 * [sws_colortransform](../FilterSws_colortransform/): libswscale Color Transform
 * [swscale](../FilterSwscale/): FFmpeg Image Scaler
 * [tcolor](../FilterTcolor/): Technicolor
-* [telecide](../FilterTelecide/): 
+* [telecide](../FilterTelecide/): Inverse Telecine (*DEPRECATED*)
 * [text](../FilterText/): Text
 * [threshold](../FilterThreshold/): Threshold
 * [timer](../FilterTimer/): Timer
@@ -707,5 +707,5 @@ wrap_title: Filter Plugins
 * [vidstab](../FilterVidstab/): Vid.Stab Detect and Transform
 * [vignette](../FilterVignette/): Vignette Effect
 * [volume](../FilterVolume/): Volume
-* [watermark](../FilterWatermark/): Overlay
+* [watermark](../FilterWatermark/): Overlay (*DEPRECATED*)
 * [wave](../FilterWave/): Wave

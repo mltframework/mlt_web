@@ -66,7 +66,7 @@ set luminance expression in Y plane
 type: string  
 readonly: no  
 required: no  
-default: '1'  
+default: 1  
 
 ### av.weight_U
 

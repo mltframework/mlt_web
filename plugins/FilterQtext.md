@@ -13,7 +13,7 @@ title: QText
 media types:
 Video  
 description: Overlay text onto the video  
-version: 6  
+version: 7  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -69,16 +69,12 @@ widget: spinner
 
 title: Font style    
 description:
-The style of the font.  
+The style of the font, for example, &quot;italic&quot; or &quot;narrow&quot; depending upon family  
 type: string  
 readonly: no  
 required: no  
 default: normal  
 widget: combo  
-values:  
-
-* normal
-* italic
 
 ### weight
 
@@ -281,7 +277,7 @@ widget: slider
 title: Typewriter Effect    
 description:
 Enable typewriter effect where text appears progressively over time.  
-type: integer  
+type: boolean  
 readonly: no  
 required: no  
 minimum: 0  

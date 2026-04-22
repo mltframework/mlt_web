@@ -30,9 +30,9 @@ set denoising strength
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-05  
+minimum: 1.0e-05  
 maximum: 10000  
-default: 1e-05  
+default: 1.0e-05  
 
 ### av.s
 
@@ -42,9 +42,9 @@ set denoising strength
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-05  
+minimum: 1.0e-05  
 maximum: 10000  
-default: 1e-05  
+default: 1.0e-05  
 
 ### av.patch
 

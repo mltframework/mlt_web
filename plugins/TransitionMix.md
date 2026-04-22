@@ -13,7 +13,7 @@ title: Mix
 media types:
 Audio  
 description: Mix two audio tracks.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -29,7 +29,7 @@ license: LGPLv2.1
 
 title: Start    
 description:
-The mix level to apply to the second frame. Any negative value causes an automatic crossfade from 0 to 1.  
+The mix level to apply to the second frame. -1 causes an automatic linear crossfade from 0 to 1. -2 causes an automatic constant-power (equal-power) crossfade from 0 to 1.  
 type: float  
 readonly: no  
 required: no  

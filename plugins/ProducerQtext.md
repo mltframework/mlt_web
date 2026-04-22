@@ -13,7 +13,7 @@ title: Qt Titler
 media types:
 Video  
 description: A title generator that uses the Qt framework to render text.  
-version: 3  
+version: 4  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -162,16 +162,12 @@ widget: spinner
 
 title: Font style    
 description:
-The style of the font.  
+The style of the font, for example, &quot;italic&quot; or &quot;narrow&quot; depending upon family  
 type: string  
 readonly: no  
 required: no  
 default: normal  
 widget: combo  
-values:  
-
-* normal
-* italic
 
 ### weight
 

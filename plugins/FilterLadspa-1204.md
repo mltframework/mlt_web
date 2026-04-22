@@ -43,6 +43,8 @@ default: 0
 ### 1
 
 title: Low-shelving frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -50,7 +52,6 @@ animation: yes
 minimum: 4.8  
 maximum: 23520  
 default: 4.8  
-scale: log  
 
 ### 2
 
@@ -77,6 +78,8 @@ default: 0
 ### 4
 
 title: Band 1 frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -84,7 +87,6 @@ animation: yes
 minimum: 4.8  
 maximum: 23520  
 default: 40.1597  
-scale: log  
 
 ### 5
 
@@ -111,6 +113,8 @@ default: 0
 ### 7
 
 title: Band 2 frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -118,7 +122,6 @@ animation: yes
 minimum: 4.8  
 maximum: 23520  
 default: 336  
-scale: log  
 
 ### 8
 
@@ -145,6 +148,8 @@ default: 0
 ### 10
 
 title: Band 3 frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -152,7 +157,6 @@ animation: yes
 minimum: 4.8  
 maximum: 23520  
 default: 2811.18  
-scale: log  
 
 ### 11
 
@@ -179,6 +183,8 @@ default: 0
 ### 13
 
 title: High-shelving frequency (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -186,7 +192,6 @@ animation: yes
 minimum: 4.8  
 maximum: 23520  
 default: 23520  
-scale: log  
 
 ### 14
 

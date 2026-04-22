@@ -51,7 +51,7 @@ set softclip threshold
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-06  
+minimum: 1.0e-06  
 maximum: 1  
 default: 1  
 format: double  
@@ -64,7 +64,7 @@ set softclip output gain
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-06  
+minimum: 1.0e-06  
 maximum: 16  
 default: 1  
 format: double  

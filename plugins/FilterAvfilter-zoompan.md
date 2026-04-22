@@ -30,7 +30,7 @@ set the zoom expression
 type: string  
 readonly: no  
 required: no  
-default: '1'  
+default: 1  
 
 ### av.z
 
@@ -40,7 +40,7 @@ set the zoom expression
 type: string  
 readonly: no  
 required: no  
-default: '1'  
+default: 1  
 
 ### av.x
 
@@ -50,7 +50,7 @@ set the x expression
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y
 
@@ -60,7 +60,7 @@ set the y expression
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.d
 
@@ -70,7 +70,7 @@ set the duration expression
 type: string  
 readonly: no  
 required: no  
-default: '90'  
+default: 90  
 
 ### av.s
 

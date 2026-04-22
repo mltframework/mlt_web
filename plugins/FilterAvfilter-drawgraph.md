@@ -30,7 +30,6 @@ set 1st metadata key
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### av.fg1
 
@@ -40,7 +39,7 @@ set 1st foreground color expression
 type: string  
 readonly: no  
 required: no  
-default: '0xffff0000'  
+default: 4294901760  
 
 ### av.m2
 
@@ -50,7 +49,6 @@ set 2nd metadata key
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### av.fg2
 
@@ -60,7 +58,7 @@ set 2nd foreground color expression
 type: string  
 readonly: no  
 required: no  
-default: '0xff00ff00'  
+default: 4278255360  
 
 ### av.m3
 
@@ -70,7 +68,6 @@ set 3rd metadata key
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### av.fg3
 
@@ -80,7 +77,7 @@ set 3rd foreground color expression
 type: string  
 readonly: no  
 required: no  
-default: '0xffff00ff'  
+default: 4294902015  
 
 ### av.m4
 
@@ -90,7 +87,6 @@ set 4th metadata key
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### av.fg4
 
@@ -100,7 +96,7 @@ set 4th foreground color expression
 type: string  
 readonly: no  
 required: no  
-default: '0xffffff00'  
+default: 4294967040  
 
 ### av.bg
 
@@ -110,7 +106,7 @@ set background color
 type: string  
 readonly: no  
 required: no  
-default: 'white'  
+default: white  
 
 ### av.min
 
@@ -120,8 +116,8 @@ set minimal value
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: -1  
 
 ### av.max
@@ -132,8 +128,8 @@ set maximal value
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: 1  
 
 ### av.mode

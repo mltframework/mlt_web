@@ -80,4 +80,5 @@ When enabled, the filter will only operate on RGB even if YUV is requested. Appl
 type: boolean  
 readonly: no  
 required: no  
+default: 0  
 

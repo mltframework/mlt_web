@@ -66,7 +66,7 @@ set the hsvhold similarity value
 type: float  
 readonly: no  
 required: no  
-minimum: 1e-05  
+minimum: 1.0e-05  
 maximum: 1  
 default: 0.01  
 

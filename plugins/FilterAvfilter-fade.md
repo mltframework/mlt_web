@@ -147,7 +147,7 @@ set color
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.c
 
@@ -157,7 +157,7 @@ set color
 type: string  
 readonly: no  
 required: no  
-default: 'black'  
+default: black  
 
 ### av.threads
 

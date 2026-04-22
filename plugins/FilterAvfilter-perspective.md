@@ -30,7 +30,7 @@ set top left x coordinate
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y0
 
@@ -40,7 +40,7 @@ set top left y coordinate
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.x1
 
@@ -50,7 +50,7 @@ set top right x coordinate
 type: string  
 readonly: no  
 required: no  
-default: 'W'  
+default: W  
 
 ### av.y1
 
@@ -60,7 +60,7 @@ set top right y coordinate
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.x2
 
@@ -70,7 +70,7 @@ set bottom left x coordinate
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.y2
 
@@ -80,7 +80,7 @@ set bottom left y coordinate
 type: string  
 readonly: no  
 required: no  
-default: 'H'  
+default: H  
 
 ### av.x3
 
@@ -90,7 +90,7 @@ set bottom right x coordinate
 type: string  
 readonly: no  
 required: no  
-default: 'W'  
+default: W  
 
 ### av.y3
 
@@ -100,7 +100,7 @@ set bottom right y coordinate
 type: string  
 readonly: no  
 required: no  
-default: 'H'  
+default: H  
 
 ### av.interpolation
 

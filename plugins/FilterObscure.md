@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Obscure  
+title: Obscure (*DEPRECATED*)  
 media types:
 Video  
 description: Obscuring filter.  

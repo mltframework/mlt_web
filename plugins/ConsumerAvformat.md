@@ -13,7 +13,7 @@ title: FFmpeg Output
 media types:
 Audio  Video  
 description: Write or stream audio and/or video using FFmpeg.  
-version: 5  
+version: 6  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Copyright (C) 2003-2019 Meltytech, LLC  
@@ -57,6 +57,16 @@ minimum: 0
 maximum: 1  
 default: 0  
 widget: checkbox  
+
+### attached_pic
+
+title: Cover Art    
+description:
+Path to an image file to embed as cover art (attached picture) in the output file. The image type is detected from file content (magic bytes), and only JPEG and PNG are supported. The image is added as an attached picture stream with the AV_DISPOSITION_ATTACHED_PIC flag and is written immediately after the container header. Most audio container formats (e.g. MP3, M4A, OGG, FLAC) as well as Matroska support attached pictures.  
+type: string  
+readonly: no  
+required: no  
+widget: fileopen  
 
 ### width
 
@@ -1015,7 +1025,7 @@ set information dump field separator
 type: string  
 readonly: no  
 required: no  
-default: ', '  
+default: ,   
 
 ### write_crc
 
@@ -1367,7 +1377,7 @@ HLS master playlist name (dash)
 type: string  
 readonly: no  
 required: no  
-default: 'master.m3u8'  
+default: master.m3u8  
 
 ### hls_playlist
 
@@ -1431,7 +1441,7 @@ DASH-templated name to used for the initialization segment (dash)
 type: string  
 readonly: no  
 required: no  
-default: 'init-stream$RepresentationID$.$ext$'  
+default: init-stream$RepresentationID$.$ext$  
 
 ### ldash
 
@@ -1481,7 +1491,7 @@ DASH-templated name to used for the media segments (dash)
 type: string  
 readonly: no  
 required: no  
-default: 'chunk-stream$RepresentationID$-$Number%05d$.$ext$'  
+default: chunk-stream$RepresentationID$-$Number%05d$.$ext$  
 
 ### method
 
@@ -2050,7 +2060,7 @@ set hash to use (framehash)
 type: string  
 readonly: no  
 required: no  
-default: 'sha256'  
+default: sha256  
 
 ### format_version
 
@@ -2072,7 +2082,7 @@ set hash to use (framemd5)
 type: string  
 readonly: no  
 required: no  
-default: 'md5'  
+default: md5  
 
 ### format_version
 
@@ -2118,7 +2128,7 @@ set hash to use (hash)
 type: string  
 readonly: no  
 required: no  
-default: 'sha256'  
+default: sha256  
 
 ### window_size
 
@@ -2349,7 +2359,7 @@ set fragment mp4 file init filename (hls)
 type: string  
 readonly: no  
 required: no  
-default: 'init.mp4'  
+default: init.mp4  
 
 ### hls_fmp4_init_resend
 
@@ -3202,7 +3212,7 @@ the creation time (mcc)
 type: string  
 readonly: no  
 required: no  
-default: 'now'  
+default: now  
 
 ### hash
 
@@ -3212,7 +3222,7 @@ set hash to use (md5)
 type: string  
 readonly: no  
 required: no  
-default: 'md5'  
+default: md5  
 
 ### reserve_index_space
 
@@ -4341,7 +4351,7 @@ Boundary tag (mpjpeg)
 type: string  
 readonly: no  
 required: no  
-default: 'ffmpeg'  
+default: ffmpeg  
 
 ### signal_standard
 
@@ -5156,7 +5166,7 @@ set reference stream (segment)
 type: string  
 readonly: no  
 required: no  
-default: 'auto'  
+default: auto  
 
 ### segment_format
 
@@ -5431,7 +5441,7 @@ set reference stream (stream_segment,ssegment)
 type: string  
 readonly: no  
 required: no  
-default: 'auto'  
+default: auto  
 
 ### segment_format
 
@@ -5844,7 +5854,7 @@ set hash to use (streamhash)
 type: string  
 readonly: no  
 required: no  
-default: 'sha256'  
+default: sha256  
 
 ### use_fifo
 
@@ -6813,7 +6823,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavf62.3.100'  
+default: Lavf62.3.100  
 
 ### stream_name
 
@@ -12087,7 +12097,7 @@ vendor ID (prores)
 type: string  
 readonly: no  
 required: no  
-default: 'fmpg'  
+default: fmpg  
 
 ### vendor
 
@@ -12097,7 +12107,7 @@ vendor ID (prores_aw)
 type: string  
 readonly: no  
 required: no  
-default: 'fmpg'  
+default: fmpg  
 
 ### mbs_per_slice
 
@@ -12136,7 +12146,7 @@ vendor ID (prores_ks)
 type: string  
 readonly: no  
 required: no  
-default: 'Lavc'  
+default: Lavc  
 
 ### bits_per_mb
 
@@ -16944,7 +16954,7 @@ Set the encoding preset (cf. x264 --fullhelp) (libx264)
 type: string  
 readonly: no  
 required: no  
-default: 'medium'  
+default: medium  
 
 ### tune
 
@@ -17455,7 +17465,7 @@ Set the encoding preset (cf. x264 --fullhelp) (libx264rgb)
 type: string  
 readonly: no  
 required: no  
-default: 'medium'  
+default: medium  
 
 ### tune
 

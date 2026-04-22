@@ -30,7 +30,7 @@ set lens angle
 type: string  
 readonly: no  
 required: no  
-default: 'PI/5'  
+default: PI/5  
 
 ### av.a
 
@@ -40,7 +40,7 @@ set lens angle
 type: string  
 readonly: no  
 required: no  
-default: 'PI/5'  
+default: PI/5  
 
 ### av.x0
 
@@ -50,7 +50,7 @@ set circle center position on x-axis
 type: string  
 readonly: no  
 required: no  
-default: 'w/2'  
+default: w/2  
 
 ### av.y0
 
@@ -60,7 +60,7 @@ set circle center position on y-axis
 type: string  
 readonly: no  
 required: no  
-default: 'h/2'  
+default: h/2  
 
 ### av.mode
 

@@ -30,7 +30,7 @@ set destination indexes of input frames
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### position
 

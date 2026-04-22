@@ -30,7 +30,6 @@ set the file name to use for frame sync
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### av.f
 
@@ -40,7 +39,6 @@ set the file name to use for frame sync
 type: string  
 readonly: no  
 required: no  
-default: ''  
 
 ### position
 

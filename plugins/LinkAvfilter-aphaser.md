@@ -44,7 +44,7 @@ type: float
 readonly: no  
 required: no  
 minimum: 0  
-maximum: 1e+09  
+maximum: 1000000000.0  
 default: 0.74  
 format: double  
 

@@ -30,7 +30,7 @@ set time over which increase of volume is determined
 type: string  
 readonly: no  
 required: no  
-default: '0'  
+default: 0  
 
 ### av.decays
 
@@ -40,7 +40,7 @@ set time over which decrease of volume is determined
 type: string  
 readonly: no  
 required: no  
-default: '0.8'  
+default: 0.8  
 
 ### av.points
 
@@ -50,7 +50,7 @@ set points of transfer function
 type: string  
 readonly: no  
 required: no  
-default: '-70/-70|-60/-20|1/0'  
+default: -70/-70|-60/-20|1/0  
 
 ### av.soft-knee
 

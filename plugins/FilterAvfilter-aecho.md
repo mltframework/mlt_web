@@ -54,7 +54,7 @@ set list of signal delays
 type: string  
 readonly: no  
 required: no  
-default: '1000'  
+default: 1000  
 
 ### av.decays
 
@@ -64,7 +64,7 @@ set list of signal decays
 type: string  
 readonly: no  
 required: no  
-default: '0.5'  
+default: 0.5  
 
 ### position
 

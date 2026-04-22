@@ -56,7 +56,7 @@ maximum: 1
 
 title: Channel    
 description:
-For stereo: 0 for front left, 1 for front right, -1 for front balance. For quad: 2 for back left, 3 for back right, -2 for rear balance,  
+For stereo: 0 for front left, 1 for front right, -1 for front balance. For quad: 2 for back left, 3 for back right, -2 for rear balance, -3 for left fade, -4 for right fade.  
 type: integer  
 readonly: no  
 required: no  

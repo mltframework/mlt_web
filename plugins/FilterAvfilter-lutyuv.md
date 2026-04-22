@@ -30,7 +30,7 @@ set component #0 expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.c1
 
@@ -40,7 +40,7 @@ set component #1 expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.c2
 
@@ -50,7 +50,7 @@ set component #2 expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.c3
 
@@ -60,7 +60,7 @@ set component #3 expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.y
 
@@ -70,7 +70,7 @@ set Y expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.u
 
@@ -80,7 +80,7 @@ set U expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.v
 
@@ -90,7 +90,7 @@ set V expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.r
 
@@ -100,7 +100,7 @@ set R expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.g
 
@@ -110,7 +110,7 @@ set G expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.b
 
@@ -120,7 +120,7 @@ set B expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.a
 
@@ -130,7 +130,7 @@ set A expression
 type: string  
 readonly: no  
 required: no  
-default: 'clipval'  
+default: clipval  
 
 ### av.threads
 

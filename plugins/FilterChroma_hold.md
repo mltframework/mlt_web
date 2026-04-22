@@ -27,5 +27,19 @@ The color to keep. All others are desaturated.
 type: color  
 readonly: no  
 required: no  
-default: {"mutable"=>true, "animation"=>true}  
+animation: yes  
+default: #c00000  
+
+### variance
+
+title: Variance    
+description:
+The threshold for colors similar to the key color.  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1.0  
+default: 0.15  
 

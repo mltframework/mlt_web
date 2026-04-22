@@ -47,9 +47,10 @@ Set to the same image format that the transition needs.
 type: string  
 readonly: no  
 required: no  
+default: rgba  
 values:  
 
-* ["mutable", true]
-* ["default", "rgba"]
-* ["values", ["yuv422", "rgb", "rgba"]]
+* yuv422
+* rgb
+* rgba
 

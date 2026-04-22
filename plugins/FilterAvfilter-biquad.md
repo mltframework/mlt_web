@@ -28,8 +28,8 @@ Many parameters support animated values (keyframes) but only the numeric ones. M
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: 1  
 format: double  
 
@@ -39,8 +39,8 @@ format: double
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: 0  
 format: double  
 
@@ -50,8 +50,8 @@ format: double
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: 0  
 format: double  
 
@@ -61,8 +61,8 @@ format: double
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: 0  
 format: double  
 
@@ -72,8 +72,8 @@ format: double
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: 0  
 format: double  
 
@@ -83,8 +83,8 @@ format: double
 type: float  
 readonly: no  
 required: no  
-minimum: -2147480000.0  
-maximum: 2147480000.0  
+minimum: -2147483648.0  
+maximum: 2147483647.0  
 default: 0  
 format: double  
 
@@ -122,7 +122,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.c
 
@@ -132,7 +132,7 @@ set channels to filter
 type: string  
 readonly: no  
 required: no  
-default: 'all'  
+default: all  
 
 ### av.normalize
 

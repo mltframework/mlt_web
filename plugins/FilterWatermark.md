@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: Overlay  
+title: Overlay (*DEPRECATED*)  
 media types:
 Video  
 description: Overlay text or images onto the video  
@@ -101,8 +101,11 @@ widget: checkbox
 
   
 description:
-{&quot;minimum&quot;=&gt;0, &quot;maximum&quot;=&gt;1, &quot;mutable&quot;=&gt;true, &quot;widget&quot;=&gt;&quot;checkbox&quot;}  
+Force the supplied file to be be deinterlaced if it is interlaced.  
 type: integer  
 readonly: no  
 required: no  
+minimum: 0  
+maximum: 1  
+widget: checkbox  
 

@@ -13,7 +13,7 @@ title: SRC Resampler
 media types:
 Audio  Hidden  
 description: Change the audio sampling rate.
-This link can be added to a chain to normalize audio from the producer to provide the rate requested by the consumer
+This link can be added to a chain to normalize audio from the producer to provide the rate requested by the consumer.
   
 version: 1  
 creator:   
