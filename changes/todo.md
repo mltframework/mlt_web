@@ -8,7 +8,6 @@ All of this is speculative and only ideas for consideration at this point.
 
 See also [Version 7 Migration Guide]({{ "/docs/v7migration/" | prepend: site.baseurl }})
 
-* convert most services and properties to `mlt_animation`
 * add more tests (difficult to define coverage required at this point)
 * document expectations in each type of service (e.g. meta properties, frame-threading)
 * improve `mlt_consumer:real_time` > 1
