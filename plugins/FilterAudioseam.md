@@ -13,7 +13,7 @@ title: Audio Seam
 media types:
 Audio  
 description: Seam audio splices between clips in a playlist. Only to be used as a filter on playlist producers. Uses the &quot;meta.playlist.clip_position&quot; and &quot;meta.playlist.clip_length&quot; properties that are added by the playlist producer to determine where the seams between clips occur.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

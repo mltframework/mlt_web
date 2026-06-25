@@ -13,7 +13,7 @@ title: Ogg Vorbis
 media types:
 Audio  
 description: OGG Vorbis file reader.  
-version: 1  
+version: 2  
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

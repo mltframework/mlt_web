@@ -13,7 +13,7 @@ title: Dust
 media types:
 Video  
 description: Add dust and specks to the Video, as in old movies  
-version: 0.2.5  
+version: 1  
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  

@@ -13,7 +13,7 @@ title: loudnorm
 media types:
 Audio  
 description: EBU R128 loudness normalization  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -236,6 +236,15 @@ values:
 * none
 * json
 * summary
+
+### av.stats_file
+
+  
+description:
+set stats output file  
+type: string  
+readonly: no  
+required: no  
 
 ### position
 

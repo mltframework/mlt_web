@@ -13,7 +13,7 @@ title: GLAME Butterworth Lowpass
 media types:
 Audio  
 description: LADSPA plugin  
-version: 2  
+version: 3  
 creator: Alexander Ehlert <mag@glame.de>  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -82,7 +82,7 @@ default: 1
 
 title: Channel Mask    
 description:
-A bitmask inidicating which channels to affect.  
+A bitmask indicating which channels to affect.  
 type: integer  
 readonly: no  
 required: no  

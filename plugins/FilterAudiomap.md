@@ -13,7 +13,7 @@ title: Remap Channels
 media types:
 Audio  
 description: Copy/swap channels according to given mapping.  
-version: 1  
+version: 2  
 creator: Maksym Veremeyenko  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

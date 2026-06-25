@@ -13,7 +13,7 @@ title: Image Scaler (GLSL)
 media types:
 Video  Hidden  
 description: Change the resolution of a video or image.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

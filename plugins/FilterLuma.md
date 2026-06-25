@@ -13,7 +13,7 @@ title: Wipe
 media types:
 Video  
 description: Applies a luma transition between the current and next frames. Useful for transitions from a slideshow created using producer pixbuf.  
-version: 1  
+version: 2  
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

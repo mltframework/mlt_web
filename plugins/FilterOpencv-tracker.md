@@ -13,7 +13,7 @@ title: OpenCV Motion Tracker
 media types:
 Video  
 description: Track and follow an object in the video.  
-version: 2  
+version: 3  
 creator: Jean-Baptiste Mardelle <jb@kdenlive.org>  
 copyright: Jean-Baptiste Mardelle  
 license: LGPLv2.1  

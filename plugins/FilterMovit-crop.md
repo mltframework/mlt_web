@@ -13,7 +13,7 @@ title: Crop (GLSL)
 media types:
 Video  
 description: Remove pixels from the edges of the video.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

@@ -13,7 +13,7 @@ title: Audio Waveform (*DEPRECATED*)
 media types:
 Video  
 description: Generate audio waveforms.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

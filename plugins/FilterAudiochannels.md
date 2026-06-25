@@ -13,7 +13,7 @@ title: Convert Audio Channel Count
 media types:
 Audio  
 description: Converts the number of audio channels.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

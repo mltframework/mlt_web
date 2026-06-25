@@ -13,7 +13,7 @@ title: Xine Deinterlacer
 media types:
 Video  Hidden  
 description: Deinterlace interlaced video.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: GPLv2  

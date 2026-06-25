@@ -13,7 +13,7 @@ title: Wipe (GLSL)
 media types:
 Video  
 description: A generic dissolve and wipe transition processor.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

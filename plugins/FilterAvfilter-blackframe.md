@@ -13,7 +13,7 @@ title: blackframe
 media types:
 Video  
 description: Detect frames that are (almost) black.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -57,6 +57,17 @@ required: no
 minimum: 0  
 maximum: 255  
 default: 32  
+
+### av.threads
+
+  
+description:
+Maximum number of threads  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
 
 ### position
 

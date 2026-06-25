@@ -13,7 +13,7 @@ title: tlut2
 media types:
 Video  
 description: Compute and apply a lookup table from two successive frames.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

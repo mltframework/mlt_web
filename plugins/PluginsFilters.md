@@ -19,7 +19,6 @@ wrap_title: Filter Plugins
 * [avcolor_space](../FilterAvcolor_space/): FFmpeg Image Converter
 * [avcolour_space](../FilterAvcolour_space/): FFmpeg Image Converter
 * [avdeinterlace](../FilterAvdeinterlace/): Legacy FFmpeg Deinterlacer (*DEPRECATED*)
-* [avfilter.abench](../FilterAvfilter-abench/): abench
 * [avfilter.acompressor](../FilterAvfilter-acompressor/): acompressor
 * [avfilter.acontrast](../FilterAvfilter-acontrast/): acontrast
 * [avfilter.acrusher](../FilterAvfilter-acrusher/): acrusher
@@ -78,7 +77,6 @@ wrap_title: Filter Plugins
 * [avfilter.bandreject](../FilterAvfilter-bandreject/): bandreject
 * [avfilter.bass](../FilterAvfilter-bass/): bass
 * [avfilter.bbox](../FilterAvfilter-bbox/): bbox
-* [avfilter.bench](../FilterAvfilter-bench/): bench
 * [avfilter.bilateral](../FilterAvfilter-bilateral/): bilateral
 * [avfilter.biquad](../FilterAvfilter-biquad/): biquad
 * [avfilter.bitplanenoise](../FilterAvfilter-bitplanenoise/): bitplanenoise
@@ -236,6 +234,7 @@ wrap_title: Filter Plugins
 * [avfilter.pixelize](../FilterAvfilter-pixelize/): pixelize
 * [avfilter.pixscope](../FilterAvfilter-pixscope/): pixscope
 * [avfilter.pp7](../FilterAvfilter-pp7/): pp7
+* [avfilter.premultiply_dynamic](../FilterAvfilter-premultiply_dynamic/): premultiply_dynamic
 * [avfilter.prewitt](../FilterAvfilter-prewitt/): prewitt
 * [avfilter.procamp_vaapi](../FilterAvfilter-procamp_vaapi/): procamp_vaapi
 * [avfilter.pseudocolor](../FilterAvfilter-pseudocolor/): pseudocolor
@@ -371,6 +370,7 @@ wrap_title: Filter Plugins
 * [frei0r.c0rners](../FilterFrei0r-c0rners/): c0rners
 * [frei0r.cairogradient](../FilterFrei0r-cairogradient/): cairogradient
 * [frei0r.cairoimagegrid](../FilterFrei0r-cairoimagegrid/): cairoimagegrid
+* [frei0r.camerashake](../FilterFrei0r-camerashake/): Camera Shake Ultimate
 * [frei0r.cartoon](../FilterFrei0r-cartoon/): Cartoon
 * [frei0r.cluster](../FilterFrei0r-cluster/): K-Means Clustering
 * [frei0r.colgate](../FilterFrei0r-colgate/): White Balance (LMS space)
@@ -449,6 +449,7 @@ wrap_title: Filter Plugins
 * [frei0r.twolay0r](../FilterFrei0r-twolay0r/): Twolay0r
 * [frei0r.vertigo](../FilterFrei0r-vertigo/): Vertigo
 * [frei0r.vignette](../FilterFrei0r-vignette/): Vignette
+* [frei0r.water](../FilterFrei0r-water/): Water
 * [gamma](../FilterGamma/): Gamma
 * [glsl.manager](../FilterGlsl-manager/): GLSL Manager
 * [gpsgraphic](../FilterGpsgraphic/): GPS Graphic
@@ -611,6 +612,484 @@ wrap_title: Filter Plugins
 * [obscure](../FilterObscure/): Obscure (*DEPRECATED*)
 * [oldfilm](../FilterOldfilm/): Oldfilm
 * [opencv.tracker](../FilterOpencv-tracker/): OpenCV Motion Tracker
+* [openfx.eu.cimg.CImgMatrix3x3](../FilterOpenfx-eu-cimg-cimgmatrix3x3/): Matrix3x3CImg
+* [openfx.eu.cimg.CImgMatrix5x5](../FilterOpenfx-eu-cimg-cimgmatrix5x5/): Matrix5x5CImg
+* [openfx.eu.cimg.Distance](../FilterOpenfx-eu-cimg-distance/): DistanceCImg
+* [openfx.eu.cimg.EdgeDetect](../FilterOpenfx-eu-cimg-edgedetect/): EdgeDetectCImg
+* [openfx.eu.cimg.EdgeExtend](../FilterOpenfx-eu-cimg-edgeextend/): EdgeExtendCImg
+* [openfx.eu.cimg.ErodeBlur](../FilterOpenfx-eu-cimg-erodeblur/): ErodeBlurCImg
+* [openfx.eu.cimg.Inpaint](../FilterOpenfx-eu-cimg-inpaint/): InpaintCImg
+* [openfx.eu.gmic.3dblocks](../FilterOpenfx-eu-gmic-3dblocks/): GMIC 3d blocks
+* [openfx.eu.gmic.3dcoloredobject](../FilterOpenfx-eu-gmic-3dcoloredobject/): GMIC 3d colored object
+* [openfx.eu.gmic.3delevation](../FilterOpenfx-eu-gmic-3delevation/): GMIC 3d elevation
+* [openfx.eu.gmic.3dextrusion](../FilterOpenfx-eu-gmic-3dextrusion/): GMIC 3d extrusion
+* [openfx.eu.gmic.3dimageobject](../FilterOpenfx-eu-gmic-3dimageobject/): GMIC 3d image object
+* [openfx.eu.gmic.3dlathing](../FilterOpenfx-eu-gmic-3dlathing/): GMIC 3d lathing
+* [openfx.eu.gmic.3drandomobjects](../FilterOpenfx-eu-gmic-3drandomobjects/): GMIC 3d random objects
+* [openfx.eu.gmic.3dtextpointcloud](../FilterOpenfx-eu-gmic-3dtextpointcloud/): GMIC 3d text pointcloud
+* [openfx.eu.gmic.3dtiles](../FilterOpenfx-eu-gmic-3dtiles/): GMIC 3d tiles
+* [openfx.eu.gmic.AboutGMIC](../FilterOpenfx-eu-gmic-aboutgmic/): About GMIC
+* [openfx.eu.gmic.Abstraction](../FilterOpenfx-eu-gmic-abstraction/): GMIC Abstraction
+* [openfx.eu.gmic.Addgrain](../FilterOpenfx-eu-gmic-addgrain/): GMIC Add grain
+* [openfx.eu.gmic.Alignlayers](../FilterOpenfx-eu-gmic-alignlayers/): GMIC Align layers
+* [openfx.eu.gmic.Arrayfaded](../FilterOpenfx-eu-gmic-arrayfaded/): GMIC Array faded
+* [openfx.eu.gmic.Arraymirrored](../FilterOpenfx-eu-gmic-arraymirrored/): GMIC Array mirrored
+* [openfx.eu.gmic.Arrayrandomcolors](../FilterOpenfx-eu-gmic-arrayrandomcolors/): GMIC Array random colors
+* [openfx.eu.gmic.Arrayregular](../FilterOpenfx-eu-gmic-arrayregular/): GMIC Array regular
+* [openfx.eu.gmic.Asciiart](../FilterOpenfx-eu-gmic-asciiart/): GMIC Ascii art
+* [openfx.eu.gmic.BWfilms](../FilterOpenfx-eu-gmic-bwfilms/): GMIC BW films
+* [openfx.eu.gmic.BWfilmscollage](../FilterOpenfx-eu-gmic-bwfilmscollage/): GMIC BW films collage
+* [openfx.eu.gmic.BWstencil](../FilterOpenfx-eu-gmic-bwstencil/): GMIC BW stencil
+* [openfx.eu.gmic.Ball](../FilterOpenfx-eu-gmic-ball/): GMIC Ball
+* [openfx.eu.gmic.Bandpass](../FilterOpenfx-eu-gmic-bandpass/): GMIC Bandpass
+* [openfx.eu.gmic.Barnsleyfern](../FilterOpenfx-eu-gmic-barnsleyfern/): GMIC Barnsley fern
+* [openfx.eu.gmic.Basicadjustments](../FilterOpenfx-eu-gmic-basicadjustments/): GMIC Basic adjustments
+* [openfx.eu.gmic.Blackwhite](../FilterOpenfx-eu-gmic-blackwhite/): GMIC Black  white
+* [openfx.eu.gmic.Blendaverageall](../FilterOpenfx-eu-gmic-blendaverageall/): GMIC Blend average all
+* [openfx.eu.gmic.Blendedges](../FilterOpenfx-eu-gmic-blendedges/): GMIC Blend edges
+* [openfx.eu.gmic.Blendfade](../FilterOpenfx-eu-gmic-blendfade/): GMIC Blend fade
+* [openfx.eu.gmic.Blendmedian](../FilterOpenfx-eu-gmic-blendmedian/): GMIC Blend median
+* [openfx.eu.gmic.Blendseamless](../FilterOpenfx-eu-gmic-blendseamless/): GMIC Blend seamless
+* [openfx.eu.gmic.Blendstandard](../FilterOpenfx-eu-gmic-blendstandard/): GMIC Blend standard
+* [openfx.eu.gmic.Blurangular](../FilterOpenfx-eu-gmic-blurangular/): GMIC Blur angular
+* [openfx.eu.gmic.Blurbloom](../FilterOpenfx-eu-gmic-blurbloom/): GMIC Blur bloom
+* [openfx.eu.gmic.Blurdepthoffield](../FilterOpenfx-eu-gmic-blurdepthoffield/): GMIC Blur depth-of-field
+* [openfx.eu.gmic.Blurgaussian](../FilterOpenfx-eu-gmic-blurgaussian/): GMIC Blur gaussian
+* [openfx.eu.gmic.Blurglow](../FilterOpenfx-eu-gmic-blurglow/): GMIC Blur glow
+* [openfx.eu.gmic.Blurlinear](../FilterOpenfx-eu-gmic-blurlinear/): GMIC Blur linear
+* [openfx.eu.gmic.Blurradial](../FilterOpenfx-eu-gmic-blurradial/): GMIC Blur radial
+* [openfx.eu.gmic.Bokeh](../FilterOpenfx-eu-gmic-bokeh/): GMIC Bokeh
+* [openfx.eu.gmic.Boostchromaticity](../FilterOpenfx-eu-gmic-boostchromaticity/): GMIC Boost chromaticity
+* [openfx.eu.gmic.Boostfade](../FilterOpenfx-eu-gmic-boostfade/): GMIC Boost-fade
+* [openfx.eu.gmic.Boxfitting](../FilterOpenfx-eu-gmic-boxfitting/): GMIC Box fitting
+* [openfx.eu.gmic.Brushify](../FilterOpenfx-eu-gmic-brushify/): GMIC Brushify
+* [openfx.eu.gmic.Burn](../FilterOpenfx-eu-gmic-burn/): GMIC Burn
+* [openfx.eu.gmic.Camouflage](../FilterOpenfx-eu-gmic-camouflage/): GMIC Camouflage
+* [openfx.eu.gmic.Canvas](../FilterOpenfx-eu-gmic-canvas/): GMIC Canvas
+* [openfx.eu.gmic.Cartesiantransform](../FilterOpenfx-eu-gmic-cartesiantransform/): GMIC Cartesian transform
+* [openfx.eu.gmic.Cartoon](../FilterOpenfx-eu-gmic-cartoon/): GMIC Cartoon
+* [openfx.eu.gmic.Channelprocessing](../FilterOpenfx-eu-gmic-channelprocessing/): GMIC Channel processing
+* [openfx.eu.gmic.Channelstolayers](../FilterOpenfx-eu-gmic-channelstolayers/): GMIC Channels to layers
+* [openfx.eu.gmic.Charcoal](../FilterOpenfx-eu-gmic-charcoal/): GMIC Charcoal
+* [openfx.eu.gmic.Chessboard](../FilterOpenfx-eu-gmic-chessboard/): GMIC Chessboard
+* [openfx.eu.gmic.Chromaticaberrations](../FilterOpenfx-eu-gmic-chromaticaberrations/): GMIC Chromatic aberrations
+* [openfx.eu.gmic.Circleabstraction](../FilterOpenfx-eu-gmic-circleabstraction/): GMIC Circle abstraction
+* [openfx.eu.gmic.Circleart](../FilterOpenfx-eu-gmic-circleart/): GMIC Circle art
+* [openfx.eu.gmic.Circletransform](../FilterOpenfx-eu-gmic-circletransform/): GMIC Circle transform
+* [openfx.eu.gmic.Colorbalance](../FilterOpenfx-eu-gmic-colorbalance/): GMIC Color balance
+* [openfx.eu.gmic.Colorblindness](../FilterOpenfx-eu-gmic-colorblindness/): GMIC Color blindness
+* [openfx.eu.gmic.Colorizelineartautofill](../FilterOpenfx-eu-gmic-colorizelineartautofill/): GMIC Colorize lineart auto-fill
+* [openfx.eu.gmic.Colorizelineartpropagation](../FilterOpenfx-eu-gmic-colorizelineartpropagation/): GMIC Colorize lineart propagation
+* [openfx.eu.gmic.Colorizelineartsmartcoloring](../FilterOpenfx-eu-gmic-colorizelineartsmartcoloring/): GMIC Colorize lineart smart coloring
+* [openfx.eu.gmic.Colorizephotographs](../FilterOpenfx-eu-gmic-colorizephotographs/): GMIC Colorize photographs
+* [openfx.eu.gmic.Colorizewithcolormap](../FilterOpenfx-eu-gmic-colorizewithcolormap/): GMIC Colorize with colormap
+* [openfx.eu.gmic.Colormap](../FilterOpenfx-eu-gmic-colormap/): GMIC Colormap
+* [openfx.eu.gmic.Colorstolayers](../FilterOpenfx-eu-gmic-colorstolayers/): GMIC Colors to layers
+* [openfx.eu.gmic.Conformalmaps](../FilterOpenfx-eu-gmic-conformalmaps/): GMIC Conformal maps
+* [openfx.eu.gmic.Contrastswissmask](../FilterOpenfx-eu-gmic-contrastswissmask/): GMIC Contrast swiss mask
+* [openfx.eu.gmic.Convolve](../FilterOpenfx-eu-gmic-convolve/): GMIC Convolve
+* [openfx.eu.gmic.Cracks](../FilterOpenfx-eu-gmic-cracks/): GMIC Cracks
+* [openfx.eu.gmic.Crease](../FilterOpenfx-eu-gmic-crease/): GMIC Crease
+* [openfx.eu.gmic.Crystal](../FilterOpenfx-eu-gmic-crystal/): GMIC Crystal
+* [openfx.eu.gmic.Crystalbackground](../FilterOpenfx-eu-gmic-crystalbackground/): GMIC Crystal background
+* [openfx.eu.gmic.Cubism](../FilterOpenfx-eu-gmic-cubism/): GMIC Cubism
+* [openfx.eu.gmic.Cupid](../FilterOpenfx-eu-gmic-cupid/): GMIC Cupid
+* [openfx.eu.gmic.Curvature](../FilterOpenfx-eu-gmic-curvature/): GMIC Curvature
+* [openfx.eu.gmic.CustomizeCLUT](../FilterOpenfx-eu-gmic-customizeclut/): GMIC Customize CLUT
+* [openfx.eu.gmic.Cutout](../FilterOpenfx-eu-gmic-cutout/): GMIC Cutout
+* [openfx.eu.gmic.Decomposechannels](../FilterOpenfx-eu-gmic-decomposechannels/): GMIC Decompose channels
+* [openfx.eu.gmic.Deinterlace](../FilterOpenfx-eu-gmic-deinterlace/): GMIC Deinterlace
+* [openfx.eu.gmic.Detailsequalizer](../FilterOpenfx-eu-gmic-detailsequalizer/): GMIC Details equalizer
+* [openfx.eu.gmic.Detectskin](../FilterOpenfx-eu-gmic-detectskin/): GMIC Detect skin
+* [openfx.eu.gmic.Dices](../FilterOpenfx-eu-gmic-dices/): GMIC Dices
+* [openfx.eu.gmic.Differenceofgaussians](../FilterOpenfx-eu-gmic-differenceofgaussians/): GMIC Difference of gaussians
+* [openfx.eu.gmic.Diffusiontensors](../FilterOpenfx-eu-gmic-diffusiontensors/): GMIC Diffusion tensors
+* [openfx.eu.gmic.Dirty](../FilterOpenfx-eu-gmic-dirty/): GMIC Dirty
+* [openfx.eu.gmic.Distancetransform](../FilterOpenfx-eu-gmic-distancetransform/): GMIC Distance transform
+* [openfx.eu.gmic.Distortlens](../FilterOpenfx-eu-gmic-distortlens/): GMIC Distort lens
+* [openfx.eu.gmic.Dithering](../FilterOpenfx-eu-gmic-dithering/): GMIC Dithering
+* [openfx.eu.gmic.Drawnmontage](../FilterOpenfx-eu-gmic-drawnmontage/): GMIC Drawn montage
+* [openfx.eu.gmic.Dropshadow](../FilterOpenfx-eu-gmic-dropshadow/): GMIC Drop shadow
+* [openfx.eu.gmic.Dropshadow3d](../FilterOpenfx-eu-gmic-dropshadow3d/): GMIC Drop shadow 3d
+* [openfx.eu.gmic.Dropwater](../FilterOpenfx-eu-gmic-dropwater/): GMIC Drop water
+* [openfx.eu.gmic.Droste](../FilterOpenfx-eu-gmic-droste/): GMIC Droste
+* [openfx.eu.gmic.Edges](../FilterOpenfx-eu-gmic-edges/): GMIC Edges
+* [openfx.eu.gmic.Edgesoffsets](../FilterOpenfx-eu-gmic-edgesoffsets/): GMIC Edges offsets
+* [openfx.eu.gmic.Edgesonfire](../FilterOpenfx-eu-gmic-edgesonfire/): GMIC Edges on fire
+* [openfx.eu.gmic.Ellipsionism](../FilterOpenfx-eu-gmic-ellipsionism/): GMIC Ellipsionism
+* [openfx.eu.gmic.Engrave](../FilterOpenfx-eu-gmic-engrave/): GMIC Engrave
+* [openfx.eu.gmic.EqualizeHSIHSLHSV](../FilterOpenfx-eu-gmic-equalizehsihslhsv/): GMIC Equalize HSI-HSL-HSV
+* [openfx.eu.gmic.EqualizeHSV](../FilterOpenfx-eu-gmic-equalizehsv/): GMIC Equalize HSV
+* [openfx.eu.gmic.Equalizelocalhistograms](../FilterOpenfx-eu-gmic-equalizelocalhistograms/): GMIC Equalize local histograms
+* [openfx.eu.gmic.Equalizeshadow](../FilterOpenfx-eu-gmic-equalizeshadow/): GMIC Equalize shadow
+* [openfx.eu.gmic.Equationplotparametric](../FilterOpenfx-eu-gmic-equationplotparametric/): GMIC Equation plot parametric
+* [openfx.eu.gmic.Equationplotyfx](../FilterOpenfx-eu-gmic-equationplotyfx/): GMIC Equation plot y=f(x)
+* [openfx.eu.gmic.Equirectangulartonadirzenith](../FilterOpenfx-eu-gmic-equirectangulartonadirzenith/): GMIC Equirectangular to nadir-zenith
+* [openfx.eu.gmic.Euclideanpolar](../FilterOpenfx-eu-gmic-euclideanpolar/): GMIC Euclidean polar
+* [openfx.eu.gmic.Extractobjects](../FilterOpenfx-eu-gmic-extractobjects/): GMIC Extract objects
+* [openfx.eu.gmic.Fadelayers](../FilterOpenfx-eu-gmic-fadelayers/): GMIC Fade layers
+* [openfx.eu.gmic.Feltpen](../FilterOpenfx-eu-gmic-feltpen/): GMIC Felt pen
+* [openfx.eu.gmic.Fliprotateblocs](../FilterOpenfx-eu-gmic-fliprotateblocs/): GMIC Flip  rotate blocs
+* [openfx.eu.gmic.Flower](../FilterOpenfx-eu-gmic-flower/): GMIC Flower
+* [openfx.eu.gmic.Fourieranalysis](../FilterOpenfx-eu-gmic-fourieranalysis/): GMIC Fourier analysis
+* [openfx.eu.gmic.Fouriertransform](../FilterOpenfx-eu-gmic-fouriertransform/): GMIC Fourier transform
+* [openfx.eu.gmic.Fourierwatermark](../FilterOpenfx-eu-gmic-fourierwatermark/): GMIC Fourier watermark
+* [openfx.eu.gmic.Frameblur](../FilterOpenfx-eu-gmic-frameblur/): GMIC Frame blur
+* [openfx.eu.gmic.Framefuzzy](../FilterOpenfx-eu-gmic-framefuzzy/): GMIC Frame fuzzy
+* [openfx.eu.gmic.Framepainting](../FilterOpenfx-eu-gmic-framepainting/): GMIC Frame painting
+* [openfx.eu.gmic.Framepattern](../FilterOpenfx-eu-gmic-framepattern/): GMIC Frame pattern
+* [openfx.eu.gmic.Frameregular](../FilterOpenfx-eu-gmic-frameregular/): GMIC Frame regular
+* [openfx.eu.gmic.Frameround](../FilterOpenfx-eu-gmic-frameround/): GMIC Frame round
+* [openfx.eu.gmic.Framesmooth](../FilterOpenfx-eu-gmic-framesmooth/): GMIC Frame smooth
+* [openfx.eu.gmic.FreakyBW](../FilterOpenfx-eu-gmic-freakybw/): GMIC Freaky BW
+* [openfx.eu.gmic.Freakydetails](../FilterOpenfx-eu-gmic-freakydetails/): GMIC Freaky details
+* [openfx.eu.gmic.Fujixtrans](../FilterOpenfx-eu-gmic-fujixtrans/): GMIC Fuji xtrans
+* [openfx.eu.gmic.Gamesdemos](../FilterOpenfx-eu-gmic-gamesdemos/): GMIC Games  demos
+* [openfx.eu.gmic.Gear](../FilterOpenfx-eu-gmic-gear/): GMIC Gear
+* [openfx.eu.gmic.GradientRGB](../FilterOpenfx-eu-gmic-gradientrgb/): GMIC Gradient RGB
+* [openfx.eu.gmic.Gradientcorners](../FilterOpenfx-eu-gmic-gradientcorners/): GMIC Gradient corners
+* [openfx.eu.gmic.Gradientcustomshape](../FilterOpenfx-eu-gmic-gradientcustomshape/): GMIC Gradient custom shape
+* [openfx.eu.gmic.Gradientfromline](../FilterOpenfx-eu-gmic-gradientfromline/): GMIC Gradient from line
+* [openfx.eu.gmic.Gradientlinear](../FilterOpenfx-eu-gmic-gradientlinear/): GMIC Gradient linear
+* [openfx.eu.gmic.Gradientnorm](../FilterOpenfx-eu-gmic-gradientnorm/): GMIC Gradient norm
+* [openfx.eu.gmic.Gradientradial](../FilterOpenfx-eu-gmic-gradientradial/): GMIC Gradient radial
+* [openfx.eu.gmic.Gradientrandom](../FilterOpenfx-eu-gmic-gradientrandom/): GMIC Gradient random
+* [openfx.eu.gmic.Gridcartesian](../FilterOpenfx-eu-gmic-gridcartesian/): GMIC Grid cartesian
+* [openfx.eu.gmic.Gridhexagonal](../FilterOpenfx-eu-gmic-gridhexagonal/): GMIC Grid hexagonal
+* [openfx.eu.gmic.Gridtriangular](../FilterOpenfx-eu-gmic-gridtriangular/): GMIC Grid triangular
+* [openfx.eu.gmic.Halftone](../FilterOpenfx-eu-gmic-halftone/): GMIC Halftone
+* [openfx.eu.gmic.Hardsketch](../FilterOpenfx-eu-gmic-hardsketch/): GMIC Hard sketch
+* [openfx.eu.gmic.Heart](../FilterOpenfx-eu-gmic-heart/): GMIC Heart
+* [openfx.eu.gmic.Hearts](../FilterOpenfx-eu-gmic-hearts/): GMIC Hearts
+* [openfx.eu.gmic.Highlightbloom](../FilterOpenfx-eu-gmic-highlightbloom/): GMIC Highlight bloom
+* [openfx.eu.gmic.Histogramanalysis](../FilterOpenfx-eu-gmic-histogramanalysis/): GMIC Histogram analysis
+* [openfx.eu.gmic.Hopeposter](../FilterOpenfx-eu-gmic-hopeposter/): GMIC Hope poster
+* [openfx.eu.gmic.Houghsketch](../FilterOpenfx-eu-gmic-houghsketch/): GMIC Hough sketch
+* [openfx.eu.gmic.Illuminate2dshape](../FilterOpenfx-eu-gmic-illuminate2dshape/): GMIC Illuminate 2d shape
+* [openfx.eu.gmic.Importdata](../FilterOpenfx-eu-gmic-importdata/): GMIC Import data
+* [openfx.eu.gmic.Inkwash](../FilterOpenfx-eu-gmic-inkwash/): GMIC Ink wash
+* [openfx.eu.gmic.Inpaintholes](../FilterOpenfx-eu-gmic-inpaintholes/): GMIC Inpaint holes
+* [openfx.eu.gmic.Inpaintmorphological](../FilterOpenfx-eu-gmic-inpaintmorphological/): GMIC Inpaint morphological
+* [openfx.eu.gmic.Inpaintmultiscale](../FilterOpenfx-eu-gmic-inpaintmultiscale/): GMIC Inpaint multi-scale
+* [openfx.eu.gmic.Inpaintpatchbased](../FilterOpenfx-eu-gmic-inpaintpatchbased/): GMIC Inpaint patch-based
+* [openfx.eu.gmic.Inpainttransportdiffusion](../FilterOpenfx-eu-gmic-inpainttransportdiffusion/): GMIC Inpaint transport-diffusion
+* [openfx.eu.gmic.Instantcollageconsumer](../FilterOpenfx-eu-gmic-instantcollageconsumer/): GMIC Instant collage consumer
+* [openfx.eu.gmic.Instantcollagepro](../FilterOpenfx-eu-gmic-instantcollagepro/): GMIC Instant collage pro
+* [openfx.eu.gmic.Instantconsumer](../FilterOpenfx-eu-gmic-instantconsumer/): GMIC Instant consumer
+* [openfx.eu.gmic.Instantpro](../FilterOpenfx-eu-gmic-instantpro/): GMIC Instant pro
+* [openfx.eu.gmic.Intarsia](../FilterOpenfx-eu-gmic-intarsia/): GMIC Intarsia
+* [openfx.eu.gmic.Isophotes](../FilterOpenfx-eu-gmic-isophotes/): GMIC Isophotes
+* [openfx.eu.gmic.JPEGartefacts](../FilterOpenfx-eu-gmic-jpegartefacts/): GMIC JPEG artefacts
+* [openfx.eu.gmic.Kaleidoscopeblended](../FilterOpenfx-eu-gmic-kaleidoscopeblended/): GMIC Kaleidoscope blended
+* [openfx.eu.gmic.Kaleidoscopepolar](../FilterOpenfx-eu-gmic-kaleidoscopepolar/): GMIC Kaleidoscope polar
+* [openfx.eu.gmic.Kaleidoscopesymmetry](../FilterOpenfx-eu-gmic-kaleidoscopesymmetry/): GMIC Kaleidoscope symmetry
+* [openfx.eu.gmic.Kuwahara](../FilterOpenfx-eu-gmic-kuwahara/): GMIC Kuwahara
+* [openfx.eu.gmic.Laplacian](../FilterOpenfx-eu-gmic-laplacian/): GMIC Laplacian
+* [openfx.eu.gmic.Lava](../FilterOpenfx-eu-gmic-lava/): GMIC Lava
+* [openfx.eu.gmic.Lavalamp](../FilterOpenfx-eu-gmic-lavalamp/): GMIC Lava lamp
+* [openfx.eu.gmic.Layerstotiles](../FilterOpenfx-eu-gmic-layerstotiles/): GMIC Layers to tiles
+* [openfx.eu.gmic.Lightglow](../FilterOpenfx-eu-gmic-lightglow/): GMIC Light glow
+* [openfx.eu.gmic.Lightleaks](../FilterOpenfx-eu-gmic-lightleaks/): GMIC Light leaks
+* [openfx.eu.gmic.Lightning](../FilterOpenfx-eu-gmic-lightning/): GMIC Lightning
+* [openfx.eu.gmic.Lightpatch](../FilterOpenfx-eu-gmic-lightpatch/): GMIC Light patch
+* [openfx.eu.gmic.Lightrays](../FilterOpenfx-eu-gmic-lightrays/): GMIC Light rays
+* [openfx.eu.gmic.Linify](../FilterOpenfx-eu-gmic-linify/): GMIC Linify
+* [openfx.eu.gmic.Lissajous](../FilterOpenfx-eu-gmic-lissajous/): GMIC Lissajous
+* [openfx.eu.gmic.Localnormalization](../FilterOpenfx-eu-gmic-localnormalization/): GMIC Local normalization
+* [openfx.eu.gmic.Localorientation](../FilterOpenfx-eu-gmic-localorientation/): GMIC Local orientation
+* [openfx.eu.gmic.Localprocessing](../FilterOpenfx-eu-gmic-localprocessing/): GMIC Local processing
+* [openfx.eu.gmic.Lomo](../FilterOpenfx-eu-gmic-lomo/): GMIC Lomo
+* [openfx.eu.gmic.Lylejkspainting](../FilterOpenfx-eu-gmic-lylejkspainting/): GMIC Lylejks painting
+* [openfx.eu.gmic.Magicdetails](../FilterOpenfx-eu-gmic-magicdetails/): GMIC Magic details
+* [openfx.eu.gmic.Makeseamlessdiffusion](../FilterOpenfx-eu-gmic-makeseamlessdiffusion/): GMIC Make seamless diffusion
+* [openfx.eu.gmic.Makeseamlesspatchbased](../FilterOpenfx-eu-gmic-makeseamlesspatchbased/): GMIC Make seamless patch-based
+* [openfx.eu.gmic.MandelbrotJuliasets](../FilterOpenfx-eu-gmic-mandelbrotjuliasets/): GMIC Mandelbrot Julia sets
+* [openfx.eu.gmic.Marble](../FilterOpenfx-eu-gmic-marble/): GMIC Marble
+* [openfx.eu.gmic.Maze](../FilterOpenfx-eu-gmic-maze/): GMIC Maze
+* [openfx.eu.gmic.Mightydetails](../FilterOpenfx-eu-gmic-mightydetails/): GMIC Mighty details
+* [openfx.eu.gmic.Mineralmosaic](../FilterOpenfx-eu-gmic-mineralmosaic/): GMIC Mineral mosaic
+* [openfx.eu.gmic.Ministeck](../FilterOpenfx-eu-gmic-ministeck/): GMIC Ministeck
+* [openfx.eu.gmic.MixerCMYK](../FilterOpenfx-eu-gmic-mixercmyk/): GMIC Mixer CMYK
+* [openfx.eu.gmic.MixerHSV](../FilterOpenfx-eu-gmic-mixerhsv/): GMIC Mixer HSV
+* [openfx.eu.gmic.MixerLab](../FilterOpenfx-eu-gmic-mixerlab/): GMIC Mixer Lab
+* [openfx.eu.gmic.MixerRGB](../FilterOpenfx-eu-gmic-mixerrgb/): GMIC Mixer RGB
+* [openfx.eu.gmic.MixerYCbCr](../FilterOpenfx-eu-gmic-mixerycbcr/): GMIC Mixer YCbCr
+* [openfx.eu.gmic.Montage](../FilterOpenfx-eu-gmic-montage/): GMIC Montage
+* [openfx.eu.gmic.Morphlayers](../FilterOpenfx-eu-gmic-morphlayers/): GMIC Morph layers
+* [openfx.eu.gmic.Morphologicalfilter](../FilterOpenfx-eu-gmic-morphologicalfilter/): GMIC Morphological filter
+* [openfx.eu.gmic.Mosaic](../FilterOpenfx-eu-gmic-mosaic/): GMIC Mosaic
+* [openfx.eu.gmic.Multiscaleoperator](../FilterOpenfx-eu-gmic-multiscaleoperator/): GMIC Multiscale operator
+* [openfx.eu.gmic.Negativecollagecolor](../FilterOpenfx-eu-gmic-negativecollagecolor/): GMIC Negative collage color
+* [openfx.eu.gmic.Negativecollagenew](../FilterOpenfx-eu-gmic-negativecollagenew/): GMIC Negative collage new
+* [openfx.eu.gmic.Negativecollageold](../FilterOpenfx-eu-gmic-negativecollageold/): GMIC Negative collage old
+* [openfx.eu.gmic.Negativecolor](../FilterOpenfx-eu-gmic-negativecolor/): GMIC Negative color
+* [openfx.eu.gmic.Negativenew](../FilterOpenfx-eu-gmic-negativenew/): GMIC Negative new
+* [openfx.eu.gmic.Negativeold](../FilterOpenfx-eu-gmic-negativeold/): GMIC Negative old
+* [openfx.eu.gmic.Neonlightning](../FilterOpenfx-eu-gmic-neonlightning/): GMIC Neon lightning
+* [openfx.eu.gmic.Noiseadditive](../FilterOpenfx-eu-gmic-noiseadditive/): GMIC Noise additive
+* [openfx.eu.gmic.Noisespread](../FilterOpenfx-eu-gmic-noisespread/): GMIC Noise spread
+* [openfx.eu.gmic.Oldmoviestripes](../FilterOpenfx-eu-gmic-oldmoviestripes/): GMIC Old-movie stripes
+* [openfx.eu.gmic.Oldphotograph](../FilterOpenfx-eu-gmic-oldphotograph/): GMIC Old photograph
+* [openfx.eu.gmic.Oldschool8bits](../FilterOpenfx-eu-gmic-oldschool8bits/): GMIC Oldschool 8bits
+* [openfx.eu.gmic.Opart](../FilterOpenfx-eu-gmic-opart/): GMIC Op art
+* [openfx.eu.gmic.Pack](../FilterOpenfx-eu-gmic-pack/): GMIC Pack
+* [openfx.eu.gmic.Packsprites](../FilterOpenfx-eu-gmic-packsprites/): GMIC Pack sprites
+* [openfx.eu.gmic.Painting](../FilterOpenfx-eu-gmic-painting/): GMIC Painting
+* [openfx.eu.gmic.Papertexture](../FilterOpenfx-eu-gmic-papertexture/): GMIC Paper texture
+* [openfx.eu.gmic.Pencil](../FilterOpenfx-eu-gmic-pencil/): GMIC Pencil
+* [openfx.eu.gmic.Pencilportrait](../FilterOpenfx-eu-gmic-pencilportrait/): GMIC Pencil portrait
+* [openfx.eu.gmic.Pendrawing](../FilterOpenfx-eu-gmic-pendrawing/): GMIC Pen drawing
+* [openfx.eu.gmic.Perspective](../FilterOpenfx-eu-gmic-perspective/): GMIC Perspective
+* [openfx.eu.gmic.PictureFX](../FilterOpenfx-eu-gmic-picturefx/): GMIC PictureFX
+* [openfx.eu.gmic.PictureFXcollage](../FilterOpenfx-eu-gmic-picturefxcollage/): GMIC PictureFX collage
+* [openfx.eu.gmic.Pixelsort](../FilterOpenfx-eu-gmic-pixelsort/): GMIC Pixel sort
+* [openfx.eu.gmic.Plaid](../FilterOpenfx-eu-gmic-plaid/): GMIC Plaid
+* [openfx.eu.gmic.Plasma](../FilterOpenfx-eu-gmic-plasma/): GMIC Plasma
+* [openfx.eu.gmic.Polaroid](../FilterOpenfx-eu-gmic-polaroid/): GMIC Polaroid
+* [openfx.eu.gmic.Polartransform](../FilterOpenfx-eu-gmic-polartransform/): GMIC Polar transform
+* [openfx.eu.gmic.Polkadots](../FilterOpenfx-eu-gmic-polkadots/): GMIC Polka dots
+* [openfx.eu.gmic.Polygonizedelaunay](../FilterOpenfx-eu-gmic-polygonizedelaunay/): GMIC Polygonize delaunay
+* [openfx.eu.gmic.Polygonizeenergy](../FilterOpenfx-eu-gmic-polygonizeenergy/): GMIC Polygonize energy
+* [openfx.eu.gmic.Popshadows](../FilterOpenfx-eu-gmic-popshadows/): GMIC Pop shadows
+* [openfx.eu.gmic.Posteredges](../FilterOpenfx-eu-gmic-posteredges/): GMIC Poster edges
+* [openfx.eu.gmic.Posterize](../FilterOpenfx-eu-gmic-posterize/): GMIC Posterize
+* [openfx.eu.gmic.Printfilms](../FilterOpenfx-eu-gmic-printfilms/): GMIC Print films
+* [openfx.eu.gmic.Printfilmscollage](../FilterOpenfx-eu-gmic-printfilmscollage/): GMIC Print films collage
+* [openfx.eu.gmic.Puzzle](../FilterOpenfx-eu-gmic-puzzle/): GMIC Puzzle
+* [openfx.eu.gmic.Quadrangle](../FilterOpenfx-eu-gmic-quadrangle/): GMIC Quadrangle
+* [openfx.eu.gmic.Quadtreevariations](../FilterOpenfx-eu-gmic-quadtreevariations/): GMIC Quadtree variations
+* [openfx.eu.gmic.Quickcopyright](../FilterOpenfx-eu-gmic-quickcopyright/): GMIC Quick copyright
+* [openfx.eu.gmic.Rainbow](../FilterOpenfx-eu-gmic-rainbow/): GMIC Rainbow
+* [openfx.eu.gmic.Rainsnow](../FilterOpenfx-eu-gmic-rainsnow/): GMIC Rain  snow
+* [openfx.eu.gmic.Randomcolorellipses](../FilterOpenfx-eu-gmic-randomcolorellipses/): GMIC Random color ellipses
+* [openfx.eu.gmic.Randomshadestripes](../FilterOpenfx-eu-gmic-randomshadestripes/): GMIC Random shade stripes
+* [openfx.eu.gmic.Reflection](../FilterOpenfx-eu-gmic-reflection/): GMIC Reflection
+* [openfx.eu.gmic.Relieflight](../FilterOpenfx-eu-gmic-relieflight/): GMIC Relief light
+* [openfx.eu.gmic.Removehotpixels](../FilterOpenfx-eu-gmic-removehotpixels/): GMIC Remove hot pixels
+* [openfx.eu.gmic.ResynthetizetextureFFT](../FilterOpenfx-eu-gmic-resynthetizetexturefft/): GMIC Resynthetize texture FFT
+* [openfx.eu.gmic.Resynthetizetexturepatchbased](../FilterOpenfx-eu-gmic-resynthetizetexturepatchbased/): GMIC Resynthetize texture patch-based
+* [openfx.eu.gmic.Retinex](../FilterOpenfx-eu-gmic-retinex/): GMIC Retinex
+* [openfx.eu.gmic.Retrofade](../FilterOpenfx-eu-gmic-retrofade/): GMIC Retro fade
+* [openfx.eu.gmic.Rodilius](../FilterOpenfx-eu-gmic-rodilius/): GMIC Rodilius
+* [openfx.eu.gmic.Rorschach](../FilterOpenfx-eu-gmic-rorschach/): GMIC Rorschach
+* [openfx.eu.gmic.Sampleimage](../FilterOpenfx-eu-gmic-sampleimage/): GMIC Sample image
+* [openfx.eu.gmic.Satin](../FilterOpenfx-eu-gmic-satin/): GMIC Satin
+* [openfx.eu.gmic.Scanlines](../FilterOpenfx-eu-gmic-scanlines/): GMIC Scanlines
+* [openfx.eu.gmic.Seamcarve](../FilterOpenfx-eu-gmic-seamcarve/): GMIC Seamcarve
+* [openfx.eu.gmic.Seamlessturbulence](../FilterOpenfx-eu-gmic-seamlessturbulence/): GMIC Seamless turbulence
+* [openfx.eu.gmic.Segmentation](../FilterOpenfx-eu-gmic-segmentation/): GMIC Segmentation
+* [openfx.eu.gmic.Selectivedesaturation](../FilterOpenfx-eu-gmic-selectivedesaturation/): GMIC Selective desaturation
+* [openfx.eu.gmic.Selectreplacecolor](../FilterOpenfx-eu-gmic-selectreplacecolor/): GMIC Select-replace color
+* [openfx.eu.gmic.Sepia](../FilterOpenfx-eu-gmic-sepia/): GMIC Sepia
+* [openfx.eu.gmic.Shadebobs](../FilterOpenfx-eu-gmic-shadebobs/): GMIC Shade bobs
+* [openfx.eu.gmic.Shadowpatch](../FilterOpenfx-eu-gmic-shadowpatch/): GMIC Shadow patch
+* [openfx.eu.gmic.Shapeism](../FilterOpenfx-eu-gmic-shapeism/): GMIC Shapeism
+* [openfx.eu.gmic.Sharpabstract](../FilterOpenfx-eu-gmic-sharpabstract/): GMIC Sharp abstract
+* [openfx.eu.gmic.SharpenGoldMeinel](../FilterOpenfx-eu-gmic-sharpengoldmeinel/): GMIC Sharpen Gold-Meinel
+* [openfx.eu.gmic.SharpenRichardsonLucy](../FilterOpenfx-eu-gmic-sharpenrichardsonlucy/): GMIC Sharpen Richardson-Lucy
+* [openfx.eu.gmic.Sharpendeblur](../FilterOpenfx-eu-gmic-sharpendeblur/): GMIC Sharpen deblur
+* [openfx.eu.gmic.Sharpeninversediffusion](../FilterOpenfx-eu-gmic-sharpeninversediffusion/): GMIC Sharpen inv. diffusion
+* [openfx.eu.gmic.Sharpenoctavesharpening](../FilterOpenfx-eu-gmic-sharpenoctavesharpening/): GMIC Sharpen octave sharpening
+* [openfx.eu.gmic.Sharpenshockfilters](../FilterOpenfx-eu-gmic-sharpenshockfilters/): GMIC Sharpen shock filters
+* [openfx.eu.gmic.Sharpentexture](../FilterOpenfx-eu-gmic-sharpentexture/): GMIC Sharpen texture
+* [openfx.eu.gmic.Sharpenunsharpmask](../FilterOpenfx-eu-gmic-sharpenunsharpmask/): GMIC Sharpen unsharp mask
+* [openfx.eu.gmic.Shockwaves](../FilterOpenfx-eu-gmic-shockwaves/): GMIC Shock waves
+* [openfx.eu.gmic.Sierpinskitriangle](../FilterOpenfx-eu-gmic-sierpinskitriangle/): GMIC Sierpinski triangle
+* [openfx.eu.gmic.Skeleton](../FilterOpenfx-eu-gmic-skeleton/): GMIC Skeleton
+* [openfx.eu.gmic.Sketch](../FilterOpenfx-eu-gmic-sketch/): GMIC Sketch
+* [openfx.eu.gmic.Sliceluminosity](../FilterOpenfx-eu-gmic-sliceluminosity/): GMIC Slice luminosity
+* [openfx.eu.gmic.Slidecollagecolor](../FilterOpenfx-eu-gmic-slidecollagecolor/): GMIC Slide collage color
+* [openfx.eu.gmic.Slidecolor](../FilterOpenfx-eu-gmic-slidecolor/): GMIC Slide color
+* [openfx.eu.gmic.Smoothabstract](../FilterOpenfx-eu-gmic-smoothabstract/): GMIC Smooth abstract
+* [openfx.eu.gmic.Smoothanisotropic](../FilterOpenfx-eu-gmic-smoothanisotropic/): GMIC Smooth anisotropic
+* [openfx.eu.gmic.Smoothantialias](../FilterOpenfx-eu-gmic-smoothantialias/): GMIC Smooth antialias
+* [openfx.eu.gmic.Smoothbilateral](../FilterOpenfx-eu-gmic-smoothbilateral/): GMIC Smooth bilateral
+* [openfx.eu.gmic.Smoothdiffusion](../FilterOpenfx-eu-gmic-smoothdiffusion/): GMIC Smooth diffusion
+* [openfx.eu.gmic.Smoothguided](../FilterOpenfx-eu-gmic-smoothguided/): GMIC Smooth guided
+* [openfx.eu.gmic.Smoothmeancurvature](../FilterOpenfx-eu-gmic-smoothmeancurvature/): GMIC Smooth mean-curvature
+* [openfx.eu.gmic.Smoothmedian](../FilterOpenfx-eu-gmic-smoothmedian/): GMIC Smooth median
+* [openfx.eu.gmic.Smoothnlmeans](../FilterOpenfx-eu-gmic-smoothnlmeans/): GMIC Smooth nlmeans
+* [openfx.eu.gmic.Smoothpatchbased](../FilterOpenfx-eu-gmic-smoothpatchbased/): GMIC Smooth patch-based
+* [openfx.eu.gmic.Smoothpatchpca](../FilterOpenfx-eu-gmic-smoothpatchpca/): GMIC Smooth patch-pca
+* [openfx.eu.gmic.Smoothperonamalik](../FilterOpenfx-eu-gmic-smoothperonamalik/): GMIC Smooth perona-malik
+* [openfx.eu.gmic.Smoothselectivegaussian](../FilterOpenfx-eu-gmic-smoothselectivegaussian/): GMIC Smooth selective gaussian
+* [openfx.eu.gmic.Smoothskin](../FilterOpenfx-eu-gmic-smoothskin/): GMIC Smooth skin
+* [openfx.eu.gmic.Smoothtotalvariation](../FilterOpenfx-eu-gmic-smoothtotalvariation/): GMIC Smooth total variation
+* [openfx.eu.gmic.Smoothwavelets](../FilterOpenfx-eu-gmic-smoothwavelets/): GMIC Smooth wavelets
+* [openfx.eu.gmic.Snowflake](../FilterOpenfx-eu-gmic-snowflake/): GMIC Snowflake
+* [openfx.eu.gmic.Solidify](../FilterOpenfx-eu-gmic-solidify/): GMIC Solidify
+* [openfx.eu.gmic.Solvemaze](../FilterOpenfx-eu-gmic-solvemaze/): GMIC Solve maze
+* [openfx.eu.gmic.Spatialtransition](../FilterOpenfx-eu-gmic-spatialtransition/): GMIC Spatial transition
+* [openfx.eu.gmic.Sphere](../FilterOpenfx-eu-gmic-sphere/): GMIC Sphere
+* [openfx.eu.gmic.Spherize](../FilterOpenfx-eu-gmic-spherize/): GMIC Spherize
+* [openfx.eu.gmic.Splitdetailsalpha](../FilterOpenfx-eu-gmic-splitdetailsalpha/): GMIC Split details alpha
+* [openfx.eu.gmic.Splitdetailsgaussian](../FilterOpenfx-eu-gmic-splitdetailsgaussian/): GMIC Split details gaussian
+* [openfx.eu.gmic.Splitdetailswavelets](../FilterOpenfx-eu-gmic-splitdetailswavelets/): GMIC Split details wavelets
+* [openfx.eu.gmic.Sponge](../FilterOpenfx-eu-gmic-sponge/): GMIC Sponge
+* [openfx.eu.gmic.Squaretocircle](../FilterOpenfx-eu-gmic-squaretocircle/): GMIC Square to circle
+* [openfx.eu.gmic.Stainedglass](../FilterOpenfx-eu-gmic-stainedglass/): GMIC Stained glass
+* [openfx.eu.gmic.Stamp](../FilterOpenfx-eu-gmic-stamp/): GMIC Stamp
+* [openfx.eu.gmic.Stars](../FilterOpenfx-eu-gmic-stars/): GMIC Stars
+* [openfx.eu.gmic.Stencil](../FilterOpenfx-eu-gmic-stencil/): GMIC Stencil
+* [openfx.eu.gmic.Stereographicprojection](../FilterOpenfx-eu-gmic-stereographicprojection/): GMIC Stereographic projection
+* [openfx.eu.gmic.Streak](../FilterOpenfx-eu-gmic-streak/): GMIC Streak
+* [openfx.eu.gmic.Stroke](../FilterOpenfx-eu-gmic-stroke/): GMIC Stroke
+* [openfx.eu.gmic.Superformula](../FilterOpenfx-eu-gmic-superformula/): GMIC Superformula
+* [openfx.eu.gmic.Superpixels](../FilterOpenfx-eu-gmic-superpixels/): GMIC Super-pixels
+* [openfx.eu.gmic.Symmetrize](../FilterOpenfx-eu-gmic-symmetrize/): GMIC Symmetrize
+* [openfx.eu.gmic.Taquin](../FilterOpenfx-eu-gmic-taquin/): GMIC Taquin
+* [openfx.eu.gmic.Tetris](../FilterOpenfx-eu-gmic-tetris/): GMIC Tetris
+* [openfx.eu.gmic.Texturedglass](../FilterOpenfx-eu-gmic-texturedglass/): GMIC Textured glass
+* [openfx.eu.gmic.Thinedges](../FilterOpenfx-eu-gmic-thinedges/): GMIC Thin edges
+* [openfx.eu.gmic.Tileablerotation](../FilterOpenfx-eu-gmic-tileablerotation/): GMIC Tileable rotation
+* [openfx.eu.gmic.Tiledisolation](../FilterOpenfx-eu-gmic-tiledisolation/): GMIC Tiled isolation
+* [openfx.eu.gmic.Tilednormalization](../FilterOpenfx-eu-gmic-tilednormalization/): GMIC Tiled normalization
+* [openfx.eu.gmic.Tiledparameterization](../FilterOpenfx-eu-gmic-tiledparameterization/): GMIC Tiled parameterization
+* [openfx.eu.gmic.Tiledrandomshifts](../FilterOpenfx-eu-gmic-tiledrandomshifts/): GMIC Tiled random shifts
+* [openfx.eu.gmic.Tiledrotation](../FilterOpenfx-eu-gmic-tiledrotation/): GMIC Tiled rotation
+* [openfx.eu.gmic.Tilestolayers](../FilterOpenfx-eu-gmic-tilestolayers/): GMIC Tiles to layers
+* [openfx.eu.gmic.Tonemapping](../FilterOpenfx-eu-gmic-tonemapping/): GMIC Tone mapping
+* [openfx.eu.gmic.Tonemappingfast](../FilterOpenfx-eu-gmic-tonemappingfast/): GMIC Tone mapping fast
+* [openfx.eu.gmic.Tonestolayers](../FilterOpenfx-eu-gmic-tonestolayers/): GMIC Tones to layers
+* [openfx.eu.gmic.Transfercolorsadvanced](../FilterOpenfx-eu-gmic-transfercolorsadvanced/): GMIC Transfer colors advanced
+* [openfx.eu.gmic.Transfercolorsbasic](../FilterOpenfx-eu-gmic-transfercolorsbasic/): GMIC Transfer colors basic
+* [openfx.eu.gmic.Truchet](../FilterOpenfx-eu-gmic-truchet/): GMIC Truchet
+* [openfx.eu.gmic.Tunnel](../FilterOpenfx-eu-gmic-tunnel/): GMIC Tunnel
+* [openfx.eu.gmic.Turbulence](../FilterOpenfx-eu-gmic-turbulence/): GMIC Turbulence
+* [openfx.eu.gmic.Twirl](../FilterOpenfx-eu-gmic-twirl/): GMIC Twirl
+* [openfx.eu.gmic.Upscaledcci2x](../FilterOpenfx-eu-gmic-upscaledcci2x/): GMIC Upscale dcci2x
+* [openfx.eu.gmic.Upscalediffusion](../FilterOpenfx-eu-gmic-upscalediffusion/): GMIC Upscale diffusion
+* [openfx.eu.gmic.Upscalescale2x](../FilterOpenfx-eu-gmic-upscalescale2x/): GMIC Upscale scale2x
+* [openfx.eu.gmic.Userdefined](../FilterOpenfx-eu-gmic-userdefined/): GMIC User-defined
+* [openfx.eu.gmic.Various](../FilterOpenfx-eu-gmic-various/): GMIC Various
+* [openfx.eu.gmic.Variouscollage](../FilterOpenfx-eu-gmic-variouscollage/): GMIC Various collage
+* [openfx.eu.gmic.Vectorpainting](../FilterOpenfx-eu-gmic-vectorpainting/): GMIC Vector painting
+* [openfx.eu.gmic.Vignette](../FilterOpenfx-eu-gmic-vignette/): GMIC Vignette
+* [openfx.eu.gmic.Visiblewatermark](../FilterOpenfx-eu-gmic-visiblewatermark/): GMIC Visible watermark
+* [openfx.eu.gmic.Warpbyintensity](../FilterOpenfx-eu-gmic-warpbyintensity/): GMIC Warp by intensity
+* [openfx.eu.gmic.Whirldrawing](../FilterOpenfx-eu-gmic-whirldrawing/): GMIC Whirl drawing
+* [openfx.eu.gmic.Whirls](../FilterOpenfx-eu-gmic-whirls/): GMIC Whirls
+* [openfx.eu.gmic.Wind](../FilterOpenfx-eu-gmic-wind/): GMIC Wind
+* [openfx.eu.gmic.Zoom](../FilterOpenfx-eu-gmic-zoom/): GMIC Zoom
+* [openfx.net.sf.cimg.CImgBilateral](../FilterOpenfx-net-sf-cimg-cimgbilateral/): SmoothBilateralCImg
+* [openfx.net.sf.cimg.CImgBloom](../FilterOpenfx-net-sf-cimg-cimgbloom/): BloomCImg
+* [openfx.net.sf.cimg.CImgBlur](../FilterOpenfx-net-sf-cimg-cimgblur/): BlurCImg
+* [openfx.net.sf.cimg.CImgChromaBlur](../FilterOpenfx-net-sf-cimg-cimgchromablur/): ChromaBlurCImg
+* [openfx.net.sf.cimg.CImgDenoise](../FilterOpenfx-net-sf-cimg-cimgdenoise/): SmoothPatchBasedCImg
+* [openfx.net.sf.cimg.CImgDilate](../FilterOpenfx-net-sf-cimg-cimgdilate/): DilateCImg
+* [openfx.net.sf.cimg.CImgEqualize](../FilterOpenfx-net-sf-cimg-cimgequalize/): EqualizeCImg
+* [openfx.net.sf.cimg.CImgErode](../FilterOpenfx-net-sf-cimg-cimgerode/): ErodeCImg
+* [openfx.net.sf.cimg.CImgErodeSmooth](../FilterOpenfx-net-sf-cimg-cimgerodesmooth/): ErodeSmoothCImg
+* [openfx.net.sf.cimg.CImgExpression](../FilterOpenfx-net-sf-cimg-cimgexpression/): GMICExpr
+* [openfx.net.sf.cimg.CImgGuided](../FilterOpenfx-net-sf-cimg-cimgguided/): SmoothGuidedCImg
+* [openfx.net.sf.cimg.CImgHistEQ](../FilterOpenfx-net-sf-cimg-cimghisteq/): HistEQCImg
+* [openfx.net.sf.cimg.CImgLaplacian](../FilterOpenfx-net-sf-cimg-cimglaplacian/): LaplacianCImg
+* [openfx.net.sf.cimg.CImgMedian](../FilterOpenfx-net-sf-cimg-cimgmedian/): MedianCImg
+* [openfx.net.sf.cimg.CImgNoise](../FilterOpenfx-net-sf-cimg-cimgnoise/): NoiseCImg
+* [openfx.net.sf.cimg.CImgPlasma](../FilterOpenfx-net-sf-cimg-cimgplasma/): PlasmaCImg
+* [openfx.net.sf.cimg.CImgRollingGuidance](../FilterOpenfx-net-sf-cimg-cimgrollingguidance/): SmoothRollingGuidanceCImg
+* [openfx.net.sf.cimg.CImgSharpen](../FilterOpenfx-net-sf-cimg-cimgsharpen/): SharpenCImg
+* [openfx.net.sf.cimg.CImgSharpenInvDiff](../FilterOpenfx-net-sf-cimg-cimgsharpeninvdiff/): SharpenInvDiffCImg
+* [openfx.net.sf.cimg.CImgSharpenShock](../FilterOpenfx-net-sf-cimg-cimgsharpenshock/): SharpenShockCImg
+* [openfx.net.sf.cimg.CImgSmooth](../FilterOpenfx-net-sf-cimg-cimgsmooth/): SmoothAnisotropicCImg
+* [openfx.net.sf.cimg.CImgSoften](../FilterOpenfx-net-sf-cimg-cimgsoften/): SoftenCImg
+* [openfx.net.sf.openfx.AddPlugin](../FilterOpenfx-net-sf-openfx-addplugin/): AddOFX
+* [openfx.net.sf.openfx.AdjustRoDPlugin](../FilterOpenfx-net-sf-openfx-adjustrodplugin/): AdjustRoD
+* [openfx.net.sf.openfx.Card3D](../FilterOpenfx-net-sf-openfx-card3d/): Card3DOFX
+* [openfx.net.sf.openfx.ChromaKeyerPlugin](../FilterOpenfx-net-sf-openfx-chromakeyerplugin/): ChromaKeyerOFX
+* [openfx.net.sf.openfx.Clamp](../FilterOpenfx-net-sf-openfx-clamp/): ClampOFX
+* [openfx.net.sf.openfx.ClipTestPlugin](../FilterOpenfx-net-sf-openfx-cliptestplugin/): ClipTestOFX
+* [openfx.net.sf.openfx.ColorCorrectPlugin](../FilterOpenfx-net-sf-openfx-colorcorrectplugin/): ColorCorrectOFX
+* [openfx.net.sf.openfx.ColorLookupPlugin](../FilterOpenfx-net-sf-openfx-colorlookupplugin/): ColorLookupOFX
+* [openfx.net.sf.openfx.ColorMatrixPlugin](../FilterOpenfx-net-sf-openfx-colormatrixplugin/): ColorMatrixOFX
+* [openfx.net.sf.openfx.ColorSuppress](../FilterOpenfx-net-sf-openfx-colorsuppress/): ColorSuppress
+* [openfx.net.sf.openfx.ContactSheetOFX](../FilterOpenfx-net-sf-openfx-contactsheetofx/): ContactSheetOFX
+* [openfx.net.sf.openfx.CornerPinMaskedPlugin](../FilterOpenfx-net-sf-openfx-cornerpinmaskedplugin/): CornerPinMaskedOFX
+* [openfx.net.sf.openfx.CornerPinPlugin](../FilterOpenfx-net-sf-openfx-cornerpinplugin/): CornerPinOFX
+* [openfx.net.sf.openfx.CropPlugin](../FilterOpenfx-net-sf-openfx-cropplugin/): CropOFX
+* [openfx.net.sf.openfx.Deinterlace](../FilterOpenfx-net-sf-openfx-deinterlace/): DeinterlaceOFX
+* [openfx.net.sf.openfx.DenoiseSharpen](../FilterOpenfx-net-sf-openfx-denoisesharpen/): DenoiseSharpen
+* [openfx.net.sf.openfx.Despill](../FilterOpenfx-net-sf-openfx-despill/): Despill
+* [openfx.net.sf.openfx.DirBlur](../FilterOpenfx-net-sf-openfx-dirblur/): DirBlurOFX
+* [openfx.net.sf.openfx.FrameBlend](../FilterOpenfx-net-sf-openfx-frameblend/): FrameBlendOFX
+* [openfx.net.sf.openfx.GammaPlugin](../FilterOpenfx-net-sf-openfx-gammaplugin/): GammaOFX
+* [openfx.net.sf.openfx.GodRays](../FilterOpenfx-net-sf-openfx-godrays/): GodRaysOFX
+* [openfx.net.sf.openfx.GradePlugin](../FilterOpenfx-net-sf-openfx-gradeplugin/): GradeOFX
+* [openfx.net.sf.openfx.HSIToRGB](../FilterOpenfx-net-sf-openfx-hsitorgb/): HSIToRGB
+* [openfx.net.sf.openfx.HSLToRGB](../FilterOpenfx-net-sf-openfx-hsltorgb/): HSLToRGB
+* [openfx.net.sf.openfx.HSVToRGB](../FilterOpenfx-net-sf-openfx-hsvtorgb/): HSVToRGB
+* [openfx.net.sf.openfx.HSVToolPlugin](../FilterOpenfx-net-sf-openfx-hsvtoolplugin/): HSVToolOFX
+* [openfx.net.sf.openfx.HueCorrect](../FilterOpenfx-net-sf-openfx-huecorrect/): HueCorrectOFX
+* [openfx.net.sf.openfx.HueKeyer](../FilterOpenfx-net-sf-openfx-huekeyer/): HueKeyerOFX
+* [openfx.net.sf.openfx.ImageStatistics](../FilterOpenfx-net-sf-openfx-imagestatistics/): ImageStatisticsOFX
+* [openfx.net.sf.openfx.Invert](../FilterOpenfx-net-sf-openfx-invert/): InvertOFX
+* [openfx.net.sf.openfx.KeyMix](../FilterOpenfx-net-sf-openfx-keymix/): KeyMixOFX
+* [openfx.net.sf.openfx.KeyerPlugin](../FilterOpenfx-net-sf-openfx-keyerplugin/): KeyerOFX
+* [openfx.net.sf.openfx.LabToRGB709](../FilterOpenfx-net-sf-openfx-labtorgb709/): LabToRGB709
+* [openfx.net.sf.openfx.LabToXYZ](../FilterOpenfx-net-sf-openfx-labtoxyz/): LabToXYZ
+* [openfx.net.sf.openfx.LayerContactSheetOFX](../FilterOpenfx-net-sf-openfx-layercontactsheetofx/): LayerContactSheetOFX
+* [openfx.net.sf.openfx.Log2Lin](../FilterOpenfx-net-sf-openfx-log2lin/): Log2LinOFX
+* [openfx.net.sf.openfx.MatteMonitorPlugin](../FilterOpenfx-net-sf-openfx-mattemonitorplugin/): MatteMonitor
+* [openfx.net.sf.openfx.MergeDifference](../FilterOpenfx-net-sf-openfx-mergedifference/): AbsminusOFX
+* [openfx.net.sf.openfx.MergeIn](../FilterOpenfx-net-sf-openfx-mergein/): InOFX
+* [openfx.net.sf.openfx.MergeMatte](../FilterOpenfx-net-sf-openfx-mergematte/): MatteOFX
+* [openfx.net.sf.openfx.MergeMax](../FilterOpenfx-net-sf-openfx-mergemax/): MaxOFX
+* [openfx.net.sf.openfx.MergeMin](../FilterOpenfx-net-sf-openfx-mergemin/): MinOFX
+* [openfx.net.sf.openfx.MergeMultiply](../FilterOpenfx-net-sf-openfx-mergemultiply/): MultiplyOFX
+* [openfx.net.sf.openfx.MergeOut](../FilterOpenfx-net-sf-openfx-mergeout/): OutOFX
+* [openfx.net.sf.openfx.MergePlugin](../FilterOpenfx-net-sf-openfx-mergeplugin/): MergeOFX
+* [openfx.net.sf.openfx.MergePlus](../FilterOpenfx-net-sf-openfx-mergeplus/): PlusOFX
+* [openfx.net.sf.openfx.MergeRoto](../FilterOpenfx-net-sf-openfx-mergeroto/): RotoMerge
+* [openfx.net.sf.openfx.MergeScreen](../FilterOpenfx-net-sf-openfx-mergescreen/): ScreenOFX
+* [openfx.net.sf.openfx.Mirror](../FilterOpenfx-net-sf-openfx-mirror/): MirrorOFX
+* [openfx.net.sf.openfx.MultiplyPlugin](../FilterOpenfx-net-sf-openfx-multiplyplugin/): MultiplyOFX
+* [openfx.net.sf.openfx.NoOpPlugin](../FilterOpenfx-net-sf-openfx-noopplugin/): NoOpOFX
+* [openfx.net.sf.openfx.NoTimeBlurPlugin](../FilterOpenfx-net-sf-openfx-notimeblurplugin/): NoTimeBlurOFX
+* [openfx.net.sf.openfx.PIK](../FilterOpenfx-net-sf-openfx-pik/): PIK
+* [openfx.net.sf.openfx.PLogLin](../FilterOpenfx-net-sf-openfx-ploglin/): PLogLinOFX
+* [openfx.net.sf.openfx.Position](../FilterOpenfx-net-sf-openfx-position/): PositionOFX
+* [openfx.net.sf.openfx.Premult](../FilterOpenfx-net-sf-openfx-premult/): PremultOFX
+* [openfx.net.sf.openfx.Quantize](../FilterOpenfx-net-sf-openfx-quantize/): Quantize
+* [openfx.net.sf.openfx.RGB709ToLab](../FilterOpenfx-net-sf-openfx-rgb709tolab/): RGB709ToLab
+* [openfx.net.sf.openfx.RGB709ToXYZ](../FilterOpenfx-net-sf-openfx-rgb709toxyz/): RGB709ToXYZ
+* [openfx.net.sf.openfx.RGBToHSI](../FilterOpenfx-net-sf-openfx-rgbtohsi/): RGBToHSI
+* [openfx.net.sf.openfx.RGBToHSL](../FilterOpenfx-net-sf-openfx-rgbtohsl/): RGBToHSL
+* [openfx.net.sf.openfx.RGBToHSV](../FilterOpenfx-net-sf-openfx-rgbtohsv/): RGBToHSV
+* [openfx.net.sf.openfx.RGBToYCbCr601](../FilterOpenfx-net-sf-openfx-rgbtoycbcr601/): RGBToYCbCr601
+* [openfx.net.sf.openfx.RGBToYCbCr709](../FilterOpenfx-net-sf-openfx-rgbtoycbcr709/): RGBToYCbCr709
+* [openfx.net.sf.openfx.RGBToYPbPr601](../FilterOpenfx-net-sf-openfx-rgbtoypbpr601/): RGBToYPbPr601
+* [openfx.net.sf.openfx.RGBToYPbPr709](../FilterOpenfx-net-sf-openfx-rgbtoypbpr709/): RGBToYPbPr709
+* [openfx.net.sf.openfx.RGBToYUV601](../FilterOpenfx-net-sf-openfx-rgbtoyuv601/): RGBToYUV601
+* [openfx.net.sf.openfx.RGBToYUV709](../FilterOpenfx-net-sf-openfx-rgbtoyuv709/): RGBToYUV709
+* [openfx.net.sf.openfx.Reformat](../FilterOpenfx-net-sf-openfx-reformat/): ReformatOFX
+* [openfx.net.sf.openfx.SaturationPlugin](../FilterOpenfx-net-sf-openfx-saturationplugin/): SaturationOFX
+* [openfx.net.sf.openfx.Shadertoy](../FilterOpenfx-net-sf-openfx-shadertoy/): Shadertoy
+* [openfx.net.sf.openfx.ShufflePlugin](../FilterOpenfx-net-sf-openfx-shuffleplugin/): ShuffleOFX
+* [openfx.net.sf.openfx.SpriteSheet](../FilterOpenfx-net-sf-openfx-spritesheet/): SpriteSheet
+* [openfx.net.sf.openfx.Threshold](../FilterOpenfx-net-sf-openfx-threshold/): Threshold
+* [openfx.net.sf.openfx.TimeBlur](../FilterOpenfx-net-sf-openfx-timeblur/): TimeBlurOFX
+* [openfx.net.sf.openfx.TimeDissolvePlugin](../FilterOpenfx-net-sf-openfx-timedissolveplugin/): TimeDissolveOFX
+* [openfx.net.sf.openfx.TrackerPM](../FilterOpenfx-net-sf-openfx-trackerpm/): TrackerPM
+* [openfx.net.sf.openfx.TransformMaskedPlugin](../FilterOpenfx-net-sf-openfx-transformmaskedplugin/): TransformMaskedOFX
+* [openfx.net.sf.openfx.TransformPlugin](../FilterOpenfx-net-sf-openfx-transformplugin/): TransformOFX
+* [openfx.net.sf.openfx.Unpremult](../FilterOpenfx-net-sf-openfx-unpremult/): UnpremultOFX
+* [openfx.net.sf.openfx.VectorToColorPlugin](../FilterOpenfx-net-sf-openfx-vectortocolorplugin/): VectorToColorOFX
+* [openfx.net.sf.openfx.XYZToLab](../FilterOpenfx-net-sf-openfx-xyztolab/): XYZToLab
+* [openfx.net.sf.openfx.XYZToRGB709](../FilterOpenfx-net-sf-openfx-xyztorgb709/): XYZToRGB709
+* [openfx.net.sf.openfx.XYZToxyY](../FilterOpenfx-net-sf-openfx-xyztoxyy/): XYZToxyY
+* [openfx.net.sf.openfx.YCbCrToRGB601](../FilterOpenfx-net-sf-openfx-ycbcrtorgb601/): YCbCrToRGB601
+* [openfx.net.sf.openfx.YCbCrToRGB709](../FilterOpenfx-net-sf-openfx-ycbcrtorgb709/): YCbCrToRGB709
+* [openfx.net.sf.openfx.YPbPrToRGB601](../FilterOpenfx-net-sf-openfx-ypbprtorgb601/): YPbPrToRGB601
+* [openfx.net.sf.openfx.YPbPrToRGB709](../FilterOpenfx-net-sf-openfx-ypbprtorgb709/): YPbPrToRGB709
+* [openfx.net.sf.openfx.YUVToRGB601](../FilterOpenfx-net-sf-openfx-yuvtorgb601/): YUVToRGB601
+* [openfx.net.sf.openfx.YUVToRGB709](../FilterOpenfx-net-sf-openfx-yuvtorgb709/): YUVToRGB709
+* [openfx.net.sf.openfx.anaglyphPlugin](../FilterOpenfx-net-sf-openfx-anaglyphplugin/): AnaglyphOFX
+* [openfx.net.sf.openfx.mixViewsPlugin](../FilterOpenfx-net-sf-openfx-mixviewsplugin/): MixViewsOFX
+* [openfx.net.sf.openfx.oneViewPlugin](../FilterOpenfx-net-sf-openfx-oneviewplugin/): OneViewOFX
+* [openfx.net.sf.openfx.sideBySidePlugin](../FilterOpenfx-net-sf-openfx-sidebysideplugin/): SideBySideOFX
+* [openfx.net.sf.openfx.switchPlugin](../FilterOpenfx-net-sf-openfx-switchplugin/): SwitchOFX
+* [openfx.net.sf.openfx.xyYToXYZ](../FilterOpenfx-net-sf-openfx-xyytoxyz/): xyYToXYZ
+* [openfx.wtf.vala^NtscRs](../FilterOpenfx-wtf-vala^ntscrs/): NTSC-rs
 * [outline](../FilterOutline/): Outline
 * [panner](../FilterPanner/): Audio Pan
 * [pillar_echo](../FilterPillar_echo/): Pillar Echo
@@ -623,6 +1102,7 @@ wrap_title: Filter Plugins
 * [rescale](../FilterRescale/): Rescale
 * [resize](../FilterResize/): Pad
 * [rgblut](../FilterRgblut/): RGBLUT
+* [rnnoise](../FilterRnnoise/): Noise Reduction (RNNoise)
 * [rotoscoping](../FilterRotoscoping/): Rotoscoping
 * [sepia](../FilterSepia/): Sepia
 * [shape](../FilterShape/): Shape Alpha

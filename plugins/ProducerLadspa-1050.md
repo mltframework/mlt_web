@@ -13,7 +13,7 @@ title: White Noise Source
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 2  
 creator: Richard Furse (LADSPA example plugins)  
 license: GPLv2  
 

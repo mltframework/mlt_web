@@ -13,7 +13,7 @@ title: Count
 media types:
 Audio  Video  
 description: Generate frames with a counter and synchronized tone. The counter can go up or down.  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

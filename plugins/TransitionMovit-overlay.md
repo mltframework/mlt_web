@@ -13,7 +13,7 @@ title: Overlay (GLSL)
 media types:
 Video  
 description: A video overlay or alpha-compositing effect using a Porter-Duff operation or SVG 1.2 blend mode.  
-version: 2  
+version: 3  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

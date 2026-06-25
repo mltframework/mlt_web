@@ -13,7 +13,7 @@ title: Choppy
 media types:
 Video  
 description:   
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: libswscale Color Transform
 media types:
 Video  
 description: Convert image to and from linear color transfer characteristics using libswscale. This filter is designed to work with the color_transform filter to provide efficient linear color space conversion.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: LADSPA
 media types:
 Audio  
 description: Process audio using LADSPA plugins.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  

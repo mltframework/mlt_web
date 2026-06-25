@@ -13,7 +13,7 @@ title: JACK
 media types:
 Audio  
 description:   
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

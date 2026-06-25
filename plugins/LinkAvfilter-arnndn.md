@@ -13,7 +13,7 @@ title: arnndn
 media types:
 Audio  
 description: Reduce noise from speech using Recurrent Neural Networks.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

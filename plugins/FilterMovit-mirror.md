@@ -13,7 +13,7 @@ title: Mirror (GLSL)
 media types:
 Video  
 description: A simple horizontal mirroring.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

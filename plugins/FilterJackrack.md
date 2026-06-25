@@ -13,7 +13,7 @@ title: JACK Rack XML (*DEPRECATED*)
 media types:
 Audio  
 description: Process audio using JACK.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Copyright (C) 2004-2018 Meltytech, LLC  
 license: GPLv2  

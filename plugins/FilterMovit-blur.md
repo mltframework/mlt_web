@@ -13,7 +13,7 @@ title: Blur (GLSL)
 media types:
 Video  
 description: A separable 2D blur implemented by a combination of mipmap filtering and convolution (essentially giving a convolution with a piecewise linear approximation to the true impulse response).  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

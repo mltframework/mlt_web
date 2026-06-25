@@ -13,7 +13,7 @@ title: Threshold
 media types:
 Video  
 description:   
-version: 2  
+version: 3  
 creator: Charles Yates  
 license: LGPLv2.1  
 

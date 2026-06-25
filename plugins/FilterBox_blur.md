@@ -13,7 +13,7 @@ title: Box Blur
 media types:
 Video  
 description:   
-version: 3  
+version: 4  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: BurningTV
 media types:
 Video  
 description:   
-version: 1  
+version: 2  
 creator: FUKUCHI Kentaro, Stephane Fillod  
 contributor: Jan Sorensen  
 copyright: FUKUCHI Kentaro, Stephane Fillod  

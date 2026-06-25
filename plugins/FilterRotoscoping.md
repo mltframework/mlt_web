@@ -13,7 +13,7 @@ title: Rotoscoping
 media types:
 Video  
 description: Keyframable vector based rotoscoping  
-version: 0.3  
+version: 1  
 creator: Till Theato <root@ttill.de>  
 copyright: Copyright (C) 2011 Till Theato  
 license: GPL  

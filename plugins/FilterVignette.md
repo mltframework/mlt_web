@@ -13,7 +13,7 @@ title: Vignette Effect
 media types:
 Video  
 description: Vignette around a point with adjustable smooth, radius, position and transparency  
-version: 1.0  
+version: 2  
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  

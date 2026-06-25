@@ -13,7 +13,7 @@ title: RGBLUT
 media types:
 Video  
 description:   
-version: 1  
+version: 2  
 creator: Janne Liljeblad  
 copyright: Janne Liljeblad  
 license: LGPLv2.1  

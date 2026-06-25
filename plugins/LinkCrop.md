@@ -13,7 +13,7 @@ title: Crop
 media types:
 Video  
 description: Remove pixels from the edges of the video.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

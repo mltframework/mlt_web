@@ -15,7 +15,7 @@ Audio  Hidden
 description: Adjust an audio stream&#39;s sampling rate.
 This filter is automatically invoked by the loader producer to normalize audio from the producer to provide the rate requested by the consumer.
   
-version: 1  
+version: 2  
 creator: Dan Dennedy <dan@dennedy.org>  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

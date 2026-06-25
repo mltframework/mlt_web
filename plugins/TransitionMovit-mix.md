@@ -13,7 +13,7 @@ title: Dissolve (GLSL)
 media types:
 Video  
 description: A simple video cross-fade or mixing effect.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

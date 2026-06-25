@@ -13,7 +13,7 @@ title: Mixdown
 media types:
 Audio  
 description: Mix all channels of audio into a mono signal and output it as N channels.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: Box Blur (*DEPRECATED*)
 media types:
 Video  
 description:   
-version: 3  
+version: 4  
 creator: Leny Grisel, Jean-Baptiste Mardelle  
 copyright: Leny Grisel, Jean-Baptiste Mardelle  
 license: LGPLv2.1  

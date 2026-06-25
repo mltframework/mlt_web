@@ -13,7 +13,7 @@ title: amplify
 media types:
 Video  
 description: Amplify changes between successive video frames.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

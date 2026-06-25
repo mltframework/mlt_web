@@ -13,7 +13,7 @@ title: Nonbandlimited single-sample impulses (Frequency: Control)
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 2  
 creator: Andy Wingo <wingo at pobox dot com>  
 license: GPLv2  
 

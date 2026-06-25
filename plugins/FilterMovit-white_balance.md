@@ -13,7 +13,7 @@ title: White Balance (GLSL)
 media types:
 Video  
 description: Color correction in LMS color space.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

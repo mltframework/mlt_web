@@ -13,7 +13,7 @@ title: Dynamic Loudness
 media types:
 Audio  
 description: Dynamically correct audio loudness as recommended by EBU R128.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -21,7 +21,6 @@ license: LGPLv2.1
 ## Notes
 
 This filter adjusts the level of the audio based on the loudness of the input. It performs loudness measurement over a specified sliding window of time. Then, it adjusts the gain on the output based on the difference between the measured loudness and the target loudness in order to achieve the desired loudness.
-
 
 ## Parameters
 

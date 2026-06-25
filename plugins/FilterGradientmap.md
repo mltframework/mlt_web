@@ -13,7 +13,7 @@ title: Gradient Map
 media types:
 Video  
 description:   
-version: 2  
+version: 3  
 creator: Martin Rodriguez Reboredo  
 copyright: Martin Rodriguez Reboredo  
 license: LGPLv2.1  

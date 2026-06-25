@@ -13,7 +13,7 @@ title: Freeze frame
 media types:
 Video  
 description:   
-version: 1  
+version: 2  
 creator: Jean-Baptiste Mardelle  
 copyright: Jean-Baptiste Mardelle  
 license: LGPLv2.1  

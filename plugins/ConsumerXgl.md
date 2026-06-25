@@ -13,7 +13,7 @@ title: OpenGL Video (*DEPRECATED*)
 media types:
 Video  
 description: Display the video only in a X11 window using OpenGL.  
-version: 1  
+version: 2  
 creator:   
 copyright: Christophe Thommeret  
 license: LGPLv2.1  

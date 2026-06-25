@@ -13,7 +13,7 @@ title: Image Padding (GLSL)
 media types:
 Video  Hidden  
 description: Pad an image with black to fulfill the requested image size.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

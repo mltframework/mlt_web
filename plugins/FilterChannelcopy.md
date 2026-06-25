@@ -13,7 +13,7 @@ title: Copy Channels
 media types:
 Audio  
 description: Copy one audio channel to another.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

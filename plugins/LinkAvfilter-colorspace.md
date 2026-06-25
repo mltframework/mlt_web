@@ -13,7 +13,7 @@ title: colorspace
 media types:
 Video  
 description: Convert between colorspaces.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -102,6 +102,7 @@ values:
 * bt2020
 * jedec-p22
 * ebu3213
+* vgamut
 
 ### av.trc
 
@@ -128,6 +129,7 @@ values:
 * iec61966-2-4
 * bt2020-10
 * bt2020-12
+* vlog
 
 ### av.format
 
@@ -187,6 +189,20 @@ values:
 * bradford
 * vonkries
 * identity
+
+### av.clipgamut
+
+  
+description:
+Controls how to clip out-of-gamut colors that arise as a result of colorspace conversion.  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* none
+* rgb
 
 ### av.iall
 
@@ -268,6 +284,7 @@ values:
 * bt2020
 * jedec-p22
 * ebu3213
+* vgamut
 
 ### av.itrc
 
@@ -294,6 +311,7 @@ values:
 * iec61966-2-4
 * bt2020-10
 * bt2020-12
+* vlog
 
 ### av.threads
 

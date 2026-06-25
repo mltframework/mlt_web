@@ -13,7 +13,7 @@ title: Chroma Hold
 media types:
 Video  
 description:   
-version: 1  
+version: 2  
 creator: Charles Yates  
 license: LGPLv2.1  
 

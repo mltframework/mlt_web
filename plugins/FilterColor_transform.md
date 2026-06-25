@@ -13,7 +13,7 @@ title: Colorspace & Transfer Characteristics
 media types:
 Video  Hidden  
 description: Convert the image color to whatever was requested by the consumer. This filter is designed for use as a normalizer for the loader producer. If the &quot;force_trc&quot; property is set on this filter, the filter will force the output trc to be &quot;force_trc&quot;; Otherwise, if a property &quot;consumer.mlt_color_trc&quot; exists on the frame, then it normalizes the image to the trc requested by the consumer.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -11,7 +11,7 @@ category: plugin
 
 title: Inverse Telecine (*DEPRECATED*)  
 description:   
-version: 1  
+version: 2  
 creator: Donald A. Graft  
 contributor: [0, "Dan Dennedy"]  
 contributor: ["license", "GPLv2"]  
@@ -19,4 +19,5 @@ contributor: ["language", "en"]
 contributor: ["tags", ["Video"]]  
 contributor: ["description", "Deinterlace frames that were repeated in a telecine process."]  
 contributor: ["notes", "This is old work, which never materialized to a completely usable form. It is not able to change the frame rate. The video is deinterlaced in a smart manner, but repeated frames are not removed."]  
+contributor: ["image_formats", ["yuv422"]]  
 copyright: Donald A. Graft and Dan Dennedy  

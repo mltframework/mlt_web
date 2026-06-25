@@ -12,9 +12,8 @@ category: plugin
 title: FFT  
 media types:
 Audio  
-description: An audio filter that computes the FFT of the audio. This filter does not modify the audio or the image. It only computes the FFT and stores the result in the &quot;bins&quot; property of the filter.
-  
-version: 1  
+description: An audio filter that computes the FFT of the audio. This filter does not modify the audio or the image. It only computes the FFT and stores the result in the &quot;bins&quot; property of the filter.  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

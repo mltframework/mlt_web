@@ -13,7 +13,7 @@ title: Shape Alpha
 media types:
 Video  
 description:   
-version: 7  
+version: 8  
 creator: Charles Yates  
 license: LGPLv2.1  
 

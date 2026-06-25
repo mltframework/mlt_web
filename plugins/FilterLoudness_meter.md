@@ -13,7 +13,7 @@ title: Loudness Meter
 media types:
 Audio  
 description: Measure audio loudness as recommended by EBU R128.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

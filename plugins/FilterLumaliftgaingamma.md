@@ -13,7 +13,7 @@ title: LumaLiftGainGamma
 media types:
 Video  
 description: Filter can be used to apply lift, gain and gamma correction to luma values of image.  
-version: 1  
+version: 2  
 creator: Janne Liljeblad  
 copyright: Janne Liljeblad  
 license: GPL  

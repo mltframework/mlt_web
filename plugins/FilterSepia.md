@@ -13,7 +13,7 @@ title: Sepia
 media types:
 Video  
 description: Apply a color tint. Default values give a sepia tone like an old photograph.  
-version: 1  
+version: 2  
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

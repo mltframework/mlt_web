@@ -12,9 +12,8 @@ category: plugin
 title: Dance  
 media types:
 Video  
-description: An audio visualization filter that moves the image around proportional to the magnitude of the audio spectrum.
-  
-version: 1  
+description: An audio visualization filter that moves the image around proportional to the magnitude of the audio spectrum.  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

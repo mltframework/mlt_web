@@ -13,7 +13,7 @@ title: Blip Flash
 media types:
 Video  Audio  
 description: Calculate the A/V sync for a blip flash source. Sync can be recalculated whenever a blip or a flash is detected.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

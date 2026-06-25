@@ -15,7 +15,7 @@ Video
 description: A generic dissolve and wipe transition processor.
 &quot;luma&quot; gets its name from how it uses a grayscale &quot;map&quot; file. As the luma value varies over time, a threshold filter is applied to the map to determine what parts of frame A vs. frame B to show. It reads PGM files up to 16 bits! Alternatively, it can use the first frame from any producer that outputs yuv, but it will be limited to the luma gamut of 220 values. This performs field-based rendering unless the A frame property &quot;progressive&quot; or &quot;consumer_progressive&quot; or the transition property &quot;progressive&quot; is set to 1.
   
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: Audio Levels
 media types:
 Audio  
 description: Compute the audio amplitude.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 contributor: Marco Gittler  
 contributor: Steve Harris  

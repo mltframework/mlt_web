@@ -13,7 +13,7 @@ title: Audio Pan
 media types:
 Audio  
 description: Pan an audio channel, adjust balance, or adjust fade.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

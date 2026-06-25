@@ -15,7 +15,7 @@ Video
 description: Create an echo effect (blur) outside of an area of interest.
 The area of interest is scaled to fill the image, then blurred. Then the original image is replaced back on top.
   
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

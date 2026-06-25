@@ -13,7 +13,7 @@ title: asidedata
 media types:
 Audio  
 description: Manipulate audio frame side data.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -64,6 +64,7 @@ values:
 * CONTENT_LIGHT_LEVEL
 * ICC_PROFILE
 * S12M_TIMECOD
+* S12M_TIMECODE
 * DYNAMIC_HDR_PLUS
 * REGIONS_OF_INTEREST
 * VIDEO_ENC_PARAMS

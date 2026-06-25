@@ -13,7 +13,7 @@ title: Pad
 media types:
 Video  Hidden  
 description: Pad an image with black to fulfill the requested image size.  
-version: 2  
+version: 3  
 creator: Charles Yates <charles.yates@pandora.be>  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

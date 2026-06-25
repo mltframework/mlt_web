@@ -13,7 +13,7 @@ title: shuffleframes
 media types:
 Video  
 description: Shuffle video frames.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: Grain
 media types:
 Video  
 description: Grain over the Image  
-version: 0.2.5  
+version: 1  
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  

@@ -13,7 +13,7 @@ title: Pango
 media types:
 Video  
 description: A title generator that uses the Pango international text layout and Freetype2 font renderer.  
-version: 3  
+version: 4  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: Glaxnimate Animation
 media types:
 Video  
 description: Reads a variety of 2D animations  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: GPLv3  

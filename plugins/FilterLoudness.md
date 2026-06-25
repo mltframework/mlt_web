@@ -13,7 +13,7 @@ title: Loudness
 media types:
 Audio  
 description: Correct audio loudness as recommended by EBU R128.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -21,7 +21,6 @@ license: LGPLv2.1
 ## Notes
 
 This filter requires two passes. The first pass performs analysis and stores the result in the &quot;results&quot; property. The second pass applies the results to the audio in order to achieve the desired loudness over the range of the filter.
-
 
 ## Parameters
 

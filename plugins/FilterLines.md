@@ -13,7 +13,7 @@ title: Scratchlines
 media types:
 Video  
 description: Scratchlines over the Picture  
-version: 0.2.6  
+version: 1  
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  

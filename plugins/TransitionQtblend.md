@@ -13,7 +13,7 @@ title: Composite and transform
 media types:
 Video  
 description: A transition allowing compositing and transform.  
-version: 4  
+version: 5  
 creator: Jean-Baptiste Mardelle  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

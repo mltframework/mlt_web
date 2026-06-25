@@ -13,7 +13,7 @@ title: Vignette (GLSL)
 media types:
 Video  
 description: A circular vignette, falling off as cos² of the distance from the center (the classic formula for approximating a real lens).  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

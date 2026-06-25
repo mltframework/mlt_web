@@ -13,7 +13,7 @@ title: Rubberband Pitch
 media types:
 Audio  
 description: Adjust the audio pitch using the Rubberband library.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: GPLv2  

@@ -13,7 +13,7 @@ title: SDL2 Audio Only
 media types:
 Audio  
 description: Simple DirectMedia Layer audio only output module.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

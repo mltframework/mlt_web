@@ -13,7 +13,7 @@ title: FFmpeg Image Scaler
 media types:
 Video  Hidden  
 description: Change the resolution of an image.  
-version: 2  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

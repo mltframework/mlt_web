@@ -13,7 +13,7 @@ title: Ambisonic Decoder
 media types:
 Audio  
 description: Decode, rotate (pan), and zoom Ambisonic audio.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPL  

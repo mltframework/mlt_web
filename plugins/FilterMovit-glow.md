@@ -13,7 +13,7 @@ title: Glow (GLSL)
 media types:
 Video  
 description: Cut out the highlights of the image (everything above a certain threshold), blur them, and overlay them onto the original image.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

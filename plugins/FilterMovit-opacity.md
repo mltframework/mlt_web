@@ -13,7 +13,7 @@ title: Opacity (GLSL)
 media types:
 Video  
 description: Adjust the opacity of an image through the alpha channel.  
-version: 5  
+version: 6  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

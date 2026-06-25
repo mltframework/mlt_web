@@ -13,7 +13,7 @@ title: Dynamic text
 media types:
 Video  
 description: Overlay dynamic text onto the video  
-version: 4  
+version: 5  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -21,7 +21,6 @@ license: LGPLv2.1
 ## Notes
 
 The dynamic text filter will search for keywords in the text to be overlaid and will replace those keywords on a frame-by-frame basis.
-
 
 ## Parameters
 

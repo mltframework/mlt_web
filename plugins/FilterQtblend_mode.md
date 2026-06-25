@@ -13,7 +13,7 @@ title: Set Qt Blend Mode
 media types:
 Video  
 description: Change the blend mode used by the qtblend transition.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

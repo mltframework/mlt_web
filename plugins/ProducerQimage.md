@@ -13,7 +13,7 @@ title: Qt QImage
 media types:
 Video  
 description: A still graphics to video generator using Qt QImage  
-version: 2  
+version: 3  
 creator: Charles Yates  
 license: GPLv2  
 

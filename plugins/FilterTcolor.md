@@ -13,7 +13,7 @@ title: Technicolor
 media types:
 Video  
 description: Oversaturate the Color in Video, like in old Technicolor movies  
-version: 0.2.5  
+version: 1  
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  

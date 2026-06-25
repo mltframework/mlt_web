@@ -13,7 +13,7 @@ title: Legacy FFmpeg Deinterlacer (*DEPRECATED*)
 media types:
 Video  Hidden  
 description: Deinterlace interlaced video.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

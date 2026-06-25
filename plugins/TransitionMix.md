@@ -13,7 +13,7 @@ title: Mix
 media types:
 Audio  
 description: Mix two audio tracks.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

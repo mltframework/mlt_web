@@ -13,7 +13,7 @@ title: FFmpeg Audio Resampler
 media types:
 Audio  Hidden  
 description: Converts the audio sample rate.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

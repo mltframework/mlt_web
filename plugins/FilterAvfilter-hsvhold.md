@@ -13,7 +13,7 @@ title: hsvhold
 media types:
 Video  
 description: Turns a certain HSV range into gray.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

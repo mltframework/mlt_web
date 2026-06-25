@@ -13,7 +13,7 @@ title: fftdnoiz
 media types:
 Video  
 description: Denoise frames using 3D FFT.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

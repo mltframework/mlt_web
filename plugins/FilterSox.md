@@ -13,7 +13,7 @@ title: SoX
 media types:
 Audio  
 description: Process audio using a SoX effect.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPL  

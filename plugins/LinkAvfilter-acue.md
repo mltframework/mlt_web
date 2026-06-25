@@ -13,7 +13,7 @@ title: acue
 media types:
 Audio  
 description: Delay filtering to match a cue.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

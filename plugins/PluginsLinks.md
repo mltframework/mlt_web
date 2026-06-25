@@ -7,7 +7,6 @@ wrap_title: Link Plugins
 * [avcolor_space](../LinkAvcolor_space/): FFmpeg Image Converter
 * [avcolour_space](../LinkAvcolour_space/): FFmpeg Image Converter
 * [avdeinterlace](../LinkAvdeinterlace/): FFmpeg Deinterlacer
-* [avfilter.abench](../LinkAvfilter-abench/): abench
 * [avfilter.acompressor](../LinkAvfilter-acompressor/): acompressor
 * [avfilter.acontrast](../LinkAvfilter-acontrast/): acontrast
 * [avfilter.acrusher](../LinkAvfilter-acrusher/): acrusher
@@ -66,7 +65,6 @@ wrap_title: Link Plugins
 * [avfilter.bandreject](../LinkAvfilter-bandreject/): bandreject
 * [avfilter.bass](../LinkAvfilter-bass/): bass
 * [avfilter.bbox](../LinkAvfilter-bbox/): bbox
-* [avfilter.bench](../LinkAvfilter-bench/): bench
 * [avfilter.bilateral](../LinkAvfilter-bilateral/): bilateral
 * [avfilter.biquad](../LinkAvfilter-biquad/): biquad
 * [avfilter.bitplanenoise](../LinkAvfilter-bitplanenoise/): bitplanenoise
@@ -224,6 +222,7 @@ wrap_title: Link Plugins
 * [avfilter.pixelize](../LinkAvfilter-pixelize/): pixelize
 * [avfilter.pixscope](../LinkAvfilter-pixscope/): pixscope
 * [avfilter.pp7](../LinkAvfilter-pp7/): pp7
+* [avfilter.premultiply_dynamic](../LinkAvfilter-premultiply_dynamic/): premultiply_dynamic
 * [avfilter.prewitt](../LinkAvfilter-prewitt/): prewitt
 * [avfilter.procamp_vaapi](../LinkAvfilter-procamp_vaapi/): procamp_vaapi
 * [avfilter.pseudocolor](../LinkAvfilter-pseudocolor/): pseudocolor
@@ -318,6 +317,7 @@ wrap_title: Link Plugins
 * [resample](../LinkResample/): SRC Resampler
 * [rescale](../LinkRescale/): Rescale
 * [resize](../LinkResize/): Pad
+* [rnnoise](../LinkRnnoise/): Noise Reduction (RNNoise)
 * [swresample](../LinkSwresample/): FFmpeg Audio Resampler
 * [swscale](../LinkSwscale/): FFmpeg Image Scaler
 * [timeremap](../LinkTimeremap/): Time Remap

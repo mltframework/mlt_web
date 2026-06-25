@@ -13,7 +13,7 @@ title: Analogue Oscillator
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 2  
 creator: Steve Harris <steve@plugin.org.uk>  
 license: GPLv2  
 

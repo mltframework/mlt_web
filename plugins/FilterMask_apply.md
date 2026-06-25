@@ -13,7 +13,7 @@ title: Apply a filter mask
 media types:
 Video  
 description: This filter works in conjunction with the mask_start filter, which makes a snapshot of the frame. There can be other filters between the two, which are masked by the alpha channel via this filter&#39;s compositing transition.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

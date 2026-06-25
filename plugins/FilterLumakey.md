@@ -15,7 +15,7 @@ Video
 description: This filter modifies image&#39;s alpha channel as a function of its luma value.
 This is used together with a compositor to combine two images so that bright or dark areas of source image are overwritten on top of the destination image.
   
-version: 1  
+version: 2  
 creator: Janne Liljeblad  
 copyright: Janne Liljeblad  
 license: LGPLv2.1  

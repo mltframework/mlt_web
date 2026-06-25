@@ -13,7 +13,7 @@ title: Text
 media types:
 Video  
 description: Overlay text onto the video  
-version: 3  
+version: 4  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

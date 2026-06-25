@@ -13,7 +13,7 @@ title: Field order
 media types:
 Video  Hidden  
 description: Correct the field order of interlaced video.  
-version: 1  
+version: 2  
 creator: Dan Dennedy <dan@dennedy.org>  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

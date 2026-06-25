@@ -13,7 +13,7 @@ title: drawgraph
 media types:
 Video  
 description: Draw a graph using input video metadata.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

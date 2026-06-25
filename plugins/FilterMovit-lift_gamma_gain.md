@@ -13,7 +13,7 @@ title: Lift, Gamma, and Gain (GLSL)
 media types:
 Video  
 description: A simple lift/gamma/gain effect, used for color grading.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

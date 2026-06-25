@@ -13,7 +13,7 @@ title: vibrance
 media types:
 Video  
 description: Boost or alter saturation.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

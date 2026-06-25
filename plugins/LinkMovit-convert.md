@@ -13,7 +13,7 @@ title: Image Converter (GLSL)
 media types:
 Video  Hidden  
 description: Converts the colorspace and pixel format.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

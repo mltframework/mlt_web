@@ -13,7 +13,7 @@ title: scale
 media types:
 Video  
 description: Scale the input video size and/or convert the image format.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -109,10 +109,12 @@ values:
 * bt601
 * bt470
 * smpte170m
+* bt470bg
 * bt709
 * fcc
 * smpte240m
 * bt2020
+* bt2020nc
 
 ### av.out_color_matrix
 
@@ -129,10 +131,12 @@ values:
 * bt601
 * bt470
 * smpte170m
+* bt470bg
 * bt709
 * fcc
 * smpte240m
 * bt2020
+* bt2020nc
 
 ### av.in_range
 

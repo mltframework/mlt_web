@@ -13,7 +13,7 @@ title: Blip Flash
 media types:
 Audio  Video  
 description: Generate periodic synchronized audio blips and video flashes. Blips are a 1kHz tone and last the duration of the flash frame.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

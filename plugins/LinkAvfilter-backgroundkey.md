@@ -13,7 +13,7 @@ title: backgroundkey
 media types:
 Video  
 description: Turns a static background into transparency.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

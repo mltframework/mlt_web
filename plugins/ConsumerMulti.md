@@ -13,7 +13,7 @@ title: Multiple outputs
 media types:
 Audio  Video  
 description: Use multiple consumers with the same producer.  
-version: 1  
+version: 2  
 creator: Dan Dennedy  
 copyright: Copyright (C) 2011-2014 Meltytech, LLC  
 license: LGPL  

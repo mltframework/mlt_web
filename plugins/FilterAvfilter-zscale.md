@@ -13,7 +13,7 @@ title: zscale
 media types:
 Video  
 description: Apply resizing, colorspace and bit depth conversion.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -124,6 +124,7 @@ values:
 * bicubic
 * spline16
 * spline36
+* spline64
 * lanczos
 
 ### av.f
@@ -142,6 +143,7 @@ values:
 * bicubic
 * spline16
 * spline36
+* spline64
 * lanczos
 
 ### av.out_range

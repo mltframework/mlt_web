@@ -13,7 +13,7 @@ title: blackdetect
 media types:
 Video  
 description: Detect video intervals that are (almost) black.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

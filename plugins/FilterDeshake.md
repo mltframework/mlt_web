@@ -13,7 +13,7 @@ title: Vid.Stab Deshake
 media types:
 Video  
 description: Stabilize Video (for wiggly/rolling video)  
-version: 1  
+version: 2  
 creator: Georg Martius  
 copyright: Jakub Ksiezniak  
 license: GPLv2  

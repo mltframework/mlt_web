@@ -13,7 +13,7 @@ title: pp7
 media types:
 Video  
 description: Apply Postprocessing 7 filter.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

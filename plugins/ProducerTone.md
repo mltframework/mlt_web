@@ -13,7 +13,7 @@ title: Tone
 media types:
 Audio  
 description: Generate audio tones.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: aloop
 media types:
 Audio  
 description: Loop audio samples.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

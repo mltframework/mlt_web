@@ -13,7 +13,7 @@ title: Volume
 media types:
 Audio  
 description: Adjust an audio stream&#39;s volume level. This filter is based on the &#39;normalize&#39; utility  
-version: 3  
+version: 4  
 creator: Dan Denneedy  
 copyright: Meltytech, LLC  
 license: GPLv2  

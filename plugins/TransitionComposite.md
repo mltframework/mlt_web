@@ -13,7 +13,7 @@ title: Composite (*DEPRECATED*)
 media types:
 Video  
 description: A key-framable alpha-channel compositor for two frames.  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

@@ -13,7 +13,7 @@ title: FFmpeg Output
 media types:
 Audio  Video  
 description: Write or stream audio and/or video using FFmpeg.  
-version: 6  
+version: 7  
 creator: Charles Yates  
 contributor: Dan Dennedy  
 copyright: Copyright (C) 2003-2019 Meltytech, LLC  
@@ -4510,7 +4510,7 @@ default: 0
 
   
 description:
-preferred page size in bytes (deprecated) (oga)  
+preferred page size in bytes (oga)  
 type: integer  
 readonly: no  
 required: no  
@@ -4557,7 +4557,7 @@ default: 0
 
   
 description:
-preferred page size in bytes (deprecated) (ogg)  
+preferred page size in bytes (ogg)  
 type: integer  
 readonly: no  
 required: no  
@@ -4604,7 +4604,7 @@ default: 0
 
   
 description:
-preferred page size in bytes (deprecated) (ogv)  
+preferred page size in bytes (ogv)  
 type: integer  
 readonly: no  
 required: no  
@@ -4651,7 +4651,7 @@ default: 0
 
   
 description:
-preferred page size in bytes (deprecated) (opus)  
+preferred page size in bytes (opus)  
 type: integer  
 readonly: no  
 required: no  
@@ -4980,10 +4980,9 @@ default: -1
   
 description:
 Stream identifier (rtp)  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-default: 0  
 
 ### cname
 
@@ -5124,12 +5123,18 @@ required: no
   
 description:
 Verify the peer certificate (rtsp)  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
+
+### verify
+
+  
+description:
+Verify the peer certificate (rtsp)  
+type: string  
+readonly: no  
+required: no  
 
 ### cert_file
 
@@ -5140,7 +5145,25 @@ type: string
 readonly: no  
 required: no  
 
+### cert
+
+  
+description:
+Certificate file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
 ### key_file
+
+  
+description:
+Private key file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### key
 
   
 description:
@@ -5790,7 +5813,7 @@ default: 0
 
   
 description:
-preferred page size in bytes (deprecated) (spx)  
+preferred page size in bytes (spx)  
 type: integer  
 readonly: no  
 required: no  
@@ -6759,6 +6782,42 @@ required: no
 minimum: -1  
 default: 1200  
 
+### ts_buffer_size
+
+  
+description:
+The buffer size, in bytes, of underlying protocol (whip)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+default: -1  
+
+### whip_flags
+
+  
+description:
+Set flags affecting WHIP connection behavior (whip)  
+type: string  
+readonly: no  
+required: no  
+format: flags  
+values:  
+
+* dtls_active
+
+### rtp_history
+
+  
+description:
+The number of RTP history items to store (whip)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 64  
+maximum: 2048  
+default: 512  
+
 ### authorization
 
   
@@ -6823,7 +6882,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: Lavf62.3.100  
+default: Lavf62.12.100  
 
 ### stream_name
 
@@ -7479,7 +7538,7 @@ values:
 
   
 description:
-intra_dc_precision  
+deprecated; use intra_dc_precision for MPEG-2 instead  
 type: integer  
 readonly: no  
 required: no  
@@ -7907,6 +7966,22 @@ values:
 * bottomleft
 * bottom
 * unspecified
+
+### alpha_mode
+
+  
+description:
+alpha mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* unknown
+* unspecified
+* premultiplied
+* straight
 
 ### slices
 
@@ -10773,6 +10848,18 @@ minimum: 0
 maximum: 3  
 default: 0  
 
+### intra_dc_precision
+
+  
+description:
+Precision of the DC coefficient - 8 (mpeg2video)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 3  
+default: -1  
+
 ### intra_vlc
 
   
@@ -12189,6 +12276,98 @@ required: no
 minimum: 0  
 maximum: 16  
 default: 16  
+
+### mbs_per_slice
+
+  
+description:
+macroblocks per slice (prores_ks_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+maximum: 8  
+default: 8  
+
+### profile
+
+  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* proxy
+* lt
+* standard
+* hq
+* 4444
+* 4444xq
+
+### vendor
+
+  
+description:
+vendor ID (prores_ks_vulkan)  
+type: string  
+readonly: no  
+required: no  
+default: Lavc  
+
+### bits_per_mb
+
+  
+description:
+desired bits per macroblock (prores_ks_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 8192  
+default: 0  
+
+### quant_mat
+
+  
+description:
+quantiser matrix (prores_ks_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* proxy
+* lt
+* standard
+* hq
+* default
+
+### alpha_bits
+
+  
+description:
+bits for alpha plane (prores_ks_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 16  
+default: 16  
+
+### async_depth
+
+  
+description:
+Internal parallelization depth (prores_ks_vulkan)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1  
 
 ### quake3_compat
 
@@ -15126,18 +15305,6 @@ type: string
 readonly: no  
 required: no  
 
-### block_size
-
-  
-description:
-set the block size (adpcm_argo)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 32  
-maximum: 8192  
-default: 1024  
-
 ### code_size
 
   
@@ -15202,18 +15369,6 @@ default: 1024
 
   
 description:
-set the block size (adpcm_ima_qt)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 32  
-maximum: 8192  
-default: 1024  
-
-### block_size
-
-  
-description:
 set the block size (adpcm_ima_ssi)  
 type: integer  
 readonly: no  
@@ -15251,18 +15406,6 @@ default: 1024
   
 description:
 set the block size (adpcm_ms)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 32  
-maximum: 8192  
-default: 1024  
-
-### block_size
-
-  
-description:
-set the block size (adpcm_swf)  
 type: integer  
 readonly: no  
 required: no  
@@ -18026,6 +18169,15 @@ type: string
 readonly: no  
 required: no  
 
+### x265-stats
+
+  
+description:
+Filename for 2 pass stats (libx265)  
+type: string  
+readonly: no  
+required: no  
+
 ### udu_sei
 
   
@@ -18139,6 +18291,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 268435455  
 default: 0  
 
 ### rc_mode
@@ -18319,6 +18472,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 268435455  
 default: 0  
 
 ### rc_mode
@@ -18736,6 +18890,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 268435455  
 default: 0  
 
 ### rc_mode
@@ -19108,6 +19263,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 268435455  
 default: 0  
 
 ### jfif
@@ -19180,6 +19336,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 268435455  
 default: 0  
 
 ### rc_mode
@@ -19336,6 +19493,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 268435455  
 default: 0  
 
 ### rc_mode
@@ -19442,6 +19600,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
+maximum: 268435455  
 default: 0  
 
 ### rc_mode

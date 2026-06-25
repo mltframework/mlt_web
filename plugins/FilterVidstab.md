@@ -13,7 +13,7 @@ title: Vid.Stab Detect and Transform
 media types:
 Video  
 description: Stabilize Video (for wiggly/rolling video)  
-version: 2  
+version: 3  
 creator: Marco Gittler <g.marco@freenet.de>  
 copyright: Jakub Ksiezniak  
 license: GPL  

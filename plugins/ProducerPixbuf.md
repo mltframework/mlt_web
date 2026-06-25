@@ -13,7 +13,7 @@ title: GDK-PixBuf
 media types:
 Video  
 description: A still graphics to video generator using gdk-pixbuf  
-version: 2  
+version: 3  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

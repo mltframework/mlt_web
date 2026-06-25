@@ -13,7 +13,7 @@ title: FFmpeg Reader
 media types:
 Audio  Video  
 description: Read an audio and/or video file using FFmpeg.  
-version: 6  
+version: 7  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -724,6 +724,17 @@ required: no
 
   
 description:
+(adx)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 1  
+default: 1024  
+
+### raw_packet_size
+
+  
+description:
 (amr)  
 type: integer  
 readonly: no  
@@ -949,7 +960,6 @@ set pixel format (bitpacked)
 type: string  
 readonly: no  
 required: no  
-default: yuv420p  
 
 ### video_size
 
@@ -1697,7 +1707,6 @@ required: no
 format: integer or keyword  
 values:  
 
-* glob_sequence
 * glob
 * sequence
 * none
@@ -1841,7 +1850,6 @@ required: no
 format: integer or keyword  
 values:  
 
-* glob_sequence
 * glob
 * sequence
 * none
@@ -1938,7 +1946,6 @@ required: no
 format: integer or keyword  
 values:  
 
-* glob_sequence
 * glob
 * sequence
 * none
@@ -2266,6 +2273,15 @@ required: no
   
 description:
 Export full XMP metadata (mov,mp4,m4a,3gp,3g2,mj2)  
+type: string  
+readonly: no  
+required: no  
+
+### decryption_keys
+
+  
+description:
+The media decryption keys by KID (hex) (mov,mp4,m4a,3gp,3g2,mj2)  
 type: string  
 readonly: no  
 required: no  
@@ -2866,6 +2882,15 @@ type: string
 readonly: no  
 required: no  
 
+### stride
+
+  
+description:
+frame line size in bytes (rawvideo)  
+type: string  
+readonly: no  
+required: no  
+
 ### pixel_format
 
   
@@ -2874,7 +2899,6 @@ set pixel format (rawvideo)
 type: string  
 readonly: no  
 required: no  
-default: yuv420p  
 
 ### video_size
 
@@ -3097,7 +3121,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: Lavf62.3.100  
+default: Lavf62.12.100  
 
 ### ca_file
 
@@ -3122,12 +3146,18 @@ required: no
   
 description:
 Verify the peer certificate (rtsp)  
-type: integer  
+type: string  
 readonly: no  
 required: no  
-minimum: 0  
-maximum: 1  
-default: 0  
+
+### verify
+
+  
+description:
+Verify the peer certificate (rtsp)  
+type: string  
+readonly: no  
+required: no  
 
 ### cert_file
 
@@ -3138,7 +3168,25 @@ type: string
 readonly: no  
 required: no  
 
+### cert
+
+  
+description:
+Certificate file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
 ### key_file
+
+  
+description:
+Private key file (rtsp)  
+type: string  
+readonly: no  
+required: no  
+
+### key
 
   
 description:
@@ -4127,6 +4175,53 @@ required: no
   
 description:
 force loop over input file sequence (jpegxl_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### frame_size
+
+  
+description:
+force frame size in bytes (jpegxs_pipe)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 0  
+
+### framerate
+
+  
+description:
+set the video framerate (jpegxs_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### pixel_format
+
+  
+description:
+set video pixel format (jpegxs_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### video_size
+
+  
+description:
+set video size (jpegxs_pipe)  
+type: string  
+readonly: no  
+required: no  
+
+### loop
+
+  
+description:
+force loop over input file sequence (jpegxs_pipe)  
 type: string  
 readonly: no  
 required: no  
@@ -5432,7 +5527,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: Lavf62.3.100  
+default: Lavf62.12.100  
 
 ### stream_name
 
@@ -6214,6 +6309,22 @@ values:
 * bottom
 * unspecified
 
+### alpha_mode
+
+  
+description:
+alpha mode  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* unknown
+* unspecified
+* premultiplied
+* straight
+
 ### thread_type
 
   
@@ -6394,6 +6505,7 @@ values:
 * mastering_display_metadata
 * content_light_level
 * icc_profile
+* exif
 
 ### layer
 
@@ -7447,30 +7559,6 @@ Set if ASS tags must be escaped (vplayer)
 type: string  
 readonly: no  
 required: no  
-
-### tilethreads
-
-  
-description:
-Tile threads (libdav1d)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 256  
-default: 0  
-
-### framethreads
-
-  
-description:
-Frame threads (libdav1d)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 256  
-default: 0  
 
 ### max_frame_delay
 

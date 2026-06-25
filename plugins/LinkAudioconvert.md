@@ -13,7 +13,7 @@ title: Audio Sample Format Converter
 media types:
 Audio  
 description: Converts the audio sample format.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

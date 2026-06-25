@@ -13,7 +13,7 @@ title: Gamma
 media types:
 Video  
 description: Adjust image luma using a non-linear power-law curve.  
-version: 1  
+version: 2  
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

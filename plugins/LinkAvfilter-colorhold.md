@@ -13,7 +13,7 @@ title: colorhold
 media types:
 Video  
 description: Turns a certain color range into gray. Operates on RGB colors.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes

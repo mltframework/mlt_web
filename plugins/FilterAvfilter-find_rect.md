@@ -13,7 +13,7 @@ title: find_rect
 media types:
 Video  
 description: Find a user specified object.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -80,7 +80,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 2147483647  
 
 ### av.ymax
 
@@ -89,7 +89,7 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
+default: 2147483647  
 
 ### av.discard
 

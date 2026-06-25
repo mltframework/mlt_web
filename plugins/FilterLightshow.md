@@ -12,9 +12,8 @@ category: plugin
 title: Light Show  
 media types:
 Video  
-description: An audio visualization filter that colors the image proportional to the magnitude of the audio spectrum.
-  
-version: 2  
+description: An audio visualization filter that colors the image proportional to the magnitude of the audio spectrum.  
+version: 3  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

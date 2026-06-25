@@ -13,7 +13,7 @@ title: Ambisonic Encoder
 media types:
 Audio  
 description: Position a mono sound in Ambisonic space.  
-version: 1  
+version: 2  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPL  

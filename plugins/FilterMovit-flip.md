@@ -13,7 +13,7 @@ title: Flip (GLSL)
 media types:
 Video  
 description: A simple vertical flip.  
-version: 1  
+version: 2  
 creator: Steinar H. Gunderson  
 copyright: Meltytech, LLC  
 license: GPLv2  

@@ -13,7 +13,7 @@ title: Oldfilm
 media types:
 Video  
 description: Moves the Picture up and down and random brightness change  
-version: 0.2.5  
+version: 1  
 creator: Marco Gittler  
 copyright: Copyright (C) 2008 Marco Gittler  
 license: GPL  

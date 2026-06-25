@@ -13,7 +13,7 @@ title: Mirror
 media types:
 Video  
 description: Provides various mirror and image reversing effects.  
-version: 1  
+version: 2  
 creator: Charles Yates  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

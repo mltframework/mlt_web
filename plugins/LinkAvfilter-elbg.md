@@ -13,7 +13,7 @@ title: elbg
 media types:
 Video  
 description: Apply posterize effect, using the ELBG algorithm.  
-version: Lavfi11.4.100  
+version: Lavfi11.14.100  
 creator: libavfilter maintainers  
 
 ## Notes
