@@ -50,9 +50,9 @@ configuration
 * [Property Animation]({{ "/docs//propertyanimation/" | prepend: site.baseurl }})
 * [Code Examples]({{ "/docs/codeexamples/" | prepend: site.baseurl }})
 * [Plugin Metadata Design]({{ "/docs/metadatarequirements/" | prepend: site.baseurl }})
-* [FxCut]({{ "/docs/fxcut/" | prepend: site.baseurl }})
+* [FX Cut (Adjustment Clip)]({{ "/docs/fxcut/" | prepend: site.baseurl }})
 * [OpenGL]({{ "/docs/opengl/" | prepend: site.baseurl }}) - information about using GPU processing in melt or your app
-* [UnitTests]({{ "/docs/unittests/" | prepend: site.baseurl }})
+* [Unit Tests]({{ "/docs/unittests/" | prepend: site.baseurl }})
 
 #### For Melted Users and Developers
 * [Testing Melted]({{ "/docs/meltedtesting/" | prepend: site.baseurl }}) - also a MVCP tutorial
