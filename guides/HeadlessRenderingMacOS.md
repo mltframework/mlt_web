@@ -1,6 +1,6 @@
 ---
 title: Documentation
-wrap_title: Headless Rendering on macOS
+wrap_title: Headless Rendering
 permalink: /docs/headlessmacos/
 ---
 
@@ -8,7 +8,7 @@ permalink: /docs/headlessmacos/
 
 This guide covers running `melt` with no graphical session on macOS: the setup and the flags that matter for unattended, batch, and CI rendering. It describes a Homebrew install on Apple Silicon, which is the setup behind an automated video pipeline the author runs daily. Dan uses MacPorts; the equivalent ports exist and the commands translate directly.
 
-### Install
+### Install on macOS with Homebrew
 
 Homebrew ships a maintained MLT formula, so the whole toolchain is one command:
 
