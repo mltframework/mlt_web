@@ -53,6 +53,7 @@ configuration
 * [FX Cut (Adjustment Clip)]({{ "/docs/fxcut/" | prepend: site.baseurl }})
 * [OpenGL]({{ "/docs/opengl/" | prepend: site.baseurl }}) - information about using GPU processing in melt or your app
 * [Unit Tests]({{ "/docs/unittests/" | prepend: site.baseurl }})
+* [Headless Rendering]({{ "/docs/headlessmacos/" | prepend: site.baseurl }})
 
 #### For Melted Users and Developers
 * [Testing Melted]({{ "/docs/meltedtesting/" | prepend: site.baseurl }}) - also a MVCP tutorial
