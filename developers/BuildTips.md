@@ -27,6 +27,9 @@ ffmpeg, SDL, etc. using [MacPorts](http://www.macports.org/).
 Normally, I use MLT configuration:
 `--enable-gpl --prefix=/opt/local`
 
+For a modern Apple Silicon walkthrough, including running `melt` headless for
+batch and CI rendering, see the [Headless Rendering on macOS]({{ "/docs/headlessmacos/" | prepend: site.baseurl }}) page.
+
 #### Windows
 
 See the [Building on Windows]({{ "/docs/windowsbuild/" | prepend: site.baseurl }}) page.
