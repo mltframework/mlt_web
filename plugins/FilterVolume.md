@@ -44,14 +44,14 @@ readonly: no
 required: no  
 default: 75  
 
-### normalize
+### normalize (*DEPRECATED*)
 
 title: Normalize    
 description:
 ```
 Normalize the volume to the specified amplitude.
 The normalization may be indicated as a floating point value of the relative volume.
-The normalization may also be indicated as a numeric value with the suffix "dB" to set the amplitude in decibels.
+The normalization may also be indicated as a numeric value with the suffix "dB" to set the amplitude in decibels. This makes the filter use 16-bit integer audio and therefore deprecated. Use `dynamic_loudness` instead.
 ```
 type: string  
 readonly: no  

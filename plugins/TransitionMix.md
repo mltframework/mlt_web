@@ -13,7 +13,7 @@ title: Mix
 media types:
 Audio  
 description: Mix two audio tracks.  
-version: 3  
+version: 5  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -73,4 +73,77 @@ type: boolean
 readonly: no  
 required: no  
 default: 0  
+
+### duck_threshold
+
+title: Duck Threshold    
+description:
+Enables ducking when non-zero. If the RMS level of frame A exceeds this dBFS threshold, frame B is attenuated before mixing. When this is non- zero, the sum and combine mix modes are ignored.  
+type: float  
+readonly: no  
+required: no  
+default: 0  
+unit: dB  
+widget: slider  
+
+### duck_attenuation
+
+title: Duck Attenuation    
+description:
+The minimum attenuation, in dBFS, applied to frame B while ducking.  
+type: float  
+readonly: no  
+required: no  
+default: -12  
+unit: dB  
+widget: slider  
+
+### duck_level
+
+title: Duck Level    
+description:
+Reports the current gain reduction, in dB, being applied to frame B.  
+type: float  
+readonly: yes  
+required: no  
+default: 0  
+unit: dB  
+widget: spinner  
+
+### duck_fade_in
+
+title: Duck Fade In    
+description:
+The fade-in time, in milliseconds, used when restoring frame B.  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 5000  
+default: 1500  
+unit: ms  
+widget: spinner  
+
+### duck_fade_out
+
+title: Duck Fade Out    
+description:
+The fade-out time, in milliseconds, used when reducing frame B.  
+type: float  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 5000  
+default: 250  
+unit: ms  
+widget: spinner  
+
+### prefix
+
+title: Frame Property Prefix    
+description:
+When non-empty, the duck level is also written to a frame property named &quot;&lt;prefix&gt;duck_level&quot; on frame A so that it can be read back once that frame is actually presented. When empty, no frame property is set.  
+type: string  
+readonly: no  
+required: no  
 

@@ -13,7 +13,7 @@ title: colorcorrect
 media types:
 Video  
 description: Adjust color white balance selectively for blacks and whites.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

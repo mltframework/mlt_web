@@ -441,6 +441,7 @@ format: flags
 values:  
 
 * ts
+* id3v2
 
 ### max_delay
 
@@ -1099,6 +1100,17 @@ output file segment start time and duration as packet metadata (concat)
 type: string  
 readonly: no  
 required: no  
+
+### recursion_depth
+
+  
+description:
+max recursion depth (concat)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 10  
 
 ### raw_packet_size
 
@@ -2380,7 +2392,7 @@ maximum size of emitted packet (mpegts)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
+minimum: 184  
 maximum: 1073741823  
 default: 204800  
 
@@ -3121,7 +3133,7 @@ override User-Agent header (rtsp)
 type: string  
 readonly: no  
 required: no  
-default: Lavf62.12.100  
+default: Lavf63.1.101  
 
 ### ca_file
 
@@ -3558,6 +3570,60 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
+
+### min_delay
+
+  
+description:
+minimum valid delay between frames (in milliseconds) (webp_anim)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 60000  
+default: 10  
+
+### max_webp_delay
+
+  
+description:
+maximum valid delay between frames (in milliseconds) (webp_anim)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 16777215  
+default: 16777215  
+
+### default_delay
+
+  
+description:
+default delay between frames (in milliseconds) (webp_anim)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 60000  
+default: 100  
+
+### ignore_loop
+
+  
+description:
+ignore loop setting (webp_anim)  
+type: string  
+readonly: no  
+required: no  
+
+### usebgcolor
+
+  
+description:
+use background color from ANIM chunk (webp_anim)  
+type: string  
+readonly: no  
+required: no  
 
 ### kind
 
@@ -5365,17 +5431,6 @@ required: no
 minimum: 1  
 default: 48000  
 
-### channels
-
-  
-description:
-(alsa)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-default: 0  
-
 ### ch_layout
 
   
@@ -5527,7 +5582,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: Lavf62.12.100  
+default: Lavf63.1.101  
 
 ### stream_name
 
@@ -6212,7 +6267,9 @@ values:
 * bt709
 * unknown
 * gamma22
+* bt470m
 * gamma28
+* bt470bg
 * smpte170m
 * smpte240m
 * linear
@@ -6526,45 +6583,6 @@ readonly: no
 required: no  
 minimum: 0  
 default: 0  
-
-### gamma
-
-  
-description:
-Set the float gamma value when decoding (deprecated, use a scaler) (exr)  
-type: float  
-readonly: no  
-required: no  
-minimum: 0.001  
-default: 1  
-
-### apply_trc
-
-  
-description:
-color transfer characteristics to apply to EXR linear input (deprecated, use a scaler) (exr)  
-type: string  
-readonly: no  
-required: no  
-format: integer or keyword  
-values:  
-
-* bt709
-* gamma
-* gamma22
-* gamma28
-* smpte170m
-* smpte240m
-* linear
-* log
-* log_sqrt
-* iec61966_2_4
-* bt1361
-* iec61966_2_1
-* bt2020_10bit
-* bt2020_12bit
-* smpte2084
-* smpte428_1
 
 ### skip_cursor
 
@@ -7065,6 +7083,18 @@ values:
 * default
 * coded
 
+### target_level
+
+  
+description:
+Target output loudness in dBFS for xHE-AAC normalization (0 = disabled) (aac)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -70  
+maximum: 0  
+default: 0  
+
 ### dual_mono_mode
 
   
@@ -7094,6 +7124,18 @@ values:
 
 * default
 * coded
+
+### target_level
+
+  
+description:
+Target output loudness in dBFS for xHE-AAC normalization (0 = disabled) (aac_fixed)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -70  
+maximum: 0  
+default: 0  
 
 ### cons_noisegen
 

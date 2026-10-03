@@ -13,7 +13,7 @@ title: RtAudio
 media types:
 Audio  
 description: RtAudio provides native, realtime audio output across Linux, Macintosh OS X, Windows, and some BSD operating systems.  
-version: 3  
+version: 4  
 creator: Gary P. Scavone  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  

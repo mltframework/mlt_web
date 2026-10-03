@@ -13,7 +13,7 @@ title: aexciter
 media types:
 Audio  
 description: Enhance high frequency part of audio.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

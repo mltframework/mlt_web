@@ -13,7 +13,7 @@ title: 4-band parametric filter
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 3  
 creator: Fons Adriaensen <fons@kokkinizita.net>  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -61,6 +61,8 @@ default: 0
 ### 5
 
 title: Frequency 1    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -68,11 +70,12 @@ animation: yes
 minimum: 20  
 maximum: 2000  
 default: 200  
-scale: log  
 
 ### 6
 
 title: Bandwidth 1    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -80,7 +83,6 @@ animation: yes
 minimum: 0.125  
 maximum: 8  
 default: 1  
-scale: log  
 
 ### 7
 
@@ -105,6 +107,8 @@ default: 0
 ### 9
 
 title: Frequency 2    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -112,11 +116,12 @@ animation: yes
 minimum: 40  
 maximum: 4000  
 default: 400  
-scale: log  
 
 ### 10
 
 title: Bandwidth 2    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -124,7 +129,6 @@ animation: yes
 minimum: 0.125  
 maximum: 8  
 default: 1  
-scale: log  
 
 ### 11
 
@@ -149,6 +153,8 @@ default: 0
 ### 13
 
 title: Frequency 3    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -156,11 +162,12 @@ animation: yes
 minimum: 100  
 maximum: 10000  
 default: 1000  
-scale: log  
 
 ### 14
 
 title: Bandwidth 3    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -168,7 +175,6 @@ animation: yes
 minimum: 0.125  
 maximum: 8  
 default: 1  
-scale: log  
 
 ### 15
 
@@ -193,6 +199,8 @@ default: 0
 ### 17
 
 title: Frequency 4    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -200,11 +208,12 @@ animation: yes
 minimum: 200  
 maximum: 20000  
 default: 2000  
-scale: log  
 
 ### 18
 
 title: Bandwidth 4    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -212,7 +221,6 @@ animation: yes
 minimum: 0.125  
 maximum: 8  
 default: 1  
-scale: log  
 
 ### 19
 
@@ -229,12 +237,12 @@ default: 0
 
 title: Instances    
 description:
-<pre>
+```
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
-</pre>
+```
 type: integer  
 readonly: yes  
 required: no  
@@ -249,4 +257,15 @@ animation: yes
 minimum: 0  
 maximum: 1  
 default: 1  
+
+### channel_mask
+
+title: Channel Mask    
+description:
+A bitmask indicating which channels to affect.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 4294967295  
 

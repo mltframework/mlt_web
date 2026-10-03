@@ -13,7 +13,7 @@ title: super2xsai
 media types:
 Video  
 description: Scale the input by 2x using the Super2xSaI pixel art algorithm.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

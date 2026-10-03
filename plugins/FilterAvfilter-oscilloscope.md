@@ -13,7 +13,7 @@ title: oscilloscope
 media types:
 Video  
 description: 2D Video Oscilloscope.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

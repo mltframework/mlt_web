@@ -66,7 +66,7 @@ type: boolean
 readonly: no  
 required: no  
 animation: yes  
-default: 1  
+default: 0  
 
 ### size
 

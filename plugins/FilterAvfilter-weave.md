@@ -13,7 +13,7 @@ title: weave
 media types:
 Video  
 description: Weave input video fields into frames.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

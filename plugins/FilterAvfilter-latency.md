@@ -13,7 +13,7 @@ title: latency
 media types:
 Video  
 description: Report video filtering latency.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -21,4 +21,4 @@ URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)
 
 ## Notes
 
-This is not intended to be created directly. Rather, the loader producer loads it if it is available to set the convert_image function pointer on frames.
+This is not intended to be created directly. Rather, the loader producer loads it if it is available to register an image conversion callback on frames.

@@ -13,7 +13,7 @@ title: zscale
 media types:
 Video  
 description: Apply resizing, colorspace and bit depth conversion.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

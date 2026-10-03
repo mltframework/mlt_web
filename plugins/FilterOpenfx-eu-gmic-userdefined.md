@@ -20,107 +20,63 @@ URL: [https://openeffects.org/](https://openeffects.org/)
 
 ## Parameters
 
-### Specify HaldCLUT as
+### Red - green - blue - alpha
 
-title: Specify HaldCLUT as    
-type: string  
-readonly: no  
-required: no  
-default: Filename  
-values:  
-
-* Top layer
-* Bottom layer
-* Filename
-
-### HaldCLUT filename
-
-title: HaldCLUT filename    
+title: Red - green - blue - alpha    
 type: string  
 readonly: no  
 required: no  
 animation: yes  
+default: i  
 
-### note
+### Red - green - blue
 
-title: note    
-description:
-Note: Do not forget to set the Input layers option if you select Top layer or Bottom layer.  
+title: Red - green - blue    
 type: string  
-readonly: yes  
-required: no  
-animation: yes  
-default: Note: Do not forget to set the Input layers option if you select Top layer or Bottom layer.  
-
-### Strength (%)
-
-title: Strength (%)    
-type: float  
 readonly: no  
 required: no  
 animation: yes  
-minimum: 0  
-maximum: 100  
-default: 100  
+default: i + 90*(x/w)*cos(i/10)  
 
-### Brightness (%)
+### Red
 
-title: Brightness (%)    
-type: float  
+title: Red    
+type: string  
 readonly: no  
 required: no  
 animation: yes  
-minimum: -100  
-maximum: 100  
-default: 0  
+default: i  
 
-### Contrast (%)
+### Green
 
-title: Contrast (%)    
-type: float  
+title: Green    
+type: string  
 readonly: no  
 required: no  
 animation: yes  
-minimum: -100  
-maximum: 100  
-default: 0  
+default: i  
 
-### Gamma (%)
+### Blue
 
-title: Gamma (%)    
-type: float  
+title: Blue    
+type: string  
 readonly: no  
 required: no  
 animation: yes  
-minimum: -100  
-maximum: 100  
-default: 0  
+default: i  
 
-### Hue (%)
+### Alpha
 
-title: Hue (%)    
-type: float  
+title: Alpha    
+type: string  
 readonly: no  
 required: no  
 animation: yes  
-minimum: -100  
-maximum: 100  
-default: 0  
+default: i  
 
-### Saturation (%)
+### Value normalization
 
-title: Saturation (%)    
-type: float  
-readonly: no  
-required: no  
-animation: yes  
-minimum: -100  
-maximum: 100  
-default: 0  
-
-### Normalize colors
-
-title: Normalize colors    
+title: Value normalization    
 type: string  
 readonly: no  
 required: no  
@@ -128,75 +84,19 @@ default: None
 values:  
 
 * None
-* Pre-process
-* Post-process
-* Both
+* RGB
+* RGBA
 
-### Preview type
+### note
 
-title: Preview type    
-type: string  
-readonly: no  
-required: no  
-default: Full  
-values:  
-
-* Full
-* Forward horizontal
-* Forward vertical
-* Backward horizontal
-* Backward vertical
-* Duplicate top
-* Duplicate left
-* Duplicate bottom
-* Duplicate right
-* Duplicate horizontal
-* Duplicate vertical
-* Checkered
-* Checkered inverse
-
-### Preview split
-
-title: Preview split    
-type: rect  
-readonly: no  
-required: no  
-animation: yes  
-default: 0.5 0.5  
-widget: point  
-
-### note_2
-
-title: note_2    
+title: note    
 description:
-More info at:  
+Author: David Tschumperle.      Latest update: 2010/29/12.  
 type: string  
 readonly: yes  
 required: no  
 animation: yes  
-default: More info at:  
-
-### url
-
-title: url    
-description:
-Film Emulation Presets in G&#39;MIC: https://gmic.eu/film_emulation/index.shtml  
-type: string  
-readonly: yes  
-required: no  
-animation: yes  
-default: Film Emulation Presets in G'MIC: https://gmic.eu/film_emulation/index.shtml  
-
-### note_3
-
-title: note_3    
-description:
-Author: David Tschumperle.      Latest update: 2016/02/08.  
-type: string  
-readonly: yes  
-required: no  
-animation: yes  
-default: Author: David Tschumperle.      Latest update: 2016/02/08.  
+default: Author: David Tschumperle.      Latest update: 2010/29/12.  
 
 ### Advanced Options
 
@@ -245,14 +145,6 @@ values:
 ### Ignore Alpha
 
 title: Ignore Alpha    
-type: boolean  
-readonly: no  
-required: no  
-default: 0  
-
-### Preview/Draft Mode
-
-title: Preview/Draft Mode    
 type: boolean  
 readonly: no  
 required: no  

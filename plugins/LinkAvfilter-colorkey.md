@@ -13,7 +13,7 @@ title: colorkey
 media types:
 Video  
 description: Turns a certain color into transparency. Operates on RGB colors.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: premultiply_dynamic
 media types:
 Video  
 description: Premultiply or unpremultiply an image in-place, as needed.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

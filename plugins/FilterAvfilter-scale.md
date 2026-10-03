@@ -13,7 +13,7 @@ title: scale
 media types:
 Video  
 description: Scale the input video size and/or convert the image format.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

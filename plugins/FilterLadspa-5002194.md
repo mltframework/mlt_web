@@ -1,0 +1,1606 @@
+---
+layout: standard
+title: Documentation
+wrap_title: "Filter: ladspa.5002194"
+category: plugin
+---
+* TOC
+{:toc}
+
+## Plugin Information
+
+title: Noise Generator x4  
+media types:
+Audio  
+description: LADSPA plugin  
+version: 3  
+creator: LSP LADSPA  
+license: GPLv2  
+URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
+
+## Notes
+
+Automatically adapts to the number of channels and sampling rate of the consumer.
+
+## Bugs
+
+* Some effects have a temporal side-effect that may not work well.
+
+
+## Parameters
+
+### 8
+
+title: Bypass    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 9
+
+title: Input Gain (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 10  
+default: 1  
+
+### 10
+
+title: Output Gain (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 10  
+default: 1  
+
+### 11
+
+title: Graph Zoom (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0.01585  
+maximum: 1  
+default: 1  
+
+### 12
+
+title: Input Signal FFT Analysis    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 13
+
+title: Output Signal FFT Analysis    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 14
+
+title: Generator Output Signal FFT Analysis    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 15
+
+title: FFT Reactivity (ms)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 1  
+default: 0.000345267  
+
+### 16
+
+title: FFT Shift Gain (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 17
+
+title: Noise Type 1    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 18
+
+title: Noise Amplitude (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 19
+
+title: Noise Offset 1    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -10  
+maximum: 10  
+default: 0  
+
+### 20
+
+title: Noise Solo 1    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 21
+
+title: Noise Mute 1    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 22
+
+title: Noise Inaudible    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 23
+
+title: LCG Distribution 1    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 24
+
+title: Velvet Type 1    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 25
+
+title: Velvet Window 1 (s)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 0.1  
+default: 0  
+
+### 26
+
+title: Velvet ARN Delta 1    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 1  
+default: 0.000345267  
+
+### 27
+
+title: Velvet Crushing    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 28
+
+title: Velvet Crushing Probability 1 (%)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 100  
+default: 50  
+
+### 29
+
+title: Color Selector 1    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 7  
+default: 0  
+
+### 30
+
+title: Color Slope NPN 1 (Np)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -3  
+maximum: 3  
+default: 0  
+
+### 31
+
+title: Color Slope dBO 1 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -18  
+maximum: 18  
+default: 0  
+
+### 32
+
+title: Color Slope dBD 1 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -60  
+maximum: 60  
+default: 0  
+
+### 33
+
+title: Generator Output FFT Analysis 1    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 35
+
+title: Noise Type 2    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 36
+
+title: Noise Amplitude (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 37
+
+title: Noise Offset 2    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -10  
+maximum: 10  
+default: 0  
+
+### 38
+
+title: Noise Solo 2    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 39
+
+title: Noise Mute 2    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 40
+
+title: Noise Inaudible    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 41
+
+title: LCG Distribution 2    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 42
+
+title: Velvet Type 2    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 43
+
+title: Velvet Window 2 (s)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 0.1  
+default: 0  
+
+### 44
+
+title: Velvet ARN Delta 2    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 1  
+default: 0.000345267  
+
+### 45
+
+title: Velvet Crushing    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 46
+
+title: Velvet Crushing Probability 2 (%)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 100  
+default: 50  
+
+### 47
+
+title: Color Selector 2    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 7  
+default: 0  
+
+### 48
+
+title: Color Slope NPN 2 (Np)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -3  
+maximum: 3  
+default: 0  
+
+### 49
+
+title: Color Slope dBO 2 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -18  
+maximum: 18  
+default: 0  
+
+### 50
+
+title: Color Slope dBD 2 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -60  
+maximum: 60  
+default: 0  
+
+### 51
+
+title: Generator Output FFT Analysis 2    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 53
+
+title: Noise Type 3    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 54
+
+title: Noise Amplitude (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 55
+
+title: Noise Offset 3    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -10  
+maximum: 10  
+default: 0  
+
+### 56
+
+title: Noise Solo 3    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 57
+
+title: Noise Mute 3    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 58
+
+title: Noise Inaudible    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 59
+
+title: LCG Distribution 3    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 60
+
+title: Velvet Type 3    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 61
+
+title: Velvet Window 3 (s)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 0.1  
+default: 0  
+
+### 62
+
+title: Velvet ARN Delta 3    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 1  
+default: 0.000345267  
+
+### 63
+
+title: Velvet Crushing    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 64
+
+title: Velvet Crushing Probability 3 (%)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 100  
+default: 50  
+
+### 65
+
+title: Color Selector 3    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 7  
+default: 0  
+
+### 66
+
+title: Color Slope NPN 3 (Np)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -3  
+maximum: 3  
+default: 0  
+
+### 67
+
+title: Color Slope dBO 3 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -18  
+maximum: 18  
+default: 0  
+
+### 68
+
+title: Color Slope dBD 3 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -60  
+maximum: 60  
+default: 0  
+
+### 69
+
+title: Generator Output FFT Analysis 3    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 71
+
+title: Noise Type 4    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 72
+
+title: Noise Amplitude (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 73
+
+title: Noise Offset 4    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -10  
+maximum: 10  
+default: 0  
+
+### 74
+
+title: Noise Solo 4    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 75
+
+title: Noise Mute 4    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 76
+
+title: Noise Inaudible    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 77
+
+title: LCG Distribution 4    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 78
+
+title: Velvet Type 4    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 3  
+default: 0  
+
+### 79
+
+title: Velvet Window 4 (s)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 0.1  
+default: 0  
+
+### 80
+
+title: Velvet ARN Delta 4    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 1  
+default: 0.000345267  
+
+### 81
+
+title: Velvet Crushing    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 82
+
+title: Velvet Crushing Probability 4 (%)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 100  
+default: 50  
+
+### 83
+
+title: Color Selector 4    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 7  
+default: 0  
+
+### 84
+
+title: Color Slope NPN 4 (Np)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -3  
+maximum: 3  
+default: 0  
+
+### 85
+
+title: Color Slope dBO 4 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -18  
+maximum: 18  
+default: 0  
+
+### 86
+
+title: Color Slope dBD 4 (dB)    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: -60  
+maximum: 60  
+default: 0  
+
+### 87
+
+title: Generator Output FFT Analysis 4    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 89
+
+title: Channel Solo 1    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 90
+
+title: Channel Mute 1    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 91
+
+title: Input Signal FFT Analysis 1    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 92
+
+title: Output Signal FFT Analysis 1    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 93
+
+title: Channel Mode 1    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 2  
+default: 1  
+
+### 94
+
+title: Generator 1 Gain 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 95
+
+title: Generator 2 Gain 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 96
+
+title: Generator 3 Gain 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 97
+
+title: Generator 4 Gain 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 98
+
+title: Input gain 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 99
+
+title: Output gain 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 102
+
+title: Channel Solo 2    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 103
+
+title: Channel Mute 2    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 104
+
+title: Input Signal FFT Analysis 2    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 105
+
+title: Output Signal FFT Analysis 2    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 106
+
+title: Channel Mode 2    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 2  
+default: 1  
+
+### 107
+
+title: Generator 1 Gain 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 108
+
+title: Generator 2 Gain 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 109
+
+title: Generator 3 Gain 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 110
+
+title: Generator 4 Gain 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 111
+
+title: Input gain 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 112
+
+title: Output gain 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 115
+
+title: Channel Solo 3    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 116
+
+title: Channel Mute 3    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 117
+
+title: Input Signal FFT Analysis 3    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 118
+
+title: Output Signal FFT Analysis 3    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 119
+
+title: Channel Mode 3    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 2  
+default: 1  
+
+### 120
+
+title: Generator 1 Gain 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 121
+
+title: Generator 2 Gain 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 122
+
+title: Generator 3 Gain 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 123
+
+title: Generator 4 Gain 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 124
+
+title: Input gain 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 125
+
+title: Output gain 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 128
+
+title: Channel Solo 4    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 129
+
+title: Channel Mute 4    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### 130
+
+title: Input Signal FFT Analysis 4    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 131
+
+title: Output Signal FFT Analysis 4    
+type: boolean  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+default: 1  
+
+### 132
+
+title: Channel Mode 4    
+type: integer  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 2  
+default: 1  
+
+### 133
+
+title: Generator 1 Gain 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 134
+
+title: Generator 2 Gain 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 135
+
+title: Generator 3 Gain 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 0  
+
+### 136
+
+title: Generator 4 Gain 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 137
+
+title: Input gain 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 138
+
+title: Output gain 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 100  
+default: 1  
+
+### 34[*]
+
+title: Noise Level Meter 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 52[*]
+
+title: Noise Level Meter 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 70[*]
+
+title: Noise Level Meter 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 88[*]
+
+title: Noise Level Meter 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 100[*]
+
+title: Input Level Meter 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 101[*]
+
+title: Output Level Meter 1 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 113[*]
+
+title: Input Level Meter 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 114[*]
+
+title: Output Level Meter 2 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 126[*]
+
+title: Input Level Meter 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 127[*]
+
+title: Output Level Meter 3 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 139[*]
+
+title: Input Level Meter 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 140[*]
+
+title: Output Level Meter 4 (G)    
+description:
+logarithmic scale recommended  
+type: float  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 1.19209e-07  
+maximum: 15.8489  
+default: 0  
+
+### 141[*]
+
+title: latency    
+type: integer  
+readonly: yes  
+required: no  
+animation: yes  
+minimum: 0  
+default: 0  
+
+### instances
+
+title: Instances    
+description:
+```
+The number of instances of the plugin that are in use.
+MLT will create the number of plugins that are required to support the number of audio channels.
+Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
+e.g. 9[0] provides the value of status 9 for the first instance.
+```
+type: integer  
+readonly: yes  
+required: no  
+
+### wetness
+
+title: Wet/Dry    
+type: float  
+readonly: no  
+required: no  
+animation: yes  
+minimum: 0  
+maximum: 1  
+default: 1  
+
+### channel_mask
+
+title: Channel Mask    
+description:
+A bitmask indicating which channels to affect.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 4294967295  
+

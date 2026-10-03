@@ -297,6 +297,7 @@ wrap_title: Filter Plugins
 * [avfilter.untile](../FilterAvfilter-untile/): untile
 * [avfilter.uspp](../FilterAvfilter-uspp/): uspp
 * [avfilter.v360](../FilterAvfilter-v360/): v360
+* [avfilter.v360_vulkan](../FilterAvfilter-v360_vulkan/): v360_vulkan
 * [avfilter.vaguedenoiser](../FilterAvfilter-vaguedenoiser/): vaguedenoiser
 * [avfilter.vectorscope](../FilterAvfilter-vectorscope/): vectorscope
 * [avfilter.vflip](../FilterAvfilter-vflip/): vflip
@@ -474,6 +475,53 @@ wrap_title: Filter Plugins
 * [ladspa.1046](../FilterLadspa-1046/): Sine Oscillator (Freq:control, Amp:audio)
 * [ladspa.1048](../FilterLadspa-1048/): Mono Amplifier
 * [ladspa.1049](../FilterLadspa-1049/): Stereo Amplifier
+* [ladspa.1051](../FilterLadspa-1051/): Low Pass Filter (One Pole)
+* [ladspa.1052](../FilterLadspa-1052/): High Pass Filter (One Pole)
+* [ladspa.1053](../FilterLadspa-1053/): Echo Delay Line (Maximum Delay 0.01s)
+* [ladspa.1054](../FilterLadspa-1054/): Echo Delay Line (Maximum Delay 0.1s)
+* [ladspa.1055](../FilterLadspa-1055/): Echo Delay Line (Maximum Delay 1s)
+* [ladspa.1056](../FilterLadspa-1056/): Echo Delay Line (Maximum Delay 5s)
+* [ladspa.1057](../FilterLadspa-1057/): Echo Delay Line (Maximum Delay 60s)
+* [ladspa.1058](../FilterLadspa-1058/): Feedback Delay Line (Maximum Delay 0.01s)
+* [ladspa.1059](../FilterLadspa-1059/): Feedback Delay Line (Maximum Delay 0.1s)
+* [ladspa.1060](../FilterLadspa-1060/): Feedback Delay Line (Maximum Delay 1s)
+* [ladspa.1061](../FilterLadspa-1061/): Feedback Delay Line (Maximum Delay 5s)
+* [ladspa.1062](../FilterLadspa-1062/): Feedback Delay Line (Maximum Delay 60s)
+* [ladspa.1063](../FilterLadspa-1063/): Sine Oscillator (Freq:audio, Amp:audio)
+* [ladspa.1064](../FilterLadspa-1064/): Sine Oscillator (Freq:audio, Amp:control)
+* [ladspa.1065](../FilterLadspa-1065/): Sine Oscillator (Freq:control, Amp:audio)
+* [ladspa.1067](../FilterLadspa-1067/): Amplifier (Mono)
+* [ladspa.1068](../FilterLadspa-1068/): Amplifier (Stereo)
+* [ladspa.1070](../FilterLadspa-1070/): Amplitude Modulator
+* [ladspa.1071](../FilterLadspa-1071/): Mixer (Stereo to Mono)
+* [ladspa.1072](../FilterLadspa-1072/): Simple Compressor (Peak Envelope Tracking)
+* [ladspa.1073](../FilterLadspa-1073/): Simple Compressor (RMS Envelope Tracking)
+* [ladspa.1074](../FilterLadspa-1074/): Simple Expander (Peak Envelope Tracking)
+* [ladspa.1075](../FilterLadspa-1075/): Simple Expander (RMS Envelope Tracking)
+* [ladspa.1076](../FilterLadspa-1076/): Simple Limiter (Peak Envelope Tracking)
+* [ladspa.1077](../FilterLadspa-1077/): Simple Limiter (RMS Envelope Tracking)
+* [ladspa.1087](../FilterLadspa-1087/): Ambisonic Encoder (B-Format)
+* [ladspa.1088](../FilterLadspa-1088/): Ambisonic Encoder (FMH-Format)
+* [ladspa.1089](../FilterLadspa-1089/): FMH-Format to B-Format (Discards RSTUV Channels)
+* [ladspa.1090](../FilterLadspa-1090/): Ambisonic Decoder (B-Format to Stereo)
+* [ladspa.1091](../FilterLadspa-1091/): Ambisonic Decoder (B-Format to Quad)
+* [ladspa.1092](../FilterLadspa-1092/): Ambisonic Decoder (B-Format to Cube)
+* [ladspa.1093](../FilterLadspa-1093/): Ambisonic Decoder (FMH-Format to Octagon)
+* [ladspa.1094](../FilterLadspa-1094/): Ambisonic Rotation (B-Format, Horizontal)
+* [ladspa.1095](../FilterLadspa-1095/): Ambisonic Rotation (FMH-Format, Horizontal)
+* [ladspa.1096](../FilterLadspa-1096/): Granular Scatter Processor
+* [ladspa.1097](../FilterLadspa-1097/): Wave Shaper (Sine-Based)
+* [ladspa.1097681261](../FilterLadspa-1097681261/): Amplitude Imposer
+* [ladspa.1098](../FilterLadspa-1098/): Identity (Audio)
+* [ladspa.1123](../FilterLadspa-1123/): Freeverb (Version 3)
+* [ladspa.1129539188](../FilterLadspa-1129539188/): Cycle Shifter
+* [ladspa.1144210769](../FilterLadspa-1144210769/): 3 Band EQ
+* [ladspa.1144210771](../FilterLadspa-1144210771/): 3 Band Splitter
+* [ladspa.1145922147](../FilterLadspa-1145922147/): MaBitcrush
+* [ladspa.1145923190](../FilterLadspa-1145923190/): MaFreeverb
+* [ladspa.1145923446](../FilterLadspa-1145923446/): MaGigaverb
+* [ladspa.1145925747](../FilterLadspa-1145925747/): MaPitchshift
+* [ladspa.1146114128](../FilterLadspa-1146114128/): Ping Pong Pan
 * [ladspa.1181](../FilterLadspa-1181/): Simple amplifier
 * [ladspa.1185](../FilterLadspa-1185/): Diode Processor
 * [ladspa.1186](../FilterLadspa-1186/): Audio Divider (Suboctave Generator)
@@ -510,7 +558,12 @@ wrap_title: Filter Plugins
 * [ladspa.1218](../FilterLadspa-1218/): 4 x 4 pole allpass
 * [ladspa.1219](../FilterLadspa-1219/): Auto phaser
 * [ladspa.1220](../FilterLadspa-1220/): Harmonic generator
+* [ladspa.1224](../FilterLadspa-1224/): VCF 303
+* [ladspa.1225](../FilterLadspa-1225/): Canyon Delay
+* [ladspa.1227](../FilterLadspa-1227/): Lo Fi
+* [ladspa.1297511010](../FilterLadspa-1297511010/): MVerb
 * [ladspa.1337](../FilterLadspa-1337/): Vocoder
+* [ladspa.1399604850](../FilterLadspa-1399604850/): Soul Force
 * [ladspa.1401](../FilterLadspa-1401/): Surround matrix encoder
 * [ladspa.1402](../FilterLadspa-1402/): Delayorama
 * [ladspa.1403](../FilterLadspa-1403/): Dyson compressor
@@ -548,7 +601,60 @@ wrap_title: Filter Plugins
 * [ladspa.1438](../FilterLadspa-1438/): DJ flanger
 * [ladspa.1439](../FilterLadspa-1439/): Gong beater
 * [ladspa.1440](../FilterLadspa-1440/): Hilbert transformer
+* [ladspa.1514360144](../FilterLadspa-1514360144/): ZamComp
+* [ladspa.1514360882](../FilterLadspa-1514360882/): ZamCompX2
+* [ladspa.1514492210](../FilterLadspa-1514492210/): ZamEQ2
+* [ladspa.1514615601](../FilterLadspa-1514615601/): ZamGEQ31
+* [ladspa.1514619220](../FilterLadspa-1514619220/): ZamGate
+* [ladspa.1514624050](../FilterLadspa-1514624050/): ZamGateX2
+* [ladspa.1515013196](../FilterLadspa-1515013196/): ZamDelay
+* [ladspa.1515013201](../FilterLadspa-1515013201/): ZamDynamicEQ
+* [ladspa.1515013970](../FilterLadspa-1515013970/): ZamGrains
+* [ladspa.1515015474](../FilterLadspa-1515015474/): ZaMultiCompX2
+* [ladspa.1515018290](../FilterLadspa-1515018290/): ZaMaximX2
+* [ladspa.1515405652](../FilterLadspa-1515405652/): ZamAutoSat
+* [ladspa.1515476290](../FilterLadspa-1515476290/): ZamTube
 * [ladspa.1605](../FilterLadspa-1605/): Reverse Delay (5s max)
+* [ladspa.1641](../FilterLadspa-1641/): Bandlimited Sawtooth Oscillator (FA)
+* [ladspa.1643](../FilterLadspa-1643/): Bandlimited Square Oscillator (FA)
+* [ladspa.1645](../FilterLadspa-1645/): Bandlimited Variable Width Pulse Oscillator (FAPA)
+* [ladspa.1646](../FilterLadspa-1646/): Bandlimited Variable Width Pulse Oscillator (FAPC)
+* [ladspa.1647](../FilterLadspa-1647/): Bandlimited Variable Width Pulse Oscillator (FCPA)
+* [ladspa.1649](../FilterLadspa-1649/): Bandlimited Variable Slope Triangle Oscillator (FASA)
+* [ladspa.1650](../FilterLadspa-1650/): Bandlimited Variable Slope Triangle Oscillator (FASC)
+* [ladspa.1651](../FilterLadspa-1651/): Bandlimited Variable Slope Triangle Oscillator (FCSA)
+* [ladspa.1653](../FilterLadspa-1653/): ADSR Envelope
+* [ladspa.1654](../FilterLadspa-1654/): Amplifier (GAIA)
+* [ladspa.1655](../FilterLadspa-1655/): Amplifier (GCIA)
+* [ladspa.1656](../FilterLadspa-1656/): Frequency Modulator (FAMA)
+* [ladspa.1657](../FilterLadspa-1657/): Frequency Modulator (FAMC)
+* [ladspa.1658](../FilterLadspa-1658/): Frequency Modulator (FCMA)
+* [ladspa.1661](../FilterLadspa-1661/): Random Wave Generator (FASA)
+* [ladspa.1662](../FilterLadspa-1662/): Random Wave Generator (FASC)
+* [ladspa.1663](../FilterLadspa-1663/): Random Wave Generator (FCSA)
+* [ladspa.1665](../FilterLadspa-1665/): Signal Sum (IAIA)
+* [ladspa.1666](../FilterLadspa-1666/): Signal Sum (IAIC)
+* [ladspa.1668](../FilterLadspa-1668/): Signal Product (IAIA)
+* [ladspa.1669](../FilterLadspa-1669/): Signal Product (IAIC)
+* [ladspa.1671](../FilterLadspa-1671/): 4 Pole Low-Pass Filter with Resonance (FARAIA)
+* [ladspa.1672](../FilterLadspa-1672/): 4 Pole Low-Pass Filter with Resonance (FCRCIA)
+* [ladspa.1673](../FilterLadspa-1673/): Signal Branch (IA)
+* [ladspa.1675](../FilterLadspa-1675/): Analogue Style 64 Step Sequencer
+* [ladspa.1676](../FilterLadspa-1676/): Analogue Style 32 Step Sequencer
+* [ladspa.1677](../FilterLadspa-1677/): Analogue Style 16 Step Sequencer
+* [ladspa.1678](../FilterLadspa-1678/): Clock Oscillator with Gate (FAGA)
+* [ladspa.1679](../FilterLadspa-1679/): Clock Oscillator with Gate (FCGA)
+* [ladspa.1680](../FilterLadspa-1680/): ADSR Envelope with Gate and Trigger
+* [ladspa.1767](../FilterLadspa-1767/): C* ChorusI - Mono chorus/flanger
+* [ladspa.1771](../FilterLadspa-1771/): C* Saturate - Various static nonlinearities, 8x oversampled
+* [ladspa.1772](../FilterLadspa-1772/): C* Compress - Compressor and saturating limiter
+* [ladspa.1773](../FilterLadspa-1773/): C* Eq10 - 10-band equaliser
+* [ladspa.1779](../FilterLadspa-1779/): C* Plate - Versatile plate reverb
+* [ladspa.1788](../FilterLadspa-1788/): C* Wider - Stereo image synthesis
+* [ladspa.1795](../FilterLadspa-1795/): C* PlateX2 - Versatile plate reverb, stereo inputs
+* [ladspa.1845](../FilterLadspa-1845/): Hard Gate
+* [ladspa.1846](../FilterLadspa-1846/): Disintegrator
+* [ladspa.1848](../FilterLadspa-1848/): Dynamic Sledgehammer
 * [ladspa.1882](../FilterLadspa-1882/): SC4
 * [ladspa.1883](../FilterLadspa-1883/): SE4
 * [ladspa.1886](../FilterLadspa-1886/): Exponential signal decay
@@ -580,6 +686,254 @@ wrap_title: Filter Plugins
 * [ladspa.1915](../FilterLadspa-1915/): Crossfade
 * [ladspa.1916](../FilterLadspa-1916/): SC4 mono
 * [ladspa.1917](../FilterLadspa-1917/): Crossfade (4 outs)
+* [ladspa.1941](../FilterLadspa-1941/): Mvclpf-1   Digital implementation of the VC filter invented by R.A.Moog
+* [ladspa.1942](../FilterLadspa-1942/): Mvclpf-2   Digital implementation of the VC filter invented by R.A.Moog
+* [ladspa.1943](../FilterLadspa-1943/): Mvclpf-3   Digital implementation of the VC filter invented by R.A.Moog
+* [ladspa.1944](../FilterLadspa-1944/): Chorus1 - Based on CSound orchestra by Sean Costello
+* [ladspa.1945](../FilterLadspa-1945/): Chorus2 - Based on CSound orchestra by Sean Costello
+* [ladspa.1946](../FilterLadspa-1946/): Phaser1 - Similar to CSound's phaser1 by Sean Costello
+* [ladspa.1947](../FilterLadspa-1947/): Phaser1 with LFO
+* [ladspa.1948](../FilterLadspa-1948/): Mvclpf-4   Digital implementation of the VC filter invented by R.A.Moog
+* [ladspa.1949](../FilterLadspa-1949/): Auto Wah
+* [ladspa.1951](../FilterLadspa-1951/): Triple chorus
+* [ladspa.1952](../FilterLadspa-1952/): Pulse-VCO  --  Anti-aliased oscillator
+* [ladspa.1953](../FilterLadspa-1953/): Saw-VCO  --  Anti-aliased oscillator
+* [ladspa.1954](../FilterLadspa-1954/): Rec-VCO  --  Anti-aliased oscillator
+* [ladspa.1957](../FilterLadspa-1957/): UHJ Encoder
+* [ladspa.1958](../FilterLadspa-1958/): UHJ Decoder
+* [ladspa.1960](../FilterLadspa-1960/): Mvchpf-1   Digital implementation of the VC HP filter invented by R.A. Moog
+* [ladspa.1961](../FilterLadspa-1961/): Three cardioids to AMB matrix
+* [ladspa.1962](../FilterLadspa-1962/): Virtual stereo microphone
+* [ladspa.1963](../FilterLadspa-1963/): AMB order 3,1 panner
+* [ladspa.1964](../FilterLadspa-1964/): AMB order 3,1 rotator
+* [ladspa.1965](../FilterLadspa-1965/): AMB order 3,3 panner
+* [ladspa.1966](../FilterLadspa-1966/): AMB order 3,3 rotator
+* [ladspa.1967](../FilterLadspa-1967/): AMB order 2,2 panner
+* [ladspa.1968](../FilterLadspa-1968/): AMB order 2,2 rotator
+* [ladspa.1970](../FilterLadspa-1970/): 4-band parametric filter
+* [ladspa.1973](../FilterLadspa-1973/): AMB order 1,1 mono panner
+* [ladspa.1974](../FilterLadspa-1974/): AMB order 1,1 stereo panner
+* [ladspa.1975](../FilterLadspa-1975/): AMB order 1,1 rotator
+* [ladspa.1976](../FilterLadspa-1976/): AMB order 1,1 square decoder
+* [ladspa.1977](../FilterLadspa-1977/): AMB order 1,1 hexagon decoder
+* [ladspa.1978](../FilterLadspa-1978/): AMB order 1,1 cube decoder
+* [ladspa.1979](../FilterLadspa-1979/): AMB order 2,1 panner
+* [ladspa.1980](../FilterLadspa-1980/): AMB order 2,1 rotator
+* [ladspa.2021](../FilterLadspa-2021/): DAHDSR Envelope with Gate and Trigger (Audio-Rate Inputs)
+* [ladspa.2022](../FilterLadspa-2022/): DAHDSR Envelope with Gate and Trigger (Control Inputs)
+* [ladspa.2023](../FilterLadspa-2023/): Clock Pulse Oscillator with Gate (FAPAGA)
+* [ladspa.2024](../FilterLadspa-2024/): Clock Pulse Oscillator with Gate (FCPCGA)
+* [ladspa.2025](../FilterLadspa-2025/): Signal Tracker (Audio Rates)
+* [ladspa.2026](../FilterLadspa-2026/): Signal Tracker (Control Rates)
+* [ladspa.2027](../FilterLadspa-2027/): Quantiser (20 Steps)
+* [ladspa.2028](../FilterLadspa-2028/): Quantiser (50 Steps)
+* [ladspa.2029](../FilterLadspa-2029/): Quantiser (100 Steps)
+* [ladspa.2030](../FilterLadspa-2030/): Signal Difference (IAMA)
+* [ladspa.2031](../FilterLadspa-2031/): Signal Difference (IAMC)
+* [ladspa.2032](../FilterLadspa-2032/): Signal Difference (ICMA)
+* [ladspa.2034](../FilterLadspa-2034/): Signal Ratio (NADA)
+* [ladspa.2035](../FilterLadspa-2035/): Signal Ratio (NADC)
+* [ladspa.2036](../FilterLadspa-2036/): Signal Ratio (NCDA)
+* [ladspa.2141](../FilterLadspa-2141/): TAP Equalizer
+* [ladspa.2142](../FilterLadspa-2142/): TAP Reverberator
+* [ladspa.2143](../FilterLadspa-2143/): TAP Stereo Echo
+* [ladspa.2144](../FilterLadspa-2144/): TAP Tremolo
+* [ladspa.2145](../FilterLadspa-2145/): TAP Scaling Limiter
+* [ladspa.2146](../FilterLadspa-2146/): TAP AutoPanner
+* [ladspa.2147](../FilterLadspa-2147/): TAP DeEsser
+* [ladspa.2148](../FilterLadspa-2148/): TAP Vibrato
+* [ladspa.2149](../FilterLadspa-2149/): TAP Rotary Speaker
+* [ladspa.2150](../FilterLadspa-2150/): TAP Pitch Shifter
+* [ladspa.2151](../FilterLadspa-2151/): TAP Equalizer/BW
+* [ladspa.2152](../FilterLadspa-2152/): TAP Dynamics (M)
+* [ladspa.2153](../FilterLadspa-2153/): TAP Dynamics (St)
+* [ladspa.2154](../FilterLadspa-2154/): TAP Reflector
+* [ladspa.2155](../FilterLadspa-2155/): TAP Pink/Fractal Noise
+* [ladspa.2156](../FilterLadspa-2156/): TAP Fractal Doubler
+* [ladspa.2157](../FilterLadspa-2157/): TAP Sigmoid Booster
+* [ladspa.2158](../FilterLadspa-2158/): TAP TubeWarmth
+* [ladspa.2159](../FilterLadspa-2159/): TAP Chorus/Flanger
+* [ladspa.2184](../FilterLadspa-2184/): Sync-Saw-VCO  --  Hard-sync-capable anti-aliased oscillator
+* [ladspa.2185](../FilterLadspa-2185/): Sync-Rect-VCO  --  Hard-sync-capable anti-aliased oscillator
+* [ladspa.2186](../FilterLadspa-2186/): Sync-Tri-VCO  --  Hard-sync-capable anti-aliased oscillator
+* [ladspa.2586](../FilterLadspa-2586/): C* PhaserII - Mono phaser
+* [ladspa.2588](../FilterLadspa-2588/): C* Scape - Stereo delay with chromatic resonances
+* [ladspa.2589](../FilterLadspa-2589/): C* ToneStack - Classic amplifier tone stack emulation
+* [ladspa.2592](../FilterLadspa-2592/): C* AmpVTS - Idealised guitar amplification
+* [ladspa.2593](../FilterLadspa-2593/): C* AutoFilter - Self-modulating resonant filter
+* [ladspa.2594](../FilterLadspa-2594/): C* Eq10X2 - Stereo 10-band equaliser
+* [ladspa.2595](../FilterLadspa-2595/): C* Narrower - Stereo image width reduction
+* [ladspa.2598](../FilterLadspa-2598/): C* CompressX2 - Stereo compressor and saturating limiter
+* [ladspa.2601](../FilterLadspa-2601/): C* CabinetIII - Simplistic loudspeaker cabinet emulation
+* [ladspa.2602](../FilterLadspa-2602/): C* Noisegate - Attenuating hum and noise
+* [ladspa.2603](../FilterLadspa-2603/): C* Spice - Not an exciter
+* [ladspa.2606](../FilterLadspa-2606/): C* CabinetIV - Idealised loudspeaker cabinet
+* [ladspa.2607](../FilterLadspa-2607/): C* SpiceX2 - Not an exciter either
+* [ladspa.2608](../FilterLadspa-2608/): C* Eq4p - 4-band parametric shelving equaliser
+* [ladspa.2609](../FilterLadspa-2609/): C* EqFA4p - 4-band parametric eq
+* [ladspa.2979](../FilterLadspa-2979/): Rubber Band Mono Pitch Shifter
+* [ladspa.29790](../FilterLadspa-29790/): Rubber Band R3 Mono Pitch Shifter
+* [ladspa.3701](../FilterLadspa-3701/): zita-reverb
+* [ladspa.3702](../FilterLadspa-3702/): zita-rev-amb
+* [ladspa.4262](../FilterLadspa-4262/): Autotalent
+* [ladspa.5002064](../FilterLadspa-5002064/): Phase Detector
+* [ladspa.5002065](../FilterLadspa-5002065/): Delay Compensator Mono
+* [ladspa.5002066](../FilterLadspa-5002066/): Delay Compensator Stereo
+* [ladspa.5002067](../FilterLadspa-5002067/): Delay Compensator x2 Stereo
+* [ladspa.5002068](../FilterLadspa-5002068/): Spectrum Analyzer x1
+* [ladspa.5002069](../FilterLadspa-5002069/): Spectrum Analyzer x2
+* [ladspa.5002070](../FilterLadspa-5002070/): Spectrum Analyzer x4
+* [ladspa.5002071](../FilterLadspa-5002071/): Spectrum Analyzer x8
+* [ladspa.5002072](../FilterLadspa-5002072/): Spectrum Analyzer x12
+* [ladspa.5002073](../FilterLadspa-5002073/): Spectrum Analyzer x16
+* [ladspa.5002074](../FilterLadspa-5002074/): Parametric Equalizer x16 Mono
+* [ladspa.5002075](../FilterLadspa-5002075/): Parametric Equalizer x32 Mono
+* [ladspa.5002076](../FilterLadspa-5002076/): Parametric Equalizer x16 Stereo
+* [ladspa.5002077](../FilterLadspa-5002077/): Parametric Equalizer x32 Stereo
+* [ladspa.5002078](../FilterLadspa-5002078/): Parametric Equalizer x16 LeftRight
+* [ladspa.5002079](../FilterLadspa-5002079/): Parametric Equalizer x32 LeftRight
+* [ladspa.5002080](../FilterLadspa-5002080/): Parametric Equalizer x16 MidSide
+* [ladspa.5002081](../FilterLadspa-5002081/): Parametric Equalizer x32 MidSide
+* [ladspa.5002082](../FilterLadspa-5002082/): Graphic Equalizer x16 Mono
+* [ladspa.5002083](../FilterLadspa-5002083/): Graphic Equalizer x32 Mono
+* [ladspa.5002084](../FilterLadspa-5002084/): Graphic Equalizer x16 Stereo
+* [ladspa.5002085](../FilterLadspa-5002085/): Graphic Equalizer x32 Stereo
+* [ladspa.5002086](../FilterLadspa-5002086/): Graphic Equalizer x16 LeftRight
+* [ladspa.5002087](../FilterLadspa-5002087/): Graphic Equalizer x32 LeftRight
+* [ladspa.5002088](../FilterLadspa-5002088/): Graphic Equalizer x16 MidSide
+* [ladspa.5002089](../FilterLadspa-5002089/): Graphic Equalizer x32 MidSide
+* [ladspa.5002090](../FilterLadspa-5002090/): Compressor Mono
+* [ladspa.5002091](../FilterLadspa-5002091/): Compressor Stereo
+* [ladspa.5002092](../FilterLadspa-5002092/): Compressor LeftRight
+* [ladspa.5002093](../FilterLadspa-5002093/): Compressor MidSide
+* [ladspa.5002094](../FilterLadspa-5002094/): Sidechain Compressor Mono
+* [ladspa.5002095](../FilterLadspa-5002095/): Sidechain Compressor Stereo
+* [ladspa.5002096](../FilterLadspa-5002096/): Sidechain Compressor LeftRight
+* [ladspa.5002097](../FilterLadspa-5002097/): Sidechain Compressor MidSide
+* [ladspa.5002098](../FilterLadspa-5002098/): Dynamics Processor Mono
+* [ladspa.5002099](../FilterLadspa-5002099/): Dynamics Processor Stereo
+* [ladspa.5002100](../FilterLadspa-5002100/): Dynamics Processor LeftRight
+* [ladspa.5002101](../FilterLadspa-5002101/): Dynamics Processor MidSide
+* [ladspa.5002102](../FilterLadspa-5002102/): Sidechain Dynamics Processor Mono
+* [ladspa.5002103](../FilterLadspa-5002103/): Sidechain Dynamics Processor Stereo
+* [ladspa.5002104](../FilterLadspa-5002104/): Sidechain Dynamics Processor LeftRight
+* [ladspa.5002105](../FilterLadspa-5002105/): Sidechain Dynamics Processor MidSide
+* [ladspa.5002106](../FilterLadspa-5002106/): Expander Mono
+* [ladspa.5002107](../FilterLadspa-5002107/): Expander Stereo
+* [ladspa.5002108](../FilterLadspa-5002108/): Expander LeftRight
+* [ladspa.5002109](../FilterLadspa-5002109/): Expander MidSide
+* [ladspa.5002110](../FilterLadspa-5002110/): Sidechain Expander Mono
+* [ladspa.5002111](../FilterLadspa-5002111/): Sidechain Expander Stereo
+* [ladspa.5002112](../FilterLadspa-5002112/): Sidechain Expander LeftRight
+* [ladspa.5002113](../FilterLadspa-5002113/): Sidechain Expander MidSide
+* [ladspa.5002114](../FilterLadspa-5002114/): Gate Mono
+* [ladspa.5002115](../FilterLadspa-5002115/): Gate Stereo
+* [ladspa.5002116](../FilterLadspa-5002116/): Gate LeftRight
+* [ladspa.5002117](../FilterLadspa-5002117/): Gate MidSide
+* [ladspa.5002118](../FilterLadspa-5002118/): Sidechain Gate Mono
+* [ladspa.5002119](../FilterLadspa-5002119/): Sidechain Gate Stereo
+* [ladspa.5002120](../FilterLadspa-5002120/): Sidechain Gate LeftRight
+* [ladspa.5002121](../FilterLadspa-5002121/): Sidechain Gate MidSide
+* [ladspa.5002122](../FilterLadspa-5002122/): Limiter Mono
+* [ladspa.5002123](../FilterLadspa-5002123/): Limiter Stereo
+* [ladspa.5002124](../FilterLadspa-5002124/): Sidechain Limiter Mono
+* [ladspa.5002125](../FilterLadspa-5002125/): Sidechain Limiter Stereo
+* [ladspa.5002130](../FilterLadspa-5002130/): Slapback Delay Mono
+* [ladspa.5002131](../FilterLadspa-5002131/): Slapback Delay Stereo
+* [ladspa.5002132](../FilterLadspa-5002132/): Oscillator Mono
+* [ladspa.5002133](../FilterLadspa-5002133/): Latency Meter
+* [ladspa.5002134](../FilterLadspa-5002134/): Multiband Compressor Mono x8
+* [ladspa.5002135](../FilterLadspa-5002135/): Multiband Compressor Stereo x8
+* [ladspa.5002136](../FilterLadspa-5002136/): Multiband Compressor LeftRight x8
+* [ladspa.5002137](../FilterLadspa-5002137/): Multiband Compressor MidSide x8
+* [ladspa.5002138](../FilterLadspa-5002138/): Sidechain Multiband Compressor Mono x8
+* [ladspa.5002139](../FilterLadspa-5002139/): Sidechain Multiband Compressor Stereo x8
+* [ladspa.5002140](../FilterLadspa-5002140/): Sidechain Multiband Compressor LeftRight x8
+* [ladspa.5002141](../FilterLadspa-5002141/): Sidechain Multiband Compressor MidSide x8
+* [ladspa.5002146](../FilterLadspa-5002146/): Multiband Expander Mono x8
+* [ladspa.5002147](../FilterLadspa-5002147/): Multiband Expander Stereo x8
+* [ladspa.5002148](../FilterLadspa-5002148/): Multiband Expander LeftRight x8
+* [ladspa.5002149](../FilterLadspa-5002149/): Multiband Expander MidSide x8
+* [ladspa.5002150](../FilterLadspa-5002150/): Sidechain Multiband Expander Mono x8
+* [ladspa.5002151](../FilterLadspa-5002151/): Sidechain Multiband Expander Stereo x8
+* [ladspa.5002152](../FilterLadspa-5002152/): Sidechain Multiband Expander LeftRight x8
+* [ladspa.5002153](../FilterLadspa-5002153/): Sidechain Multiband Expander MidSide x8
+* [ladspa.5002154](../FilterLadspa-5002154/): Multiband Gate Mono x8
+* [ladspa.5002155](../FilterLadspa-5002155/): Multiband Gate Stereo x8
+* [ladspa.5002156](../FilterLadspa-5002156/): Multiband Gate LeftRight x8
+* [ladspa.5002157](../FilterLadspa-5002157/): Multiband Gate MidSide x8
+* [ladspa.5002158](../FilterLadspa-5002158/): Sidechain Multiband Gate Mono x8
+* [ladspa.5002159](../FilterLadspa-5002159/): Sidechain Multiband Gate Stereo x8
+* [ladspa.5002160](../FilterLadspa-5002160/): Sidechain Multiband Gate LeftRight x8
+* [ladspa.5002161](../FilterLadspa-5002161/): Sidechain Multiband Gate MidSide x8
+* [ladspa.5002162](../FilterLadspa-5002162/): Loudness Compensator Mono
+* [ladspa.5002163](../FilterLadspa-5002163/): Loudness Compensator Stereo
+* [ladspa.5002164](../FilterLadspa-5002164/): Surge Filter Mono
+* [ladspa.5002165](../FilterLadspa-5002165/): Surge Filter Stereo
+* [ladspa.5002166](../FilterLadspa-5002166/): Crossover Mono x8
+* [ladspa.5002167](../FilterLadspa-5002167/): Crossover Stereo x8
+* [ladspa.5002168](../FilterLadspa-5002168/): Crossover LeftRight x8
+* [ladspa.5002169](../FilterLadspa-5002169/): Crossover MidSide x8
+* [ladspa.5002170](../FilterLadspa-5002170/): Artistic Delay Mono
+* [ladspa.5002171](../FilterLadspa-5002171/): Artistic Delay Stereo
+* [ladspa.5002172](../FilterLadspa-5002172/): Oscilloscope x1
+* [ladspa.5002173](../FilterLadspa-5002173/): Oscilloscope x2
+* [ladspa.5002174](../FilterLadspa-5002174/): Oscilloscope x4
+* [ladspa.5002184](../FilterLadspa-5002184/): Multiband Dynamics Processor Mono x8
+* [ladspa.5002185](../FilterLadspa-5002185/): Multiband Dynamics Processor Stereo x8
+* [ladspa.5002186](../FilterLadspa-5002186/): Multiband Dynamics Processor LeftRight x8
+* [ladspa.5002187](../FilterLadspa-5002187/): Multiband Dynamics Processor MidSide x8
+* [ladspa.5002188](../FilterLadspa-5002188/): Sidechain Multiband Dynamics Processor Mono x8
+* [ladspa.5002189](../FilterLadspa-5002189/): Sidechain Multiband Dynamics Processor Stereo x8
+* [ladspa.5002190](../FilterLadspa-5002190/): Sidechain Multiband Dynamics Processor LeftRight x8
+* [ladspa.5002191](../FilterLadspa-5002191/): Sidechain Multiband Dynamics Processor MidSide x8
+* [ladspa.5002192](../FilterLadspa-5002192/): Noise Generator x1
+* [ladspa.5002193](../FilterLadspa-5002193/): Noise Generator x2
+* [ladspa.5002194](../FilterLadspa-5002194/): Noise Generator x4
+* [ladspa.5002204](../FilterLadspa-5002204/): Mixer x4 Mono
+* [ladspa.5002205](../FilterLadspa-5002205/): Mixer x8 Mono
+* [ladspa.5002206](../FilterLadspa-5002206/): Mixer x16 Mono
+* [ladspa.5002207](../FilterLadspa-5002207/): Mixer x4 Stereo
+* [ladspa.5002208](../FilterLadspa-5002208/): Mixer x8 Stereo
+* [ladspa.5002209](../FilterLadspa-5002209/): Mixer x16 Stereo
+* [ladspa.5002214](../FilterLadspa-5002214/): A/B Tester x2 Mono
+* [ladspa.5002215](../FilterLadspa-5002215/): A/B Tester x4 Mono
+* [ladspa.5002216](../FilterLadspa-5002216/): A/B Tester x8 Mono
+* [ladspa.5002217](../FilterLadspa-5002217/): A/B Tester x2 Stereo
+* [ladspa.5002218](../FilterLadspa-5002218/): A/B Tester x4 Stereo
+* [ladspa.5002219](../FilterLadspa-5002219/): A/B Tester x8 Stereo
+* [ladspa.5002224](../FilterLadspa-5002224/): GOTT Compressor Mono
+* [ladspa.5002225](../FilterLadspa-5002225/): GOTT Compressor Stereo
+* [ladspa.5002226](../FilterLadspa-5002226/): GOTT Compressor LeftRight
+* [ladspa.5002227](../FilterLadspa-5002227/): GOTT Compressor MidSide
+* [ladspa.5002228](../FilterLadspa-5002228/): Sidechain GOTT Compressor Mono
+* [ladspa.5002229](../FilterLadspa-5002229/): Sidechain GOTT Compressor Stereo
+* [ladspa.5002230](../FilterLadspa-5002230/): Sidechain GOTT Compressor LeftRight
+* [ladspa.5002231](../FilterLadspa-5002231/): Sidechain GOTT Compressor MidSide
+* [ladspa.5002234](../FilterLadspa-5002234/): Flanger Mono
+* [ladspa.5002235](../FilterLadspa-5002235/): Flanger Stereo
+* [ladspa.5002244](../FilterLadspa-5002244/): Multiband Limiter Mono
+* [ladspa.5002245](../FilterLadspa-5002245/): Multiband Limiter Stereo
+* [ladspa.5002246](../FilterLadspa-5002246/): Sidechain Multiband Limiter Mono
+* [ladspa.5002247](../FilterLadspa-5002247/): Sidechain Multiband Limiter Stereo
+* [ladspa.5002254](../FilterLadspa-5002254/): Filter Mono
+* [ladspa.5002255](../FilterLadspa-5002255/): Filter Stereo
+* [ladspa.5002264](../FilterLadspa-5002264/): Beat Breather Mono
+* [ladspa.5002265](../FilterLadspa-5002265/): Beat Breather Stereo
+* [ladspa.5002274](../FilterLadspa-5002274/): Autogain Mono
+* [ladspa.5002275](../FilterLadspa-5002275/): Autogain Stereo
+* [ladspa.5002276](../FilterLadspa-5002276/): Sidechain Autogain Mono
+* [ladspa.5002277](../FilterLadspa-5002277/): Sidechain Autogain Stereo
+* [ladspa.5002284](../FilterLadspa-5002284/): Clipper Mono
+* [ladspa.5002285](../FilterLadspa-5002285/): Clipper Stereo
+* [ladspa.5002294](../FilterLadspa-5002294/): Multiband Clipper Mono
+* [ladspa.5002295](../FilterLadspa-5002295/): Multiband Clipper Stereo
+* [ladspa.5002304](../FilterLadspa-5002304/): Parametric Equalizer x8 Mono
+* [ladspa.5002305](../FilterLadspa-5002305/): Parametric Equalizer x8 Stereo
+* [ladspa.5002306](../FilterLadspa-5002306/): Parametric Equalizer x8 LeftRight
+* [ladspa.5002307](../FilterLadspa-5002307/): Parametric Equalizer x8 MidSide
+* [ladspa.9792](../FilterLadspa-9792/): Rubber Band Stereo Pitch Shifter
+* [ladspa.97920](../FilterLadspa-97920/): Rubber Band R3 Stereo Pitch Shifter
 * [lift_gamma_gain](../FilterLift_gamma_gain/): Lift, Gamma, and Gain
 * [lightshow](../FilterLightshow/): Light Show
 * [lines](../FilterLines/): Scratchlines
@@ -1093,6 +1447,8 @@ wrap_title: Filter Plugins
 * [outline](../FilterOutline/): Outline
 * [panner](../FilterPanner/): Audio Pan
 * [pillar_echo](../FilterPillar_echo/): Pillar Echo
+* [placebo.render](../FilterPlacebo-render/): GPU Render (libplacebo)
+* [placebo.shader](../FilterPlacebo-shader/): GPU Shader (libplacebo)
 * [qtblend](../FilterQtblend/): Composite and transform
 * [qtblend_mode](../FilterQtblend_mode/): Set Qt Blend Mode
 * [qtcrop](../FilterQtcrop/): Crop by padding
@@ -1106,7 +1462,7 @@ wrap_title: Filter Plugins
 * [rotoscoping](../FilterRotoscoping/): Rotoscoping
 * [sepia](../FilterSepia/): Sepia
 * [shape](../FilterShape/): Shape Alpha
-* [sox](../FilterSox/): SoX
+* [sox](../FilterSox/): SoX (*DEPRECATED*)
 * [sox.allpass](../FilterSox-allpass/): allpass
 * [sox.band](../FilterSox-band/): band
 * [sox.bandpass](../FilterSox-bandpass/): bandpass

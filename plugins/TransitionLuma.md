@@ -15,7 +15,7 @@ Video
 description: A generic dissolve and wipe transition processor.
 &quot;luma&quot; gets its name from how it uses a grayscale &quot;map&quot; file. As the luma value varies over time, a threshold filter is applied to the map to determine what parts of frame A vs. frame B to show. It reads PGM files up to 16 bits! Alternatively, it can use the first frame from any producer that outputs yuv, but it will be limited to the luma gamut of 220 values. This performs field-based rendering unless the A frame property &quot;progressive&quot; or &quot;consumer_progressive&quot; or the transition property &quot;progressive&quot; is set to 1.
   
-version: 3  
+version: 4  
 creator: Dan Dennedy  
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -60,6 +60,16 @@ required: no
 title: Reverse    
 description:
 Reverse the direction of the transition.  
+type: integer  
+readonly: no  
+required: no  
+default: 0  
+
+### invert
+
+title: Invert    
+description:
+In wipe mode (when &quot;resource&quot; is supplied), swap frames A and B so that the output image size and alpha channel are taken from B instead of A, and invert the polarity of the luma map; this also reverses the direction of the transition, similar to &quot;reverse&quot;. This is used internally when a non-PGM luma producer is supplied, but it may also be set explicitly. In dissolve mode (no &quot;resource&quot;), it only reverses the direction of the transition, same as &quot;reverse&quot;, without swapping frames A and B.  
 type: integer  
 readonly: no  
 required: no  

@@ -16,7 +16,7 @@ description: Write or stream audio and/or video using FFmpeg.
 version: 7  
 creator: Charles Yates  
 contributor: Dan Dennedy  
-copyright: Copyright (C) 2003-2019 Meltytech, LLC  
+copyright: Copyright (C) 2003-2026 Meltytech, LLC  
 license: LGPL  
 URL: [http://www.ffmpeg.org/](http://www.ffmpeg.org/)  
 
@@ -610,6 +610,8 @@ required: no
 ### dc
 
 title: Intra DC precision    
+description:
+Sets intra_dc_precision for MPEG-2 encoding. The value is offset by 8, so the default of 8 means precision 0 (8-bit). Only relevant for MPEG-2; ignored on FFmpeg 8.0 and later.  
 type: integer  
 readonly: no  
 required: no  
@@ -864,6 +866,7 @@ format: flags
 values:  
 
 * ts
+* id3v2
 
 ### max_delay
 
@@ -1562,11 +1565,33 @@ type: string
 readonly: no  
 required: no  
 
+### availability_start_time_ms
+
+  
+description:
+set MPD availabilityStartTime as epoch milliseconds (dash)  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+maximum: 9223372036854776  
+default: 0  
+format: 64-bit  
+
 ### streaming
 
   
 description:
 Enable/Disable streaming mode of output. Each frame will be moof fragment (dash)  
+type: string  
+readonly: no  
+required: no  
+
+### suggested_presentation_delay
+
+  
+description:
+set MPD suggestedPresentationDelay (dash)  
 type: string  
 readonly: no  
 required: no  
@@ -1833,8 +1858,8 @@ set movie timescale (f4v)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -2779,8 +2804,8 @@ set movie timescale (ipod)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -3054,8 +3079,8 @@ set movie timescale (ismv)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -3637,8 +3662,8 @@ set movie timescale (mov)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -3942,8 +3967,8 @@ set movie timescale (mp4)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -4494,30 +4519,6 @@ required: no
 minimum: 0  
 default: 0  
 
-### oggpagesize
-
-  
-description:
-Set preferred Ogg page size. (oga)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
-### pagesize
-
-  
-description:
-preferred page size in bytes (oga)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
 ### page_duration
 
   
@@ -4539,30 +4540,6 @@ type: integer
 readonly: no  
 required: no  
 minimum: 0  
-default: 0  
-
-### oggpagesize
-
-  
-description:
-Set preferred Ogg page size. (ogg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
-### pagesize
-
-  
-description:
-preferred page size in bytes (ogg)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
 default: 0  
 
 ### page_duration
@@ -4588,30 +4565,6 @@ required: no
 minimum: 0  
 default: 0  
 
-### oggpagesize
-
-  
-description:
-Set preferred Ogg page size. (ogv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
-### pagesize
-
-  
-description:
-preferred page size in bytes (ogv)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
 ### page_duration
 
   
@@ -4635,30 +4588,6 @@ required: no
 minimum: 0  
 default: 0  
 
-### oggpagesize
-
-  
-description:
-Set preferred Ogg page size. (opus)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
-### pagesize
-
-  
-description:
-preferred page size in bytes (opus)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
 ### page_duration
 
   
@@ -4670,6 +4599,18 @@ required: no
 minimum: 0  
 default: 1000000  
 format: 64-bit  
+
+### max_frames
+
+  
+description:
+maximum number of frames reserved in table (mandatory) (pdv)  
+type: integer  
+readonly: no  
+required: no  
+minimum: -1  
+maximum: 65535  
+default: -1  
 
 ### brand
 
@@ -4856,8 +4797,8 @@ set movie timescale (psp)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -5797,30 +5738,6 @@ required: no
 minimum: 0  
 default: 0  
 
-### oggpagesize
-
-  
-description:
-Set preferred Ogg page size. (spx)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
-### pagesize
-
-  
-description:
-preferred page size in bytes (spx)  
-type: integer  
-readonly: no  
-required: no  
-minimum: 0  
-maximum: 65025  
-default: 0  
-
 ### page_duration
 
   
@@ -6082,8 +5999,8 @@ set movie timescale (3g2)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -6357,8 +6274,8 @@ set movie timescale (3gp)
 type: integer  
 readonly: no  
 required: no  
-minimum: 1  
-default: 1000  
+minimum: 0  
+default: 0  
 
 ### rtpflags
 
@@ -6771,6 +6688,15 @@ required: no
 minimum: -1  
 default: 5000  
 
+### timeout
+
+  
+description:
+Set timeout for socket I/O operations (whip)  
+type: string  
+readonly: no  
+required: no  
+
 ### pkt_size
 
   
@@ -6882,7 +6808,7 @@ set application name (pulse)
 type: string  
 readonly: no  
 required: no  
-default: Lavf62.12.100  
+default: Lavf63.1.101  
 
 ### stream_name
 
@@ -7077,6 +7003,7 @@ values:
 * fast
 * noout
 * local_header
+* fixed_frame_size
 
 ### export_side_data
 
@@ -7870,7 +7797,9 @@ values:
 * bt709
 * unknown
 * gamma22
+* bt470m
 * gamma28
+* bt470bg
 * smpte170m
 * smpte240m
 * linear
@@ -8729,6 +8658,22 @@ readonly: no
 required: no  
 minimum: 1  
 default: 1  
+
+### remap_mode
+
+  
+description:
+Remap Mode (ffv1_vulkan)  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* false
+* dualrle
+* flipdualrle
 
 ### context
 
@@ -16172,6 +16117,15 @@ readonly: no
 required: no  
 format: integer or keyword  
 
+### dtx
+
+  
+description:
+Enable DTX (Discontinuous transmission) (libopus)  
+type: string  
+readonly: no  
+required: no  
+
 ### apply_phase_inv
 
   
@@ -18664,7 +18618,7 @@ default: -1
 
   
 description:
-Set encode quality (trades off against speed, higher is faster) (h264_vulkan)  
+Set encode quality (trades off against speed, higher is slower) (h264_vulkan)  
 type: integer  
 readonly: no  
 required: no  
@@ -19069,7 +19023,7 @@ default: -1
 
   
 description:
-Set encode quality (trades off against speed, higher is faster) (hevc_vulkan)  
+Set encode quality (trades off against speed, higher is slower) (hevc_vulkan)  
 type: integer  
 readonly: no  
 required: no  

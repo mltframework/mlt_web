@@ -13,7 +13,7 @@ title: lut1d
 media types:
 Video  
 description: Adjust colors using a 1D LUT.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

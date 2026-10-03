@@ -13,7 +13,7 @@ title: Dynamic text
 media types:
 Video  
 description: Overlay dynamic text onto the video  
-version: 5  
+version: 6  
 creator:   
 copyright: Meltytech, LLC  
 license: LGPLv2.1  
@@ -36,6 +36,7 @@ Keywords include:
   * #smpte_ndf#     - SMPTE non-drop-frame timecode of the frame
   * #timecode#      - same as #smpte_df#
   * #frame#         - frame number of the frame
+  * #frame+1#       - frame number of the frame, starting at 1, not 0
   * #filedate#      - modification date of the file (GMT)
   * #localfiledate# - modification date of the file (local)
   * #localtime#     - current system date and time

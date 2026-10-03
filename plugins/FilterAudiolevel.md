@@ -13,7 +13,7 @@ title: Audio Levels
 media types:
 Audio  
 description: Compute the audio amplitude.  
-version: 3  
+version: 5  
 creator: Dan Dennedy  
 contributor: Marco Gittler  
 contributor: Steve Harris  
@@ -22,9 +22,19 @@ license: GPLv2
 
 ## Notes
 
-This filter provides the amplitude level as a percentage value in floating point. This does not do any &quot;slowing&quot; of the data by averaging out peaks and troughs of short duration like a VU meter. Applications can also get this data on the frame as meta.media.audio_level.&lt;N&gt; where &lt;N&gt; is the channel number starting with 0.
+This filter provides the amplitude level as a percentage value in floating point. This does not do any &quot;slowing&quot; of the data by averaging out peaks and troughs of short duration like a VU meter. Applications can also get this data on the frame as meta.media.audio_level.&lt;N&gt; where &lt;N&gt; is the channel number starting with 0. The prefix is configurable using the prefix property.
 
 ## Parameters
+
+### prefix
+
+title: Frame Property Prefix    
+description:
+Prefix for frame audio level keys. The filter appends the channel index to this prefix.  
+type: string  
+readonly: no  
+required: no  
+default: meta.media.audio_level.  
 
 ### iec_scale
 

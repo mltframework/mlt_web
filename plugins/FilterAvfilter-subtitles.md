@@ -13,7 +13,7 @@ title: subtitles
 media types:
 Video  
 description: Render text subtitles onto input video using the libass library.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes
@@ -115,6 +115,21 @@ break lines according to the Unicode Line Breaking Algorithm
 type: string  
 readonly: no  
 required: no  
+
+### av.shaping
+
+  
+description:
+set shaping engine  
+type: string  
+readonly: no  
+required: no  
+format: integer or keyword  
+values:  
+
+* auto
+* simple
+* complex
 
 ### position
 

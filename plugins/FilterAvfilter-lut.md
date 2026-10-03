@@ -13,7 +13,7 @@ title: lut
 media types:
 Video  
 description: Compute and apply a lookup table to the RGB/YUV input video.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: C* EqFA4p - 4-band parametric eq
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 3  
 creator: Tim Goetze <tim@quitte.de>  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -43,6 +43,8 @@ default: 0
 ### 1
 
 title: a.f (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -50,7 +52,6 @@ animation: yes
 minimum: 20  
 maximum: 14000  
 default: 102.874  
-scale: log  
 
 ### 2
 
@@ -88,6 +89,8 @@ default: 0
 ### 5
 
 title: b.f (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -95,7 +98,6 @@ animation: yes
 minimum: 20  
 maximum: 14000  
 default: 529.15  
-scale: log  
 
 ### 6
 
@@ -133,6 +135,8 @@ default: 0
 ### 9
 
 title: c.f (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -140,7 +144,6 @@ animation: yes
 minimum: 20  
 maximum: 14000  
 default: 529.15  
-scale: log  
 
 ### 10
 
@@ -178,6 +181,8 @@ default: 0
 ### 13
 
 title: d.f (Hz)    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -185,7 +190,6 @@ animation: yes
 minimum: 20  
 maximum: 14000  
 default: 2721.78  
-scale: log  
 
 ### 14
 
@@ -233,12 +237,12 @@ default: 3
 
 title: Instances    
 description:
-<pre>
+```
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
-</pre>
+```
 type: integer  
 readonly: yes  
 required: no  
@@ -253,4 +257,15 @@ animation: yes
 minimum: 0  
 maximum: 1  
 default: 1  
+
+### channel_mask
+
+title: Channel Mask    
+description:
+A bitmask indicating which channels to affect.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 4294967295  
 

@@ -13,7 +13,7 @@ title: colorcontrast
 media types:
 Video  
 description: Adjust color contrast between RGB components.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -13,7 +13,7 @@ title: mcompand
 media types:
 Audio  
 description: Multiband Compress or expand audio dynamic range.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

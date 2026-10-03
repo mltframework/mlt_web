@@ -13,9 +13,8 @@ title: Autotalent
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 3  
 creator: Tom Baran  
-copyright: Copyright (C) 2004-2014 Meltytech, LLC  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
 
@@ -36,6 +35,7 @@ title: Concert A (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 400  
 maximum: 480  
 default: 440  
@@ -46,6 +46,7 @@ title: Fixed pitch (semitones w.r.t. A)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -36  
 maximum: 12  
 default: 0  
@@ -56,6 +57,7 @@ title: Pull to fixed pitch
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -66,6 +68,7 @@ title: A
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: 0  
@@ -76,6 +79,7 @@ title: Bb
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: -1  
@@ -86,6 +90,7 @@ title: B
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: 0  
@@ -96,6 +101,7 @@ title: C
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: 0  
@@ -106,6 +112,7 @@ title: Db
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: -1  
@@ -116,6 +123,7 @@ title: D
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: 0  
@@ -126,6 +134,7 @@ title: Eb
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: -1  
@@ -136,6 +145,7 @@ title: E
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: 0  
@@ -146,6 +156,7 @@ title: F
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: 0  
@@ -156,6 +167,7 @@ title: Gb
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: -1  
@@ -166,6 +178,7 @@ title: G
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: 0  
@@ -176,6 +189,7 @@ title: Ab
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1.1  
 maximum: 1.1  
 default: -1  
@@ -186,6 +200,7 @@ title: Correction strength
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -196,6 +211,7 @@ title: Correction smoothness
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -206,6 +222,7 @@ title: Pitch shift (scale notes)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -12  
 maximum: 12  
 default: 0  
@@ -216,6 +233,7 @@ title: Output scale rotate (scale notes)
 type: integer  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -5.1  
 maximum: 5.1  
 default: 0  
@@ -226,6 +244,7 @@ title: LFO depth
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 0  
@@ -236,6 +255,7 @@ title: LFO rate (Hz)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 10  
 default: 5  
@@ -246,6 +266,7 @@ title: LFO shape (square->sine->tri)
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: 0  
@@ -256,6 +277,7 @@ title: LFO symmetry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: 0  
@@ -266,6 +288,7 @@ title: LFO quantization
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 24
@@ -274,6 +297,7 @@ title: Formant correction
 type: boolean  
 readonly: no  
 required: no  
+animation: yes  
 default: 0  
 
 ### 25
@@ -282,6 +306,7 @@ title: Formant warp
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: -1  
 maximum: 1  
 default: 0  
@@ -292,6 +317,7 @@ title: Mix
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
@@ -300,38 +326,41 @@ default: 1
 
 title: Detected pitch (semitones w.r.t. A)    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 default: 0  
 
 ### 28[*]
 
 title: Pitch detection confidence    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 default: 0  
 
 ### 31[*]
 
 title: latency    
 type: float  
-readonly: true  
+readonly: yes  
 required: no  
+animation: yes  
 default: 0  
 
 ### instances
 
 title: Instances    
 description:
-<pre>
+```
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
-</pre>
+```
 type: integer  
-readonly: true  
+readonly: yes  
 required: no  
 
 ### wetness
@@ -340,7 +369,19 @@ title: Wet/Dry
 type: float  
 readonly: no  
 required: no  
+animation: yes  
 minimum: 0  
 maximum: 1  
 default: 1  
+
+### channel_mask
+
+title: Channel Mask    
+description:
+A bitmask indicating which channels to affect.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 4294967295  
 

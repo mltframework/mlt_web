@@ -13,7 +13,7 @@ title: virtualbass
 media types:
 Audio  
 description: Audio Virtual Bass.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

@@ -24,7 +24,7 @@ URL: [https://openeffects.org/](https://openeffects.org/)
 
 title: Output Components    
 description:
-Select what types of components the plug-in should output, this has an effect only when the Output Layer is set to the Color layer. This controls what should be the components for the Color Layer: Alpha, RGB or RGBA  
+Select what types of components the plug-in should output, this has an effect only when the Output Layer is set to the Color layer. This controls what should be the components for the Color Layer: Alpha, RGB or RGBA.  
 type: string  
 readonly: no  
 required: no  
@@ -53,77 +53,103 @@ values:
 
 title: R    
 description:
-Input channel for the output red channel  
+Input channel for the output red channel.  
 type: string  
 readonly: no  
 required: no  
 animation: yes  
-default: A.r  
+default: A.Color.R  
 values:  
 
-* A.r
-* A.g
-* A.b
-* A.a
+* A.Color.R
+* A.Color.G
+* A.Color.B
+* A.Color.A
 * 0
 * 1
+* B.Color.R
+* B.Color.G
+* B.Color.B
+* B.Color.A
 
 ### outputG
 
 title: G    
 description:
-Input channel for the output green channel  
+Input channel for the output green channel.  
 type: string  
 readonly: no  
 required: no  
 animation: yes  
-default: A.g  
+default: A.Color.G  
 values:  
 
-* A.r
-* A.g
-* A.b
-* A.a
+* A.Color.R
+* A.Color.G
+* A.Color.B
+* A.Color.A
 * 0
 * 1
+* B.Color.R
+* B.Color.G
+* B.Color.B
+* B.Color.A
 
 ### outputB
 
 title: B    
 description:
-Input channel for the output blue channel  
+Input channel for the output blue channel.  
 type: string  
 readonly: no  
 required: no  
 animation: yes  
-default: A.b  
+default: A.Color.B  
 values:  
 
-* A.r
-* A.g
-* A.b
-* A.a
+* A.Color.R
+* A.Color.G
+* A.Color.B
+* A.Color.A
 * 0
 * 1
+* B.Color.R
+* B.Color.G
+* B.Color.B
+* B.Color.A
 
 ### outputA
 
 title: A    
 description:
-Input channel for the output alpha channel  
+Input channel for the output alpha channel.  
 type: string  
 readonly: no  
 required: no  
 animation: yes  
-default: A.a  
+default: A.Color.A  
 values:  
 
-* A.r
-* A.g
-* A.b
-* A.a
+* A.Color.R
+* A.Color.G
+* A.Color.B
+* A.Color.A
 * 0
 * 1
+* B.Color.R
+* B.Color.G
+* B.Color.B
+* B.Color.A
+
+### setGBAFromR
+
+title: Set GBA From R    
+description:
+If checked, setting the R output channel from the GUI to the R channel of an input also sets the G, B and A output channels from the same plane.  
+type: boolean  
+readonly: no  
+required: no  
+default: 1  
 
 ### mlt_origin
 

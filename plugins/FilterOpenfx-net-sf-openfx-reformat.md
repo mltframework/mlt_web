@@ -42,12 +42,13 @@ Selects how the output format is computed.
 type: string  
 readonly: no  
 required: no  
-default: To Format  
+default: To Project Format  
 values:  
 
 * To Format
 * To Box
 * Scale
+* To Project Format
 
 ### NatronParamFormatChoice
 

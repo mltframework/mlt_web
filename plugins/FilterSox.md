@@ -9,7 +9,7 @@ category: plugin
 
 ## Plugin Information
 
-title: SoX  
+title: SoX (*DEPRECATED*)  
 media types:
 Audio  
 description: Process audio using a SoX effect.  

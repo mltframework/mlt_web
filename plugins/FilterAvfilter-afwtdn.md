@@ -13,7 +13,7 @@ title: afwtdn
 media types:
 Audio  
 description: Denoise audio stream using Wavelets.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

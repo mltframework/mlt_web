@@ -13,7 +13,7 @@ title: extrastereo
 media types:
 Audio  
 description: Increase difference between stereo audio channels.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

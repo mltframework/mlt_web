@@ -9,11 +9,11 @@ category: plugin
 
 ## Plugin Information
 
-title: zita-reverb-amb  
+title: zita-rev-amb  
 media types:
 Audio  
 description: LADSPA plugin  
-version: 1  
+version: 3  
 creator: Fons Adriaensen <fons@linuxaudio.org>  
 license: GPLv2  
 URL: [http://www.ladspa.org/](http://www.ladspa.org/)  
@@ -43,6 +43,8 @@ default: 0.06
 ### 7
 
 title: Xover    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -50,7 +52,6 @@ animation: yes
 minimum: 50  
 maximum: 1000  
 default: 223.607  
-scale: log  
 
 ### 8
 
@@ -77,6 +78,8 @@ default: 2.75
 ### 10
 
 title: Damping    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -84,11 +87,12 @@ animation: yes
 minimum: 1500  
 maximum: 24000  
 default: 6000  
-scale: log  
 
 ### 11
 
 title: F1-freq    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -96,7 +100,6 @@ animation: yes
 minimum: 40  
 maximum: 10000  
 default: 159.054  
-scale: log  
 
 ### 12
 
@@ -112,6 +115,8 @@ default: 0
 ### 13
 
 title: F2-freq    
+description:
+logarithmic scale recommended  
 type: float  
 readonly: no  
 required: no  
@@ -119,7 +124,6 @@ animation: yes
 minimum: 40  
 maximum: 10000  
 default: 2514.87  
-scale: log  
 
 ### 14
 
@@ -147,12 +151,12 @@ default: 0
 
 title: Instances    
 description:
-<pre>
+```
 The number of instances of the plugin that are in use.
 MLT will create the number of plugins that are required to support the number of audio channels.
 Status parameters (readonly) are provided for each instance and are accessed by specifying the instance number after the identifier (starting at zero).
 e.g. 9[0] provides the value of status 9 for the first instance.
-</pre>
+```
 type: integer  
 readonly: yes  
 required: no  
@@ -167,4 +171,15 @@ animation: yes
 minimum: 0  
 maximum: 1  
 default: 1  
+
+### channel_mask
+
+title: Channel Mask    
+description:
+A bitmask indicating which channels to affect.  
+type: integer  
+readonly: no  
+required: no  
+minimum: 0  
+default: 4294967295  
 

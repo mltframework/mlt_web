@@ -144,7 +144,7 @@ Decides how to interpret the crop_left_p and crop_right_p values:
 0 = a percentage from min..max
 1 = an absolute value (ie: it can crop between 22.2 and 22.3 degrees of longitude)
 Note: for the horizontal type, absolute values are the longitude (for the location
-source type) and time (in miliseconds since epoch) for the rest of the data source types)
+source type) and time (in milliseconds since epoch) for the rest of the data source types)
 ```
 type: integer  
 readonly: no  

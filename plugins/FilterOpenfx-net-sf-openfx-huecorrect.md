@@ -14,6 +14,7 @@ media types:
 Video  experimental  
 description: Apply hue-dependent color adjustments using lookup curves.
 Hue and saturation are computed from the the source RGB values. Depending on the hue value, the various adjustment values are computed, and then applied:
+hue: hue shift.
 sat: saturation gain. This modification is applied last.
 lum: luminance gain
 red: red gain

@@ -13,7 +13,7 @@ title: removelogo
 media types:
 Video  
 description: Remove a TV logo based on a mask image.  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

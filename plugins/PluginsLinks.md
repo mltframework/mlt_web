@@ -285,6 +285,7 @@ wrap_title: Link Plugins
 * [avfilter.untile](../LinkAvfilter-untile/): untile
 * [avfilter.uspp](../LinkAvfilter-uspp/): uspp
 * [avfilter.v360](../LinkAvfilter-v360/): v360
+* [avfilter.v360_vulkan](../LinkAvfilter-v360_vulkan/): v360_vulkan
 * [avfilter.vaguedenoiser](../LinkAvfilter-vaguedenoiser/): vaguedenoiser
 * [avfilter.vectorscope](../LinkAvfilter-vectorscope/): vectorscope
 * [avfilter.vflip](../LinkAvfilter-vflip/): vflip

@@ -13,7 +13,7 @@ title: grayworld
 media types:
 Video  
 description: Adjust white balance using LAB gray world algorithm  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes

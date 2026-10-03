@@ -13,7 +13,7 @@ title: scdet
 media types:
 Video  
 description: Detect video scene change  
-version: Lavfi11.14.100  
+version: Lavfi12.1.101  
 creator: libavfilter maintainers  
 
 ## Notes
